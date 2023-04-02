@@ -30,7 +30,7 @@ AbilityData.ABILITIES_MASTER_LIST = {
     },
     {
         id = 5,
-        name = "Fermete",
+        name = "Fermeté",
         description = "Bloque les attaques OHKO telles que Glaciation, Empal’Korne, Guillotine et Abîme"
     },
     {
@@ -65,7 +65,7 @@ AbilityData.ABILITIES_MASTER_LIST = {
     },
     {
         id = 12,
-        name = "Benet",
+        name = "Benêt",
         description = "Bloque l'attaque 'Attraction'"
     },
     {
@@ -75,7 +75,7 @@ AbilityData.ABILITIES_MASTER_LIST = {
     },
     {
         id = 14,
-        name = "Oeil Compose",
+        name = "Oeil Composé",
         description = "Augmente la précision"
     },
     {
@@ -85,7 +85,7 @@ AbilityData.ABILITIES_MASTER_LIST = {
     },
     {
         id = 16,
-        name = "Deguisement",
+        name = "Déguisement",
         description = "Change son type en celui de la dernière attaque employée à l'encontre de ce Pokémon"
     },
     {
@@ -135,7 +135,7 @@ AbilityData.ABILITIES_MASTER_LIST = {
     },
     {
         id = 26,
-        name = "Levitation",
+        name = "Lévitation",
         description = "Immunisé face aux attaques de type sol"
     },
     {
@@ -155,7 +155,7 @@ AbilityData.ABILITIES_MASTER_LIST = {
     },
     {
         id = 30,
-        name = "Medic Nature",
+        name = "Médic Nature",
         description = "Le Pokémon est soigné de ses altérations de statut lorsqu'il est changé au cours d'un combat"
     },
     {
@@ -165,7 +165,7 @@ AbilityData.ABILITIES_MASTER_LIST = {
     },
     {
         id = 32,
-        name = "Serenite",
+        name = "Sérénité",
         description = "Double la réussite aux effets des attaques lancées"
     },
     {
@@ -215,7 +215,7 @@ AbilityData.ABILITIES_MASTER_LIST = {
     },
     {
         id = 42,
-        name = "Magnepiege",
+        name = "Magnépiège",
         description = "Si le Pokémon adverse est de type acier, il ne peut pas fuir"
     },
     {
@@ -275,7 +275,7 @@ AbilityData.ABILITIES_MASTER_LIST = {
     },
     {
         id = 54,
-        name = "Absenteisme",
+        name = "Absentéisme",
         description = "Votre Pokémon n'attaque qu'un tour sur deux"
     },
     {
@@ -300,7 +300,7 @@ AbilityData.ABILITIES_MASTER_LIST = {
     },
     {
         id = 59,
-        name = "Meteo",
+        name = "Météo",
         description = "Change le type selon le climat"
     },
     {
@@ -350,17 +350,17 @@ AbilityData.ABILITIES_MASTER_LIST = {
     },
     {
         id = 69,
-        name = "Tete de Roc",
+        name = "Tête de Roc",
         description = "Votre Pokémon ne se blesse pas en éxecutant des attaques telles que Damoclès"
     },
     {
         id = 70,
-        name = "Secheresse",
+        name = "Sécheresse",
         description = "Quand votre Pokémon débute le le combat, il fait soleil"
     },
     {
         id = 71,
-        name = "Piege Sable",
+        name = "Piège Sable",
         description = "Empêche les Pokémon adverses d’être échangés, à moins qu’ils ne soient de type Vol, qu'ils tiennent la Carapace Mue ou qu'ils utilisent Demi-Tour, Cyclone, Hurlement, ou Téléport. Les Pokémon peuvent quitter le terrain s'ils possèdent les talents: Lévitation ou Fuite."
     },
     {
@@ -370,7 +370,7 @@ AbilityData.ABILITIES_MASTER_LIST = {
     },
     {
         id = 73,
-        name = "Ecran Fumee",
+        name = "Ecran Fumée",
         description = "Empêche les statistiques de baisser"
     },
     {
@@ -395,12 +395,12 @@ AbilityData.ABILITIES_MASTER_LIST = {
     },
     {
         id = 78,
-        name = "Motorise",
+        name = "Motorisé",
         description = "Si votre Pokémon reçoit une attaque électrique, sa vitesse augmente"
     },
     {
         id = 79,
-        name = "Rivalite",
+        name = "Rivalité",
         description = "Augmente l'Attaque du Pokémon si l'adversaire est du même sexe  " 
     },
     {
@@ -420,12 +420,12 @@ AbilityData.ABILITIES_MASTER_LIST = {
     },
     {
         id = 83,
-        name = "Colerique",
+        name = "Colérique",
         description = "Ignore les effets du climat"
     },
     {
         id = 84,
-        name = "Delestage",
+        name = "Délestage",
         description = "Si le Pokémon ne tient pas d'objet, sa vitesse augmente"
     },
     {
@@ -440,12 +440,12 @@ AbilityData.ABILITIES_MASTER_LIST = {
 	},
     {
         id = 87,
-        name = "Peau Seche",
+        name = "Peau Sèche",
         description = "Si Zénith a été lancé, les PV du Pokémon diminuent et si Danse Pluie a été lancé, les PV du Pokémon augmentent"
     },
     {
         id = 88,
-        name = "Telecharge",
+        name = "Télécharge",
         description = "En fonction de la statistique la plus élevée de l'ennemi, le Pokémon augmente sa propre statistique"
     },
     {
@@ -460,7 +460,7 @@ AbilityData.ABILITIES_MASTER_LIST = {
     },
     {
         id = 91,
-        name = "Adaptabilite",
+        name = "Adaptabilité",
         description = "Si ce Pokémon utilise une attaque de son type, la puissance de l'attaque est multipliée par 2 au lieu de 1.5"
     },
     {
@@ -480,7 +480,7 @@ AbilityData.ABILITIES_MASTER_LIST = {
     },
     {
         id = 95,
-        name = "Pied Veloce",
+        name = "Pied Véloce",
         description = "Si un Pokémon doté de ce talent voit son statut altéré, sa Vitesse est augmentée d'un niveau, soit un gain de 50 %."
     },
     {
@@ -545,7 +545,7 @@ AbilityData.ABILITIES_MASTER_LIST = {
     },
     {
         id = 108,
-        name = "Prediction",
+        name = "Prédiction",
         description = "Vous permet de voir l'attaque la plus puissante du Pokémon adverse"
     },
     {
@@ -555,7 +555,7 @@ AbilityData.ABILITIES_MASTER_LIST = {
     },
     {
         id = 110,
-        name = "Lentiteintee",
+        name = "Lentiteintée",
         description = "Si la capacité utilisée n'est pas très efficace contre le Pokémon défenseur, ses dégâts sont doublés"
     },
     {
@@ -565,7 +565,7 @@ AbilityData.ABILITIES_MASTER_LIST = {
     },
     {
         id = 112,
-        name = "Debut Calme",
+        name = "Début Calme",
         description = "L'attaque et la vitesse du Pokémon sont réduites de moitié durant les 5 premiers tours de combat"
     },
     {
@@ -605,7 +605,7 @@ AbilityData.ABILITIES_MASTER_LIST = {
     },
     {
         id = 120,
-        name = "Temeraire",
+        name = "Téméraire",
         description = "Tous les coups de riposte augmentent la puissance"
     },
     {
@@ -620,7 +620,7 @@ AbilityData.ABILITIES_MASTER_LIST = {
     },
     {
         id = 123,
-        name = "Mauvais Reve",
+        name = "Mauvais Rêve",
         description = "Si le Pokémon défenseur dort, il perd des PV à chaque tour"
     },
     {
@@ -645,12 +645,12 @@ AbilityData.ABILITIES_MASTER_LIST = {
     },
     {
         id = 128,
-        name = "Acharne",
+        name = "Acharné",
         description = "Raises Attack two stages upon having any stat lowered."
     },
     {
         id = 129,
-        name = "Defaitiste",
+        name = "Défaitiste",
         description = "Halves Attack and Special Attack at 50% max HP or less."
     },
     {
@@ -670,7 +670,7 @@ AbilityData.ABILITIES_MASTER_LIST = {
     },
     {
         id = 133,
-        name = "Armurouillee",
+        name = "Armurouillée",
         description = "Raises Speed and lowers Defense by one stage each upon being hit by a physical move."
     },
     {
@@ -685,7 +685,7 @@ AbilityData.ABILITIES_MASTER_LIST = {
     },
     {
         id = 136,
-        name = "Multiecaille",
+        name = "Multiécaille",
         description = "Halves damage taken from full HP."
     },
     {
@@ -700,13 +700,13 @@ AbilityData.ABILITIES_MASTER_LIST = {
     },
     {
         id = 139,
-        name = "Recolte",
+        name = "Récolte",
         description = "Has a 50% chance of restoring a used Berry after each turn if the Pok" ..
             Chars.accentedE .. "mon has held no items in the meantime."
     },
     {
         id = 140,
-        name = "Telepathe",
+        name = "Télépathe",
         description = "Protects against friendly Pok" .. Chars.accentedE .. "mon's damaging moves."
     },
     {
@@ -726,7 +726,7 @@ AbilityData.ABILITIES_MASTER_LIST = {
     },
     {
         id = 144,
-        name = "Rege-Force",
+        name = "Régé-Force",
         description = "Heals for 1/3 max HP upon switching out."
     },
     {

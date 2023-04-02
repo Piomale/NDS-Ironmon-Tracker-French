@@ -121,11 +121,11 @@ local function PokemonStatScreen(initialSettings, initialTracker, initialProgram
                 if #level == 1 then
                     level = "  " .. level
                 end
-                moveString = level .. " " .. stripChars(MoveData.MOVES[moveInfo.move + 1].name)
+                moveString = level .. " " .. MoveData.MOVES[moveInfo.move + 1].name
                 readMoveIntoListener(i, moveInfo.move)
             end
             ui.controls.moveLabels[i].setTextColorKey("Top box text color")
-            ui.controls.moveLabels[i].setText(moveString)
+            ui.controls.moveLabels[i].setText(stripChars(moveString))
         end
         ui.controls.movesLabel.setText("Moves")
         ui.controls.movesLabel.setTextOffset({x = 16, y = -1})
@@ -143,7 +143,7 @@ local function PokemonStatScreen(initialSettings, initialTracker, initialProgram
                 local moveID = -1
                 if TM ~= -1 then
                     moveID = logInfo.getTMs()[TM]
-                    local moveName = stripChars(MoveData.MOVES[moveID + 1].name)
+                    local moveName = MoveData.MOVES[moveID + 1].name
                     moveString = string.format("TM %02d " .. moveName, TM)
                     local textColorKey = "Top box text color"
                     if canLearn then
@@ -155,7 +155,7 @@ local function PokemonStatScreen(initialSettings, initialTracker, initialProgram
                 end
                 readMoveIntoListener(i, moveID)
             end
-            label.setText(moveString)
+            label.setText(stripChars(moveString))
         end
         ui.controls.movesLabel.setText("Gym TMs")
         ui.controls.movesLabel.setTextOffset({x = 9, y = -1})

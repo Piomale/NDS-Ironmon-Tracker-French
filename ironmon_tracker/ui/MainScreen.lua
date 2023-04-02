@@ -410,7 +410,7 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
             return
         end
         for index, moveID in pairs(moveIDs) do
-            local name = stripChars(MoveData.MOVES[moveID + 1].name)
+            local name = MoveData.MOVES[moveID + 1].name
             local moveFrame = ui.moveInfoFrames[index]
             local damage =
                 MoveUtils.calculateVariableDamage(
@@ -453,7 +453,7 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
             moveFrame.moveTypeIcon.setVisibility(settings.colorSettings["Draw move type icons"])
 
             moveFrame.categoryIcon.setVisibility(settings.colorSettings["Show phys/spec move icons"])
-            local moveNameText = stripChars(moveData.name)
+            local moveNameText = moveData.name
 
             if justChangedHiddenPower and moveData.name == "Puis. Cachée" and not isEnemy then
                 local hiddenPowerType = tracker:getCurrentHiddenPowerType()
@@ -465,7 +465,7 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
                 moveNameText = moveNameText .. stars[i]
             end
 
-            moveFrame.moveNameLabel.setText(moveNameText)
+            moveFrame.moveNameLabel.setText(stripChars(moveNameText))
             moveFrame.moveNameLabel.resize({width = 70, height = 8})
 
             if moveData.name == "Puis. Cachée" and not isEnemy then
@@ -671,8 +671,8 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
             local abilityDescription = ""
             if ability ~= nil then
                 local abilityData = AbilityData.ABILITIES[abilities[index] + 1]
-                abilityName = stripChars(abilityData.name)
-                abilityDescription = stripChars(abilityData.description)
+                abilityName = abilityData.name
+                abilityDescription = abilityData.description
             end
             newAbilityLabels[index].setText(stripChars(abilityName))
             hoverListener.getOnHoverParams().text = stripChars(abilityDescription)
@@ -832,7 +832,7 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
             }
         end
         local name = currentPokemon.name
-        ui.controls.pokemonNameLabel.setText(name)
+        ui.controls.pokemonNameLabel.setText(stripChars(name))
         ui.controls.pokemonHP.setVisibility(not isEnemy)
         local currentIconSet = IconSets.SETS[settings.appearance.ICON_SET_INDEX]
         local imageID = currentPokemon.pokemonID
@@ -849,8 +849,8 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
         setUpEvo(isEnemy)
         local pokemonHoverParams = hoverListeners.pokemonHoverListener.getOnHoverParams()
         pokemonHoverParams.pokemon = currentPokemon
-        ui.controls.pokemonHP.setText("PV: " .. currentPokemon.curHP .. "/" .. currentPokemon.stats.HP)
-        local abilityName = stripChars(AbilityData.ABILITIES[currentPokemon.ability + 1].name)
+        ui.controls.pokemonHP.setText("PV: " .. currentPokemon.curHP .. "/" .. currentPokemon.stats.HP)	
+        local abilityName = AbilityData.ABILITIES[currentPokemon.ability + 1].name
         if settings.appearance.BLIND_MODE then
             abilityName = "?"
         end
@@ -860,7 +860,7 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
             ui.controls["pokemonType" .. i].setPath(Paths.FOLDERS.TYPE_IMAGES_FOLDER .. "/" .. type .. ".png")
         end
         local abilityHoverParams = hoverListeners.abilityHoverListener.getOnHoverParams()
-        local description = stripChars(AbilityData.ABILITIES[currentPokemon.ability + 1].description)
+        local description = AbilityData.ABILITIES[currentPokemon.ability + 1].description
         if settings.appearance.BLIND_MODE then
             description = ""
         end
@@ -869,11 +869,11 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
         end
         abilityHoverParams.text = stripChars(description)
         local itemHoverParams = hoverListeners.heldItemHoverListener.getOnHoverParams()
-        local heldItemDescription = stripChars(heldItemInfo.description)
-        if ItemData.NATURE_SPECIFIC_BERRIES[stripChars(heldItemInfo.name)] ~= nil then
+        local heldItemDescription = heldItemInfo.description
+        if ItemData.NATURE_SPECIFIC_BERRIES[heldItemInfo.name] ~= nil then
             heldItemDescription = readNatureSpecificBerry(stripChars(heldItemInfo.name), heldItemDescription)
         end
-        itemHoverParams.text = heldItemDescription
+        itemHoverParams.text = stripChars(heldItemDescription)
     end
 
     local function readPokemonIntoUI()
