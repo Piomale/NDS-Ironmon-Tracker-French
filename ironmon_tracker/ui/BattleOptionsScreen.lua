@@ -26,13 +26,13 @@ local function BattleOptionsScreen(initialSettings, initialTracker, initialProgr
     end
     local function onToggleClick(button)
         button.onClick()
-        if not settings.battle.ENABLE_ENEMY_LOCKING then
+        if not settings.battle.ACTIVER_LE_VERROUILLAGE_ENNEMI then
             program.unlockEnemy()
         end
         program.drawCurrentScreens()
     end
     local function initBattleToggleButtons()
-        local orderedKeys = {
+		local orderedKeys = {
             "SHOW_MOVE_EFFECTIVENESS",
             "CALCULATE_VARIABLE_DAMAGE",
             "SHOW_ACTUAL_ENEMY_PP",
@@ -72,8 +72,16 @@ local function BattleOptionsScreen(initialSettings, initialTracker, initialProgr
                 program.saveSettings
             )
             local labelName
-            if key == "SHOW_1ST_FIGHT_STATS_PLATINUM" then
-                labelName = "Platinum: Show 1st fight stats"
+			if key == "SHOW_MOVE_EFFECTIVENESS" then
+                labelName = "Montrer l'efficacité des capacités"
+			elseif key == "CALCULATE_VARIABLE_DAMAGE" then
+                labelName = "Calculer les dommages variables"
+			elseif key == "SHOW_ACTUAL_ENEMY_PP" then
+                labelName = "Afficher les pp acutels de l'ennemi"
+			elseif key == "ENABLE_ENEMY_LOCKING" then
+                labelName = "Activer le verrouillage ennemie"
+            elseif key == "SHOW_1ST_FIGHT_STATS_PLATINUM" then
+                labelName = "Platine : Afficher les stats du 1er combat"
             else
                 labelName = key:gsub("_", " "):lower()
                 labelName = labelName:sub(1, 1):upper() .. labelName:sub(2)
@@ -81,7 +89,7 @@ local function BattleOptionsScreen(initialSettings, initialTracker, initialProgr
             TextLabel(
                 Component(frame, Box({x = 0, y = 0}, {width = 0, height = 0}, nil, nil, false)),
                 TextField(
-                    labelName,
+                    stripChars(labelName),
                     {x = 0, y = 0},
                     TextStyle(
                         Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -101,7 +109,7 @@ local function BattleOptionsScreen(initialSettings, initialTracker, initialProgr
             Frame(
             Box(
                 {x = Graphics.SIZES.SCREEN_WIDTH, y = 0},
-                {width = Graphics.SIZES.MAIN_SCREEN_WIDTH, height = constants.BATTLE_OPTIONS_HEIGHT},
+                {width = 198, height = constants.BATTLE_OPTIONS_HEIGHT},
                 "Main background color",
                 nil
             ),
@@ -113,7 +121,7 @@ local function BattleOptionsScreen(initialSettings, initialTracker, initialProgr
             Box(
                 {x = Graphics.SIZES.BORDER_MARGIN, y = Graphics.SIZES.BORDER_MARGIN},
                 {
-                    width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
+                    width = 198 - 2 * Graphics.SIZES.BORDER_MARGIN,
                     height = constants.BATTLE_OPTIONS_HEIGHT - 2 * Graphics.SIZES.BORDER_MARGIN
                 },
                 "Top box background color",
@@ -128,14 +136,14 @@ local function BattleOptionsScreen(initialSettings, initialTracker, initialProgr
                 ui.frames.mainFrame,
                 Box(
                     {x = 5, y = 5},
-                    {width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN, height = 18},
+                    {width = 198 - 2 * Graphics.SIZES.BORDER_MARGIN, height = 18},
                     "Top box background color",
                     "Top box border color",
                     false
                 )
             ),
             TextField(
-                "Battle Settings",
+                stripChars("Paramètres des combats"),
                 {x = 28, y = 1},
                 TextStyle(13, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
             )
@@ -145,15 +153,15 @@ local function BattleOptionsScreen(initialSettings, initialTracker, initialProgr
             Component(
                 ui.frames.mainFrame,
                 Box(
-                    {x = Graphics.SIZES.MAIN_SCREEN_WIDTH - 49, y = constants.BATTLE_OPTIONS_HEIGHT - 23},
+                    {x = 198 - 49, y = constants.BATTLE_OPTIONS_HEIGHT - 23},
                     {width = 40, height = 14},
                     "Top box background color",
                     "Top box border color", true, "Top box background color"
                 )
             ),
             TextField(
-                "Go back",
-                {x = 3, y = 1},
+                "Retour",
+                {x = 5, y = 1},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
                     Graphics.FONT.DEFAULT_FONT_FAMILY,

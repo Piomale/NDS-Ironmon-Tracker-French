@@ -17,7 +17,7 @@ local function AppearanceOptionsScreen(initialSettings, initialTracker, initialP
         TOGGLE_FRAME_WIDTH = 200,
         TOGGLE_FRAME_HEIGHT = 12,
         BUTTON_SIZE = 10,
-        MAIN_BUTTON_WIDTH = 106,
+        MAIN_BUTTON_WIDTH = 160,
         MAIN_BUTTON_HEIGHT = 19,
         BADGE_COLOR_FRAME_HEIGHT = 84,
         BUTTONS_FRAME_HEIGHT = 98
@@ -73,7 +73,7 @@ local function AppearanceOptionsScreen(initialSettings, initialTracker, initialP
             Box(
                 {x = 0, y = Graphics.SIZES.BORDER_MARGIN},
                 {
-                    width = Graphics.SIZES.MAIN_SCREEN_WIDTH-2*Graphics.SIZES.BORDER_MARGIN, height = constants.BUTTONS_FRAME_HEIGHT
+                    width = 198-2*Graphics.SIZES.BORDER_MARGIN, height = constants.BUTTONS_FRAME_HEIGHT
                 },
                 "Top box background color",
                 "Top box border color"
@@ -117,13 +117,25 @@ local function AppearanceOptionsScreen(initialSettings, initialTracker, initialP
             labelName = key:gsub("_", " "):lower()
             labelName = labelName:sub(1, 1):upper() .. labelName:sub(2)
             labelName = labelName:gsub("poke", "Pok"..Chars.accentedE)
-            if key == "BLIND_MODE" then
-                labelName = "Blind mode (hides stats/ability)"
+            if key == "AUTO_POKEMON_THEMES" then
+                labelName = "Thème Pokémon automatique"
+			elseif key == "RIGHT_JUSTIFIED_NUMBERS" then
+                labelName = "Chiffres justifiés à droite"
+			elseif key == "SHOW_ACCURACY_AND_EVASION" then
+                labelName = "Affiche la précision et l'évasion"
+			elseif key == "EXPERIENCE_BAR" then
+                labelName = "Barre d'expérience"
+			elseif key == "RANDOM_BALL_PICKER" then
+                labelName = "Balles aléatoires"
+			elseif key == "SHOW_POKECENTER_HEALS" then
+                labelName = "Afficher les soins du pokecenter"
+			elseif key == "BLIND_MODE" then
+                labelName = "Mode aveugle (masque les stats/capacités)"
             end
             TextLabel(
                 Component(frame, Box({x = 0, y = 0}, {width = 0, height = 0}, nil, nil, false)),
                 TextField(
-                    labelName,
+                    stripChars(labelName),
                     {x = 0, y = 0},
                     TextStyle(
                         Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -143,7 +155,7 @@ local function AppearanceOptionsScreen(initialSettings, initialTracker, initialP
             Box(
                 {x = 0, y = Graphics.SIZES.BORDER_MARGIN},
                 {
-                    width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
+                    width = 198 - 2 * Graphics.SIZES.BORDER_MARGIN,
                     height = constants.BADGE_COLOR_FRAME_HEIGHT
                 },
                 "Top box background color",
@@ -153,9 +165,9 @@ local function AppearanceOptionsScreen(initialSettings, initialTracker, initialP
             ui.frames.mainInnerFrame
         )
         local buttons = {
-            badgesAppearanceButton = {name = "Badges Appearance", iconName = program.getGameInfo().BADGE_PREFIX},
-            colorThemeButton = {name = "Edit Color Theme", iconName = "PAINTBRUSH"},
-            pokemonIconsButton = {name = "Pok"..Chars.accentedE.."mon Icon Sets", iconName = "POKEBALL"}
+            badgesAppearanceButton = {name = "Apparence des badges", iconName = program.getGameInfo().BADGE_PREFIX},
+            colorThemeButton = {name = stripChars("Modifier le thème de couleur"), iconName = "PAINTBRUSH"},
+            pokemonIconsButton = {name = stripChars("Ensembles d'icônes Pokémon"), iconName = "POKEBALL"}
         }
         local order = {"pokemonIconsButton","badgesAppearanceButton", "colorThemeButton"}
         for i, key in pairs(order) do
@@ -210,7 +222,7 @@ local function AppearanceOptionsScreen(initialSettings, initialTracker, initialP
             Frame(
             Box(
                 {x = Graphics.SIZES.SCREEN_WIDTH, y = 0},
-                {width = Graphics.SIZES.MAIN_SCREEN_WIDTH, height = constants.MAIN_HEIGHT},
+                {width = 198, height = constants.MAIN_HEIGHT},
                 "Main background color",
                 nil
             ),
@@ -222,7 +234,7 @@ local function AppearanceOptionsScreen(initialSettings, initialTracker, initialP
             Box(
                 {x = Graphics.SIZES.BORDER_MARGIN, y = Graphics.SIZES.BORDER_MARGIN},
                 {
-                    width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
+                    width = 198 - 2 * Graphics.SIZES.BORDER_MARGIN,
                     height = constants.MAIN_HEIGHT - 2 * Graphics.SIZES.BORDER_MARGIN
                 },
                 "Top box background color",
@@ -237,15 +249,15 @@ local function AppearanceOptionsScreen(initialSettings, initialTracker, initialP
                 ui.frames.mainFrame,
                 Box(
                     {x = 5, y = 5},
-                    {width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN, height = 18},
+                    {width = 198 - 2 * Graphics.SIZES.BORDER_MARGIN, height = 18},
                     "Top box background color",
                     "Top box border color",
                     false
                 )
             ),
             TextField(
-                "Tracker Appearance",
-                {x = 14, y = 1},
+                "Apparence du Tracker",
+                {x = 35, y = 1},
                 TextStyle(13, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
             )
         )
@@ -254,7 +266,7 @@ local function AppearanceOptionsScreen(initialSettings, initialTracker, initialP
             Component(
                 ui.frames.mainFrame,
                 Box(
-                    {x = Graphics.SIZES.MAIN_SCREEN_WIDTH - 50, y = constants.MAIN_HEIGHT - 24},
+                    {x = 198 - 50, y = constants.MAIN_HEIGHT - 24},
                     {width = 40, height = 14},
                     "Top box background color",
                     "Top box border color",
@@ -263,8 +275,8 @@ local function AppearanceOptionsScreen(initialSettings, initialTracker, initialP
                 )
             ),
             TextField(
-                "Go back",
-                {x = 3, y = 1},
+                "Retour",
+                {x = 5, y = 1},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
                     Graphics.FONT.DEFAULT_FONT_FAMILY,

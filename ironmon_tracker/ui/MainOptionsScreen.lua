@@ -16,7 +16,7 @@ local function MainOptionsScreen(initialSettings, initialTracker, initialProgram
 		MAIN_BUTTONS_Y_OFFSET = 23,
 		MAIN_BUTTONS_X_OFFSET = 15,
 		MAIN_BUTTON_SPACING = 5,
-		MAIN_BUTTON_WIDTH = 110,
+		MAIN_BUTTON_WIDTH = 160,
 		MAIN_BUTTON_HEIGHT = 19
 	}
 	local ui = {}
@@ -56,9 +56,9 @@ local function MainOptionsScreen(initialSettings, initialTracker, initialProgram
 
 	local function initBottomFrameControls()
 		TextLabel(
-			Component(ui.frames.bottomFrame, Box({x = 0, y = 0}, {width = 92, height = 18}, nil, nil)),
+			Component(ui.frames.bottomFrame, Box({x = 0, y = 0}, {width = 131, height = 18}, nil, nil)),
 			TextField(
-				"Tracker version: " .. MiscConstants.TRACKER_VERSION,
+				"Version du Tracker: " .. MiscConstants.TRACKER_VERSION,
 				{x = 4, y = 1},
 				TextStyle(
 					Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -82,8 +82,8 @@ local function MainOptionsScreen(initialSettings, initialTracker, initialProgram
 				)
 			),
 			TextField(
-				"Go back",
-				{x = 3, y = 1},
+				"Retour",
+				{x = 5, y = 1},
 				TextStyle(
 					Graphics.FONT.DEFAULT_FONT_SIZE,
 					Graphics.FONT.DEFAULT_FONT_FAMILY,
@@ -95,12 +95,12 @@ local function MainOptionsScreen(initialSettings, initialTracker, initialProgram
 	end
 	local function initMainButtons()
 		local buttonNames = {
-			battleSettingsButton = "Battle Settings",
-			trackerAppearanceButton = "Tracker Appearance",
-			trackedInfoButton = "Tracked Info",
-			editControlsButton = "Edit Controls",
-			quickLoadButton = "QuickLoad Settings",
-			updaterButton = "Check for Updates"
+			battleSettingsButton = "Paramètres des combats",
+			trackerAppearanceButton = "Apparence du Tracker",
+			trackedInfoButton = "Infos & Logs",
+			editControlsButton = "Modifier les controles",
+			quickLoadButton = "Paramètres de chargement rapide",
+			updaterButton = "Recherche de mise à jour"
 		}
 		local icons = {"SWORD", "SPARKLES", "TRACKED_INFO_ICON", "CONTROLLER", "LIGHTNING_BOLT", "UPDATER_ICON"}
 		local order = {
@@ -120,7 +120,7 @@ local function MainOptionsScreen(initialSettings, initialTracker, initialProgram
 			{x = 2, y = 2},
 		}
 		for i, key in pairs(order) do
-			local text = buttonNames[key]
+			local text = stripChars(buttonNames[key])
 			local iconName = icons[i]
 			local frameName = key .. "Frame"
 			local frameInfo = FrameFactory.createScreenOpeningFrame(
@@ -142,7 +142,7 @@ local function MainOptionsScreen(initialSettings, initialTracker, initialProgram
 			Frame(
 			Box(
 				{x = Graphics.SIZES.SCREEN_WIDTH, y = 0},
-				{width = Graphics.SIZES.MAIN_SCREEN_WIDTH, height = constants.MAIN_OPTIONS_HEIGHT},
+				{width = 198, height = constants.MAIN_OPTIONS_HEIGHT},
 				"Main background color",
 				nil
 			),
@@ -154,7 +154,7 @@ local function MainOptionsScreen(initialSettings, initialTracker, initialProgram
 			Box(
 				{x = Graphics.SIZES.BORDER_MARGIN, y = Graphics.SIZES.BORDER_MARGIN},
 				{
-					width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
+					width = 198 - 2 * Graphics.SIZES.BORDER_MARGIN,
 					height = constants.MAIN_OPTIONS_HEIGHT - 2 * Graphics.SIZES.BORDER_MARGIN
 				},
 				"Top box background color",
@@ -174,7 +174,7 @@ local function MainOptionsScreen(initialSettings, initialTracker, initialProgram
 			Box(
 				{x = 0, y = constants.MAIN_BUTTONS_Y_OFFSET + 142},
 				{
-					width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
+					width = 198 - 2 * Graphics.SIZES.BORDER_MARGIN,
 					height = 21
 				},
 				nil,
@@ -189,7 +189,7 @@ local function MainOptionsScreen(initialSettings, initialTracker, initialProgram
 				ui.frames.mainInnerFrame,
 				Box(
 					{x = 0, y = 0},
-					{width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN, height = 18},
+					{width = 198 - 2 * Graphics.SIZES.BORDER_MARGIN, height = 18},
 					"Top box background color",
 					"Top box border color",
 					false
@@ -197,7 +197,7 @@ local function MainOptionsScreen(initialSettings, initialTracker, initialProgram
 			),
 			TextField(
 				"Configuration",
-				{x = 30, y = 1},
+				{x = 55, y = 1},
 				TextStyle(13, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
 			)
 		)

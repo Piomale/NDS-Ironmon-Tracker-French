@@ -55,7 +55,7 @@ local function UpdaterScreen(initialSettings, initialTracker, initialProgram)
     end
 
     local function onOpenReleaseNotesClick()
-        local releaseNotesURL = "https://github.com/Brian0255/NDS-Ironmon-Tracker/releases/latest"
+        local releaseNotesURL = "https://github.com/Piomale/NDS-Ironmon-Tracker-French/releases/latest"
         os.execute(string.format('start "" "%s"', releaseNotesURL))
     end
 

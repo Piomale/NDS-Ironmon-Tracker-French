@@ -74,10 +74,23 @@ local function BadgesAppearanceScreen(initialSettings, initialTracker, initialPr
                 text = text:gsub("_AND_", "/")
                 text = text:gsub("_", " ")
                 text = text:sub(1, 1):upper() .. text:sub(2):lower()
+				if settingName == "BOTH_ABOVE" then
+					text = "2 * Dessus"
+				elseif settingName == "BOTH_BELOW" then
+					text = "2 * Dessous"
+				elseif settingName == "BOTH_RIGHT" then
+					text = "2 * Droite"
+				elseif settingName == "BOTH_LEFT" then
+					text = "2 * Gauche"
+				elseif settingName == "LEFT_AND_RIGHT" then
+					text = "Droite +\nGauche"
+				elseif settingName == "ABOVE_AND_BELOW" then
+					text = "Dessus +\nDessous"
+				end
                 TextLabel(
                     Component(frames[i], Box({x = 0, y = 0}, {width = 50, height = constants.MAIN_BUTTON_HEIGHT}, nil, nil)),
                     TextField(
-                        text,
+                        stripChars(text),
                         {x = 0, y = 0},
                         TextStyle(
                             Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -138,7 +151,7 @@ local function BadgesAppearanceScreen(initialSettings, initialTracker, initialPr
                 program.saveSettings
             )
             table.insert(eventListeners, MouseClickEventListener(radioButton, onRadioButtonClick, radioButton))
-            local text = settingName .. " first"
+            local text = settingName .. " 1er"
             text = text:sub(1, 1):upper() .. text:sub(2):lower()
             TextLabel(
                 Component(
@@ -198,7 +211,7 @@ local function BadgesAppearanceScreen(initialSettings, initialTracker, initialPr
                 )
             ),
             TextField(
-                "Double Badge Alignment",
+                "Alignement 2 badges",
                 {x = 7, y = 3},
                 TextStyle(11, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
             )
@@ -215,7 +228,7 @@ local function BadgesAppearanceScreen(initialSettings, initialTracker, initialPr
                 )
             ),
             TextField(
-                "Double Badge Order",
+                "Ordre Double Badge",
                 {x = 20, y = 2},
                 TextStyle(11, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
             )
@@ -339,6 +352,15 @@ local function BadgesAppearanceScreen(initialSettings, initialTracker, initialPr
                 )
                 table.insert(eventListeners, MouseClickEventListener(radioButton, onRadioButtonClick, radioButton))
                 local text = settingName:sub(1, 1):upper() .. settingName:sub(2):lower()
+				if settingName == "ABOVE" then
+					text = "Dessus"
+				elseif settingName == "BELOW" then
+					text = "Dessous"
+				elseif settingName == "RIGHT" then
+					text = "Droite"
+				elseif settingName == "LEFT" then
+					text = "Gauche"
+				end
                 TextLabel(
                     Component(
                         singleBadgeFrames[i],
@@ -398,7 +420,7 @@ local function BadgesAppearanceScreen(initialSettings, initialTracker, initialPr
             TextLabel(
             Component(spacerFrame, Box({x = 0, y = 0}, {width = 0, height = 0}, nil, nil, false)),
             TextField(
-                "Spacer",
+                stripChars("Séparateur"),
                 {x = 0, y = 0},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -473,11 +495,17 @@ local function BadgesAppearanceScreen(initialSettings, initialTracker, initialPr
                 true,
                 program.saveSettings
             )
+			local text = ""
+			if settingNames[i] == "Show both Johto/Kanto" then
+                text = "Afficher Johto et Kanto"
+			elseif settingNames[i] == "Show one (will auto swap)" then
+                text = "Afficher un seul,\nbasculera automatiquement"
+            end
             table.insert(eventListeners, MouseClickEventListener(radioButton, onRadioButtonClick, radioButton))
             TextLabel(
                 Component(frames[i], Box({x = 0, y = 0}, {width = 32, height = constants.MAIN_BUTTON_HEIGHT}, nil, nil)),
                 TextField(
-                    settingNames[i],
+                    stripChars(text),
                     {x = 0, y = 0},
                     TextStyle(
                         Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -552,8 +580,8 @@ local function BadgesAppearanceScreen(initialSettings, initialTracker, initialPr
                 )
             ),
             TextField(
-                "HGSS Settings",
-                {x = 34, y = 3},
+                stripChars("Paramètres HGSS"),
+                {x = 28, y = 3},
                 TextStyle(11, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
             )
         )
@@ -602,8 +630,8 @@ local function BadgesAppearanceScreen(initialSettings, initialTracker, initialPr
                 )
             ),
             TextField(
-                "Badges Appearance",
-                {x = 14, y = 1},
+                "Apparence des badges",
+                {x = 5, y = 1},
                 TextStyle(13, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
             )
         )

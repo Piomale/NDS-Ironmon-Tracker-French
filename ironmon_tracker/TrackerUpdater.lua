@@ -24,8 +24,7 @@ local function TrackerUpdater(initialSettings)
     
         local archiveName = "NDS-Ironmon-Tracker-main.tar.gz"
         local folderName = "NDS-Ironmon-Tracker-main"
-
-        local TAR_URL = "https://github.com/Brian0255/NDS-Ironmon-Tracker/archive/main.tar.gz"
+        local TAR_URL = "https://github.com/Piomale/NDS-Ironmon-Tracker-French/archive/main.tar.gz"
     
         -- Each individual command listed in order, to be appended together later
         local batchCommands = {

@@ -28,12 +28,12 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
         TEXT_HEADER_HEIGHT = 18,
         BIND_BUTTON_FRAME_HEIGHT = 14,
         LOAD_NEXT_FRAME_HEIGHT = 54,
-        CONTROL_LABEL_WIDTH = 64,
+        CONTROL_LABEL_WIDTH = 90,
         CONTROL_VALUE_WIDTH = 26,
-        BIND_BUTTON_WIDTH = 30,
+        BIND_BUTTON_WIDTH = 45,
         BIND_BUTTON_HEIGHT = 14,
-        ADD_BUTTON_WIDTH = 54,
-        CLEAR_BUTTON_WIDTH = 32
+        ADD_BUTTON_WIDTH = 83,
+        CLEAR_BUTTON_WIDTH = 40
     }
     local ui = {}
     local eventListeners = {}
@@ -124,6 +124,16 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
             Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, Graphics.SIZES.BORDER_MARGIN, {x = 5, y = 0}),
             parentFrame
         )
+		local text = ""
+		if controlName == "CHANGE_VIEW" then
+			text = "Changer la vue:"
+		elseif controlName == "CYCLE_STAT" then
+			text = "Changer stats:"
+		elseif controlName == "CYCLE_PREDICTION" then
+			text = "Changer prediction:"
+		elseif controlName == "LOCK_ENEMY" then
+			text = "Verouillage ennemi:"
+		end
         local settingNameLabel =
             TextLabel(
             Component(
@@ -140,7 +150,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
                 )
             ),
             TextField(
-                controlName:sub(1, 1) .. controlName:sub(2):lower():gsub("_", " ") .. ":",
+                text,
                 {x = 0, y = 1},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -193,7 +203,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
                 )
             ),
             TextField(
-                "Bind",
+                "Modifier",
                 {x = 5, y = 2},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -216,7 +226,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
             Frame(
             Box(
                 {x = Graphics.SIZES.SCREEN_WIDTH, y = 0},
-                {width = Graphics.SIZES.MAIN_SCREEN_WIDTH, height = constants.MAIN_FRAME_HEIGHT},
+                {width = 198, height = constants.MAIN_FRAME_HEIGHT},
                 "Main background color",
                 nil
             ),
@@ -234,7 +244,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
                 Box(
                     {x = 5, y = 5},
                     {
-                        width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
+                        width = 198 - 2 * Graphics.SIZES.BORDER_MARGIN,
                         height = constants.TEXT_HEADER_HEIGHT
                     },
                     "Top box background color",
@@ -243,7 +253,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
                 )
             ),
             TextField(
-                "Edit Controls",
+                "Modifier les controles",
                 {x = 34, y = 1},
                 TextStyle(13, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
             )
@@ -253,7 +263,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
             Box(
                 {x = Graphics.SIZES.SCREEN_WIDTH, y = 0},
                 {
-                    width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
+                    width = 198 - 2 * Graphics.SIZES.BORDER_MARGIN,
                     height = constants.CONTROL_EDIT_FRAME_HEIGHT
                 },
                 "Top box background color",
@@ -277,7 +287,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
             Box(
                 {x = Graphics.SIZES.SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN, y = 0},
                 {
-                    width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
+                    width = 198 - 2 * Graphics.SIZES.BORDER_MARGIN,
                     height = constants.LOAD_NEXT_FRAME_HEIGHT
                 },
                 "Top box background color",
@@ -302,7 +312,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
                 )
             ),
             TextField(
-                "QuickLoad:",
+                "Recommencer rapidement:",
                 {x = 0, y = 1},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -361,7 +371,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
                 )
             ),
             TextField(
-                "Add button",
+                "Ajouter un bouton",
                 {x = 5, y = 2},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -389,7 +399,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
                 )
             ),
             TextField(
-                "Clear",
+                "Effacer",
                 {x = 5, y = 2},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -405,12 +415,12 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
         Box(
             {x = 0, y = 0},
             {
-                width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
+                width = 198 - 2 * Graphics.SIZES.BORDER_MARGIN,
                 height = 0
             },
             nil, nil
         ),
-        Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, 0, {x = 95, y = 0}),
+        Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, 0, {x = 142, y = 0}),
         ui.frames.controlEditFrame
     )
         ui.controls.goBackButton =
@@ -427,8 +437,8 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
                 )
             ),
             TextField(
-                "Go back",
-                {x = 3, y = 1},
+                "Retour",
+                {x = 5, y = 1},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
                     Graphics.FONT.DEFAULT_FONT_FAMILY,
