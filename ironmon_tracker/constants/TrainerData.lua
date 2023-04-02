@@ -17,7 +17,7 @@ TrainerData.TRAINERS = {
         FINAL_FIGHT_ID = 267,
         IMPORTANT_GROUPS = {
             {
-                groupName = "Barry",
+                groupName = "Rene",
                 trainerType = TrainerData.TRAINER_TYPES.RIVAL,
                 battles = {
                     {location = "Route 203", ids = {248, 249, 247}, iv = 3},
@@ -64,7 +64,7 @@ TrainerData.TRAINERS = {
         FINAL_FIGHT_ID = 267,
         IMPORTANT_GROUPS = {
             {
-                groupName = "Barry",
+                groupName = "Rene",
                 trainerType = TrainerData.TRAINER_TYPES.RIVAL,
                 battles = {
                     {location = "Lab", ids = {851, 852, 850}, iv = 0},

@@ -121,7 +121,7 @@ local function PokemonStatScreen(initialSettings, initialTracker, initialProgram
                 if #level == 1 then
                     level = "  " .. level
                 end
-                moveString = level .. " " .. MoveData.MOVES[moveInfo.move + 1].name
+                moveString = level .. " " .. stripChars(MoveData.MOVES[moveInfo.move + 1].name)
                 readMoveIntoListener(i, moveInfo.move)
             end
             ui.controls.moveLabels[i].setTextColorKey("Top box text color")
@@ -143,7 +143,7 @@ local function PokemonStatScreen(initialSettings, initialTracker, initialProgram
                 local moveID = -1
                 if TM ~= -1 then
                     moveID = logInfo.getTMs()[TM]
-                    local moveName = MoveData.MOVES[moveID + 1].name
+                    local moveName = stripChars(MoveData.MOVES[moveID + 1].name)
                     moveString = string.format("TM %02d " .. moveName, TM)
                     local textColorKey = "Top box text color"
                     if canLearn then
@@ -171,9 +171,9 @@ local function PokemonStatScreen(initialSettings, initialTracker, initialProgram
                 local abilityInfo = AbilityData.ABILITIES[abilityID + 1]
                 local hoverListener = abilityHoverListeners[i]
                 local params = hoverListener.getOnHoverParams()
-                params.text = abilityInfo.description
+                params.text = stripChars(abilityInfo.description)
                 hoverListener.setOnHoverParams(params)
-                ui.controls.abilityLabels[i].setText(i .. ". " .. abilityInfo.name)
+                ui.controls.abilityLabels[i].setText(i .. ". " .. stripChars(abilityInfo.name))
             end
         end
     end

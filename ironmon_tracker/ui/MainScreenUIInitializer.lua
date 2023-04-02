@@ -262,7 +262,7 @@ local function MainScreenUIInitializer(ui, gameInfo)
                     height = constants.MOVE_HEADER_HEIGHT
                 }
             ),
-            Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, 0, {x = 3, y = 3}),
+            Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, 0, {x = -2, y = 3}),
             ui.frames.mainInnerFrame
         )
         ui.frames.moveInfoFrame =
@@ -574,7 +574,7 @@ local function MainScreenUIInitializer(ui, gameInfo)
                 )
             ),
             TextField(
-                "HP: 29/29",
+                "PV: 29/29",
                 Graphics.SIZES.DEFAULT_TEXT_OFFSET,
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -737,7 +737,7 @@ local function MainScreenUIInitializer(ui, gameInfo)
                         x = 0,
                         y = 0
                     },
-                    {width = 80, height = 10}
+                    {width = 86, height = 10}
                 )
             ),
             TextField(
@@ -824,6 +824,7 @@ local function MainScreenUIInitializer(ui, gameInfo)
 
     function self.initStatControls()
         local stats = {"HP", "ATK", "DEF", "SPA", "SPD", "SPE"}
+		local trad = { HP = "PV", ATK = "ATQ", DEF = "DEF", SPA = "ATQ.S", SPD = "DEF.S", SPE = "VIT"}
         for _, stat in pairs(stats) do
             local frameName = stat .. "Frame"
             ui.frames[frameName] =
@@ -844,7 +845,7 @@ local function MainScreenUIInitializer(ui, gameInfo)
                 TextLabel(
                 Component(ui.frames[frameName], Box({x = 0, y = 0}, {width = 25, height = 10}, nil, nil, nil)),
                 TextField(
-                    stat,
+                    trad[stat],
                     {x = 0, y = -2},
                     TextStyle(
                         Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -999,7 +1000,7 @@ local function MainScreenUIInitializer(ui, gameInfo)
             TextLabel(
             Component(ui.frames.healFrame, Box({x = 0, y = 0}, {width = 80, height = 9}, nil, nil)),
             TextField(
-                "Heals in bag:",
+                "Soins dans le sac:",
                 {x = 1, y = 0},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,

@@ -1,7 +1,5 @@
 ItemData = {}
-
 ItemData.ITEMS = {}
-
 ItemData.HEALING_TYPE = MiscUtils.readOnly({CONSTANT = 0, PERCENTAGE = 1})
 ItemData.NATURE_SPECIFIC_BERRIES = {
     ["Figy Berry"] = {
@@ -40,79 +38,79 @@ ItemData.STATUS_ITEMS =
     MiscUtils.readOnly(
     {
         [23] = {
-            name = "Full Restore",
+            name = "Baie Papaya",
             status = MiscData.STATUS_TYPE.ALL
         },
         [591] = {
-            name = "Casteliacone",
+            name = "Baie Papaya",
             status = MiscData.STATUS_TYPE.ALL
         },
         [27] = {
-            name = "Full Heal",
+            name = "Baie Papaya",
             status = MiscData.STATUS_TYPE.ALL
         },
         [36] = {
-            name = "Heal Powder",
+            name = "Baie Papaya",
             status = MiscData.STATUS_TYPE.ALL
         },
         [42] = {
-            name = "Lava Cookie",
+            name = "Baie Papaya",
             status = MiscData.STATUS_TYPE.ALL
         },
         [157] = {
-            name = "Lum Berry",
+            name = "Baie Papaya",
             status = MiscData.STATUS_TYPE.ALL
         },
         [54] = {
-            name = "Old Gateau",
+            name = "Baie Papaya",
             status = MiscData.STATUS_TYPE.ALL
         },
         [19] = {
-            name = "Burn Heal",
+            name = "Baie Papaya",
             status = MiscData.STATUS_TYPE.BURN
         },
         [152] = {
-            name = "Rawst Berry",
+            name = "Baie Papaya",
             status = MiscData.STATUS_TYPE.BURN
         },
         [156] = {
-            name = "Persim Berry",
+            name = "Baie Papaya",
             status = MiscData.STATUS_TYPE.CONFUSE
         },
         [153] = {
-            name = "Aspear Berry",
+            name = "Baie Papaya",
             status = MiscData.STATUS_TYPE.FREEZE
         },
         [20] = {
-            name = "Ice Heal",
+            name = "Baie Papaya",
             status = MiscData.STATUS_TYPE.FREEZE
         },
         [219] = {
-            name = "Mental Herb",
+            name = "Baie Papaya",
             status = MiscData.STATUS_TYPE.INFATUATION
         },
         [149] = {
-            name = "Cheri Berry",
+            name = "Baie Papaya",
             status = MiscData.STATUS_TYPE.PARALYZE
         },
         [22] = {
-            name = "Paralyze Heal",
+            name = "Baie Papaya",
             status = MiscData.STATUS_TYPE.PARALYZE
         },
         [18] = {
-            name = "Antidote",
+            name = "Baie Papaya",
             status = MiscData.STATUS_TYPE.POISON
         },
         [151] = {
-            name = "Pecha Berry",
+            name = "Baie Papaya",
             status = MiscData.STATUS_TYPE.POISON
         },
         [21] = {
-            name = "Awakening",
+            name = "Baie Papaya",
             status = MiscData.STATUS_TYPE.SLEEP
         },
         [150] = {
-            name = "Chesto Berry",
+            name = "Baie Papaya",
             status = MiscData.STATUS_TYPE.SLEEP
         }
     }
@@ -145,320 +143,317 @@ ItemData.HEALING_ITEMS =
     MiscUtils.readOnly(
     {
         [23] = {
-            name = "Full Restore",
+            name = "Baie Papaya",
             amount = 100,
             type = ItemData.HEALING_TYPE.PERCENTAGE
         },
         [24] = {
-            name = "Max Potion",
+            name = "Baie Papaya",
             amount = 100,
             type = ItemData.HEALING_TYPE.PERCENTAGE
         },
         [158] = {
-            name = "Sitrus Berry",
+            name = "Baie Papaya",
             amount = 25,
             type = ItemData.HEALING_TYPE.PERCENTAGE
         },
         [162] = {
-            name = "Aguav Berry",
+            name = "Baie Papaya",
             amount = 12.5,
             type = ItemData.HEALING_TYPE.PERCENTAGE
         },
         [208] = {
-            name = "Enigma Berry",
+            name = "Baie Papaya",
             amount = 12.5,
             type = ItemData.HEALING_TYPE.PERCENTAGE
         },
         [159] = {
-            name = "Figy Berry",
+            name = "Baie Papaya",
             amount = 12.5,
             type = ItemData.HEALING_TYPE.PERCENTAGE
         },
         [163] = {
-            name = "Iapapa Berry",
+            name = "Baie Papaya",
             amount = 12.5,
             type = ItemData.HEALING_TYPE.PERCENTAGE
         },
         [161] = {
-            name = "Mago Berry",
+            name = "Baie Papaya",
             amount = 12.5,
             type = ItemData.HEALING_TYPE.PERCENTAGE
         },
         [160] = {
-            name = "Wiki Berry",
+            name = "Baie Papaya",
             amount = 12.5,
             type = ItemData.HEALING_TYPE.PERCENTAGE
         },
         [35] = {
-            name = "Energy Root",
+            name = "Baie Papaya",
             amount = 200,
             type = ItemData.HEALING_TYPE.CONSTANT
         },
         [25] = {
-            name = "Hyper Potion",
+            name = "Baie Papaya",
             amount = 200,
             type = ItemData.HEALING_TYPE.CONSTANT
         },
         [33] = {
-            name = "Moomoo Milk",
+            name = "Baie Papaya",
             amount = 100,
             type = ItemData.HEALING_TYPE.CONSTANT
         },
         [32] = {
-            name = "Lemonade",
+            name = "Baie Papaya",
             amount = 80,
             type = ItemData.HEALING_TYPE.CONSTANT
         },
         [31] = {
-            name = "Soda Pop",
+            name = "Baie Papaya",
             amount = 60,
             type = ItemData.HEALING_TYPE.CONSTANT
         },
         [26] = {
-            name = "Super Potion",
+            name = "Baie Papaya",
             amount = 50,
             type = ItemData.HEALING_TYPE.CONSTANT
         },
         [34] = {
-            name = "EnergyPowder",
+            name = "Baie Papaya",
             amount = 50,
             type = ItemData.HEALING_TYPE.CONSTANT
         },
         [30] = {
-            name = "Fresh Water",
+            name = "Baie Papaya",
             amount = 50,
             type = ItemData.HEALING_TYPE.CONSTANT
         },
         [43] = {
-            name = "Berry Juice",
+            name = "Baie Papaya",
             amount = 20,
             type = ItemData.HEALING_TYPE.CONSTANT
         },
         [17] = {
-            name = "Potion",
+            name = "Baie Papaya",
             amount = 20,
             type = ItemData.HEALING_TYPE.CONSTANT
         },
         [504] = {
-            name = "RageCandyBar",
+            name = "Baie Papaya",
             amount = 20,
             type = ItemData.HEALING_TYPE.CONSTANT
         },
         [134] = {
-            name = "Sweet Heart",
+            name = "Baie Papaya",
             amount = 20,
             type = ItemData.HEALING_TYPE.CONSTANT
         },
         [155] = {
-            name = "Oran Berry",
+            name = "Baie Papaya",
             amount = 10,
             type = ItemData.HEALING_TYPE.CONSTANT
         }
     }
 )
-
 ItemData.GEN_4_ITEMS = {
     [1] = {
-        name = "Master Ball",
-        description = "Catches a wild Pok" .. Chars.accentedE .. "mon every time."
+        name = "Baie Papaya",
+        description = "Tenue, cette Baie restaure des PV en cas de besoin, mais rend confus si le Pokémon n’aime pas son goût."
     },
     [2] = {
-        name = "Ultra Ball",
-        description = "Tries to catch a wild Pokemon. Success rate is 2x."
+        name = "Hyper Ball",
+        description = "Une Ball ultraperformante dont le taux de réussite est supérieur à celui de la Super Ball."
     },
     [3] = {
-        name = "Great Ball",
-        description = "Tries to catch a wild Pokemon. Success rate is 1.5x."
+        name = "Super Ball",
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [4] = {
         name = "Poke Ball",
-        description = "Tries to catch a wild Pokemon."
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [5] = {
         name = "Safari Ball",
-        description = "Tries to catch a wild Pok" ..
-            Chars.accentedE .. "mon in the Great Marsh or Safari Zone. Success rate is 1.5x."
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [6] = {
-        name = "Net Ball",
-        description = "Tries to catch a wild Pokemon. Success rate is 3x for water and bug Pokemon."
+        name = "Filet Ball",
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [7] = {
-        name = "Dive Ball",
-        description = "Tries to catch a wild Pokemon. Success rate is 3.5x when underwater, fishing, or surfing."
+        name = "Scuba Ball",
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [8] = {
-        name = "Nest Ball",
-        description = "Tries to catch a wild Pokemon. Success rate is 3.9x for level 1 Pokemon, and drops steadily to 1x at level 30."
+        name = "Faiblo Ball",
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [9] = {
-        name = "Repeat Ball",
-        description = "Tries to catch a wild Pokemon. Success rate is 3x for previously-caught Pokemon."
+        name = "Bis Ball",
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [10] = {
-        name = "Timer Ball",
-        description = "Tries to catch a wild Pokemon. Success rate increases by 0.1x (Gen V: 0.3x) every turn, to a max of 4x."
+        name = "Chrono Ball",
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [11] = {
-        name = "Luxury Ball",
-        description = "Tries to catch a wild Pokemon. Caught Pok" ..
-            Chars.accentedE .. "mon start with 200 happiness."
+        name = "Luxe Ball",
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [12] = {
-        name = "Premier Ball",
-        description = "Tries to catch a wild Pokemon."
+        name = "Honor Ball",
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [13] = {
-        name = "Dusk Ball",
-        description = "Tries to catch a wild Pokemon. Success rate is 3.5x at night and in caves."
+        name = "Sombre Ball",
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [14] = {
-        name = "Heal Ball",
-        description = "Tries to catch a wild Pokemon. Caught Pok" .. Chars.accentedE .. "mon are immediately healed."
+        name = "Soin Ball",
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [15] = {
-        name = "Quick Ball",
-        description = "Tries to catch a wild Pokemon. Success rate is 4x (Gen V: 5x), but only on the first turn."
+        name = "Rapide Ball",
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [16] = {
-        name = "Cherish Ball",
-        description = "Tries to catch a wild Pokemon."
+        name = "Mémoire Ball",
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [17] = {
         name = "Potion",
-        description = "Restores 20 HP."
+        description = "Un spray qui soigne les blessures. Restaure 20 PV à un Pokémon."
     },
     [18] = {
         name = "Antidote",
-        description = "Cures poison."
+        description = "Un médicament sous forme de spray. Guérit un Pokémon empoisonné."
     },
     [19] = {
-        name = "Burn Heal",
-        description = "Cures a burn."
+        name = "Anti-Brûle",
+        description = "Un médicament sous forme de spray. Soigne les brûlures d’un Pokémon."
     },
     [20] = {
-        name = "Ice Heal",
-        description = "Cures freezing."
+        name = "Antigel",
+        description = "Un médicament sous forme de spray. Réchauffe un Pokémon gelé."
     },
     [21] = {
-        name = "Awakening",
-        description = "Cures sleep."
+        name = "Réveil",
+        description = "Un médicament sous forme de spray. Réveille un Pokémon endormi."
     },
     [22] = {
-        name = "Paralyze Heal",
-        description = "Cures paralysis."
+        name = "Anti-Para",
+        description = "Un médicament sous forme de spray. Soigne un Pokémon de la paralysie."
     },
     [23] = {
-        name = "Full Restore",
-        description = "Restores HP to full and cures any status ailment and confusion."
+        name = "Guérison",
+        description = "Un médicament qui restaure tous les PV d’un Pokémon et soigne tous ses problèmes de statut."
     },
     [24] = {
-        name = "Max Potion",
-        description = "Restores HP to full."
+        name = "Potion",
+        description = "Un spray qui soigne les blessures. Restaure 20 PV à un Pokémon."
     },
     [25] = {
-        name = "Hyper Potion",
-        description = "Restores 200 HP."
+        name = "Potion",
+        description = "Un spray qui soigne les blessures. Restaure 20 PV à un Pokémon."
     },
     [26] = {
-        name = "Super Potion",
-        description = "Restores 50 HP."
+        name = "Potion",
+        description = "Un spray qui soigne les blessures. Restaure 20 PV à un Pokémon."
     },
     [27] = {
-        name = "Full Heal",
-        description = "Cures any status ailment and confusion."
+        name = "Total Soin",
+        description = "Un médicament sous forme de spray. Soigne tous les problèmes de statut d’un Pokémon."
     },
     [28] = {
-        name = "Revive",
-        description = "Revives with half HP."
+        name = "Rappel",
+        description = "Un médicament qui ranime un Pokémon K.O. et restaure la moitié de ses PV max."
     },
     [29] = {
-        name = "Max Revive",
-        description = "Revives with full HP."
+        name = "Rappel",
+        description = "Un médicament qui ranime un Pokémon K.O. et restaure la moitié de ses PV max."
     },
     [30] = {
-        name = "Fresh Water",
-        description = "Restores 50 HP."
+        name = "Eau Fraîche",
+        description = "Une eau riche en minéraux. Restaure 50 PV à un Pokémon."
     },
     [31] = {
-        name = "Soda Pop",
-        description = "Restores 60 HP."
+        name = "Soda Cool",
+        description = "Une boisson pétillante. Restaure 60 PV à un Pokémon."
     },
     [32] = {
-        name = "Lemonade",
-        description = "Restores 80 HP."
+        name = "Limonade",
+        description = "Une boisson très sucrée. Restaure 80 PV à un Pokémon."
     },
     [33] = {
-        name = "Moomoo Milk",
-        description = "Restores 100 HP."
+        name = "Lait Meumeu",
+        description = "Un lait très nourrissant. Restaure 100 PV à un Pokémon."
     },
     [34] = {
         name = "Energy Powder",
         description = "Restores 50 HP, but lowers happiness."
     },
     [35] = {
-        name = "Energy Root",
-        description = "Restores 200 HP, but lowers happiness."
+        name = "Racinénergie",
+        description = "Une racine très amère. Restaure 200 PV à un Pokémon."
     },
     [36] = {
-        name = "Heal Powder",
-        description = "Cures any status ailment, but lowers happiness."
+        name = "Poudre Soin",
+        description = "Une poudre médicinale très amère. Soigne tous les problèmes de statut d’un Pokémon."
     },
     [37] = {
-        name = "Revival Herb",
-        description = "Revives with full HP, but lowers happiness."
+        name = "Herbe Rappel",
+        description = "Une herbe médicinale très amère. Ranime un Pokémon K.O. et restaure tous ses PV."
     },
     [38] = {
-        name = "Ether",
-        description = "Restores 10 PP for one move."
+        name = "Huile",
+        description = "Un médicament qui ranime un Pokémon K.O. et restaure la moitié de ses PV max."
     },
     [39] = {
-        name = "Max Ether",
-        description = "Restores PP to full for one move."
+        name = "Huile",
+        description = "Restaure jusqu’à 10 PP d’une capacité sélectionnée."
     },
     [40] = {
-        name = "Elixir",
-        description = "Restores 10 PP for each move."
+        name = "Élixir",
+        description = "Restaure 10 PP de toutes les capacités d’un Pokémon."
     },
     [41] = {
-        name = "Max Elixir",
-        description = "Restores PP to full for each move."
+        name = "Max Élixir",
+        description = "Restaure tous les PP de toutes les capacités d’un Pokémon."
     },
     [42] = {
         name = "Lava Cookie",
-        description = "Cures any status ailment and confusion."
+        description = "La spécialité de la ville de Vermilava. Soigne tous les problèmes de statut d’un Pokémon."
     },
     [43] = {
-        name = "Berry Juice",
-        description = "Restores 20 HP."
+        name = "Jus de Baie",
+        description = "Une boisson 100% pur jus de Baies. Restaure 20 PV à un Pokémon."
     },
     [44] = {
-        name = "Sacred Ash",
-        description = "Revives all fainted Pok" .. Chars.accentedE .. "mon with full HP."
+        name = "Cendresacrée",
+        description = "Ranime tous les Pokémon K.O. et restaure tous leurs PV."
     },
     [45] = {
         name = "Hp Up",
-        description = "Raises HP effort and happiness."
+        description = "Un médicament qui ranime un Pokémon K.O. et restaure la moitié de ses PV max."
     },
     [46] = {
-        name = "Protein",
-        description = "Raises Attack effort and happiness."
+        name = "Protéine",
+        description = "Une boisson très nutritive qui monte l’Attaque de base d’un Pokémon."
     },
     [47] = {
-        name = "Iron",
-        description = "Raises Defense effort and happiness."
+        name = "Fer",
+        description = "Une boisson très nutritive qui monte la Défense de base d’un Pokémon."
     },
     [48] = {
-        name = "Carbos",
-        description = "Raises Speed effort and happiness."
+        name = "Carbone",
+        description = "Une boisson très nutritive qui monte la Vitesse de base d’un Pokémon."
     },
     [49] = {
         name = "Calcium",
-        description = "Raises Special Attack effort and happiness."
+        description = "Une boisson très nutritive qui monte l’Attaque Spéciale de base d’un Pokémon."
     },
     [50] = {
-        name = "Rare Candy",
-        description = "Causes a level-up and raises happiness."
+        name = "Super Bonbon",
+        description = "Un bonbon plein d’énergie. Il permet à un Pokémon de gagner un niveau d’expérience."
     },
     [51] = {
         name = "Pp Up",
@@ -466,55 +461,55 @@ ItemData.GEN_4_ITEMS = {
     },
     [52] = {
         name = "Zinc",
-        description = "Raises Special Defense and happiness."
+        description = "Une boisson très nutritive qui monte la Défense Spéciale d’un Pokémon."
     },
     [53] = {
         name = "Pp Max",
         description = "Raises a move's max PP by 60%."
     },
     [54] = {
-        name = "Old Gateau",
-        description = "Cures any status ailment and confusion."
+        name = "Vieux Gâteau",
+        description = "Spécialité du Vieux Château. Il soigne tous les problèmes de statut d’un Pokémon."
     },
     [55] = {
-        name = "Guard Spec",
-        description = "Prevents stat changes in battle for five turns in battle. Raises happiness."
+        name = "Défense Spéc",
+        description = "Empêche la réduction des stats de tous les Pokémon de l’équipe pendant 5 tours."
     },
     [56] = {
-        name = "Dire Hit",
-        description = "Increases the chance of a critical hit in battle. Raises happiness."
+        name = "Muscle +",
+        description = "Monte fortement le taux de critiques. Utilisable une seule fois. L’effet disparaît si le Pokémon se retire."
     },
     [57] = {
-        name = "X Attack",
-        description = "Raises Attack by one stage in battle. Raises happiness."
+        name = "Attaque +",
+        description = "Monte l’Attaque pendant un combat. L’effet s’estompe si le Pokémon se retire."
     },
     [58] = {
-        name = "X Defense",
-        description = "Raises Defense by one stage in battle. Raises happiness."
+        name = "Défense +",
+        description = "Monte la Défense pendant un combat. L’effet s’estompe si le Pokémon se retire."
     },
     [59] = {
-        name = "X Speed",
-        description = "Raises Speed by one stage in battle. Raises happiness."
+        name = "Vitesse +",
+        description = "Monte la Vitesse pendant un combat. L’effet s’estompe si le Pokémon se retire."
     },
     [60] = {
-        name = "X Accuracy",
-        description = "Raises accuracy by one stage in battle. Raises happiness."
+        name = "Précision +",
+        description = "Monte la Précision pendant un combat. L’effet s’estompe si le Pokémon se retire."
     },
     [61] = {
-        name = "X Sp-atk",
-        description = "Raises Special Attack by one stage in battle. Raises happiness."
+        name = "Spécial +",
+        description = "onte l’Attaque Spéciale pendant un combat. L’effet s’estompe si le Pokémon se retire."
     },
     [62] = {
-        name = "X Sp-def",
-        description = "Raises Special Defense by one stage in battle. Raises happiness."
+        name = "Déf. Spé. +",
+        description = "Monte la Défense Spéciale pendant un combat. L’effet s’estompe si le Pokémon se retire."
     },
     [63] = {
         name = "Poke Doll",
         description = "Ends a wild battle."
     },
     [64] = {
-        name = "Fluffy Tail",
-        description = "Ends a wild battle."
+        name = "Queue Skitty",
+        description = "Objet qui attire les Pokémon. Permet de s’enfuir d’un combat contre un Pokémon sauvage."
     },
     [65] = {
         name = "Blue Flute",
@@ -529,104 +524,104 @@ ItemData.GEN_4_ITEMS = {
         description = "Cures attraction."
     },
     [68] = {
-        name = "Black Flute",
-        description = "Halves the wild Pok" .. Chars.accentedE .. "mon encounter rate."
+        name = "Flûte Noire",
+        description = "Jouet en forme de flûte en verre noir. Les amateurs en donnent un bon prix."
     },
     [69] = {
-        name = "White Flute",
-        description = "Doubles the wild Pok" .. Chars.accentedE .. "mon encounter rate."
+        name = "Flûteblanche",
+        description = "Jouet en forme de flûte en verre blanc. Les amateurs en donnent un bon prix."
     },
     [70] = {
         name = "Shoal Salt",
-        description = "No effect. "
+        description = "No effect."
     },
     [71] = {
         name = "Shoal Shell",
-        description = "No effect. "
+        description = "No effect."
     },
     [72] = {
         name = "Red Shard",
-        description = "No effect. Can be traded for items or moves."
+        description = "Pas d'effet. Peut être échangé contre des objets ou des capacités"
     },
     [73] = {
         name = "Blue Shard",
-        description = "No effect. Can be traded for items or moves."
+        description = "Pas d'effet. Peut être échangé contre des objets ou des capacités"
     },
     [74] = {
         name = "Yellow Shard",
-        description = "No effect. Can be traded for items or moves."
+        description = "Pas d'effet. Peut être échangé contre des objets ou des capacités"
     },
     [75] = {
         name = "Green Shard",
-        description = "No effect. Can be traded for items or moves."
+        description = "Pas d'effet. Peut être échangé contre des objets ou des capacités"
     },
     [76] = {
-        name = "Super Repel",
-        description = "For 200 steps, prevents wild encounters of level lower than your party's lead Pokemon."
+        name = "Superepousse",
+        description = "Repousse les Pokémon sauvages faibles pendant 200 pas."
     },
     [77] = {
-        name = "Max Repel",
-        description = "For 250 steps, prevents wild encounters of level lower than your party's lead Pokemon."
+        name = "Max Repousse",
+        description = "Repousse les Pokémon sauvages faibles pendant 250 pas."
     },
     [78] = {
-        name = "Escape Rope",
-        description = "Transports user to the outside entrance of a cave."
+        name = "Corde Sortie",
+        description = "Une corde longue et solide permettant de sortir rapidement d’une grotte ou d’un donjon."
     },
     [79] = {
-        name = "Repel",
-        description = "For 100 steps, prevents wild encounters of level lower than your party's lead Pokemon."
+        name = "Repousse",
+        description = "Repousse les Pokémon sauvages faibles pendant 100 pas."
     },
     [80] = {
-        name = "Sun Stone",
-        description = "Evolves a Cottonee into Whimsicott, a Gloom into Bellossom, a Petilil into Lilligant, or a Sunkern into Sunflora."
+        name = "Pierresoleil",
+        description = "Une pierre étrange qui fait évoluer certaines espèces de Pokémon. Elle est rouge comme le soleil."
     },
     [81] = {
-        name = "Moon Stone",
-        description = "Evolves a Clefairy into Clefable, a Jigglypuff into Wigglytuff, a Munna into Musharna, a Nidorina into Nidoqueen, a Nidorino into Nidoking, or a Skitty into Delcatty."
+        name = "Pierre Lune",
+        description = "Une pierre étrange qui fait évoluer certaines espèces de Pokémon. Elle est noire comme la nuit."
     },
     [82] = {
-        name = "Fire Stone",
-        description = "Evolves an Eevee into Flareon, a Growlithe into Arcanine, a Pansear into Simisear, or a Vulpix into Ninetales."
+        name = "Pierre Feu",
+        description = "Une pierre étrange qui fait évoluer certaines espèces de Pokémon. Elle est jaune et orange."
     },
     [83] = {
         name = "Thunder Stone",
         description = "Evolves an Eelektrik into Eelektross, an Eevee into Jolteon, or a Pikachu into Raichu."
     },
     [84] = {
-        name = "Water Stone",
-        description = "Evolves an Eevee into Vaporeon, a Lombre into Ludicolo, a Panpour into Simipour, a Poliwhirl into Poliwrath, a Shellder into Cloyster, or a Staryu into Starmie."
+        name = "Pierre Eau",
+        description = "Une pierre étrange qui fait évoluer certaines espèces de Pokémon. Elle est de couleur bleue."
     },
     [85] = {
-        name = "Leaf Stone",
-        description = "Evolves an Exeggcute into Exeggutor, a Gloom into Vileplume, a Nuzleaf into Shiftry, a Pansage into Simisage, or a Weepinbell into Victreebel."
+        name = "Pierreplante",
+        description = "Une pierre étrange qui fait évoluer certaines espèces de Pokémon. Une feuille est dessinée dessus."
     },
     [86] = {
         name = "Tiny Mushroom",
         description = "Fire Red and Leaf Green: Trade two for prior Level-up moves. Sell for 250 Pokedollars, or to Hungry Maid for 500 Pokedollars."
     },
     [87] = {
-        name = "Big Mushroom",
-        description = "Fire Red and Leaf Green: Trade for prior Level-up moves. Sell for 2500 Pokedollars, or to Hungry Maid for 5000 Pokedollars."
+        name = "Gros Champi",
+        description = "Un grand champignon plutôt rare. Il est très populaire parmi certains fans dévoués."
     },
     [88] = {
-        name = "Pearl",
-        description = "Sell for 700 Pokedollars, or to Ore Collector for 1400 Pokedollars."
+        name = "Perle",
+        description = "Une petite perle qui brille d’une jolie couleur argent. Peut être vendue à bas prix aux magasins."
     },
     [89] = {
-        name = "Big Pearl",
-        description = "Sell for 3750 Pokedollars, or to Ore Collector for 7500 Pokedollars."
+        name = "Grande Perle",
+        description = "Une grande perle qui brille d’une jolie couleur argent. Peut être vendue à bon prix aux magasins."
     },
     [90] = {
-        name = "Stardust",
-        description = "Sell for 1000 Pokedollars, or to Ore Collector for 2000 Pokedollars."
+        name = "Pouss.Étoile",
+        description = "Sable rouge ravissant, aux grains très fins. Peut être vendu à bon prix aux magasins."
     },
     [91] = {
-        name = "Star Piece",
-        description = "Platinum: Trade for one of each color Shard. Black and White: Trade for PP Up. Sell for 4900 Pokedollars, or to Ore Collector for 9800 Pokedollars."
+        name = "Morc. Étoile",
+        description = "Fragment de gemme qui brille d’un éclat rouge. Peut se vendre à bon prix aux magasins."
     },
     [92] = {
-        name = "Nugget",
-        description = "Sell for 5000 Pokedollars, or to Ore Collector for 10000 Pokedollars."
+        name = "Pépite",
+        description = "Pépite d’or pur qui brille magnifiquement. Peut être vendue à bon prix aux magasins."
     },
     [93] = {
         name = "Heart Scale",
@@ -637,20 +632,20 @@ ItemData.GEN_4_ITEMS = {
         description = "Used to attract wild Pok" .. Chars.accentedE .. "mon."
     },
     [95] = {
-        name = "Growth Mulch",
-        description = "Growing time of berries is reduced, but the soil dries out faster."
+        name = "Fertipousse",
+        description = "Un engrais utilisé sur sol meuble. Les amateurs en donnent un bon prix."
     },
     [96] = {
-        name = "Damp Mulch",
-        description = "Growing time of berries is increased, but the soil dries out slower."
+        name = "Fertihumide",
+        description = "Un engrais utilisé sur sol meuble. Les amateurs en donnent un bon prix."
     },
     [97] = {
-        name = "Stable Mulch",
-        description = "Berries stay on the plant for longer than their usual time."
+        name = "Fertistable",
+        description = "Un engrais utilisé sur sol meuble. Les amateurs en donnent un bon prix."
     },
     [98] = {
-        name = "Gooey Mulch",
-        description = "Berries regrow from dead plants an increased number of times."
+        name = "Fertiglu",
+        description = "Un engrais utilisé sur sol meuble. Les amateurs en donnent un bon prix."
     },
     [99] = {
         name = "Root Fossil",
@@ -681,36 +676,36 @@ ItemData.GEN_4_ITEMS = {
         description = "Can be revived into a Cranidos."
     },
     [106] = {
-        name = "Rare Bone",
-        description = "Sell for 5000 Pokedollars, or to Bone Man for 10000 Pokedollars."
+        name = "Os Rare",
+        description = "Un os d’une grande valeur pour l’archéologie Pokémon. Peut être vendu à bon prix aux magasins."
     },
     [107] = {
-        name = "Shiny Stone",
-        description = "Evolves a Minccino into Cinccino, a Roselia into Roserade, or a Togetic into Togekiss."
+        name = "Pierre Éclat",
+        description = "Pierre étrange qui fait évoluer certaines espèces de Pokémon. Elle brille d’une lumière aveuglante."
     },
     [108] = {
-        name = "Dusk Stone",
-        description = "Evolves a Lampent into Chandelure, a Misdreavus into Mismagius, or a Murkrow into Honchkrow."
+        name = "Pierre Nuit",
+        description = "Pierre étrange qui fait évoluer certaines espèces de Pokémon. Elle est sombre comme une nuit sans lune."
     },
     [109] = {
-        name = "Dawn Stone",
-        description = "Evolves a male Kirlia into Gallade or a female Snorunt into Froslass."
+        name = "Pierre Aube",
+        description = "Pierre étrange qui fait évoluer certaines espèces de Pokémon. Elle brille comme un œil."
     },
     [110] = {
-        name = "Oval Stone",
-        description = "Level-up during Day on a Happiny: Holder evolves into Chansey."
+        name = "Pierre Ovale",
+        description = "Pierre étrange qui fait évoluer certaines espèces de Pokémon. Elle a la forme d’un œuf."
     },
     [111] = {
         name = "Odd Keystone",
         description = "Use on the tower on Route 209 to encounter Spiritomb if you have at least 32 Underground greetings."
     },
     [135] = {
-        name = "Adamant Orb",
-        description = "Boosts the damage from Dialga's Dragon-type and Steel-type moves by 20%."
+        name = "Orbe Adamant",
+        description = "Orbe très brillant destiné à Dialga. Augmente la puissance des capacités de type Dragon et Acier."
     },
     [136] = {
-        name = "Lustrous Orb",
-        description = "Boosts the damage from Palkia's Dragon-type and Water-type moves by 20%."
+        name = "Orbe Perlé",
+        description = "Bel orbe luisant destiné à Palkia. Augmente la puissance des capacités de type Dragon et Eau."
     },
     [137] = {
         name = "Grass Mail",
@@ -761,69 +756,64 @@ ItemData.GEN_4_ITEMS = {
         description = "Lets a Trainer write a message and send it via Pok" .. Chars.accentedE .. "mon trade."
     },
     [149] = {
-        name = "Cheri Berry",
-        description = "Consumed when paralyzed to cure paralysis."
+        name = "Baie Ceriz",
+        description = "Baie qui soigne la paralysie lorsqu’elle est tenue par un Pokémon."
     },
     [150] = {
-        name = "Chesto Berry",
-        description = "Consumed when asleep to cure sleep."
+        name = "Baie Maron",
+        description = "Baie qui soigne le sommeil lorsqu’elle est tenue par un Pokémon."
     },
     [151] = {
-        name = "Pecha Berry",
-        description = "Consumed when poisoned to cure poison."
+        name = "Baie Pêcha",
+        description = "Baie qui soigne l’empoisonnement lorsqu’elle est tenue par un Pokémon."
     },
     [152] = {
-        name = "Rawst Berry",
-        description = "Consumed when burned to cure a burn."
+        name = "Baie Fraive",
+        description = "Baie qui soigne les brûlures lorsqu’elle est tenue par un Pokémon."
     },
     [153] = {
-        name = "Aspear Berry",
-        description = "Consumed when frozen to cure frozen."
+        name = "Baie Willia",
+        description = "Baie qui soigne le gel lorsqu’elle est tenue par un Pokémon."
     },
     [154] = {
-        name = "Leppa Berry",
-        description = "Consumed when a move runs out of PP to restore its PP by 10."
+        name = "Baie Mepo",
+        description = "Baie qui restaure 10 PP lorsqu’elle est tenue par un Pokémon."
     },
     [155] = {
-        name = "Oran Berry",
-        description = "Consumed at 1/2 max HP to recover 10 HP."
+        name = "Baie Oran",
+        description = "Baie qui restaure 10 PV lorsqu’elle est tenue par un Pokémon."
     },
     [156] = {
-        name = "Persim Berry",
-        description = "Consumed when confused to cure confusion."
+        name = "Baie Kika",
+        description = "Baie qui soigne la confusion lorsqu’elle est tenue par un Pokémon."
     },
     [157] = {
-        name = "Lum Berry",
-        description = "Consumed to cure any status condition or confusion."
+        name = "Baie Prine",
+        description = "Baie qui soigne tous les problèmes de statut lorsqu’elle est tenue par un Pokémon."
     },
     [158] = {
-        name = "Sitrus Berry",
-        description = "Consumed at 1/2 max HP to recover 1/4 max HP."
+        name = "Baie Sitrus",
+        description = "Baie qui restaure quelques PV lorsqu’elle est tenue par un Pokémon."
     },
     [159] = {
-        name = "Figy Berry",
-        description = "Consumed at 1/2 max HP to restore 1/8 max HP. Confuses Pok" ..
-            Chars.accentedE .. "mon that dislike spicy flavor."
+        name = "Baie Figuy",
+        description = "Tenue, cette Baie restaure des PV en cas de besoin, mais rend confus si le Pokémon n’aime pas son goût."
     },
     [160] = {
-        name = "Wiki Berry",
-        description = "Consumed at 1/2 max HP to restore 1/8 max HP. Confuses Pok" ..
-            Chars.accentedE .. "mon that dislike dry flavor."
+        name = "Baie Wiki",
+        description = "Tenue, cette Baie restaure des PV en cas de besoin, mais rend confus si le Pokémon n’aime pas son goût."
     },
     [161] = {
-        name = "Mago Berry",
-        description = "Consumed at 1/2 max HP to restore 1/8 max HP. Confuses Pok" ..
-            Chars.accentedE .. "mon that dislike sweet flavor."
+        name = "Baie Mago",
+        description = "Tenue, cette Baie restaure des PV en cas de besoin, mais rend confus si le Pokémon n’aime pas son goût."
     },
     [162] = {
-        name = "Aguav Berry",
-        description = "Consumed at 1/2 max HP to restore 1/8 max HP. Confuses Pok" ..
-            Chars.accentedE .. "mon that dislike bitter flavor."
+        name = "Baie Gowav",
+        description = "Tenue, cette Baie restaure des PV en cas de besoin, mais rend confus si le Pokémon n’aime pas son goût."
     },
     [163] = {
-        name = "Iapapa Berry",
-        description = "Consumed at 1/2 max HP to restore 1/8 max HP. Confuses Pok" ..
-            Chars.accentedE .. "mon that dislike sour flavor."
+        name = "Baie Papaya",
+        description = "Tenue, cette Baie restaure des PV en cas de besoin, mais rend confus si le Pokémon n’aime pas son goût."
     },
     [164] = {
         name = "Razz Berry",
@@ -846,28 +836,28 @@ ItemData.GEN_4_ITEMS = {
         description = "Used for creating PokeBlocks and Poffins."
     },
     [169] = {
-        name = "Pomeg Berry",
-        description = "Drops HP Effort Values by 10 and raises happiness."
+        name = "Baie Grena",
+        description = "Rend les Pokémon plus amicaux, mais baisse leurs PV de base."
     },
     [170] = {
-        name = "Kelpsy Berry",
-        description = "Drops Attack Effort Values by 10 and raises happiness."
+        name = "Baie Alga",
+        description = "Rend les Pokémon plus amicaux, mais baisse leur stat Attaque de base."
     },
     [171] = {
-        name = "Qualot Berry",
-        description = "Drops Defense Effort Values by 10 and raises happiness."
+        name = "Baie Qualot",
+        description = "Rend les Pokémon plus amicaux, mais baisse leur stat Défense de base."
     },
     [172] = {
-        name = "Hondew Berry",
-        description = "Drops Special Attack Effort Values by 10 and raises happiness."
+        name = "Baie Lonme",
+        description = "Rend les Pokémon plus amicaux, mais baisse leur stat Attaque Spéciale de base."
     },
     [173] = {
-        name = "Grepa Berry",
-        description = "Drops Special Defense Effort Values by 10 and raises happiness."
+        name = "Baie Résin",
+        description = "Rend les Pokémon plus amicaux, mais baisse leur stat Défense Spéciale de base."
     },
     [174] = {
-        name = "Tamato Berry",
-        description = "Drops Speed Effort Values by 10 and raises happiness."
+        name = "Baie Tamato",
+        description = "Rend les Pokémon plus amicaux, mais baisse leur stat Vitesse de base."
     },
     [175] = {
         name = "Cornn Berry",
@@ -906,309 +896,308 @@ ItemData.GEN_4_ITEMS = {
         description = "Used for creating PokeBlocks and Poffins."
     },
     [184] = {
-        name = "Occa Berry",
-        description = "Consumed when struck by a super-effective Fire-type attack to halve the damage."
+        name = "Baie Chocco",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie super efficace de type Feu."
     },
     [185] = {
-        name = "Passho Berry",
-        description = "Consumed when struck by a super-effective Water-type attack to halve the damage."
+        name = "Baie Pocpoc",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie super efficace de type Eau."
     },
     [186] = {
-        name = "Wacan Berry",
-        description = "Consumed when struck by a super-effective Electric-type attack to halve the damage."
+        name = "Baie Parma",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie super efficace de type Électrik."
     },
     [187] = {
-        name = "Rindo Berry",
-        description = "Consumed when struck by a super-effective Grass-type attack to halve the damage."
+        name = "Baie Ratam",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie super efficace de type Plante."
     },
     [188] = {
-        name = "Yache Berry",
-        description = "Consumed when struck by a super-effective Ice-type attack to halve the damage."
+        name = "Baie Nanone",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie super efficace de type Glace."
     },
     [189] = {
-        name = "Chople Berry",
-        description = "Consumed when struck by a super-effective Fighting-type attack to halve the damage."
+        name = "Baie Pomroz",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie super efficace de type Combat."
     },
     [190] = {
-        name = "Kebia Berry",
-        description = "Consumed when struck by a super-effective Poison-type attack to halve the damage."
+        name = "Baie Kébia",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie super efficace de type Poison."
     },
     [191] = {
-        name = "Shuca Berry",
-        description = "Consumed when struck by a super-effective Ground-type attack to halve the damage."
+        name = "Baie Jouca",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie super efficace de type Sol."
     },
     [192] = {
-        name = "Coba Berry",
-        description = "Consumed when struck by a super-effective Flying-type attack to halve the damage."
+        name = "Baie Cobaba",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie super efficace de type Vol."
     },
     [193] = {
-        name = "Payapa Berry",
-        description = "Consumed when struck by a super-effective Psychic-type attack to halve the damage."
+        name = "Baie Yapap",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie super efficace de type Psy."
     },
     [194] = {
-        name = "Tanga Berry",
-        description = "Consumed when struck by a super-effective Bug-type attack to halve the damage."
+        name = "Baie Panga",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie super efficace de type Insecte."
     },
     [195] = {
-        name = "Charti Berry",
-        description = "Consumed when struck by a super-effective Rock-type attack to halve the damage."
+        name = "Baie Charti",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie super efficace de type Roche."
     },
     [196] = {
-        name = "Kasib Berry",
-        description = "Consumed when struck by a super-effective Ghost-type attack to halve the damage."
+        name = "Baie Sédra",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie super efficace de type Spectre."
     },
     [197] = {
-        name = "Haban Berry",
-        description = "Consumed when struck by a super-effective Dragon-type attack to halve the damage."
+        name = "Baie Fraigo",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie super efficace de type Dragon."
     },
     [198] = {
-        name = "Colbur Berry",
-        description = "Consumed when struck by a super-effective Dark-type attack to halve the damage."
+        name = "Baie Lampou",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie super efficace de type Ténèbres."
     },
     [199] = {
-        name = "Babiri Berry",
-        description = "Consumed when struck by a super-effective Steel-type attack to halve the damage."
+        name = "Baie Babiri",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie super efficace de type Acier."
     },
     [200] = {
-        name = "Chilan Berry",
-        description = "Consumed when struck by a Normal-type attack to halve the damage."
+        name = "Baie Zalis",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie de type Normal."
     },
     [201] = {
-        name = "Liechi Berry",
-        description = "Consumed at 1/4 max HP to boost Attack."
+        name = "Baie Lichii",
+        description = "Tenue, cette Baie monte l’Attaque en cas de besoin."
     },
     [202] = {
-        name = "Ganlon Berry",
-        description = "Consumed at 1/4 max HP to boost Defense."
+        name = "Baie Lingan",
+        description = "Tenue, cette Baie monte la Défense en cas de besoin."
     },
     [203] = {
-        name = "Salac Berry",
-        description = "Consumed at 1/4 max HP to boost Speed."
+        name = "Baie Sailak",
+        description = "Tenue, cette Baie monte la Vitesse en cas de besoin."
     },
     [204] = {
-        name = "Petaya Berry",
-        description = "Consumed at 1/4 max HP to boost Special Attack."
+        name = "Baie Pitaye",
+        description = "Tenue, cette Baie monte l’Atq. Spé. en cas de besoin."
     },
     [205] = {
-        name = "Apicot Berry",
-        description = "Consumed at 1/4 max HP to boost Special Defense."
+        name = "Baie Abriko",
+        description = "Tenue, cette Baie monte la Déf. Spé. en cas de besoin."
     },
     [206] = {
-        name = "Lansat Berry",
-        description = "Consumed at 1/4 max HP to boost critical hit ratio by two stages."
+        name = "Baie Lansat",
+        description = "Tenue, cette Baie monte le taux de critiques en cas de besoin."
     },
     [207] = {
-        name = "Starf Berry",
-        description = "Consumed at 1/4 max HP to boost a random stat by two stages."
+        name = "Baie Frista",
+        description = "Tenue, cette Baie monte beaucoup une des stats en cas de besoin."
     },
     [208] = {
-        name = "Enigma Berry",
-        description = "Consumed when struck by a super-effective attack to restore 1/4 max HP."
+        name = "Baie Enigma",
+        description = "Tenue, cette Baie restaure les PV du Pokémon s’il subit une attaque super efficace."
     },
     [209] = {
-        name = "Micle Berry",
-        description = "Consumed at 1/4 max HP to give the next move perfect accuracy."
+        name = "Baie Micle",
+        description = "Tenue, cette Baie augmente une fois la Précision d’une capacité en cas de besoin."
     },
     [210] = {
-        name = "Custap Berry",
-        description = "Consumed at 1/4 max HP when using a move to go first."
+        name = "Baie Chérim",
+        description = "Tenue, cette Baie permet d’attaquer en premier une fois en cas de besoin."
     },
     [211] = {
-        name = "Jaboca Berry",
-        description = "Consumed to deal 1/8 attacker's max HP when holder is struck by a physical attack."
+        name = "Baie Jaboca",
+        description = "Tenue, cette Baie inflige des dégâts à l’ennemi s’il utilise une attaque physique qui atteint son but."
     },
     [212] = {
-        name = "Rowap Berry",
-        description = "Consumed to deal 1/8 attacker's max HP when holder is struck by a special attack."
+        name = "Baie Pommo",
+        description = "Tenue, cette Baie inflige des dégâts à l’ennemi s’il utilise une attaque spéciale qui atteint son but."
     },
     [213] = {
-        name = "BrightPowder",
-        description = "Increases the holder's evasion by 1/9 (11 1/9%)."
+        name = "Poudreclaire",
+        description = "Objet à tenir qui intimide et baisse la Précision de l’ennemi."
     },
     [214] = {
-        name = "White Herb",
-        description = "Resets all lowered stats to normal at end of turn. Consumed after use."
+        name = "Herbeblanche",
+        description = "Objet à tenir qui restaure les stats baissées. Ne peut être utilisé qu’une fois."
     },
     [215] = {
-        name = "Macho Brace",
-        description = "Holder gains double effort values from battles, but has halved Speed in battle."
+        name = "Brac. Macho",
+        description = "C’est un bracelet dur et lourd qui rend le porteur plus fort, mais baisse sa Vitesse."
     },
     [216] = {
         name = "Exp Share",
-        description = "Half the experience from a battle is split between Pok" ..
-            Chars.accentedE .. "mon holding this item."
+        description = "Half the experience from a battle is split between Pok" .. Chars.accentedE .. "mon holding this item."
     },
     [217] = {
-        name = "Quick Claw",
-        description = "Holder has a 3/16 (18.75%) chance to move first."
+        name = "Vive Griffe",
+        description = "Griffe légère mais tranchante qui permet parfois de frapper le premier."
     },
     [218] = {
-        name = "Soothe Bell",
-        description = "Doubles the happiness earned by the holder."
+        name = "Grelot Zen",
+        description = "Grelot dont le carillon calme le porteur et favorise l’amitié."
     },
     [219] = {
-        name = "Mental Herb",
-        description = "Consumed to cure infatuation. Gen V: Also removes Taunt, Encore, Torment, Disable, and Cursed Body."
+        name = "Herbe Mental",
+        description = "Objet à tenir qui annule l’attirance d’un Pokémon. Ne peut être utilisé qu’une fois."
     },
     [220] = {
-        name = "Choice Band",
-        description = "Increases Attack by 50%, but restricts the holder to only one move."
+        name = "Band. Choix",
+        description = "Ce bandeau monte l’Attaque, mais ne permet d’utiliser qu’une seule capacité par combat."
     },
     [221] = {
-        name = "King's Rock",
-        description = "Damaging moves gain a 10% chance to make their target flinch. Traded on a Poliwhirl: Holder evolves into Politoed. Traded on a Slowpoke: Holder evolves into Slowking."
+        name = "Roche Royale",
+        description = "Peut apeurer l’ennemi lorsque le porteur lui inflige des dégâts."
     },
     [222] = {
-        name = "Silver Powder",
-        description = "Bug-Type moves from holder do 20% more damage."
+        name = "Poudre Arg.",
+        description = "Poudre d’argent brillante qui monte la puissance des capacités de type Insecte."
     },
     [223] = {
-        name = "Amulet Coin",
-        description = "Doubles the money earned from a battle. Does not stack with Luck Incense."
+        name = "Pièce Rune",
+        description = "Double l’argent gagné si le porteur se joint au combat."
     },
     [224] = {
-        name = "Cleanse Tag",
-        description = "Prevents wild encounters of level lower than your party's lead Pokemon."
+        name = "Rune Purif.",
+        description = "Double l’argent gagné si le porteur se joint au combat."
     },
     [225] = {
-        name = "Soul Dew",
-        description = "Raises Latias and Latios's Special Attack and Special Defense by 50%."
+        name = "Rosée Âme",
+        description = "Orbe prodigieux à faire tenir à Latios ou Latias qui monte leur Attaque Spéciale et leur Défense Spéciale."
     },
     [226] = {
-        name = "Deep Sea-tooth",
-        description = "Doubles Clamperl's Special Attack. Traded on a Clamperl: Holder evolves into Huntail."
+        name = "Dent Océan",
+        description = "Objet à faire tenir à Coquiperl. Dent de couleur argent montant son Attaque Spéciale."
     },
     [227] = {
-        name = "Deep Sea-scale",
-        description = "Doubles Clamperl's Special Defense. Traded on a Clamperl: Holder evolves into Gorebyss."
+        name = "Écailleocéan",
+        description = "Objet à faire tenir à Coquiperl. Écaille de couleur rose montant sa Défense Spéciale."
     },
     [228] = {
-        name = "Smoke Ball",
-        description = "Allows the Holder to escape from any wild battle."
+        name = "Boule Fumée",
+        description = "Permet au porteur de s’enfuir à coup sûr face à un Pokémon sauvage."
     },
     [229] = {
-        name = "Everstone",
-        description = "Prevents level-based evolution from occuring."
+        name = "Pierre Stase",
+        description = "Pierre merveilleuse empêchant l’évolution."
     },
     [230] = {
-        name = "Focus Band",
-        description = "Holder has 10% chance to survive attacks or self-inflicted damage at 1 HP."
+        name = "Bandeau",
+        description = "Objet à tenir pouvant parfois empêcher d’être mis K.O., ne laissant qu’un PV."
     },
     [231] = {
-        name = "Lucky Egg",
-        description = "Increases EXP earned in battle by 50%."
+        name = "Œuf Chance",
+        description = "Œuf rempli de joie qui augmente le nombre de points Exp. gagnés au combat."
     },
     [232] = {
-        name = "Scope Lens",
-        description = "Raises the holder's critical hit ratio by one stage."
+        name = "Lentilscope",
+        description = "Lentille qui augmente le taux de critiques du porteur."
     },
     [233] = {
-        name = "Metal Coat",
-        description = "Steel-Type moves from holder do 20% more damage."
+        name = "Peau Métal",
+        description = "Pellicule métallique spéciale qui monte la puissance des capacités de type Acier."
     },
     [234] = {
-        name = "Leftovers",
-        description = "Restores 1/16 (6.25%) holder's max HP at the end of each turn."
+        name = "Restes",
+        description = "Objet à tenir permettant de restaurer les PV du porteur graduellement durant le combat."
     },
     [235] = {
-        name = "Dragon Scale",
-        description = "Traded on a Seadra: Holder evolves into Kingdra."
+        name = "Écailledraco",
+        description = "Une écaille épaisse et dure tenue parfois par les Pokémon de type Dragon quand ils sont attrapés."
     },
     [236] = {
-        name = "Light Ball",
-        description = "Doubles Pikachu's Attack and Special Attack. Breed on Pikachu or Raichu: Pichu Egg will have Volt Tackle."
+        name = "Ballelumière",
+        description = "Objet à faire tenir par Pikachu. Orbe énigmatique qui monte son Attaque et son Attaque Spéciale."
     },
     [237] = {
-        name = "Soft Sand",
-        description = "Ground-Type moves from holder do 20% more damage."
+        name = "Sable Doux",
+        description = "Sable fin et soyeux montant la puissance des capacités de type Sol."
     },
     [238] = {
-        name = "Hard Stone",
-        description = "Rock-Type moves from holder do 20% more damage."
+        name = "Pierre Dure",
+        description = "Pierre incassable qui monte la puissance des capacités de type Roche."
     },
     [239] = {
-        name = "Miracle Seed",
-        description = "Grass-Type moves from holder do 20% more damage."
+        name = "Grain Miracl",
+        description = "Graine remplie de vie qui monte la puissance des capacités de type Plante."
     },
     [240] = {
         name = "BlackGlasses",
         description = "Dark-Type moves from holder do 20% more damage."
     },
     [241] = {
-        name = "Black Belt",
-        description = "Fighting-Type moves from holder do 20% more damage."
+        name = "Ceint.Noire",
+        description = "Ceinture qui augmente la détermination et la puissance des capacités de type Combat."
     },
     [242] = {
-        name = "Magnet",
-        description = "Electric-Type moves from holder do 20% more damage."
+        name = "Aimant",
+        description = "Aimant puissant montant la puissance des capacités de type Électrik."
     },
     [243] = {
-        name = "Mystic Water",
-        description = "Water-Type moves from holder do 20% more damage."
+        name = "Eau Mystique",
+        description = "Gemme en forme de goutte d’eau montant la puissance des capacités de type Eau."
     },
     [244] = {
-        name = "Sharp Beak",
-        description = "Flying-Type moves from holder do 20% more damage."
+        name = "Bec Pointu",
+        description = "Bec long et pointu montant la puissance des capacités de type Vol."
     },
     [245] = {
-        name = "Poison Barb",
-        description = "Poison-Type moves from holder do 20% more damage."
+        name = "Pic Venin",
+        description = "Petit pic empoisonné montant la puissance des capacités de type Poison."
     },
     [246] = {
-        name = "Never Melt-ice",
-        description = "Ice-Type moves from holder do 20% more damage."
+        name = "Glacéternel",
+        description = "Morceau de glace qui réfléchit la chaleur et monte la puissance des capacités de type Glace."
     },
     [247] = {
-        name = "Spell Tag",
-        description = "Ghost-Type moves from holder do 20% more damage."
+        name = "Rune Sort",
+        description = "Plaque sinistre et étrange montant la puissance des capacités de type Spectre."
     },
     [248] = {
-        name = "Twisted Spoon",
-        description = "Psychic-Type moves from holder do 20% more damage."
+        name = "Cuillertordu",
+        description = "Cuillère contenant un pouvoir télékinésique montant la puissance des capacités de type Psy."
     },
     [249] = {
-        name = "Charcoal",
-        description = "Fire-Type moves from holder do 20% more damage."
+        name = "Charbon",
+        description = "Combustible montant la puissance des capacités de type Feu."
     },
     [250] = {
-        name = "Dragon Fang",
-        description = "Dragon-Type moves from holder do 20% more damage."
+        name = "Croc Dragon",
+        description = "Croc dur et pointu montant la puissance des capacités de type Dragon."
     },
     [251] = {
-        name = "Silk Scarf",
-        description = "Normal-Type moves from holder do 20% more damage."
+        name = "Mouch. Soie",
+        description = "Mouchoir somptueux montant la puissance des capacités de type Normal."
     },
     [252] = {
-        name = "Up Grade",
-        description = "Traded on a Porygon: Holder evolves into Porygon2."
+        name = "Améliorator",
+        description = "Dispositif transparent rempli de données diverses et variées. Fabriqué par la Sylphe SARL."
     },
     [253] = {
-        name = "Shell Bell",
-        description = "Holder receives 1/8 of the damage it deals when attacking."
+        name = "Grelot Coque",
+        description = "Restaure un peu les PV du porteur à chaque fois qu’il inflige des dégâts."
     },
     [254] = {
-        name = "Sea Incense",
-        description = "Water-Type moves from holder do 20% more damage. Breeding: Marill or Azumarill beget an Azurill Egg."
+        name = "Encens Mer",
+        description = "Encens au parfum curieux qui augmente la puissance des capacités de type Eau."
     },
     [255] = {
-        name = "Lax Incense",
-        description = "Holder's evasion is increased by 5%. Breeding: Wobbuffet begets a Wynaut Egg."
+        name = "Encens Doux",
+        description = "Le parfum trompeur de cet encens baisse la Précision de l’ennemi."
     },
     [256] = {
-        name = "Lucky Punch",
-        description = "Raises Chansey's critical hit ratio by two stages."
+        name = "Poing Chance",
+        description = "Objet à faire tenir à Leveinard. Paire de gants montant son taux de critiques."
     },
     [257] = {
-        name = "Metal Powder",
-        description = "Raises Ditto's Defense and Special Defense by 50%. The boost is lost after transforming."
+        name = "Poudre Métal",
+        description = "Objet à faire tenir à Métamorph. Cette poudre étrange, très fine mais résistante, booste sa Défense."
     },
     [258] = {
-        name = "Thick Club",
-        description = "Doubles Cubone or Marowak's Attack."
+        name = "Masse Os",
+        description = "Objet à faire tenir à Osselait ou Ossatueur. Os dur qui monte leur Attaque."
     },
     [259] = {
-        name = "Stick",
-        description = "Raises Farfetch'd's critical hit ratio by two stages."
+        name = "Bâton",
+        description = "Objet à faire tenir à Canarticho. Poireau très long et solide qui monte son taux de critiques."
     },
     [260] = {
         name = "Red Scarf",
@@ -1231,258 +1220,256 @@ ItemData.GEN_4_ITEMS = {
         description = "Raises the holder's Toughness while in a contest."
     },
     [265] = {
-        name = "Wide Lens",
-        description = "Provides a 1/10 (10%) boost in accuracy to the holder."
+        name = "Loupe",
+        description = "Magnifique loupe augmentant un peu la Précision des capacités."
     },
     [266] = {
-        name = "Muscle Band",
-        description = "Boosts the damage of physical moves used by the holder by 10%."
+        name = "Band. Muscle",
+        description = "Bandeau augmentant légèrement la puissance des attaques physiques."
     },
     [267] = {
-        name = "Wise Glasses",
-        description = "Boosts the damage of special moves used by the holder by 1/10 (10%)."
+        name = "Lunet. Sages",
+        description = "Paire de lunettes épaisses augmentant un peu la puissance des attaques spéciales."
     },
     [268] = {
-        name = "Expert Belt",
-        description = "Holder's Super Effective moves do 20% extra damage."
+        name = "Ceinture Pro",
+        description = "Ceinture usée augmentant légèrement la puissance des capacités super efficaces."
     },
     [269] = {
-        name = "Light Clay",
-        description = "Light Screen and Reflect used by the holder last 8 rounds instead of 5."
+        name = "Lumargile",
+        description = "Objet à tenir augmentant la durée de capacités barrières telles que Mur Lumière et Protection."
     },
     [270] = {
-        name = "Life Orb",
-        description = "Holder's moves inflict 30% extra damage, but cost 10% max HP."
+        name = "Orbe Vie",
+        description = "Objet à tenir augmentant la puissance des capacités, mais qui dépense des PV à chaque coup."
     },
     [271] = {
-        name = "Power Herb",
-        description = "Both turns of a two-turn charge move happen at once. Consumed upon use."
+        name = "Herbe Pouv.",
+        description = "Objet à tenir et à usage unique. Permet d’utiliser immédiatement une capacité qui devrait se charger au premier tour."
     },
     [272] = {
-        name = "Toxic Orb",
-        description = "Inflicts Toxic on the holder at the end of the turn. Activates after Poison damage would occur."
+        name = "Orbe Toxique",
+        description = "Orbe bizarre empoisonnant gravement son porteur durant le combat."
     },
     [273] = {
-        name = "Flame Orb",
-        description = "Inflicts Burn on the holder at the end of the turn. Activates after Burn damage would occur."
+        name = "Orbe Flamme",
+        description = "Orbe bizarre brûlant son porteur durant le combat."
     },
     [274] = {
-        name = "Quick Powder",
-        description = "Doubles Ditto's Speed when held. The boost is lost after transforming."
+        name = "Poudre Vite",
+        description = "Objet à faire tenir à Métamorph. Cette poudre étrange, très fine mais résistante, augmente sa Vitesse."
     },
     [275] = {
-        name = "Focus Sash",
-        description = "Holder survives any single-hit attack at 1 HP if at max HP, then the item is consumed."
+        name = "Ceint. Force",
+        description = "Objet à tenir permettant au porteur, s’il a ses PV pleins, d’éviter un potentiel K.O. en conservant un PV."
     },
     [276] = {
-        name = "Zoom Lens",
-        description = "Provides a 1/5 (20%) boost in accuracy if the holder moves after the target."
+        name = "Lentil. Zoom",
+        description = "Augmente la Précision du porteur s’il attaque après l’ennemi."
     },
     [277] = {
-        name = "Metronome",
-        description = "Consectutive uses of the same attack have a cumulative damage boost of 10%. Maximum 100% boost."
+        name = "Métronome",
+        description = "Objet à tenir boostant une capacité utilisée à répétition. L’effet s’annule si une autre capacité est utilisée."
     },
     [278] = {
-        name = "Iron Ball",
-        description = "Holder's Speed is halved. Negates all Ground-type immunities, and makes Flying-types take neutral damage from Ground-type moves. Arena Trap. Spikes, and Toxic Spikes affect the holder."
+        name = "Balle Fer",
+        description = "Objet à tenir réduisant la Vitesse. Rend les porteurs de type Vol et lévitant sensibles aux capacités de type Sol."
     },
     [279] = {
-        name = "Lagging Tail",
-        description = "Holder moves last in its priority bracket."
+        name = "Ralentiqueue",
+        description = "Objet à tenir extrêmement lourd qui ralentit le porteur."
     },
     [280] = {
-        name = "Destiny Knot",
-        description = "Infatuates opposing Pok" ..
-            Chars.accentedE .. "mon when holder is inflicted with infatuation."
+        name = "Nœud Destin",
+        description = "Un long fil rouge vif à faire tenir à un Pokémon. Si le porteur succombe à l’attirance, l’ennemi aussi."
     },
     [281] = {
-        name = "Black Sludge",
-        description = "Poison-type holder recovers 1/16 (6.25%) max HP each turn. Non-Poison-Types take 1/8 (12.5%) max HP damage."
+        name = "Boue Noire",
+        description = "Objet à tenir restaurant peu à peu les PV des Pokémon de type Poison. Inflige des dégâts à tous les autres types."
     },
     [282] = {
-        name = "Icy Rock",
-        description = "Hail by the holder lasts 8 rounds instead of 5."
+        name = "Roche Glace",
+        description = "Objet à tenir augmentant la durée de la capacité Grêle utilisée par le porteur."
     },
     [283] = {
-        name = "Smooth Rock",
-        description = "Sandstorm by the holder lasts 8 rounds instead of 5."
+        name = "Roche Lisse",
+        description = "Objet à tenir augmentant la durée de la capacité Tempêtesable utilisée par le porteur."
     },
     [284] = {
-        name = "Heat Rock",
-        description = "Sunny Day by the holder lasts 8 rounds instead of 5."
+        name = "Roche Chaude",
+        description = "Objet à tenir augmentant la durée de la capacité Zénith utilisée par le porteur."
     },
     [285] = {
-        name = "Damp Rock",
-        description = "Rain Dance by the holder lasts 8 rounds instead of 5."
+        name = "Roche Humide",
+        description = "Objet à tenir augmentant la durée de la capacité Danse Pluie utilisée par le porteur."
     },
     [286] = {
-        name = "Grip Claw",
-        description = "Holder's multi-turn trapping moves last 5 turns."
+        name = "Accro Griffe",
+        description = "Objet à tenir augmentant la durée des attaques à tours multiples telles que Ligotage et Étreinte."
     },
     [287] = {
-        name = "Choice Scarf",
-        description = "Increases Speed by 50%, but restricts the holder to only one move."
+        name = "Mouch. Choix",
+        description = "Objet à tenir augmentant la Vitesse, mais ne permettant d’utiliser qu’une seule capacité par combat."
     },
     [288] = {
-        name = "Sticky Barb",
-        description = "Holder takes 1/8 (12.5%) its max HP at the end of each turn. When the holder is hit by a contact move, the attacking Pok" ..
-            Chars.accentedE .. "mon takes 1/8 its max HP in damage and receive the item if not holding one."
+        name = "Piquants",
+        description = "Objet à tenir blessant le porteur à chaque tour. Peut s’accrocher aux ennemis qui attaquent le porteur."
     },
     [289] = {
-        name = "Power Bracer",
-        description = "Holder gains 4 Attack effort values, but has halved Speed in battle."
+        name = "Poign. Pouv.",
+        description = "Objet à tenir augmentant l’Attaque lors des montées de niveau, mais réduisant la Vitesse pendant le combat."
     },
     [290] = {
-        name = "Power Belt",
-        description = "Holder gains 4 Defense effort values, but has halved Speed in battle."
+        name = "Ceint. Pouv.",
+        description = "Objet à tenir augmentant la Défense lors des montées de niveau, mais réduisant la Vitesse pendant le combat."
     },
     [291] = {
-        name = "Power Lens",
-        description = "Holder gains 4 Special Attack effort values, but has halved Speed in battle."
+        name = "Lent. Pouv.",
+        description = "Objet à tenir augmentant l’Attaque Spéciale lors des montées de niveau mais réduisant la Vitesse pendant le combat."
     },
     [292] = {
-        name = "Power Band",
-        description = "Holder gains 4 Special Defense effort values, but has halved Speed in battle."
+        name = "Band. Pouv.",
+        description = "Objet à tenir augmentant la Défense Spéciale lors des montées de niveau mais réduisant la Vitesse pendant le combat."
     },
     [293] = {
-        name = "Power Anklet",
-        description = "Holder gains 4 Speed effort values, but has halved Speed in battle."
+        name = "Chaîne Pouv.",
+        description = "Il augmente la Vitesse lors des montées de niveau mais réduit la Vitesse pendant le combat."
     },
     [294] = {
-        name = "Power Weight",
-        description = "Holder gains 4 HP effort values, but has halved Speed in battle."
+        name = "Poids Pouv.",
+        description = "Objet à tenir augmentant les PV lors des montées de niveau, mais réduisant la Vitesse pendant le combat."
     },
     [295] = {
-        name = "Shed Shell",
-        description = "Holder can bypass all trapping effects and switch out. Multi-turn moves still cannot be switched out of."
+        name = "Carapace Mue",
+        description = "Carapace dure qui permet au porteur de se retirer même s’il est affecté par une attaque immobilisante."
     },
     [296] = {
-        name = "Big Root",
-        description = "Increases HP recovered from draining moves, Ingrain, and Aqua Ring by 3/10 (30%)."
+        name = "Grosseracine",
+        description = "Objet à tenir augmentant la puissance des attaques volant des PV."
     },
     [297] = {
-        name = "Choice Specs",
-        description = "Increases Special Attack by 50%, but restricts the holder to only one move."
+        name = "Lunet. Choix",
+        description = "Objet à tenir augmentant l’Attaque Spéciale, mais ne permettant d’utiliser qu’une seule capacité par combat."
     },
     [298] = {
-        name = "Flame Plate",
-        description = "Fire-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Fire."
+        name = "Plaque Flam",
+        description = "Tablette en pierre augmentant la puissance des capacités de type Feu."
     },
     [299] = {
-        name = "Splash Plate",
-        description = "Water-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Water."
+        name = "Plaque Hydro",
+        description = "Tablette en pierre augmentant la puissance des capacités de type Eau."
     },
     [300] = {
-        name = "Zap Plate",
-        description = "Electric-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Electric."
+        name = "Plaque Volt",
+        description = "Tablette en pierre augmentant la puissance des capacités de type Électrik."
     },
     [301] = {
-        name = "Meadow Plate",
-        description = "Grass-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Grass."
+        name = "Plaque Herbe",
+        description = "Tablette en pierre augmentant la puissance des capacités de type Plante."
     },
     [302] = {
-        name = "Icicle Plate",
-        description = "Ice-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Ice."
+        name = "Plaque Glace",
+        description = "Tablette en pierre augmentant la puissance des capacités de type Glace."
     },
     [303] = {
-        name = "Fist Plate",
-        description = "Fighting-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Fighting."
+        name = "Plaque Poing",
+        description = "Tablette en pierre augmentant la puissance des capacités de type Combat."
     },
     [304] = {
-        name = "Toxic Plate",
-        description = "Posion-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Posion."
+        name = "Plaque Toxic",
+        description = "Tablette en pierre augmentant la puissance des capacités de type Poison."
     },
     [305] = {
-        name = "Earth Plate",
-        description = "Ground-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Ground."
+        name = "Plaque Terre",
+        description = "Tablette en pierre augmentant la puissance des capacités de type Sol."
     },
     [306] = {
-        name = "Sky Plate",
-        description = "Flying-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Flying."
+        name = "Plaque Ciel",
+        description = "Tablette en pierre augmentant la puissance des capacités de type Vol."
     },
     [307] = {
-        name = "Mind Plate",
-        description = "Psychic-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Psychic."
+        name = "Plaquesprit",
+        description = "Tablette en pierre augmentant la puissance des capacités de type Psy."
     },
     [308] = {
-        name = "Insect Plate",
-        description = "Bug-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Bug."
+        name = "Plaquinsect",
+        description = "Tablette en pierre augmentant la puissance des capacités de type Insecte."
     },
     [309] = {
-        name = "Stone Plate",
-        description = "Rock-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Rock."
+        name = "Plaque Roc",
+        description = "Tablette en pierre augmentant la puissance des capacités de type Roche."
     },
     [310] = {
-        name = "Spooky Plate",
-        description = "Ghost-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Ghost."
+        name = "Plaque Fantô",
+        description = "Tablette en pierre augmentant la puissance des capacités de type Spectre."
     },
     [311] = {
-        name = "Draco Plate",
-        description = "Dragon-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Dragon."
+        name = "Plaque Draco",
+        description = "Tablette en pierre augmentant la puissance des capacités de type Dragon."
     },
     [312] = {
-        name = "Dread Plate",
-        description = "Dark-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Dark."
+        name = "Plaque Ombre",
+        description = "Tablette en pierre augmentant la puissance des capacités de type Ténèbres."
     },
     [313] = {
-        name = "Iron Plate",
-        description = "Steel-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Steel."
+        name = "Plaque Fer",
+        description = "Tablette en pierre augmentant la puissance des capacités de type Acier."
     },
     [314] = {
-        name = "Odd Incense",
-        description = "Psychic-Type moves from holder do 20% more damage. Breeding: Mr. Mime begets a Mime Jr. Egg."
+        name = "Bizar.Encens",
+        description = "Encens au parfum exotique augmentant la puissance des capacités de type Psy."
     },
     [315] = {
-        name = "Rock Incense",
-        description = "Rock-Type moves from holder do 20% more damage. Breeding: Sudowoodo begets a Bonsly Egg."
+        name = "Encens Roc",
+        description = "Encens au parfum exotique augmentant la puissance des capacités de type Roche."
     },
     [316] = {
-        name = "Full Incense",
-        description = "Holder moves last in its priority bracket. Breeding: Snorlax begets a Munchlax Egg."
+        name = "Encens Plein",
+        description = "Encens au parfum exotique gonflant son porteur et le faisant se déplacer lentement."
     },
     [317] = {
-        name = "Wave Incense",
-        description = "Water-Type moves from holder do 20% more damage. Breeding: Mantine begets a Mantyke Egg."
+        name = "Encens Vague",
+        description = "Encens au parfum exotique augmentant la puissance des capacités de type Eau."
     },
     [318] = {
-        name = "Rose Incense",
-        description = "Grass-Type moves from holder do 20% more damage. Breeding: Roselia or Roserade beget a Budew Egg."
+        name = "Encens Fleur",
+        description = "Encens au parfum exotique augmentant la puissance des capacités de type Plante."
     },
     [319] = {
-        name = "Luck Incense",
-        description = "Doubles the money earned from a battle. Does not stack with Amulet Coin. Breeding: Chansey and Blissey beget a Happiny Egg."
+        name = "Encens Veine",
+        description = "Double l’argent gagné si le porteur se joint au combat."
     },
     [320] = {
-        name = "Pure Incense",
-        description = "Prevents wild encounters of level lower than your party's lead Pokemon. Breeding: Chimecho begets a Chingling Egg."
+        name = "Encens Pur",
+        description = "Aide à repousser les Pokémon sauvages si le porteur est le premier Pokémon de l’équipe."
     },
     [321] = {
-        name = "Protector",
-        description = "Traded on a Rhydon: Holder evolves into Rhyperior."
+        name = "Protecteur",
+        description = "Objet protecteur très dur et très lourd, apprécié d’un certain Pokémon."
     },
     [322] = {
-        name = "Electirizer",
-        description = "Traded on an Electabuzz: Holder evolves into Electivire."
+        name = "Électiriseur",
+        description = "Une boîte remplie d’une énorme quantité d’énergie électrique. Appréciée d’un certain Pokémon."
     },
     [323] = {
-        name = "Magmarizer",
-        description = "Traded on a Magmar: Holder evolves into Magmortar."
+        name = "Magmariseur",
+        description = "Une boîte remplie d’une énorme quantité d’énergie magmatique. Appréciée d’un certain Pokémon."
     },
     [324] = {
-        name = "Dubious Disc",
-        description = "Traded on a Porygon2: Holder evolves into Porygon-Z."
+        name = "CD Douteux",
+        description = "Appareil transparent rempli de données douteuses. Son fabricant n’est pas connu."
     },
     [325] = {
-        name = "Reaper Cloth",
-        description = "Traded on a Dusclops: Holder evolves into Dusknoir."
+        name = "Tissu Fauche",
+        description = "Un tissu imprégné d’une énergie spirituelle horriblement puissante. Apprécié d’un certain Pokémon."
     },
     [326] = {
-        name = "Razor Claw",
-        description = "Raises the holder's critical hit ratio by one stage. Held by a Sneasel while levelling up at night: Holder evolves into Weavile."
+        name = "Grif. Rasoir",
+        description = "Griffe crochue et pointue augmentant le taux de critiques."
     },
     [327] = {
-        name = "Razor Fang",
-        description = "Damaging moves gain a 10% chance to make their target flinch. Held by a Gligar while levelling up: Holder evolves into Gliscor."
+        name = "Croc Rasoir",
+        description = "Objet à tenir pouvant apeurer l’ennemi quand le porteur lui inflige des dégâts."
     },
     [328] = {
         name = "TM01",
@@ -2029,12 +2016,12 @@ ItemData.GEN_4_ITEMS = {
         description = "Grants access to the Team Galactic warehouse in Veilstone City."
     },
     [464] = {
-        name = "Secret Potion",
-        description = "Used to heal the Ampharos at the top of Olivine Lighthouse."
+        name = "Potion",
+        description = "Un spray qui soigne les blessures. Restaure 20 PV à un Pokémon."
     },
     [112] = {
-        name = "Griseous Orb",
-        description = "Boosts the damage from Giratina's Dragon-type and Ghost-type moves by 20%, and transforms it into Origin Forme."
+        name = "Orbe Platiné",
+        description = "Mystérieux objet destiné à Giratina. Améliore les capacités de type Dragon et Spectre."
     },
     [465] = {
         name = "Vs Recorder",
@@ -2046,7 +2033,7 @@ ItemData.GEN_4_ITEMS = {
     },
     [467] = {
         name = "Secret Key",
-        description = "Gen IV: The key to Rotom's appliance room. "
+        description = "Gen IV: The key to Rotom's appliance room."
     },
     [468] = {
         name = "Apricorn Box",
@@ -2066,22 +2053,19 @@ ItemData.GEN_4_ITEMS = {
     },
     [493] = {
         name = "Level Ball",
-        description = "Success rate based off of fraction target Pok" ..
-            Chars.accentedE .. "mon is of user's Pokemon. Made from Red Apricorn."
+        description = "Success rate based off of fraction target Pok" .. Chars.accentedE .. "mon is of user's Pokemon. Made from Red Apricorn."
     },
     [498] = {
         name = "Moon Ball",
-        description = "4x effectiveness on familes of Pok" ..
-            Chars.accentedE .. "mon with a Moon Stone evolution. Made from Ylw Apricorn."
+        description = "Une pierre étrange qui fait évoluer certaines espèces de Pokémon. Elle est noire comme la nuit."
     },
     [495] = {
-        name = "Heavy Ball",
-        description = "Has flat bonus or penalty to catch rate depending on weight class of target. Made from Blk Apricorn."
+        name = "Pierre Lune",
+        description = "Une pierre étrange qui fait évoluer certaines espèces de Pokémon. Elle est noire comme la nuit."
     },
     [492] = {
         name = "Fast Ball",
-        description = "4x effectiveness on Pok" ..
-            Chars.accentedE .. "mon with 100 or greater base speed. Made from Wht Apricorn."
+        description = "4x effectiveness on Pok" .. Chars.accentedE .. "mon with 100 or greater base speed. Made from Wht Apricorn."
     },
     [497] = {
         name = "Friend Ball",
@@ -2092,13 +2076,12 @@ ItemData.GEN_4_ITEMS = {
         description = "8x effectiveness on opposite sex, same species targets of the Active Pokemon. Made from Pnk Apricorn."
     },
     [500] = {
-        name = "Park Ball",
-        description = "Catches Pok" .. Chars.accentedE .. "mon in the Pal Park every time."
+        name = "Parc Ball",
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [499] = {
-        name = "Sport Ball",
-        description = "Tries to catch a Pok" ..
-            Chars.accentedE .. "mon in the Bug-Catching contest in National Park. "
+        name = "Compét'Ball",
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [485] = {
         name = "Red Apricorn",
@@ -2170,27 +2153,27 @@ ItemData.GEN_4_ITEMS = {
     },
     [475] = {
         name = "Card Key",
-        description = "HS: Opens doors in the Radio Tower. "
+        description = "HS: Opens doors in the Radio Tower."
     },
     [476] = {
         name = "Basement Key",
-        description = "HS: Key to the tunnel under Goldenrod City. "
+        description = "HS: Key to the tunnel under Goldenrod City."
     },
     [478] = {
         name = "Red Scale",
-        description = "Trade to Mr. Pok" .. Chars.accentedE .. "mon for an Exp. Share."
+        description = "Le porteur reçoit une partie des points Exp. du combat sans avoir à combattre."
     },
     [479] = {
         name = "Lost Item",
-        description = "A Poke Doll lost by the Copycat who lives in Saffron City. Trade for a Pass."
+        description = "Le porteur reçoit une partie des points Exp. du combat sans avoir à combattre."
     },
     [480] = {
         name = "Pass",
-        description = "Grants access to ride the Magnet Train between Goldenrod City and Saffron City."
+        description = "Aimant puissant montant la puissance des capacités de type Électrik."
     },
     [481] = {
         name = "Machine Part",
-        description = "Must be replaced in the Power Plant to power the Magnet Train."
+        description = "Aimant puissant montant la puissance des capacités de type Électrik."
     },
     [482] = {
         name = "Silver Wing",
@@ -2222,13 +2205,11 @@ ItemData.GEN_4_ITEMS = {
     },
     [507] = {
         name = "Data Card-03",
-        description = "Records the number of times the trainer's Pok" ..
-            Chars.accentedE .. "mon have dashed in the Pokeathlon."
+        description = "Records the number of times the trainer's Pok" .. Chars.accentedE .. "mon have dashed in the Pokeathlon."
     },
     [508] = {
         name = "Data Card-04",
-        description = "Records the number of times the trainer's Pok" ..
-            Chars.accentedE .. "mon have jumped in the Pokeathlon."
+        description = "Records the number of times the trainer's Pok" .. Chars.accentedE .. "mon have jumped in the Pokeathlon."
     },
     [509] = {
         name = "Data Card-05",
@@ -2260,23 +2241,19 @@ ItemData.GEN_4_ITEMS = {
     },
     [516] = {
         name = "Data Card-12",
-        description = "Records the number of times the trainer's Pok" ..
-            Chars.accentedE .. "mon have messed up in the Pokeathlon."
+        description = "Records the number of times the trainer's Pok" .. Chars.accentedE .. "mon have messed up in the Pokeathlon."
     },
     [517] = {
         name = "Data Card-13",
-        description = "Records the number of times the trainer's Pok" ..
-            Chars.accentedE .. "mon have defeated themselves in the Pokeathlon."
+        description = "Records the number of times the trainer's Pok" .. Chars.accentedE .. "mon have defeated themselves in the Pokeathlon."
     },
     [518] = {
         name = "Data Card-14",
-        description = "Records the number of times the trainer's Pok" ..
-            Chars.accentedE .. "mon have tackled in the Pokeathlon."
+        description = "Records the number of times the trainer's Pok" .. Chars.accentedE .. "mon have tackled in the Pokeathlon."
     },
     [519] = {
         name = "Data Card-15",
-        description = "Records the number of times the trainer's Pok" ..
-            Chars.accentedE .. "mon have fallen in the Pokeathlon."
+        description = "Records the number of times the trainer's Pok" .. Chars.accentedE .. "mon have fallen in the Pokeathlon."
     },
     [520] = {
         name = "Data Card-16",
@@ -2308,8 +2285,7 @@ ItemData.GEN_4_ITEMS = {
     },
     [527] = {
         name = "Data Card-23",
-        description = "Records the number of times the trainer has switched Pok" ..
-            Chars.accentedE .. "mon in the Pokeathlon."
+        description = "Records the number of times the trainer has switched Pok" .. Chars.accentedE .. "mon in the Pokeathlon."
     },
     [528] = {
         name = "Data Card-24",
@@ -2317,13 +2293,11 @@ ItemData.GEN_4_ITEMS = {
     },
     [529] = {
         name = "Data Card-25",
-        description = "Records the number of times the trainer's Pok" ..
-            Chars.accentedE .. "mon received prizes in the Pokeathlon."
+        description = "Records the number of times the trainer's Pok" .. Chars.accentedE .. "mon received prizes in the Pokeathlon."
     },
     [530] = {
         name = "Data Card-26",
-        description = "Records the number of times the trainer has instructed Pok" ..
-            Chars.accentedE .. "mon in the Pokeathlon."
+        description = "Records the number of times the trainer has instructed Pok" .. Chars.accentedE .. "mon in the Pokeathlon."
     },
     [531] = {
         name = "Data Card-27",
@@ -2338,7 +2312,6 @@ ItemData.GEN_4_ITEMS = {
         description = "Stores photos from your adventure."
     }
 }
-
 ItemData.GEN_5_ITEMS = {
     [0] = {
         name = "---",
@@ -2346,205 +2319,203 @@ ItemData.GEN_5_ITEMS = {
     },
     [1] = {
         name = "Master Ball",
-        description = "Catches a wild Pok" .. Chars.accentedE .. "mon every time."
+        description = "Assurément la Ball la plus performante. Elle permet de capturer à coup sûr un Pokémon sauvage."
     },
     [2] = {
-        name = "Ultra Ball",
-        description = "Tries to catch a wild Pokemon. Success rate is 2x."
+        name = "Hyper Ball",
+        description = "Une Ball ultraperformante dont le taux de réussite est supérieur à celui de la Super Ball."
     },
     [3] = {
-        name = "Great Ball",
-        description = "Tries to catch a wild Pokemon. Success rate is 1.5x."
+        name = "Super Ball",
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [4] = {
         name = "Poke Ball",
-        description = "Tries to catch a wild Pokemon."
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [5] = {
         name = "Safari Ball",
-        description = "Tries to catch a wild Pok" ..
-            Chars.accentedE .. "mon in the Great Marsh or Safari Zone. Success rate is 1.5x."
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [6] = {
-        name = "Net Ball",
-        description = "Tries to catch a wild Pokemon. Success rate is 3x for water and bug Pokemon."
+        name = "Filet Ball",
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [7] = {
-        name = "Dive Ball",
-        description = "Tries to catch a wild Pokemon. Success rate is 3.5x when underwater, fishing, or surfing."
+        name = "Scuba Ball",
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [8] = {
-        name = "Nest Ball",
-        description = "Tries to catch a wild Pokemon. Success rate is 3.9x for level 1 Pokemon, and drops steadily to 1x at level 30."
+        name = "Faiblo Ball",
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [9] = {
-        name = "Repeat Ball",
-        description = "Tries to catch a wild Pokemon. Success rate is 3x for previously-caught Pokemon."
+        name = "Bis Ball",
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [10] = {
-        name = "Timer Ball",
-        description = "Tries to catch a wild Pokemon. Success rate increases by 0.1x (Gen V: 0.3x) every turn, to a max of 4x."
+        name = "Chrono Ball",
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [11] = {
-        name = "Luxury Ball",
-        description = "Tries to catch a wild Pokemon. Caught Pok" ..
-            Chars.accentedE .. "mon start with 200 happiness."
+        name = "Luxe Ball",
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [12] = {
-        name = "Premier Ball",
-        description = "Tries to catch a wild Pokemon."
+        name = "Honor Ball",
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [13] = {
-        name = "Dusk Ball",
-        description = "Tries to catch a wild Pokemon. Success rate is 3.5x at night and in caves."
+        name = "Sombre Ball",
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [14] = {
-        name = "Heal Ball",
-        description = "Tries to catch a wild Pokemon. Caught Pok" .. Chars.accentedE .. "mon are immediately healed."
+        name = "Soin Ball",
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [15] = {
-        name = "Quick Ball",
-        description = "Tries to catch a wild Pokemon. Success rate is 4x (Gen V: 5x), but only on the first turn."
+        name = "Rapide Ball",
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [16] = {
-        name = "Cherish Ball",
-        description = "Tries to catch a wild Pokemon."
+        name = "Mémoire Ball",
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [17] = {
         name = "Potion",
-        description = "Restores 20 HP."
+        description = "Un spray qui soigne les blessures. Restaure 20 PV à un Pokémon."
     },
     [18] = {
         name = "Antidote",
-        description = "Cures poison."
+        description = "Un médicament sous forme de spray. Guérit un Pokémon empoisonné."
     },
     [19] = {
-        name = "Burn Heal",
-        description = "Cures a burn."
+        name = "Anti-Brûle",
+        description = "Un médicament sous forme de spray. Soigne les brûlures d’un Pokémon."
     },
     [20] = {
-        name = "Ice Heal",
-        description = "Cures freezing."
+        name = "Antigel",
+        description = "Un médicament sous forme de spray. Réchauffe un Pokémon gelé."
     },
     [21] = {
-        name = "Awakening",
-        description = "Cures sleep."
+        name = "Réveil",
+        description = "Un médicament sous forme de spray. Réveille un Pokémon endormi."
     },
     [22] = {
-        name = "Paralyze Heal",
-        description = "Cures paralysis."
+        name = "Anti-Para",
+        description = "Un médicament sous forme de spray. Soigne un Pokémon de la paralysie."
     },
     [23] = {
-        name = "Full Restore",
-        description = "Restores HP to full and cures any status ailment and confusion."
+        name = "Guérison",
+        description = "Un médicament qui restaure tous les PV d’un Pokémon et soigne tous ses problèmes de statut."
     },
     [24] = {
-        name = "Max Potion",
-        description = "Restores HP to full."
+        name = "Potion",
+        description = "Un spray qui soigne les blessures. Restaure 20 PV à un Pokémon."
     },
     [25] = {
-        name = "Hyper Potion",
-        description = "Restores 200 HP."
+        name = "Potion",
+        description = "Un spray qui soigne les blessures. Restaure 20 PV à un Pokémon."
     },
     [26] = {
-        name = "Super Potion",
-        description = "Restores 50 HP."
+        name = "Potion",
+        description = "Un spray qui soigne les blessures. Restaure 20 PV à un Pokémon."
     },
     [27] = {
-        name = "Full Heal",
-        description = "Cures any status ailment and confusion."
+        name = "Total Soin",
+        description = "Un médicament sous forme de spray. Soigne tous les problèmes de statut d’un Pokémon."
     },
     [28] = {
-        name = "Revive",
-        description = "Revives with half HP."
+        name = "Rappel",
+        description = "Un médicament qui ranime un Pokémon K.O. et restaure la moitié de ses PV max."
     },
     [29] = {
-        name = "Max Revive",
-        description = "Revives with full HP."
+        name = "Rappel",
+        description = "Un médicament qui ranime un Pokémon K.O. et restaure la moitié de ses PV max."
     },
     [30] = {
-        name = "Fresh Water",
-        description = "Restores 50 HP."
+        name = "Eau Fraîche",
+        description = "Une eau riche en minéraux. Restaure 50 PV à un Pokémon."
     },
     [31] = {
-        name = "Soda Pop",
-        description = "Restores 60 HP."
+        name = "Soda Cool",
+        description = "Une boisson pétillante. Restaure 60 PV à un Pokémon."
     },
     [32] = {
-        name = "Lemonade",
-        description = "Restores 80 HP."
+        name = "Limonade",
+        description = "Une boisson très sucrée. Restaure 80 PV à un Pokémon."
     },
     [33] = {
-        name = "Moomoo Milk",
-        description = "Restores 100 HP."
+        name = "Lait Meumeu",
+        description = "Un lait très nourrissant. Restaure 100 PV à un Pokémon."
     },
     [34] = {
         name = "Energy Powder",
         description = "Restores 50 HP, but lowers happiness."
     },
     [35] = {
-        name = "Energy Root",
-        description = "Restores 200 HP, but lowers happiness."
+        name = "Racinénergie",
+        description = "Une racine très amère. Restaure 200 PV à un Pokémon."
     },
     [36] = {
-        name = "Heal Powder",
-        description = "Cures any status ailment, but lowers happiness."
+        name = "Poudre Soin",
+        description = "Une poudre médicinale très amère. Soigne tous les problèmes de statut d’un Pokémon."
     },
     [37] = {
-        name = "Revival Herb",
-        description = "Revives with full HP, but lowers happiness."
+        name = "Herbe Rappel",
+        description = "Une herbe médicinale très amère. Ranime un Pokémon K.O. et restaure tous ses PV."
     },
     [38] = {
-        name = "Ether",
-        description = "Restores 10 PP for one move."
+        name = "Huile",
+        description = "Un médicament qui ranime un Pokémon K.O. et restaure la moitié de ses PV max."
     },
     [39] = {
-        name = "Max Ether",
-        description = "Restores PP to full for one move."
+        name = "Huile",
+        description = "Restaure jusqu’à 10 PP d’une capacité sélectionnée."
     },
     [40] = {
-        name = "Elixir",
-        description = "Restores 10 PP for each move."
+        name = "Élixir",
+        description = "Restaure 10 PP de toutes les capacités d’un Pokémon."
     },
     [41] = {
-        name = "Max Elixir",
-        description = "Restores PP to full for each move."
+        name = "Max Élixir",
+        description = "Restaure tous les PP de toutes les capacités d’un Pokémon."
     },
     [42] = {
         name = "Lava Cookie",
-        description = "Cures any status ailment and confusion."
+        description = "La spécialité de la ville de Vermilava. Soigne tous les problèmes de statut d’un Pokémon."
     },
     [43] = {
-        name = "Berry Juice",
-        description = "Restores 20 HP."
+        name = "Jus de Baie",
+        description = "Une boisson 100% pur jus de Baies. Restaure 20 PV à un Pokémon."
     },
     [44] = {
-        name = "Sacred Ash",
-        description = "Revives all fainted Pok" .. Chars.accentedE .. "mon with full HP."
+        name = "Cendresacrée",
+        description = "Ranime tous les Pokémon K.O. et restaure tous leurs PV."
     },
     [45] = {
         name = "Hp Up",
-        description = "Raises HP effort and happiness."
+        description = "Un médicament qui ranime un Pokémon K.O. et restaure la moitié de ses PV max."
     },
     [46] = {
-        name = "Protein",
-        description = "Raises Attack effort and happiness."
+        name = "Protéine",
+        description = "Une boisson très nutritive qui monte l’Attaque de base d’un Pokémon."
     },
     [47] = {
-        name = "Iron",
-        description = "Raises Defense effort and happiness."
+        name = "Fer",
+        description = "Une boisson très nutritive qui monte la Défense de base d’un Pokémon."
     },
     [48] = {
-        name = "Carbos",
-        description = "Raises Speed effort and happiness."
+        name = "Carbone",
+        description = "Une boisson très nutritive qui monte la Vitesse de base d’un Pokémon."
     },
     [49] = {
         name = "Calcium",
-        description = "Raises Special Attack effort and happiness."
+        description = "Une boisson très nutritive qui monte l’Attaque Spéciale de base d’un Pokémon."
     },
     [50] = {
-        name = "Rare Candy",
-        description = "Causes a level-up and raises happiness."
+        name = "Super Bonbon",
+        description = "Un bonbon plein d’énergie. Il permet à un Pokémon de gagner un niveau d’expérience."
     },
     [51] = {
         name = "Pp Up",
@@ -2552,55 +2523,55 @@ ItemData.GEN_5_ITEMS = {
     },
     [52] = {
         name = "Zinc",
-        description = "Raises Special Defense and happiness."
+        description = "Une boisson très nutritive qui monte la Défense Spéciale d’un Pokémon."
     },
     [53] = {
         name = "Pp Max",
         description = "Raises a move's max PP by 60%."
     },
     [54] = {
-        name = "Old Gateau",
-        description = "Cures any status ailment and confusion."
+        name = "Vieux Gâteau",
+        description = "Spécialité du Vieux Château. Il soigne tous les problèmes de statut d’un Pokémon."
     },
     [55] = {
-        name = "Guard Spec",
-        description = "Prevents stat changes in battle for five turns in battle. Raises happiness."
+        name = "Défense Spéc",
+        description = "Empêche la réduction des stats de tous les Pokémon de l’équipe pendant 5 tours."
     },
     [56] = {
-        name = "Dire Hit",
-        description = "Increases the chance of a critical hit in battle. Raises happiness."
+        name = "Muscle +",
+        description = "Monte fortement le taux de critiques. Utilisable une seule fois. L’effet disparaît si le Pokémon se retire."
     },
     [57] = {
-        name = "X Attack",
-        description = "Raises Attack by one stage in battle. Raises happiness."
+        name = "Attaque +",
+        description = "Monte l’Attaque pendant un combat. L’effet s’estompe si le Pokémon se retire."
     },
     [58] = {
-        name = "X Defense",
-        description = "Raises Defense by one stage in battle. Raises happiness."
+        name = "Défense +",
+        description = "Monte la Défense pendant un combat. L’effet s’estompe si le Pokémon se retire."
     },
     [59] = {
-        name = "X Speed",
-        description = "Raises Speed by one stage in battle. Raises happiness."
+        name = "Vitesse +",
+        description = "Monte la Vitesse pendant un combat. L’effet s’estompe si le Pokémon se retire."
     },
     [60] = {
-        name = "X Accuracy",
-        description = "Raises accuracy by one stage in battle. Raises happiness."
+        name = "Précision +",
+        description = "Monte la Précision pendant un combat. L’effet s’estompe si le Pokémon se retire."
     },
     [61] = {
-        name = "X Sp-atk",
-        description = "Raises Special Attack by one stage in battle. Raises happiness."
+        name = "Spécial +",
+        description = "Monte l’Attaque Spéciale pendant un combat. L’effet s’estompe si le Pokémon se retire."
     },
     [62] = {
-        name = "X Sp-def",
-        description = "Raises Special Defense by one stage in battle. Raises happiness."
+        name = "Déf. Spé. +",
+        description = "Monte la Défense Spéciale pendant un combat. L’effet s’estompe si le Pokémon se retire."
     },
     [63] = {
         name = "Poke Doll",
         description = "Ends a wild battle."
     },
     [64] = {
-        name = "Fluffy Tail",
-        description = "Ends a wild battle."
+        name = "Queue Skitty",
+        description = "Objet qui attire les Pokémon. Permet de s’enfuir d’un combat contre un Pokémon sauvage."
     },
     [65] = {
         name = "Blue Flute",
@@ -2615,104 +2586,104 @@ ItemData.GEN_5_ITEMS = {
         description = "Cures attraction."
     },
     [68] = {
-        name = "Black Flute",
-        description = "Halves the wild Pok" .. Chars.accentedE .. "mon encounter rate."
+        name = "Flûte Noire",
+        description = "Jouet en forme de flûte en verre noir. Les amateurs en donnent un bon prix."
     },
     [69] = {
-        name = "White Flute",
-        description = "Doubles the wild Pok" .. Chars.accentedE .. "mon encounter rate."
+        name = "Flûteblanche",
+        description = "Jouet en forme de flûte en verre blanc. Les amateurs en donnent un bon prix."
     },
     [70] = {
         name = "Shoal Salt",
-        description = "No effect. "
+        description = "No effect."
     },
     [71] = {
         name = "Shoal Shell",
-        description = "No effect. "
+        description = "No effect."
     },
     [72] = {
         name = "Red Shard",
-        description = "No effect. Can be traded for items or moves."
+        description = "Pas d'effet. Peut être échangé contre des objets ou des capacités"
     },
     [73] = {
         name = "Blue Shard",
-        description = "No effect. Can be traded for items or moves."
+        description = "Pas d'effet. Peut être échangé contre des objets ou des capacités"
     },
     [74] = {
         name = "Yellow Shard",
-        description = "No effect. Can be traded for items or moves."
+        description = "Pas d'effet. Peut être échangé contre des objets ou des capacités"
     },
     [75] = {
         name = "Green Shard",
-        description = "No effect. Can be traded for items or moves."
+        description = "Pas d'effet. Peut être échangé contre des objets ou des capacités"
     },
     [76] = {
-        name = "Super Repel",
-        description = "For 200 steps, prevents wild encounters of level lower than your party's lead Pokemon."
+        name = "Superepousse",
+        description = "Repousse les Pokémon sauvages faibles pendant 200 pas."
     },
     [77] = {
-        name = "Max Repel",
-        description = "For 250 steps, prevents wild encounters of level lower than your party's lead Pokemon."
+        name = "Max Repousse",
+        description = "Repousse les Pokémon sauvages faibles pendant 250 pas."
     },
     [78] = {
-        name = "Escape Rope",
-        description = "Transports user to the outside entrance of a cave."
+        name = "Corde Sortie",
+        description = "Une corde longue et solide permettant de sortir rapidement d’une grotte ou d’un donjon."
     },
     [79] = {
-        name = "Repel",
-        description = "For 100 steps, prevents wild encounters of level lower than your party's lead Pokemon."
+        name = "Repousse",
+        description = "Repousse les Pokémon sauvages faibles pendant 100 pas."
     },
     [80] = {
-        name = "Sun Stone",
-        description = "Evolves a Cottonee into Whimsicott, a Gloom into Bellossom, a Petilil into Lilligant, or a Sunkern into Sunflora."
+        name = "Pierresoleil",
+        description = "Une pierre étrange qui fait évoluer certaines espèces de Pokémon. Elle est rouge comme le soleil."
     },
     [81] = {
-        name = "Moon Stone",
-        description = "Evolves a Clefairy into Clefable, a Jigglypuff into Wigglytuff, a Munna into Musharna, a Nidorina into Nidoqueen, a Nidorino into Nidoking, or a Skitty into Delcatty."
+        name = "Pierre Lune",
+        description = "Une pierre étrange qui fait évoluer certaines espèces de Pokémon. Elle est noire comme la nuit."
     },
     [82] = {
-        name = "Fire Stone",
-        description = "Evolves an Eevee into Flareon, a Growlithe into Arcanine, a Pansear into Simisear, or a Vulpix into Ninetales."
+        name = "Pierre Feu",
+        description = "Une pierre étrange qui fait évoluer certaines espèces de Pokémon. Elle est jaune et orange."
     },
     [83] = {
         name = "Thunder Stone",
         description = "Evolves an Eelektrik into Eelektross, an Eevee into Jolteon, or a Pikachu into Raichu."
     },
     [84] = {
-        name = "Water Stone",
-        description = "Evolves an Eevee into Vaporeon, a Lombre into Ludicolo, a Panpour into Simipour, a Poliwhirl into Poliwrath, a Shellder into Cloyster, or a Staryu into Starmie."
+        name = "Pierre Eau",
+        description = "Une pierre étrange qui fait évoluer certaines espèces de Pokémon. Elle est de couleur bleue."
     },
     [85] = {
-        name = "Leaf Stone",
-        description = "Evolves an Exeggcute into Exeggutor, a Gloom into Vileplume, a Nuzleaf into Shiftry, a Pansage into Simisage, or a Weepinbell into Victreebel."
+        name = "Pierreplante",
+        description = "Une pierre étrange qui fait évoluer certaines espèces de Pokémon. Une feuille est dessinée dessus."
     },
     [86] = {
         name = "Tiny Mushroom",
         description = "Fire Red and Leaf Green: Trade two for prior Level-up moves. Sell for 250 Pokedollars, or to Hungry Maid for 500 Pokedollars."
     },
     [87] = {
-        name = "Big Mushroom",
-        description = "Fire Red and Leaf Green: Trade for prior Level-up moves. Sell for 2500 Pokedollars, or to Hungry Maid for 5000 Pokedollars."
+        name = "Gros Champi",
+        description = "Un grand champignon plutôt rare. Il est très populaire parmi certains fans dévoués."
     },
     [88] = {
-        name = "Pearl",
-        description = "Sell for 700 Pokedollars, or to Ore Collector for 1400 Pokedollars."
+        name = "Perle",
+        description = "Une petite perle qui brille d’une jolie couleur argent. Peut être vendue à bas prix aux magasins."
     },
     [89] = {
-        name = "Big Pearl",
-        description = "Sell for 3750 Pokedollars, or to Ore Collector for 7500 Pokedollars."
+        name = "Grande Perle",
+        description = "Une grande perle qui brille d’une jolie couleur argent. Peut être vendue à bon prix aux magasins."
     },
     [90] = {
-        name = "Stardust",
-        description = "Sell for 1000 Pokedollars, or to Ore Collector for 2000 Pokedollars."
+        name = "Pouss.Étoile",
+        description = "Sable rouge ravissant, aux grains très fins. Peut être vendu à bon prix aux magasins."
     },
     [91] = {
-        name = "Star Piece",
-        description = "Platinum: Trade for one of each color Shard. Black and White: Trade for PP Up. Sell for 4900 Pokedollars, or to Ore Collector for 9800 Pokedollars."
+        name = "Morc. Étoile",
+        description = "Fragment de gemme qui brille d’un éclat rouge. Peut se vendre à bon prix aux magasins."
     },
     [92] = {
-        name = "Nugget",
-        description = "Sell for 5000 Pokedollars, or to Ore Collector for 10000 Pokedollars."
+        name = "Pépite",
+        description = "Pépite d’or pur qui brille magnifiquement. Peut être vendue à bon prix aux magasins."
     },
     [93] = {
         name = "Heart Scale",
@@ -2723,20 +2694,20 @@ ItemData.GEN_5_ITEMS = {
         description = "Used to attract Wild Pok" .. Chars.accentedE .. "mon."
     },
     [95] = {
-        name = "Growth Mulch",
-        description = "Growing time of berries is reduced, but the soil dries out faster."
+        name = "Fertipousse",
+        description = "Un engrais utilisé sur sol meuble. Les amateurs en donnent un bon prix."
     },
     [96] = {
-        name = "Damp Mulch",
-        description = "Growing time of berries is increased, but the soil dries out slower."
+        name = "Fertihumide",
+        description = "Un engrais utilisé sur sol meuble. Les amateurs en donnent un bon prix."
     },
     [97] = {
-        name = "Stable Mulch",
-        description = "Berries stay on the plant for longer than their usual time."
+        name = "Fertistable",
+        description = "Un engrais utilisé sur sol meuble. Les amateurs en donnent un bon prix."
     },
     [98] = {
-        name = "Gooey Mulch",
-        description = "Berries regrow from dead plants an increased number of times."
+        name = "Fertiglu",
+        description = "Un engrais utilisé sur sol meuble. Les amateurs en donnent un bon prix."
     },
     [99] = {
         name = "Root Fossil",
@@ -2767,101 +2738,96 @@ ItemData.GEN_5_ITEMS = {
         description = "Can be revived into a Cranidos."
     },
     [106] = {
-        name = "Rare Bone",
-        description = "Sell for 5000 Pokedollars, or to Bone Man for 10000 Pokedollars."
+        name = "Os Rare",
+        description = "Un os d’une grande valeur pour l’archéologie Pokémon. Peut être vendu à bon prix aux magasins."
     },
     [107] = {
-        name = "Shiny Stone",
-        description = "Evolves a Minccino into Cinccino, a Roselia into Roserade, or a Togetic into Togekiss."
+        name = "Pierre Éclat",
+        description = "Pierre étrange qui fait évoluer certaines espèces de Pokémon. Elle brille d’une lumière aveuglante."
     },
     [108] = {
-        name = "Dusk Stone",
-        description = "Evolves a Lampent into Chandelure, a Misdreavus into Mismagius, or a Murkrow into Honchkrow."
+        name = "Pierre Nuit",
+        description = "Pierre étrange qui fait évoluer certaines espèces de Pokémon. Elle est sombre comme une nuit sans lune."
     },
     [109] = {
-        name = "Dawn Stone",
-        description = "Evolves a male Kirlia into Gallade or a female Snorunt into Froslass."
+        name = "Pierre Aube",
+        description = "Pierre étrange qui fait évoluer certaines espèces de Pokémon. Elle brille comme un œil."
     },
     [110] = {
-        name = "Oval Stone",
-        description = "Level-up during Day on a Happiny: Holder evolves into Chansey."
+        name = "Pierre Ovale",
+        description = "Pierre étrange qui fait évoluer certaines espèces de Pokémon. Elle a la forme d’un œuf."
     },
     [111] = {
         name = "Odd Keystone",
         description = "Use on the tower on Route 209 to encounter Spiritomb if you have at least 32 Underground greetings."
     },
     [135] = {
-        name = "Adamant Orb",
-        description = "Boosts the damage from Dialga's Dragon-type and Steel-type moves by 20%."
+        name = "Orbe Adamant",
+        description = "Orbe très brillant destiné à Dialga. Augmente la puissance des capacités de type Dragon et Acier."
     },
     [136] = {
-        name = "Lustrous Orb",
-        description = "Boosts the damage from Palkia's Dragon-type and Water-type moves by 20%."
+        name = "Orbe Perlé",
+        description = "Bel orbe luisant destiné à Palkia. Augmente la puissance des capacités de type Dragon et Eau."
     },
     [149] = {
-        name = "Cheri Berry",
-        description = "Consumed when paralyzed to cure paralysis."
+        name = "Baie Ceriz",
+        description = "Baie qui soigne la paralysie lorsqu’elle est tenue par un Pokémon."
     },
     [150] = {
-        name = "Chesto Berry",
-        description = "Consumed when asleep to cure sleep."
+        name = "Baie Maron",
+        description = "Baie qui soigne le sommeil lorsqu’elle est tenue par un Pokémon."
     },
     [151] = {
-        name = "Pecha Berry",
-        description = "Consumed when poisoned to cure poison."
+        name = "Baie Pêcha",
+        description = "Baie qui soigne l’empoisonnement lorsqu’elle est tenue par un Pokémon."
     },
     [152] = {
-        name = "Rawst Berry",
-        description = "Consumed when burned to cure a burn."
+        name = "Baie Fraive",
+        description = "Baie qui soigne les brûlures lorsqu’elle est tenue par un Pokémon."
     },
     [153] = {
-        name = "Aspear Berry",
-        description = "Consumed when frozen to cure frozen."
+        name = "Baie Willia",
+        description = "Baie qui soigne le gel lorsqu’elle est tenue par un Pokémon."
     },
     [154] = {
-        name = "Leppa Berry",
-        description = "Consumed when a move runs out of PP to restore its PP by 10."
+        name = "Baie Mepo",
+        description = "Baie qui restaure 10 PP lorsqu’elle est tenue par un Pokémon."
     },
     [155] = {
-        name = "Oran Berry",
-        description = "Consumed at 1/2 max HP to recover 10 HP."
+        name = "Baie Oran",
+        description = "Baie qui restaure 10 PV lorsqu’elle est tenue par un Pokémon."
     },
     [156] = {
-        name = "Persim Berry",
-        description = "Consumed when confused to cure confusion."
+        name = "Baie Kika",
+        description = "Baie qui soigne la confusion lorsqu’elle est tenue par un Pokémon."
     },
     [157] = {
-        name = "Lum Berry",
-        description = "Consumed to cure any status condition or confusion."
+        name = "Baie Prine",
+        description = "Baie qui soigne tous les problèmes de statut lorsqu’elle est tenue par un Pokémon."
     },
     [158] = {
-        name = "Sitrus Berry",
-        description = "Consumed at 1/2 max HP to recover 1/4 max HP."
+        name = "Baie Sitrus",
+        description = "Baie qui restaure quelques PV lorsqu’elle est tenue par un Pokémon."
     },
     [159] = {
-        name = "Figy Berry",
-        description = "Consumed at 1/2 max HP to restore 1/8 max HP. Confuses Pok" ..
-            Chars.accentedE .. "mon that dislike spicy flavor."
+        name = "Baie Figuy",
+        description = "Tenue, cette Baie restaure des PV en cas de besoin, mais rend confus si le Pokémon n’aime pas son goût."
     },
     [160] = {
-        name = "Wiki Berry",
-        description = "Consumed at 1/2 max HP to restore 1/8 max HP. Confuses Pok" ..
-            Chars.accentedE .. "mon that dislike dry flavor."
+        name = "Baie Wiki",
+        description = "Tenue, cette Baie restaure des PV en cas de besoin, mais rend confus si le Pokémon n’aime pas son goût."
     },
     [161] = {
-        name = "Mago Berry",
-        description = "Consumed at 1/2 max HP to restore 1/8 max HP. Confuses Pok" ..
-            Chars.accentedE .. "mon that dislike sweet flavor."
+        name = "Baie Mago",
+        description = "Tenue, cette Baie restaure des PV en cas de besoin, mais rend confus si le Pokémon n’aime pas son goût."
     },
     [162] = {
-        name = "Aguav Berry",
-        description = "Consumed at 1/2 max HP to restore 1/8 max HP. Confuses Pok" ..
-            Chars.accentedE .. "mon that dislike bitter flavor."
+        name = "Baie Gowav",
+        description = "Tenue, cette Baie restaure des PV en cas de besoin, mais rend confus si le Pokémon n’aime pas son goût."
     },
     [163] = {
-        name = "Iapapa Berry",
-        description = "Consumed at 1/2 max HP to restore 1/8 max HP. Confuses Pok" ..
-            Chars.accentedE .. "mon that dislike sour flavor."
+        name = "Baie Papaya",
+        description = "Tenue, cette Baie restaure des PV en cas de besoin, mais rend confus si le Pokémon n’aime pas son goût."
     },
     [164] = {
         name = "Razz Berry",
@@ -2884,28 +2850,28 @@ ItemData.GEN_5_ITEMS = {
         description = "Used for creating PokeBlocks and Poffins."
     },
     [169] = {
-        name = "Pomeg Berry",
-        description = "Drops HP Effort Values by 10 and raises happiness."
+        name = "Baie Grena",
+        description = "Rend les Pokémon plus amicaux, mais baisse leurs PV de base."
     },
     [170] = {
-        name = "Kelpsy Berry",
-        description = "Drops Attack Effort Values by 10 and raises happiness."
+        name = "Baie Alga",
+        description = "Rend les Pokémon plus amicaux, mais baisse leur stat Attaque de base."
     },
     [171] = {
-        name = "Qualot Berry",
-        description = "Drops Defense Effort Values by 10 and raises happiness."
+        name = "Baie Qualot",
+        description = "Rend les Pokémon plus amicaux, mais baisse leur stat Défense de base."
     },
     [172] = {
-        name = "Hondew Berry",
-        description = "Drops Special Attack Effort Values by 10 and raises happiness."
+        name = "Baie Lonme",
+        description = "Rend les Pokémon plus amicaux, mais baisse leur stat Attaque Spéciale de base."
     },
     [173] = {
-        name = "Grepa Berry",
-        description = "Drops Special Defense Effort Values by 10 and raises happiness."
+        name = "Baie Résin",
+        description = "Rend les Pokémon plus amicaux, mais baisse leur stat Défense Spéciale de base."
     },
     [174] = {
-        name = "Tamato Berry",
-        description = "Drops Speed Effort Values by 10 and raises happiness."
+        name = "Baie Tamato",
+        description = "Rend les Pokémon plus amicaux, mais baisse leur stat Vitesse de base."
     },
     [175] = {
         name = "Cornn Berry",
@@ -2944,309 +2910,308 @@ ItemData.GEN_5_ITEMS = {
         description = "Used for creating PokeBlocks and Poffins."
     },
     [184] = {
-        name = "Occa Berry",
-        description = "Consumed when struck by a super-effective Fire-type attack to halve the damage."
+        name = "Baie Chocco",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie super efficace de type Feu."
     },
     [185] = {
-        name = "Passho Berry",
-        description = "Consumed when struck by a super-effective Water-type attack to halve the damage."
+        name = "Baie Pocpoc",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie super efficace de type Eau."
     },
     [186] = {
-        name = "Wacan Berry",
-        description = "Consumed when struck by a super-effective Electric-type attack to halve the damage."
+        name = "Baie Parma",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie super efficace de type Électrik."
     },
     [187] = {
-        name = "Rindo Berry",
-        description = "Consumed when struck by a super-effective Grass-type attack to halve the damage."
+        name = "Baie Ratam",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie super efficace de type Plante."
     },
     [188] = {
-        name = "Yache Berry",
-        description = "Consumed when struck by a super-effective Ice-type attack to halve the damage."
+        name = "Baie Nanone",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie super efficace de type Glace."
     },
     [189] = {
-        name = "Chople Berry",
-        description = "Consumed when struck by a super-effective Fighting-type attack to halve the damage."
+        name = "Baie Pomroz",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie super efficace de type Combat."
     },
     [190] = {
-        name = "Kebia Berry",
-        description = "Consumed when struck by a super-effective Poison-type attack to halve the damage."
+        name = "Baie Kébia",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie super efficace de type Poison."
     },
     [191] = {
-        name = "Shuca Berry",
-        description = "Consumed when struck by a super-effective Ground-type attack to halve the damage."
+        name = "Baie Jouca",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie super efficace de type Sol."
     },
     [192] = {
-        name = "Coba Berry",
-        description = "Consumed when struck by a super-effective Flying-type attack to halve the damage."
+        name = "Baie Cobaba",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie super efficace de type Vol."
     },
     [193] = {
-        name = "Payapa Berry",
-        description = "Consumed when struck by a super-effective Psychic-type attack to halve the damage."
+        name = "Baie Yapap",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie super efficace de type Psy."
     },
     [194] = {
-        name = "Tanga Berry",
-        description = "Consumed when struck by a super-effective Bug-type attack to halve the damage."
+        name = "Baie Panga",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie super efficace de type Insecte."
     },
     [195] = {
-        name = "Charti Berry",
-        description = "Consumed when struck by a super-effective Rock-type attack to halve the damage."
+        name = "Baie Charti",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie super efficace de type Roche."
     },
     [196] = {
-        name = "Kasib Berry",
-        description = "Consumed when struck by a super-effective Ghost-type attack to halve the damage."
+        name = "Baie Sédra",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie super efficace de type Spectre."
     },
     [197] = {
-        name = "Haban Berry",
-        description = "Consumed when struck by a super-effective Dragon-type attack to halve the damage."
+        name = "Baie Fraigo",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie super efficace de type Dragon."
     },
     [198] = {
-        name = "Colbur Berry",
-        description = "Consumed when struck by a super-effective Dark-type attack to halve the damage."
+        name = "Baie Lampou",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie super efficace de type Ténèbres."
     },
     [199] = {
-        name = "Babiri Berry",
-        description = "Consumed when struck by a super-effective Steel-type attack to halve the damage."
+        name = "Baie Babiri",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie super efficace de type Acier."
     },
     [200] = {
-        name = "Chilan Berry",
-        description = "Consumed when struck by a Normal-type attack to halve the damage."
+        name = "Baie Zalis",
+        description = "Tenue, cette Baie affaiblit une attaque ennemie de type Normal."
     },
     [201] = {
-        name = "Liechi Berry",
-        description = "Consumed at 1/4 max HP to boost Attack."
+        name = "Baie Lichii",
+        description = "Tenue, cette Baie monte l’Attaque en cas de besoin."
     },
     [202] = {
-        name = "Ganlon Berry",
-        description = "Consumed at 1/4 max HP to boost Defense."
+        name = "Baie Lingan",
+        description = "Tenue, cette Baie monte la Défense en cas de besoin."
     },
     [203] = {
-        name = "Salac Berry",
-        description = "Consumed at 1/4 max HP to boost Speed."
+        name = "Baie Sailak",
+        description = "Tenue, cette Baie monte la Vitesse en cas de besoin."
     },
     [204] = {
-        name = "Petaya Berry",
-        description = "Consumed at 1/4 max HP to boost Special Attack."
+        name = "Baie Pitaye",
+        description = "Tenue, cette Baie monte l’Atq. Spé. en cas de besoin."
     },
     [205] = {
-        name = "Apicot Berry",
-        description = "Consumed at 1/4 max HP to boost Special Defense."
+        name = "Baie Abriko",
+        description = "Tenue, cette Baie monte la Déf. Spé. en cas de besoin."
     },
     [206] = {
-        name = "Lansat Berry",
-        description = "Consumed at 1/4 max HP to boost critical hit ratio by two stages."
+        name = "Baie Lansat",
+        description = "Tenue, cette Baie monte le taux de critiques en cas de besoin."
     },
     [207] = {
-        name = "Starf Berry",
-        description = "Consumed at 1/4 max HP to boost a random stat by two stages."
+        name = "Baie Frista",
+        description = "Tenue, cette Baie monte beaucoup une des stats en cas de besoin."
     },
     [208] = {
-        name = "Enigma Berry",
-        description = "Consumed when struck by a super-effective attack to restore 1/4 max HP."
+        name = "Baie Enigma",
+        description = "Tenue, cette Baie restaure les PV du Pokémon s’il subit une attaque super efficace."
     },
     [209] = {
-        name = "Micle Berry",
-        description = "Consumed at 1/4 max HP to boost accuracy of next move by 20%."
+        name = "Baie Micle",
+        description = "Tenue, cette Baie augmente une fois la Précision d’une capacité en cas de besoin."
     },
     [210] = {
-        name = "Custap Berry",
-        description = "Consumed at 1/4 max HP when using a move to go first."
+        name = "Baie Chérim",
+        description = "Tenue, cette Baie permet d’attaquer en premier une fois en cas de besoin."
     },
     [211] = {
-        name = "Jaboca Berry",
-        description = "Consumed to deal 1/8 attacker's max HP when holder is struck by a physical attack."
+        name = "Baie Jaboca",
+        description = "Tenue, cette Baie inflige des dégâts à l’ennemi s’il utilise une attaque physique qui atteint son but."
     },
     [212] = {
-        name = "Rowap Berry",
-        description = "Consumed to deal 1/8 attacker's max HP when holder is struck by a special attack."
+        name = "Baie Pommo",
+        description = "Tenue, cette Baie inflige des dégâts à l’ennemi s’il utilise une attaque spéciale qui atteint son but."
     },
     [213] = {
-        name = "BrightPowder",
-        description = "Increases the holder's evasion by 1/9 (11 1/9%)."
+        name = "Poudreclaire",
+        description = "Objet à tenir qui intimide et baisse la Précision de l’ennemi."
     },
     [214] = {
-        name = "White Herb",
-        description = "Resets all lowered stats to normal at end of turn. Consumed after use."
+        name = "Herbeblanche",
+        description = "Objet à tenir qui restaure les stats baissées. Ne peut être utilisé qu’une fois."
     },
     [215] = {
-        name = "Macho Brace",
-        description = "Holder gains double effort values from battles, but has halved Speed in battle."
+        name = "Brac. Macho",
+        description = "C’est un bracelet dur et lourd qui rend le porteur plus fort, mais baisse sa Vitesse."
     },
     [216] = {
         name = "Exp Share",
-        description = "Half the experience from a battle is split between Pok" ..
-            Chars.accentedE .. "mon holding this item."
+        description = "Half the experience from a battle is split between Pok" .. Chars.accentedE .. "mon holding this item."
     },
     [217] = {
-        name = "Quick Claw",
-        description = "Holder has a 3/16 (18.75%) chance to move first."
+        name = "Vive Griffe",
+        description = "Griffe légère mais tranchante qui permet parfois de frapper le premier."
     },
     [218] = {
-        name = "Soothe Bell",
-        description = "Doubles the happiness earned by the holder."
+        name = "Grelot Zen",
+        description = "Grelot dont le carillon calme le porteur et favorise l’amitié."
     },
     [219] = {
-        name = "Mental Herb",
-        description = "Consumed to cure infatuation. Gen V: Also removes Taunt, Encore, Torment, Disable, and Cursed Body."
+        name = "Herbe Mental",
+        description = "Objet à tenir qui annule l’attirance d’un Pokémon. Ne peut être utilisé qu’une fois."
     },
     [220] = {
-        name = "Choice Band",
-        description = "Increases Attack by 50%, but restricts the holder to only one move."
+        name = "Band. Choix",
+        description = "Ce bandeau monte l’Attaque, mais ne permet d’utiliser qu’une seule capacité par combat."
     },
     [221] = {
-        name = "King's Rock",
-        description = "Damaging moves gain a 10% chance to make their target flinch. Traded on a Poliwhirl: Holder evolves into Politoed. Traded on a Slowpoke: Holder evolves into Slowking."
+        name = "Roche Royale",
+        description = "Peut apeurer l’ennemi lorsque le porteur lui inflige des dégâts."
     },
     [222] = {
-        name = "Silver Powder",
-        description = "Bug-Type moves from holder do 20% more damage."
+        name = "Poudre Arg.",
+        description = "Poudre d’argent brillante qui monte la puissance des capacités de type Insecte."
     },
     [223] = {
-        name = "Amulet Coin",
-        description = "Doubles the money earned from a battle. Does not stack with Luck Incense."
+        name = "Pièce Rune",
+        description = "Double l’argent gagné si le porteur se joint au combat."
     },
     [224] = {
-        name = "Cleanse Tag",
-        description = "Prevents wild encounters of level lower than your party's lead Pokemon."
+        name = "Rune Purif.",
+        description = "Double l’argent gagné si le porteur se joint au combat."
     },
     [225] = {
-        name = "Soul Dew",
-        description = "Raises Latias and Latios's Special Attack and Special Defense by 50%."
+        name = "Rosée Âme",
+        description = "Orbe prodigieux à faire tenir à Latios ou Latias qui monte leur Attaque Spéciale et leur Défense Spéciale."
     },
     [226] = {
-        name = "Deep Sea-tooth",
-        description = "Doubles Clamperl's Special Attack. Traded on a Clamperl: Holder evolves into Huntail."
+        name = "Dent Océan",
+        description = "Objet à faire tenir à Coquiperl. Dent de couleur argent montant son Attaque Spéciale."
     },
     [227] = {
-        name = "Deep Sea-scale",
-        description = "Doubles Clamperl's Special Defense. Traded on a Clamperl: Holder evolves into Gorebyss."
+        name = "Écailleocéan",
+        description = "Objet à faire tenir à Coquiperl. Écaille de couleur rose montant sa Défense Spéciale."
     },
     [228] = {
-        name = "Smoke Ball",
-        description = "Allows the Holder to escape from any wild battle."
+        name = "Boule Fumée",
+        description = "Permet au porteur de s’enfuir à coup sûr face à un Pokémon sauvage."
     },
     [229] = {
-        name = "Everstone",
-        description = "Prevents level-based evolution from occuring."
+        name = "Pierre Stase",
+        description = "Pierre merveilleuse empêchant l’évolution."
     },
     [230] = {
-        name = "Focus Band",
-        description = "Holder has 10% chance to survive attacks or self-inflicted damage at 1 HP."
+        name = "Bandeau",
+        description = "Objet à tenir pouvant parfois empêcher d’être mis K.O., ne laissant qu’un PV."
     },
     [231] = {
-        name = "Lucky Egg",
-        description = "Increases EXP earned in battle by 50%."
+        name = "Œuf Chance",
+        description = "Œuf rempli de joie qui augmente le nombre de points Exp. gagnés au combat."
     },
     [232] = {
-        name = "Scope Lens",
-        description = "Raises the holder's critical hit ratio by one stage."
+        name = "Lentilscope",
+        description = "Lentille qui augmente le taux de critiques du porteur."
     },
     [233] = {
-        name = "Metal Coat",
-        description = "Steel-Type moves from holder do 20% more damage."
+        name = "Peau Métal",
+        description = "Pellicule métallique spéciale qui monte la puissance des capacités de type Acier."
     },
     [234] = {
-        name = "Leftovers",
-        description = "Restores 1/16 (6.25%) holder's max HP at the end of each turn."
+        name = "Restes",
+        description = "Objet à tenir permettant de restaurer les PV du porteur graduellement durant le combat."
     },
     [235] = {
-        name = "Dragon Scale",
-        description = "Traded on a Seadra: Holder evolves into Kingdra."
+        name = "Écailledraco",
+        description = "Une écaille épaisse et dure tenue parfois par les Pokémon de type Dragon quand ils sont attrapés."
     },
     [236] = {
-        name = "Light Ball",
-        description = "Doubles Pikachu's Attack and Special Attack. Breed on Pikachu or Raichu: Pichu Egg will have Volt Tackle."
+        name = "Ballelumière",
+        description = "Objet à faire tenir par Pikachu. Orbe énigmatique qui monte son Attaque et son Attaque Spéciale."
     },
     [237] = {
-        name = "Soft Sand",
-        description = "Ground-Type moves from holder do 20% more damage."
+        name = "Sable Doux",
+        description = "Sable fin et soyeux montant la puissance des capacités de type Sol."
     },
     [238] = {
-        name = "Hard Stone",
-        description = "Rock-Type moves from holder do 20% more damage."
+        name = "Pierre Dure",
+        description = "Pierre incassable qui monte la puissance des capacités de type Roche."
     },
     [239] = {
-        name = "Miracle Seed",
-        description = "Grass-Type moves from holder do 20% more damage."
+        name = "Grain Miracl",
+        description = "Graine remplie de vie qui monte la puissance des capacités de type Plante."
     },
     [240] = {
         name = "BlackGlasses",
         description = "Dark-Type moves from holder do 20% more damage."
     },
     [241] = {
-        name = "Black Belt",
-        description = "Fighting-Type moves from holder do 20% more damage."
+        name = "Ceint.Noire",
+        description = "Ceinture qui augmente la détermination et la puissance des capacités de type Combat."
     },
     [242] = {
-        name = "Magnet",
-        description = "Electric-Type moves from holder do 20% more damage."
+        name = "Aimant",
+        description = "Aimant puissant montant la puissance des capacités de type Électrik."
     },
     [243] = {
-        name = "Mystic Water",
-        description = "Water-Type moves from holder do 20% more damage."
+        name = "Eau Mystique",
+        description = "Gemme en forme de goutte d’eau montant la puissance des capacités de type Eau."
     },
     [244] = {
-        name = "Sharp Beak",
-        description = "Flying-Type moves from holder do 20% more damage."
+        name = "Bec Pointu",
+        description = "Bec long et pointu montant la puissance des capacités de type Vol."
     },
     [245] = {
-        name = "Poison Barb",
-        description = "Poison-Type moves from holder do 20% more damage."
+        name = "Pic Venin",
+        description = "Petit pic empoisonné montant la puissance des capacités de type Poison."
     },
     [246] = {
-        name = "Never Melt-ice",
-        description = "Ice-Type moves from holder do 20% more damage."
+        name = "Glacéternel",
+        description = "Morceau de glace qui réfléchit la chaleur et monte la puissance des capacités de type Glace."
     },
     [247] = {
-        name = "Spell Tag",
-        description = "Ghost-Type moves from holder do 20% more damage."
+        name = "Rune Sort",
+        description = "Plaque sinistre et étrange montant la puissance des capacités de type Spectre."
     },
     [248] = {
-        name = "Twisted Spoon",
-        description = "Psychic-Type moves from holder do 20% more damage."
+        name = "Cuillertordu",
+        description = "Cuillère contenant un pouvoir télékinésique montant la puissance des capacités de type Psy."
     },
     [249] = {
-        name = "Charcoal",
-        description = "Fire-Type moves from holder do 20% more damage."
+        name = "Charbon",
+        description = "Combustible montant la puissance des capacités de type Feu."
     },
     [250] = {
-        name = "Dragon Fang",
-        description = "Dragon-Type moves from holder do 20% more damage."
+        name = "Croc Dragon",
+        description = "Croc dur et pointu montant la puissance des capacités de type Dragon."
     },
     [251] = {
-        name = "Silk Scarf",
-        description = "Normal-Type moves from holder do 20% more damage."
+        name = "Mouch. Soie",
+        description = "Mouchoir somptueux montant la puissance des capacités de type Normal."
     },
     [252] = {
-        name = "Up Grade",
-        description = "Traded on a Porygon: Holder evolves into Porygon2."
+        name = "Améliorator",
+        description = "Dispositif transparent rempli de données diverses et variées. Fabriqué par la Sylphe SARL."
     },
     [253] = {
-        name = "Shell Bell",
-        description = "Holder receives 1/8 of the damage it deals when attacking."
+        name = "Grelot Coque",
+        description = "Restaure un peu les PV du porteur à chaque fois qu’il inflige des dégâts."
     },
     [254] = {
-        name = "Sea Incense",
-        description = "Water-Type moves from holder do 20% more damage. Breeding: Marill or Azumarill beget an Azurill Egg."
+        name = "Encens Mer",
+        description = "Encens au parfum curieux qui augmente la puissance des capacités de type Eau."
     },
     [255] = {
-        name = "Lax Incense",
-        description = "Holder's evasion is increased by 5%. Breeding: Wobbuffet begets a Wynaut Egg."
+        name = "Encens Doux",
+        description = "Le parfum trompeur de cet encens baisse la Précision de l’ennemi."
     },
     [256] = {
-        name = "Lucky Punch",
-        description = "Raises Chansey's critical hit ratio by two stages."
+        name = "Poing Chance",
+        description = "Objet à faire tenir à Leveinard. Paire de gants montant son taux de critiques."
     },
     [257] = {
-        name = "Metal Powder",
-        description = "Raises Ditto's Defense and Special Defense by 50%. The boost is lost after transforming."
+        name = "Poudre Métal",
+        description = "Objet à faire tenir à Métamorph. Cette poudre étrange, très fine mais résistante, booste sa Défense."
     },
     [258] = {
-        name = "Thick Club",
-        description = "Doubles Cubone or Marowak's Attack."
+        name = "Masse Os",
+        description = "Objet à faire tenir à Osselait ou Ossatueur. Os dur qui monte leur Attaque."
     },
     [259] = {
-        name = "Stick",
-        description = "Raises Farfetch'd's critical hit ratio by two stages."
+        name = "Bâton",
+        description = "Objet à faire tenir à Canarticho. Poireau très long et solide qui monte son taux de critiques."
     },
     [260] = {
         name = "Red Scarf",
@@ -3269,258 +3234,256 @@ ItemData.GEN_5_ITEMS = {
         description = "Raises the holder's Toughness while in a contest."
     },
     [265] = {
-        name = "Wide Lens",
-        description = "Provides a 1/10 (10%) boost in accuracy to the holder."
+        name = "Loupe",
+        description = "Magnifique loupe augmentant un peu la Précision des capacités."
     },
     [266] = {
-        name = "Muscle Band",
-        description = "Boosts the damage of physical moves used by the holder by 10%."
+        name = "Band. Muscle",
+        description = "Bandeau augmentant légèrement la puissance des attaques physiques."
     },
     [267] = {
-        name = "Wise Glasses",
-        description = "Boosts the damage of special moves used by the holder by 1/10 (10%)."
+        name = "Lunet. Sages",
+        description = "Paire de lunettes épaisses augmentant un peu la puissance des attaques spéciales."
     },
     [268] = {
-        name = "Expert Belt",
-        description = "Holder's Super Effective moves do 20% extra damage."
+        name = "Ceinture Pro",
+        description = "Ceinture usée augmentant légèrement la puissance des capacités super efficaces."
     },
     [269] = {
-        name = "Light Clay",
-        description = "Light Screen and Reflect used by the holder last 8 rounds instead of 5."
+        name = "Lumargile",
+        description = "Objet à tenir augmentant la durée de capacités barrières telles que Mur Lumière et Protection."
     },
     [270] = {
-        name = "Life Orb",
-        description = "Holder's moves inflict 30% extra damage, but cost 10% max HP."
+        name = "Orbe Vie",
+        description = "Objet à tenir augmentant la puissance des capacités, mais qui dépense des PV à chaque coup."
     },
     [271] = {
-        name = "Power Herb",
-        description = "Both turns of a two-turn charge move happen at once. Consumed upon use."
+        name = "Herbe Pouv.",
+        description = "Objet à tenir et à usage unique. Permet d’utiliser immédiatement une capacité qui devrait se charger au premier tour."
     },
     [272] = {
-        name = "Toxic Orb",
-        description = "Inflicts Toxic on the holder at the end of the turn. Activates after Poison damage would occur."
+        name = "Orbe Toxique",
+        description = "Orbe bizarre empoisonnant gravement son porteur durant le combat."
     },
     [273] = {
-        name = "Flame Orb",
-        description = "Inflicts Burn on the holder at the end of the turn. Activates after Burn damage would occur."
+        name = "Orbe Flamme",
+        description = "Orbe bizarre brûlant son porteur durant le combat."
     },
     [274] = {
-        name = "Quick Powder",
-        description = "Doubles Ditto's Speed when held. The boost is lost after transforming."
+        name = "Poudre Vite",
+        description = "Objet à faire tenir à Métamorph. Cette poudre étrange, très fine mais résistante, augmente sa Vitesse."
     },
     [275] = {
-        name = "Focus Sash",
-        description = "Holder survives any single-hit attack at 1 HP if at max HP, then the item is consumed."
+        name = "Ceint. Force",
+        description = "Objet à tenir permettant au porteur, s’il a ses PV pleins, d’éviter un potentiel K.O. en conservant un PV."
     },
     [276] = {
-        name = "Zoom Lens",
-        description = "Provides a 1/5 (20%) boost in accuracy if the holder moves after the target."
+        name = "Lentil. Zoom",
+        description = "Augmente la Précision du porteur s’il attaque après l’ennemi."
     },
     [277] = {
-        name = "Metronome",
-        description = "Consectutive uses of the same attack have a cumulative damage boost of 10%. Maximum 100% boost."
+        name = "Métronome",
+        description = "Objet à tenir boostant une capacité utilisée à répétition. L’effet s’annule si une autre capacité est utilisée."
     },
     [278] = {
-        name = "Iron Ball",
-        description = "Holder's Speed is halved. Negates all Ground-type immunities, and makes Flying-types take neutral damage from Ground-type moves. Arena Trap. Spikes, and Toxic Spikes affect the holder."
+        name = "Balle Fer",
+        description = "Objet à tenir réduisant la Vitesse. Rend les porteurs de type Vol et lévitant sensibles aux capacités de type Sol."
     },
     [279] = {
-        name = "Lagging Tail",
-        description = "Holder moves last in its priority bracket."
+        name = "Ralentiqueue",
+        description = "Objet à tenir extrêmement lourd qui ralentit le porteur."
     },
     [280] = {
-        name = "Destiny Knot",
-        description = "Infatuates opposing Pok" ..
-            Chars.accentedE .. "mon when holder is inflicted with infatuation."
+        name = "Nœud Destin",
+        description = "Un long fil rouge vif à faire tenir à un Pokémon. Si le porteur succombe à l’attirance, l’ennemi aussi."
     },
     [281] = {
-        name = "Black Sludge",
-        description = "Poison-type holder recovers 1/16 (6.25%) max HP each turn. Non-Poison-Types take 1/8 (12.5%) max HP damage."
+        name = "Boue Noire",
+        description = "Objet à tenir restaurant peu à peu les PV des Pokémon de type Poison. Inflige des dégâts à tous les autres types."
     },
     [282] = {
-        name = "Icy Rock",
-        description = "Hail by the holder lasts 8 rounds instead of 5."
+        name = "Roche Glace",
+        description = "Objet à tenir augmentant la durée de la capacité Grêle utilisée par le porteur."
     },
     [283] = {
-        name = "Smooth Rock",
-        description = "Sandstorm by the holder lasts 8 rounds instead of 5."
+        name = "Roche Lisse",
+        description = "Objet à tenir augmentant la durée de la capacité Tempêtesable utilisée par le porteur."
     },
     [284] = {
-        name = "Heat Rock",
-        description = "Sunny Day by the holder lasts 8 rounds instead of 5."
+        name = "Roche Chaude",
+        description = "Objet à tenir augmentant la durée de la capacité Zénith utilisée par le porteur."
     },
     [285] = {
-        name = "Damp Rock",
-        description = "Rain Dance by the holder lasts 8 rounds instead of 5."
+        name = "Roche Humide",
+        description = "Objet à tenir augmentant la durée de la capacité Danse Pluie utilisée par le porteur."
     },
     [286] = {
-        name = "Grip Claw",
-        description = "Holder's multi-turn trapping moves last 5 turns."
+        name = "Accro Griffe",
+        description = "Objet à tenir augmentant la durée des attaques à tours multiples telles que Ligotage et Étreinte."
     },
     [287] = {
-        name = "Choice Scarf",
-        description = "Increases Speed by 50%, but restricts the holder to only one move."
+        name = "Mouch. Choix",
+        description = "Objet à tenir augmentant la Vitesse, mais ne permettant d’utiliser qu’une seule capacité par combat."
     },
     [288] = {
-        name = "Sticky Barb",
-        description = "Holder takes 1/8 (12.5%) its max HP at the end of each turn. When the holder is hit by a contact move, the attacking Pok" ..
-            Chars.accentedE .. "mon takes 1/8 its max HP in damage and receive the item if not holding one."
+        name = "Piquants",
+        description = "Objet à tenir blessant le porteur à chaque tour. Peut s’accrocher aux ennemis qui attaquent le porteur."
     },
     [289] = {
-        name = "Power Bracer",
-        description = "Holder gains 4 Attack effort values, but has halved Speed in battle."
+        name = "Poign. Pouv.",
+        description = "Objet à tenir augmentant l’Attaque lors des montées de niveau, mais réduisant la Vitesse pendant le combat."
     },
     [290] = {
-        name = "Power Belt",
-        description = "Holder gains 4 Defense effort values, but has halved Speed in battle."
+        name = "Ceint. Pouv.",
+        description = "Objet à tenir augmentant la Défense lors des montées de niveau, mais réduisant la Vitesse pendant le combat."
     },
     [291] = {
-        name = "Power Lens",
-        description = "Holder gains 4 Special Attack effort values, but has halved Speed in battle."
+        name = "Lent. Pouv.",
+        description = "Objet à tenir augmentant l’Attaque Spéciale lors des montées de niveau mais réduisant la Vitesse pendant le combat."
     },
     [292] = {
-        name = "Power Band",
-        description = "Holder gains 4 Special Defense effort values, but has halved Speed in battle."
+        name = "Band. Pouv.",
+        description = "Objet à tenir augmentant la Défense Spéciale lors des montées de niveau mais réduisant la Vitesse pendant le combat."
     },
     [293] = {
-        name = "Power Anklet",
-        description = "Holder gains 4 Speed effort values, but has halved Speed in battle."
+        name = "Chaîne Pouv.",
+        description = "Il augmente la Vitesse lors des montées de niveau mais réduit la Vitesse pendant le combat."
     },
     [294] = {
-        name = "Power Weight",
-        description = "Holder gains 4 HP effort values, but has halved Speed in battle."
+        name = "Poids Pouv.",
+        description = "Objet à tenir augmentant les PV lors des montées de niveau, mais réduisant la Vitesse pendant le combat."
     },
     [295] = {
-        name = "Shed Shell",
-        description = "Holder can bypass all trapping effects and switch out. Multi-turn moves still cannot be switched out of."
+        name = "Carapace Mue",
+        description = "Carapace dure qui permet au porteur de se retirer même s’il est affecté par une attaque immobilisante."
     },
     [296] = {
-        name = "Big Root",
-        description = "Increases HP recovered from draining moves, Ingrain, and Aqua Ring by 3/10 (30%)."
+        name = "Grosseracine",
+        description = "Objet à tenir augmentant la puissance des attaques volant des PV."
     },
     [297] = {
-        name = "Choice Specs",
-        description = "Increases Special Attack by 50%, but restricts the holder to only one move."
+        name = "Lunet. Choix",
+        description = "Objet à tenir augmentant l’Attaque Spéciale, mais ne permettant d’utiliser qu’une seule capacité par combat."
     },
     [298] = {
-        name = "Flame Plate",
-        description = "Fire-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Fire."
+        name = "Plaque Flam",
+        description = "Tablette en pierre augmentant la puissance des capacités de type Feu."
     },
     [299] = {
-        name = "Splash Plate",
-        description = "Water-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Water."
+        name = "Plaque Hydro",
+        description = "Tablette en pierre augmentant la puissance des capacités de type Eau."
     },
     [300] = {
-        name = "Zap Plate",
-        description = "Electric-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Electric."
+        name = "Plaque Volt",
+        description = "Tablette en pierre augmentant la puissance des capacités de type Électrik."
     },
     [301] = {
-        name = "Meadow Plate",
-        description = "Grass-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Grass."
+        name = "Plaque Herbe",
+        description = "Tablette en pierre augmentant la puissance des capacités de type Plante."
     },
     [302] = {
-        name = "Icicle Plate",
-        description = "Ice-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Ice."
+        name = "Plaque Glace",
+        description = "Tablette en pierre augmentant la puissance des capacités de type Glace."
     },
     [303] = {
-        name = "Fist Plate",
-        description = "Fighting-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Fighting."
+        name = "Plaque Poing",
+        description = "Tablette en pierre augmentant la puissance des capacités de type Combat."
     },
     [304] = {
-        name = "Toxic Plate",
-        description = "Posion-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Posion."
+        name = "Plaque Toxic",
+        description = "Tablette en pierre augmentant la puissance des capacités de type Poison."
     },
     [305] = {
-        name = "Earth Plate",
-        description = "Ground-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Ground."
+        name = "Plaque Terre",
+        description = "Tablette en pierre augmentant la puissance des capacités de type Sol."
     },
     [306] = {
-        name = "Sky Plate",
-        description = "Flying-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Flying."
+        name = "Plaque Ciel",
+        description = "Tablette en pierre augmentant la puissance des capacités de type Vol."
     },
     [307] = {
-        name = "Mind Plate",
-        description = "Psychic-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Psychic."
+        name = "Plaquesprit",
+        description = "Tablette en pierre augmentant la puissance des capacités de type Psy."
     },
     [308] = {
-        name = "Insect Plate",
-        description = "Bug-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Bug."
+        name = "Plaquinsect",
+        description = "Tablette en pierre augmentant la puissance des capacités de type Insecte."
     },
     [309] = {
-        name = "Stone Plate",
-        description = "Rock-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Rock."
+        name = "Plaque Roc",
+        description = "Tablette en pierre augmentant la puissance des capacités de type Roche."
     },
     [310] = {
-        name = "Spooky Plate",
-        description = "Ghost-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Ghost."
+        name = "Plaque Fantô",
+        description = "Tablette en pierre augmentant la puissance des capacités de type Spectre."
     },
     [311] = {
-        name = "Draco Plate",
-        description = "Dragon-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Dragon."
+        name = "Plaque Draco",
+        description = "Tablette en pierre augmentant la puissance des capacités de type Dragon."
     },
     [312] = {
-        name = "Dread Plate",
-        description = "Dark-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Dark."
+        name = "Plaque Ombre",
+        description = "Tablette en pierre augmentant la puissance des capacités de type Ténèbres."
     },
     [313] = {
-        name = "Iron Plate",
-        description = "Steel-Type moves from holder do 20% more damage. Changes Arceus's and Judgment's type to Steel."
+        name = "Plaque Fer",
+        description = "Tablette en pierre augmentant la puissance des capacités de type Acier."
     },
     [314] = {
-        name = "Odd Incense",
-        description = "Psychic-Type moves from holder do 20% more damage. Breeding: Mr. Mime begets a Mime Jr. Egg."
+        name = "Bizar.Encens",
+        description = "Encens au parfum exotique augmentant la puissance des capacités de type Psy."
     },
     [315] = {
-        name = "Rock Incense",
-        description = "Rock-Type moves from holder do 20% more damage. Breeding: Sudowoodo begets a Bonsly Egg."
+        name = "Encens Roc",
+        description = "Encens au parfum exotique augmentant la puissance des capacités de type Roche."
     },
     [316] = {
-        name = "Full Incense",
-        description = "Holder moves last in its priority bracket. Breeding: Snorlax begets a Munchlax Egg."
+        name = "Encens Plein",
+        description = "Encens au parfum exotique gonflant son porteur et le faisant se déplacer lentement."
     },
     [317] = {
-        name = "Wave Incense",
-        description = "Water-Type moves from holder do 20% more damage. Breeding: Mantine begets a Mantyke Egg."
+        name = "Encens Vague",
+        description = "Encens au parfum exotique augmentant la puissance des capacités de type Eau."
     },
     [318] = {
-        name = "Rose Incense",
-        description = "Grass-Type moves from holder do 20% more damage. Breeding: Roselia or Roserade beget a Budew Egg."
+        name = "Encens Fleur",
+        description = "Encens au parfum exotique augmentant la puissance des capacités de type Plante."
     },
     [319] = {
-        name = "Luck Incense",
-        description = "Doubles the money earned from a battle. Does not stack with Amulet Coin. Breeding: Chansey and Blissey beget a Happiny Egg."
+        name = "Encens Veine",
+        description = "Double l’argent gagné si le porteur se joint au combat."
     },
     [320] = {
-        name = "Pure Incense",
-        description = "Prevents wild encounters of level lower than your party's lead Pokemon. Breeding: Chimecho begets a Chingling Egg."
+        name = "Encens Pur",
+        description = "Aide à repousser les Pokémon sauvages si le porteur est le premier Pokémon de l’équipe."
     },
     [321] = {
-        name = "Protector",
-        description = "Traded on a Rhydon: Holder evolves into Rhyperior."
+        name = "Protecteur",
+        description = "Objet protecteur très dur et très lourd, apprécié d’un certain Pokémon."
     },
     [322] = {
-        name = "Electirizer",
-        description = "Traded on an Electabuzz: Holder evolves into Electivire."
+        name = "Électiriseur",
+        description = "Une boîte remplie d’une énorme quantité d’énergie électrique. Appréciée d’un certain Pokémon."
     },
     [323] = {
-        name = "Magmarizer",
-        description = "Traded on a Magmar: Holder evolves into Magmortar."
+        name = "Magmariseur",
+        description = "Une boîte remplie d’une énorme quantité d’énergie magmatique. Appréciée d’un certain Pokémon."
     },
     [324] = {
-        name = "Dubious Disc",
-        description = "Traded on a Porygon2: Holder evolves into Porygon-Z."
+        name = "CD Douteux",
+        description = "Appareil transparent rempli de données douteuses. Son fabricant n’est pas connu."
     },
     [325] = {
-        name = "Reaper Cloth",
-        description = "Traded on a Dusclops: Holder evolves into Dusknoir."
+        name = "Tissu Fauche",
+        description = "Un tissu imprégné d’une énergie spirituelle horriblement puissante. Apprécié d’un certain Pokémon."
     },
     [326] = {
-        name = "Razor Claw",
-        description = "Raises the holder's critical hit ratio by one stage. Held by a Sneasel while levelling up at night: Holder evolves into Weavile."
+        name = "Grif. Rasoir",
+        description = "Griffe crochue et pointue augmentant le taux de critiques."
     },
     [327] = {
-        name = "Razor Fang",
-        description = "Damaging moves gain a 10% chance to make their target flinch. Held by a Gligar while levelling up: Holder evolves into Gliscor."
+        name = "Croc Rasoir",
+        description = "Objet à tenir pouvant apeurer l’ennemi quand le porteur lui inflige des dégâts."
     },
     [328] = {
         name = "TM01",
@@ -4059,12 +4022,12 @@ ItemData.GEN_5_ITEMS = {
         description = "Grants access to the Team Galactic warehouse in Veilstone City."
     },
     [464] = {
-        name = "Secret Potion",
-        description = "Used to heal the Ampharos at the top of Olivine Lighthouse."
+        name = "Potion",
+        description = "Un spray qui soigne les blessures. Restaure 20 PV à un Pokémon."
     },
     [112] = {
-        name = "Griseous Orb",
-        description = "Boosts the damage from Giratina's Dragon-type and Ghost-type moves by 20%, and transforms it into Origin Forme."
+        name = "Orbe Platiné",
+        description = "Mystérieux objet destiné à Giratina. Améliore les capacités de type Dragon et Spectre."
     },
     [465] = {
         name = "Vs Recorder",
@@ -4076,7 +4039,7 @@ ItemData.GEN_5_ITEMS = {
     },
     [467] = {
         name = "Secret Key",
-        description = "Gen IV: The key to Rotom's appliance room. "
+        description = "Gen IV: The key to Rotom's appliance room."
     },
     [468] = {
         name = "Apricorn Box",
@@ -4096,22 +4059,19 @@ ItemData.GEN_5_ITEMS = {
     },
     [493] = {
         name = "Level Ball",
-        description = "Success rate based off of fraction target Pok" ..
-            Chars.accentedE .. "mon is of user's Pokemon. Made from Red Apricorn."
+        description = "Success rate based off of fraction target Pok" .. Chars.accentedE .. "mon is of user's Pokemon. Made from Red Apricorn."
     },
     [498] = {
         name = "Moon Ball",
-        description = "4x effectiveness on familes of Pok" ..
-            Chars.accentedE .. "mon with a Moon Stone evolution. Made from Ylw Apricorn."
+        description = "Une pierre étrange qui fait évoluer certaines espèces de Pokémon. Elle est noire comme la nuit."
     },
     [495] = {
-        name = "Heavy Ball",
-        description = "Has flat bonus or penalty to catch rate depending on weight class of target. Made from Blk Apricorn."
+        name = "Pierre Lune",
+        description = "Une pierre étrange qui fait évoluer certaines espèces de Pokémon. Elle est noire comme la nuit."
     },
     [492] = {
         name = "Fast Ball",
-        description = "4x effectiveness on Pok" ..
-            Chars.accentedE .. "mon with 100 or greater base speed. Made from Wht Apricorn."
+        description = "4x effectiveness on Pok" .. Chars.accentedE .. "mon with 100 or greater base speed. Made from Wht Apricorn."
     },
     [497] = {
         name = "Friend Ball",
@@ -4122,13 +4082,12 @@ ItemData.GEN_5_ITEMS = {
         description = "8x effectiveness on opposite sex, same species targets of the Active Pokemon. Made from Pnk Apricorn."
     },
     [500] = {
-        name = "Park Ball",
-        description = "Catches Pok" .. Chars.accentedE .. "mon in the Pal Park every time."
+        name = "Parc Ball",
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [499] = {
-        name = "Sport Ball",
-        description = "Tries to catch a Pok" ..
-            Chars.accentedE .. "mon in the Bug-Catching contest in National Park."
+        name = "Compét'Ball",
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [485] = {
         name = "Red Apricorn",
@@ -4164,11 +4123,11 @@ ItemData.GEN_5_ITEMS = {
     },
     [504] = {
         name = "RageCandyBar",
-        description = "Acts as a Potion."
+        description = "Un spray qui soigne les blessures. Restaure 20 PV à un Pokémon."
     },
     [534] = {
         name = "Red Orb",
-        description = "Summons Groudon to the Embedded Tower."
+        description = "Un spray qui soigne les blessures. Restaure 20 PV à un Pokémon."
     },
     [535] = {
         name = "Blue Orb",
@@ -4200,27 +4159,27 @@ ItemData.GEN_5_ITEMS = {
     },
     [475] = {
         name = "Card Key",
-        description = "HS: Opens doors in the Radio Tower. "
+        description = "HS: Opens doors in the Radio Tower."
     },
     [476] = {
         name = "Basement Key",
-        description = "HS: Key to the tunnel under Goldenrod City. "
+        description = "HS: Key to the tunnel under Goldenrod City."
     },
     [478] = {
         name = "Red Scale",
-        description = "Trade to Mr. Pok" .. Chars.accentedE .. "mon for an Exp. Share."
+        description = "Le porteur reçoit une partie des points Exp. du combat sans avoir à combattre."
     },
     [479] = {
         name = "Lost Item",
-        description = "A Poke Doll lost by the Copycat who lives in Saffron City. Trade for a Pass."
+        description = "Le porteur reçoit une partie des points Exp. du combat sans avoir à combattre."
     },
     [480] = {
         name = "Pass",
-        description = "Grants access to ride the Magnet Train between Goldenrod City and Saffron City."
+        description = "Aimant puissant montant la puissance des capacités de type Électrik."
     },
     [481] = {
         name = "Machine Part",
-        description = "Must be replaced in the Power Plant to power the Magnet Train."
+        description = "Aimant puissant montant la puissance des capacités de type Électrik."
     },
     [482] = {
         name = "Silver Wing",
@@ -4252,13 +4211,11 @@ ItemData.GEN_5_ITEMS = {
     },
     [507] = {
         name = "Data Card-03",
-        description = "Records the number of times the trainer's Pok" ..
-            Chars.accentedE .. "mon have dashed in the Pokeathlon."
+        description = "Records the number of times the trainer's Pok" .. Chars.accentedE .. "mon have dashed in the Pokeathlon."
     },
     [508] = {
         name = "Data Card-04",
-        description = "Records the number of times the trainer's Pok" ..
-            Chars.accentedE .. "mon have jumped in the Pokeathlon."
+        description = "Records the number of times the trainer's Pok" .. Chars.accentedE .. "mon have jumped in the Pokeathlon."
     },
     [509] = {
         name = "Data Card-05",
@@ -4290,23 +4247,19 @@ ItemData.GEN_5_ITEMS = {
     },
     [516] = {
         name = "Data Card-12",
-        description = "Records the number of times the trainer's Pok" ..
-            Chars.accentedE .. "mon have messed up in the Pokeathlon."
+        description = "Records the number of times the trainer's Pok" .. Chars.accentedE .. "mon have messed up in the Pokeathlon."
     },
     [517] = {
         name = "Data Card-13",
-        description = "Records the number of times the trainer's Pok" ..
-            Chars.accentedE .. "mon have defeated themselves in the Pokeathlon."
+        description = "Records the number of times the trainer's Pok" .. Chars.accentedE .. "mon have defeated themselves in the Pokeathlon."
     },
     [518] = {
         name = "Data Card-14",
-        description = "Records the number of times the trainer's Pok" ..
-            Chars.accentedE .. "mon have tackled in the Pokeathlon."
+        description = "Records the number of times the trainer's Pok" .. Chars.accentedE .. "mon have tackled in the Pokeathlon."
     },
     [519] = {
         name = "Data Card-15",
-        description = "Records the number of times the trainer's Pok" ..
-            Chars.accentedE .. "mon have fallen in the Pokeathlon."
+        description = "Records the number of times the trainer's Pok" .. Chars.accentedE .. "mon have fallen in the Pokeathlon."
     },
     [520] = {
         name = "Data Card-16",
@@ -4338,8 +4291,7 @@ ItemData.GEN_5_ITEMS = {
     },
     [527] = {
         name = "Data Card-23",
-        description = "Records the number of times the trainer has switched Pok" ..
-            Chars.accentedE .. "mon in the Pokeathlon."
+        description = "Records the number of times the trainer has switched Pok" .. Chars.accentedE .. "mon in the Pokeathlon."
     },
     [528] = {
         name = "Data Card-24",
@@ -4347,13 +4299,11 @@ ItemData.GEN_5_ITEMS = {
     },
     [529] = {
         name = "Data Card-25",
-        description = "Records the number of times the trainer's Pok" ..
-            Chars.accentedE .. "mon received prizes in the Pokeathlon."
+        description = "Records the number of times the trainer's Pok" .. Chars.accentedE .. "mon received prizes in the Pokeathlon."
     },
     [530] = {
         name = "Data Card-26",
-        description = "Records the number of times the trainer has instructed Pok" ..
-            Chars.accentedE .. "mon in the Pokeathlon."
+        description = "Records the number of times the trainer has instructed Pok" .. Chars.accentedE .. "mon in the Pokeathlon."
     },
     [531] = {
         name = "Data Card-27",
@@ -4368,24 +4318,24 @@ ItemData.GEN_5_ITEMS = {
         description = "Stores photos from your adventure."
     },
     [116] = {
-        name = "Douse Drive",
-        description = "Grants Genesect a blue, Water-type Techno Blast."
+        name = "Module Aqua",
+        description = "Tenu par Genesect, ce module change la capacité TechnoBuster en une capacité de type Eau."
     },
     [117] = {
-        name = "Shock Drive",
-        description = "Grants Genesect a yellow, Electric-type Techno Blast."
+        name = "Module Choc",
+        description = "Tenu par Genesect, ce module change la capacité TechnoBuster en une capacité de type Électrik."
     },
     [118] = {
-        name = "Burn Drive",
-        description = "Grants Genesect a red, Fire-type Techno Blast."
+        name = "Module Pyro",
+        description = "Tenu par Genesect, ce module change la capacité TechnoBuster en une capacité de type Feu."
     },
     [119] = {
-        name = "Chill Drive",
-        description = "Grants Genesect a white, Ice-type Techno Blast."
+        name = "Module Cryo",
+        description = "Tenu par Genesect, ce module change la capacité TechnoBuster en une capacité de type Glace."
     },
     [134] = {
-        name = "Sweet Heart",
-        description = "Restores 20 HP."
+        name = "Chococœur",
+        description = "Un chocolat extrêmement sucré. Restaure 20 PV à un Pokémon."
     },
     [137] = {
         name = "Greet Mail",
@@ -4436,50 +4386,48 @@ ItemData.GEN_5_ITEMS = {
         description = "Lets a Trainer write a message and send it via Pok" .. Chars.accentedE .. "mon trade."
     },
     [537] = {
-        name = "Prism Scale",
-        description = "Traded on a Feebas: Holder evolves into Milotic."
+        name = "Bel'Écaille",
+        description = "Une écaille étrange qui fait évoluer certaines espèces de Pokémon. Elle a une couleur arc-en-ciel."
     },
     [538] = {
-        name = "Eviolite",
-        description = "Holder has 1.5x Defense and Special Defense, as long as it's not fully evolved."
+        name = "Évoluroc",
+        description = "Un étrange concentré d’évolution qui augmente la Défense et la Déf. Spé. d’un Pokémon pouvant évoluer."
     },
     [539] = {
-        name = "Float Stone",
-        description = "Holder has 0.5x weight."
+        name = "Pierrallégée",
+        description = "Une pierre très légère. Elle réduit le poids du Pokémon qui la tient."
     },
     [540] = {
-        name = "Rocky Helmet",
-        description = "When the holder is hit by a contact move, the attacking Pok" ..
-            Chars.accentedE .. "mon takes 1/6 its max HP in damage."
+        name = "Casque Brut",
+        description = "Tenu, cet objet inflige des dégâts à l’attaquant si ce dernier utilise une attaque physique qui atteint son but."
     },
     [541] = {
-        name = "Air Balloon",
-        description = "Grants immunity to Ground-type moves, Spikes, and Toxic Spikes. Consumed when the holder takes damage from a move."
+        name = "Ballon",
+        description = "Tenu par un Pokémon, cet objet lui permet de flotter dans les airs. Il éclate en cas d’attaque."
     },
     [542] = {
-        name = "Red Card",
-        description = "When the holder takes damage from a move, the opponent switches out for another random party Pokemon. Consumed after use."
+        name = "Carton Rouge",
+        description = "Carte au pouvoir mystérieux. Tenue, elle force un Pokémon touchant le porteur à se retirer du combat."
     },
     [543] = {
-        name = "Ring Target",
-        description = "Negates the holder's type immunities. Ability immunities are not removed."
+        name = "Pt de Mire",
+        description = "Un Pokémon tenant cet objet devient sensible aux capacités autrement inefficaces en raison de son type."
     },
     [544] = {
-        name = "Binding Band",
-        description = "Doubles the per-turn damage of multi-turn trapping moves."
+        name = "B. Étreinte",
+        description = "Objet à tenir augmentant la puissance des attaques immobilisantes telles que Ligotage ou Étreinte."
     },
     [545] = {
-        name = "Absorb Bulb",
-        description = "Raises the holder's Special Attack by one stage when it takes Water-type damage."
+        name = "Bulbe",
+        description = "Bulbe jetable. Tenu, il augmente la Défense Spéciale lorsque le Pokémon subit une attaque de type Eau."
     },
     [546] = {
-        name = "Cell Battery",
-        description = "Raises the holder's Attack by one stage when it takes Electric-type damage."
+        name = "Pile",
+        description = "Pile jetable. Tenue, elle augmente l’Attaque lorsque le Pokémon subit une attaque de type Électrik."
     },
     [547] = {
-        name = "Eject Button",
-        description = "When the holder takes damage from a move, it switches out for a party Pok" ..
-            Chars.accentedE .. "mon of the Trainer's choice."
+        name = "Bouton Fuite",
+        description = "Si le Pokémon qui le tient subit une attaque, il s’enfuit pour être remplacé par un autre membre de l’équipe."
     },
     [548] = {
         name = "Fire Gem",
@@ -4550,32 +4498,32 @@ ItemData.GEN_5_ITEMS = {
         description = "When the holder uses a damaging normal-type move, the move has 1.5x power and this item is consumed."
     },
     [565] = {
-        name = "Health Wing",
-        description = "Increases HP effort by 1."
+        name = "Aile Santé",
+        description = "Objet à utiliser sur un Pokémon. Il augmente un peu ses PV lors d’une montée de niveau."
     },
     [566] = {
-        name = "Muscle Wing",
-        description = "Increases Attack effort by 1."
+        name = "Aile Force",
+        description = "Objet à utiliser sur un Pokémon. Il augmente un peu son Attaque lors d’une montée de niveau."
     },
     [567] = {
-        name = "Resist Wing",
-        description = "Increases Defense effort by 1."
+        name = "Aile Armure",
+        description = "Objet à utiliser sur un Pokémon. Il augmente un peu sa Défense lors d’une montée de niveau."
     },
     [568] = {
-        name = "Genius Wing",
-        description = "Increases Special Attack effort by 1."
+        name = "Aile Esprit",
+        description = "Objet à utiliser sur un Pokémon. Il augmente un peu son Atq. Spé. lors d’une montée de niveau."
     },
     [569] = {
-        name = "Clever Wing",
-        description = "Increases Special Defense effort by 1."
+        name = "Aile Mental",
+        description = "Objet à utiliser sur un Pokémon. Il augmente un peu sa Déf. Spé. lors d’une montée de niveau."
     },
     [570] = {
-        name = "Swift Wing",
-        description = "Increases Speed effort by 1."
+        name = "Aile Sprint",
+        description = "Objet à utiliser sur un Pokémon. Il augmente un peu sa Vitesse lors d’une montée de niveau."
     },
     [571] = {
-        name = "Pretty Wing",
-        description = "Sell for 100 Pokedollars."
+        name = "Jolie Aile",
+        description = "Une plume très jolie, mais ordinaire et sans effet particulier."
     },
     [572] = {
         name = "Cover Fossil",
@@ -4590,16 +4538,16 @@ ItemData.GEN_5_ITEMS = {
         description = "Allows access to Liberty Garden and Victini."
     },
     [575] = {
-        name = "Pass Orb",
-        description = "Activates Pass Powers."
+        name = "Offrisphère",
+        description = "Sphère mystérieuse contenant l’Aura d’Unys et utilisable avec l’Offri-Aura."
     },
     [576] = {
-        name = "Dream Ball",
-        description = "Catches Pok" .. Chars.accentedE .. "mon found in the Dream World."
+        name = "Rêve Ball",
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [577] = {
         name = "Poke Toy",
-        description = "Ends a wild battle."
+        description = "Un objet pareil à une capsule, qui capture les Pokémon sauvages. Il suffit pour cela de le jeter comme une balle."
     },
     [578] = {
         name = "Prop Case",
@@ -4614,124 +4562,124 @@ ItemData.GEN_5_ITEMS = {
         description = "Sell to Hungry Maid for 25000 Pokedollars."
     },
     [581] = {
-        name = "Big Nugget",
-        description = "Sell to Ore Collector for 30000 Pokedollars."
+        name = "Pépite",
+        description = "Pépite d’or pur qui brille magnifiquement. Peut être vendue à bon prix aux magasins."
     },
     [582] = {
-        name = "Pearl String",
-        description = "Sell to Ore Collector for 25000 Pokedollars."
+        name = "Perle Triple",
+        description = "Une très grosse perle qui brille d’une jolie couleur argent. Les amateurs en donnent un bon prix."
     },
     [583] = {
-        name = "Comet Shard",
-        description = "Sell to Ore Collector for 60000 Pokedollars."
+        name = "Morc. Comète",
+        description = "Un fragment de comète, tombé au sol quand elle traversait l’atmosphère. Les amateurs en donnent un bon prix."
     },
     [584] = {
-        name = "Relic Copper",
-        description = "Sell to Villa Owner for 1000 Pokedollars."
+        name = "Vieux Sou",
+        description = "Une pièce de cuivre d’une civilisation vieille de plus de 3 000 ans. Les amateurs en donnent un bon prix."
     },
     [585] = {
-        name = "Relic Silver",
-        description = "Sell to Villa Owner 5000 Pokedollars."
+        name = "Vieil Écu",
+        description = "Une pièce d’argent d’une civilisation vieille de plus de 3 000 ans. Les amateurs en donnent un bon prix."
     },
     [586] = {
-        name = "Relic Gold",
-        description = "Sell to Villa Owner 10000 Pokedollars."
+        name = "Vieux Ducat",
+        description = "Une pièce d’or d’une civilisation vieille de plus de 3 000 ans. Les amateurs en donnent un bon prix."
     },
     [587] = {
-        name = "Relic Vase",
-        description = "Sell to Villa Owner 50000 Pokedollars."
+        name = "Vieux Vase",
+        description = "Un vase d’une civilisation vieille de plus de 3 000 ans. Les amateurs en donnent un bon prix."
     },
     [588] = {
-        name = "Relic Band",
-        description = "Sell to Villa Owner for 100000 Pokedollars."
+        name = "Vieux Bijou",
+        description = "Un bijou d’une civilisation vieille de plus de 3 000 ans. Les amateurs en donnent un bon prix."
     },
     [589] = {
-        name = "Relic Statue",
-        description = "Sell to Villa Owner 200000 Pokedollars."
+        name = "Vieux Santon",
+        description = "Une statuette d’une civilisation vieille de plus de 3 000 ans. Les amateurs en donnent un bon prix."
     },
     [590] = {
-        name = "Relic Crown",
-        description = "Sell to Villa Owner for 300000 Pokedollars."
+        name = "Vieux Tortil",
+        description = "Une couronne d’une civilisation vieille de plus de 3 000 ans. Les amateurs en donnent un bon prix."
     },
     [591] = {
-        name = "Casteliacone",
-        description = "Cures any status ailment and confusion."
+        name = "Glace Volute",
+        description = "Spécialité de Volucité. Elle soigne tous les problèmes de statut d’un Pokémon."
     },
     [592] = {
-        name = "Dire Hit-2",
-        description = "Raises critical hit rate by two stages in battle. Wonder Launcher only."
+        name = "Muscle +",
+        description = "Monte fortement le taux de critiques. Utilisable une seule fois. L’effet disparaît si le Pokémon se retire."
     },
     [593] = {
-        name = "X Speed-2",
-        description = "Raises Speed by two stages in battle. Wonder Launcher only."
+        name = "Vitesse +",
+        description = "Monte la Vitesse pendant un combat. L’effet s’estompe si le Pokémon se retire."
     },
     [594] = {
-        name = "X Sp-atk-2",
-        description = "Raises Special Attack by two stages in battle. Wonder Launcher only."
-    },
+        name = "Spécial +",
+        description = "onte l’Attaque Spéciale pendant un combat. L’effet s’estompe si le Pokémon se retire."
+	},
     [595] = {
-        name = "X Sp-def-2",
-        description = "Raises Special Defense by two stages in battle. Wonder Launcher only."
+        name = "Déf. Spé. +",
+        description = "Monte la Défense Spéciale pendant un combat. L’effet s’estompe si le Pokémon se retire."
     },
     [596] = {
-        name = "X Defense-2",
-        description = "Raises Defense by two stages in battle. Wonder Launcher only."
+        name = "Défense +",
+        description = "Monte la Défense pendant un combat. L’effet s’estompe si le Pokémon se retire."
     },
     [597] = {
-        name = "X Attack-2",
-        description = "Raises Attack by two stages in battle. Wonder Launcher only."
+        name = "Attaque +",
+        description = "Monte l’Attaque pendant un combat. L’effet s’estompe si le Pokémon se retire."
     },
     [598] = {
-        name = "X Accuracy-2",
-        description = "Raises accuracy by two stages in battle. Wonder Launcher only."
+        name = "Précision +",
+        description = "Monte la Précision pendant un combat. L’effet s’estompe si le Pokémon se retire."
     },
     [599] = {
-        name = "X Speed-3",
-        description = "Raises Speed by three stages in battle. Wonder Launcher only."
+        name = "Vitesse +",
+        description = "Monte la Vitesse pendant un combat. L’effet s’estompe si le Pokémon se retire."
     },
     [600] = {
-        name = "X Sp-atk-3",
-        description = "Raises Special Attack by three stages in battle. Wonder Launcher only."
+        name = "Spécial +",
+        description = "onte l’Attaque Spéciale pendant un combat. L’effet s’estompe si le Pokémon se retire."
     },
     [601] = {
-        name = "X Sp-def-3",
-        description = "Raises Special Defense by three stages in battle. Wonder Launcher only."
+        name = "Déf. Spé. +",
+        description = "Monte la Défense Spéciale pendant un combat. L’effet s’estompe si le Pokémon se retire."
     },
     [602] = {
-        name = "X Defense-3",
-        description = "Raises Defense by three stages in battle. Wonder Launcher only."
+        name = "Défense +",
+        description = "Monte la Défense pendant un combat. L’effet s’estompe si le Pokémon se retire."
     },
     [603] = {
-        name = "X Attack-3",
-        description = "Raises Attack by three stages in battle. Wonder Launcher only."
+        name = "Attaque +",
+        description = "Monte l’Attaque pendant un combat. L’effet s’estompe si le Pokémon se retire."
     },
     [604] = {
-        name = "X Accuracy-3",
-        description = "Raises accuracy by three stages in battle. Wonder Launcher only."
+        name = "Précision +",
+        description = "Monte la Précision pendant un combat. L’effet s’estompe si le Pokémon se retire."
     },
     [605] = {
-        name = "X Speed-6",
-        description = "Raises Speed by six stages in battle. Wonder Launcher only."
+        name = "Vitesse +",
+        description = "Monte la Vitesse pendant un combat. L’effet s’estompe si le Pokémon se retire."
     },
     [606] = {
-        name = "X Sp-atk-6",
-        description = "Raises Special Attack by six stages in battle. Wonder Launcher only."
+        name = "Spécial +",
+        description = "onte l’Attaque Spéciale pendant un combat. L’effet s’estompe si le Pokémon se retire."
     },
     [607] = {
-        name = "X Sp-def-6",
-        description = "Raises Special Defense by six stages in battle. Wonder Launcher only."
+        name = "Déf. Spé. +",
+        description = "Monte la Défense Spéciale pendant un combat. L’effet s’estompe si le Pokémon se retire."
     },
     [608] = {
-        name = "X Defense-6",
-        description = "Raises Defense by six stages in battle. Wonder Launcher only."
+        name = "Défense +",
+        description = "Monte la Défense pendant un combat. L’effet s’estompe si le Pokémon se retire."
     },
     [609] = {
-        name = "X Attack-6",
-        description = "Raises Attack by six stages in battle. Wonder Launcher only."
+        name = "Attaque +",
+        description = "Monte l’Attaque pendant un combat. L’effet s’estompe si le Pokémon se retire."
     },
     [610] = {
-        name = "X Accuracy-6",
-        description = "Raises accuracy by six stages in battle. Wonder Launcher only."
+        name = "Précision +",
+        description = "Monte la Précision pendant un combat. L’effet s’estompe si le Pokémon se retire."
     },
     [611] = {
         name = "Ability Urge",
@@ -4750,8 +4698,8 @@ ItemData.GEN_5_ITEMS = {
         description = "Resets a friendly Pokemon's stat changes."
     },
     [615] = {
-        name = "Dire Hit-3",
-        description = "Raises critical hit rate by three stages in battle. Wonder Launcher only."
+        name = "Muscle +",
+        description = "Monte fortement le taux de critiques. Utilisable une seule fois. L’effet disparaît si le Pokémon se retire."
     },
     [616] = {
         name = "Light Stone",

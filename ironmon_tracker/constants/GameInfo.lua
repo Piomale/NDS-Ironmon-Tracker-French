@@ -5,6 +5,7 @@ GameInfo.VERSION_NUMBER = {
     PEARL = 0x45415041,
     PLATINUM = 0x45555043,
     HEART_GOLD = 0x454B5049,
+    HEART_GOLD_FR = 0x464B5049,
     SOUL_SILVER = 0x45475049,
     BLACK = 0x4F425249,
     WHITE = 0x4F415249,
@@ -50,6 +51,18 @@ GameInfo.GAME_INFO = {
         LOCATION_DATA = LocationData.LOCATION_DATA[GameInfo.VERSION_NUMBER.PLATINUM]
     },
     [GameInfo.VERSION_NUMBER.HEART_GOLD] = {
+        GEN = 4,
+        NAME = "Pokemon HeartGold",
+        BADGE_PREFIX = "HGSS",
+        VERSION_GROUP = 3,
+        ENEMY_PARTY_OFFSET = 0xBA0,
+        ACTIVE_PID_DIFFERENCE = 0x180,
+        ENCRYPTED_POKEMON_SIZE = 236,
+        GYM_TMS = {51, 89, 45, 30, 01, 23, 07, 59, -1, 80, 03, 34, 19, 84, 48, 50, 92},
+        TRAINERS = TrainerData.TRAINERS[GameInfo.VERSION_NUMBER.HEART_GOLD],
+        LOCATION_DATA = LocationData.LOCATION_DATA[GameInfo.VERSION_NUMBER.HEART_GOLD]
+    },
+	[GameInfo.VERSION_NUMBER.HEART_GOLD_FR] = {
         GEN = 4,
         NAME = "Pokemon HeartGold",
         BADGE_PREFIX = "HGSS",

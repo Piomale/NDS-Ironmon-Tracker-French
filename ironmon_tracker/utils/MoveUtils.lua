@@ -141,7 +141,7 @@ function MoveUtils.getMoveHeader(pokemon)
     if count ~= #pokemon.movelvls then
         extra = " (" .. pokemon.movelvls[count + 1] .. ")"
     end
-    local header = "Moves: " .. count .. "/" .. #pokemon.movelvls .. extra
+    local header = "Capacites: " .. count .. "/" .. #pokemon.movelvls .. extra
     return header
 end
 

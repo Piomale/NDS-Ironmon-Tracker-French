@@ -48,6 +48,34 @@ MemoryAddresses[GameInfo.VERSION_NUMBER.HEART_GOLD] = {
     }
 }
 
+MemoryAddresses[GameInfo.VERSION_NUMBER.HEART_GOLD_FR] = {
+    GLOBAL_POINTER = 0xBA8,
+    VERSION_POINTER_OFFSET = 0x20,
+    VERSION_POINTER_OFFSETS = {
+        childMapHeader = 0x25FE4,
+        parentMapHeader = 0x25FE4,
+        enemyTrainerID = 0x440AA,
+        playerBase = 0xA8,
+        playerBattleBase = 0x4EA98,
+        enemyBase = 0x4F068,
+        playerBattleMonPID = 0x49E7C,
+        enemyBattleMonPID = 0x49F3C,
+        itemStartNoBattle = 0xB74,
+        itemStartBattle = 0x46AD8,
+        statStagesPlayer = 0x49E2C,
+        statStagesEnemy = 0x49EEC,
+        enemyPokemonID = 0x49ED4,
+        berryBagStart = 0xC14,
+        berryBagStartBattle = 0x46B78,
+        johtoBadges = 0x8E,
+        kantoBadges = 0x93,
+        leagueBeaten = 0x1000
+    },
+    GLOBAL = {
+        battleStatus = 0x246F48
+    }
+}
+
 MemoryAddresses[GameInfo.VERSION_NUMBER.SOUL_SILVER] = {
     GLOBAL_POINTER = 0xBA8,
     VERSION_POINTER_OFFSET = 0x20,

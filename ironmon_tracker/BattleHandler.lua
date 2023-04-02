@@ -36,7 +36,8 @@ local function BattleHandler(
     self.BATTLE_STATUS_TYPES = {
         [0x2100] = true,
         [0x2101] = true,
-        [0x2800] = false
+        [0x2800] = false,
+        [0xF7F3] = true
     }
 
     function self.setGameInfo(newGameInfo)

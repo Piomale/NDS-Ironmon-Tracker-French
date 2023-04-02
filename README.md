@@ -1,4 +1,4 @@
-# NDS-Ironmon-Tracker
+# NDS-Ironmon-Tracker for Pokémon HeartGold
 
 
 https://user-images.githubusercontent.com/61294586/173255404-ecd702ad-b23d-4b1c-a6ce-b98c09270c9d.mp4
@@ -12,11 +12,9 @@ This tracker is a lua script that runs with [BizHawk](https://tasvideos.org/BizH
 
 This tracker is based on the Nintendo DS (NDS) Pokémon games. As such, the following games are currently supported:
 
-- Pokémon Diamond/Pearl
-- Pokémon Platinum
-- Pokémon HeartGold/SoulSilver
-- Pokémon Black/White
-- Pokémon Black2/White2
+
+- Pokémon HeartGold
+
 
 This project initially started from https://github.com/besteon/Ironmon-Tracker, so I cannot thank them and all of the project's contributors enough for all the amazing groundwork they did. Also, huge shoutouts to the people over at projectpokemon.org for all their technical documentation on Pokémon data.
 

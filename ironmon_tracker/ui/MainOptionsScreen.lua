@@ -196,8 +196,8 @@ local function MainOptionsScreen(initialSettings, initialTracker, initialProgram
 				)
 			),
 			TextField(
-				"Config",
-				{x = 48, y = 1},
+				"Configuration",
+				{x = 30, y = 1},
 				TextStyle(13, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
 			)
 		)

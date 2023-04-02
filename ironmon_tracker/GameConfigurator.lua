@@ -1,13 +1,13 @@
 GameConfigurator = {}
 
 GameConfigurator.ALTERNATE_FORM_ORDER_GEN4 = {
-	"Deoxys","Wormadam P","Giratina A","Shaymin L","Rotom","Castform","Basculin R","Darmanitan","Meloetta A","Kyurem","Landorus","Thundurus","Tornadus","Burmy P",
-	"Cherrim O","Deerling","Frillish M","Gastrodon W","Jellicent M","Keldeo","Sawsbuck","Shellos W","Unfezant M"
+	"Deoxys","Cheniselle P","Giratina A","Shaymin L","Motisma","Morpheo","Bargantua R","Darumacho","Meloetta A","Kyurem","Demeteros","Thundurus","Tornadus","Cheniti P",
+	"Ceriflor O","Vivaldaim","Viskuse M","Tritosor W","Moyade M","Keldeo","Haydaim","Sancoki W","Deflaisan M"
 }
 
 GameConfigurator.ALTERNATE_FORM_ORDER_GEN5 = {
-	"Deoxys","Wormadam P","Shaymin L","Giratina A","Rotom","Castform","Basculin R","Darmanitan","Meloetta A","Kyurem","Landorus","Thundurus","Tornadus","Burmy P",
-	"Cherrim O","Deerling","Frillish M","Gastrodon W","Jellicent M","Keldeo","Sawsbuck","Shellos W","Unfezant M"
+	"Deoxys","Cheniselle P","Shaymin L","Giratina A","Motisma","Morpheo","Bargantua R","Darumacho","Meloetta A","Kyurem","Demeteros","Thundurus","Tornadus","Cheniti P",
+	"Ceriflor O","Vivaldaim","Viskuse M","Tritosor W","Moyade M","Keldeo","Haydaim","Sancoki W","Deflaisan M"
 }
 
 function GameConfigurator.initPokemon(gameInfo)
@@ -75,7 +75,7 @@ function GameConfigurator.initAlternateForms(gameInfo)
 		local formTable = PokemonData.ALTERNATE_FORMS[baseForm]
 		formTable.index = currentIndex
 		for i, form in pairs(formTable.forms) do
-			if baseForm == "Rotom" and gameInfo.GEN == 4 then
+			if baseForm == "Motisma" and gameInfo.GEN == 4 then
 				form.type = {PokemonData.POKEMON_TYPES.ELECTRIC, PokemonData.POKEMON_TYPES.GHOST}
 			end
 			PokemonData.POKEMON[currentIndex] = form
@@ -144,4 +144,78 @@ function GameConfigurator.initializeMemoryAddresses()
 		["gameInfo"] = gameInfo,
 		["memoryAddresses"] = addressConfiguration
 	}
+end
+
+function stripChars(str)
+  local tableAccents = {}
+    tableAccents["À"] = "\192"
+    tableAccents["Á"] = "\193"
+    tableAccents["Â"] = "\194"
+    tableAccents["Ã"] = "\195"
+    tableAccents["Ä"] = "\196"
+    tableAccents["Å"] = "\197"
+    tableAccents["Æ"] = "\198"
+    tableAccents["Ç"] = "\199"
+    tableAccents["È"] = "\200"
+    tableAccents["É"] = "\201"
+    tableAccents["Ê"] = "\202"
+    tableAccents["Ë"] = "\203"
+    tableAccents["Ì"] = "\204"
+    tableAccents["Í"] = "\205"
+    tableAccents["Î"] = "\206"
+    tableAccents["Ï"] = "\207"
+    tableAccents["Ð"] = "\208"
+    tableAccents["Ñ"] = "\209"
+    tableAccents["Ò"] = "\210"
+    tableAccents["Ó"] = "\211"
+    tableAccents["Ô"] = "\212"
+    tableAccents["Õ"] = "\213"
+    tableAccents["Ö"] = "\214"
+    tableAccents["Ø"] = "\216"
+    tableAccents["Ù"] = "\217"
+    tableAccents["Ú"] = "\218"
+    tableAccents["Û"] = "\219"
+    tableAccents["Ü"] = "\220"
+    tableAccents["Ý"] = "\221"
+    tableAccents["Þ"] = "\222"
+    tableAccents["ß"] = "\223"
+    tableAccents["à"] = "\224"
+    tableAccents["á"] = "\225"
+    tableAccents["â"] = "\226"
+    tableAccents["ã"] = "\227"
+    tableAccents["ä"] = "\228"
+    tableAccents["å"] = "\229"
+    tableAccents["æ"] = "\230"
+    tableAccents["ç"] = "\231"
+    tableAccents["è"] = "\232"
+    tableAccents["é"] = "\233"
+    tableAccents["ê"] = "\234"
+    tableAccents["ë"] = "\235"
+    tableAccents["ì"] = "\236"
+    tableAccents["í"] = "\237"
+    tableAccents["î"] = "\238"
+    tableAccents["ï"] = "\239"
+    tableAccents["ð"] = "\240"
+    tableAccents["ñ"] = "\241"
+    tableAccents["ò"] = "\242"
+    tableAccents["ó"] = "\243"
+    tableAccents["ô"] = "\244"
+    tableAccents["õ"] = "\245"
+    tableAccents["ö"] = "\246"
+    tableAccents["ø"] = "\248"
+    tableAccents["ù"] = "\249"
+    tableAccents["ú"] = "\250"
+    tableAccents["û"] = "\251"
+    tableAccents["ü"] = "\252"
+    tableAccents["ý"] = "\253"
+    tableAccents["þ"] = "\254"
+    tableAccents["ÿ"] = "\255"
+    tableAccents["’"] = "\146"
+    tableAccents["Œ"] = "\140"
+    tableAccents["œ"] = "\156"
+
+  local normalisedString = ''
+  local normalisedString = str: gsub("[%z\1-\127\194-\244][\128-\191]*", tableAccents)
+  return normalisedString
+
 end

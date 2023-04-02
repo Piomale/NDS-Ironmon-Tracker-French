@@ -198,13 +198,17 @@ local function GymTMScreen(initialSettings, initialTracker, initialProgram, init
     local function readScrollerIntoUI()
         local gymLeaderIndex = 1
         local viewedTMs = TMScroller.getViewedItems()
+		
         for rowIndex, TMInfo in pairs(viewedTMs) do
+
             local TM, index = TMInfo[1], TMInfo[2]
             if TM == -1 then
                 --empty spacer for HG/SS
                 fillTMRow(rowIndex, TM)
             else
+				
                 local moveID = TMs[TM]
+				
                 moveHoverListeners[rowIndex].getOnHoverParams().move = moveID
                 local moveData = MoveData.MOVES[moveID + 1]
                 local moveName = moveData.name

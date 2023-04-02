@@ -102,7 +102,7 @@ local function PokemonOverviewScreen(initialSettings, initialTracker, initialPro
             local id = matchSet[index]
             local matchFrame = matchFrames[index]
             if id ~= nil then
-                local name = PokemonData.POKEMON[id + 1].name
+                local name = stripChars(PokemonData.POKEMON[id + 1].name)
                 local nameLength = DrawingUtils.calculateWordPixelLength(name)
                 local xOffset = (constants.SEARCH_RESULT_WIDTH - nameLength - 2) / 2
                 matchFrame.nameLabel.setTextOffset({x = xOffset, y = 1})

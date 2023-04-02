@@ -10,710 +10,667 @@ AbilityData.ABILITIES_MASTER_LIST = {
     },
     {
         id = 1,
-        name = "Stench",
-        description = {
-            "Helps repel wild Pok" .. Chars.accentedE .. "mon.",
-            "Has a 10% chance of making target Pok" .. Chars.accentedE .. "mon flinch with each hit."
-        }
+        name = "Puanteur",
+        description = "Diminue le pourcentage de rencontre avec des Pokémon sauvages"
     },
     {
         id = 2,
-        name = "Drizzle",
-        description = "Summons rain that lasts indefinitely upon entering battle."
+        name = "Crachin",
+        description = "Invoque la pluie en combat"
     },
     {
         id = 3,
-        name = "Speed Boost",
-        description = "Raises Speed one stage after each turn."
+        name = "Turbo",
+        description = "La vitesse de votre Pokémon augmente à chaque tour"
     },
     {
         id = 4,
-        name = "Battle Armor",
-        description = "Protects against critical hits."
+        name = "Armurbaston",
+        description = "Empêche les coups critiques de l'adversaire"
     },
     {
         id = 5,
-        name = "Sturdy",
-        description = {
-            "Prevents OHKO moves like Guillotine from working.",
-            "Prevents being KOed from full HP, and this includes moves such as Guillotine and Sheer Cold."
-        }
+        name = "Fermete",
+        description = "Bloque les attaques OHKO telles que Glaciation, Empal’Korne, Guillotine et Abîme"
     },
     {
         id = 6,
-        name = "Damp",
-        description = "Prevents Selfdestruct, Explosion, and Aftermath from working while the Pok" ..
-            Chars.accentedE .. "mon is in battle."
+        name = "Moiteur",
+        description = "Aucun Pokémon ne peut utiliser l'attaque 'Explosion' ou 'Destruction'."
     },
     {
         id = 7,
-        name = "Limber",
-        description = "Prevents paralysis."
+        name = "Echauffement",
+        description = "Impossible de paralyser ce Pokémon"
     },
     {
         id = 8,
-        name = "Sand Veil",
-        description = "Increases evasion to 1.25x during a sandstorm. Protects against sandstorm damage."
+        name = "Voile Sable",
+        description = "Augmente l'évasion s'il y a une tempête de sable."
     },
     {
         id = 9,
-        name = "Static",
-        description = "Has a 30% chance of paralyzing attacking Pok" .. Chars.accentedE .. "mon on contact."
+        name = "Statik",
+        description = "Si l'ennemi vous attaque, il peut être paralysé (~30% de chances)"
     },
     {
         id = 10,
-        name = "Volt Absorb",
-        description = "Absorbs electric moves, healing for 1/4 max HP."
+        name = "Absorb Volt",
+        description = "Les attaques électriques reçues par votre Pokémon lui régénèrent 1/4 de ses PV."
     },
     {
         id = 11,
-        name = "Water Absorb",
-        description = "Absorbs water moves, healing for 1/4 max HP."
+        name = "Absorb Eau",
+        description = "Les attaques eau reçues par votre Pokémon lui régénèrent 1/4 de ses PV."
     },
     {
         id = 12,
-        name = "Oblivious",
-        description = "Prevents infatuation and protects against Captivate."
+        name = "Benet",
+        description = "Bloque l'attaque 'Attraction'"
     },
     {
         id = 13,
-        name = "Cloud Nine",
-        description = "Negates all effects of weather, but does not prevent the weather itself."
+        name = "Ciel Gris",
+        description = "Ignore les effets du climat"
     },
     {
         id = 14,
-        name = "Compoundeyes",
-        description = "Increases moves' accuracy to 1.3x."
+        name = "Oeil Compose",
+        description = "Augmente la précision"
     },
     {
         id = 15,
         name = "Insomnia",
-        description = "Prevents sleep."
+        description = "Empêche de s'endormir"
     },
     {
         id = 16,
-        name = "Color Change",
-        description = "Changes type to match when hit by a damaging move."
+        name = "Deguisement",
+        description = "Change son type en celui de la dernière attaque employée à l'encontre de ce Pokémon"
     },
     {
         id = 17,
-        name = "Immunity",
-        description = "Prevents poison."
+        name = "Vaccin",
+        description = "Votre Pokémon ne peut pas être empoisonné"
     },
     {
         id = 18,
-        name = "Flash Fire",
-        description = "Protects against fire moves. Once one has been blocked, the Pok" ..
-            Chars.accentedE .. "mon's own fire moves inflict 1.5x damage until it leaves battle."
+        name = "Torche",
+        description = "Les attaques feu reçues par ce Pokémon sont absorbées et augmentent la puissance de ses propres attaques feu  "
     },
     {
         id = 19,
-        name = "Shield Dust",
-        description = "Protects against incoming moves' extra effects."
+        name = "Ecran Poudre",
+        description = "Empêche le cumul d'effets"
     },
     {
         id = 20,
-        name = "Own Tempo",
-        description = "Prevents confusion."
+        name = "Tempo Perso",
+        description = "Empêche la confusion"
     },
     {
         id = 21,
-        name = "Suction Cups",
-        description = {
-            "Prevents being forced out of battle by other Pok" .. Chars.accentedE .. "mon's moves.",
-            "Prevents being forced out of battle by other Pok" .. Chars.accentedE .. "mon's moves or items."
-        }
+        name = "Ventouse",
+        description = "Votre Pokémon ne peut pas être forcé de 'battre en retraite' par des attaques telles que Hurlement ou Cyclone"
     },
     {
         id = 22,
-        name = "Intimidate",
-        description = "Lowers opponents' Attack one stage upon entering battle."
+        name = "Intimidation",
+        description = "Quand votre Pokémon démarre le combat, l'attaque du Pokémon adverse baisse d'un cran"
     },
     {
         id = 23,
-        name = "Shadow Tag",
-        description = "Prevents opponents from fleeing or switching out."
+        name = "Marque Ombre",
+        description = "L'adversaire ne peut pas s'enfuir ou switcher de Pokémon"
     },
     {
         id = 24,
-        name = "Rough Skin",
-        description = "Damages attacking Pok" .. Chars.accentedE .. "mon for 1/8 their max HP on contact."
+        name = "Peau Dure",
+        description = "L'adversaire perd 1/16ème de ses PV max à chaque fois qu'il touche ce Pokémon."
     },
     {
         id = 25,
-        name = "Wonder Guard",
-        description = "Protects against damaging moves that are not super effective."
+        name = "Garde Mystik",
+        description = "Seules les attaques 'super efficaces', le climat et les altérations de statut peuvent toucher votre Pokémon"
     },
     {
         id = 26,
-        name = "Levitate",
-        description = "Evades ground moves."
+        name = "Levitation",
+        description = "Immunisé face aux attaques de type sol"
     },
     {
         id = 27,
-        name = "Effect Spore",
-        description = "Has a 30% chance of inflcting either paralysis, poison, or sleep on attacking Pok" ..
-            Chars.accentedE .. "mon on contact."
+        name = "Pose Spore",
+        description = "Probabilité de 10% d'empoisonner, endormir ou paralyser l'adversaire après qu'il ait lancé une attaque."
     },
     {
         id = 28,
-        name = "Synchronize",
-        description = "Copies burns, paralysis, and poison received onto the Pok" ..
-            Chars.accentedE .. "mon that inflicted them."
+        name = "Synchro",
+        description = "Transfère le statut sauf si l'adversaire y est immunisé ."
     },
     {
         id = 29,
-        name = "Clear Body",
-        description = "Prevents stats from being lowered by other Pok" .. Chars.accentedE .. "mon."
+        name = "Corps Sain",
+        description = "Vos stats ne peuvent pas être baissées"
     },
     {
         id = 30,
-        name = "Natural Cure",
-        description = "Cures any major status ailment upon switching out or completing a battle."
+        name = "Medic Nature",
+        description = "Le Pokémon est soigné de ses altérations de statut lorsqu'il est changé au cours d'un combat"
     },
     {
         id = 31,
-        name = "Lightningrod",
-        description = {
-            "Redirects single-target electric moves to this Pok" .. Chars.accentedE .. "mon where possible.",
-            "Redirects electric moves to this Pok" ..
-                Chars.accentedE .. "mon and absorbs them, raising Special Attack one stage."
-        }
+        name = "Paratonnerre",
+        description = "Attire les attaques électriques"
     },
     {
         id = 32,
-        name = "Serene Grace",
-        description = "Doubles the chance of moves' extra effects occurring."
+        name = "Serenite",
+        description = "Double la réussite aux effets des attaques lancées"
     },
     {
         id = 33,
-        name = "Swift Swim",
-        description = "Doubles Speed during rain."
+        name = "Glissade",
+        description = "Monte la vitesse quand il pleut"
     },
     {
         id = 34,
-        name = "Chlorophyll",
-        description = "Doubles Speed during strong sunlight."
+        name = "Chlorophyle",
+        description = "Si le climat est ensoleillé, le Pokémon doté de Chlorophylle voit sa statistique de Vitesse multipliée par deux."
     },
     {
         id = 35,
-        name = "Illuminate",
-        description = "Doubles the wild encounter rate."
+        name = "Lumiatirance",
+        description = "Un Pokémon avec Lumiattirance en tête d'équipe permet de rencontrer deux fois plus de Pokémon sauvages."
     },
     {
         id = 36,
-        name = "Trace",
-        description = "Copies an opponent's ability upon entering battle."
+        name = "Calque",
+        description = "Calque la capacité spéciale du Pokémon adverse"
     },
     {
         id = 37,
-        name = "Huge Power",
-        description = "Doubles Attack in battle."
+        name = "Coloforce",
+        description = "Double l'attaque du Pokémon"
     },
     {
         id = 38,
-        name = "Poison Point",
-        description = "Has a 30% chance of poisoning attacking Pok" .. Chars.accentedE .. "mon on contact."
+        name = "Point Poison",
+        description = "Si le Pokémon adverse fait une attaque directe contre votre Pokémon, il aura 30% de chances d'être empoisonné"
     },
     {
         id = 39,
-        name = "Inner Focus",
-        description = "Prevents flinching."
+        name = "Attention",
+        description = "Empêche la peur"
     },
     {
         id = 40,
-        name = "Magma Armor",
-        description = "Prevents freezing."
+        name = "Armumagma",
+        description = "Votre Pokémon ne peut pas être gelé"
     },
     {
         id = 41,
-        name = "Water Veil",
-        description = "Prevents burns."
+        name = "Ignifu-Voile",
+        description = "Votre Pokémon ne peut pas être brûlé"
     },
     {
         id = 42,
-        name = "Magnet Pull",
-        description = "Prevents steel opponents from fleeing or switching out."
+        name = "Magnepiege",
+        description = "Si le Pokémon adverse est de type acier, il ne peut pas fuir"
     },
     {
         id = 43,
-        name = "Soundproof",
-        description = "Protects against sound-based moves."
+        name = "Anti-Bruit",
+        description = "Évite les attaques sonores"
     },
     {
         id = 44,
-        name = "Rain Dish",
+        name = "Cuvette",
         description = "Heals for 1/16 max HP after each turn during rain."
     },
     {
         id = 45,
-        name = "Sand Stream",
-        description = "Summons a sandstorm that lasts indefinitely upon entering battle."
+        name = "Sable Volant",
+        description = "Le Pokémon invoque une tempête de sable dès son arrivée en jeu"
     },
     {
         id = 46,
-        name = "Pressure",
-        description = "Increases the PP cost of moves targeting the Pok" .. Chars.accentedE .. "mon by one."
+        name = "Pression",
+        description = "Le Pokémon adverse dépense deux PP au lieu d'un pour une attaque"
     },
     {
         id = 47,
-        name = "Thick Fat",
-        description = "Halves damage from fire and ice moves."
+        name = "Isograisse",
+        description = "Les dégâts provoqués par les attaques des types Feu ou Glace sont divisés par 2"
     },
     {
         id = 48,
-        name = "Early Bird",
-        description = "Makes sleep pass twice as quickly."
+        name = "Matinal",
+        description = "Quand votre Pokémon est endormi, il se réveillera plus vite"
     },
     {
         id = 49,
-        name = "Flame Body",
-        description = "Has a 30% chance of burning attacking Pok" .. Chars.accentedE .. "mon on contact."
+        name = "Corps Ardent",
+        description = "Si votre adversaire vous attaque directement, il a 30% de chances d'être brûlé"
     },
     {
         id = 50,
-        name = "Run Away",
-        description = "Ensures success fleeing from wild battles."
+        name = "Fuite",
+        description = "Augmente les chances de fuite"
     },
     {
         id = 51,
-        name = "Keen Eye",
-        description = "Prevents Accuracy from being lowered."
+        name = "Regard Vif",
+        description = "Empêche une perte de précision"
     },
     {
         id = 52,
         name = "Hyper Cutter",
-        description = "Prevents Attack from being lowered by other Pok" .. Chars.accentedE .. "mon."
+        description = "L'attaque de votre Pokémon ne peut pas être baissée"
     },
     {
         id = 53,
-        name = "Pickup",
-        description = {
-            "10% chance to pick up an item after battle.",
-            "Picks up other Pok" ..
-                Chars.accentedE .. "mon's used and Flung held items. May also pick up an item after battle."
-        }
+        name = "Ramassage",
+        description = "Permet de ramasser des objets"
     },
     {
         id = 54,
-        name = "Truant",
-        description = "Skips every second turn."
+        name = "Absenteisme",
+        description = "Votre Pokémon n'attaque qu'un tour sur deux"
     },
     {
         id = 55,
-        name = "Hustle",
-        description = "Strengthens physical moves to inflict 1.5x damage, but decreases their Accuracy to 0.8x."
+        name = "Agitation",
+        description = "Augmente votre attaque de 50% mais baisse votre précision de 20%"
     },
     {
         id = 56,
-        name = "Cute Charm",
-        description = "Has a 30% chance of infatuating attacking Pok" .. Chars.accentedE .. "mon on contact."
+        name = "Joli Sourire",
+        description = "1/3 de chances de provoquer Attraction en cas d'attaque directe d’un Pokémon du sexe opposé."
     },
     {
         id = 57,
         name = "Plus",
-        description = {
-            "Increases Special Attack to 1.5x when a friendly Pok" .. Chars.accentedE .. "mon has Minus.",
-            "Increases Special Attack to 1.5x when a friendly Pok" .. Chars.accentedE .. "mon has Plus or Minus."
-        }
+        description = "Augmente l'attaque spéciale lorsque votre Pokémon est allié à un Pokémon possédant la capacité spéciale Minus (2vs2)"
     },
     {
         id = 58,
         name = "Minus",
-        description = {
-            "Increases Special Attack to 1.5x when a friendly Pok" .. Chars.accentedE .. "mon has Plus.",
-            "Increases Special Attack to 1.5x when a friendly Pok" .. Chars.accentedE .. "mon has Plus or Minus."
-        }
+        description = "Augmente votre attaque spéciale en 2vs2, si l'autre Pokémon a la capacité spéciale 'Plus'"
     },
     {
         id = 59,
-        name = "Forecast",
-        description = "Changes Castform's type and form to match the weather."
+        name = "Meteo",
+        description = "Change le type selon le climat"
     },
     {
         id = 60,
-        name = "Sticky Hold",
-        description = "Prevents a held item from being removed by other Pok" .. Chars.accentedE .. "mon."
+        name = "Glue",
+        description = "Empêche le vol d'objets"
     },
     {
         id = 61,
-        name = "Shed Skin",
-        description = "Has a 33% chance of curing any major status ailment after each turn."
+        name = "Mue",
+        description = "A chaque tour, vous avez 1/3 de chances de revenir à votre statut normal."
     },
     {
         id = 62,
-        name = "Guts",
-        description = "Increases Attack to 1.5x with a major status ailment."
+        name = "Cran",
+        description = "Multiplie par 1.5 l'attaque de votre Pokémon lorsque qu'il souffre d'une altération de statut"
     },
     {
         id = 63,
-        name = "Marvel Scale",
-        description = "Increases Defense to 1.5x with a major status ailment."
+        name = "Ecaille Spe.",
+        description = "Multiplie par 1.5 la défense de votre Pokémon lorsque qu'il souffre d'une altération de statut."
     },
     {
         id = 64,
-        name = "Liquid Ooze",
-        description = "Damages opponents using leeching moves for as much as they would heal."
+        name = "Suintement",
+        description = "Si le Pokémon adverse essaie d'absorber vos PV, c'est lui qui en perdra"
     },
     {
         id = 65,
-        name = "Overgrow",
-        description = "Strengthens grass moves to inflict 1.5x damage at 1/3 max HP or less."
+        name = "Engrais",
+        description = "Donne un bonus multiplicateur de x1.5 aux attaques plante lorsque les PV de ce Pokémon sont inférieurs à 1/3."
     },
     {
         id = 66,
-        name = "Blaze",
-        description = "Strengthens fire moves to inflict 1.5x damage at 1/3 max HP or less."
+        name = "Brasier",
+        description = "Donne un bonus multiplicateur de x1.5 aux attaques feu lorsque les PV de ce Pokémon sont inférieurs à 1/3."
     },
     {
         id = 67,
         name = "Torrent",
-        description = "Strengthens water moves to inflict 1.5x damage at 1/3 max HP or less."
+        description = "Donne un bonus multiplicateur de x1.5 aux attaques eau lorsque les PV de ce Pokémon sont inférieurs à 1/3."
     },
     {
         id = 68,
-        name = "Swarm",
-        description = "Strengthens bug moves to inflict 1.5x damage at 1/3 max HP or less."
+        name = "Essaim",
+        description = "Donne un bonus multiplicateur de x1.5 aux attaques insecte lorsque les PV de ce Pokémon sont inférieurs à 1/3."
     },
     {
         id = 69,
-        name = "Rock Head",
-        description = "Protects against recoil damage."
+        name = "Tete de Roc",
+        description = "Votre Pokémon ne se blesse pas en éxecutant des attaques telles que Damoclès"
     },
     {
         id = 70,
-        name = "Drought",
-        description = "Summons strong sunlight that lasts indefinitely upon entering battle."
+        name = "Secheresse",
+        description = "Quand votre Pokémon débute le le combat, il fait soleil"
     },
     {
         id = 71,
-        name = "Arena Trap",
-        description = "Prevents opponents from fleeing or switching out. Eluded by flying-types and Pok" ..
-            Chars.accentedE .. "mon in the air."
+        name = "Piege Sable",
+        description = "Empêche les Pokémon adverses d’être échangés, à moins qu’ils ne soient de type Vol, qu'ils tiennent la Carapace Mue ou qu'ils utilisent Demi-Tour, Cyclone, Hurlement, ou Téléport. Les Pokémon peuvent quitter le terrain s'ils possèdent les talents: Lévitation ou Fuite."
     },
     {
         id = 72,
-        name = "Vital Spirit",
-        description = "Prevents sleep."
+        name = "Esprit Vital",
+        description = "Votre Pokémon ne peut pas être endormi"
     },
     {
         id = 73,
-        name = "White Smoke",
-        description = "Prevents stats from being lowered by other Pok" .. Chars.accentedE .. "mon."
+        name = "Ecran Fumee",
+        description = "Empêche les statistiques de baisser"
     },
     {
         id = 74,
-        name = "Pure Power",
-        description = "Doubles Attack in battle."
+        name = "Force Pure",
+        description = "Double l'attaque du Pokémon"
     },
     {
         id = 75,
-        name = "Shell Armor",
-        description = "Protects against critical hits."
+        name = "Coque Armure",
+        description = "Bloque les coups critiques"
     },
     {
         id = 76,
         name = "Air Lock",
-        description = "Negates all effects of weather, but does not prevent the weather itself."
+        description = "Ignore les effets du climat"
     },
     {
         id = 77,
-        name = "Tangled Feet",
-        description = "Doubles evasion when confused."
+        name = "Pieds Confus",
+        description = "Améliore l'esquive lorsque le Pokémon devient confus"
     },
     {
         id = 78,
-        name = "Motor Drive",
-        description = "Absorbs electric moves, raising Speed one stage."
+        name = "Motorise",
+        description = "Si votre Pokémon reçoit une attaque électrique, sa vitesse augmente"
     },
     {
         id = 79,
-        name = "Rivalry",
-        description = "Increases damage inflicted to 1.25x against Pok" ..
-            Chars.accentedE .. "mon of the same gender, but decreases damage to 0.75x against the opposite gender."
+        name = "Rivalite",
+        description = "Augmente l'Attaque du Pokémon si l'adversaire est du même sexe  " 
     },
     {
         id = 80,
-        name = "Steadfast",
-        description = "Raises Speed one stage upon flinching."
+        name = "Impassible",
+        description = "Augmente la vitesse du Pokémon lorsqu'il perd des PV en attaquant"
     },
     {
         id = 81,
-        name = "Snow Cloak",
-        description = "Increases Evasion to 1.25x during hail. Protects against hail damage."
+        name = "Rideau Neige",
+        description = "L'esquive du Pokémon augmente lors d'une pluie de grêle"
     },
     {
         id = 82,
-        name = "Gluttony",
-        description = "Makes the Pok" ..
-            Chars.accentedE .. "mon eat any held Berry triggered by low HP below 1/2 its max HP."
+        name = "Gloutonnerie",
+        description = "Le Pokémon utilise la baie tenue plus tôt dans le match  "
     },
     {
         id = 83,
-        name = "Anger Point",
-        description = "Raises Attack to the maximum of six stages upon receiving a critical hit."
+        name = "Colerique",
+        description = "Ignore les effets du climat"
     },
     {
         id = 84,
-        name = "Unburden",
-        description = "Doubles Speed upon using or losing a held item."
+        name = "Delestage",
+        description = "Si le Pokémon ne tient pas d'objet, sa vitesse augmente"
     },
     {
         id = 85,
-        name = "Heatproof",
-        description = "Halves damage from fire moves and burns."
+        name = "Ignifuge",
+        description = "Divise par 2 la puissance des attaques feu lancées contre ce Pokémon"
     },
     {
         id = 86,
         name = "Simple",
-        description = {
-            "Doubles the effectivness of stat modifiers, but not the stat modifiers themselves.",
-            "Doubles all stat modifiers, whether positive or negative."
-        }
-    },
+        description = "Augmente l'efficacité des attaques ou des objets tenus"
+	},
     {
         id = 87,
-        name = "Dry Skin",
-        description = "Causes 1/8 max HP in damage each turn during strong sunlight, but heals for 1/8 max HP during rain. Increases damage from fire moves to 1.25x, but absorbs water moves, healing for 1/4 max HP."
+        name = "Peau Seche",
+        description = "Si Zénith a été lancé, les PV du Pokémon diminuent et si Danse Pluie a été lancé, les PV du Pokémon augmentent"
     },
     {
         id = 88,
-        name = "Download",
-        description = "Raises the Attack stat corresponding to the opponents' weaker Defense one stage upon entering battle."
+        name = "Telecharge",
+        description = "En fonction de la statistique la plus élevée de l'ennemi, le Pokémon augmente sa propre statistique"
     },
     {
         id = 89,
-        name = "Iron Fist",
-        description = "Strengthens punch-based moves to 1.2x their power."
+        name = "Poing de Fer",
+        description = "Les attaques 'Poing' du Pokémon voient leurs dégâts augmenter de 20%"
     },
     {
         id = 90,
-        name = "Poison Heal",
-        description = "Heals for 1/8 max HP after each turn when poisoned in place of damage."
+        name = "Soin Poison",
+        description = "Gagne des PV lorsque le statut est modifié"
     },
     {
         id = 91,
-        name = "Adaptability",
-        description = "Increases the same-type attack bonus from 1.5x to 2x."
+        name = "Adaptabilite",
+        description = "Si ce Pokémon utilise une attaque de son type, la puissance de l'attaque est multipliée par 2 au lieu de 1.5"
     },
     {
         id = 92,
-        name = "Skill Link",
-        description = {
-            "Extends two-to-five-hit moves to their full length every time.",
-            "Extends two-to-five-hit moves and triple kick to their full length every time."
-        }
+        name = "Multi-Coups",
+        description = "Augmente le nombre de coups portés par les attaques en plusieurs coups"
     },
     {
         id = 93,
-        name = "Hydration",
-        description = "Cures any major status ailment after each turn during rain."
+        name = "Hydratation",
+        description = "Annule les changements de statut lorsqu'il pleut"
     },
     {
         id = 94,
-        name = "Solar Power",
-        description = "Increases Special Attack to 1.5x but costs 1/8 max HP after each turn during strong sunlight."
+        name = "Force Soleil",
+        description = "Si le soleil brille, les PV du Pokémon diminuent à chaque tour, mais son Attaque spéciale est multipliée par 1.5"
     },
     {
         id = 95,
-        name = "Quick Feet",
-        description = "Increases Speed to 1.5x with a major status ailment."
+        name = "Pied Veloce",
+        description = "Si un Pokémon doté de ce talent voit son statut altéré, sa Vitesse est augmentée d'un niveau, soit un gain de 50 %."
     },
     {
         id = 96,
-        name = "Normalize",
-        description = "Makes the Pok" .. Chars.accentedE .. "mon's moves all act normal-type."
+        name = "Normalise",
+        description = "Toutes les attaques de ce Pokémon sont considérées comme de type normal"
     },
     {
         id = 97,
         name = "Sniper",
-        description = "Strengthens critical hits to inflict 3x damage rather than 2x."
+        description = "La puissance des coups critiques est quadruplée"
     },
     {
         id = 98,
-        name = "Magic Guard",
-        description = "Protects against damage not directly caused by a move."
+        name = "Garde Magik",
+        description = "Seules les attaques qui infligent des dégâts fonctionnent contre ce Pokémon"
     },
     {
         id = 99,
-        name = "No Guard",
-        description = "Ensures all moves used by and against the Pok" .. Chars.accentedE .. "mon hit."
+        name = "Annule Garde",
+        description = "Toutes les attaques ont une précision de 100% tant que ce Pokémon est en combat"
     },
     {
         id = 100,
-        name = "Stall",
-        description = "Makes the Pok" .. Chars.accentedE .. "mon move last within its move's priority bracket."
+        name = "Frein",
+        description = "Le Pokémon est toujours plus lent que son adversaire"
     },
     {
         id = 101,
-        name = "Technician",
-        description = "Strengthens moves of 60 base power or less to 1.5x their power."
+        name = "Technicien",
+        description = "La puissance des attaques d'une puissance inférieure à 60 est incrémentée de 50%"
     },
     {
         id = 102,
-        name = "Leaf Guard",
-        description = "Protects against major status ailments during strong sunlight."
+        name = "Feuil. Garde",
+        description = "Soigne les altérations de statut lorsque le soleil brille."
     },
     {
         id = 103,
-        name = "Klutz",
-        description = "Prevents the effects of held items."
+        name = "Maladresse",
+        description = "Ce Pokémon ne peut pas utiliser d'objet en combat"
     },
     {
         id = 104,
-        name = "Mold Breaker",
-        description = "Bypasses targets' abilities if they could hinder or prevent a move."
+        name = "Brise Moule",
+        description = "Annule certaines capacités spéciales du Pokémon défenseur"
     },
     {
         id = 105,
-        name = "Super Luck",
-        description = "Raises moves' critical hit rates one stage."
+        name = "Chanceux",
+        description = "Le taux de coup critique du Pokémon est augmenté d'un niveau"
     },
     {
         id = 106,
-        name = "Aftermath",
-        description = "Damages the attacker for 1/4 its max HP when knocked out by a contact move."
+        name = "Boom Final",
+        description = "Enlève 1/4 des PV de l'ennemi lorsque le Pokémon est mis KO par une attaque physique."
     },
     {
         id = 107,
         name = "Anticipation",
-        description = "Notifies all trainers upon entering battle if an opponent has a super-effective move, self destruct, explosion, or a one-hit KO move."
+        description = "Alerte lorsque le Pokémon adverse possède une attaque 'super efficace' ou OHKO"
     },
     {
         id = 108,
-        name = "Forewarn",
-        description = "Reveals the opponents' strongest move upon entering battle."
+        name = "Prediction",
+        description = "Vous permet de voir l'attaque la plus puissante du Pokémon adverse"
     },
     {
         id = 109,
-        name = "Unaware",
-        description = "Ignores other Pok" ..
-            Chars.accentedE .. "mon's stat modifiers for damage and Accuracy calculation."
+        name = "Inconscient",
+        description = "Les altérations de statistiques de l'adversaire sont ignorées  "
     },
     {
         id = 110,
-        name = "Tinted Lens",
-        description = "Doubles damage inflicted with not-very-effective moves."
+        name = "Lentiteintee",
+        description = "Si la capacité utilisée n'est pas très efficace contre le Pokémon défenseur, ses dégâts sont doublés"
     },
     {
         id = 111,
-        name = "Filter",
-        description = "Decreases damage taken from super-effective moves by 1/4."
+        name = "Filtre",
+        description = "Divise par deux les dégâts provenant d'attaques 'super efficaces' à l'encontre de ce Pokémon"
     },
     {
         id = 112,
-        name = "Slow Start",
-        description = "Halves Attack and Speed for five turns upon entering battle."
+        name = "Debut Calme",
+        description = "L'attaque et la vitesse du Pokémon sont réduites de moitié durant les 5 premiers tours de combat"
     },
     {
         id = 113,
-        name = "Scrappy",
-        description = "Lets the Pok" ..
-            Chars.accentedE .. "mon's normal and fighting moves hit ghost Pok" .. Chars.accentedE .. "mon."
+        name = "Querelleur",
+        description = "Permet au Pokémon de toucher les Pokémon du type spectre avec des attaques du type normal ou combat  "
     },
     {
         id = 114,
-        name = "Storm Drain",
-        description = {
-            "Redirects single-target water moves to this Pok" .. Chars.accentedE .. "mon.",
-            "Redirects single-target water moves to this Pok" ..
-                Chars.accentedE .. "mon and absorbs them, raising Special Attack one stage."
-        }
+        name = "Lavabo",
+        description = "Toutes les attaques eau sont attirées sur ce Pokémon"
     },
     {
         id = 115,
-        name = "Ice Body",
-        description = "Heals for 1/16 max HP after each turn during hail. Protects against hail damage."
+        name = "Corps Gel",
+        description = "Les PV du Pokémon augmentent lorsqu'il grêle"
     },
     {
         id = 116,
-        name = "Solid Rock",
-        description = "Decreases damage taken from super-effective moves by 1/4."
+        name = "Solide Roc",
+        description = "Toutes les attaques 'super efficaces' sur ce Pokémon ont leurs dégâts diminués"
     },
     {
         id = 117,
-        name = "Snow Warning",
-        description = "Summons hail that lasts indefinitely upon entering battle."
+        name = "Alerte Neige",
+        description = "Quand ce Pokémon arrive dans le combat, la tempête de neige se déclenche"
     },
     {
         id = 118,
-        name = "Honey Gather",
-        description = "The Pok" .. Chars.accentedE .. "mon may pick up honey after battle."
+        name = "Cherche Miel",
+        description = "Trouve du Miel après un combat"
     },
     {
         id = 119,
-        name = "Frisk",
-        description = "Reveals the opponent's held item upon entering battle."
+        name = "Fouille",
+        description = "Permet de voir l'objet tenu par le Pokémon ennemi"
     },
     {
         id = 120,
-        name = "Reckless",
-        description = "Strengthens recoil moves to 1.2x their power."
+        name = "Temeraire",
+        description = "Tous les coups de riposte augmentent la puissance"
     },
     {
         id = 121,
         name = "Multitype",
-        description = "Changes Arceus's type and form to match its held Plate."
+        description = "Le type et la couleur du Pokémon changent en fonction de la plaque qu'il porte."
     },
     {
         id = 122,
-        name = "Flower Gift",
-        description = "Increases friendly Pok" ..
-            Chars.accentedE .. "mon's Attack and Special Defense to 1.5x during strong sunlight."
+        name = "Don Floral",
+        description = "Change la forme et augmente l'attaque et l'attaque spéciale du Pokémon (et de son allié en combat double) en présence du soleil  "
     },
     {
         id = 123,
-        name = "Bad Dreams",
-        description = "Damages sleeping opponents for 1/8 their max HP after each turn."
+        name = "Mauvais Reve",
+        description = "Si le Pokémon défenseur dort, il perd des PV à chaque tour"
     },
     {
         id = 124,
         name = "Pickpocket",
-        description = "Steals attacking Pok" .. Chars.accentedE .. "mon's held items on contact."
+        description = "Lorsqu'un Pokémon doté du talent Pickpocket se fait toucher par une capacité directe, il vole l'objet tenu de son adversaire."
     },
     {
         id = 125,
-        name = "Sheer Force",
-        description = "Strengthens moves with extra effects to 1.3x their power, but prevents their extra effects."
+        name = "Sans Limite",
+        description = "Si un Pokémon doté de ce talent utilise une capacité ayant des effets secondaires, cette capacité verra sa puissance de base augmenter de 30 %, mais les effets secondaires seront annulés en contrepartie. ."
     },
     {
         id = 126,
-        name = "Contrary",
+        name = "Contestation",
         description = "Inverts stat changes."
     },
     {
         id = 127,
-        name = "Unnerve",
+        name = "Tension",
         description = "Prevents opposing Pok" .. Chars.accentedE .. "mon from eating held Berries."
     },
     {
         id = 128,
-        name = "Defiant",
+        name = "Acharne",
         description = "Raises Attack two stages upon having any stat lowered."
     },
     {
         id = 129,
-        name = "Defeatist",
+        name = "Defaitiste",
         description = "Halves Attack and Special Attack at 50% max HP or less."
     },
     {
         id = 130,
-        name = "Cursed Body",
+        name = "Corps Maudit",
         description = "Has a 30% chance of Disabling any move that hits the Pok" .. Chars.accentedE .. "mon."
     },
     {
         id = 131,
-        name = "Healer",
+        name = "Coeur Soin",
         description = "Has a 30% chance of curing each adjacent ally of any major status ailment after each turn."
     },
     {
         id = 132,
-        name = "Friend Guard",
+        name = "Garde Amie",
         description = "Decreases all direct damage taken by friendly Pok" .. Chars.accentedE .. "mon to 0.75x."
     },
     {
         id = 133,
-        name = "Weak Armor",
+        name = "Armurouillee",
         description = "Raises Speed and lowers Defense by one stage each upon being hit by a physical move."
     },
     {
@@ -728,68 +685,68 @@ AbilityData.ABILITIES_MASTER_LIST = {
     },
     {
         id = 136,
-        name = "Multiscale",
+        name = "Multiecaille",
         description = "Halves damage taken from full HP."
     },
     {
         id = 137,
-        name = "Toxic Boost",
+        name = "Rage Poison",
         description = "Increases Attack to 1.5x when poisoned."
     },
     {
         id = 138,
-        name = "Flare Boost",
+        name = "Rage Brûlure",
         description = "Increases Special Attack to 1.5x when burned."
     },
     {
         id = 139,
-        name = "Harvest",
+        name = "Recolte",
         description = "Has a 50% chance of restoring a used Berry after each turn if the Pok" ..
             Chars.accentedE .. "mon has held no items in the meantime."
     },
     {
         id = 140,
-        name = "Telepathy",
+        name = "Telepathe",
         description = "Protects against friendly Pok" .. Chars.accentedE .. "mon's damaging moves."
     },
     {
         id = 141,
-        name = "Moody",
+        name = "Lunatique",
         description = "Raises a random stat two stages and lowers another one stage after each turn."
     },
     {
         id = 142,
-        name = "Overcoat",
+        name = "Envelocape",
         description = "Protects against damage from weather."
     },
     {
         id = 143,
-        name = "Poison Touch",
+        name = "Toxitouche",
         description = "Has a 30% chance of poisoning target Pok" .. Chars.accentedE .. "mon upon contact."
     },
     {
         id = 144,
-        name = "Regenerator",
+        name = "Rege-Force",
         description = "Heals for 1/3 max HP upon switching out."
     },
     {
         id = 145,
-        name = "Big Pecks",
+        name = "Coeur de Coq",
         description = "Prevents Defense from being lowered."
     },
     {
         id = 146,
-        name = "Sand Rush",
+        name = "Baigne Sable",
         description = "Doubles Speed during a sandstorm. Protects against sandstorm damage."
     },
     {
         id = 147,
-        name = "Wonder Skin",
+        name = "Peau Miracle",
         description = "Lowers incoming non-damaging moves' base accuracy to exactly 50%."
     },
     {
         id = 148,
-        name = "Analytic",
+        name = "Analyste",
         description = "Strengthens moves to 1.3x their power when moving last."
     },
     {
@@ -800,72 +757,72 @@ AbilityData.ABILITIES_MASTER_LIST = {
     },
     {
         id = 150,
-        name = "Imposter",
+        name = "Imposteur",
         description = "Transforms upon entering battle."
     },
     {
         id = 151,
-        name = "Infiltrator",
+        name = "Infiltration",
         description = "Bypasses Light Screen, Reflect, and Safeguard."
     },
     {
         id = 152,
-        name = "Mummy",
+        name = "Momie",
         description = "Changes attacking Pok" .. Chars.accentedE .. "mon's abilities to Mummy on contact."
     },
     {
         id = 153,
-        name = "Moxie",
+        name = "Impudence",
         description = "Raises Attack one stage upon KOing a Pok" .. Chars.accentedE .. "mon."
     },
     {
         id = 154,
-        name = "Justified",
+        name = "Coeur Noble",
         description = "Raises Attack one stage upon taking damage from a dark move."
     },
     {
         id = 155,
-        name = "Rattled",
+        name = "Phobique",
         description = "Raises Speed one stage upon being hit by a dark, ghost, or bug move."
     },
     {
         id = 156,
-        name = "Magic Bounce",
+        name = "Miroir Magik",
         description = "Reflects most non-damaging moves back at their user."
     },
     {
         id = 157,
-        name = "Sap Sipper",
+        name = "Herbivore",
         description = "Absorbs grass moves, raising Attack one stage."
     },
     {
         id = 158,
-        name = "Prankster",
+        name = "Farceur",
         description = "Raises non-damaging moves' priority by one stage."
     },
     {
         id = 159,
-        name = "Sand Force",
+        name = "Force Sable",
         description = "Strengthens rock, ground, and steel moves to 1.3x their power during a sandstorm. Protects against sandstorm damage."
     },
     {
         id = 160,
-        name = "Iron Barbs",
+        name = "Epine de Fer",
         description = "Damages attacking Pok" .. Chars.accentedE .. "mon for 1/8 their max HP on contact."
     },
     {
         id = 161,
-        name = "Zen Mode",
+        name = "Mode Transe",
         description = "Changes Darmanitan's form after each turn depending on its HP: Zen Mode below 50% max HP, and Standard Mode otherwise."
     },
     {
         id = 162,
-        name = "Victory Star",
+        name = "Victorieux",
         description = "Increases moves' accuracy to 1.1x for friendly Pok" .. Chars.accentedE .. "mon."
     },
     {
         id = 163,
-        name = "Turboblaze",
+        name = "Turbo Brasier",
         description = "Bypasses targets' abilities if they could hinder or prevent moves."
     },
     {

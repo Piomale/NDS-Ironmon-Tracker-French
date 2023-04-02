@@ -301,7 +301,7 @@ function HoverFrameFactory.createMoveLevelsHoverFrame(pokemon, mainFrame)
             )
         ),
         TextField(
-            "Moves Learned",
+            "Capacites apprises",
             {x = 30, y = 1},
             TextStyle(11, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
         )
@@ -420,6 +420,12 @@ function HoverFrameFactory.createItemBagHoverFrame(items, mainFrame, itemType)
     if itemType == "Status" then
         xPadding = 29
     end
+	local textItem = itemType .. " Items"
+    if itemType == "Healing" then
+		textItem = "Objets de soin"
+	elseif itemType == "Status" then
+		textItem = "Objets de statut"
+	end
     local textHeader =
         TextLabel(
         Component(
@@ -438,7 +444,7 @@ function HoverFrameFactory.createItemBagHoverFrame(items, mainFrame, itemType)
             )
         ),
         TextField(
-            itemType .. " Items",
+            textItem,
             {x = xPadding, y = 1},
             TextStyle(11, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
         )

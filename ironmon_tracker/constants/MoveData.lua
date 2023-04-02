@@ -104,7 +104,7 @@ MoveData.MOVES_MASTER_LIST = {
 	{
 		-- Begin Gen 1 Moves
 		id = "1",
-		name = "Pound",
+		name = "Ecras’Face",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "40",
 		pp = "35",
@@ -114,7 +114,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "2",
-		name = "Karate Chop",
+		name = "Poing-Karaté",
 		type = {
 			PokemonData.POKEMON_TYPES.NORMAL,
 			PokemonData.POKEMON_TYPES.FIGHTING,
@@ -126,11 +126,11 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "25",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User's critical hit rate is one level higher when using this move."
+		description = "Inflicts regular damage and makes contact. User’s critical hit rate is one level higher when using this move."
 	},
 	{
 		id = "3",
-		name = "DoubleSlap",
+		name = "Torgnoles",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "15",
 		pp = "10",
@@ -140,7 +140,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "4",
-		name = "Comet Punch",
+		name = "Poing Comète",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "18",
 		pp = "15",
@@ -150,7 +150,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "5",
-		name = "Mega Punch",
+		name = "Ultimapoing",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "80",
 		pp = "20",
@@ -160,17 +160,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "6",
-		name = "Pay Day",
+		name = "Jackpot",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "40",
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. After the battle ends, the winner receives five times the user's level in extra money for each time this move was used."
+		description = "Inflicts regular damage. After the battle ends, the winner receives five times the user’s level in extra money for each time this move was used."
 	},
 	{
 		id = "7",
-		name = "Fire Punch",
+		name = "Poing de Feu",
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "75",
 		pp = "15",
@@ -180,7 +180,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "8",
-		name = "Ice Punch",
+		name = "Poinglace",
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = "75",
 		pp = "15",
@@ -190,7 +190,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "9",
-		name = "ThunderPunch",
+		name = "Poing-Eclair",
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = "75",
 		pp = "15",
@@ -200,7 +200,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "10",
-		name = "Scratch",
+		name = "Griffe",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "40",
 		pp = "35",
@@ -210,7 +210,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "11",
-		name = "ViceGrip",
+		name = "Force Poigne",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "55",
 		pp = "30",
@@ -226,31 +226,31 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "30",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Instantly KOs the target and makes contact. This move's accuracy is 30% plus 1% for each level the user is higher than the target. If the user is a lower level than the target, this move will fail."
+		description = "Instantly KOs the target and makes contact. This move’s accuracy is 30% plus 1% for each level the user is higher than the target. If the user is a lower level than the target, this move will fail."
 	},
 	{
 		id = "13",
-		name = "Razor Wind",
+		name = "Coupe-Vent",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "80",
 		pp = "10",
 		accuracy = {"75", "75", "100", "100", "100"},
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. User's critical hit rate is one level higher when using this move. User charges for one turn before attacking."
+		description = "Inflicts regular damage. User’s critical hit rate is one level higher when using this move. User charges for one turn before attacking."
 	},
 	{
 		id = "14",
-		name = "Swords Dance",
+		name = "Danse-Lames",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user's Attack by two stages."
+		description = "Raises the user’s Attack by two stages."
 	},
 	{
 		id = "15",
-		name = "Cut",
+		name = "Coupe",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "50",
 		pp = "30",
@@ -260,7 +260,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "16",
-		name = "Gust",
+		name = "Tornade",
 		type = {
 			PokemonData.POKEMON_TYPES.NORMAL,
 			PokemonData.POKEMON_TYPES.FLYING,
@@ -282,7 +282,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "17",
-		name = "Wing Attack",
+		name = "Cru-Aile",
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = {"35", "60", "60", "60", "60"},
 		pp = "35",
@@ -292,20 +292,20 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "18",
-		name = "Whirlwind",
+		name = "Cyclone",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
 		accuracy = {"85", "100", "100", "100", "100"},
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Decreased priority. Switches the target out for another of its trainer's Pok" ..
+		description = "Decreased priority. Switches the target out for another of its trainer’s Pok" ..
 			Chars.accentedE ..
-				"mon selected at random. Doesn't affect Pok" ..
+				"mon selected at random. Doesn’t affect Pok" ..
 					Chars.accentedE .. "mon with suction cups or under the effect of ingrain."
 	},
 	{
 		id = "19",
-		name = "Fly",
+		name = "Vol",
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = {"70", "70", "70", "90", "90"},
 		pp = "15",
@@ -315,7 +315,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "20",
-		name = "Bind",
+		name = "Etreinte",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "15",
 		pp = "20",
@@ -331,7 +331,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "21",
-		name = "Slam",
+		name = "Souplesse",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "80",
 		pp = "20",
@@ -341,7 +341,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "22",
-		name = "Vine Whip",
+		name = "Fouet Lianes",
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = "35",
 		pp = {"10", "10", "10", "15", "15"},
@@ -351,7 +351,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "23",
-		name = "Stomp",
+		name = "Ecrasement",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "65",
 		pp = "20",
@@ -362,7 +362,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "24",
-		name = "Double Kick",
+		name = "Double Pied",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "30",
 		pp = "30",
@@ -372,7 +372,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "25",
-		name = "Mega Kick",
+		name = "Ultimawashi",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "120",
 		pp = "5",
@@ -382,23 +382,23 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "26",
-		name = "Jump Kick",
+		name = "Pied Sauté",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = {"70", "70", "70", "85", "100"},
 		pp = {"25", "25", "25", "25", "10"},
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
 		description = {
-			"Inflicts regular damage and makes contact. If this move misses, the user takes half the damage it would have dealt. If the move would have no effect, the user takes damage equal to half the target's max HP.",
-			"Inflicts regular damage and makes contact. If this move misses, the user takes half the damage it would have dealt. If the move would have no effect, the user takes damage equal to half the target's max HP.",
-			"Inflicts regular damage and makes contact. If this move misses, the user takes half the damage it would have dealt. If the move would have no effect, the user takes damage equal to half the target's max HP.",
-			"Inflicts regular damage and makes contact. If this move misses, the user takes half the damage it would have dealt. If the move would have no effect, the user takes damage equal to half the target's max HP.",
+			"Inflicts regular damage and makes contact. If this move misses, the user takes half the damage it would have dealt. If the move would have no effect, the user takes damage equal to half the target’s max HP.",
+			"Inflicts regular damage and makes contact. If this move misses, the user takes half the damage it would have dealt. If the move would have no effect, the user takes damage equal to half the target’s max HP.",
+			"Inflicts regular damage and makes contact. If this move misses, the user takes half the damage it would have dealt. If the move would have no effect, the user takes damage equal to half the target’s max HP.",
+			"Inflicts regular damage and makes contact. If this move misses, the user takes half the damage it would have dealt. If the move would have no effect, the user takes damage equal to half the target’s max HP.",
 			"Inflicts regular damage and makes contact. If this move misses, the user takes half its max HP in damage."
 		}
 	},
 	{
 		id = "27",
-		name = "Rolling Kick",
+		name = "Mawashi Geri",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "60",
 		pp = "15",
@@ -408,7 +408,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "28",
-		name = "Sand-Attack",
+		name = "Jet de Sable",
 		type = {
 			PokemonData.POKEMON_TYPES.NORMAL,
 			PokemonData.POKEMON_TYPES.GROUND,
@@ -420,11 +420,11 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target's Accuracy by one stage."
+		description = "Lowers the target’s Accuracy by one stage."
 	},
 	{
 		id = "29",
-		name = "Headbutt",
+		name = "Coup d’Boule",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "70",
 		pp = "15",
@@ -434,7 +434,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "30",
-		name = "Horn Attack",
+		name = "Koud’Korne",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "65",
 		pp = "25",
@@ -444,7 +444,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "31",
-		name = "Fury Attack",
+		name = "Furie",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "15",
 		pp = "20",
@@ -454,17 +454,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "32",
-		name = "Horn Drill",
+		name = "Empal’Korne",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
 		accuracy = "30",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Instantly KOs the target and makes contact. This move's accuracy is 30% plus 1% for each level the user is higher than the target. If the user is a lower level than the target, this move will fail."
+		description = "Instantly KOs the target and makes contact. This move’s accuracy is 30% plus 1% for each level the user is higher than the target. If the user is a lower level than the target, this move will fail."
 	},
 	{
 		id = "33",
-		name = "Tackle",
+		name = "Charge",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = {"35", "35", "35", "35", "50"},
 		pp = "35",
@@ -474,7 +474,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "34",
-		name = "Body Slam",
+		name = "Plaquage",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "85",
 		pp = "15",
@@ -484,7 +484,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "35",
-		name = "Wrap",
+		name = "Ligotage",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "15",
 		pp = "20",
@@ -500,7 +500,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "36",
-		name = "Take Down",
+		name = "Bélier",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "90",
 		pp = "20",
@@ -510,7 +510,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "37",
-		name = "Thrash",
+		name = "Mania",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = {"90", "90", "90", "90", "120"},
 		pp = {"20", "20", "20", "20", "10"},
@@ -520,7 +520,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "38",
-		name = "Double-Edge",
+		name = "Damoclès",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = {"100", "120", "120", "120", "120"},
 		pp = "15",
@@ -530,17 +530,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "39",
-		name = "Tail Whip",
+		name = "Mimi-Queue",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target's Defense by one stage."
+		description = "Lowers the target’s Defense by one stage."
 	},
 	{
 		id = "40",
-		name = "Poison Sting",
+		name = "Dard-Venin",
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = "15",
 		pp = "35",
@@ -550,7 +550,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "41",
-		name = "Twineedle",
+		name = "Double-Dard",
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = "25",
 		pp = "20",
@@ -560,7 +560,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "42",
-		name = "Pin Missile",
+		name = "Dard-Nuée",
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = "14",
 		pp = "20",
@@ -570,17 +570,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "43",
-		name = "Leer",
+		name = "Groz’Yeux",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target's Defense by one stage."
+		description = "Lowers the target’s Defense by one stage."
 	},
 	{
 		id = "44",
-		name = "Bite",
+		name = "Morsure",
 		type = {
 			PokemonData.POKEMON_TYPES.NORMAL,
 			PokemonData.POKEMON_TYPES.DARK,
@@ -596,28 +596,28 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "45",
-		name = "Growl",
+		name = "Rugissement",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target's Attack by one stage."
+		description = "Lowers the target’s Attack by one stage."
 	},
 	{
 		id = "46",
-		name = "Roar",
+		name = "Hurlement",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Decreased priority. Switches the target out for another of its trainer's Pok" ..
+		description = "Decreased priority. Switches the target out for another of its trainer’s Pok" ..
 			Chars.accentedE .. "mon selected at random. Wild battles end immediately."
 	},
 	{
 		id = "47",
-		name = "Sing",
+		name = "Berceuse",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -627,7 +627,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "48",
-		name = "Supersonic",
+		name = "Ultrason",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -637,7 +637,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "49",
-		name = "SonicBoom",
+		name = "Sonicboom",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "---",
 		pp = "20",
@@ -647,33 +647,33 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "50",
-		name = "Disable",
+		name = "Entrave",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
 		accuracy = {"55", "55", "55", "80", "100"},
 		category = MoveData.MOVE_CATEGORIES.STATUS,
 		description = {
-			"Disables the target's last used move, preventing its use for 4-7 turns, selected at random, or until the target leaves the field. Using an item counts as a turn.",
-			"Disables the target's last used move, preventing its use for 4-7 turns, selected at random, or until the target leaves the field. Using an item counts as a turn.",
-			"Disables the target's last used move, preventing its use for 4-7 turns, selected at random, or until the target leaves the field. Using an item counts as a turn.",
-			"Disables the target's last used move, preventing its use for 4-7 turns, selected at random, or until the target leaves the field. Using an item counts as a turn.",
-			"Disables the target's last used move, preventing its use for 4 turns, or until the target leaves the field. Using an item counts as a turn."
+			"Disables the target’s last used move, preventing its use for 4-7 turns, selected at random, or until the target leaves the field. Using an item counts as a turn.",
+			"Disables the target’s last used move, preventing its use for 4-7 turns, selected at random, or until the target leaves the field. Using an item counts as a turn.",
+			"Disables the target’s last used move, preventing its use for 4-7 turns, selected at random, or until the target leaves the field. Using an item counts as a turn.",
+			"Disables the target’s last used move, preventing its use for 4-7 turns, selected at random, or until the target leaves the field. Using an item counts as a turn.",
+			"Disables the target’s last used move, preventing its use for 4 turns, or until the target leaves the field. Using an item counts as a turn."
 		}
 	},
 	{
 		id = "51",
-		name = "Acid",
+		name = "Acide",
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = "40",
 		pp = "30",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to lower the target's Special Defense by one stage."
+		description = "Inflicts regular damage. Has a 10% chance to lower the target’s Special Defense by one stage."
 	},
 	{
 		id = "52",
-		name = "Ember",
+		name = "Flammèche",
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "40",
 		pp = "25",
@@ -683,7 +683,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "53",
-		name = "Flamethrower",
+		name = "Lance-Flamme",
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "95",
 		pp = "15",
@@ -693,7 +693,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "54",
-		name = "Mist",
+		name = "Brume",
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
@@ -701,11 +701,11 @@ MoveData.MOVES_MASTER_LIST = {
 		category = MoveData.MOVE_CATEGORIES.STATUS,
 		description = "Pok" ..
 			Chars.accentedE ..
-				"mon on the user's side of the field are immune to stat-lowering effects for five turns. Guard Swap, Heart Swap, and Power Swap may still be used."
+				"mon on the user’s side of the field are immune to stat-lowering effects for five turns. Guard Swap, Heart Swap, and Power Swap may still be used."
 	},
 	{
 		id = "55",
-		name = "Water Gun",
+		name = "Pistolet à O",
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = "40",
 		pp = "25",
@@ -715,7 +715,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "56",
-		name = "Hydro Pump",
+		name = "Hydrocanon",
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = "120",
 		pp = "5",
@@ -735,7 +735,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "58",
-		name = "Ice Beam",
+		name = "Laser Glace",
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = "95",
 		pp = "10",
@@ -755,7 +755,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "60",
-		name = "Psybeam",
+		name = "Rafale Psy",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = "65",
 		pp = "20",
@@ -765,27 +765,27 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "61",
-		name = "BubbleBeam",
+		name = "Bulles d’O",
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = "65",
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to lower the target's Speed by one stage."
+		description = "Inflicts regular damage. Has a 10% chance to lower the target’s Speed by one stage."
 	},
 	{
 		id = "62",
-		name = "Aurora Beam",
+		name = "Onde Boréale",
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = "65",
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to lower the target's Attack by one stage."
+		description = "Inflicts regular damage. Has a 10% chance to lower the target’s Attack by one stage."
 	},
 	{
 		id = "63",
-		name = "Hyper Beam",
+		name = "Ultralaser",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "150",
 		pp = "5",
@@ -795,7 +795,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "64",
-		name = "Peck",
+		name = "Picpic",
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = "35",
 		pp = "35",
@@ -805,7 +805,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "65",
-		name = "Drill Peck",
+		name = "Bec Vrille",
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = "80",
 		pp = "20",
@@ -815,7 +815,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "66",
-		name = "Submission",
+		name = "Sacrifice",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "80",
 		pp = "25",
@@ -825,17 +825,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "67",
-		name = "Low Kick",
+		name = "Balayage",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = {"50", "50", "WT", "WT", "WT"},
 		pp = "20",
 		accuracy = {"90", "90", "100", "100", "100"},
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Power increases with the target's weight in kilograms, to a maximum of 120."
+		description = "Inflicts regular damage and makes contact. Power increases with the target’s weight in kilograms, to a maximum of 120."
 	},
 	{
 		id = "68",
-		name = "Counter",
+		name = "Riposte",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -845,17 +845,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "69",
-		name = "Seismic Toss",
+		name = "Frappe Atlas",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Makes contact and inflicts damage equal to the user's level. Type immunity applies, but other type effects are ignored."
+		description = "Makes contact and inflicts damage equal to the user’s level. Type immunity applies, but other type effects are ignored."
 	},
 	{
 		id = "70",
-		name = "Strength",
+		name = "Force",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "80",
 		pp = "15",
@@ -865,7 +865,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "71",
-		name = "Absorb",
+		name = "Vol-Vie",
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = {"20", "20", "20", "25", "25"},
 		pp = "25",
@@ -875,7 +875,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "72",
-		name = "Mega Drain",
+		name = "Méga-Sangsue",
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = "40",
 		pp = {"10", "10", "10", "15", "15"},
@@ -885,7 +885,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "73",
-		name = "Leech Seed",
+		name = "Vampigraine",
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -896,33 +896,33 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "74",
-		name = "Growth",
+		name = "Croissance",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
 		description = {
-			"Raises the user's Special Attack by one stage.",
-			"Raises the user's Special Attack by one stage.",
-			"Raises the user's Special Attack by one stage.",
-			"Raises the user's Special Attack by one stage.",
-			"Raises the user's Attack and Special Attack by one stage each. During sunny day, raises both stats by two stages."
+			"Raises the user’s Special Attack by one stage.",
+			"Raises the user’s Special Attack by one stage.",
+			"Raises the user’s Special Attack by one stage.",
+			"Raises the user’s Special Attack by one stage.",
+			"Raises the user’s Attack and Special Attack by one stage each. During sunny day, raises both stats by two stages."
 		}
 	},
 	{
 		id = "75",
-		name = "Razor Leaf",
+		name = "Tranch’Herbe",
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = "55",
 		pp = "25",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. User's critical hit rate is one level higher when using this move."
+		description = "Inflicts regular damage. User’s critical hit rate is one level higher when using this move."
 	},
 	{
 		id = "76",
-		name = "SolarBeam",
+		name = "Lance-Soleil",
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = "120",
 		pp = "10",
@@ -932,7 +932,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "77",
-		name = "PoisonPowder",
+		name = "Poudre Toxik",
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "35",
@@ -942,7 +942,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "78",
-		name = "Stun Spore",
+		name = "Para-Spore",
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
@@ -952,7 +952,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "79",
-		name = "Sleep Powder",
+		name = "Poudre Dodo",
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -962,7 +962,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "80",
-		name = "Petal Dance",
+		name = "Danse-Fleur",
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = {"70", "70", "70", "90", "120"},
 		pp = {"20", "20", "20", "20", "10"},
@@ -972,17 +972,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "81",
-		name = "String Shot",
+		name = "Sécrétion",
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target's Speed by two stages."
+		description = "Lowers the target’s Speed by two stages."
 	},
 	{
 		id = "82",
-		name = "Dragon Rage",
+		name = "Draco-Rage",
 		type = PokemonData.POKEMON_TYPES.DRAGON,
 		power = "---",
 		pp = "10",
@@ -992,7 +992,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "83",
-		name = "Fire Spin",
+		name = "Danseflamme",
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = {"15", "15", "15", "15", "35"},
 		pp = "15",
@@ -1008,7 +1008,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "84",
-		name = "ThunderShock",
+		name = "Eclair",
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = "40",
 		pp = "30",
@@ -1018,7 +1018,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "85",
-		name = "Thunderbolt",
+		name = "Tonnerre",
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = "95",
 		pp = "15",
@@ -1028,7 +1028,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "86",
-		name = "Thunder Wave",
+		name = "Cage-Eclair",
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -1038,7 +1038,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "87",
-		name = "Thunder",
+		name = "Fatal-Foudre",
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = "120",
 		pp = "10",
@@ -1048,7 +1048,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "88",
-		name = "Rock Throw",
+		name = "Jet-Pierres",
 		type = PokemonData.POKEMON_TYPES.ROCK,
 		power = "50",
 		pp = "15",
@@ -1058,7 +1058,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "89",
-		name = "Earthquake",
+		name = "Séisme",
 		type = PokemonData.POKEMON_TYPES.GROUND,
 		power = "100",
 		pp = "10",
@@ -1068,17 +1068,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "90",
-		name = "Fissure",
+		name = "Abîme",
 		type = PokemonData.POKEMON_TYPES.GROUND,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
 		accuracy = "30",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Instantly KOs the target. This move's accuracy is 30% plus 1% for each level the user is higher than the target. If the user is a lower level than the target, this move will fail."
+		description = "Instantly KOs the target. This move’s accuracy is 30% plus 1% for each level the user is higher than the target. If the user is a lower level than the target, this move will fail."
 	},
 	{
 		id = "91",
-		name = "Dig",
+		name = "Tunnel",
 		type = PokemonData.POKEMON_TYPES.GROUND,
 		power = {"100", "60", "60", "80", "80"},
 		pp = "10",
@@ -1088,7 +1088,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "92",
-		name = "Toxic",
+		name = "Toxik",
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -1098,7 +1098,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "93",
-		name = "Confusion",
+		name = "Choc Mental",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = "50",
 		pp = "25",
@@ -1108,17 +1108,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "94",
-		name = "Psychic",
+		name = "Psyko",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = "90",
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to lower the target's Special Defense by one stage."
+		description = "Inflicts regular damage. Has a 10% chance to lower the target’s Special Defense by one stage."
 	},
 	{
 		id = "95",
-		name = "Hypnosis",
+		name = "Hypnose",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -1128,27 +1128,27 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "96",
-		name = "Meditate",
+		name = "Yoga",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user's Attack by one stage."
+		description = "Raises the user’s Attack by one stage."
 	},
 	{
 		id = "97",
-		name = "Agility",
+		name = "Hâte",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user's Speed by two stages."
+		description = "Raises the user’s Speed by two stages."
 	},
 	{
 		id = "98",
-		name = "Quick Attack",
+		name = "Vive-Attaque",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "40",
 		pp = "30",
@@ -1158,7 +1158,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "99",
-		name = "Rage",
+		name = "Frénésie",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "20",
 		pp = "20",
@@ -1168,7 +1168,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "100",
-		name = "Teleport",
+		name = "Téléport",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -1178,53 +1178,53 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "101",
-		name = "Night Shade",
+		name = "Ténèbres",
 		type = PokemonData.POKEMON_TYPES.GHOST,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts damage equal to the user's level. Type immunity applies, but other type effects are ignored."
+		description = "Inflicts damage equal to the user’s level. Type immunity applies, but other type effects are ignored."
 	},
 	{
 		id = "102",
-		name = "Mimic",
+		name = "Copie",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
 		accuracy = {"100", "100", Graphics.TEXT.ALWAYS_HITS, Graphics.TEXT.ALWAYS_HITS, Graphics.TEXT.ALWAYS_HITS},
 		category = MoveData.MOVE_CATEGORIES.STATUS,
 		description = {
-			"This move is replaced by the target's last successfully used move, and its PP changes to 5. If Chatter, Metronome, Mimic, Sketch, or Struggle is selected, this move will fail.",
-			"This move is replaced by the target's last successfully used move, and its PP changes to 5. If Chatter, Metronome, Mimic, Sketch, or Struggle is selected, this move will fail.",
-			"This move is replaced by the target's last successfully used move, and its PP changes to 5. If Chatter, Metronome, Mimic, Sketch, or Struggle is selected, this move will fail.",
-			"This move is replaced by the target's last successfully used move, and its PP changes to 5. If Chatter, Metronome, Mimic, Sketch, or Struggle is selected, this move will fail.",
-			"This move is replaced by the target's last successfully used move, with full PP. If Chatter, Metronome, Mimic, Sketch, Struggle, or Transform is selected, this move will fail."
+			"This move is replaced by the target’s last successfully used move, and its PP changes to 5. If Chatter, Metronome, Mimic, Sketch, or Struggle is selected, this move will fail.",
+			"This move is replaced by the target’s last successfully used move, and its PP changes to 5. If Chatter, Metronome, Mimic, Sketch, or Struggle is selected, this move will fail.",
+			"This move is replaced by the target’s last successfully used move, and its PP changes to 5. If Chatter, Metronome, Mimic, Sketch, or Struggle is selected, this move will fail.",
+			"This move is replaced by the target’s last successfully used move, and its PP changes to 5. If Chatter, Metronome, Mimic, Sketch, or Struggle is selected, this move will fail.",
+			"This move is replaced by the target’s last successfully used move, with full PP. If Chatter, Metronome, Mimic, Sketch, Struggle, or Transform is selected, this move will fail."
 		}
 	},
 	{
 		id = "103",
-		name = "Screech",
+		name = "Grincement",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target's Defense by two stages."
+		description = "Lowers the target’s Defense by two stages."
 	},
 	{
 		id = "104",
-		name = "Double Team",
+		name = "Reflet",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user's Evasion by one stage."
+		description = "Raises the user’s Evasion by one stage."
 	},
 	{
 		id = "105",
-		name = "Recover",
+		name = "Soin",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = {"20", "20", "20", "10", "10"},
@@ -1234,48 +1234,48 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "106",
-		name = "Harden",
+		name = "Armure",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user's Defense by one stage."
+		description = "Raises the user’s Defense by one stage."
 	},
 	{
 		id = "107",
-		name = "Minimize",
+		name = "Lilliput",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
 		description = {
-			"Raises the user's Evasion by one stage. Stomp has double power against Pok" ..
+			"Raises the user’s Evasion by one stage. Stomp has double power against Pok" ..
 				Chars.accentedE .. "mon that have used this move since entering the field.",
-			"Raises the user's Evasion by one stage. Stomp has double power against Pok" ..
+			"Raises the user’s Evasion by one stage. Stomp has double power against Pok" ..
 				Chars.accentedE .. "mon that have used this move since entering the field.",
-			"Raises the user's Evasion by one stage. Stomp has double power against Pok" ..
+			"Raises the user’s Evasion by one stage. Stomp has double power against Pok" ..
 				Chars.accentedE .. "mon that have used this move since entering the field.",
-			"Raises the user's Evasion by one stage. Stomp has double power against Pok" ..
+			"Raises the user’s Evasion by one stage. Stomp has double power against Pok" ..
 				Chars.accentedE .. "mon that have used this move since entering the field.",
-			"Raises the user's Evasion by two stages. Stomp and Steamroller have double power against Pok" ..
+			"Raises the user’s Evasion by two stages. Stomp and Steamroller have double power against Pok" ..
 				Chars.accentedE .. "mon that have used this move since entering the field."
 		}
 	},
 	{
 		id = "108",
-		name = "SmokeScreen",
+		name = "Brouillard",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target's Accuracy by one stage."
+		description = "Lowers the target’s Accuracy by one stage."
 	},
 	{
 		id = "109",
-		name = "Confuse Ray",
+		name = "Onde Folie",
 		type = PokemonData.POKEMON_TYPES.GHOST,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -1285,47 +1285,47 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "110",
-		name = "Withdraw",
+		name = "Repli",
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user's Defense by one stage."
+		description = "Raises the user’s Defense by one stage."
 	},
 	{
 		id = "111",
-		name = "Defense Curl",
+		name = "Boul’Armure",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises user's Defense by one stage. After this move is used, the power of Ice Ball and Rollout are doubled until the user leaves the field."
+		description = "Raises user’s Defense by one stage. After this move is used, the power of Ice Ball and Rollout are doubled until the user leaves the field."
 	},
 	{
 		id = "112",
-		name = "Barrier",
+		name = "Bouclier",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user's Defense by two stages."
+		description = "Raises the user’s Defense by two stages."
 	},
 	{
 		id = "113",
-		name = "Light Screen",
+		name = "Mur Lumière",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Erects a barrier around the user's side of the field that reduces damage from special attacks by half for five turns. Brick Break or Defog will destroy the barrier."
+		description = "Erects a barrier around the user’s side of the field that reduces damage from special attacks by half for five turns. Brick Break or Defog will destroy the barrier."
 	},
 	{
 		id = "114",
-		name = "Haze",
+		name = "Buée Noire",
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
@@ -1335,27 +1335,27 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "115",
-		name = "Reflect",
+		name = "Protection",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Erects a barrier around the user's side of the field that reduces damage from physical attacks by half for five turns. Brick Break or Defog will destroy the barrier."
+		description = "Erects a barrier around the user’s side of the field that reduces damage from physical attacks by half for five turns. Brick Break or Defog will destroy the barrier."
 	},
 	{
 		id = "116",
-		name = "Focus Energy",
+		name = "Puissance",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "User's critical hit rate is two levels higher until it leaves the field. If the user has already used focus energy since entering the field, this move will fail."
+		description = "User’s critical hit rate is two levels higher until it leaves the field. If the user has already used focus energy since entering the field, this move will fail."
 	},
 	{
 		id = "117",
-		name = "Bide",
+		name = "Patience",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -1366,7 +1366,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "118",
-		name = "Metronome",
+		name = "Métronome",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -1382,7 +1382,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "119",
-		name = "Mirror Move",
+		name = "Mimique",
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -1392,23 +1392,23 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "120",
-		name = "Selfdestruct",
+		name = "Destruction",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = {"130", "200", "200", "200", "200"},
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
 		description = {
-			"User faints, even if the attack fails or misses. Inflicts regular damage. Halves the target's Defense for damage calculation.",
-			"User faints, even if the attack fails or misses. Inflicts regular damage. Halves the target's Defense for damage calculation.",
-			"User faints, even if the attack fails or misses. Inflicts regular damage. Halves the target's Defense for damage calculation.",
-			"User faints, even if the attack fails or misses. Inflicts regular damage. Halves the target's Defense for damage calculation.",
+			"User faints, even if the attack fails or misses. Inflicts regular damage. Halves the target’s Defense for damage calculation.",
+			"User faints, even if the attack fails or misses. Inflicts regular damage. Halves the target’s Defense for damage calculation.",
+			"User faints, even if the attack fails or misses. Inflicts regular damage. Halves the target’s Defense for damage calculation.",
+			"User faints, even if the attack fails or misses. Inflicts regular damage. Halves the target’s Defense for damage calculation.",
 			"User faints, even if the attack fails or misses. Inflicts regular damage."
 		}
 	},
 	{
 		id = "121",
-		name = "Egg Bomb",
+		name = "Bomb’Oeuf",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "100",
 		pp = "10",
@@ -1418,7 +1418,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "122",
-		name = "Lick",
+		name = "Léchouille",
 		type = PokemonData.POKEMON_TYPES.GHOST,
 		power = "20",
 		pp = "30",
@@ -1428,7 +1428,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "123",
-		name = "Smog",
+		name = "Purédpois",
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = "20",
 		pp = "20",
@@ -1438,7 +1438,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "124",
-		name = "Sludge",
+		name = "Détritus",
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = "65",
 		pp = "20",
@@ -1448,7 +1448,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "125",
-		name = "Bone Club",
+		name = "Massd’Os",
 		type = PokemonData.POKEMON_TYPES.GROUND,
 		power = "65",
 		pp = "20",
@@ -1458,7 +1458,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "126",
-		name = "Fire Blast",
+		name = "Déflagration",
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "120",
 		pp = "5",
@@ -1468,7 +1468,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "127",
-		name = "Waterfall",
+		name = "Cascade",
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = "80",
 		pp = "15",
@@ -1478,7 +1478,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "128",
-		name = "Clamp",
+		name = "Claquoir",
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = "35",
 		pp = {"10", "10", "10", "10", "15"},
@@ -1494,7 +1494,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "129",
-		name = "Swift",
+		name = "Météores",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "60",
 		pp = "20",
@@ -1504,17 +1504,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "130",
-		name = "Skull Bash",
+		name = "Coud’Krâne",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "100",
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Raises the user's Defense by one stage. User then charges for one turn before attacking."
+		description = "Inflicts regular damage and makes contact. Raises the user’s Defense by one stage. User then charges for one turn before attacking."
 	},
 	{
 		id = "131",
-		name = "Spike Cannon",
+		name = "Picanon",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "20",
 		pp = "15",
@@ -1524,37 +1524,37 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "132",
-		name = "Constrict",
+		name = "Constriction",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "10",
 		pp = "35",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 10% chance to lower the target's Speed by one stage."
+		description = "Inflicts regular damage and makes contact. Has a 10% chance to lower the target’s Speed by one stage."
 	},
 	{
 		id = "133",
-		name = "Amnesia",
+		name = "Amnésie",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user's Special Defense by two stages."
+		description = "Raises the user’s Special Defense by two stages."
 	},
 	{
 		id = "134",
-		name = "Kinesis",
+		name = "Télékinésie",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
 		accuracy = "80",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target's Accuracy by one stage."
+		description = "Lowers the target’s Accuracy by one stage."
 	},
 	{
 		id = "135",
-		name = "Softboiled",
+		name = "E-Coque",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -1564,7 +1564,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "136",
-		name = "Hi Jump Kick",
+		name = "Pied Voltige",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = {"85", "85", "85", "100", "130"},
 		pp = {"20", "20", "20", "20", "10"},
@@ -1574,7 +1574,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "137",
-		name = "Glare",
+		name = "Intimidation",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
@@ -1584,7 +1584,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "138",
-		name = "Dream Eater",
+		name = "Dévorêve",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = "100",
 		pp = "15",
@@ -1595,7 +1595,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "139",
-		name = "Poison Gas",
+		name = "Gaz Toxik",
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
@@ -1605,7 +1605,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "140",
-		name = "Barrage",
+		name = "Pilonnage",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "15",
 		pp = "20",
@@ -1615,7 +1615,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "141",
-		name = "Leech Life",
+		name = "Vampirisme",
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = "20",
 		pp = "15",
@@ -1625,7 +1625,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "142",
-		name = "Lovely Kiss",
+		name = "Grobisou",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -1635,7 +1635,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "143",
-		name = "Sky Attack",
+		name = "Pique",
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = "140",
 		pp = "5",
@@ -1645,27 +1645,27 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "144",
-		name = "Transform",
+		name = "Morphing",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "User copies the target's species, weight, type, ability, calculated stats (except HP), and moves. Copied moves will all have 5 PP remaining."
+		description = "User copies the target’s species, weight, type, ability, calculated stats (except HP), and moves. Copied moves will all have 5 PP remaining."
 	},
 	{
 		id = "145",
-		name = "Bubble",
+		name = "Ecume",
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = "20",
 		pp = "30",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to lower the target's Speed by one stage."
+		description = "Inflicts regular damage. Has a 10% chance to lower the target’s Speed by one stage."
 	},
 	{
 		id = "146",
-		name = "Dizzy Punch",
+		name = "Uppercut",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "70",
 		pp = "10",
@@ -1691,27 +1691,27 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = {"70", "70", "70", "100", "100"},
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target's Accuracy by one stage."
+		description = "Lowers the target’s Accuracy by one stage."
 	},
 	{
 		id = "149",
-		name = "Psywave",
+		name = "Vague Psy",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
 		accuracy = "80",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
 		description = {
-			"Inflicts typeless damage between 50% and 150% of the user's level, selected at random in increments of 10%.",
-			"Inflicts typeless damage between 50% and 150% of the user's level, selected at random in increments of 10%.",
-			"Inflicts typeless damage between 50% and 150% of the user's level, selected at random in increments of 10%.",
-			"Inflicts typeless damage between 50% and 150% of the user's level, selected at random in increments of 10%.",
-			"Inflicts typeless damage between 50% and 150% of the user's level, selected at random in increments of 1%."
+			"Inflicts typeless damage between 50% and 150% of the user’s level, selected at random in increments of 10%.",
+			"Inflicts typeless damage between 50% and 150% of the user’s level, selected at random in increments of 10%.",
+			"Inflicts typeless damage between 50% and 150% of the user’s level, selected at random in increments of 10%.",
+			"Inflicts typeless damage between 50% and 150% of the user’s level, selected at random in increments of 10%.",
+			"Inflicts typeless damage between 50% and 150% of the user’s level, selected at random in increments of 1%."
 		}
 	},
 	{
 		id = "150",
-		name = "Splash",
+		name = "Trempette",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
@@ -1721,23 +1721,23 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "151",
-		name = "Acid Armor",
+		name = "Acidarmure",
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user's Defense by two stages."
+		description = "Raises the user’s Defense by two stages."
 	},
 	{
 		id = "152",
-		name = "Crabhammer",
+		name = "Pince-Masse",
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = "90",
 		pp = "10",
 		accuracy = {"85", "85", "85", "85", "90"},
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User's critical hit rate is one level higher when using this move."
+		description = "Inflicts regular damage and makes contact. User’s critical hit rate is one level higher when using this move."
 	},
 	{
 		id = "153",
@@ -1748,16 +1748,16 @@ MoveData.MOVES_MASTER_LIST = {
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
 		description = {
-			"User faints, even if the attack fails or misses. Inflicts regular damage. Halves the target's Defense for damage calculation.",
-			"User faints, even if the attack fails or misses. Inflicts regular damage. Halves the target's Defense for damage calculation.",
-			"User faints, even if the attack fails or misses. Inflicts regular damage. Halves the target's Defense for damage calculation.",
-			"User faints, even if the attack fails or misses. Inflicts regular damage. Halves the target's Defense for damage calculation.",
+			"User faints, even if the attack fails or misses. Inflicts regular damage. Halves the target’s Defense for damage calculation.",
+			"User faints, even if the attack fails or misses. Inflicts regular damage. Halves the target’s Defense for damage calculation.",
+			"User faints, even if the attack fails or misses. Inflicts regular damage. Halves the target’s Defense for damage calculation.",
+			"User faints, even if the attack fails or misses. Inflicts regular damage. Halves the target’s Defense for damage calculation.",
 			"User faints, even if the attack fails or misses. Inflicts regular damage."
 		}
 	},
 	{
 		id = "154",
-		name = "Fury Swipes",
+		name = "Combo-Griffe",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "18",
 		pp = "15",
@@ -1767,7 +1767,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "155",
-		name = "Bonemerang",
+		name = "Osmerang",
 		type = PokemonData.POKEMON_TYPES.GROUND,
 		power = "50",
 		pp = "10",
@@ -1777,7 +1777,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "156",
-		name = "Rest",
+		name = "Repos",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -1787,7 +1787,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "157",
-		name = "Rock Slide",
+		name = "Eboulement",
 		type = PokemonData.POKEMON_TYPES.ROCK,
 		power = "75",
 		pp = "10",
@@ -1797,7 +1797,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "158",
-		name = "Hyper Fang",
+		name = "Croc de Mort",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "80",
 		pp = "15",
@@ -1807,33 +1807,33 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "159",
-		name = "Sharpen",
+		name = "Affûtage",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user's Attack by one stage."
+		description = "Raises the user’s Attack by one stage."
 	},
 	{
 		id = "160",
-		name = "Conversion",
+		name = "Adaptation",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
 		description = {
-			"User's type changes to the type of one of its moves, selected at random. Only moves with a different type are eligible, and Curse is never eligible.",
-			"User's type changes to the type of one of its moves, selected at random. Only moves with a different type are eligible, and Curse is never eligible.",
-			"User's type changes to the type of one of its moves, selected at random. Only moves with a different type are eligible, and Curse is never eligible.",
-			"User's type changes to the type of one of its moves, selected at random. Only moves with a different type are eligible, and Curse is never eligible.",
-			"User's type changes to the type of one of its moves, selected at random. Only moves with a different type are eligible."
+			"User’s type changes to the type of one of its moves, selected at random. Only moves with a different type are eligible, and Curse is never eligible.",
+			"User’s type changes to the type of one of its moves, selected at random. Only moves with a different type are eligible, and Curse is never eligible.",
+			"User’s type changes to the type of one of its moves, selected at random. Only moves with a different type are eligible, and Curse is never eligible.",
+			"User’s type changes to the type of one of its moves, selected at random. Only moves with a different type are eligible, and Curse is never eligible.",
+			"User’s type changes to the type of one of its moves, selected at random. Only moves with a different type are eligible."
 		}
 	},
 	{
 		id = "161",
-		name = "Tri Attack",
+		name = "Triplattaque",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "80",
 		pp = "10",
@@ -1843,37 +1843,37 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "162",
-		name = "Super Fang",
+		name = "Croc Fatal",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Makes contact. Inflicts typeless damage equal to half the target's remaining HP. Although typeless, this is ineffective against Wonder Guard."
+		description = "Makes contact. Inflicts typeless damage equal to half the target’s remaining HP. Although typeless, this is ineffective against Wonder Guard."
 	},
 	{
 		id = "163",
-		name = "Slash",
+		name = "Tranche",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "70",
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User's critical hit rate is one level higher when using this move."
+		description = "Inflicts regular damage and makes contact. User’s critical hit rate is one level higher when using this move."
 	},
 	{
 		id = "164",
-		name = "Substitute",
+		name = "Clonage",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Transfers 1/4 the user's max HP into a doll that absorbs damage and causes most negative move effects to fail."
+		description = "Transfers 1/4 the user’s max HP into a doll that absorbs damage and causes most negative move effects to fail."
 	},
 	{
 		id = "165",
-		name = "Struggle",
+		name = "Lutte",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "50",
 		pp = {"10", "1", "1", "1", "1"},
@@ -1884,17 +1884,17 @@ MoveData.MOVES_MASTER_LIST = {
 	{
 		-- Begin Gen 2 Moves
 		id = "166",
-		name = "Sketch",
+		name = "Gribouille",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "1",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Permanently replaces itself with the target's last used move. If that move is chatter or struggle, this move will fail."
+		description = "Permanently replaces itself with the target’s last used move. If that move is chatter or struggle, this move will fail."
 	},
 	{
 		id = "167",
-		name = "Triple Kick",
+		name = "Triple Pied",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "10",
 		pp = "10",
@@ -1904,7 +1904,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "168",
-		name = "Thief",
+		name = "Larcin",
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = "40",
 		pp = "10",
@@ -1914,7 +1914,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "169",
-		name = "Spider Web",
+		name = "Toile",
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -1924,7 +1924,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "170",
-		name = "Mind Reader",
+		name = "Lire-Esprit",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -1934,7 +1934,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "171",
-		name = "Nightmare",
+		name = "Cauchemar",
 		type = PokemonData.POKEMON_TYPES.GHOST,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -1946,7 +1946,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "172",
-		name = "Flame Wheel",
+		name = "Roue de Feu",
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "60",
 		pp = "25",
@@ -1957,7 +1957,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "173",
-		name = "Snore",
+		name = "Ronflement",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "40",
 		pp = "15",
@@ -1967,7 +1967,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "174",
-		name = "Curse",
+		name = "Malédiction",
 		type = {
 			PokemonData.POKEMON_TYPES.UNKNOWN,
 			PokemonData.POKEMON_TYPES.UNKNOWN,
@@ -1979,17 +1979,17 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "If the user is a ghost: user pays half its max HP to place a curse on the target, damaging it for 1/4 its max HP every turn. Otherwise, it lowers the user's Speed by one stage, and raises its Attack and Defense by one stage each."
+		description = "If the user is a ghost: user pays half its max HP to place a curse on the target, damaging it for 1/4 its max HP every turn. Otherwise, it lowers the user’s Speed by one stage, and raises its Attack and Defense by one stage each."
 	},
 	{
 		id = "175",
-		name = "Flail",
+		name = "Fléau",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "<HP",
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Power varies inversely with the user's proportional remaining HP."
+		description = "Inflicts regular damage and makes contact. Power varies inversely with the user’s proportional remaining HP."
 	},
 	{
 		id = "176",
@@ -1999,51 +1999,51 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Changes the user's type to a type either resistant or immune to the last damaging move that hit it. The new type is selected at random and cannot be a type the user already is."
+		description = "Changes the user’s type to a type either resistant or immune to the last damaging move that hit it. The new type is selected at random and cannot be a type the user already is."
 	},
 	{
 		id = "177",
-		name = "Aeroblast",
+		name = "Aéroblast",
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = "100",
 		pp = "5",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. User's critical hit rate is one level higher when using this move."
+		description = "Inflicts regular damage. User’s critical hit rate is one level higher when using this move."
 	},
 	{
 		id = "178",
-		name = "Cotton Spore",
+		name = "Spore Coton",
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
 		accuracy = {"85", "85", "85", "85", "100"},
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target's Speed by two stages."
+		description = "Lowers the target’s Speed by two stages."
 	},
 	{
 		id = "179",
-		name = "Reversal",
+		name = "Contre",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "<HP",
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Power varies inversely with the user's proportional remaining HP."
+		description = "Inflicts regular damage and makes contact. Power varies inversely with the user’s proportional remaining HP."
 	},
 	{
 		id = "180",
-		name = "Spite",
+		name = "Dépit",
 		type = PokemonData.POKEMON_TYPES.GHOST,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the PP of the target's last used move by 4."
+		description = "Lowers the PP of the target’s last used move by 4."
 	},
 	{
 		id = "181",
-		name = "Powder Snow",
+		name = "Poudreuse",
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = "40",
 		pp = "25",
@@ -2053,7 +2053,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "182",
-		name = "Protect",
+		name = "Abri",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -2073,17 +2073,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "184",
-		name = "Scary Face",
+		name = "Grimace",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
 		accuracy = {"90", "90", "90", "90", "100"},
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target's Speed by two stages."
+		description = "Lowers the target’s Speed by two stages."
 	},
 	{
 		id = "185",
-		name = "Faint Attack",
+		name = "Feinte",
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = "60",
 		pp = "20",
@@ -2093,7 +2093,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "186",
-		name = "Sweet Kiss",
+		name = "Doux Baiser",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -2103,7 +2103,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "187",
-		name = "Belly Drum",
+		name = "Cognobidon",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -2113,7 +2113,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "188",
-		name = "Sludge Bomb",
+		name = "Bomb-Beurk",
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = "90",
 		pp = "10",
@@ -2123,13 +2123,13 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "189",
-		name = "Mud-Slap",
+		name = "Coud’Boue",
 		type = PokemonData.POKEMON_TYPES.GROUND,
 		power = "20",
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 100% chance to lower the target's Accuracy by one stage."
+		description = "Inflicts regular damage. Has a 100% chance to lower the target’s Accuracy by one stage."
 	},
 	{
 		id = "190",
@@ -2139,11 +2139,11 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 50% chance to lower the target's Accuracy by one stage."
+		description = "Inflicts regular damage. Has a 50% chance to lower the target’s Accuracy by one stage."
 	},
 	{
 		id = "191",
-		name = "Spikes",
+		name = "Picots",
 		type = PokemonData.POKEMON_TYPES.GROUND,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -2155,7 +2155,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "192",
-		name = "Zap Cannon",
+		name = "Elecanon",
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = {"100", "100", "100", "120", "120"},
 		pp = "5",
@@ -2165,17 +2165,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "193",
-		name = "Foresight",
+		name = "Clairvoyance",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
 		accuracy = {"100", "100", "100", Graphics.TEXT.ALWAYS_HITS, Graphics.TEXT.ALWAYS_HITS},
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Ignores the target's boosted Evasion stages until the target leaves the field. A ghost under this effect takes normal damage from normal and fighting moves."
+		description = "Ignores the target’s boosted Evasion stages until the target leaves the field. A ghost under this effect takes normal damage from normal and fighting moves."
 	},
 	{
 		id = "194",
-		name = "Destiny Bond",
+		name = "Prlvt Destin",
 		type = PokemonData.POKEMON_TYPES.GHOST,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -2186,7 +2186,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "195",
-		name = "Perish Song",
+		name = "Requiem",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -2195,21 +2195,21 @@ MoveData.MOVES_MASTER_LIST = {
 		description = "Every Pok" ..
 			Chars.accentedE ..
 				"mon is given a counter that starts at 3 and decreases by 1 at the end of every turn. When a Pok" ..
-					Chars.accentedE .. "mon's counter reaches zero, that Pok" .. Chars.accentedE .. "mon faints."
+					Chars.accentedE .. "mon’s counter reaches zero, that Pok" .. Chars.accentedE .. "mon faints."
 	},
 	{
 		id = "196",
-		name = "Icy Wind",
+		name = "Vent Glace",
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = "55",
 		pp = "15",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 100% chance to lower the target's Speed by one stage."
+		description = "Inflicts regular damage. Has a 100% chance to lower the target’s Speed by one stage."
 	},
 	{
 		id = "197",
-		name = "Detect",
+		name = "Détection",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -2219,7 +2219,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "198",
-		name = "Bone Rush",
+		name = "Charge-Os",
 		type = PokemonData.POKEMON_TYPES.GROUND,
 		power = "25",
 		pp = "10",
@@ -2229,7 +2229,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "199",
-		name = "Lock-On",
+		name = "Verrouillage",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -2239,7 +2239,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "200",
-		name = "Outrage",
+		name = "Colère",
 		type = PokemonData.POKEMON_TYPES.DRAGON,
 		power = {"90", "90", "90", "120", "120"},
 		pp = {"15", "15", "15", "15", "10"},
@@ -2249,7 +2249,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "201",
-		name = "Sandstorm",
+		name = "Tempêtesable",
 		type = PokemonData.POKEMON_TYPES.ROCK,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -2258,11 +2258,11 @@ MoveData.MOVES_MASTER_LIST = {
 		description = "Summons a to a sandstorm for five turns. Pok" ..
 			Chars.accentedE ..
 				"mon that are not ground, rock, or steel take 1/16 their max HP at the end of every turn. Every rock Pok" ..
-					Chars.accentedE .. "mon's Special Defense is raised by 50% for the duration of this effect."
+					Chars.accentedE .. "mon’s Special Defense is raised by 50% for the duration of this effect."
 	},
 	{
 		id = "202",
-		name = "Giga Drain",
+		name = "Giga-Sangsue",
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = {"60", "60", "60", "60", "75"},
 		pp = {"5", "5", "5", "10", "10"},
@@ -2272,27 +2272,27 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "203",
-		name = "Endure",
+		name = "Ténacité",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Increased priority. The user's HP cannot be lowered below 1 by any means for the remainder of this turn."
+		description = "Increased priority. The user’s HP cannot be lowered below 1 by any means for the remainder of this turn."
 	},
 	{
 		id = "204",
-		name = "Charm",
+		name = "Charme",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target's Attack by two stages."
+		description = "Lowers the target’s Attack by two stages."
 	},
 	{
 		id = "205",
-		name = "Rollout",
+		name = "Roulade",
 		type = PokemonData.POKEMON_TYPES.ROCK,
 		power = "30",
 		pp = "20",
@@ -2302,27 +2302,27 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "206",
-		name = "False Swipe",
+		name = "Faux-Chage",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "40",
 		pp = "40",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Will not reduce the target's HP below 1."
+		description = "Inflicts regular damage and makes contact. Will not reduce the target’s HP below 1."
 	},
 	{
 		id = "207",
-		name = "Swagger",
+		name = "Vantardise",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the target's Attack by two stages, then confuses it."
+		description = "Raises the target’s Attack by two stages, then confuses it."
 	},
 	{
 		id = "208",
-		name = "Milk Drink",
+		name = "Lait à Boire",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -2332,7 +2332,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "209",
-		name = "Spark",
+		name = "Etincelle",
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = "65",
 		pp = "20",
@@ -2342,7 +2342,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "210",
-		name = "Fury Cutter",
+		name = "Taillade",
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = {"10", "10", "10", "10", "20"},
 		pp = "20",
@@ -2358,17 +2358,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "211",
-		name = "Steel Wing",
+		name = "Aile d’Acier",
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = "70",
 		pp = "25",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 10% chance to raise the user's Defense one stage."
+		description = "Inflicts regular damage and makes contact. Has a 10% chance to raise the user’s Defense one stage."
 	},
 	{
 		id = "212",
-		name = "Mean Look",
+		name = "Regard Noir",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -2378,7 +2378,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "213",
-		name = "Attract",
+		name = "Attraction",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -2388,27 +2388,27 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "214",
-		name = "Sleep Talk",
+		name = "Blabla Dodo",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Only usable if the user is sleeping. Randomly selects and uses one of the user's other three moves, with some exceptions. Use of the selected move costs 0 PP."
+		description = "Only usable if the user is sleeping. Randomly selects and uses one of the user’s other three moves, with some exceptions. Use of the selected move costs 0 PP."
 	},
 	{
 		id = "215",
-		name = "Heal Bell",
+		name = "Glas de Soin",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Removes major status effects and confusion from every Pok" .. Chars.accentedE .. "mon in the user's party."
+		description = "Removes major status effects and confusion from every Pok" .. Chars.accentedE .. "mon in the user’s party."
 	},
 	{
 		id = "216",
-		name = "Return",
+		name = "Retour",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = ">FR",
 		pp = "20",
@@ -2418,7 +2418,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "217",
-		name = "Present",
+		name = "Cadeau",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "RNG",
 		pp = "15",
@@ -2438,7 +2438,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "219",
-		name = "Safeguard",
+		name = "Rune Protect",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "25",
@@ -2446,21 +2446,21 @@ MoveData.MOVES_MASTER_LIST = {
 		category = MoveData.MOVE_CATEGORIES.STATUS,
 		description = "Protects Pok" ..
 			Chars.accentedE ..
-				"mon on the user's side of the field from major status effects and confusion for five turns. This effect remains even if the user leaves the field."
+				"mon on the user’s side of the field from major status effects and confusion for five turns. This effect remains even if the user leaves the field."
 	},
 	{
 		id = "220",
-		name = "Pain Split",
+		name = "Balance",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
 		accuracy = {"100", "100", Graphics.TEXT.ALWAYS_HITS, Graphics.TEXT.ALWAYS_HITS, Graphics.TEXT.ALWAYS_HITS},
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Changes the user's and target's remaining HP to the average of their current remaining HP. Ignores Accuracy and Evasion modifiers."
+		description = "Changes the user’s and target’s remaining HP to the average of their current remaining HP. Ignores Accuracy and Evasion modifiers."
 	},
 	{
 		id = "221",
-		name = "Sacred Fire",
+		name = "Feu Sacré",
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "100",
 		pp = "5",
@@ -2471,7 +2471,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "222",
-		name = "Magnitude",
+		name = "Ampleur",
 		type = PokemonData.POKEMON_TYPES.GROUND,
 		power = "RNG",
 		pp = "30",
@@ -2481,7 +2481,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "223",
-		name = "DynamicPunch",
+		name = "Dynamopoing",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "100",
 		pp = "5",
@@ -2491,7 +2491,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "224",
-		name = "Megahorn",
+		name = "Mégacorne",
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = "120",
 		pp = "10",
@@ -2501,7 +2501,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "225",
-		name = "DragonBreath",
+		name = "Dracosouffle",
 		type = PokemonData.POKEMON_TYPES.DRAGON,
 		power = "60",
 		pp = "20",
@@ -2511,7 +2511,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "226",
-		name = "Baton Pass",
+		name = "Relais",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
@@ -2540,7 +2540,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "228",
-		name = "Pursuit",
+		name = "Poursuite",
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = "40",
 		pp = "20",
@@ -2550,7 +2550,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "229",
-		name = "Rapid Spin",
+		name = "Tour Rapide",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "20",
 		pp = "40",
@@ -2560,37 +2560,37 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "230",
-		name = "Sweet Scent",
+		name = "Doux Parfum",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target's Evasion by one stage."
+		description = "Lowers the target’s Evasion by one stage."
 	},
 	{
 		id = "231",
-		name = "Iron Tail",
+		name = "Queue de Fer",
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = "100",
 		pp = "15",
 		accuracy = "75",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 30% chance to lower the target's Defense by one stage."
+		description = "Inflicts regular damage and makes contact. Has a 30% chance to lower the target’s Defense by one stage."
 	},
 	{
 		id = "232",
-		name = "Metal Claw",
+		name = "Griffe Acier",
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = "50",
 		pp = "35",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 10% chance to raise the user's Attack one stage."
+		description = "Inflicts regular damage and makes contact. Has a 10% chance to raise the user’s Attack one stage."
 	},
 	{
 		id = "233",
-		name = "Vital Throw",
+		name = "Corps Perdu",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "70",
 		pp = "10",
@@ -2600,7 +2600,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "234",
-		name = "Morning Sun",
+		name = "Aurore",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -2610,7 +2610,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "235",
-		name = "Synthesis",
+		name = "Synthèse",
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -2620,7 +2620,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "236",
-		name = "Moonlight",
+		name = "Rayon Lune",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -2630,27 +2630,27 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "237",
-		name = "Hidden Power",
+		name = "Puis. Cachée",
 		type = PokemonData.POKEMON_TYPES.UNKNOWN,
 		power = "VAR",
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Power and type are determined by the user's IVs. Power is always between 30 and 70, with an average of 49.5. Type cannot be normal."
+		description = "Inflicts regular damage. Power and type are determined by the user’s IVs. Power is always between 30 and 70, with an average of 49.5. Type cannot be normal."
 	},
 	{
 		id = "238",
-		name = "Cross Chop",
+		name = "Coup-Croix",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "100",
 		pp = "5",
 		accuracy = "80",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User's critical hit rate is one level higher when using this move."
+		description = "Inflicts regular damage and makes contact. User’s critical hit rate is one level higher when using this move."
 	},
 	{
 		id = "239",
-		name = "Twister",
+		name = "Ouragan",
 		type = PokemonData.POKEMON_TYPES.DRAGON,
 		power = "40",
 		pp = "20",
@@ -2666,7 +2666,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "240",
-		name = "Rain Dance",
+		name = "Danse Pluie",
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -2676,7 +2676,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "241",
-		name = "Sunny Day",
+		name = "Zénith",
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -2686,17 +2686,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "242",
-		name = "Crunch",
+		name = "Mâchouille",
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = "80",
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 20% chance to lower the target's Defense by one stage."
+		description = "Inflicts regular damage and makes contact. Has a 20% chance to lower the target’s Defense by one stage."
 	},
 	{
 		id = "243",
-		name = "Mirror Coat",
+		name = "Voile Miroir",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -2706,17 +2706,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "244",
-		name = "Psych Up",
+		name = "Boost",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Discards the user's stat changes and copies the target's."
+		description = "Discards the user’s stat changes and copies the target’s."
 	},
 	{
 		id = "245",
-		name = "ExtremeSpeed",
+		name = "Vit.Extrême",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "80",
 		pp = "5",
@@ -2726,27 +2726,27 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "246",
-		name = "AncientPower",
+		name = "Pouv.Antique",
 		type = PokemonData.POKEMON_TYPES.ROCK,
 		power = "60",
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to raise all of the user's stats one stage."
+		description = "Inflicts regular damage. Has a 10% chance to raise all of the user’s stats one stage."
 	},
 	{
 		id = "247",
-		name = "Shadow Ball",
+		name = "Ball’Ombre",
 		type = PokemonData.POKEMON_TYPES.GHOST,
 		power = "80",
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 20% chance to lower the target's Special Defense by one stage."
+		description = "Inflicts regular damage. Has a 20% chance to lower the target’s Special Defense by one stage."
 	},
 	{
 		id = "248",
-		name = "Future Sight",
+		name = "Prescience",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = {"80", "80", "80", "80", "100"},
 		pp = {"15", "15", "15", "15", "10"},
@@ -2762,17 +2762,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "249",
-		name = "Rock Smash",
+		name = "Eclate-Roc",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = {"20", "20", "20", "40", "40"},
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 50% chance to lower the target's Defense by one stage."
+		description = "Inflicts regular damage and makes contact. Has a 50% chance to lower the target’s Defense by one stage."
 	},
 	{
 		id = "250",
-		name = "Whirlpool",
+		name = "Siphon",
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = {"15", "15", "15", "15", "35"},
 		pp = "15",
@@ -2788,7 +2788,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "251",
-		name = "Beat Up",
+		name = "Baston",
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = {"10", "10", "10", "10", "VAR"},
 		pp = "10",
@@ -2797,35 +2797,35 @@ MoveData.MOVES_MASTER_LIST = {
 		description = {
 			"Inflicts typeless regular damage. Every Pok" ..
 				Chars.accentedE ..
-					"mon in the user's party, excepting those that have fainted or have a major status effect, attacks the target.",
+					"mon in the user’s party, excepting those that have fainted or have a major status effect, attacks the target.",
 			"Inflicts typeless regular damage. Every Pok" ..
 				Chars.accentedE ..
-					"mon in the user's party, excepting those that have fainted or have a major status effect, attacks the target.",
+					"mon in the user’s party, excepting those that have fainted or have a major status effect, attacks the target.",
 			"Inflicts typeless regular damage. Every Pok" ..
 				Chars.accentedE ..
-					"mon in the user's party, excepting those that have fainted or have a major status effect, attacks the target.",
+					"mon in the user’s party, excepting those that have fainted or have a major status effect, attacks the target.",
 			"Inflicts typeless regular damage. Every Pok" ..
 				Chars.accentedE ..
-					"mon in the user's party, excepting those that have fainted or have a major status effect, attacks the target.",
+					"mon in the user’s party, excepting those that have fainted or have a major status effect, attacks the target.",
 			"Inflicts regular damage. Every Pok" ..
 				Chars.accentedE ..
-					"mon in the user's party, excepting those that have fainted or have a major status effect, attacks the target."
+					"mon in the user’s party, excepting those that have fainted or have a major status effect, attacks the target."
 		}
 	},
 	{
 		-- Begin Gen 3 Moves
 		id = "252",
-		name = "Fake Out",
+		name = "Bluff",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "40",
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Increased priority. Inflicts regular damage and makes contact. Causes the target to flinch, and can only be used on the user's first turn after entering the field."
+		description = "Increased priority. Inflicts regular damage and makes contact. Causes the target to flinch, and can only be used on the user’s first turn after entering the field."
 	},
 	{
 		id = "253",
-		name = "Uproar",
+		name = "Brouhaha",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = {"50", "50", "50", "50", "90"},
 		pp = "10",
@@ -2846,37 +2846,37 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "254",
-		name = "Stockpile",
+		name = "Stockage",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = {"10", "10", "10", "20", "20"},
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user's Defense and Special Defense by one stage each. Stores energy for use with spit up and swallow. Up to three levels of energy can be stored, and all are lost if the user leaves the field."
+		description = "Raises the user’s Defense and Special Defense by one stage each. Stores energy for use with spit up and swallow. Up to three levels of energy can be stored, and all are lost if the user leaves the field."
 	},
 	{
 		id = "255",
-		name = "Spit Up",
+		name = "Relâche",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Power is equal to 100 times the amount of energy stored by stockpile. Stored energy is consumed, and the user's Defense and Special Defense are reset."
+		description = "Inflicts regular damage. Power is equal to 100 times the amount of energy stored by stockpile. Stored energy is consumed, and the user’s Defense and Special Defense are reset."
 	},
 	{
 		id = "256",
-		name = "Swallow",
+		name = "Avale",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Heals the user depending on the amount of energy stored by stockpile: 1/4 its max HP after one use, 1/2 its max HP after two uses, or fully after three uses. Stored energy is consumed, and the user's Defense and Special Defense are reset."
+		description = "Heals the user depending on the amount of energy stored by stockpile: 1/4 its max HP after one use, 1/2 its max HP after two uses, or fully after three uses. Stored energy is consumed, and the user’s Defense and Special Defense are reset."
 	},
 	{
 		id = "257",
-		name = "Heat Wave",
+		name = "Canicule",
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "100",
 		pp = "10",
@@ -2886,7 +2886,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "258",
-		name = "Hail",
+		name = "Grêle",
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -2897,7 +2897,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "259",
-		name = "Torment",
+		name = "Tourmente",
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -2907,17 +2907,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "260",
-		name = "Flatter",
+		name = "Flatterie",
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the target's Special Attack by one stage, then confuses it."
+		description = "Raises the target’s Special Attack by one stage, then confuses it."
 	},
 	{
 		id = "261",
-		name = "Will-O-Wisp",
+		name = "Feu Follet",
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -2927,17 +2927,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "262",
-		name = "Memento",
+		name = "Souvenir",
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target's Attack and Special Attack by two stages. User faints."
+		description = "Lowers the target’s Attack and Special Attack by two stages. User faints."
 	},
 	{
 		id = "263",
-		name = "Facade",
+		name = "Façade",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "70",
 		pp = "20",
@@ -2947,7 +2947,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "264",
-		name = "Focus Punch",
+		name = "Mitra-Poing",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "150",
 		pp = "20",
@@ -2957,7 +2957,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "265",
-		name = "SmellingSalt",
+		name = "Stimulant",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "60",
 		pp = "10",
@@ -2967,18 +2967,18 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "266",
-		name = "Follow Me",
+		name = "Par Ici",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
 		description = "Increased priority. Until the end of this turn, any moves that opposing Pok" ..
-			Chars.accentedE .. "mon target solely at the user's ally will instead target the user."
+			Chars.accentedE .. "mon target solely at the user’s ally will instead target the user."
 	},
 	{
 		id = "267",
-		name = "Nature Power",
+		name = "Force-Nature",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -2994,17 +2994,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "268",
-		name = "Charge",
+		name = "Chargeur",
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user's Special Defense by one stage. If the user uses an electric move next turn, its power will be doubled."
+		description = "Raises the user’s Special Defense by one stage. If the user uses an electric move next turn, its power will be doubled."
 	},
 	{
 		id = "269",
-		name = "Taunt",
+		name = "Provoc",
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -3020,48 +3020,48 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "270",
-		name = "Helping Hand",
+		name = "Coup d’Main",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Increase priority. Boosts the power of the target's moves by 50% until the end of this turn."
+		description = "Increase priority. Boosts the power of the target’s moves by 50% until the end of this turn."
 	},
 	{
 		id = "271",
-		name = "Trick",
+		name = "Tourmagik",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
 		description = "User and target permanently swap held items. Works even if one of the Pok" ..
-			Chars.accentedE .. "mon isn't holding anything."
+			Chars.accentedE .. "mon isn’t holding anything."
 	},
 	{
 		id = "272",
-		name = "Role Play",
+		name = "Imitation",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "User's ability is replaced with the target's until the user leaves the field. Ignores Accuracy and Evasion modifiers."
+		description = "User’s ability is replaced with the target’s until the user leaves the field. Ignores Accuracy and Evasion modifiers."
 	},
 	{
 		id = "273",
-		name = "Wish",
+		name = "Voeu",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "At the end of the next turn, user will be healed for half its max HP. If the user is switched out, its replacement will be healed instead for half of the user's max HP."
+		description = "At the end of the next turn, user will be healed for half its max HP. If the user is switched out, its replacement will be healed instead for half of the user’s max HP."
 	},
 	{
 		id = "274",
-		name = "Assist",
+		name = "Assistance",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -3069,11 +3069,11 @@ MoveData.MOVES_MASTER_LIST = {
 		category = MoveData.MOVE_CATEGORIES.STATUS,
 		description = "Uses a move from another Pok" ..
 			Chars.accentedE ..
-				"mon in the user's party, both selected at random. Moves from fainted Pok" .. Chars.accentedE .. "mon can be used."
+				"mon in the user’s party, both selected at random. Moves from fainted Pok" .. Chars.accentedE .. "mon can be used."
 	},
 	{
 		id = "275",
-		name = "Ingrain",
+		name = "Racines",
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -3083,17 +3083,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "276",
-		name = "Superpower",
+		name = "Surpuissance",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "120",
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Lowers the user's Attack and Defense by one stage each."
+		description = "Inflicts regular damage and makes contact. Lowers the user’s Attack and Defense by one stage each."
 	},
 	{
 		id = "277",
-		name = "Magic Coat",
+		name = "Reflet Magik",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -3103,7 +3103,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "278",
-		name = "Recycle",
+		name = "Recyclage",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -3127,7 +3127,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "279",
-		name = "Revenge",
+		name = "Vendetta",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "60",
 		pp = "10",
@@ -3137,17 +3137,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "280",
-		name = "Brick Break",
+		name = "Casse-Brique",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "75",
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Makes contact. Destroys any light screen or reflect on the target's side of the field, then inflicts regular damage."
+		description = "Makes contact. Destroys any light screen or reflect on the target’s side of the field, then inflicts regular damage."
 	},
 	{
 		id = "281",
-		name = "Yawn",
+		name = "Bâillement",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -3157,7 +3157,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "282",
-		name = "Knock Off",
+		name = "Sabotage",
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = "20",
 		pp = "20",
@@ -3167,13 +3167,13 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "283",
-		name = "Endeavor",
+		name = "Effort",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Makes contact. Inflicts exactly enough damage to lower the target's HP to equal the user's. Type immunity applies, but other type effects are ignored."
+		description = "Makes contact. Inflicts exactly enough damage to lower the target’s HP to equal the user’s. Type immunity applies, but other type effects are ignored."
 	},
 	{
 		id = "284",
@@ -3183,11 +3183,11 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Power increases with the user's remaining HP up to a maximum of 150 when the user has full HP."
+		description = "Inflicts regular damage. Power increases with the user’s remaining HP up to a maximum of 150 when the user has full HP."
 	},
 	{
 		id = "285",
-		name = "Skill Swap",
+		name = "Echange",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -3197,7 +3197,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "286",
-		name = "Imprison",
+		name = "Possessif",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -3209,7 +3209,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "287",
-		name = "Refresh",
+		name = "Régénération",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -3219,7 +3219,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "288",
-		name = "Grudge",
+		name = "Rancune",
 		type = PokemonData.POKEMON_TYPES.GHOST,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -3229,7 +3229,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "289",
-		name = "Snatch",
+		name = "Saisie",
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -3241,7 +3241,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "290",
-		name = "Secret Power",
+		name = "Force Cachée",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "70",
 		pp = "20",
@@ -3257,7 +3257,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "291",
-		name = "Dive",
+		name = "Plongée",
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = {"60", "60", "60", "80", "80"},
 		pp = "10",
@@ -3267,7 +3267,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "292",
-		name = "Arm Thrust",
+		name = "Cogne",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "15",
 		pp = "20",
@@ -3283,57 +3283,57 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "User's type changes according to the terrain. Building = normal; Cave = rock; Desert = ground; Grass = grass; Ocean = water; Snow = ice"
+		description = "User’s type changes according to the terrain. Building = normal; Cave = rock; Desert = ground; Grass = grass; Ocean = water; Snow = ice"
 	},
 	{
 		id = "294",
-		name = "Tail Glow",
+		name = "Lumiqueue",
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
 		description = {
-			"Raises the user's Special Attack by two stages.",
-			"Raises the user's Special Attack by two stages.",
-			"Raises the user's Special Attack by two stages.",
-			"Raises the user's Special Attack by two stages.",
-			"Raises the user's Special Attack by three stages."
+			"Raises the user’s Special Attack by two stages.",
+			"Raises the user’s Special Attack by two stages.",
+			"Raises the user’s Special Attack by two stages.",
+			"Raises the user’s Special Attack by two stages.",
+			"Raises the user’s Special Attack by three stages."
 		}
 	},
 	{
 		id = "295",
-		name = "Luster Purge",
+		name = "Lumi-Eclat",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = "70",
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 50% chance to lower the target's Special Defense by one stage."
+		description = "Inflicts regular damage. Has a 50% chance to lower the target’s Special Defense by one stage."
 	},
 	{
 		id = "296",
-		name = "Mist Ball",
+		name = "Ball’Brume",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = "70",
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 50% chance to lower the target's Special Attack by one stage."
+		description = "Inflicts regular damage. Has a 50% chance to lower the target’s Special Attack by one stage."
 	},
 	{
 		id = "297",
-		name = "FeatherDance",
+		name = "Danse-Plume",
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target's Attack by two stages."
+		description = "Lowers the target’s Attack by two stages."
 	},
 	{
 		id = "298",
-		name = "Teeter Dance",
+		name = "Danse-Folle",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -3343,17 +3343,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "299",
-		name = "Blaze Kick",
+		name = "Pied Brûleur",
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "85",
 		pp = "10",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User's critical hit rate is one level higher when using this move. Has a 10% chance to burn the target."
+		description = "Inflicts regular damage and makes contact. User’s critical hit rate is one level higher when using this move. Has a 10% chance to burn the target."
 	},
 	{
 		id = "300",
-		name = "Mud Sport",
+		name = "Lance-Boue",
 		type = PokemonData.POKEMON_TYPES.GROUND,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -3369,7 +3369,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "301",
-		name = "Ice Ball",
+		name = "Ball’Glace",
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = "30",
 		pp = "20",
@@ -3379,7 +3379,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "302",
-		name = "Needle Arm",
+		name = "Poing Dard",
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = "60",
 		pp = "15",
@@ -3389,7 +3389,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "303",
-		name = "Slack Off",
+		name = "Paresse",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -3399,7 +3399,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "304",
-		name = "Hyper Voice",
+		name = "Mégaphone",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "90",
 		pp = "10",
@@ -3409,7 +3409,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "305",
-		name = "Poison Fang",
+		name = "Crochetvenin",
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = "50",
 		pp = "15",
@@ -3419,17 +3419,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "306",
-		name = "Crush Claw",
+		name = "Eclategriffe",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "75",
 		pp = "10",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 50% chance to lower the target's Defense by one stage."
+		description = "Inflicts regular damage and makes contact. Has a 50% chance to lower the target’s Defense by one stage."
 	},
 	{
 		id = "307",
-		name = "Blast Burn",
+		name = "Rafale Feu",
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "150",
 		pp = "5",
@@ -3439,7 +3439,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "308",
-		name = "Hydro Cannon",
+		name = "Hydroblast",
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = "150",
 		pp = "5",
@@ -3449,17 +3449,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "309",
-		name = "Meteor Mash",
+		name = "Poing Météor",
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = "100",
 		pp = "10",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 20% chance to raise the user's Attack one stage."
+		description = "Inflicts regular damage and makes contact. Has a 20% chance to raise the user’s Attack one stage."
 	},
 	{
 		id = "310",
-		name = "Astonish",
+		name = "Etonnement",
 		type = PokemonData.POKEMON_TYPES.GHOST,
 		power = "30",
 		pp = "15",
@@ -3469,7 +3469,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "311",
-		name = "Weather Ball",
+		name = "Ball’Météo",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "50",
 		pp = "10",
@@ -3479,87 +3479,87 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "312",
-		name = "Aromatherapy",
+		name = "Aromathérapi",
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Removes major status effects and confusion from every Pok" .. Chars.accentedE .. "mon in the user's party."
+		description = "Removes major status effects and confusion from every Pok" .. Chars.accentedE .. "mon in the user’s party."
 	},
 	{
 		id = "313",
-		name = "Fake Tears",
+		name = "Croco Larme",
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target's Special Defense by two stages."
+		description = "Lowers the target’s Special Defense by two stages."
 	},
 	{
 		id = "314",
-		name = "Air Cutter",
+		name = "Tranch’Air",
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = "55",
 		pp = "25",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. User's critical hit rate is one level higher when using this move."
+		description = "Inflicts regular damage. User’s critical hit rate is one level higher when using this move."
 	},
 	{
 		id = "315",
-		name = "Overheat",
+		name = "Surchauffe",
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "140",
 		pp = "5",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage, then lowers the user's Special Attack by two stages."
+		description = "Inflicts regular damage, then lowers the user’s Special Attack by two stages."
 	},
 	{
 		id = "316",
-		name = "Odor Sleuth",
+		name = "Flair",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
 		accuracy = {"100", "100", "100", Graphics.TEXT.ALWAYS_HITS, Graphics.TEXT.ALWAYS_HITS},
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Ignores the target's boosted Evasion stages until the target leaves the field. A ghost under this effect takes damage from normal and fighting moves."
+		description = "Ignores the target’s boosted Evasion stages until the target leaves the field. A ghost under this effect takes damage from normal and fighting moves."
 	},
 	{
 		id = "317",
-		name = "Rock Tomb",
+		name = "Tomberoche",
 		type = PokemonData.POKEMON_TYPES.ROCK,
 		power = "50",
 		pp = "10",
 		accuracy = "80",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. Has a 100% chance to lower the target's Speed by one stage."
+		description = "Inflicts regular damage. Has a 100% chance to lower the target’s Speed by one stage."
 	},
 	{
 		id = "318",
-		name = "Silver Wind",
+		name = "Vent Argenté",
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = "60",
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to raise all of the user's stats one stage."
+		description = "Inflicts regular damage. Has a 10% chance to raise all of the user’s stats one stage."
 	},
 	{
 		id = "319",
-		name = "Metal Sound",
+		name = "Strido-Son",
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target's Special Defense by two stages."
+		description = "Lowers the target’s Special Defense by two stages."
 	},
 	{
 		id = "320",
-		name = "GrassWhistle",
+		name = "Siffl’Herbe",
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -3569,37 +3569,37 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "321",
-		name = "Tickle",
+		name = "Chatouille",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target's Attack and Defense by one stage."
+		description = "Lowers the target’s Attack and Defense by one stage."
 	},
 	{
 		id = "322",
-		name = "Cosmic Power",
+		name = "Force Cosmik",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user's Defense and Special Defense by one stage."
+		description = "Raises the user’s Defense and Special Defense by one stage."
 	},
 	{
 		id = "323",
-		name = "Water Spout",
+		name = "Giclédo",
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = ">HP",
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Power increases with the user's remaining HP, up to a maximum of 150 when the user has full HP."
+		description = "Inflicts regular damage. Power increases with the user’s remaining HP, up to a maximum of 150 when the user has full HP."
 	},
 	{
 		id = "324",
-		name = "Signal Beam",
+		name = "Rayon Signal",
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = "75",
 		pp = "15",
@@ -3609,7 +3609,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "325",
-		name = "Shadow Punch",
+		name = "Poing Ombre",
 		type = PokemonData.POKEMON_TYPES.GHOST,
 		power = "60",
 		pp = "20",
@@ -3619,7 +3619,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "326",
-		name = "Extrasensory",
+		name = "Extrasenseur",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = "80",
 		pp = "30",
@@ -3629,7 +3629,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "327",
-		name = "Sky Uppercut",
+		name = "Stratopercut",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "85",
 		pp = "15",
@@ -3650,7 +3650,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "328",
-		name = "Sand Tomb",
+		name = "Tourbi-Sable",
 		type = PokemonData.POKEMON_TYPES.GROUND,
 		power = {"15", "15", "15", "15", "35"},
 		pp = "15",
@@ -3666,27 +3666,27 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "329",
-		name = "Sheer Cold",
+		name = "Glaciation",
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
 		accuracy = "30",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Instantly KOs the target. This move's accuracy is 30% plus 1% for each level the user is higher than the target."
+		description = "Instantly KOs the target. This move’s accuracy is 30% plus 1% for each level the user is higher than the target."
 	},
 	{
 		id = "330",
-		name = "Muddy Water",
+		name = "Ocroupi",
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = "95",
 		pp = "10",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 30% chance to lower the target's Accuracy by one stage."
+		description = "Inflicts regular damage. Has a 30% chance to lower the target’s Accuracy by one stage."
 	},
 	{
 		id = "331",
-		name = "Bullet Seed",
+		name = "Balle Graine",
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = {"10", "10", "10", "10", "25"},
 		pp = "30",
@@ -3696,7 +3696,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "332",
-		name = "Aerial Ace",
+		name = "Aéropique",
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = "60",
 		pp = "20",
@@ -3706,7 +3706,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "333",
-		name = "Icicle Spear",
+		name = "Stalagtite",
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = {"10", "10", "10", "10", "25"},
 		pp = "30",
@@ -3716,17 +3716,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "334",
-		name = "Iron Defense",
+		name = "Mur de Fer",
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user's Defense by two stages."
+		description = "Raises the user’s Defense by two stages."
 	},
 	{
 		id = "335",
-		name = "Block",
+		name = "Barrage",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -3736,17 +3736,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "336",
-		name = "Howl",
+		name = "Grondement",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user's Attack by one stage."
+		description = "Raises the user’s Attack by one stage."
 	},
 	{
 		id = "337",
-		name = "Dragon Claw",
+		name = "Dracogriffe",
 		type = PokemonData.POKEMON_TYPES.DRAGON,
 		power = "80",
 		pp = "15",
@@ -3756,7 +3756,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "338",
-		name = "Frenzy Plant",
+		name = "Végé-Attak",
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = "150",
 		pp = "5",
@@ -3766,17 +3766,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "339",
-		name = "Bulk Up",
+		name = "Gonflette",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user's Attack and Defense by one stage each."
+		description = "Raises the user’s Attack and Defense by one stage each."
 	},
 	{
 		id = "340",
-		name = "Bounce",
+		name = "Rebond",
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = "85",
 		pp = "5",
@@ -3786,27 +3786,27 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "341",
-		name = "Mud Shot",
+		name = "Tir de Boue",
 		type = PokemonData.POKEMON_TYPES.GROUND,
 		power = "55",
 		pp = "15",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 100% chance to lower the target's Speed by one stage."
+		description = "Inflicts regular damage. Has a 100% chance to lower the target’s Speed by one stage."
 	},
 	{
 		id = "342",
-		name = "Poison Tail",
+		name = "Queue-Poison",
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = "50",
 		pp = "25",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User's critical hit rate is one level higher when using this move. Has a 10% chance to poison the target."
+		description = "Inflicts regular damage and makes contact. User’s critical hit rate is one level higher when using this move. Has a 10% chance to poison the target."
 	},
 	{
 		id = "343",
-		name = "Covet",
+		name = "Implore",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = {"40", "40", "40", "40", "60"},
 		pp = "40",
@@ -3816,7 +3816,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "344",
-		name = "Volt Tackle",
+		name = "Electacle",
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = "120",
 		pp = "15",
@@ -3826,7 +3826,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "345",
-		name = "Magical Leaf",
+		name = "Feuillemagik",
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = "60",
 		pp = "20",
@@ -3836,7 +3836,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "346",
-		name = "Water Sport",
+		name = "Tourniquet",
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -3852,37 +3852,37 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "347",
-		name = "Calm Mind",
+		name = "Plénitude",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user's Special Attack and Special Defense by one stage each."
+		description = "Raises the user’s Special Attack and Special Defense by one stage each."
 	},
 	{
 		id = "348",
-		name = "Leaf Blade",
+		name = "Lame-Feuille",
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = {"70", "70", "70", "90", "90"},
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User's critical hit rate is one level higher when using this move."
+		description = "Inflicts regular damage and makes contact. User’s critical hit rate is one level higher when using this move."
 	},
 	{
 		id = "349",
-		name = "Dragon Dance",
+		name = "Danse Draco",
 		type = PokemonData.POKEMON_TYPES.DRAGON,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user's Attack and Speed by one stage each."
+		description = "Raises the user’s Attack and Speed by one stage each."
 	},
 	{
 		id = "350",
-		name = "Rock Blast",
+		name = "Boule Roc",
 		type = PokemonData.POKEMON_TYPES.ROCK,
 		power = "25",
 		pp = "10",
@@ -3892,7 +3892,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "351",
-		name = "Shock Wave",
+		name = "Onde de Choc",
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = "60",
 		pp = "20",
@@ -3902,7 +3902,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "352",
-		name = "Water Pulse",
+		name = "Vibraqua",
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = "60",
 		pp = "20",
@@ -3912,7 +3912,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "353",
-		name = "Doom Desire",
+		name = "Carnareket",
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = {"120", "120", "120", "120", "140"},
 		pp = "5",
@@ -3934,11 +3934,11 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage, then lowers the user's Special Attack by two stages."
+		description = "Inflicts regular damage, then lowers the user’s Special Attack by two stages."
 	},
 	{
 		id = "355",
-		name = "Roost",
+		name = "Atterrissage",
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = Graphics.TEXT.ALWAYS_HITS,
 		pp = "10",
@@ -3948,7 +3948,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "356",
-		name = "Gravity",
+		name = "Gravité",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -3969,18 +3969,18 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "357",
-		name = "Miracle Eye",
+		name = "Oeil Miracle",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Ignores the target's boosted Evasion stages until the target leaves the field. A dark Pok" ..
+		description = "Ignores the target’s boosted Evasion stages until the target leaves the field. A dark Pok" ..
 			Chars.accentedE .. "mon under this effect takes normal damage from psychic moves."
 	},
 	{
 		id = "358",
-		name = "Wake-Up Slap",
+		name = "Réveil Forcé",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "60",
 		pp = "10",
@@ -3990,39 +3990,39 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "359",
-		name = "Hammer Arm",
+		name = "Marto-Poing",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "100",
 		pp = "10",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Lowers the user's Speed by one stage."
+		description = "Inflicts regular damage and makes contact. Lowers the user’s Speed by one stage."
 	},
 	{
 		id = "360",
-		name = "Gyro Ball",
+		name = "Gyroballe",
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = "<SP",
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Power increases with the target's current Speed compared to the user, capped at 150."
+		description = "Inflicts regular damage and makes contact. Power increases with the target’s current Speed compared to the user, capped at 150."
 	},
 	{
 		id = "361",
-		name = "Healing Wish",
+		name = "Voeu Soin",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "User faints. Its replacement's HP is fully restored, and any major status effect is removed. If the replacement Pok" ..
+		description = "User faints. Its replacement’s HP is fully restored, and any major status effect is removed. If the replacement Pok" ..
 			Chars.accentedE ..
 				"mon is immediately fainted by a switch-in effect, the next replacement is healed by this move instead."
 	},
 	{
 		id = "362",
-		name = "Brine",
+		name = "Saumure",
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = "65",
 		pp = "10",
@@ -4032,17 +4032,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "363",
-		name = "Natural Gift",
+		name = "Don Naturel",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "BRY",
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. Power and type are determined by the user's held berry. The berry is consumed. If the user is not holding a berry, this move will fail."
+		description = "Inflicts regular damage. Power and type are determined by the user’s held berry. The berry is consumed. If the user is not holding a berry, this move will fail."
 	},
 	{
 		id = "364",
-		name = "Feint",
+		name = "Ruse",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = {"50", "50", "50", "50", "30"},
 		pp = "10",
@@ -4058,7 +4058,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "365",
-		name = "Pluck",
+		name = "Picore",
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = "60",
 		pp = "20",
@@ -4068,7 +4068,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "366",
-		name = "Tailwind",
+		name = "Vent Arrière",
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
@@ -4077,34 +4077,34 @@ MoveData.MOVES_MASTER_LIST = {
 		description = {
 			"For the next three turns, all Pok" ..
 				Chars.accentedE ..
-					"mon on the user's side of the field have their original Speed doubled. This effect remains if the user leaves the field.",
+					"mon on the user’s side of the field have their original Speed doubled. This effect remains if the user leaves the field.",
 			"For the next three turns, all Pok" ..
 				Chars.accentedE ..
-					"mon on the user's side of the field have their original Speed doubled. This effect remains if the user leaves the field.",
+					"mon on the user’s side of the field have their original Speed doubled. This effect remains if the user leaves the field.",
 			"For the next three turns, all Pok" ..
 				Chars.accentedE ..
-					"mon on the user's side of the field have their original Speed doubled. This effect remains if the user leaves the field.",
+					"mon on the user’s side of the field have their original Speed doubled. This effect remains if the user leaves the field.",
 			"For the next three turns, all Pok" ..
 				Chars.accentedE ..
-					"mon on the user's side of the field have their original Speed doubled. This effect remains if the user leaves the field.",
+					"mon on the user’s side of the field have their original Speed doubled. This effect remains if the user leaves the field.",
 			"For the next four turns, all Pok" ..
 				Chars.accentedE ..
-					"mon on the user's side of the field have their original Speed doubled. This effect remains if the user leaves the field."
+					"mon on the user’s side of the field have their original Speed doubled. This effect remains if the user leaves the field."
 		}
 	},
 	{
 		id = "367",
-		name = "Acupressure",
+		name = "Acupression",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises one of the target's stats by two stages. The raised stat is chosen at random from any stats that can be raised."
+		description = "Raises one of the target’s stats by two stages. The raised stat is chosen at random from any stats that can be raised."
 	},
 	{
 		id = "368",
-		name = "Metal Burst",
+		name = "Fulmifer",
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -4116,7 +4116,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "369",
-		name = "U-turn",
+		name = "Demi-Tour",
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = "70",
 		pp = "20",
@@ -4133,11 +4133,11 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Lowers the user's Defense and Special Defense by one stage each."
+		description = "Inflicts regular damage and makes contact. Lowers the user’s Defense and Special Defense by one stage each."
 	},
 	{
 		id = "371",
-		name = "Payback",
+		name = "Représailles",
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = "50",
 		pp = "10",
@@ -4167,27 +4167,27 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "374",
-		name = "Fling",
+		name = "Dégommage",
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = "ITM",
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. Power is determined by the user's held item. The item is consumed. If the user is not holding an item, or its item has no set power, this move will fail."
+		description = "Inflicts regular damage. Power is determined by the user’s held item. The item is consumed. If the user is not holding an item, or its item has no set power, this move will fail."
 	},
 	{
 		id = "375",
-		name = "Psycho Shift",
+		name = "Echange Psy",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "If the user has a major status effect and the target does not, the user's status is transferred to the target."
+		description = "If the user has a major status effect and the target does not, the user’s status is transferred to the target."
 	},
 	{
 		id = "376",
-		name = "Trump Card",
+		name = "Atout",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "<PP",
 		pp = "5",
@@ -4197,7 +4197,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "377",
-		name = "Heal Block",
+		name = "Anti-Soin",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -4213,37 +4213,37 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "378",
-		name = "Wring Out",
+		name = "Essorage",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = ">HP",
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage and makes contact. Power directly relates to the target's relative remaining HP, up to a maximum of 121."
+		description = "Inflicts regular damage and makes contact. Power directly relates to the target’s relative remaining HP, up to a maximum of 121."
 	},
 	{
 		id = "379",
-		name = "Power Trick",
+		name = "Astuce Force",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "The user's original Attack and Defense are swapped."
+		description = "The user’s original Attack and Defense are swapped."
 	},
 	{
 		id = "380",
-		name = "Gastro Acid",
+		name = "Suc Digestif",
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "The target's ability is disabled as long as it remains on the field."
+		description = "The target’s ability is disabled as long as it remains on the field."
 	},
 	{
 		id = "381",
-		name = "Lucky Chant",
+		name = "Air Veinard",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
@@ -4253,7 +4253,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "382",
-		name = "Me First",
+		name = "Moi d’Abord",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -4263,7 +4263,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "383",
-		name = "Copycat",
+		name = "Photocopie",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -4273,7 +4273,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "384",
-		name = "Power Swap",
+		name = "Permuforce",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -4283,7 +4283,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "385",
-		name = "Guard Swap",
+		name = "Permugarde",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -4293,37 +4293,37 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "386",
-		name = "Punishment",
+		name = "Punition",
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = "STA",
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Power starts at 60 and is increased by 20 for every stage any of the target's stats has been raised, capping at 200. Accuracy and Evasion modifiers do not increase this move's power."
+		description = "Inflicts regular damage and makes contact. Power starts at 60 and is increased by 20 for every stage any of the target’s stats has been raised, capping at 200. Accuracy and Evasion modifiers do not increase this move’s power."
 	},
 	{
 		id = "387",
-		name = "Last Resort",
+		name = "Dernierecour",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = {"130", "130", "130", "130", "140"},
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. This move can only be used if each of the user's other moves has been used at least once since the user entered the field. If this is the user's only move, this move will fail."
+		description = "Inflicts regular damage and makes contact. This move can only be used if each of the user’s other moves has been used at least once since the user entered the field. If this is the user’s only move, this move will fail."
 	},
 	{
 		id = "388",
-		name = "Worry Seed",
+		name = "Soucigraine",
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Changes the target's ability to Insomnia for as long as it remains on the field."
+		description = "Changes the target’s ability to Insomnia for as long as it remains on the field."
 	},
 	{
 		id = "389",
-		name = "Sucker Punch",
+		name = "Coup Bas",
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = "80",
 		pp = "5",
@@ -4333,7 +4333,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "390",
-		name = "Toxic Spikes",
+		name = "Pics Toxik",
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -4346,7 +4346,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "391",
-		name = "Heart Swap",
+		name = "Permucoeur",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -4356,17 +4356,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "392",
-		name = "Aqua Ring",
+		name = "Anneau Hydro",
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Restores 1/16 of the user's max HP at the end of each turn. If the user leaves the field, this effect ends."
+		description = "Restores 1/16 of the user’s max HP at the end of each turn. If the user leaves the field, this effect ends."
 	},
 	{
 		id = "393",
-		name = "Magnet Rise",
+		name = "Vol Magnétik",
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -4376,7 +4376,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "394",
-		name = "Flare Blitz",
+		name = "Boutefeu",
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "120",
 		pp = "15",
@@ -4387,7 +4387,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "395",
-		name = "Force Palm",
+		name = "Forte-Paume",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "60",
 		pp = "10",
@@ -4397,7 +4397,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "396",
-		name = "Aura Sphere",
+		name = "Aurasphère",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "90",
 		pp = "20",
@@ -4407,17 +4407,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "397",
-		name = "Rock Polish",
+		name = "Poliroche",
 		type = PokemonData.POKEMON_TYPES.ROCK,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user's Speed by two stages."
+		description = "Raises the user’s Speed by two stages."
 	},
 	{
 		id = "398",
-		name = "Poison Jab",
+		name = "Direct Toxik",
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = "80",
 		pp = "20",
@@ -4427,7 +4427,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "399",
-		name = "Dark Pulse",
+		name = "Vibrobscur",
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = "80",
 		pp = "15",
@@ -4437,17 +4437,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "400",
-		name = "Night Slash",
+		name = "Tranche-Nuit",
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = "70",
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User's critical hit rate is one level higher when using this move."
+		description = "Inflicts regular damage and makes contact. User’s critical hit rate is one level higher when using this move."
 	},
 	{
 		id = "401",
-		name = "Aqua Tail",
+		name = "Hydroqueue",
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = "90",
 		pp = "10",
@@ -4457,7 +4457,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "402",
-		name = "Seed Bomb",
+		name = "Canon Graine",
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = "80",
 		pp = "15",
@@ -4467,7 +4467,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "403",
-		name = "Air Slash",
+		name = "Lame d’Air",
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = "75",
 		pp = "20",
@@ -4477,7 +4477,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "404",
-		name = "X-Scissor",
+		name = "Plaie-Croix",
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = "80",
 		pp = "15",
@@ -4487,17 +4487,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "405",
-		name = "Bug Buzz",
+		name = "Bourdon",
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = "90",
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to lower the target's Special Defense by one stage."
+		description = "Inflicts regular damage. Has a 10% chance to lower the target’s Special Defense by one stage."
 	},
 	{
 		id = "406",
-		name = "Dragon Pulse",
+		name = "Dracochoc",
 		type = PokemonData.POKEMON_TYPES.DRAGON,
 		power = "90",
 		pp = "10",
@@ -4507,7 +4507,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "407",
-		name = "Dragon Rush",
+		name = "Dracocharge",
 		type = PokemonData.POKEMON_TYPES.DRAGON,
 		power = "100",
 		pp = "10",
@@ -4517,7 +4517,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "408",
-		name = "Power Gem",
+		name = "Rayon Gemme",
 		type = PokemonData.POKEMON_TYPES.ROCK,
 		power = "70",
 		pp = "20",
@@ -4527,7 +4527,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "409",
-		name = "Drain Punch",
+		name = "Vampipoing",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = {"60", "60", "60", "60", "75"},
 		pp = {"5", "5", "5", "5", "10"},
@@ -4537,7 +4537,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "410",
-		name = "Vacuum Wave",
+		name = "Onde Vide",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "40",
 		pp = "30",
@@ -4547,27 +4547,27 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "411",
-		name = "Focus Blast",
+		name = "Exploforce",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "120",
 		pp = "5",
 		accuracy = "70",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to lower the target's Special Defense by one stage."
+		description = "Inflicts regular damage. Has a 10% chance to lower the target’s Special Defense by one stage."
 	},
 	{
 		id = "412",
-		name = "Energy Ball",
+		name = "Eco-Sphère",
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = "80",
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to lower the target's Special Defense by one stage."
+		description = "Inflicts regular damage. Has a 10% chance to lower the target’s Special Defense by one stage."
 	},
 	{
 		id = "413",
-		name = "Brave Bird",
+		name = "Rapace",
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = "120",
 		pp = "15",
@@ -4577,24 +4577,24 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "414",
-		name = "Earth Power",
+		name = "Telluriforce",
 		type = PokemonData.POKEMON_TYPES.GROUND,
 		power = "90",
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to lower the target's Special Defense by one stage."
+		description = "Inflicts regular damage. Has a 10% chance to lower the target’s Special Defense by one stage."
 	},
 	{
 		id = "415",
-		name = "Switcheroo",
+		name = "Passe-Passe",
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
 		description = "User and target permanently swap held items. Works even if one of the Pok" ..
-			Chars.accentedE .. "mon isn't holding anything."
+			Chars.accentedE .. "mon isn’t holding anything."
 	},
 	{
 		id = "416",
@@ -4608,17 +4608,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "417",
-		name = "Nasty Plot",
+		name = "Machination",
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user's Special Attack by two stages."
+		description = "Raises the user’s Special Attack by two stages."
 	},
 	{
 		id = "418",
-		name = "Bullet Punch",
+		name = "Pisto-Poing",
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = "40",
 		pp = "30",
@@ -4638,7 +4638,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "420",
-		name = "Ice Shard",
+		name = "Eclats Glace",
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = "40",
 		pp = "30",
@@ -4648,17 +4648,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "421",
-		name = "Shadow Claw",
+		name = "Griffe Ombre",
 		type = PokemonData.POKEMON_TYPES.GHOST,
 		power = "70",
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User's critical hit rate is one level higher when using this move."
+		description = "Inflicts regular damage and makes contact. User’s critical hit rate is one level higher when using this move."
 	},
 	{
 		id = "422",
-		name = "Thunder Fang",
+		name = "Crocs Eclair",
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = "65",
 		pp = "15",
@@ -4668,7 +4668,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "423",
-		name = "Ice Fang",
+		name = "Crocs Givre",
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = "65",
 		pp = "15",
@@ -4678,7 +4678,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "424",
-		name = "Fire Fang",
+		name = "Crocs Feu",
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "65",
 		pp = "15",
@@ -4688,7 +4688,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "425",
-		name = "Shadow Sneak",
+		name = "Ombre Portée",
 		type = PokemonData.POKEMON_TYPES.GHOST,
 		power = "40",
 		pp = "30",
@@ -4698,27 +4698,27 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "426",
-		name = "Mud Bomb",
+		name = "Boue-Bombe",
 		type = PokemonData.POKEMON_TYPES.GROUND,
 		power = "65",
 		pp = "10",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 30% chance to lower the target's Accuracy by one stage."
+		description = "Inflicts regular damage. Has a 30% chance to lower the target’s Accuracy by one stage."
 	},
 	{
 		id = "427",
-		name = "Psycho Cut",
+		name = "Coupe Psycho",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = "70",
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. User's critical hit rate is one level higher when using this move."
+		description = "Inflicts regular damage. User’s critical hit rate is one level higher when using this move."
 	},
 	{
 		id = "428",
-		name = "Zen Headbutt",
+		name = "Psykoud’Boul",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = "80",
 		pp = "15",
@@ -4728,27 +4728,27 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "429",
-		name = "Mirror Shot",
+		name = "Miroi-Tir",
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = "65",
 		pp = "10",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 30% chance to lower the target's Accuracy by one stage."
+		description = "Inflicts regular damage. Has a 30% chance to lower the target’s Accuracy by one stage."
 	},
 	{
 		id = "430",
-		name = "Flash Cannon",
+		name = "Luminocanon",
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = "80",
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to lower the target's Special Defense by one stage."
+		description = "Inflicts regular damage. Has a 10% chance to lower the target’s Special Defense by one stage."
 	},
 	{
 		id = "431",
-		name = "Rock Climb",
+		name = "Escalade",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "90",
 		pp = "20",
@@ -4758,17 +4758,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "432",
-		name = "Defog",
+		name = "Anti-Brume",
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target's Evasion by one stage. Removes the effects of mist, light screen, reflect, safeguard, spikes, stealth rock, and toxic spikes from the target's side of the field."
+		description = "Lowers the target’s Evasion by one stage. Removes the effects of mist, light screen, reflect, safeguard, spikes, stealth rock, and toxic spikes from the target’s side of the field."
 	},
 	{
 		id = "433",
-		name = "Trick Room",
+		name = "Distorsion",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -4779,17 +4779,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "434",
-		name = "Draco Meteor",
+		name = "Draco Météor",
 		type = PokemonData.POKEMON_TYPES.DRAGON,
 		power = "140",
 		pp = "5",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage, then lowers the user's Special Attack by two stages."
+		description = "Inflicts regular damage, then lowers the user’s Special Attack by two stages."
 	},
 	{
 		id = "435",
-		name = "Discharge",
+		name = "Coup d’Jus",
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = "80",
 		pp = "15",
@@ -4799,7 +4799,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "436",
-		name = "Lava Plume",
+		name = "Ebullilave",
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "80",
 		pp = "15",
@@ -4809,17 +4809,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "437",
-		name = "Leaf Storm",
+		name = "Tempêteverte",
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = "140",
 		pp = "5",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage, then lowers the user's Special Attack by two stages."
+		description = "Inflicts regular damage, then lowers the user’s Special Attack by two stages."
 	},
 	{
 		id = "438",
-		name = "Power Whip",
+		name = "Mégafouet",
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = "120",
 		pp = "10",
@@ -4829,7 +4829,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "439",
-		name = "Rock Wrecker",
+		name = "Roc-Boulet",
 		type = PokemonData.POKEMON_TYPES.ROCK,
 		power = "150",
 		pp = "5",
@@ -4839,17 +4839,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "440",
-		name = "Cross Poison",
+		name = "Poison-Croix",
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = "70",
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User's critical hit rate is one level higher when using this move. Has a 10% chance to poison the target."
+		description = "Inflicts regular damage and makes contact. User’s critical hit rate is one level higher when using this move. Has a 10% chance to poison the target."
 	},
 	{
 		id = "441",
-		name = "Gunk Shot",
+		name = "Détricanon",
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = "120",
 		pp = "5",
@@ -4859,7 +4859,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "442",
-		name = "Iron Head",
+		name = "Tête de Fer",
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = "80",
 		pp = "15",
@@ -4869,7 +4869,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "443",
-		name = "Magnet Bomb",
+		name = "Bombaimant",
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = "60",
 		pp = "20",
@@ -4879,27 +4879,27 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "444",
-		name = "Stone Edge",
+		name = "Lame de Roc",
 		type = PokemonData.POKEMON_TYPES.ROCK,
 		power = "100",
 		pp = "5",
 		accuracy = "80",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. User's critical hit rate is one level higher when using this move."
+		description = "Inflicts regular damage. User’s critical hit rate is one level higher when using this move."
 	},
 	{
 		id = "445",
-		name = "Captivate",
+		name = "Séduction",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target's Special Attack by two stages. If the user and target are the same gender, or either is genderless, this move will fail."
+		description = "Lowers the target’s Special Attack by two stages. If the user and target are the same gender, or either is genderless, this move will fail."
 	},
 	{
 		id = "446",
-		name = "Stealth Rock",
+		name = "Piège de Roc",
 		type = PokemonData.POKEMON_TYPES.ROCK,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -4908,21 +4908,21 @@ MoveData.MOVES_MASTER_LIST = {
 		description = "Spreads sharp rocks around the opposing field, damaging any Pok" ..
 			Chars.accentedE ..
 				"mon that enters the field for 1/8 its max HP. This damage is affected by the entering Pok" ..
-					Chars.accentedE .. "mon's susceptibility to rock moves."
+					Chars.accentedE .. "mon’s susceptibility to rock moves."
 	},
 	{
 		id = "447",
-		name = "Grass Knot",
+		name = "Noeud Herbe",
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = "WT",
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage and makes contact. Power increases with the target's weight in kilograms, to a maximum of 120."
+		description = "Inflicts regular damage and makes contact. Power increases with the target’s weight in kilograms, to a maximum of 120."
 	},
 	{
 		id = "448",
-		name = "Chatter",
+		name = "Babil",
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = "60",
 		pp = "20",
@@ -4938,17 +4938,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "449",
-		name = "Judgment",
+		name = "Jugement",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "100",
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. If the user is holding a plate, this move's type is the type corresponding to that item."
+		description = "Inflicts regular damage. If the user is holding a plate, this move’s type is the type corresponding to that item."
 	},
 	{
 		id = "450",
-		name = "Bug Bite",
+		name = "Piqûre",
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = "60",
 		pp = "20",
@@ -4958,17 +4958,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "451",
-		name = "Charge Beam",
+		name = "Rayon Chargé",
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = "50",
 		pp = "10",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 70% chance to raise the user's Special Attack by one stage."
+		description = "Inflicts regular damage. Has a 70% chance to raise the user’s Special Attack by one stage."
 	},
 	{
 		id = "452",
-		name = "Wood Hammer",
+		name = "Martobois",
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = "120",
 		pp = "15",
@@ -4978,7 +4978,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "453",
-		name = "Aqua Jet",
+		name = "Aqua-Jet",
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = "40",
 		pp = "20",
@@ -4988,27 +4988,27 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "454",
-		name = "Attack Order",
+		name = "Appel Attak",
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = "90",
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. User's critical hit rate is one level higher when using this move."
+		description = "Inflicts regular damage. User’s critical hit rate is one level higher when using this move."
 	},
 	{
 		id = "455",
-		name = "Defend Order",
+		name = "Appel Défens",
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user's Defense and Special Defense by one stage."
+		description = "Raises the user’s Defense and Special Defense by one stage."
 	},
 	{
 		id = "456",
-		name = "Heal Order",
+		name = "Appel Soins",
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -5018,7 +5018,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "457",
-		name = "Head Smash",
+		name = "Fracass’Tête",
 		type = PokemonData.POKEMON_TYPES.ROCK,
 		power = "150",
 		pp = "5",
@@ -5028,7 +5028,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "458",
-		name = "Double Hit",
+		name = "Coup Double",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "35",
 		pp = "10",
@@ -5038,7 +5038,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "459",
-		name = "Roar of Time",
+		name = "Hurle-Temps",
 		type = PokemonData.POKEMON_TYPES.DRAGON,
 		power = "150",
 		pp = "5",
@@ -5048,37 +5048,37 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "460",
-		name = "Spacial Rend",
+		name = "Spatio-Rift",
 		type = PokemonData.POKEMON_TYPES.DRAGON,
 		power = "100",
 		pp = "5",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. User's critical hit rate is one level higher when using this move."
+		description = "Inflicts regular damage. User’s critical hit rate is one level higher when using this move."
 	},
 	{
 		id = "461",
-		name = "Lunar Dance",
+		name = "Danse-Lune",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "User faints. Its replacement's HP and PP are fully restored, and any major status effect is removed."
+		description = "User faints. Its replacement’s HP and PP are fully restored, and any major status effect is removed."
 	},
 	{
 		id = "462",
-		name = "Crush Grip",
+		name = "Presse",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = ">HP",
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Power directly relates to the target's relative remaining HP, up to a maximum of 121."
+		description = "Inflicts regular damage and makes contact. Power directly relates to the target’s relative remaining HP, up to a maximum of 121."
 	},
 	{
 		id = "463",
-		name = "Magma Storm",
+		name = "Vortex Magma",
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "120",
 		pp = "5",
@@ -5094,7 +5094,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "464",
-		name = "Dark Void",
+		name = "Trou Noir",
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -5104,27 +5104,27 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "465",
-		name = "Seed Flare",
+		name = "Fulmigraine",
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = "120",
 		pp = "5",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 40% chance to lower the target's Special Defense by two stages."
+		description = "Inflicts regular damage. Has a 40% chance to lower the target’s Special Defense by two stages."
 	},
 	{
 		id = "466",
-		name = "Ominous Wind",
+		name = "Vent Mauvais",
 		type = PokemonData.POKEMON_TYPES.GHOST,
 		power = "60",
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to raise all of the user's stats one stage."
+		description = "Inflicts regular damage. Has a 10% chance to raise all of the user’s stats one stage."
 	},
 	{
 		id = "467",
-		name = "Shadow Force",
+		name = "Revenant",
 		type = PokemonData.POKEMON_TYPES.GHOST,
 		power = "120",
 		pp = "5",
@@ -5134,17 +5134,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "468",
-		name = "Hone Claws",
+		name = "Aiguisage",
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user's Attack and Accuracy by one stage."
+		description = "Raises the user’s Attack and Accuracy by one stage."
 	},
 	{
 		id = "469",
-		name = "Wide Guard",
+		name = "Garde Large",
 		type = PokemonData.POKEMON_TYPES.ROCK,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -5155,50 +5155,50 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "470",
-		name = "Guard Split",
+		name = "PartageGarde",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Averages the user's unmodified Defense with the target's unmodified Defense; the value becomes the unmodified Defense for both Pok" ..
+		description = "Averages the user’s unmodified Defense with the target’s unmodified Defense; the value becomes the unmodified Defense for both Pok" ..
 			Chars.accentedE .. "mon. Unmodified Special Defense is averaged the same way."
 	},
 	{
 		id = "471",
-		name = "Power Split",
+		name = "PartageForce",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Averages the user's unmodified Attack with the target's unmodified Attack; the value becomes the unmodified Attack for both Pok" ..
+		description = "Averages the user’s unmodified Attack with the target’s unmodified Attack; the value becomes the unmodified Attack for both Pok" ..
 			Chars.accentedE .. "mon. Unmodified Special Attack is averaged the same way."
 	},
 	{
 		id = "472",
-		name = "Wonder Room",
+		name = "Zone Étrange",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
 		description = "Decreased priority. For five turns, every Pok" ..
-			Chars.accentedE .. "mon's Defense and Special Defense are swapped."
+			Chars.accentedE .. "mon’s Defense and Special Defense are swapped."
 	},
 	{
 		id = "473",
-		name = "Psyshock",
+		name = "Choc Psy",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = "80",
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Damage calculation always uses the target's Defense, regardless of this move's damage class."
+		description = "Inflicts regular damage. Damage calculation always uses the target’s Defense, regardless of this move’s damage class."
 	},
 	{
 		id = "474",
-		name = "Venoshock",
+		name = "Choc Venin",
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = "65",
 		pp = "10",
@@ -5208,28 +5208,28 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "475",
-		name = "Autotomize",
+		name = "Allègement",
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user's Speed by two stages. If successful, reduces the user's weight by 100 kg (minimum 0.1 kg)."
+		description = "Raises the user’s Speed by two stages. If successful, reduces the user’s weight by 100 kg (minimum 0.1 kg)."
 	},
 	{
 		id = "476",
-		name = "Rage Powder",
+		name = "PoudreFureur",
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
 		description = "Increased priority. Until the end of this turn, any moves that opposing Pok" ..
-			Chars.accentedE .. "mon target solely at the user's ally will instead target the user."
+			Chars.accentedE .. "mon target solely at the user’s ally will instead target the user."
 	},
 	{
 		id = "477",
-		name = "Telekinesis",
+		name = "Lévikinésie",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -5239,7 +5239,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "478",
-		name = "Magic Room",
+		name = "Zone Magique",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -5250,17 +5250,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "479",
-		name = "Smack Down",
+		name = "Anti-Air",
 		type = PokemonData.POKEMON_TYPES.ROCK,
 		power = "50",
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. Removes the target's immunity to ground-type damage. This move will hit targets under the effect of Bounce, Fly, or Sky Drop."
+		description = "Inflicts regular damage. Removes the target’s immunity to ground-type damage. This move will hit targets under the effect of Bounce, Fly, or Sky Drop."
 	},
 	{
 		id = "480",
-		name = "Storm Throw",
+		name = "Yama Arashi",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = {"60", "60", "60", "60", "40"},
 		pp = "10",
@@ -5270,7 +5270,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "481",
-		name = "Flame Burst",
+		name = "Rebondifeu",
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "70",
 		pp = "15",
@@ -5281,7 +5281,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "482",
-		name = "Sludge Wave",
+		name = "Cradovague",
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = "95",
 		pp = "10",
@@ -5292,27 +5292,27 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "483",
-		name = "Quiver Dance",
+		name = "Papillodanse",
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user's Special Attack, Special Defense, and Speed by one stage each."
+		description = "Raises the user’s Special Attack, Special Defense, and Speed by one stage each."
 	},
 	{
 		id = "484",
-		name = "Heavy Slam",
+		name = "Tacle Lourd",
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = ">WT",
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. The greater the user's weight compared to the target's, the higher power this move has, to a maximum of 120."
+		description = "Inflicts regular damage and makes contact. The greater the user’s weight compared to the target’s, the higher power this move has, to a maximum of 120."
 	},
 	{
 		id = "485",
-		name = "Synchronoise",
+		name = "Synchropeine",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = {"120", "120", "120", "120", "70"},
 		pp = {"10", "10", "10", "10", "15"},
@@ -5323,17 +5323,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "486",
-		name = "Electro Ball",
+		name = "Boule Élek",
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = ">SP",
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. The greater the user's Speed compared to the target's, the higher power this move has, to a maximum of 150."
+		description = "Inflicts regular damage. The greater the user’s Speed compared to the target’s, the higher power this move has, to a maximum of 150."
 	},
 	{
 		id = "487",
-		name = "Soak",
+		name = "Détrempage",
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -5343,77 +5343,77 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "488",
-		name = "Flame Charge",
+		name = "Nitrocharge",
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "50",
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Raises the user's Speed by one stage."
+		description = "Inflicts regular damage and makes contact. Raises the user’s Speed by one stage."
 	},
 	{
 		id = "489",
-		name = "Coil",
+		name = "Enroulement",
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user's Attack, Defense, and Accuracy by one stage each."
+		description = "Raises the user’s Attack, Defense, and Accuracy by one stage each."
 	},
 	{
 		id = "490",
-		name = "Low Sweep",
+		name = "Balayette",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = {"65", "65", "65", "65", "60"},
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Lowers the target's Speed by one stage."
+		description = "Inflicts regular damage and makes contact. Lowers the target’s Speed by one stage."
 	},
 	{
 		id = "491",
-		name = "Acid Spray",
+		name = "Bombe Acide",
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = "40",
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Lowers the target's Special Defense by two stages."
+		description = "Inflicts regular damage. Lowers the target’s Special Defense by two stages."
 	},
 	{
 		id = "492",
-		name = "Foul Play",
+		name = "Tricherie",
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = "95",
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Damage is calculated using the target's attacking stat rather than the user's."
+		description = "Inflicts regular damage and makes contact. Damage is calculated using the target’s attacking stat rather than the user’s."
 	},
 	{
 		id = "493",
-		name = "Simple Beam",
+		name = "Rayon Simple",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Changes the target's ability to Simple. This effect ends when the target leaves battle."
+		description = "Changes the target’s ability to Simple. This effect ends when the target leaves battle."
 	},
 	{
 		id = "494",
-		name = "Entrainment",
+		name = "Ten-danse",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Changes the target's ability to match the user's. This effect ends when the target leaves battle."
+		description = "Changes the target’s ability to match the user’s. This effect ends when the target leaves battle."
 	},
 	{
 		id = "495",
-		name = "After You",
+		name = "Après Vous",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -5423,17 +5423,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "496",
-		name = "Round",
+		name = "Chant Canon",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "60",
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. If round has already been used this turn, this move's power is doubled."
+		description = "Inflicts regular damage. If round has already been used this turn, this move’s power is doubled."
 	},
 	{
 		id = "497",
-		name = "Echoed Voice",
+		name = "Echo",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "40",
 		pp = "15",
@@ -5443,37 +5443,37 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "498",
-		name = "Chip Away",
+		name = "Attrition",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "70",
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Damage calculation ignores the target's stat modifiers, including Evasion."
+		description = "Inflicts regular damage and makes contact. Damage calculation ignores the target’s stat modifiers, including Evasion."
 	},
 	{
 		id = "499",
-		name = "Clear Smog",
+		name = "Bain de Smog",
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = "50",
 		pp = "15",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. All of the target's stat modifiers are reset to zero."
+		description = "Inflicts regular damage. All of the target’s stat modifiers are reset to zero."
 	},
 	{
 		id = "500",
-		name = "Stored Power",
+		name = "ForceAjoutée",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = "20",
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Power increases by 20 for every stage any of the user's stats have been raised."
+		description = "Inflicts regular damage. Power increases by 20 for every stage any of the user’s stats have been raised."
 	},
 	{
 		id = "501",
-		name = "Quick Guard",
+		name = "Prévention",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -5484,7 +5484,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "502",
-		name = "Ally Switch",
+		name = "Interversion",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -5497,7 +5497,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "503",
-		name = "Scald",
+		name = "Ebullition",
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = "80",
 		pp = "15",
@@ -5507,17 +5507,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "504",
-		name = "Shell Smash",
+		name = "Exuviation",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user's Attack, Special Attack, and Speed by two stages each. Lowers the user's Defense and Special Defense by one stage each."
+		description = "Raises the user’s Attack, Special Attack, and Speed by two stages each. Lowers the user’s Defense and Special Defense by one stage each."
 	},
 	{
 		id = "505",
-		name = "Heal Pulse",
+		name = "Vibra Soin",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -5527,7 +5527,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "506",
-		name = "Hex",
+		name = "Châtiment",
 		type = PokemonData.POKEMON_TYPES.GHOST,
 		power = {"65", "65", "65", "65", "50"},
 		pp = "10",
@@ -5537,7 +5537,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "507",
-		name = "Sky Drop",
+		name = "Chute Libre",
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = "60",
 		pp = "10",
@@ -5547,38 +5547,38 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "508",
-		name = "Shift Gear",
+		name = "Chgt Vitesse",
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user's Attack by one stage and its Speed by two stages."
+		description = "Raises the user’s Attack by one stage and its Speed by two stages."
 	},
 	{
 		id = "509",
-		name = "Circle Throw",
+		name = "Projection",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "60",
 		pp = "10",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Decreased priority. Inflicts regular damage and makes contact. Switches the target out for another of its trainer's Pok" ..
+		description = "Decreased priority. Inflicts regular damage and makes contact. Switches the target out for another of its trainer’s Pok" ..
 			Chars.accentedE .. "mon, selected at random."
 	},
 	{
 		id = "510",
-		name = "Incinerate",
+		name = "Calcination",
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = {"60", "60", "60", "60", "30"},
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. If the target is holding a berry, it's destroyed and cannot be used in response to this move."
+		description = "Inflicts regular damage. If the target is holding a berry, it’s destroyed and cannot be used in response to this move."
 	},
 	{
 		id = "511",
-		name = "Quash",
+		name = "À la Queue",
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -5588,7 +5588,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "512",
-		name = "Acrobatics",
+		name = "Acrobatie",
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = "55",
 		pp = "15",
@@ -5598,17 +5598,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "513",
-		name = "Reflect Type",
+		name = "Copie Type",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "User's type changes to match the target's."
+		description = "User’s type changes to match the target’s."
 	},
 	{
 		id = "514",
-		name = "Retaliate",
+		name = "Vengeance",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "70",
 		pp = "5",
@@ -5619,27 +5619,27 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "515",
-		name = "Final Gambit",
+		name = "Tout ou Rien",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "HP",
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts damage equal to the user's remaining HP. User faints."
+		description = "Inflicts damage equal to the user’s remaining HP. User faints."
 	},
 	{
 		id = "516",
-		name = "Bestow",
+		name = "Passe-Cadeau",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Transfers the user's held item to the target. If the user has no held item, or the target already has a held item, this move will fail."
+		description = "Transfers the user’s held item to the target. If the user has no held item, or the target already has a held item, this move will fail."
 	},
 	{
 		id = "517",
-		name = "Inferno",
+		name = "Feu d’Enfer",
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "100",
 		pp = "5",
@@ -5649,7 +5649,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "518",
-		name = "Water Pledge",
+		name = "Aire d’Eau",
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = {"80", "80", "80", "80", "50"},
 		pp = "10",
@@ -5661,7 +5661,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "519",
-		name = "Fire Pledge",
+		name = "Aire de Feu",
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = {"80", "80", "80", "80", "50"},
 		pp = "10",
@@ -5674,7 +5674,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "520",
-		name = "Grass Pledge",
+		name = "Aire d’Herbe",
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = {"80", "80", "80", "80", "50"},
 		pp = "10",
@@ -5687,7 +5687,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "521",
-		name = "Volt Switch",
+		name = "Change Éclair",
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = "70",
 		pp = "20",
@@ -5698,27 +5698,27 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "522",
-		name = "Struggle Bug",
+		name = "Survinsecte",
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = {"50", "50", "50", "50", "30"},
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 100% chance to lower the target's Special Attack by one stage."
+		description = "Inflicts regular damage. Has a 100% chance to lower the target’s Special Attack by one stage."
 	},
 	{
 		id = "523",
-		name = "Bulldoze",
+		name = "Piétisol",
 		type = PokemonData.POKEMON_TYPES.GROUND,
 		power = "60",
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. Has a 100% chance to lower the target's Speed by one stage."
+		description = "Inflicts regular damage. Has a 100% chance to lower the target’s Speed by one stage."
 	},
 	{
 		id = "524",
-		name = "Frost Breath",
+		name = "SouffleGlacé",
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = {"60", "60", "60", "60", "40"},
 		pp = "10",
@@ -5728,38 +5728,38 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "525",
-		name = "Dragon Tail",
+		name = "Draco-Queue",
 		type = PokemonData.POKEMON_TYPES.DRAGON,
 		power = "60",
 		pp = "10",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Decreased priority. Inflicts regular damage and makes contact. Switches the target out for another of its trainer's Pok" ..
+		description = "Decreased priority. Inflicts regular damage and makes contact. Switches the target out for another of its trainer’s Pok" ..
 			Chars.accentedE .. "mon, selected at random."
 	},
 	{
 		id = "526",
-		name = "Work Up",
+		name = "Rengorgement",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user's Attack and Special Attack by one stage each."
+		description = "Raises the user’s Attack and Special Attack by one stage each."
 	},
 	{
 		id = "527",
-		name = "Electroweb",
+		name = "Toile Élek",
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = "55",
 		pp = "15",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Lowers the target's Speed by one stage."
+		description = "Inflicts regular damage. Lowers the target’s Speed by one stage."
 	},
 	{
 		id = "528",
-		name = "Wild Charge",
+		name = "Eclair Fou",
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = "90",
 		pp = "15",
@@ -5769,17 +5769,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "529",
-		name = "Drill Run",
+		name = "Tunnelier",
 		type = PokemonData.POKEMON_TYPES.GROUND,
 		power = "80",
 		pp = "10",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User's critical hit rate is one level higher when using this move."
+		description = "Inflicts regular damage and makes contact. User’s critical hit rate is one level higher when using this move."
 	},
 	{
 		id = "530",
-		name = "Dual Chop",
+		name = "Double Baffe",
 		type = PokemonData.POKEMON_TYPES.DRAGON,
 		power = "40",
 		pp = "15",
@@ -5789,7 +5789,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "531",
-		name = "Heart Stamp",
+		name = "Crève-Coeur",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = "60",
 		pp = "25",
@@ -5799,7 +5799,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "532",
-		name = "Horn Leech",
+		name = "Encornebois",
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = "75",
 		pp = "10",
@@ -5809,47 +5809,47 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "533",
-		name = "Sacred Sword",
+		name = "Lame Sainte",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "90",
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Damage calculation ignores the target's stat modifiers, including Evasion."
+		description = "Inflicts regular damage and makes contact. Damage calculation ignores the target’s stat modifiers, including Evasion."
 	},
 	{
 		id = "534",
-		name = "Razor Shell",
+		name = "Coqui-Lame",
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = "75",
 		pp = "10",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 50% chance to lower the target's Defense by one stage."
+		description = "Inflicts regular damage and makes contact. Has a 50% chance to lower the target’s Defense by one stage."
 	},
 	{
 		id = "535",
-		name = "Heat Crash",
+		name = "Tacle Feu",
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = ">WT",
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. The greater the user's weight compared to the target's, the higher power this move has, to a maximum of 120."
+		description = "Inflicts regular damage and makes contact. The greater the user’s weight compared to the target’s, the higher power this move has, to a maximum of 120."
 	},
 	{
 		id = "536",
-		name = "Leaf Tornado",
+		name = "Phytomixeur",
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = "65",
 		pp = "10",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 50% chance to lower the target's Accuracy by one stage."
+		description = "Inflicts regular damage. Has a 50% chance to lower the target’s Accuracy by one stage."
 	},
 	{
 		id = "537",
-		name = "Steamroller",
+		name = "Bulldoboule",
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = "65",
 		pp = "20",
@@ -5859,37 +5859,37 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "538",
-		name = "Cotton Guard",
+		name = "Cotogarde",
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user's Defense by three stages."
+		description = "Raises the user’s Defense by three stages."
 	},
 	{
 		id = "539",
-		name = "Night Daze",
+		name = "Explonuit",
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = "85",
 		pp = "10",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 40% chance to lower the target's Accuracy by one stage."
+		description = "Inflicts regular damage. Has a 40% chance to lower the target’s Accuracy by one stage."
 	},
 	{
 		id = "540",
-		name = "Psystrike",
+		name = "Frappe Psy",
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = "100",
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Damage calculation always uses the target's Defense, regardless of this move's damage class."
+		description = "Inflicts regular damage. Damage calculation always uses the target’s Defense, regardless of this move’s damage class."
 	},
 	{
 		id = "541",
-		name = "Tail Slap",
+		name = "Plumo-Queue",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "25",
 		pp = "10",
@@ -5899,7 +5899,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "542",
-		name = "Hurricane",
+		name = "Vent Violent",
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = "120",
 		pp = "10",
@@ -5909,7 +5909,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "543",
-		name = "Head Charge",
+		name = "Peignée",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "120",
 		pp = "15",
@@ -5919,7 +5919,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "544",
-		name = "Gear Grind",
+		name = "Lancécrou",
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = "50",
 		pp = "15",
@@ -5929,7 +5929,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "545",
-		name = "Searing Shot",
+		name = "Incendie",
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "100",
 		pp = "5",
@@ -5939,17 +5939,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "546",
-		name = "Techno Blast",
+		name = "TechnoBuster",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "85",
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. If the user is holding a drive, this move's type is the type corresponding to that item."
+		description = "Inflicts regular damage. If the user is holding a drive, this move’s type is the type corresponding to that item."
 	},
 	{
 		id = "547",
-		name = "Relic Song",
+		name = "ChantAntique",
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "75",
 		pp = "10",
@@ -5959,27 +5959,27 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "548",
-		name = "Secret Sword",
+		name = "Lame Ointe",
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "85",
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Damage calculation uses the target's Defense."
+		description = "Inflicts regular damage. Damage calculation uses the target’s Defense."
 	},
 	{
 		id = "549",
-		name = "Glaciate",
+		name = "Ereglaciaire",
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = "65",
 		pp = "10",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Lowers the target's Speed by one stage."
+		description = "Inflicts regular damage. Lowers the target’s Speed by one stage."
 	},
 	{
 		id = "550",
-		name = "Bolt Strike",
+		name = "ChargeFoudre",
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = "130",
 		pp = "5",
@@ -5989,7 +5989,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "551",
-		name = "Blue Flare",
+		name = "Flamme Bleue",
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "130",
 		pp = "5",
@@ -5999,17 +5999,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "552",
-		name = "Fiery Dance",
+		name = "Danse du Feu",
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "80",
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 50% chance to raise the user's Special Attack by one stage."
+		description = "Inflicts regular damage. Has a 50% chance to raise the user’s Special Attack by one stage."
 	},
 	{
 		id = "553",
-		name = "Freeze Shock",
+		name = "Eclair Gelé",
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = "140",
 		pp = "5",
@@ -6019,7 +6019,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "554",
-		name = "Ice Burn",
+		name = "Feu Glacé",
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = "140",
 		pp = "5",
@@ -6029,17 +6029,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "555",
-		name = "Snarl",
+		name = "Aboiement",
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = "55",
 		pp = "15",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 100% chance to lower the target's Special Attack by one stage."
+		description = "Inflicts regular damage. Has a 100% chance to lower the target’s Special Attack by one stage."
 	},
 	{
 		id = "556",
-		name = "Icicle Crash",
+		name = "Chute Glace",
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = "85",
 		pp = "10",
@@ -6049,17 +6049,17 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "557",
-		name = "V-create",
+		name = "CoupVictoire",
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "180",
 		pp = "5",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Lowers the user's Defense, Special Defense, and Speed by one stage each."
+		description = "Inflicts regular damage and makes contact. Lowers the user’s Defense, Special Defense, and Speed by one stage each."
 	},
 	{
 		id = "558",
-		name = "Fusion Flare",
+		name = "Flamme Croix",
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "100",
 		pp = "5",
@@ -6070,7 +6070,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "559",
-		name = "Fusion Bolt",
+		name = "Eclair Croix",
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = "100",
 		pp = "5",
