@@ -110,7 +110,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "35",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact."
+		description = ""
 	},
 	{
 		id = "2",
@@ -126,7 +126,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "25",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User’s critical hit rate is one level higher when using this move."
+		description = "Attaque 'Poing'. Taux de coups critiques +1." 
 	},
 	{
 		id = "3",
@@ -136,7 +136,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Hits 2-5 times in one turn. Averages to 3 hits per use."
+		description = "Touche 2 à 5 fois." 
 	},
 	{
 		id = "4",
@@ -146,7 +146,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Hits 2-5 times in one turn, and averages to 3 hits per use."
+		description = "Touche 2 à 5 fois." 
 	},
 	{
 		id = "5",
@@ -156,7 +156,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact."
+		description = "Attaque 'Poing'." 
 	},
 	{
 		id = "6",
@@ -166,7 +166,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. After the battle ends, the winner receives five times the user’s level in extra money for each time this move was used."
+		description = "Permet d'obtenir de l'argent à la fin du combat." 
 	},
 	{
 		id = "7",
@@ -176,7 +176,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 10% chance to burn the target."
+		description = "Attaque 'Poing'. 10% de chance de brûler la cible." 
 	},
 	{
 		id = "8",
@@ -186,7 +186,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 10% chance to freeze the target."
+		description = "Attaque 'Poing'. 10% de chance de geler la cible." 
 	},
 	{
 		id = "9",
@@ -196,7 +196,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 10% chance to paralyze the target."
+		description = ""
 	},
 	{
 		id = "10",
@@ -206,7 +206,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "35",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact."
+		description = "Sans effet supplémentaire." 
 	},
 	{
 		id = "11",
@@ -216,7 +216,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact."
+		description = "Sans effet supplémentaire."  
 	},
 	{
 		id = "12",
@@ -226,7 +226,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "30",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Instantly KOs the target and makes contact. This move’s accuracy is 30% plus 1% for each level the user is higher than the target. If the user is a lower level than the target, this move will fail."
+		description = "Met K.O. en un coup. Les Pokémon ayant un niveau strictement supérieur sont immunisés." 
 	},
 	{
 		id = "13",
@@ -236,7 +236,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = {"75", "75", "100", "100", "100"},
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. User’s critical hit rate is one level higher when using this move. User charges for one turn before attacking."
+		description = "Attaque en 2 tours. Taux de coups critiques +1."  
 	},
 	{
 		id = "14",
@@ -246,7 +246,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user’s Attack by two stages."
+		description = "Attaque 'Danse'. Augmente l'Attaque du lanceur de 2 niveaux." 
 	},
 	{
 		id = "15",
@@ -256,7 +256,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact."
+		description = "Sans effet supplémentaire." 
 	},
 	{
 		id = "16",
@@ -272,13 +272,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "35",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = {
-			"Inflicts regular damage. If the target is under the effect of Bounce or Fly, this move will hit with double power.",
-			"Inflicts regular damage. If the target is under the effect of Bounce or Fly, this move will hit with double power.",
-			"Inflicts regular damage. If the target is under the effect of Bounce or Fly, this move will hit with double power.",
-			"Inflicts regular damage. If the target is under the effect of Bounce or Fly, this move will hit with double power.",
-			"Inflicts regular damage. If the target is under the effect of Bounce, Fly, or Sky Drop, this move will hit with double power."
-		}
+		description = "Attaque en 2 tours. Le lanceur est invulnérable pendant le chargement."  
 	},
 	{
 		id = "17",
@@ -288,7 +282,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "35",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact."
+		description = "Attaque en 2 tours. Le lanceur est invulnérable pendant le chargement."  
 	},
 	{
 		id = "18",
@@ -298,10 +292,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = {"85", "100", "100", "100", "100"},
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Decreased priority. Switches the target out for another of its trainer’s Pok" ..
-			Chars.accentedE ..
-				"mon selected at random. Doesn’t affect Pok" ..
-					Chars.accentedE .. "mon with suction cups or under the effect of ingrain."
+		description = "Priorité -6. Éjecte le Pokémon adverse et le remplace par un autre. Lorsqu'un Pokémon sauvage seul l'utilise, cela met fin au combat." 
 	},
 	{
 		id = "19",
@@ -311,7 +302,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User flies high into the air for one turn, becoming immune to attack, and hits on the second turn. This move cannot be used while gravity is in effect."
+		description = "Attaque en 2 tours. Le lanceur est invulnérable pendant le chargement." 
 	},
 	{
 		id = "20",
@@ -321,13 +312,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = {"75", "75", "75", "75", "85"},
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = {
-			"Makes contact. For the next 2-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.",
-			"Makes contact. For the next 2-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.",
-			"Makes contact. For the next 2-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.",
-			"Makes contact. For the next 2-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.",
-			"Makes contact. For the next 4-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn."
-		}
+		description = "Ligote la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir."
 	},
 	{
 		id = "21",
@@ -337,7 +322,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "75",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact."
+		description = "Sans effet supplémentaire." 
 	},
 	{
 		id = "22",
@@ -347,7 +332,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = {"10", "10", "10", "15", "15"},
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact."
+		description = "Sans effet supplémentaire." 
 	},
 	{
 		id = "23",
@@ -357,8 +342,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 30% chance to make the target flinch. Power is doubled against Pok" ..
-			Chars.accentedE .. "mon that are minimized."
+		description = ""
 	},
 	{
 		id = "24",
@@ -368,7 +352,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Hits twice in one turn."
+		description = "Touche 2 fois." 
 	},
 	{
 		id = "25",
@@ -378,7 +362,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "75",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact."
+		description = "Sans effet supplémentaire." 
 	},
 	{
 		id = "26",
@@ -388,13 +372,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = {"25", "25", "25", "25", "10"},
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = {
-			"Inflicts regular damage and makes contact. If this move misses, the user takes half the damage it would have dealt. If the move would have no effect, the user takes damage equal to half the target’s max HP.",
-			"Inflicts regular damage and makes contact. If this move misses, the user takes half the damage it would have dealt. If the move would have no effect, the user takes damage equal to half the target’s max HP.",
-			"Inflicts regular damage and makes contact. If this move misses, the user takes half the damage it would have dealt. If the move would have no effect, the user takes damage equal to half the target’s max HP.",
-			"Inflicts regular damage and makes contact. If this move misses, the user takes half the damage it would have dealt. If the move would have no effect, the user takes damage equal to half the target’s max HP.",
-			"Inflicts regular damage and makes contact. If this move misses, the user takes half its max HP in damage."
-		}
+		description = "Le lanceur perd 50% des PV max de la cible s'il rate l'attaque." 
 	},
 	{
 		id = "27",
@@ -404,7 +382,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 30% chance to make the target flinch."
+		description = "30% de chance d'apeurer la cible." 
 	},
 	{
 		id = "28",
@@ -420,7 +398,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target’s Accuracy by one stage."
+		description = "Baisse la Précision de la cible d'un niveau." 
 	},
 	{
 		id = "29",
@@ -430,7 +408,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 30% chance to make the target flinch."
+		description = "30% de chance d'apeurer la cible." 
 	},
 	{
 		id = "30",
@@ -440,7 +418,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "25",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact."
+		description = "Sans effet supplémentaire." 
 	},
 	{
 		id = "31",
@@ -450,7 +428,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Hits 2-5 times in one turn, and averages to 3 hits per use."
+		description = "Touche 2 à 5 fois." 
 	},
 	{
 		id = "32",
@@ -460,7 +438,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "30",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Instantly KOs the target and makes contact. This move’s accuracy is 30% plus 1% for each level the user is higher than the target. If the user is a lower level than the target, this move will fail."
+		description = "Met K.O. en un coup. Les Pokémon ayant un niveau strictement supérieur sont immunisés." 
 	},
 	{
 		id = "33",
@@ -470,7 +448,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "35",
 		accuracy = {"95", "95", "95", "95", "100"},
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact."
+		description = "Sans effet supplémentaire." 
 	},
 	{
 		id = "34",
@@ -480,7 +458,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 30% chance to paralyze the target."
+		description = "30% de chance de paralyser la cible." 
 	},
 	{
 		id = "35",
@@ -490,13 +468,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = {"85", "85", "85", "85", "90"},
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = {
-			"Makes contact. For the next 2-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.",
-			"Makes contact. For the next 2-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.",
-			"Makes contact. For the next 2-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.",
-			"Makes contact. For the next 2-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.",
-			"Makes contact. For the next 4-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn."
-		}
+		description = "Ligote la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir."
 	},
 	{
 		id = "36",
@@ -506,7 +478,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User takes 1/4 the damage it inflicts in recoil."
+		description = "Attaque 'à contrecoup'. Les dégâts de recul sont équivalents à 1/4 des dégâts infligés à la cible."
 	},
 	{
 		id = "37",
@@ -516,7 +488,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = {"20", "20", "20", "20", "10"},
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User is forced to attack with this move for 2-3 turns, selected at random. After the last hit, the user becomes confused."
+		description = "Le lanceur se bloque sur la capacité pendant 2 à 3 tours, puis devient confus." 
 	},
 	{
 		id = "38",
@@ -526,7 +498,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User takes 1/3 the damage it inflicts in recoil."
+		description = "Attaque 'à contrecoup'. Les dégâts de recul sont équivalents à 1/3 des dégâts infligés à la cible."
 	},
 	{
 		id = "39",
@@ -536,7 +508,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target’s Defense by one stage."
+		description = "Baisse la Défense des cibles d'un niveau." 
 	},
 	{
 		id = "40",
@@ -546,7 +518,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "35",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. Has a 30% chance to poison the target."
+		description = "30% de chance d'empoisonner la cible." 
 	},
 	{
 		id = "41",
@@ -556,7 +528,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. Hits twice in the same turn. Has a 20% chance on each hit to poison the target."
+		description = "20% de chance d'empoisonner la cible par coup."
 	},
 	{
 		id = "42",
@@ -566,7 +538,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. Hits 2-5 times in one turn, and averages to 3 hits per use."
+		description = "Touche 2 à 5 fois." 
 	},
 	{
 		id = "43",
@@ -576,7 +548,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target’s Defense by one stage."
+		description = "Baisse la Défense des cibles d'un niveau." 
 	},
 	{
 		id = "44",
@@ -592,7 +564,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "25",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 30% chance to make the target flinch."
+		description = "Attaque 'Croc'. 30% de chance d'apeurer la cible." 
 	},
 	{
 		id = "45",
@@ -602,7 +574,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "40",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target’s Attack by one stage."
+		description = "Attaque sonore. Baisse l'Attaque des cibles d'un niveau." 
 	},
 	{
 		id = "46",
@@ -612,8 +584,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Decreased priority. Switches the target out for another of its trainer’s Pok" ..
-			Chars.accentedE .. "mon selected at random. Wild battles end immediately."
+		description = "Attaque sonore. Priorité -6. Éjecte le Pokémon adverse et le remplace par un autre. Lorsqu'un Pokémon sauvage seul l'utilise, cela met fin au combat." 
 	},
 	{
 		id = "47",
@@ -623,7 +594,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "55",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Puts the target to sleep."
+		description = "Attaque sonore. Endort la cible." 
 	},
 	{
 		id = "48",
@@ -633,7 +604,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "55",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Confuses the target."
+		description = "Attaque sonore. Rend confus la cible." 
 	},
 	{
 		id = "49",
@@ -643,7 +614,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts exactly 20 damage."
+		description = "Inflige toujours 20 PV." 
 	},
 	{
 		id = "50",
@@ -653,13 +624,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = {"55", "55", "55", "80", "100"},
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = {
-			"Disables the target’s last used move, preventing its use for 4-7 turns, selected at random, or until the target leaves the field. Using an item counts as a turn.",
-			"Disables the target’s last used move, preventing its use for 4-7 turns, selected at random, or until the target leaves the field. Using an item counts as a turn.",
-			"Disables the target’s last used move, preventing its use for 4-7 turns, selected at random, or until the target leaves the field. Using an item counts as a turn.",
-			"Disables the target’s last used move, preventing its use for 4-7 turns, selected at random, or until the target leaves the field. Using an item counts as a turn.",
-			"Disables the target’s last used move, preventing its use for 4 turns, or until the target leaves the field. Using an item counts as a turn."
-		}
+		description = "Empêche la cible d'utiliser sa dernière capacité utilisée depuis qu'elle est rentrée sur le terrain pendant 4 à 7 tours." 
 	},
 	{
 		id = "51",
@@ -669,7 +634,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to lower the target’s Special Defense by one stage."
+		description = "10% de chance de baisser la Défense Spéciale des cibles d'un niveau." 
 	},
 	{
 		id = "52",
@@ -679,7 +644,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "25",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to burn the target."
+		description = "10% de chance de brûler la cible." 
 	},
 	{
 		id = "53",
@@ -689,7 +654,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to burn the target."
+		description = "10% de chance de brûler la cible." 
 	},
 	{
 		id = "54",
@@ -699,9 +664,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Pok" ..
-			Chars.accentedE ..
-				"mon on the user’s side of the field are immune to stat-lowering effects for five turns. Guard Swap, Heart Swap, and Power Swap may still be used."
+		description = "Crée une brume qui empêche la réduction des stats durant 5 tours." 
 	},
 	{
 		id = "55",
@@ -711,7 +674,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "25",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage."
+		description = "Sans effet supplémentaire." 
 	},
 	{
 		id = "56",
@@ -721,7 +684,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "80",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage."
+		description = "Sans effet supplémentaire." 
 	},
 	{
 		id = "57",
@@ -731,7 +694,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. If the target is in the first turn of dive, this move will hit with double power."
+		description = "La puissance est doublée si la cible est sous l'eau (Plongée)."  
 	},
 	{
 		id = "58",
@@ -741,7 +704,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to freeze the target."
+		description = "Attaque en 2 tours. Le lanceur est invulnérable pendant le chargement."  
 	},
 	{
 		id = "59",
@@ -751,7 +714,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = {"90", "70", "70", "70", "70"},
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to freeze the target. During hail, this move has perfect accuracy."
+		description = "10% de chance de geler la cible." 
 	},
 	{
 		id = "60",
@@ -761,7 +724,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to confuse the target."
+		description = "10% de chance de rendre confus la cible." 
 	},
 	{
 		id = "61",
@@ -771,7 +734,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to lower the target’s Speed by one stage."
+		description = "10% de chance de baisser la Vitesse de la cible d'un niveau." 
 	},
 	{
 		id = "62",
@@ -781,7 +744,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to lower the target’s Attack by one stage."
+		description = "10% de chance de baisser l'Attaque de la cible d'un niveau." 
 	},
 	{
 		id = "63",
@@ -791,7 +754,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. User loses its next turn to recharge, and cannot attack or switch out during that turn."
+		description = "Le lanceur doit se reposer au tour suivant." 
 	},
 	{
 		id = "64",
@@ -801,7 +764,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "35",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact."
+		description = "Sans effet supplémentaire." 
 	},
 	{
 		id = "65",
@@ -811,7 +774,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact."
+		description = "Sans effet supplémentaire." 
 	},
 	{
 		id = "66",
@@ -821,7 +784,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "25",
 		accuracy = "80",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User takes 1/4 the damage it inflicts in recoil."
+		description = "Attaque 'à contrecoup'. Les dégâts de recul sont équivalents à 1/4 des dégâts infligés à la cible."
 	},
 	{
 		id = "67",
@@ -831,7 +794,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = {"90", "90", "100", "100", "100"},
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Power increases with the target’s weight in kilograms, to a maximum of 120."
+		description = "Plus la cible est lourde, plus l'attaque est puissante. La puissance varie entre 20 et 120." 
 	},
 	{
 		id = "68",
@@ -841,7 +804,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Decreased priority and makes contact. Inflicts twice the damage that move did to the user. If there is no eligible target, this move will fail. Type immunity applies, but other type effects are ignored."
+		description = "Priorité -5. Inflige le double de dégâts à une cible si elle a attaqué avec une attaque physique." 
 	},
 	{
 		id = "69",
@@ -851,7 +814,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Makes contact and inflicts damage equal to the user’s level. Type immunity applies, but other type effects are ignored."
+		description = "Inflige des dégâts équivalents au niveau du lanceur." 
 	},
 	{
 		id = "70",
@@ -861,7 +824,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact."
+		description = "Sans effet supplémentaire." 
 	},
 	{
 		id = "71",
@@ -871,7 +834,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "25",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Drains half the damage inflicted to heal the user."
+		description = "Convertit 50% des dégâts infligés à la cible en PV pour le lanceur."  
 	},
 	{
 		id = "72",
@@ -881,7 +844,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = {"10", "10", "10", "15", "15"},
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Drains half the damage inflicted to heal the user."
+		description = "Convertit 50% des dégâts infligés à la cible en PV pour le lanceur." 
 	},
 	{
 		id = "73",
@@ -891,8 +854,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Plants a seed on the target that drains 1/8 of its max HP at the end of every turn. Has no effect on grass Pok" ..
-			Chars.accentedE .. "mon, and Liquid Ooze will cause the user to take damage."
+		description = "Infecte la cible avec des graines qui infligent 1/8 des PV max à la fin de chaque tour, et régénère le lanceur du même montant de PV."
 	},
 	{
 		id = "74",
@@ -902,13 +864,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "40",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = {
-			"Raises the user’s Special Attack by one stage.",
-			"Raises the user’s Special Attack by one stage.",
-			"Raises the user’s Special Attack by one stage.",
-			"Raises the user’s Special Attack by one stage.",
-			"Raises the user’s Attack and Special Attack by one stage each. During sunny day, raises both stats by two stages."
-		}
+		description = "Augmente l'Attaque Spéciale du lanceur d'un niveau." 
 	},
 	{
 		id = "75",
@@ -918,7 +874,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "25",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. User’s critical hit rate is one level higher when using this move."
+		description = "Taux de coups critiques +1." 
 	},
 	{
 		id = "76",
@@ -928,7 +884,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. User charges for one turn before attacking. During sunny day, the charge turn is skipped."
+		description = "Attaque en 2 tours. L'attaque se fait en 1 tour par temps de soleil." 
 	},
 	{
 		id = "77",
@@ -938,7 +894,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "35",
 		accuracy = "75",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Poisons the target."
+		description = "Empoisonne gravement la cible."  
 	},
 	{
 		id = "78",
@@ -948,7 +904,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = "75",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Paralyzes the target."
+		description = "Attaque 'Poudre'. Endort la cible."  
 	},
 	{
 		id = "79",
@@ -958,7 +914,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "75",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Puts the target to sleep."
+		description = "Attaque 'Poudre'. Endort la cible." 
 	},
 	{
 		id = "80",
@@ -968,7 +924,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = {"20", "20", "20", "20", "10"},
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage and makes contact. User is forced to attack with this move for 2-3 turns, selected at random. After the last hit, the user becomes confused."
+		description = "Attaque 'Danse'. Le lanceur se bloque sur la capacité pendant 2 à 3 tours, puis devient confus." 
 	},
 	{
 		id = "81",
@@ -978,7 +934,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "40",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target’s Speed by two stages."
+		description = "Baisse la Vitesse des cibles d'un niveau." 
 	},
 	{
 		id = "82",
@@ -988,7 +944,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts exactly 40 damage."
+		description = "Inflige toujours 40 PV." 
 	},
 	{
 		id = "83",
@@ -998,13 +954,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = {"70", "70", "70", "70", "85"},
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = {
-			"For the next 2-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.",
-			"For the next 2-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.",
-			"For the next 2-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.",
-			"For the next 2-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.",
-			"For the next 4-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn."
-		}
+		description = "Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir."
 	},
 	{
 		id = "84",
@@ -1014,7 +964,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to paralyze the target."
+		description = ""
 	},
 	{
 		id = "85",
@@ -1024,7 +974,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to paralyze the target."
+		description = "10% de chance de paralyser la cible." 
 	},
 	{
 		id = "86",
@@ -1034,7 +984,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Paralyzes the target."
+		description = ""
 	},
 	{
 		id = "87",
@@ -1044,7 +994,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "70",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 30% chance to paralyze the target. Has perfect accuracy in the rain, but only 50% accuracy in harsh sunlight."
+		description = "30% de chance de paralyser la cible." 
 	},
 	{
 		id = "88",
@@ -1054,7 +1004,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = {"65", "90", "90", "90", "90"},
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage."
+		description = "Sans effet supplémentaire." 
 	},
 	{
 		id = "89",
@@ -1064,7 +1014,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. If the target is in the first turn of dig, this move will hit with double power."
+		description = "Attaque en 2 tours. Le lanceur est invulnérable pendant le chargement."  
 	},
 	{
 		id = "90",
@@ -1074,7 +1024,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "30",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Instantly KOs the target. This move’s accuracy is 30% plus 1% for each level the user is higher than the target. If the user is a lower level than the target, this move will fail."
+		description = "Attaque en 2 tours. Le lanceur est invulnérable pendant le chargement."  
 	},
 	{
 		id = "91",
@@ -1084,7 +1034,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Makes contact. User digs underground for one turn, becoming immune to all attacks except for earthquake and magnitude, which hit for double power. User inflicts regular damage next turn."
+		description = "Attaque en 2 tours. Le lanceur est invulnérable pendant le chargement." 
 	},
 	{
 		id = "92",
@@ -1094,7 +1044,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = {"85", "85", "85", "85", "90"},
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Badly poisons the target."
+		description = "Empoisonne gravement la cible." 
 	},
 	{
 		id = "93",
@@ -1104,7 +1054,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "25",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to confuse the target."
+		description = "10% de chance de rendre confus la cible." 
 	},
 	{
 		id = "94",
@@ -1114,7 +1064,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to lower the target’s Special Defense by one stage."
+		description = "10% de chance de baisser la Défense Spéciale de la cible d'un niveau." 
 	},
 	{
 		id = "95",
@@ -1124,7 +1074,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "60",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Puts the target to sleep."
+		description = "Endort la cible." 
 	},
 	{
 		id = "96",
@@ -1134,7 +1084,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "40",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user’s Attack by one stage."
+		description = "Augmente l'Attaque du lanceur d'un niveau." 
 	},
 	{
 		id = "97",
@@ -1144,7 +1094,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user’s Speed by two stages."
+		description = "Augmente la Vitesse du lanceur de 2 niveaux." 
 	},
 	{
 		id = "98",
@@ -1154,7 +1104,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Increased priority. Inflicts regular damage and makes contact."
+		description = "Priorité +1." 
 	},
 	{
 		id = "99",
@@ -1164,7 +1114,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Every time the user is hit after it uses this move but before its next action, its Attack raises by one stage."
+		description = "Augmente l'Attaque du lanceur d'un niveau à chaque coup reçu." 
 	},
 	{
 		id = "100",
@@ -1174,7 +1124,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Does nothing. Wild battles end immediately."
+		description = "Aucun effet dans un combat de Dresseurs. Quand cette capacité est utilisée par un Pokémon sauvage, celui-ci fuit le combat." 
 	},
 	{
 		id = "101",
@@ -1184,7 +1134,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts damage equal to the user’s level. Type immunity applies, but other type effects are ignored."
+		description = "Inflige des dégâts équivalents au niveau du lanceur." 
 	},
 	{
 		id = "102",
@@ -1194,13 +1144,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = {"100", "100", Graphics.TEXT.ALWAYS_HITS, Graphics.TEXT.ALWAYS_HITS, Graphics.TEXT.ALWAYS_HITS},
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = {
-			"This move is replaced by the target’s last successfully used move, and its PP changes to 5. If Chatter, Metronome, Mimic, Sketch, or Struggle is selected, this move will fail.",
-			"This move is replaced by the target’s last successfully used move, and its PP changes to 5. If Chatter, Metronome, Mimic, Sketch, or Struggle is selected, this move will fail.",
-			"This move is replaced by the target’s last successfully used move, and its PP changes to 5. If Chatter, Metronome, Mimic, Sketch, or Struggle is selected, this move will fail.",
-			"This move is replaced by the target’s last successfully used move, and its PP changes to 5. If Chatter, Metronome, Mimic, Sketch, or Struggle is selected, this move will fail.",
-			"This move is replaced by the target’s last successfully used move, with full PP. If Chatter, Metronome, Mimic, Sketch, Struggle, or Transform is selected, this move will fail."
-		}
+		description = "Le lanceur copie la dernière capacité utilisée par la cible et la conserve tant qu'il reste au combat." 
 	},
 	{
 		id = "103",
@@ -1210,7 +1154,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "40",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target’s Defense by two stages."
+		description = "Attaque sonore. Baisse la Défense de la cible de 2 niveaux." 
 	},
 	{
 		id = "104",
@@ -1220,7 +1164,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user’s Evasion by one stage."
+		description = "Augmente l'Esquive du lanceur d'un niveau." 
 	},
 	{
 		id = "105",
@@ -1230,7 +1174,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = {"20", "20", "20", "10", "10"},
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Heals the user for half its max HP."
+		description = "Le lanceur récupère 50% de ses PV max." 
 	},
 	{
 		id = "106",
@@ -1240,7 +1184,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user’s Defense by one stage."
+		description = "Augmente la Défense du lanceur d'un niveau." 
 	},
 	{
 		id = "107",
@@ -1250,18 +1194,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = {
-			"Raises the user’s Evasion by one stage. Stomp has double power against Pok" ..
-				Chars.accentedE .. "mon that have used this move since entering the field.",
-			"Raises the user’s Evasion by one stage. Stomp has double power against Pok" ..
-				Chars.accentedE .. "mon that have used this move since entering the field.",
-			"Raises the user’s Evasion by one stage. Stomp has double power against Pok" ..
-				Chars.accentedE .. "mon that have used this move since entering the field.",
-			"Raises the user’s Evasion by one stage. Stomp has double power against Pok" ..
-				Chars.accentedE .. "mon that have used this move since entering the field.",
-			"Raises the user’s Evasion by two stages. Stomp and Steamroller have double power against Pok" ..
-				Chars.accentedE .. "mon that have used this move since entering the field."
-		}
+		description = "Augmente l'Esquive du lanceur d'un niveau." 
 	},
 	{
 		id = "108",
@@ -1271,7 +1204,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target’s Accuracy by one stage."
+		description = "Baisse la Précision de la cible d'un niveau." 
 	},
 	{
 		id = "109",
@@ -1281,7 +1214,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Confuses the target."
+		description = "Rend confus la cible." 
 	},
 	{
 		id = "110",
@@ -1291,7 +1224,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "40",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user’s Defense by one stage."
+		description = "Augmente la Défense du lanceur d'un niveau." 
 	},
 	{
 		id = "111",
@@ -1301,7 +1234,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "40",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises user’s Defense by one stage. After this move is used, the power of Ice Ball and Rollout are doubled until the user leaves the field."
+		description = "Augmente la Défense du lanceur d'un niveau."  
 	},
 	{
 		id = "112",
@@ -1311,7 +1244,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user’s Defense by two stages."
+		description = "Augmente la Défense du lanceur de 2 niveaux." 
 	},
 	{
 		id = "113",
@@ -1321,7 +1254,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Erects a barrier around the user’s side of the field that reduces damage from special attacks by half for five turns. Brick Break or Defog will destroy the barrier."
+		description = "Crée un mur qui réduit de 50% les dégâts spéciaux subis par les Pokémon de l'équipe. La réduction est de 33% en combat Duo." 
 	},
 	{
 		id = "114",
@@ -1331,7 +1264,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Removes stat, Accuracy, and Evasion modifiers from every Pok" .. Chars.accentedE .. "mon on the field."
+		description = "Annule les changements de stats de tous les Pokémon au combat." 
 	},
 	{
 		id = "115",
@@ -1341,7 +1274,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Erects a barrier around the user’s side of the field that reduces damage from physical attacks by half for five turns. Brick Break or Defog will destroy the barrier."
+		description = "Crée un mur qui réduit de 50% les dégâts physiques subis par les Pokémon de l'équipe. La réduction est de 33% en combat Duo." 
 	},
 	{
 		id = "116",
@@ -1351,7 +1284,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "User’s critical hit rate is two levels higher until it leaves the field. If the user has already used focus energy since entering the field, this move will fail."
+		description = "Augmente le taux de coups critiques de 2 niveaux." 
 	},
 	{
 		id = "117",
@@ -1361,8 +1294,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = {"100", "100", "100", Graphics.TEXT.ALWAYS_HITS, Graphics.TEXT.ALWAYS_HITS},
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Increased priority and makes contact. User waits for two turns. On the second turn, the user inflicts twice the damage it accumulated on the last Pok" ..
-			Chars.accentedE .. "mon to hit it. Damage inflicted is typeless."
+		description = "Priorité +1. Se concentre pendant 2 tours et renvoie le double des dégâts subis le troisième tour." 
 	},
 	{
 		id = "118",
@@ -1372,13 +1304,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = {
-			"Selects any move at random and uses it. Moves the user already knows are not eligible. Assist, meta, protection, and reflection moves are also not eligible.",
-			"Selects any move at random and uses it. Moves the user already knows are not eligible. Assist, meta, protection, and reflection moves are also not eligible.",
-			"Selects any move at random and uses it. Moves the user already knows are not eligible. Assist, meta, protection, and reflection moves are also not eligible.",
-			"Selects any move at random and uses it. Moves the user already knows are not eligible. Assist, meta, protection, and reflection moves are also not eligible.",
-			"Selects any move at random and uses it. Assist, meta, protection, and reflection moves are not eligible."
-		}
+		description = "Le lanceur utilise une capacité aléatoire du jeu." 
 	},
 	{
 		id = "119",
@@ -1388,7 +1314,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Uses the last move targeted at the user by a Pok" .. Chars.accentedE .. "mon still on the field."
+		description = "Utilise la dernière capacité qui a ciblé le lanceur." 
 	},
 	{
 		id = "120",
@@ -1398,13 +1324,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = {
-			"User faints, even if the attack fails or misses. Inflicts regular damage. Halves the target’s Defense for damage calculation.",
-			"User faints, even if the attack fails or misses. Inflicts regular damage. Halves the target’s Defense for damage calculation.",
-			"User faints, even if the attack fails or misses. Inflicts regular damage. Halves the target’s Defense for damage calculation.",
-			"User faints, even if the attack fails or misses. Inflicts regular damage. Halves the target’s Defense for damage calculation.",
-			"User faints, even if the attack fails or misses. Inflicts regular damage."
-		}
+		description = "Le lanceur tombe K.O. avant d'attaquer. Lors de cette attaque, la Défense des cibles est divisée par 2." 
 	},
 	{
 		id = "121",
@@ -1414,7 +1334,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "75",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage."
+		description = "Attaque 'Bombe'." 
 	},
 	{
 		id = "122",
@@ -1424,7 +1344,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 30% chance to paralyze the target."
+		description = "30% de chance de paralyser la cible." 
 	},
 	{
 		id = "123",
@@ -1434,7 +1354,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "70",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 40% chance to poison the target."
+		description = "40% de chance d'empoisonner la cible." 
 	},
 	{
 		id = "124",
@@ -1444,7 +1364,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 30% chance to poison the target."
+		description = "30% de chance d'empoisonner la cible." 
 	},
 	{
 		id = "125",
@@ -1454,7 +1374,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. Has a 10% chance to make the target flinch."
+		description = "10% de chance d'apeurer la cible." 
 	},
 	{
 		id = "126",
@@ -1464,7 +1384,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to burn the target."
+		description = "10% de chance de brûler la cible." 
 	},
 	{
 		id = "127",
@@ -1474,7 +1394,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 20% chance to make the target flinch."
+		description = "20% de chance d'apeurer la cible." 
 	},
 	{
 		id = "128",
@@ -1484,13 +1404,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = {"10", "10", "10", "10", "15"},
 		accuracy = {"75", "75", "75", "75", "85"},
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = {
-			"Makes contact. For the next 2-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.",
-			"Makes contact. For the next 2-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.",
-			"Makes contact. For the next 2-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.",
-			"Makes contact. For the next 2-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.",
-			"Makes contact. For the next 4-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn."
-		}
+		description = "Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir."
 	},
 	{
 		id = "129",
@@ -1500,7 +1414,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Ignores Accuracy and Evasion modifiers."
+		description = "Sans effet supplémentaire." 
 	},
 	{
 		id = "130",
@@ -1510,7 +1424,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Raises the user’s Defense by one stage. User then charges for one turn before attacking."
+		description = "Attaque en 2 tours. Augmente la Défense du lanceur d'un niveau le premier tour et attaque le second tour." 
 	},
 	{
 		id = "131",
@@ -1520,7 +1434,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. Hits 2-5 times in one turn, and averages to 3 hits per use."
+		description = "Touche 2 à 5 fois." 
 	},
 	{
 		id = "132",
@@ -1530,7 +1444,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "35",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 10% chance to lower the target’s Speed by one stage."
+		description = "10% de chance de baisser la Vitesse de la cible d'un niveau." 
 	},
 	{
 		id = "133",
@@ -1540,7 +1454,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user’s Special Defense by two stages."
+		description = "Augmente la Défense Spéciale du lanceur 2 niveaux." 
 	},
 	{
 		id = "134",
@@ -1550,7 +1464,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "80",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target’s Accuracy by one stage."
+		description = "Baisse la Précision de la cible d'un niveau." 
 	},
 	{
 		id = "135",
@@ -1560,7 +1474,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Heals the user for half its max HP."
+		description = "Le lanceur récupère 50% de ses PV max." 
 	},
 	{
 		id = "136",
@@ -1570,7 +1484,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = {"20", "20", "20", "20", "10"},
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. If this move does not hit the target, the user takes damage equal to half of its max HP rounded down. Gravity disables this move."
+		description = "Attaque en 2 tours. Le lanceur est invulnérable pendant le chargement."  
 	},
 	{
 		id = "137",
@@ -1580,7 +1494,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = {"75", "75", "75", "75", "90"},
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Paralyzes the target."
+		description = "Paralyse la cible." 
 	},
 	{
 		id = "138",
@@ -1590,8 +1504,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Fails if not used on a sleeping Pok" ..
-			Chars.accentedE .. "mon. Inflicts regular damage. Drains half the damage inflicted to heal the user."
+		description = "Le lanceur mange le rêve de l'ennemi endormi et récupère en PV la moitié des dégâts infligés." 
 	},
 	{
 		id = "139",
@@ -1601,7 +1514,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "40",
 		accuracy = {"55", "55", "55", "55", "80"},
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Poisons the target."
+		description = "Empoisonne gravement la cible."  
 	},
 	{
 		id = "140",
@@ -1611,7 +1524,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. Hits 2-5 times in one turn. Averages to 3 hits per use."
+		description = "Touche 2 à 5 fois." 
 	},
 	{
 		id = "141",
@@ -1621,7 +1534,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Drains half the damage inflicted to heal the user."
+		description = "Convertit 50% des dégâts infligés à la cible en PV pour le lanceur." 
 	},
 	{
 		id = "142",
@@ -1631,7 +1544,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "75",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Puts the target to sleep."
+		description = "Endort la cible." 
 	},
 	{
 		id = "143",
@@ -1641,7 +1554,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. User charges for one turn before attacking, and critical hit chance is one level higher than normal. Has a 30% chance to make the target flinch."
+		description = "Attaque en 2 tours. 30% de chance d'apeurer la cible. Taux de coups critiques +1."
 	},
 	{
 		id = "144",
@@ -1651,7 +1564,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "User copies the target’s species, weight, type, ability, calculated stats (except HP), and moves. Copied moves will all have 5 PP remaining."
+		description = "Se transforme en le Pokémon adverse, copiant toutes ses statistiques (sauf les PV), toutes ses capacités (avec 5 PP) et son talent." 
 	},
 	{
 		id = "145",
@@ -1661,7 +1574,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to lower the target’s Speed by one stage."
+		description = ""
 	},
 	{
 		id = "146",
@@ -1671,7 +1584,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 20% chance to confuse the target."
+		description = "Attaque 'Poing'. 20% de chance de rendre confus la cible." 
 	},
 	{
 		id = "147",
@@ -1681,7 +1594,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Puts the target to sleep."
+		description = "Attaque 'Poudre'. Endort la cible." 
 	},
 	{
 		id = "148",
@@ -1691,7 +1604,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = {"70", "70", "70", "100", "100"},
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target’s Accuracy by one stage."
+		description = "Baisse la Précision de la cible d'un niveau." 
 	},
 	{
 		id = "149",
@@ -1701,13 +1614,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "80",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = {
-			"Inflicts typeless damage between 50% and 150% of the user’s level, selected at random in increments of 10%.",
-			"Inflicts typeless damage between 50% and 150% of the user’s level, selected at random in increments of 10%.",
-			"Inflicts typeless damage between 50% and 150% of the user’s level, selected at random in increments of 10%.",
-			"Inflicts typeless damage between 50% and 150% of the user’s level, selected at random in increments of 10%.",
-			"Inflicts typeless damage between 50% and 150% of the user’s level, selected at random in increments of 1%."
-		}
+		description = "Inflige des dégâts variables entre 50% et 150% du niveau du lanceur." 
 	},
 	{
 		id = "150",
@@ -1717,7 +1624,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "40",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Makes the user absolutely useless for one turn."
+		description = "Sans effet." 
 	},
 	{
 		id = "151",
@@ -1727,7 +1634,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "40",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user’s Defense by two stages."
+		description = "Augmente la Défense du lanceur de 2 niveaux." 
 	},
 	{
 		id = "152",
@@ -1737,7 +1644,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = {"85", "85", "85", "85", "90"},
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User’s critical hit rate is one level higher when using this move."
+		description = "Taux de coups critiques +1." 
 	},
 	{
 		id = "153",
@@ -1747,13 +1654,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = {
-			"User faints, even if the attack fails or misses. Inflicts regular damage. Halves the target’s Defense for damage calculation.",
-			"User faints, even if the attack fails or misses. Inflicts regular damage. Halves the target’s Defense for damage calculation.",
-			"User faints, even if the attack fails or misses. Inflicts regular damage. Halves the target’s Defense for damage calculation.",
-			"User faints, even if the attack fails or misses. Inflicts regular damage. Halves the target’s Defense for damage calculation.",
-			"User faints, even if the attack fails or misses. Inflicts regular damage."
-		}
+		description = "Le lanceur tombe K.O. avant d'attaquer. Lors de cette attaque, la Défense des cibles est divisée par 2." 
 	},
 	{
 		id = "154",
@@ -1763,7 +1664,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "80",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Hits 2-5 times in one turn, and averages to 3 hits per use."
+		description = "Sans effet supplémentaire."  
 	},
 	{
 		id = "155",
@@ -1773,7 +1674,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. Hits twice in one turn."
+		description = "Touche 2 fois." 
 	},
 	{
 		id = "156",
@@ -1783,7 +1684,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "User falls to sleep and immediately regains all its HP. The user will always wake up after two turns, or one turn with early bird."
+		description = "Le lanceur récupère 100% de ses PV max et s'endort pendant 2 tours." 
 	},
 	{
 		id = "157",
@@ -1793,7 +1694,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. Has a 30% chance to make the target flinch."
+		description = ""
 	},
 	{
 		id = "158",
@@ -1803,7 +1704,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 10% chance to make the target flinch."
+		description = "Attaque 'Croc'. 10% de chance d'apeurer la cible." 
 	},
 	{
 		id = "159",
@@ -1813,7 +1714,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user’s Attack by one stage."
+		description = "Augmente l'Attaque du lanceur d'un niveau." 
 	},
 	{
 		id = "160",
@@ -1823,13 +1724,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = {
-			"User’s type changes to the type of one of its moves, selected at random. Only moves with a different type are eligible, and Curse is never eligible.",
-			"User’s type changes to the type of one of its moves, selected at random. Only moves with a different type are eligible, and Curse is never eligible.",
-			"User’s type changes to the type of one of its moves, selected at random. Only moves with a different type are eligible, and Curse is never eligible.",
-			"User’s type changes to the type of one of its moves, selected at random. Only moves with a different type are eligible, and Curse is never eligible.",
-			"User’s type changes to the type of one of its moves, selected at random. Only moves with a different type are eligible."
-		}
+		description = "Le lanceur change de type pour prendre celui d'une de ses capacités choisie aléatoirement." 
 	},
 	{
 		id = "161",
@@ -1839,7 +1734,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 20% for an effect to occur, which can then be burn, freeze, or paralysis."
+		description = "20% de chance d'infliger une brûlure, une paralysie ou un gel (6.67% chacun)." 
 	},
 	{
 		id = "162",
@@ -1849,7 +1744,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Makes contact. Inflicts typeless damage equal to half the target’s remaining HP. Although typeless, this is ineffective against Wonder Guard."
+		description = "Inflige des dégâts équivalents à 50% des PV restants de la cible." 
 	},
 	{
 		id = "163",
@@ -1859,7 +1754,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User’s critical hit rate is one level higher when using this move."
+		description = "Taux de coups critiques +1." 
 	},
 	{
 		id = "164",
@@ -1869,7 +1764,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Transfers 1/4 the user’s max HP into a doll that absorbs damage and causes most negative move effects to fail."
+		description = "Sacrifie 25% des PV max du lanceur pour créer un Clone qui encaisse les dommages à la place du lanceur. Le clone est notamment immunisé aux problèmes de statut, baisses de statistiques et autres capacités de statut." 
 	},
 	{
 		id = "165",
@@ -1879,7 +1774,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = {"10", "1", "1", "1", "1"},
 		accuracy = {"100", "100", "100", Graphics.TEXT.ALWAYS_HITS, Graphics.TEXT.ALWAYS_HITS},
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts typeless regular damage and makes contact. User takes 1/4 its max HP in recoil. Ignores Accuracy and Evasion modifiers."
+		description = "Capacité par défaut lorsque le lanceur peut utiliser aucune capacité qu'il connaît. Le lanceur perd 25% de ses PV max après l'attaque." 
 	},
 	{
 		-- Begin Gen 2 Moves
@@ -1890,7 +1785,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "1",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Permanently replaces itself with the target’s last used move. If that move is chatter or struggle, this move will fail."
+		description = "Le lanceur copie de manière permanente la dernière capacité utilisée par la cible." 
 	},
 	{
 		id = "167",
@@ -1900,7 +1795,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Makes contact. Inflicts regular damage up to 3 times in the same turn. The second hit has 20 power, and the third hit has 30, for a total of 60. Move stops if any hits miss."
+		description = "Touche jusqu'à 3 fois. Le premier coup a une puissance de 10, le second 20 et le dernier 30." 
 	},
 	{
 		id = "168",
@@ -1910,7 +1805,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. If the target is holding an item and the user is not, the user will permanently take the item. Damage is still inflicted if an item cannot be taken."
+		description = "Attaque en 2 tours. Le lanceur est invulnérable pendant le chargement."  
 	},
 	{
 		id = "169",
@@ -1920,7 +1815,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "The target cannot switch out normally. Ignores Accuracy and Evasion modifiers. This effect ends when the user leaves the field."
+		description = "Attaque en 2 tours. Le lanceur est invulnérable pendant le chargement."  
 	},
 	{
 		id = "170",
@@ -1930,7 +1825,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = {"100", "100", "100", Graphics.TEXT.ALWAYS_HITS, Graphics.TEXT.ALWAYS_HITS},
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "If the user targets the same target again before the end of the next turn, the move it uses is guaranteed to hit. This move itself also ignores Accuracy and Evasion modifiers."
+		description = "Le lanceur analyse la cible pour être sûr de toucher au tour suivant." 
 	},
 	{
 		id = "171",
@@ -1940,9 +1835,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Only works on sleeping Pok" ..
-			Chars.accentedE ..
-				"mon. Gives the target a nightmare, damaging it for 1/4 its max HP every turn. If the target wakes up or leaves the field, this effect ends."
+		description = "Plonge la cible dans un cauchemar qui inflige 1/4 de dégâts à la fin de chaque tour. Ne fonctionne que si la cible est endormie."
 	},
 	{
 		id = "172",
@@ -1952,8 +1845,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "25",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 10% chance to burn the target. Frozen Pok" ..
-			Chars.accentedE .. "mon may use this move, in which case they will thaw."
+		description = "10% de chance de brûler la cible." 
 	},
 	{
 		id = "173",
@@ -1963,7 +1855,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Only usable if the user is sleeping. Inflicts regular damage. Has a 30% chance to make the target flinch."
+		description = "Attaque sonore. 30% de chance d'apeurer la cible. Ne fonctionne que si le lanceur est endormi." 
 	},
 	{
 		id = "174",
@@ -1979,7 +1871,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "If the user is a ghost: user pays half its max HP to place a curse on the target, damaging it for 1/4 its max HP every turn. Otherwise, it lowers the user’s Speed by one stage, and raises its Attack and Defense by one stage each."
+		description = "Le lanceur sacrifie 50% de ses PV max pour maudir sa cible, ce qui lui inflige 25% de ses PV max à la fin de chaque tour." 
 	},
 	{
 		id = "175",
@@ -1989,7 +1881,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Power varies inversely with the user’s proportional remaining HP."
+		description = "Plus les PV du lanceur sont bas, plus l'attaque est puissante." 
 	},
 	{
 		id = "176",
@@ -1999,7 +1891,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Changes the user’s type to a type either resistant or immune to the last damaging move that hit it. The new type is selected at random and cannot be a type the user already is."
+		description = "Le lanceur change de type pour être résistant au type de la dernière attaque lancée par sa cible."
 	},
 	{
 		id = "177",
@@ -2009,7 +1901,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. User’s critical hit rate is one level higher when using this move."
+		description = "Taux de coups critiques +1." 
 	},
 	{
 		id = "178",
@@ -2019,7 +1911,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "40",
 		accuracy = {"85", "85", "85", "85", "100"},
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target’s Speed by two stages."
+		description = "Attaque 'Poudre'. Baisse la Vitesse de la cible de 2 niveaux."  
 	},
 	{
 		id = "179",
@@ -2029,7 +1921,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Power varies inversely with the user’s proportional remaining HP."
+		description = "Plus les PV du lanceur sont bas, plus l'attaque est puissante." 
 	},
 	{
 		id = "180",
@@ -2039,7 +1931,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the PP of the target’s last used move by 4."
+		description = "Réduit les PP de la dernière capacitée utilisée par la cible de 4." 
 	},
 	{
 		id = "181",
@@ -2049,7 +1941,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "25",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to freeze the target."
+		description = "10% de chance de geler les cibles." 
 	},
 	{
 		id = "182",
@@ -2059,7 +1951,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Increased priority. No moves will hit the user for the remainder of this turn. If the user is last to act this turn, this move will fail."
+		description = "Priorité +3. Protège le lanceur de la plupart des attaques pendant un tour. Les chances de réussir l'attaque sont divisées par 2 à chaque utilisation consécutive." 
 	},
 	{
 		id = "183",
@@ -2069,7 +1961,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Increased priority. Inflicts regular damage and makes contact."
+		description = "Attaque 'Poing'. Priorité +1." 
 	},
 	{
 		id = "184",
@@ -2079,7 +1971,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = {"90", "90", "90", "90", "100"},
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target’s Speed by two stages."
+		description = "Baisse la Vitesse de la cible de 2 niveaux." 
 	},
 	{
 		id = "185",
@@ -2089,7 +1981,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Ignores Accuracy and Evasion modifiers."
+		description = "Sans effet supplémentaire." 
 	},
 	{
 		id = "186",
@@ -2099,7 +1991,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "75",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Confuses the target."
+		description = "Rend confus la cible." 
 	},
 	{
 		id = "187",
@@ -2109,7 +2001,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "User pays half its max HP to raise its Attack to +6 stages. If the user cannot pay the HP cost, this move will fail."
+		description = "Sacrifie 50% des PV max pour monter le niveau d'Attaque du lanceur au maximum." 
 	},
 	{
 		id = "188",
@@ -2119,7 +2011,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 30% chance to poison the target."
+		description = "Attaque 'Bombe'. 30% de chances d'empoisonner la cible." 
 	},
 	{
 		id = "189",
@@ -2129,7 +2021,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 100% chance to lower the target’s Accuracy by one stage."
+		description = "100% de chance de baisser la Précision de la cible d'un niveau." 
 	},
 	{
 		id = "190",
@@ -2139,7 +2031,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 50% chance to lower the target’s Accuracy by one stage."
+		description = "Attaque 'Balle'. 50% de chance de baisser la Précision de la cible d'un niveau." 
 	},
 	{
 		id = "191",
@@ -2149,9 +2041,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Scatters spikes around the opposing field, which damage opposing Pok" ..
-			Chars.accentedE ..
-				"mon that enter the field for 1/8 of their max HP. Up to three layers of spikes may be laid down, adding 1/16 more damage for each layer."
+		description = "Pose un piège sur le terrain adverse, qui inflige 12.5% des PV max aux Pokémon non volant qui entrent sur son terrain. Cumulable 3 fois, auquel cas les dégâts passent à 18.75% puis à 25% des PV max." 
 	},
 	{
 		id = "192",
@@ -2161,7 +2051,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "50",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 100% chance to paralyze the target."
+		description = ""
 	},
 	{
 		id = "193",
@@ -2171,7 +2061,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "40",
 		accuracy = {"100", "100", "100", Graphics.TEXT.ALWAYS_HITS, Graphics.TEXT.ALWAYS_HITS},
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Ignores the target’s boosted Evasion stages until the target leaves the field. A ghost under this effect takes normal damage from normal and fighting moves."
+		description = "Permet de toucher un Pokémon Spectre avec des attaques Normal et Combat et d'ignorer ses augmentations d'Esquive." 
 	},
 	{
 		id = "194",
@@ -2181,8 +2071,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "If the user faints before its next move, the Pok" ..
-			Chars.accentedE .. "mon that fainted it will automatically faint. End-of-turn damage is ignored."
+		description = "Si le lanceur est mis K.O. par une capacité offensive avant sa prochaine attaque, l'assaillant tombe K.O. à son tour. Peut être répété sans échouer."
 	},
 	{
 		id = "195",
@@ -2192,10 +2081,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Every Pok" ..
-			Chars.accentedE ..
-				"mon is given a counter that starts at 3 and decreases by 1 at the end of every turn. When a Pok" ..
-					Chars.accentedE .. "mon’s counter reaches zero, that Pok" .. Chars.accentedE .. "mon faints."
+		description = "Attaque sonore. Tous les Pokémon sur le terrain tombent K.O après 3 tours." 
 	},
 	{
 		id = "196",
@@ -2205,7 +2091,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 100% chance to lower the target’s Speed by one stage."
+		description = "100% de chance de baisser la Vitesse des cibles d'un niveau." 
 	},
 	{
 		id = "197",
@@ -2215,7 +2101,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Increased priority. No moves will hit the user for the remainder of this turn. If the user is last to act this turn, this move will fail."
+		description = "Priorité +3. Protège le lanceur de la plupart des attaques pendant un tour. Les chances de réussir l'attaque sont divisées par 2 à chaque utilisation consécutive." 
 	},
 	{
 		id = "198",
@@ -2225,7 +2111,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = {"80", "80", "80", "80", "90"},
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. Hits 2-5 times in one turn. Averages to 3 hits per use."
+		description = "Touche 2 à 5 fois."  
 	},
 	{
 		id = "199",
@@ -2235,7 +2121,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = {"100", "100", "100", Graphics.TEXT.ALWAYS_HITS, Graphics.TEXT.ALWAYS_HITS},
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "If the user targets the same target again before the end of the next turn, the move it uses is guaranteed to hit. This move itself also ignores Accuracy and Evasion modifiers."
+		description = "Le lanceur analyse la cible pour être sûr de toucher au tour suivant." 
 	},
 	{
 		id = "200",
@@ -2245,7 +2131,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = {"15", "15", "15", "15", "10"},
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User is forced to attack with this move for 2-3 turns, selected at random. After the last hit, the user becomes confused."
+		description = "Le lanceur se bloque sur la capacité pendant 2 à 3 tours, puis devient confus." 
 	},
 	{
 		id = "201",
@@ -2255,10 +2141,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Summons a to a sandstorm for five turns. Pok" ..
-			Chars.accentedE ..
-				"mon that are not ground, rock, or steel take 1/16 their max HP at the end of every turn. Every rock Pok" ..
-					Chars.accentedE .. "mon’s Special Defense is raised by 50% for the duration of this effect."
+		description = "Crée une tempête de sable de 5 tours qui blesse tous les Pokémon, sauf ceux de type Roche, Sol ou Acier, et qui augmente la Défense Spéciale des Pokémon Roche." 
 	},
 	{
 		id = "202",
@@ -2268,7 +2151,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = {"5", "5", "5", "10", "10"},
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Drains half the damage inflicted to heal the user."
+		description = "Convertit 50% des dégâts infligés à la cible en PV pour le lanceur." 
 	},
 	{
 		id = "203",
@@ -2278,7 +2161,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Increased priority. The user’s HP cannot be lowered below 1 by any means for the remainder of this turn."
+		description = "Priorité +3. Le lanceur résiste aux attaques offensives avec 1 PV durant le tour. Les chances de réussir l'attaque sont divisées par 2 à chaque utilisation consécutive." 
 	},
 	{
 		id = "204",
@@ -2288,7 +2171,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target’s Attack by two stages."
+		description = "Baisse l'Attaque de la cible de 2 niveaux." 
 	},
 	{
 		id = "205",
@@ -2298,7 +2181,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User is forced to use this move for five turns. Power doubles every time this move is used in succession to a maximum of 16x. If this move misses, the lock-in ends."
+		description = "Le lanceur se bloque sur la capacité pendant 5 tour ou jusqu'à que l'attaque rate. La puissance double à chaque attaque successive." 
 	},
 	{
 		id = "206",
@@ -2308,7 +2191,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "40",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Will not reduce the target’s HP below 1."
+		description = "Le lanceur retient ses coups pour que la cible garde au moins 1 PV en cas de coup normalement fatal." 
 	},
 	{
 		id = "207",
@@ -2318,7 +2201,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the target’s Attack by two stages, then confuses it."
+		description = "Fait enrager la cible et la plonge dans la confusion, mais augmente beaucoup son Attaque." 
 	},
 	{
 		id = "208",
@@ -2328,7 +2211,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Heals the user for half its max HP."
+		description = "Le lanceur récupère 50% de ses PV max." 
 	},
 	{
 		id = "209",
@@ -2338,7 +2221,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 30% chance to paralyze the target."
+		description = ""
 	},
 	{
 		id = "210",
@@ -2348,13 +2231,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = {
-			"Inflicts regular damage and makes contact. Power doubles after every time this move is used, whether consecutively or not, maxing out at 16x. If this move misses, power resets.",
-			"Inflicts regular damage and makes contact. Power doubles after every time this move is used, whether consecutively or not, maxing out at 16x. If this move misses, power resets.",
-			"Inflicts regular damage and makes contact. Power doubles after every time this move is used, whether consecutively or not, maxing out at 16x. If this move misses, power resets.",
-			"Inflicts regular damage and makes contact. Power doubles after every time this move is used, whether consecutively or not, maxing out at 16x. If this move misses, power resets.",
-			"Inflicts regular damage and makes contact. Power doubles after every time this move is used consecutively, maxing out at 16x. If this move misses, power resets."
-		}
+		description = "La puissance de cette capacité double à chaque tour d'affilée où elle est utilisée, jusqu'à un maximum de 160." 
 	},
 	{
 		id = "211",
@@ -2364,7 +2241,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "25",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 10% chance to raise the user’s Defense one stage."
+		description = "10% de chance d'augmenter la Défense du lanceur d'un niveau." 
 	},
 	{
 		id = "212",
@@ -2374,7 +2251,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "The target cannot switch out normally. Ignores Accuracy and Evasion modifiers. This effect ends when the user leaves the field."
+		description = "Empêche la cible de fuir." 
 	},
 	{
 		id = "213",
@@ -2384,7 +2261,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Causes the target to fall in love with the user, giving it a 50% chance to do nothing each turn. If the user and target are the same gender, or either is genderless, this move will fail."
+		description = "Rend amoureux la cible. Ne fonctionne que sur les cibles de sexe opposé au lanceur." 
 	},
 	{
 		id = "214",
@@ -2394,7 +2271,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Only usable if the user is sleeping. Randomly selects and uses one of the user’s other three moves, with some exceptions. Use of the selected move costs 0 PP."
+		description = "Le lanceur utilise une autre de ses capacités au hasard. Ne fonctionne que si le lanceur est endormi." 
 	},
 	{
 		id = "215",
@@ -2404,7 +2281,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Removes major status effects and confusion from every Pok" .. Chars.accentedE .. "mon in the user’s party."
+		description = "Le lanceur récupère 50% de ses PV max."  
 	},
 	{
 		id = "216",
@@ -2414,7 +2291,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Power increases with happiness to a maximum of 102. Power bottoms out at 1."
+		description = "Plus le lanceur est heureux, plus l'attaque est puissante. La puissance varie entre 1 et 102." 
 	},
 	{
 		id = "217",
@@ -2424,7 +2301,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Has a 40% chance to deal 40 damage, 30% chance to deal 80 damage, 10% chance to deal 120 damage, and a 20% chance to heal the target for 1/4 of its max HP."
+		description = "Effectue aléatoirement une attaque à 40, 80 ou 120 de puissance, ou soigne 25% des PV max de la cible." 
 	},
 	{
 		id = "218",
@@ -2434,7 +2311,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Power increases inversely with happiness, to a maximum of 102. Power bottoms out at 1."
+		description = "Plus le lanceur est malheureux, plus l'attaque est puissante. La puissance varie entre 1 et 102." 
 	},
 	{
 		id = "219",
@@ -2444,9 +2321,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "25",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Protects Pok" ..
-			Chars.accentedE ..
-				"mon on the user’s side of the field from major status effects and confusion for five turns. This effect remains even if the user leaves the field."
+		description = "Crée un champ protecteur qui protège l'équipe du lanceur contre les problèmes de statut et la confusion pendant 5 tours." 
 	},
 	{
 		id = "220",
@@ -2456,7 +2331,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = {"100", "100", Graphics.TEXT.ALWAYS_HITS, Graphics.TEXT.ALWAYS_HITS, Graphics.TEXT.ALWAYS_HITS},
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Changes the user’s and target’s remaining HP to the average of their current remaining HP. Ignores Accuracy and Evasion modifiers."
+		description = "Additionne les PV du lanceur et de la cible, et redistribue la moitié à chacun." 
 	},
 	{
 		id = "221",
@@ -2466,8 +2341,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. Has a 50% chance to burn the target. Frozen Pok" ..
-			Chars.accentedE .. "mon may use this move, in which case they will thaw."
+		description = "50% de chance de brûler la cible." 
 	},
 	{
 		id = "222",
@@ -2477,7 +2351,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts random damage of 10, 30, 50, 70, 90, 110, or 150 power, with an average of 71. Deals double damage to targets underground."
+		description = "Attaque en 2 tours. Le lanceur est invulnérable pendant le chargement."  
 	},
 	{
 		id = "223",
@@ -2487,7 +2361,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "50",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 100% chance to confuse the target."
+		description = "Attaque en 2 tours. Le lanceur est invulnérable pendant le chargement."  
 	},
 	{
 		id = "224",
@@ -2497,7 +2371,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact."
+		description = "Sans effet supplémentaire." 
 	},
 	{
 		id = "225",
@@ -2507,7 +2381,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 30% chance to paralyze the target."
+		description = "30% de chance de paralyser la cible." 
 	},
 	{
 		id = "226",
@@ -2517,10 +2391,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "40",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "User switches out, and the trainer selects a replacement Pok" ..
-			Chars.accentedE ..
-				"mon from the party. Stat changes, confusion, and persistent move effects are passed along to the replacement Pok" ..
-					Chars.accentedE .. "mon."
+		description = "Le lanceur échange sa place avec un Pokémon de l'équipe, tout en lui relayant ses changements de statistiques et certains effets." 
 	},
 	{
 		id = "227",
@@ -2530,13 +2401,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = {
-			"The next 3-7 (DP) /2-6 (Pt) /4-8 (HGSS) times the target attempts to move, it is forced to repeat its last used move.",
-			"The next 3-7 (DP) /2-6 (Pt) /4-8 (HGSS) times the target attempts to move, it is forced to repeat its last used move.",
-			"The next 3-7 (DP) /2-6 (Pt) /4-8 (HGSS) times the target attempts to move, it is forced to repeat its last used move.",
-			"The next 3-7 (DP) /2-6 (Pt) /4-8 (HGSS) times the target attempts to move, it is forced to repeat its last used move.",
-			"The next 3 times the target attempts to move, it is forced to repeat its last used move."
-		}
+		description = "Sans effet supplémentaire."  
 	},
 	{
 		id = "228",
@@ -2546,7 +2411,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. If the target attempts to switch out this turn before the user acts, this move hits the target before it leaves and has double power."
+		description = "L'attaque devient prioritaire et double de puissance si la cible souhaite se retirer du terrain."  
 	},
 	{
 		id = "229",
@@ -2556,7 +2421,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "40",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Removes the effects of leech seed, bind, clamp, fire spin, magma storm, sand tomb, whirlpool, wrap, spikes, toxic spikes, and stealth rock."
+		description = "Dissipe certains effets du côté du lanceur comme Vampigraine, Picots ou Piège de Roc."  
 	},
 	{
 		id = "230",
@@ -2566,7 +2431,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target’s Evasion by one stage."
+		description = "Pose un piège sur le terrain adverse, qui inflige 12.5% des PV max aux Pokémon non volant qui entrent sur son terrain. Cumulable 3 fois, auquel cas les dégâts passent à 18.75% puis à 25% des PV max."  
 	},
 	{
 		id = "231",
@@ -2576,7 +2441,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "75",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 30% chance to lower the target’s Defense by one stage."
+		description = "30% de chance de baisser la Défense de la cible d'un niveau." 
 	},
 	{
 		id = "232",
@@ -2586,7 +2451,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "35",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 10% chance to raise the user’s Attack one stage."
+		description = "10% de chance d'augmenter l'Attaque du lanceur d'un niveau."  
 	},
 	{
 		id = "233",
@@ -2596,7 +2461,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Decreased priority. Inflicts regular damage and makes contact. Ignores Accuracy and Evasion modifiers."
+		description = "Priorité -1." 
 	},
 	{
 		id = "234",
@@ -2606,7 +2471,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Heals the user for half its max HP. In sunny weather, healing is 2/3 max HP, and 1/4 max HP during hail, rain, or sandstorm."
+		description = "Le lanceur récupère 50% de ses PV max, 67% sous le soleil, 25% sous les autres climats." 
 	},
 	{
 		id = "235",
@@ -2616,7 +2481,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Heals the user for half its max HP. In sunny weather, healing is 2/3 max HP, and 1/4 max HP during hail, rain, or sandstorm."
+		description = "Le lanceur récupère 50% de ses PV max, 67% sous le soleil, 25% sous les autres climats." 
 	},
 	{
 		id = "236",
@@ -2626,7 +2491,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Heals the user for half its max HP. In sunny weather, healing is 2/3 max HP, and 1/4 max HP during hail, rain, or sandstorm."
+		description = "Le lanceur récupère 50% de ses PV max, 67% sous le soleil, 25% sous les autres climats." 
 	},
 	{
 		id = "237",
@@ -2636,7 +2501,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Power and type are determined by the user’s IVs. Power is always between 30 and 70, with an average of 49.5. Type cannot be normal."
+		description = "La puissance et le type de l'attaque dépend de la parité des IV du lanceur. La puissance varie entre 30 et 70."
 	},
 	{
 		id = "238",
@@ -2646,7 +2511,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "80",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User’s critical hit rate is one level higher when using this move."
+		description = "Taux de coups critiques +1."
 	},
 	{
 		id = "239",
@@ -2656,13 +2521,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = {
-			"Inflicts regular damage. Has a 20% chance to make each target flinch. If the target is under the effect of Bounce or Fly, this move will hit with double power.",
-			"Inflicts regular damage. Has a 20% chance to make each target flinch. If the target is under the effect of Bounce or Fly, this move will hit with double power.",
-			"Inflicts regular damage. Has a 20% chance to make each target flinch. If the target is under the effect of Bounce or Fly, this move will hit with double power.",
-			"Inflicts regular damage. Has a 20% chance to make each target flinch. If the target is under the effect of Bounce or Fly, this move will hit with double power.",
-			"Inflicts regular damage. Has a 20% chance to make each target flinch. If the target is under the effect of Bounce, Fly, or Sky Drop, this move will hit with double power."
-		}
+		description = "20% de chances d'apeurer les cibles." 
 	},
 	{
 		id = "240",
@@ -2672,7 +2531,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Changes the weather to rain for five turns, during which water moves inflict 50% extra damage, and fire moves inflict half damage."
+		description = "Invoque de fortes pluies pendant 5 tours, augmentant la puissance des capacités de type Eau et baissant celle des capacités de type Feu." 
 	},
 	{
 		id = "241",
@@ -2682,7 +2541,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Changes the weather to sunshine for five turns, during which fire moves inflict 50% extra damage, and water moves inflict half damage."
+		description = ""
 	},
 	{
 		id = "242",
@@ -2692,7 +2551,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 20% chance to lower the target’s Defense by one stage."
+		description = "Attaque 'Croc'. 20% de chance de baisser la Défense de la cible d'un niveau." 
 	},
 	{
 		id = "243",
@@ -2702,7 +2561,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Decreased priority. If the user was damaged by a special move, inflicts twice the damage the move did. Type immunity applies, but other type effects are ignored."
+		description = "Priorité -5. Inflige le double de dégâts à une cible si elle a attaqué avec une attaque spéciale." 
 	},
 	{
 		id = "244",
@@ -2712,7 +2571,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Discards the user’s stat changes and copies the target’s."
+		description = "Le lanceur copie la dernière capacité utilisée par la cible et la conserve tant qu'il reste au combat."  
 	},
 	{
 		id = "245",
@@ -2722,7 +2581,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Increased priority. Inflicts regular damage and makes contact."
+		description = "Priorité +1."  
 	},
 	{
 		id = "246",
@@ -2732,7 +2591,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to raise all of the user’s stats one stage."
+		description = "10% de chance d'augmenter l'Attaque, la Défense, l'Attaque Spéciale, la Défense Spéciale et la Vitesse du lanceur d'un niveau." 
 	},
 	{
 		id = "247",
@@ -2742,7 +2601,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 20% chance to lower the target’s Special Defense by one stage."
+		description = "Attaque 'Balle'. 20% de chances de baisser la Défense Spéciale de la cible d'un niveau." 
 	},
 	{
 		id = "248",
@@ -2752,13 +2611,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = {"15", "15", "15", "15", "10"},
 		accuracy = {"90", "90", "90", "90", "100"},
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = {
-			"Inflicts typeless regular damage at the end of the third turn. This move cannot score a critical hit, and damage is calculated at the time this move is used.",
-			"Inflicts typeless regular damage at the end of the third turn. This move cannot score a critical hit, and damage is calculated at the time this move is used.",
-			"Inflicts typeless regular damage at the end of the third turn. This move cannot score a critical hit, and damage is calculated at the time this move is used.",
-			"Inflicts typeless regular damage at the end of the third turn. This move cannot score a critical hit, and damage is calculated at the time this move is used.",
-			"Inflicts regular damage at the end of the third turn. Damage is calculated at the time damage is dealt."
-		}
+		description = "Lance une attaque qui frappera la cible 2 tours après l'utilisation de cette capacité. L'attaque inflige des dégâts neutres peu importe le type de la cible." 
 	},
 	{
 		id = "249",
@@ -2768,7 +2621,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 50% chance to lower the target’s Defense by one stage."
+		description = ""
 	},
 	{
 		id = "250",
@@ -2778,13 +2631,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = {"70", "70", "70", "70", "85"},
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = {
-			"For the next 2-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.",
-			"For the next 2-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.",
-			"For the next 2-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.",
-			"For the next 2-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.",
-			"For the next 4-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn."
-		}
+		description = "Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir."
 	},
 	{
 		id = "251",
@@ -2794,23 +2641,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = {
-			"Inflicts typeless regular damage. Every Pok" ..
-				Chars.accentedE ..
-					"mon in the user’s party, excepting those that have fainted or have a major status effect, attacks the target.",
-			"Inflicts typeless regular damage. Every Pok" ..
-				Chars.accentedE ..
-					"mon in the user’s party, excepting those that have fainted or have a major status effect, attacks the target.",
-			"Inflicts typeless regular damage. Every Pok" ..
-				Chars.accentedE ..
-					"mon in the user’s party, excepting those that have fainted or have a major status effect, attacks the target.",
-			"Inflicts typeless regular damage. Every Pok" ..
-				Chars.accentedE ..
-					"mon in the user’s party, excepting those that have fainted or have a major status effect, attacks the target.",
-			"Inflicts regular damage. Every Pok" ..
-				Chars.accentedE ..
-					"mon in the user’s party, excepting those that have fainted or have a major status effect, attacks the target."
-		}
+		description = "Le lanceur appelle tous les Pokémon en forme de son équipe pour attaquer. Chaque coup porté a une puissance de 10 et n'avait pas de type." 
 	},
 	{
 		-- Begin Gen 3 Moves
@@ -2821,7 +2652,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Increased priority. Inflicts regular damage and makes contact. Causes the target to flinch, and can only be used on the user’s first turn after entering the field."
+		description = "Priorité +1. 100% de chance d'apeurer la cible. Ne fonctionne qu'au premier tour." 
 	},
 	{
 		id = "253",
@@ -2831,18 +2662,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = {
-			"Inflicts regular damage. User is forced to use this move for 2-5 turns, selected at random. All Pok" ..
-				Chars.accentedE .. "mon on the field wake up, and none can fall to sleep until the lock-in ends.",
-			"Inflicts regular damage. User is forced to use this move for 2-5 turns, selected at random. All Pok" ..
-				Chars.accentedE .. "mon on the field wake up, and none can fall to sleep until the lock-in ends.",
-			"Inflicts regular damage. User is forced to use this move for 2-5 turns, selected at random. All Pok" ..
-				Chars.accentedE .. "mon on the field wake up, and none can fall to sleep until the lock-in ends.",
-			"Inflicts regular damage. User is forced to use this move for 2-5 turns, selected at random. All Pok" ..
-				Chars.accentedE .. "mon on the field wake up, and none can fall to sleep until the lock-in ends.",
-			"Inflicts regular damage. User is forced to use this move for 3 turns. All Pok" ..
-				Chars.accentedE .. "mon on the field wake up, and none can fall to sleep until the lock-in ends."
-		}
+		description = "Le lanceur se bloque sur l'attaque pendant 3 tours. Cela réveille les Pokémon endormis et empêche les Pokémon sur le terrain de s'endormir." 
 	},
 	{
 		id = "254",
@@ -2852,7 +2672,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = {"10", "10", "10", "20", "20"},
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user’s Defense and Special Defense by one stage each. Stores energy for use with spit up and swallow. Up to three levels of energy can be stored, and all are lost if the user leaves the field."
+		description = "Augmente la Défense et la Défense Spéciale du lanceur d'un niveau, et accumule une charge de Stockage (3 maximum) qui permettent d'utiliser Avale et Relâche."  
 	},
 	{
 		id = "255",
@@ -2862,7 +2682,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Power is equal to 100 times the amount of energy stored by stockpile. Stored energy is consumed, and the user’s Defense and Special Defense are reset."
+		description = "Augmente la Défense et la Défense Spéciale du lanceur d'un niveau, et accumule une charge de Stockage (3 maximum) qui permettent d'utiliser Avale et Relâche."   
 	},
 	{
 		id = "256",
@@ -2872,7 +2692,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Heals the user depending on the amount of energy stored by stockpile: 1/4 its max HP after one use, 1/2 its max HP after two uses, or fully after three uses. Stored energy is consumed, and the user’s Defense and Special Defense are reset."
+		description = "Augmente la Défense et la Défense Spéciale du lanceur d'un niveau, et accumule une charge de Stockage (3 maximum) qui permettent d'utiliser Avale et Relâche."  
 	},
 	{
 		id = "257",
@@ -2882,7 +2702,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to burn the target."
+		description = "10% de chance de brûler les cibles." 
 	},
 	{
 		id = "258",
@@ -2892,8 +2712,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Changes the weather to hail for five turns, during which non-ice Pok" ..
-			Chars.accentedE .. "mon are damaged for 1/16 their max HP at the end of every turn."
+		description = "Invoque une tempête de grêle pendant 5 tours qui blesse tous les Pokémon, sauf ceux de type Glace." 
 	},
 	{
 		id = "259",
@@ -2903,7 +2722,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Prevents the target from attempting to use the same move twice in a row. When the target leaves the field, this effect ends."
+		description = "Inflige une tourmente à la cible, ce qui l'empêche d'utiliser 2 fois d'affilée la même capacité." 
 	},
 	{
 		id = "260",
@@ -2913,7 +2732,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the target’s Special Attack by one stage, then confuses it."
+		description = "Rend confus la cible et augmente son Attaque Spéciale de 2 niveaux." 
 	},
 	{
 		id = "261",
@@ -2923,7 +2742,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "75",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Burns the target."
+		description = "Brûle la cible." 
 	},
 	{
 		id = "262",
@@ -2933,7 +2752,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target’s Attack and Special Attack by two stages. User faints."
+		description = "Le lanceur tombe K.O. et baisse l'Attaque et l'Attaque Spéciale de la cible de 2 niveaux." 
 	},
 	{
 		id = "263",
@@ -2943,7 +2762,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. If the user is burned, paralyzed, or poisoned, this move has double power."
+		description = "La puissance est doublée lorsque le lanceur est empoisonné, paralysé ou brûlé." 
 	},
 	{
 		id = "264",
@@ -2953,7 +2772,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Decreased priority. Inflicts regular damage and makes contact. If the user takes damage this turn before hitting, this move will fail."
+		description = "Attaque 'Poing'. Priorité -3. Le lanceur charge au début du tour : s'il est blessé par une capacité offensive, Mitra-Poing échoue." 
 	},
 	{
 		id = "265",
@@ -2963,7 +2782,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. If the target is paralyzed, this move has double power, and the target is cured of its paralysis."
+		description = "La puissance est doublée si la cible est paralysée. Dans ce cas, cela soigne sa paralysie." 
 	},
 	{
 		id = "266",
@@ -2973,8 +2792,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Increased priority. Until the end of this turn, any moves that opposing Pok" ..
-			Chars.accentedE .. "mon target solely at the user’s ally will instead target the user."
+		description = "Priorité +3. Attire l'attention des ennemis pour les forcer à n'attaquer que le lanceur." 
 	},
 	{
 		id = "267",
@@ -2984,13 +2802,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = {
-			"Move depends on the terrain. Building = Tri Attack; Cave/Mountain = Rock Slide; Water = Hydro Pump; Sand/Dirt = Earthquake; Grass = Seed Bomb; Snow = Blizzard; Ice = Ice Beam",
-			"Move depends on the terrain. Building = Tri Attack; Cave/Mountain = Rock Slide; Water = Hydro Pump; Sand/Dirt = Earthquake; Grass = Seed Bomb; Snow = Blizzard; Ice = Ice Beam",
-			"Move depends on the terrain. Building = Tri Attack; Cave/Mountain = Rock Slide; Water = Hydro Pump; Sand/Dirt = Earthquake; Grass = Seed Bomb; Snow = Blizzard; Ice = Ice Beam",
-			"Move depends on the terrain. Building = Tri Attack; Cave/Mountain = Rock Slide; Water = Hydro Pump; Sand/Dirt = Earthquake; Grass = Seed Bomb; Snow = Blizzard; Ice = Ice Beam",
-			"Move depends on the terrain. Building = Tri Attack; Cave = Rock Slide; Water = Hydro Pump; Sand/Dirt/Rock = Earthquake; Grass = Seed Bomb; Snow = Blizzard; Ice = Ice Beam; Puddle = Mud Bomb"
-		}
+		description = "Le type de la capacité varie selon le terrain."  
 	},
 	{
 		id = "268",
@@ -3000,7 +2812,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user’s Special Defense by one stage. If the user uses an electric move next turn, its power will be doubled."
+		description = "Le lanceur se charge pour doubler la puissance de sa prochaine attaque si elle est Électrik. Augmente aussi la Défense Spéciale du lanceur d'un niveau."  
 	},
 	{
 		id = "269",
@@ -3010,13 +2822,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = {
-			"Target is forced to only use damaging moves for the next 3-5 turns, selected at random. Moves that select other moves not known in advance do not count as damaging.",
-			"Target is forced to only use damaging moves for the next 3-5 turns, selected at random. Moves that select other moves not known in advance do not count as damaging.",
-			"Target is forced to only use damaging moves for the next 3-5 turns, selected at random. Moves that select other moves not known in advance do not count as damaging.",
-			"Target is forced to only use damaging moves for the next 3-5 turns, selected at random. Moves that select other moves not known in advance do not count as damaging.",
-			"Target is forced to only use damaging moves for the next 3 turns. Moves that select other moves not known in advance do not count as damaging."
-		}
+		description = "Provoque la cible pendant 3 à 5 tours, ce qui l'empêche d'utiliser des capacités de statut." 
 	},
 	{
 		id = "270",
@@ -3026,7 +2832,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Increase priority. Boosts the power of the target’s moves by 50% until the end of this turn."
+		description = "Priorité +5. Augmente la puissance des capacités d'un allié de 50% jusqu'à la fin du tour." 
 	},
 	{
 		id = "271",
@@ -3036,8 +2842,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "User and target permanently swap held items. Works even if one of the Pok" ..
-			Chars.accentedE .. "mon isn’t holding anything."
+		description = "Échange l'objet du lanceur avec celui de la cible."  
 	},
 	{
 		id = "272",
@@ -3047,7 +2852,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "User’s ability is replaced with the target’s until the user leaves the field. Ignores Accuracy and Evasion modifiers."
+		description = "Le lanceur imite le talent de la cible."  
 	},
 	{
 		id = "273",
@@ -3057,7 +2862,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "At the end of the next turn, user will be healed for half its max HP. If the user is switched out, its replacement will be healed instead for half of the user’s max HP."
+		description = "Restaure 50% des PV max du Pokémon présent sur le terrain au prochain tour." 
 	},
 	{
 		id = "274",
@@ -3067,9 +2872,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Uses a move from another Pok" ..
-			Chars.accentedE ..
-				"mon in the user’s party, both selected at random. Moves from fainted Pok" .. Chars.accentedE .. "mon can be used."
+		description = "Le lanceur utilise une capacité aléatoire parmi les capacités des alliées." 
 	},
 	{
 		id = "275",
@@ -3079,7 +2882,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Prevents the user from switching out. User regains 1/16 of its max HP at the end of every turn. If the user was immune to ground attacks, it will now take normal damage from them."
+		description = "Le lanceur plante ses racines et récupère 1/8 de ses PV max à chaque tour. De plus, le lanceur ne peut plus fuir."
 	},
 	{
 		id = "276",
@@ -3089,7 +2892,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Lowers the user’s Attack and Defense by one stage each."
+		description = "Baisse l'Attaque et la Défense du lanceur d'un niveau après l'attaque." 
 	},
 	{
 		id = "277",
@@ -3099,7 +2902,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Increased priority. The first non-damaging move targeting the user this turn that inflicts major status effects, stat changes, or trapping effects will be reflected at its user."
+		description = "Priorité +4. Renvoie la plupart des capacités de statut de l'adversaire à lui-même."  
 	},
 	{
 		id = "278",
@@ -3109,21 +2912,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = {
-			"User recovers the last item consumed by the user or a Pok" ..
-				Chars.accentedE ..
-					"mon in its position on the field. The item must be used again before it can be recovered by this move again.",
-			"User recovers the last item consumed by the user or a Pok" ..
-				Chars.accentedE ..
-					"mon in its position on the field. The item must be used again before it can be recovered by this move again.",
-			"User recovers the last item consumed by the user or a Pok" ..
-				Chars.accentedE ..
-					"mon in its position on the field. The item must be used again before it can be recovered by this move again.",
-			"User recovers the last item consumed by the user or a Pok" ..
-				Chars.accentedE ..
-					"mon in its position on the field. The item must be used again before it can be recovered by this move again.",
-			"User recovers the last item it consumed. The item must be used again before it can be recovered by this move again."
-		}
+		description = "Permet de récupérer les objets utilisés, consommés, lancés avec Dégommage ou les Baies utilisées pour Don Naturel."  
 	},
 	{
 		id = "279",
@@ -3133,7 +2922,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Decreased priority. Inflicts regular damage and makes contact. If the target damaged the user this turn and was the last to do so, this move has double power."
+		description = "Priorité -4. La puissance est doublée si la cible a été blessée par une attaque dans le tour."  
 	},
 	{
 		id = "280",
@@ -3143,7 +2932,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Makes contact. Destroys any light screen or reflect on the target’s side of the field, then inflicts regular damage."
+		description = "Crée un mur qui réduit de 50% les dégâts spéciaux subis par les Pokémon de l'équipe. La réduction est de 33% en combat Duo."  
 	},
 	{
 		id = "281",
@@ -3153,7 +2942,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Puts the target to sleep at the end of the next turn. Ignores Accuracy and Evasion modifiers. If the target leaves the field, this effect is canceled."
+		description = "Crée un mur qui réduit de 50% les dégâts spéciaux subis par les Pokémon de l'équipe. La réduction est de 33% en combat Duo."  
 	},
 	{
 		id = "282",
@@ -3163,7 +2952,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Target loses its held item."
+		description = "La puissance augmente de 50% si la cible tient un objet et fait tomber l'objet." 
 	},
 	{
 		id = "283",
@@ -3173,7 +2962,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Makes contact. Inflicts exactly enough damage to lower the target’s HP to equal the user’s. Type immunity applies, but other type effects are ignored."
+		description = "Si la cible possède plus de PV que le lanceur, alors l'attaque réduit les PV de la cible jusqu'au même montant que le lanceur." 
 	},
 	{
 		id = "284",
@@ -3183,7 +2972,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Power increases with the user’s remaining HP up to a maximum of 150 when the user has full HP."
+		description = ""
 	},
 	{
 		id = "285",
@@ -3193,7 +2982,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "User and target switch abilities. Ignores Accuracy and Evasion modifiers."
+		description = ""
 	},
 	{
 		id = "286",
@@ -3203,9 +2992,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Prevents any Pok" ..
-			Chars.accentedE ..
-				"mon on the opposing side of the field from using any move the user knows until the user leaves the field."
+		description = "Empêche les adversaires d'utiliser les capacités connues par le lanceur." 
 	},
 	{
 		id = "287",
@@ -3215,7 +3002,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Removes a burn, paralysis, or poison from the user."
+		description = "Soigne un empoisonnement, une paralysie ou une brûlure." 
 	},
 	{
 		id = "288",
@@ -3225,7 +3012,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "If the user faints before its next turn, the move that fainted it will have its PP dropped to 0. End-of-turn damage does not trigger this effect."
+		description = "Si le lanceur est mis K.O. par une capacité offensive, les PP de cette capacité tombent à 0." 
 	},
 	{
 		id = "289",
@@ -3235,9 +3022,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Increased priority. The next time a Pok" ..
-			Chars.accentedE ..
-				"mon uses a beneficial move on itself or itself and its ally this turn, the user of this move will steal the move and use it itself."
+		description = "Attaque en 2 tours. Le lanceur est invulnérable pendant le chargement."  
 	},
 	{
 		id = "290",
@@ -3247,13 +3032,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = {
-			"Inflicts regular damage. Has a 30% chance to cause an effect from terrain. Building = paralysis; Desert = -ACC; Cave = flinch; Grass = sleep; Water = -ATK; Snow/Ice = freeze",
-			"Inflicts regular damage. Has a 30% chance to cause an effect from terrain. Building = paralysis; Desert = -ACC; Cave = flinch; Grass = sleep; Water = -ATK; Snow/Ice = freeze",
-			"Inflicts regular damage. Has a 30% chance to cause an effect from terrain. Building = paralysis; Desert = -ACC; Cave = flinch; Grass = sleep; Water = -ATK; Snow/Ice = freeze",
-			"Inflicts regular damage. Has a 30% chance to cause an effect from terrain. Building = paralysis; Desert = -ACC; Cave = flinch; Grass = sleep; Water = -ATK; Snow/Ice = freeze",
-			"Inflicts regular damage. Has a 30% chance to cause an effect from terrain. Building = paralysis; Desert = -ACC; Cave = flinch; Grass = sleep; Water = -ATK; Puddle = -SPE; Snow/Ice = freeze"
-		}
+		description = "Attaque en 2 tours. Le lanceur est invulnérable pendant le chargement."   
 	},
 	{
 		id = "291",
@@ -3263,7 +3042,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User dives underwater for one turn, becoming immune to attack, and hits on the second turn."
+		description = "Attaque en 2 tours. Le lanceur est invulnérable pendant le chargement." 
 	},
 	{
 		id = "292",
@@ -3273,7 +3052,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Hits 2-5 times in one turn, and averages to 3 hits per use."
+		description = "Touche 2 à 5 fois." 
 	},
 	{
 		id = "293",
@@ -3283,7 +3062,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "User’s type changes according to the terrain. Building = normal; Cave = rock; Desert = ground; Grass = grass; Ocean = water; Snow = ice"
+		description = "Remplace le type du lanceur par un type qui dépend du lieu." 
 	},
 	{
 		id = "294",
@@ -3293,13 +3072,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = {
-			"Raises the user’s Special Attack by two stages.",
-			"Raises the user’s Special Attack by two stages.",
-			"Raises the user’s Special Attack by two stages.",
-			"Raises the user’s Special Attack by two stages.",
-			"Raises the user’s Special Attack by three stages."
-		}
+		description = "Augmente l'Attaque Spéciale du lanceur de 2 niveaux." 
 	},
 	{
 		id = "295",
@@ -3309,7 +3082,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 50% chance to lower the target’s Special Defense by one stage."
+		description = ""
 	},
 	{
 		id = "296",
@@ -3319,7 +3092,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 50% chance to lower the target’s Special Attack by one stage."
+		description = "Crée une brume qui empêche la réduction des stats durant 5 tours."  
 	},
 	{
 		id = "297",
@@ -3329,7 +3102,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target’s Attack by two stages."
+		description = "Attaque 'Danse'. Baisse l'Attaque de la cible de 2 niveaux." 
 	},
 	{
 		id = "298",
@@ -3339,7 +3112,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Confuses all targets."
+		description = "Attaque 'Danse'." 
 	},
 	{
 		id = "299",
@@ -3349,7 +3122,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User’s critical hit rate is one level higher when using this move. Has a 10% chance to burn the target."
+		description = "Taux de coups critiques +1. 10% de chance de brûler la cible." 
 	},
 	{
 		id = "300",
@@ -3359,13 +3132,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = {
-			"Electric moves inflict half damage, regardless of target. If the user leaves the field, this effect ends.",
-			"Electric moves inflict half damage, regardless of target. If the user leaves the field, this effect ends.",
-			"Electric moves inflict half damage, regardless of target. If the user leaves the field, this effect ends.",
-			"Electric moves inflict half damage, regardless of target. If the user leaves the field, this effect ends.",
-			"Electric moves inflict one-third damage, regardless of target. If the user leaves the field, this effect ends."
-		}
+		description = "Réduit la puissance des attaques Électrik de 67% de tous les Pokémon jusqu'à que le lanceur est retiré." 
 	},
 	{
 		id = "301",
@@ -3375,7 +3142,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User is forced to use this move for five turns. Power doubles every time this move is used in succession to a maximum of 16x. If this move misses, the lock-in ends."
+		description = "Attaque 'Balle'. Le lanceur se bloque sur la capacité pendant 5 tour ou jusqu'à que l'attaque rate. La puissance double à chaque attaque successive." 
 	},
 	{
 		id = "302",
@@ -3385,7 +3152,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 30% chance to make the target flinch."
+		description = "Attaque 'Poing'. 30% de chance d'apeurer la cible." 
 	},
 	{
 		id = "303",
@@ -3395,7 +3162,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Heals the user for half its max HP."
+		description = "Le lanceur récupère 50% de ses PV max." 
 	},
 	{
 		id = "304",
@@ -3405,7 +3172,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage."
+		description = "Attaque sonore." 
 	},
 	{
 		id = "305",
@@ -3415,7 +3182,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 50% chance to badly poison the target."
+		description = "Attaque 'Croc'. 30% de chance d'empoisonner gravement la cible." 
 	},
 	{
 		id = "306",
@@ -3425,7 +3192,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 50% chance to lower the target’s Defense by one stage."
+		description = ""
 	},
 	{
 		id = "307",
@@ -3435,7 +3202,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. User loses its next turn to recharge, and cannot attack or switch out during that turn."
+		description = "Le lanceur doit se reposer au tour suivant." 
 	},
 	{
 		id = "308",
@@ -3445,7 +3212,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. User loses its next turn to recharge, and cannot attack or switch out during that turn."
+		description = "Le lanceur doit se reposer au tour suivant." 
 	},
 	{
 		id = "309",
@@ -3455,7 +3222,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 20% chance to raise the user’s Attack one stage."
+		description = "Attaque 'Poing'. 20% de chance d'augmenter l'Attaque du lanceur d'un niveau." 
 	},
 	{
 		id = "310",
@@ -3465,7 +3232,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 30% chance to make the target flinch."
+		description = ""
 	},
 	{
 		id = "311",
@@ -3475,7 +3242,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. If a weather move is active, this move has double power, and its type becomes the weather counterpart."
+		description = "Attaque 'Balle'. La puissance est doublée et le type change avec la présence d'un climat." 
 	},
 	{
 		id = "312",
@@ -3485,7 +3252,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Removes major status effects and confusion from every Pok" .. Chars.accentedE .. "mon in the user’s party."
+		description = "Guérit la brûlure, le gel, la paralysie, le poison et le sommeil de tous les Pokémon dans l'équipe du lanceur." 
 	},
 	{
 		id = "313",
@@ -3495,7 +3262,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target’s Special Defense by two stages."
+		description = "Baisse la Défense Spéciale de la cible de 2 niveaux." 
 	},
 	{
 		id = "314",
@@ -3505,7 +3272,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "25",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. User’s critical hit rate is one level higher when using this move."
+		description = "Taux de coups critiques +1." 
 	},
 	{
 		id = "315",
@@ -3515,7 +3282,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage, then lowers the user’s Special Attack by two stages."
+		description = "Baisse l'Attaque Spéciale du lanceur de 2 niveaux après l'attaque." 
 	},
 	{
 		id = "316",
@@ -3525,7 +3292,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "40",
 		accuracy = {"100", "100", "100", Graphics.TEXT.ALWAYS_HITS, Graphics.TEXT.ALWAYS_HITS},
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Ignores the target’s boosted Evasion stages until the target leaves the field. A ghost under this effect takes damage from normal and fighting moves."
+		description = "Permet de toucher un Pokémon Spectre avec des attaques Normal et Combat et d'ignorer ses augmentations d'Esquive." 
 	},
 	{
 		id = "317",
@@ -3535,7 +3302,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "80",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. Has a 100% chance to lower the target’s Speed by one stage."
+		description = "100% de chance de baisser la vitesse de la cible d'un niveau." 
 	},
 	{
 		id = "318",
@@ -3545,7 +3312,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to raise all of the user’s stats one stage."
+		description = "10% de chance d'augmenter l'Attaque, la Défense, l'Attaque Spéciale, la Défense Spéciale et la Vitesse du lanceur d'un niveau." 
 	},
 	{
 		id = "319",
@@ -3555,7 +3322,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "40",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target’s Special Defense by two stages."
+		description = "Attaque sonore. Baisse la Défense Spéciale de la cible de 2 niveaux." 
 	},
 	{
 		id = "320",
@@ -3565,7 +3332,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "55",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Puts the target to sleep."
+		description = "Endort la cible." 
 	},
 	{
 		id = "321",
@@ -3575,7 +3342,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target’s Attack and Defense by one stage."
+		description = "Baisse l'Attaque et la Défense de la cible d'un niveau." 
 	},
 	{
 		id = "322",
@@ -3585,7 +3352,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user’s Defense and Special Defense by one stage."
+		description = "Augmente la Défense et la Défense Spéciale du lanceur d'un niveau."  
 	},
 	{
 		id = "323",
@@ -3595,7 +3362,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Power increases with the user’s remaining HP, up to a maximum of 150 when the user has full HP."
+		description = "Plus les PV du lanceur sont bas (en %), moins l'attaque est puissante." 
 	},
 	{
 		id = "324",
@@ -3605,7 +3372,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to confuse the target."
+		description = "10% de chance de rendre confus la cible." 
 	},
 	{
 		id = "325",
@@ -3615,7 +3382,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Ignores Accuracy and Evasion modifiers."
+		description = "Attaque 'Poing'." 
 	},
 	{
 		id = "326",
@@ -3625,7 +3392,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to make the target flinch."
+		description = "10% de chance d'apeurer la cible." 
 	},
 	{
 		id = "327",
@@ -3635,18 +3402,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = {
-			"Inflicts regular damage and makes contact. This move can hit Pok" ..
-				Chars.accentedE .. "mon under the effect of Bounce or Fly.",
-			"Inflicts regular damage and makes contact. This move can hit Pok" ..
-				Chars.accentedE .. "mon under the effect of Bounce or Fly.",
-			"Inflicts regular damage and makes contact. This move can hit Pok" ..
-				Chars.accentedE .. "mon under the effect of Bounce or Fly.",
-			"Inflicts regular damage and makes contact. This move can hit Pok" ..
-				Chars.accentedE .. "mon under the effect of Bounce or Fly.",
-			"Inflicts regular damage and makes contact. This move can hit Pok" ..
-				Chars.accentedE .. "mon under the effect of Bounce, Fly, or Sky Drop."
-		}
+		description = "Attaque 'Poing'." 
 	},
 	{
 		id = "328",
@@ -3656,13 +3412,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = {"70", "70", "70", "70", "85"},
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = {
-			"For the next 2-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.",
-			"For the next 4-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.",
-			"For the next 4-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.",
-			"For the next 4-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.",
-			"For the next 4-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn."
-		}
+		description = "Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir."
 	},
 	{
 		id = "329",
@@ -3672,7 +3422,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "30",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Instantly KOs the target. This move’s accuracy is 30% plus 1% for each level the user is higher than the target."
+		description = "Met K.O. en un coup. Les Pokémon ayant un niveau strictement supérieur sont immunisés." 
 	},
 	{
 		id = "330",
@@ -3682,7 +3432,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 30% chance to lower the target’s Accuracy by one stage."
+		description = "30% de chance de baisser la Précision des cibles d'un niveau." 
 	},
 	{
 		id = "331",
@@ -3692,7 +3442,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. Hits 2-5 times in one turn, and averages to 3 hits per use."
+		description = "Attaque 'Balle'. Touche 2 à 5 fois." 
 	},
 	{
 		id = "332",
@@ -3702,7 +3452,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Ignores Accuracy and Evasion modifiers."
+		description = "Sans effet supplémentaire." 
 	},
 	{
 		id = "333",
@@ -3712,7 +3462,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. Hits 2-5 times in one turn, abd averages to 3 hits per use."
+		description = "Touche 2 à 5 fois." 
 	},
 	{
 		id = "334",
@@ -3722,7 +3472,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user’s Defense by two stages."
+		description = "Augmente la Défense du lanceur de 2 niveaux." 
 	},
 	{
 		id = "335",
@@ -3732,7 +3482,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "The target cannot switch out normally. Ignores Accuracy and Evasion modifiers. This effect ends when the user leaves the field."
+		description = "Empêche la cible de fuir." 
 	},
 	{
 		id = "336",
@@ -3742,7 +3492,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "40",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user’s Attack by one stage."
+		description = "Attaque sonore. Augmente l'Attaque du lanceur d'un niveau." 
 	},
 	{
 		id = "337",
@@ -3752,7 +3502,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact."
+		description = "Sans effet supplémentaire." 
 	},
 	{
 		id = "338",
@@ -3762,7 +3512,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. User loses its next turn to recharge, and cannot attack or switch out during that turn."
+		description = "Le lanceur doit se reposer au tour suivant." 
 	},
 	{
 		id = "339",
@@ -3772,7 +3522,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user’s Attack and Defense by one stage each."
+		description = "Augmente l'Attaque et la Défense du lanceur d'un niveau." 
 	},
 	{
 		id = "340",
@@ -3782,7 +3532,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User bounces high into the air for one turn, becoming immune to attack, and hits on the second turn. Has a 30% chance to paralyze the target."
+		description = "Attaque en 2 tours. Le lanceur est invulnérable pendant le chargement. 30% de chance de paralyser la cible." 
 	},
 	{
 		id = "341",
@@ -3792,7 +3542,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 100% chance to lower the target’s Speed by one stage."
+		description = "100% de chance de baisser la Vitesse de la cible d'un niveau." 
 	},
 	{
 		id = "342",
@@ -3802,7 +3552,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "25",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User’s critical hit rate is one level higher when using this move. Has a 10% chance to poison the target."
+		description = "10% de chance d'empoisonner la cible. Taux de coups critiques +1." 
 	},
 	{
 		id = "343",
@@ -3812,7 +3562,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "40",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. If the target is holding an item and the user is not, the user will permanently take the item. Damage is still inflicted if an item cannot be taken."
+		description = "Attaque en 2 tours. Le lanceur est invulnérable pendant le chargement."  
 	},
 	{
 		id = "344",
@@ -3822,7 +3572,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User takes 1/3 the damage it inflicts in recoil. Has a 10% chance to paralyze the target."
+		description = "Attaque 'à contrecoup'. 10% de chance de paralyser la cible. Les dégâts de recul sont équivalents à 1/3 des dégâts infligés à la cible." 
 	},
 	{
 		id = "345",
@@ -3832,7 +3582,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Ignores Accuracy and Evasion modifiers."
+		description = "Sans effet supplémentaire." 
 	},
 	{
 		id = "346",
@@ -3842,13 +3592,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = {
-			"Fire moves inflict half damage, regardless of target. If the user leaves the field, this effect ends.",
-			"Fire moves inflict half damage, regardless of target. If the user leaves the field, this effect ends.",
-			"Fire moves inflict half damage, regardless of target. If the user leaves the field, this effect ends.",
-			"Fire moves inflict half damage, regardless of target. If the user leaves the field, this effect ends.",
-			"Fire moves inflict one-third damage, regardless of target. If the user leaves the field, this effect ends."
-		}
+		description = "Réduit la puissance des attaques Feu de 67% de tous les Pokémon jusqu'à que le lanceur est retiré." 
 	},
 	{
 		id = "347",
@@ -3858,7 +3602,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user’s Special Attack and Special Defense by one stage each."
+		description = "Augmente l'Attaque Spéciale et la Défense Spéciale du lanceur d'un niveau." 
 	},
 	{
 		id = "348",
@@ -3868,7 +3612,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User’s critical hit rate is one level higher when using this move."
+		description = "Taux de coups critiques +1." 
 	},
 	{
 		id = "349",
@@ -3878,7 +3622,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user’s Attack and Speed by one stage each."
+		description = "Attaque 'Danse'. Augmente l'Attaque et la Vitesse du lanceur d'un niveau." 
 	},
 	{
 		id = "350",
@@ -3888,7 +3632,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = {"80", "80", "80", "80", "90"},
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. Hits 2-5 times in one turn. Has a 3/8 chance each to hit 2 or 3 times, and a 1/8 chance each to hit 4 or 5 times. Averages to 3 hits per use."
+		description = "Touche 2 à 5 fois." 
 	},
 	{
 		id = "351",
@@ -3898,7 +3642,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Ignores Accuracy and Evasion modifiers."
+		description = "Sans effet supplémentaire." 
 	},
 	{
 		id = "352",
@@ -3908,7 +3652,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 20% chance to confuse the target."
+		description = "Attaque 'Vibration'. 20% de chance de rendre confus la cible." 
 	},
 	{
 		id = "353",
@@ -3918,13 +3662,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = {"85", "85", "85", "85", "100"},
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = {
-			"Inflicts typeless regular damage at the end of the third turn. This move cannot score a critical hit. Damage is calculated at the time this move is used.",
-			"Inflicts typeless regular damage at the end of the third turn. This move cannot score a critical hit. Damage is calculated at the time this move is used.",
-			"Inflicts typeless regular damage at the end of the third turn. This move cannot score a critical hit. Damage is calculated at the time this move is used.",
-			"Inflicts typeless regular damage at the end of the third turn. This move cannot score a critical hit. Damage is calculated at the time this move is used.",
-			"Inflicts regular damage at the end of the third turn. Damage is calculated at the time damage is dealt."
-		}
+		description = "Lance une attaque qui frappera la cible 2 tours après l'utilisation de cette capacité. L'attaque inflige des dégâts neutres peu importe le type de la cible." 
 	},
 	{
 		id = "354",
@@ -3934,7 +3672,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage, then lowers the user’s Special Attack by two stages."
+		description = "Baisse l'Attaque Spéciale du lanceur de 2 niveaux après l'attaque."   
 	},
 	{
 		id = "355",
@@ -3944,7 +3682,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Heals the user for half its max HP. If the user is flying, its flying type is ignored until the end of this turn."
+		description = "Le lanceur copie la dernière capacité utilisée par la cible et la conserve tant qu'il reste au combat."  
 	},
 	{
 		id = "356",
@@ -3954,18 +3692,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = {
-			"For five turns, all immunities to ground moves are disabled. For the duration of this effect, the Accuracy of every Pok" ..
-				Chars.accentedE .. "mon on the field is multiplied by 5/3. Cancels the effects of Bounce and Fly.",
-			"For five turns, all immunities to ground moves are disabled. For the duration of this effect, the Accuracy of every Pok" ..
-				Chars.accentedE .. "mon on the field is multiplied by 5/3. Cancels the effects of Bounce and Fly.",
-			"For five turns, all immunities to ground moves are disabled. For the duration of this effect, the Accuracy of every Pok" ..
-				Chars.accentedE .. "mon on the field is multiplied by 5/3. Cancels the effects of Bounce and Fly.",
-			"For five turns, all immunities to ground moves are disabled. For the duration of this effect, the Accuracy of every Pok" ..
-				Chars.accentedE .. "mon on the field is multiplied by 5/3. Cancels the effects of Bounce and Fly.",
-			"For five turns, all immunities to ground moves are disabled. For the duration of this effect, the Accuracy of every Pok" ..
-				Chars.accentedE .. "mon on the field is multiplied by 5/3. Cancels the effects of Bounce, Fly, and Sky Drop."
-		}
+		description = "Attaque en 2 tours. Le lanceur est invulnérable pendant le chargement."  
 	},
 	{
 		id = "357",
@@ -3975,8 +3702,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "40",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Ignores the target’s boosted Evasion stages until the target leaves the field. A dark Pok" ..
-			Chars.accentedE .. "mon under this effect takes normal damage from psychic moves."
+		description = "Attaque en 2 tours. Le lanceur est invulnérable pendant le chargement."   
 	},
 	{
 		id = "358",
@@ -3986,7 +3712,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. If the target is sleeping, this move has double power, and the target wakes up."
+		description = "Inflige des dégâts équivalents au niveau du lanceur."  
 	},
 	{
 		id = "359",
@@ -3996,7 +3722,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Lowers the user’s Speed by one stage."
+		description = "Attaque 'Poing'. Baisse la Vitesse du lanceur d'un niveau après l'attaque." 
 	},
 	{
 		id = "360",
@@ -4006,7 +3732,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Power increases with the target’s current Speed compared to the user, capped at 150."
+		description = "Attaque 'Balle'. Plus le lanceur est lent par rapport à la cible, plus l'attaque est puissante. La puissance varie entre 1 et 150." 
 	},
 	{
 		id = "361",
@@ -4016,9 +3742,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "User faints. Its replacement’s HP is fully restored, and any major status effect is removed. If the replacement Pok" ..
-			Chars.accentedE ..
-				"mon is immediately fainted by a switch-in effect, the next replacement is healed by this move instead."
+		description = "Le lanceur tombe K.O. pour soigner les PV et le statut du Pokémon qui est envoyé après lui, dans le même tour."   
 	},
 	{
 		id = "362",
@@ -4028,7 +3752,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. If the target has less than half its max HP remaining, this move has double power."
+		description = "La puissance est doublée si la cible possède moins de 50% de ses PV max." 
 	},
 	{
 		id = "363",
@@ -4038,7 +3762,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. Power and type are determined by the user’s held berry. The berry is consumed. If the user is not holding a berry, this move will fail."
+		description = "La puissance et le type dépend de la Baie tenue." 
 	},
 	{
 		id = "364",
@@ -4048,13 +3772,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = {
-			"Increased priority. Inflicts regular damage. Removes the effects of Detect or Protect from the target before hitting. Fails if the target did not use Detect or Protect.",
-			"Increased priority. Inflicts regular damage. Removes the effects of Detect or Protect from the target before hitting. Fails if the target did not use Detect or Protect.",
-			"Increased priority. Inflicts regular damage. Removes the effects of Detect or Protect from the target before hitting. Fails if the target did not use Detect or Protect.",
-			"Increased priority. Inflicts regular damage. Removes the effects of Detect or Protect from the target before hitting. Fails if the target did not use Detect or Protect.",
-			"Increased priority. Inflicts regular damage. Removes the effects of Detect or Protect from the target before hitting."
-		}
+		description = "Priorité +2. Dissipe l'effet de Détection et Abri puis attaque. Ne fonctionne que si la cible se protège."  
 	},
 	{
 		id = "365",
@@ -4064,7 +3782,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. If the target is holding a berry, the user takes the berry and uses it immediately."
+		description = "Si la cible tient une Baie, le lanceur la vole et la consomme."  
 	},
 	{
 		id = "366",
@@ -4074,23 +3792,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = {
-			"For the next three turns, all Pok" ..
-				Chars.accentedE ..
-					"mon on the user’s side of the field have their original Speed doubled. This effect remains if the user leaves the field.",
-			"For the next three turns, all Pok" ..
-				Chars.accentedE ..
-					"mon on the user’s side of the field have their original Speed doubled. This effect remains if the user leaves the field.",
-			"For the next three turns, all Pok" ..
-				Chars.accentedE ..
-					"mon on the user’s side of the field have their original Speed doubled. This effect remains if the user leaves the field.",
-			"For the next three turns, all Pok" ..
-				Chars.accentedE ..
-					"mon on the user’s side of the field have their original Speed doubled. This effect remains if the user leaves the field.",
-			"For the next four turns, all Pok" ..
-				Chars.accentedE ..
-					"mon on the user’s side of the field have their original Speed doubled. This effect remains if the user leaves the field."
-		}
+		description = "Génère une rafale de vent qui double la Vitesse des Pokémon de l'équipe pendant 3 tours." 
 	},
 	{
 		id = "367",
@@ -4100,7 +3802,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises one of the target’s stats by two stages. The raised stat is chosen at random from any stats that can be raised."
+		description = "Augmente une statistique de la cible au hasard (parmi celles qui ne sont pas au max) de 2 niveaux." 
 	},
 	{
 		id = "368",
@@ -4110,9 +3812,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Targets the last opposing Pok" ..
-			Chars.accentedE ..
-				"mon to hit the user with a damaging move this turn. Inflicts 1.5x the damage that move did to the user. Type immunity applies, but other type effects are ignored."
+		description = "Priorité +0. Renvoie 150% des dégâts (physiques ou spéciaux) de la dernière capacité adverse subie durant le tour." 
 	},
 	{
 		id = "369",
@@ -4122,8 +3822,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User immediately switches out, and the trainer selects a replacement Pok" ..
-			Chars.accentedE .. "mon from the party."
+		description = "Après l'attaque, le lanceur change de place avec un Pokémon de l'équipe." 
 	},
 	{
 		id = "370",
@@ -4133,7 +3832,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Lowers the user’s Defense and Special Defense by one stage each."
+		description = "Baisse la Défense et la Défense Spéciale du lanceur d'un niveau après l'attaque." 
 	},
 	{
 		id = "371",
@@ -4143,7 +3842,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. If the target uses a move, switches out, or the trainer uses an item this turn before this move is used, this move has double power."
+		description = "La puissance est doublée si le lanceur attaque après sa cible, ou si la cible se retire du terrain." 
 	},
 	{
 		id = "372",
@@ -4153,7 +3852,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. If the target takes damage this turn for any reason before this move is used, this move has double power."
+		description = "La puissance est doublée si la cible a déjà été blessé durant le tour." 
 	},
 	{
 		id = "373",
@@ -4163,7 +3862,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Target cannot use its held item and its trainer cannot use items from the bag on it for five turns. If the target leaves the field, this effect ends."
+		description = "Met un embargo sur la cible, ce qui l'empêche d'utiliser des objets ou de bénéficier des effets des objets tenus pendant 5 tours." 
 	},
 	{
 		id = "374",
@@ -4173,7 +3872,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. Power is determined by the user’s held item. The item is consumed. If the user is not holding an item, or its item has no set power, this move will fail."
+		description = "Le lanceur envoie l'objet qu'il tient sur sa cible. La puissance et les effets dépendent de l'objet." 
 	},
 	{
 		id = "375",
@@ -4183,7 +3882,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "If the user has a major status effect and the target does not, the user’s status is transferred to the target."
+		description = ""
 	},
 	{
 		id = "376",
@@ -4193,7 +3892,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage and makes contact. Power is determined by the PP remaining for this move, after its PP cost is deducted. Ignores Accuracy and Evasion modifiers."
+		description = "Moins la capacité possède de PP, plus l'attaque est puissante. La puissance varie entre 40 et 200." 
 	},
 	{
 		id = "377",
@@ -4203,13 +3902,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = {
-			"For the next five turns, the target may not use any moves that only restore HP. Moves that steal HP may still be used, but will only inflict damage and not heal the target.",
-			"For the next five turns, the target may not use any moves that only restore HP. Moves that steal HP may still be used, but will only inflict damage and not heal the target.",
-			"For the next five turns, the target may not use any moves that only restore HP. Moves that steal HP may still be used, but will only inflict damage and not heal the target.",
-			"For the next five turns, the target may not use any moves that only restore HP. Moves that steal HP may still be used, but will only inflict damage and not heal the target.",
-			"For the next five turns, the target may not use any moves that only restore HP. Moves that steal HP may still be used, but will only inflict damage and not heal the target. The target will also not be healed by held items or abilities."
-		}
+		description = "Le lanceur récupère 50% de ses PV max."  
 	},
 	{
 		id = "378",
@@ -4219,7 +3912,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage and makes contact. Power directly relates to the target’s relative remaining HP, up to a maximum of 121."
+		description = "Plus la cible possède de PV restants, plus l'attaque est puissante. La puissance varie entre 1 et 121." 
 	},
 	{
 		id = "379",
@@ -4229,7 +3922,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "The user’s original Attack and Defense are swapped."
+		description = "Sans effet supplémentaire."   
 	},
 	{
 		id = "380",
@@ -4239,7 +3932,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "The target’s ability is disabled as long as it remains on the field."
+		description = "Neutralise le talent de la cible."  
 	},
 	{
 		id = "381",
@@ -4249,7 +3942,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "For five turns, opposing Pok" .. Chars.accentedE .. "mon cannot score critical hits."
+		description = "Le lanceur crée un voile qui empêche l'équipe de subir de coups critiques pendant 5 tours." 
 	},
 	{
 		id = "382",
@@ -4259,7 +3952,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "If the target has selected a damaging move this turn, the user will copy that move and use it against the target, with a 50% increase in power."
+		description = "Si la cible utilise une attaque offensive et que le lanceur est plus rapide, alors il lancera l'attaque adverse avec une puissance boostée de 50%." 
 	},
 	{
 		id = "383",
@@ -4269,7 +3962,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Uses the last move that was used successfully by any Pok" .. Chars.accentedE .. "mon, including the user."
+		description = "Le lanceur utilise la dernière capacité lancée. Échoue si aucune capacité n'a été utilisée." 
 	},
 	{
 		id = "384",
@@ -4279,7 +3972,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "User swaps its Attack and Special Attack stat modifiers with the target."
+		description = "Échange les changements d'Attaque et d'Attaque Spéciale du lanceur avec ceux de la cible."  
 	},
 	{
 		id = "385",
@@ -4289,7 +3982,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "User swaps its Defense and Special Defense stat modifiers with the target."
+		description = "Échange les changements de Défense et de Défense Spéciale du lanceur avec ceux de la cible."  
 	},
 	{
 		id = "386",
@@ -4299,7 +3992,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Power starts at 60 and is increased by 20 for every stage any of the target’s stats has been raised, capping at 200. Accuracy and Evasion modifiers do not increase this move’s power."
+		description = "La puissance augmente de 20 pour chaque augmentation de statistique de la cible, pour un maximum de 200." 
 	},
 	{
 		id = "387",
@@ -4309,7 +4002,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. This move can only be used if each of the user’s other moves has been used at least once since the user entered the field. If this is the user’s only move, this move will fail."
+		description = "Utilisable uniquement si le lanceur a déjà utilisé au moins une fois ses autres capacités. Ne fonctionne pas s'il s'agit de la seule capacité du lanceur." 
 	},
 	{
 		id = "388",
@@ -4319,7 +4012,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Changes the target’s ability to Insomnia for as long as it remains on the field."
+		description = "Remplace le talent de la cible par Insomnia, ce qui l'empêche de s'endormir." 
 	},
 	{
 		id = "389",
@@ -4329,7 +4022,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Increased priority. Inflicts regular damage and makes contact. If the target has not selected a damaging move this turn, or if the target has already acted this turn, this move will fail."
+		description = "Priorité +1. Échoue si la cible n'utilise pas une capacité offensive ou si elle attaque avant le lanceur." 
 	},
 	{
 		id = "390",
@@ -4339,10 +4032,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Scatters poisoned spikes around the opposing field, which poison opposing Pok" ..
-			Chars.accentedE ..
-				"mon that enter the field. A second layer of these spikes may be laid down, in which case Pok" ..
-					Chars.accentedE .. "mon will be badly poisoned instead."
+		description = "Empoisonne gravement la cible."  
 	},
 	{
 		id = "391",
@@ -4352,7 +4042,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "User swaps its stat modifiers with the target."
+		description = "Échange les changements de stats du lanceur avec ceux de la cible."  
 	},
 	{
 		id = "392",
@@ -4362,7 +4052,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Restores 1/16 of the user’s max HP at the end of each turn. If the user leaves the field, this effect ends."
+		description = "Échange le talent du lanceur avec celui de la cible."  
 	},
 	{
 		id = "393",
@@ -4372,7 +4062,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "For five turns, the user is immune to ground moves."
+		description = "Fait léviter le lanceur pendant 5 tours, ce qui l'immunise notamment aux attaques Sol et aux pièges."  
 	},
 	{
 		id = "394",
@@ -4382,8 +4072,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User takes 1/3 the damage it inflicts in recoil. Has a 10% chance to burn the target. Frozen Pok" ..
-			Chars.accentedE .. "mon will thaw if they use this move."
+		description = "Attaque 'à contrecoup'. 10% de chance de brûler la cible. Les dégâts de recul sont équivalents à 1/3 des dégâts infligés à la cible."
 	},
 	{
 		id = "395",
@@ -4393,7 +4082,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 30% chance to paralyze the target."
+		description = "30% de chance de paralyser la cible." 
 	},
 	{
 		id = "396",
@@ -4403,7 +4092,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Ignores Accuracy and Evasion modifiers."
+		description = "Attaque 'Balle' et attaque 'Vibration'." 
 	},
 	{
 		id = "397",
@@ -4413,7 +4102,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user’s Speed by two stages."
+		description = "Augmente la Vitesse du lanceur de 2 niveaux." 
 	},
 	{
 		id = "398",
@@ -4423,7 +4112,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 30% chance to poison the target."
+		description = "Empoisonne gravement la cible."  
 	},
 	{
 		id = "399",
@@ -4433,7 +4122,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 20% chance to make the target flinch."
+		description = "Attaque 'Vibration'. 20% de chance d'apeurer la cible." 
 	},
 	{
 		id = "400",
@@ -4443,7 +4132,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User’s critical hit rate is one level higher when using this move."
+		description = "Taux de coups critiques +1."  
 	},
 	{
 		id = "401",
@@ -4453,7 +4142,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact."
+		description = "Sans effet supplémentaire." 
 	},
 	{
 		id = "402",
@@ -4463,7 +4152,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage."
+		description = "Attaque 'Bombe'." 
 	},
 	{
 		id = "403",
@@ -4473,7 +4162,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 30% chance to make the target flinch."
+		description = "30% de chance d'apeurer la cible." 
 	},
 	{
 		id = "404",
@@ -4483,7 +4172,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact."
+		description = "Sans effet supplémentaire." 
 	},
 	{
 		id = "405",
@@ -4493,7 +4182,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to lower the target’s Special Defense by one stage."
+		description = "Attaque sonore. 10% de chance de baisser la Défense Spéciale de la cible d'un niveau." 
 	},
 	{
 		id = "406",
@@ -4503,7 +4192,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage."
+		description = "Attaque 'Vibration'." 
 	},
 	{
 		id = "407",
@@ -4513,7 +4202,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "75",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 20% chance to make the target flinch."
+		description = "20% de chance d'apeurer la cible." 
 	},
 	{
 		id = "408",
@@ -4523,7 +4212,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage."
+		description = "Sans effet supplémentaire." 
 	},
 	{
 		id = "409",
@@ -4533,7 +4222,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = {"5", "5", "5", "5", "10"},
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Drains half the damage inflicted to heal the user."
+		description = "Attaque 'Poing'. Convertit 50% des dégâts infligés à la cible en PV pour le lanceur." 
 	},
 	{
 		id = "410",
@@ -4543,7 +4232,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Increased priority. Inflicts regular damage."
+		description = "Priorité +1." 
 	},
 	{
 		id = "411",
@@ -4553,7 +4242,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "70",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to lower the target’s Special Defense by one stage."
+		description = "Attaque 'Balle'. 10% de chance de baisser la Défense Spéciale de la cible d'un niveau." 
 	},
 	{
 		id = "412",
@@ -4563,7 +4252,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to lower the target’s Special Defense by one stage."
+		description = ""
 	},
 	{
 		id = "413",
@@ -4573,7 +4262,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User takes 1/3 the damage it inflicts in recoil."
+		description = "Attaque 'à contrecoup'. Les dégâts de recul sont équivalents à 1/3 des dégâts infligés à la cible."
 	},
 	{
 		id = "414",
@@ -4583,7 +4272,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to lower the target’s Special Defense by one stage."
+		description = "10% de chance de baisser la Défense Spéciale de la cible d'un niveau." 
 	},
 	{
 		id = "415",
@@ -4593,8 +4282,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "User and target permanently swap held items. Works even if one of the Pok" ..
-			Chars.accentedE .. "mon isn’t holding anything."
+		description = "Échange l'objet du lanceur avec celui de la cible."  
 	},
 	{
 		id = "416",
@@ -4604,7 +4292,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User loses its next turn to recharge, and cannot attack or switch out during that turn."
+		description = "Le lanceur doit se reposer au tour suivant."  
 	},
 	{
 		id = "417",
@@ -4614,7 +4302,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user’s Special Attack by two stages."
+		description = "Augmente l'Attaque Spéciale du lanceur de 2 niveaux." 
 	},
 	{
 		id = "418",
@@ -4624,7 +4312,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Increased priority. Inflicts regular damage and makes contact."
+		description = "Attaque 'Poing'. Priorité +1." 
 	},
 	{
 		id = "419",
@@ -4634,7 +4322,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Decreased priority. Inflicts regular damage and makes contact. If the target damaged the user this turn, this move has double power."
+		description = "Priorité -4. La puissance est doublée si la cible a blessé le lanceur avec une capacité offensive durant le tour." 
 	},
 	{
 		id = "420",
@@ -4644,7 +4332,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Increased priority. Inflicts regular damage."
+		description = ""
 	},
 	{
 		id = "421",
@@ -4654,7 +4342,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User’s critical hit rate is one level higher when using this move."
+		description = "Taux de coups critiques +1."  
 	},
 	{
 		id = "422",
@@ -4664,7 +4352,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 10% chance to paralyze the target and a separate 10% chance to make the target flinch."
+		description = ""
 	},
 	{
 		id = "423",
@@ -4674,7 +4362,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 10% chance to freeze the target and a separate 10% chance to make the target flinch."
+		description = "Attaque 'Croc'. 10% de chance d'apeurer et 10% de chance de geler sa cible. Effets cumulables." 
 	},
 	{
 		id = "424",
@@ -4684,7 +4372,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 10% chance to burn the target and a separate 10% chance to make the target flinch."
+		description = "Attaque 'Croc'. 10% de chance d'apeurer et 10% de chance de brûler sa cible. Effets cumulables." 
 	},
 	{
 		id = "425",
@@ -4694,7 +4382,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Increased priority. Inflicts regular damage and makes contact."
+		description = "Priorité +1." 
 	},
 	{
 		id = "426",
@@ -4704,7 +4392,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 30% chance to lower the target’s Accuracy by one stage."
+		description = "Attaque 'Bombe'. 30% de chance de baisser la Précision de la cible d'un niveau." 
 	},
 	{
 		id = "427",
@@ -4714,7 +4402,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. User’s critical hit rate is one level higher when using this move."
+		description = "Taux de coups critiques +1."  
 	},
 	{
 		id = "428",
@@ -4724,7 +4412,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 20% chance to make the target flinch."
+		description = "20% de chance d'apeurer la cible."  
 	},
 	{
 		id = "429",
@@ -4734,7 +4422,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 30% chance to lower the target’s Accuracy by one stage."
+		description = "30% de chance de baisser la Précision de la cible d'un niveau." 
 	},
 	{
 		id = "430",
@@ -4744,7 +4432,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to lower the target’s Special Defense by one stage."
+		description = "10% de chance de baisser la Défense Spéciale de la cible d'un niveau." 
 	},
 	{
 		id = "431",
@@ -4754,7 +4442,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 20% chance to confuse the target."
+		description = "20% de chance de rendre confus la cible." 
 	},
 	{
 		id = "432",
@@ -4764,7 +4452,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target’s Evasion by one stage. Removes the effects of mist, light screen, reflect, safeguard, spikes, stealth rock, and toxic spikes from the target’s side of the field."
+		description = "Crée une brume qui empêche la réduction des stats durant 5 tours."  
 	},
 	{
 		id = "433",
@@ -4774,8 +4462,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Decreased priority. For five turns, slower Pok" ..
-			Chars.accentedE .. "mon will act before faster Pok" .. Chars.accentedE .. "mon. Move priority is not affected."
+		description = "Priorité -7. Pose la Distorsion, qui inverse l'ordre d'actions des Pokémon selon leurs Vitesses pendant 5 tours. Les Pokémon les plus rapides attaquent en dernier, mais les priorités d'attaque restent les mêmes." 
 	},
 	{
 		id = "434",
@@ -4785,7 +4472,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage, then lowers the user’s Special Attack by two stages."
+		description = "Baisse l'Attaque Spéciale du lanceur de 2 niveaux après l'attaque." 
 	},
 	{
 		id = "435",
@@ -4795,7 +4482,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 30% chance to paralyze the target."
+		description = "30% de chance de paralyser les cibles." 
 	},
 	{
 		id = "436",
@@ -4805,7 +4492,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 30% chance to burn the target."
+		description = ""
 	},
 	{
 		id = "437",
@@ -4815,7 +4502,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage, then lowers the user’s Special Attack by two stages."
+		description = "Baisse l'Attaque Spéciale du lanceur de 2 niveaux après l'attaque." 
 	},
 	{
 		id = "438",
@@ -4825,7 +4512,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact."
+		description = "Sans effet supplémentaire." 
 	},
 	{
 		id = "439",
@@ -4835,7 +4522,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. User loses its next turn to recharge, and cannot attack or switch out during that turn."
+		description = "Attaque 'Bombe'." 
 	},
 	{
 		id = "440",
@@ -4845,7 +4532,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User’s critical hit rate is one level higher when using this move. Has a 10% chance to poison the target."
+		description = "Taux de coups critiques +1. 10% de chance d'empoisonner la cible." 
 	},
 	{
 		id = "441",
@@ -4855,7 +4542,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "70",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. Has a 30% chance to poison the target."
+		description = "30% de chance d'empoisonner la cible." 
 	},
 	{
 		id = "442",
@@ -4865,7 +4552,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 30% chance to make the target flinch."
+		description = "30% de chance d'apeurer la cible." 
 	},
 	{
 		id = "443",
@@ -4875,7 +4562,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. Ignores Accuracy and Evasion modifiers."
+		description = "Attaque 'Bombe'." 
 	},
 	{
 		id = "444",
@@ -4885,7 +4572,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "80",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. User’s critical hit rate is one level higher when using this move."
+		description = "Taux de coups critiques +1." 
 	},
 	{
 		id = "445",
@@ -4895,7 +4582,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Lowers the target’s Special Attack by two stages. If the user and target are the same gender, or either is genderless, this move will fail."
+		description = "Baisse l'Attaque Spéciale des cibles de 2 niveaux. Ne fonctionne que si les cibles sont de sexe opposé au lanceur." 
 	},
 	{
 		id = "446",
@@ -4905,10 +4592,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Spreads sharp rocks around the opposing field, damaging any Pok" ..
-			Chars.accentedE ..
-				"mon that enters the field for 1/8 its max HP. This damage is affected by the entering Pok" ..
-					Chars.accentedE .. "mon’s susceptibility to rock moves."
+		description = "Pose un piège sur le terrain adverse, qui inflige 12.5% des PV max aux Pokémon qui entrent sur son terrain. Ces dégâts sont variables selon la faiblesse ou la résistance du Pokémon adverse au type Roche." 
 	},
 	{
 		id = "447",
@@ -4918,7 +4602,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage and makes contact. Power increases with the target’s weight in kilograms, to a maximum of 120."
+		description = "Plus la cible est lourde, plus l'attaque est puissante. La puissance varie entre 20 et 120." 
 	},
 	{
 		id = "448",
@@ -4928,13 +4612,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = {
-			"Inflicts regular damage. Has either a 1%, 11%, or 31% chance to confuse the target, based on the volume of the recording made for this move.",
-			"Inflicts regular damage. Has either a 1%, 11%, or 31% chance to confuse the target, based on the volume of the recording made for this move.",
-			"Inflicts regular damage. Has either a 1%, 11%, or 31% chance to confuse the target, based on the volume of the recording made for this move.",
-			"Inflicts regular damage. Has either a 1%, 11%, or 31% chance to confuse the target, based on the volume of the recording made for this move.",
-			"Inflicts regular damage. Has either a 0% or 10% chance to confuse the target, based on the volume of the recording made for this move."
-		}
+		description = "Attaque sonore. 1%, 11% ou 31% de chance de rendre confus la cible selon le volume du son enregistré." 
 	},
 	{
 		id = "449",
@@ -4944,7 +4622,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. If the user is holding a plate, this move’s type is the type corresponding to that item."
+		description = "Le type de l'attaque varie selon la Plaque tenue par le lanceur." 
 	},
 	{
 		id = "450",
@@ -4954,7 +4632,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. If the target is holding a berry, the user takes the berry and uses it immediately."
+		description = "Si la cible tient une Baie, le lanceur la vole et la consomme." 
 	},
 	{
 		id = "451",
@@ -4964,7 +4642,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 70% chance to raise the user’s Special Attack by one stage."
+		description = "70% de chance d'augmenter l'Attaque Spéciale du lanceur d'un niveau." 
 	},
 	{
 		id = "452",
@@ -4974,7 +4652,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User takes 1/3 the damage it inflicts in recoil."
+		description = "Attaque 'à contrecoup'. Les dégâts de recul sont équivalents à 1/3 des dégâts infligés à la cible."
 	},
 	{
 		id = "453",
@@ -4984,7 +4662,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Increased priority. Inflicts regular damage and makes contact."
+		description = "Priorité +1." 
 	},
 	{
 		id = "454",
@@ -4994,7 +4672,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. User’s critical hit rate is one level higher when using this move."
+		description = "Taux de coups critiques +1." 
 	},
 	{
 		id = "455",
@@ -5004,7 +4682,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user’s Defense and Special Defense by one stage."
+		description = "Augmente la Défense et la Défense Spéciale du lanceur d'un niveau."
 	},
 	{
 		id = "456",
@@ -5014,7 +4692,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Heals the user for half its max HP."
+		description = "Le lanceur récupère 50% de ses PV max."  
 	},
 	{
 		id = "457",
@@ -5024,7 +4702,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "80",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User takes 1/2 the damage it inflicts in recoil."
+		description = "Attaque 'à contrecoup'. Les dégâts de recul sont équivalents à 1/2 des dégâts infligés à la cible."
 	},
 	{
 		id = "458",
@@ -5034,7 +4712,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Hits twice in one turn."
+		description = "Touche 2 fois." 
 	},
 	{
 		id = "459",
@@ -5044,7 +4722,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. User loses its next turn to recharge, and cannot attack or switch out during that turn."
+		description = "Le lanceur doit se reposer au tour suivant." 
 	},
 	{
 		id = "460",
@@ -5054,7 +4732,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. User’s critical hit rate is one level higher when using this move."
+		description = "Taux de coups critiques +1." 
 	},
 	{
 		id = "461",
@@ -5064,7 +4742,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "User faints. Its replacement’s HP and PP are fully restored, and any major status effect is removed."
+		description = "Attaque 'Danse'. Le lanceur tombe K.O. pour soigner les PV, les PP et le statut du Pokémon qui est envoyé après lui, dans le même tour." 
 	},
 	{
 		id = "462",
@@ -5074,7 +4752,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Power directly relates to the target’s relative remaining HP, up to a maximum of 121."
+		description = "Plus la cible possède de PV restants, plus l'attaque est puissante. La puissance varie entre 1 et 121." 
 	},
 	{
 		id = "463",
@@ -5084,13 +4762,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = {"70", "70", "70", "70", "75"},
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = {
-			"Inflicts regular damage. For the next 2-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.",
-			"Inflicts regular damage. For the next 2-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.",
-			"Inflicts regular damage. For the next 2-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.",
-			"Inflicts regular damage. For the next 2-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn.",
-			"Inflicts regular damage. For the next 4-5 turns, the target cannot leave the field and is damaged for 1/16 its max HP at the end of each turn."
-		}
+		description = "Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir."
 	},
 	{
 		id = "464",
@@ -5100,7 +4772,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "80",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Puts all adjacent foes to sleep."
+		description = "Endort les cibles." 
 	},
 	{
 		id = "465",
@@ -5110,7 +4782,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 40% chance to lower the target’s Special Defense by two stages."
+		description = "40% de chance de baisser la Défense Spéciale de la cible de 2 niveaux." 
 	},
 	{
 		id = "466",
@@ -5120,7 +4792,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to raise all of the user’s stats one stage."
+		description = "10% de chance d'augmenter l'Attaque, la Défense, l'Attaque Spéciale, la Défense Spéciale et la Vitesse du lanceur d'un niveau." 
 	},
 	{
 		id = "467",
@@ -5130,7 +4802,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User vanishes for one turn, becoming immune to attack, and hits on the second turn. Hits the target through Protect and Detect, and removes their effects."
+		description = "Attaque en 2 tours. Le lanceur est invulnérable pendant le chargement. L'attaque dissipe les protections comme Abri."  
 	},
 	{
 		id = "468",
@@ -5140,7 +4812,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user’s Attack and Accuracy by one stage."
+		description = "Priorité +3. Protège le lanceur de la plupart des attaques pendant un tour. Les chances de réussir l'attaque sont divisées par 2 à chaque utilisation consécutive." 
 	},
 	{
 		id = "469",
@@ -5150,8 +4822,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Increased priority. Moves with multiple targets will not hit friendly Pok" ..
-			Chars.accentedE .. "mon for the remainder of this turn. If the user is last to act this turn, this move will fail."
+		description = ""
 	},
 	{
 		id = "470",
@@ -5161,8 +4832,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Averages the user’s unmodified Defense with the target’s unmodified Defense; the value becomes the unmodified Defense for both Pok" ..
-			Chars.accentedE .. "mon. Unmodified Special Defense is averaged the same way."
+		description = ""
 	},
 	{
 		id = "471",
@@ -5172,8 +4842,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Averages the user’s unmodified Attack with the target’s unmodified Attack; the value becomes the unmodified Attack for both Pok" ..
-			Chars.accentedE .. "mon. Unmodified Special Attack is averaged the same way."
+		description = "Sans effet supplémentaire." 
 	},
 	{
 		id = "472",
@@ -5183,8 +4852,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Decreased priority. For five turns, every Pok" ..
-			Chars.accentedE .. "mon’s Defense and Special Defense are swapped."
+		description = ""
 	},
 	{
 		id = "473",
@@ -5194,7 +4862,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Damage calculation always uses the target’s Defense, regardless of this move’s damage class."
+		description = ""
 	},
 	{
 		id = "474",
@@ -5204,7 +4872,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. If the target is poisoned, this move has double power."
+		description = ""
 	},
 	{
 		id = "475",
@@ -5214,7 +4882,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user’s Speed by two stages. If successful, reduces the user’s weight by 100 kg (minimum 0.1 kg)."
+		description = ""
 	},
 	{
 		id = "476",
@@ -5224,8 +4892,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Increased priority. Until the end of this turn, any moves that opposing Pok" ..
-			Chars.accentedE .. "mon target solely at the user’s ally will instead target the user."
+		description = ""
 	},
 	{
 		id = "477",
@@ -5235,7 +4902,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "For three turns, moves used against the target have perfect accuracy, but the target is immune to ground damage. Accuracy of one-hit KO moves is exempt from this effect."
+		description = ""
 	},
 	{
 		id = "478",
@@ -5245,8 +4912,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Decreased priority. For five turns, passive effects of held items are ignored, and Pok" ..
-			Chars.accentedE .. "mon will not use their held items."
+		description = ""
 	},
 	{
 		id = "479",
@@ -5256,7 +4922,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. Removes the target’s immunity to ground-type damage. This move will hit targets under the effect of Bounce, Fly, or Sky Drop."
+		description = ""
 	},
 	{
 		id = "480",
@@ -5266,7 +4932,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Always scores a critical hit."
+		description = ""
 	},
 	{
 		id = "481",
@@ -5276,8 +4942,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. If this move successfully hits the target, any Pok" ..
-			Chars.accentedE .. "mon adjacent to the target are damaged for 1/16 their max HP."
+		description = "Attaque en 2 tours. Le lanceur est invulnérable pendant le chargement. 30% de chance de paralyser la cible." 
 	},
 	{
 		id = "482",
@@ -5287,8 +4952,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage and hits all adjacent Pok" ..
-			Chars.accentedE .. "mon. Has 10% chance to poison each target."
+		description = ""
 	},
 	{
 		id = "483",
@@ -5298,7 +4962,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user’s Special Attack, Special Defense, and Speed by one stage each."
+		description = ""
 	},
 	{
 		id = "484",
@@ -5308,7 +4972,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. The greater the user’s weight compared to the target’s, the higher power this move has, to a maximum of 120."
+		description = ""
 	},
 	{
 		id = "485",
@@ -5318,8 +4982,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = {"10", "10", "10", "10", "15"},
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Only Pok" ..
-			Chars.accentedE .. "mon that share a type with the user will take damage from this move."
+		description = ""
 	},
 	{
 		id = "486",
@@ -5329,7 +4992,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. The greater the user’s Speed compared to the target’s, the higher power this move has, to a maximum of 150."
+		description = ""
 	},
 	{
 		id = "487",
@@ -5339,7 +5002,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Changes the target to pure water-type until it leaves the field. If the target has multitype, this move will fail."
+		description = ""
 	},
 	{
 		id = "488",
@@ -5349,7 +5012,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Raises the user’s Speed by one stage."
+		description = ""
 	},
 	{
 		id = "489",
@@ -5359,7 +5022,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user’s Attack, Defense, and Accuracy by one stage each."
+		description = ""
 	},
 	{
 		id = "490",
@@ -5369,7 +5032,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Lowers the target’s Speed by one stage."
+		description = ""
 	},
 	{
 		id = "491",
@@ -5379,7 +5042,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Lowers the target’s Special Defense by two stages."
+		description = "10% de chance de baisser la Défense Spéciale des cibles d'un niveau." 
 	},
 	{
 		id = "492",
@@ -5389,7 +5052,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Damage is calculated using the target’s attacking stat rather than the user’s."
+		description = ""
 	},
 	{
 		id = "493",
@@ -5399,7 +5062,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Changes the target’s ability to Simple. This effect ends when the target leaves battle."
+		description = ""
 	},
 	{
 		id = "494",
@@ -5409,7 +5072,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Changes the target’s ability to match the user’s. This effect ends when the target leaves battle."
+		description = ""
 	},
 	{
 		id = "495",
@@ -5419,7 +5082,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "The target will act next this turn, regardless of Speed or move priority."
+		description = ""
 	},
 	{
 		id = "496",
@@ -5429,7 +5092,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. If round has already been used this turn, this move’s power is doubled."
+		description = ""
 	},
 	{
 		id = "497",
@@ -5439,7 +5102,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Power increases by 40 for each subsequent use, up to a maximum of 200 damage."
+		description = ""
 	},
 	{
 		id = "498",
@@ -5449,7 +5112,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Damage calculation ignores the target’s stat modifiers, including Evasion."
+		description = ""
 	},
 	{
 		id = "499",
@@ -5459,7 +5122,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. All of the target’s stat modifiers are reset to zero."
+		description = ""
 	},
 	{
 		id = "500",
@@ -5469,7 +5132,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Power increases by 20 for every stage any of the user’s stats have been raised."
+		description = "Sans effet supplémentaire." 
 	},
 	{
 		id = "501",
@@ -5479,8 +5142,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Increased priority. Moves with priority greater than 0 will not hit friendly Pok" ..
-			Chars.accentedE .. "mon for the remainder of this turn. If the user is last to act this turn, this move will fail."
+		description = ""
 	},
 	{
 		id = "502",
@@ -5490,10 +5152,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Increased priority. User switches position on the field with the friendly Pok" ..
-			Chars.accentedE ..
-				"mon opposite it. If the user is in the middle position in a triple battle, or there are no other friendly Pok" ..
-					Chars.accentedE .. "mon, this move will fail."
+		description = ""
 	},
 	{
 		id = "503",
@@ -5503,7 +5162,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 30% chance to burn the target."
+		description = ""
 	},
 	{
 		id = "504",
@@ -5513,7 +5172,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user’s Attack, Special Attack, and Speed by two stages each. Lowers the user’s Defense and Special Defense by one stage each."
+		description = ""
 	},
 	{
 		id = "505",
@@ -5523,7 +5182,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Heals the target for half its max HP."
+		description = "Le lanceur récupère 50% de ses PV max." 
 	},
 	{
 		id = "506",
@@ -5533,7 +5192,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. If the target has a major status ailment, this move has double power."
+		description = ""
 	},
 	{
 		id = "507",
@@ -5543,7 +5202,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User carries the target high into the air for one turn, and on the following turn, the user drops the target to inflict damage. Ineffective on flying types."
+		description = ""
 	},
 	{
 		id = "508",
@@ -5553,7 +5212,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user’s Attack by one stage and its Speed by two stages."
+		description = ""
 	},
 	{
 		id = "509",
@@ -5563,8 +5222,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Decreased priority. Inflicts regular damage and makes contact. Switches the target out for another of its trainer’s Pok" ..
-			Chars.accentedE .. "mon, selected at random."
+		description = ""
 	},
 	{
 		id = "510",
@@ -5574,7 +5232,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. If the target is holding a berry, it’s destroyed and cannot be used in response to this move."
+		description = ""
 	},
 	{
 		id = "511",
@@ -5584,7 +5242,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Forces the target to act last this turn, regardless of Speed or move priority. If the target has already acted this turn, this move will fail."
+		description = ""
 	},
 	{
 		id = "512",
@@ -5594,7 +5252,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. If the user has no held item, this move has double power."
+		description = ""
 	},
 	{
 		id = "513",
@@ -5604,7 +5262,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "User’s type changes to match the target’s."
+		description = "Le lanceur copie la dernière capacité utilisée par la cible et la conserve tant qu'il reste au combat." 
 	},
 	{
 		id = "514",
@@ -5614,8 +5272,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. If a friendly Pok" ..
-			Chars.accentedE .. "mon fainted on the previous turn, this move has double power."
+		description = ""
 	},
 	{
 		id = "515",
@@ -5625,7 +5282,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts damage equal to the user’s remaining HP. User faints."
+		description = ""
 	},
 	{
 		id = "516",
@@ -5635,7 +5292,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Transfers the user’s held item to the target. If the user has no held item, or the target already has a held item, this move will fail."
+		description = "Effectue aléatoirement une attaque à 40, 80 ou 120 de puissance, ou soigne 25% des PV max de la cible." 
 	},
 	{
 		id = "517",
@@ -5645,7 +5302,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "50",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 100% chance to burn the target."
+		description = ""
 	},
 	{
 		id = "518",
@@ -5655,9 +5312,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. If a friendly Pok" ..
-			Chars.accentedE ..
-				"mon used grass pledge earlier this turn, all opposing Pok" .. Chars.accentedE .. "mon have halved Speed for four turns."
+		description = ""
 	},
 	{
 		id = "519",
@@ -5667,10 +5322,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. If a friendly Pok" ..
-			Chars.accentedE ..
-				"mon used water pledge earlier this turn, moves used by any friendly Pok" ..
-					Chars.accentedE .. "mon have doubled effect chance for four turns."
+		description = ""
 	},
 	{
 		id = "520",
@@ -5680,10 +5332,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. If a friendly Pok" ..
-			Chars.accentedE ..
-				"mon used fire pledge earlier this turn, all opposing Pok" ..
-					Chars.accentedE .. "mon will take 1/8 their max HP in damage at the end of every turn for four turns."
+		description = ""
 	},
 	{
 		id = "521",
@@ -5693,8 +5342,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage, then the user immediately switches out, and the trainer selects a replacement Pok" ..
-			Chars.accentedE .. "mon from the party."
+		description = "10% de chance de paralyser la cible." 
 	},
 	{
 		id = "522",
@@ -5704,7 +5352,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 100% chance to lower the target’s Special Attack by one stage."
+		description = ""
 	},
 	{
 		id = "523",
@@ -5714,7 +5362,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. Has a 100% chance to lower the target’s Speed by one stage."
+		description = ""
 	},
 	{
 		id = "524",
@@ -5724,7 +5372,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Always scores a critical hit."
+		description = ""
 	},
 	{
 		id = "525",
@@ -5734,8 +5382,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Decreased priority. Inflicts regular damage and makes contact. Switches the target out for another of its trainer’s Pok" ..
-			Chars.accentedE .. "mon, selected at random."
+		description = ""
 	},
 	{
 		id = "526",
@@ -5745,7 +5392,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user’s Attack and Special Attack by one stage each."
+		description = ""
 	},
 	{
 		id = "527",
@@ -5755,7 +5402,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Lowers the target’s Speed by one stage."
+		description = "Empêche la cible de fuir." 
 	},
 	{
 		id = "528",
@@ -5765,7 +5412,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User takes 1/4 the damage it inflicts in recoil."
+		description = ""
 	},
 	{
 		id = "529",
@@ -5775,7 +5422,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User’s critical hit rate is one level higher when using this move."
+		description = "Attaque en 2 tours. Le lanceur est invulnérable pendant le chargement." 
 	},
 	{
 		id = "530",
@@ -5785,7 +5432,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Hits twice in one turn."
+		description = ""
 	},
 	{
 		id = "531",
@@ -5795,7 +5442,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "25",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 30% chance to make the target flinch."
+		description = ""
 	},
 	{
 		id = "532",
@@ -5805,7 +5452,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Drains half the damage inflicted to heal the user."
+		description = ""
 	},
 	{
 		id = "533",
@@ -5815,7 +5462,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Damage calculation ignores the target’s stat modifiers, including Evasion."
+		description = ""
 	},
 	{
 		id = "534",
@@ -5825,7 +5472,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 50% chance to lower the target’s Defense by one stage."
+		description = ""
 	},
 	{
 		id = "535",
@@ -5835,7 +5482,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. The greater the user’s weight compared to the target’s, the higher power this move has, to a maximum of 120."
+		description = ""
 	},
 	{
 		id = "536",
@@ -5845,7 +5492,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 50% chance to lower the target’s Accuracy by one stage."
+		description = ""
 	},
 	{
 		id = "537",
@@ -5855,7 +5502,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 30% chance to make the target flinch."
+		description = ""
 	},
 	{
 		id = "538",
@@ -5865,7 +5512,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Raises the user’s Defense by three stages."
+		description = ""
 	},
 	{
 		id = "539",
@@ -5875,7 +5522,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 40% chance to lower the target’s Accuracy by one stage."
+		description = ""
 	},
 	{
 		id = "540",
@@ -5885,7 +5532,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Damage calculation always uses the target’s Defense, regardless of this move’s damage class."
+		description = ""
 	},
 	{
 		id = "541",
@@ -5895,7 +5542,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Hits 2-5 times in one turn, and averages to 3 hits per use."
+		description = ""
 	},
 	{
 		id = "542",
@@ -5905,7 +5552,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "70",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 30% chance to confuse the target. Has perfect accuracy in the rain, but only 50% accuracy in harsh sunlight."
+		description = ""
 	},
 	{
 		id = "543",
@@ -5915,7 +5562,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. User takes 1/4 the damage it inflicts in recoil."
+		description = ""
 	},
 	{
 		id = "544",
@@ -5925,7 +5572,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Hits twice in one turn."
+		description = ""
 	},
 	{
 		id = "545",
@@ -5935,7 +5582,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 30% chance to burn the target."
+		description = ""
 	},
 	{
 		id = "546",
@@ -5945,7 +5592,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. If the user is holding a drive, this move’s type is the type corresponding to that item."
+		description = ""
 	},
 	{
 		id = "547",
@@ -5955,7 +5602,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 10% chance to put the target to sleep."
+		description = ""
 	},
 	{
 		id = "548",
@@ -5965,7 +5612,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Damage calculation uses the target’s Defense."
+		description = ""
 	},
 	{
 		id = "549",
@@ -5975,7 +5622,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Lowers the target’s Speed by one stage."
+		description = ""
 	},
 	{
 		id = "550",
@@ -5985,7 +5632,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Has a 20% chance to paralyze the target."
+		description = "Sans effet supplémentaire." 
 	},
 	{
 		id = "551",
@@ -5995,7 +5642,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "85",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 20% chance to burn the target."
+		description = ""
 	},
 	{
 		id = "552",
@@ -6005,7 +5652,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 50% chance to raise the user’s Special Attack by one stage."
+		description = ""
 	},
 	{
 		id = "553",
@@ -6015,7 +5662,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. Has a 30% chance to paralyze the target. User charges for one turn before attacking."
+		description = ""
 	},
 	{
 		id = "554",
@@ -6025,7 +5672,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 30% chance to burn the target. User charges for one turn before attacking."
+		description = ""
 	},
 	{
 		id = "555",
@@ -6035,7 +5682,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. Has a 100% chance to lower the target’s Special Attack by one stage."
+		description = ""
 	},
 	{
 		id = "556",
@@ -6045,7 +5692,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "90",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. Has a 30% chance to make the target flinch."
+		description = ""
 	},
 	{
 		id = "557",
@@ -6055,7 +5702,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage and makes contact. Lowers the user’s Defense, Special Defense, and Speed by one stage each."
+		description = ""
 	},
 	{
 		id = "558",
@@ -6065,8 +5712,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Inflicts regular damage. If any Pok" ..
-			Chars.accentedE .. "mon used Fusion Bolt earlier this turn, this move has double power."
+		description = ""
 	},
 	{
 		id = "559",
@@ -6076,8 +5722,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Inflicts regular damage. If any Pok" ..
-			Chars.accentedE .. "mon used Fusion Flare earlier this turn, this move has double power."
+		description = ""
 	}
 }
 

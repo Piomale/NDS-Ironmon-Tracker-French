@@ -121,7 +121,7 @@ local function PokemonStatScreen(initialSettings, initialTracker, initialProgram
                 if #level == 1 then
                     level = "  " .. level
                 end
-                moveString = level .. " " .. MoveData.MOVES[moveInfo.move + 1].name
+                moveString = level .. " " .. stripChars(MoveData.MOVES[moveInfo.move + 1].name)
                 readMoveIntoListener(i, moveInfo.move)
             end
             ui.controls.moveLabels[i].setTextColorKey("Top box text color")

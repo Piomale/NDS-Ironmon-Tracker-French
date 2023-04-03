@@ -636,7 +636,7 @@ function HoverFrameFactory.createMoveHoverTextFrame(BGColorKey, BGColorFillKey, 
         HoverFrameFactory.createHoverTextFrame(
         BGColorKey,
         BGColorFillKey,
-        MoveData.MOVES[move + 1].description,
+        stripChars(MoveData.MOVES[move + 1].description),
         "Top box text color",
         164,
         mainFrame

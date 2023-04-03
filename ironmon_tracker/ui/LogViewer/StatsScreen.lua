@@ -72,11 +72,11 @@ local function StatsScreen(initialSettings, initialTracker, initialProgram, init
             ["Bulkiest Overall"] = "The highest amount of HP, Defense, and Special Defense.",
             ["Most Frail"] = "The worst amount of HP, Defense and Special Defense."
         }
-        local description = nameToDescription[name]
+        local description = stripChars(nameToDescription[name])
         local totalWidth = ui.frames.mainFrame.getSize().width - 10
         local base = -30
         local centerX = base + ((totalWidth - DrawingUtils.calculateWordPixelLength(description)) / 2)
-        ui.controls.description.setText(description)
+        ui.controls.description.setText(stripChars(description))
         ui.controls.description.setTextOffset({x=centerX, y = 0})
     end
 
