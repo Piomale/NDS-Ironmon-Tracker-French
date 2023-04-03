@@ -1,8 +1,8 @@
 # NDS-Ironmon-Tracker for Pokémon HeartGold
 
-You can download the tracker [here](https://github.com//Piomale/NDS-Ironmon-Tracker-French/releases/latest) (only Pokémon HeartGold).
+You can download the tracker [here](https://github.com//Piomale/NDS-Ironmon-Tracker-French/releases/latest) (only for Pokémon HeartGold).
 
-Vous pouvez télécharger le tracker [ici](https://github.com//Piomale/NDS-Ironmon-Tracker-French/releases/latest) (uniquement Pokémon HeartGold).
+Vous pouvez télécharger le tracker [ici](https://github.com//Piomale/NDS-Ironmon-Tracker-French/releases/latest) (uniquement pour Pokémon HeartGold).
 
 https://user-images.githubusercontent.com/61294586/173255404-ecd702ad-b23d-4b1c-a6ce-b98c09270c9d.mp4
 
