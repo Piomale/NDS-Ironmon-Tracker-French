@@ -1,5 +1,7 @@
 # NDS-Ironmon-Tracker for Pokémon HeartGold
 
+You can download the tracker [here](https://github.com//Piomale/NDS-Ironmon-Tracker-French/releases/latest) (only Pokémon HeartGold)
+Vous pouvez télécharger le tracker [ici](https://github.com//Piomale/NDS-Ironmon-Tracker-French/releases/latest) (uniquement Pokémon HeartGold)
 
 https://user-images.githubusercontent.com/61294586/173255404-ecd702ad-b23d-4b1c-a6ce-b98c09270c9d.mp4
 
@@ -22,7 +24,7 @@ This project initially started from https://github.com/besteon/Ironmon-Tracker, 
 
 1. If you don't have BizHawk, [download the emulator](https://tasvideos.org/BizHawk/ReleaseHistory) (v2.8 or higher).
    - **IMPORTANT**: **Run BizHawk once and close it.**  This creates a config file in BizHawk's folder that ensures the tracker will work correctly. If you don't do 			this, errors may occur.
-2. Download this tracker from the [releases](https://github.com/Brian0255/NDS-Ironmon-Tracker/releases/) section.
+2. Download this tracker from the [releases](https://github.com//Piomale/NDS-Ironmon-Tracker-French/releases/) section.
 3. Unzip the tracker's files to a location of your choosing. One good location is the `Lua` folder where you installed BizHawk. Make sure the "ironmon_tracker" folder is in the same directory as "Ironmon_Tracker.lua".
 4. Load your ROM into [BizHawk](https://tasvideos.org/BizHawk/ReleaseHistory).
 5. Open the Lua Console (Tools -> Lua Console). Click on the folder icon and open `Ironmon_Tracker.lua` in the location you extracted it to.
