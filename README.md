@@ -1,4 +1,4 @@
-# NDS-Ironmon-Tracker for Pokémon HeartGold
+# NDS-Ironmon-Tracker for Pokémon HeartGold (french version)
 
 You can download the tracker [here](https://github.com//Piomale/NDS-Ironmon-Tracker-French/releases/latest) (only for Pokémon HeartGold).
 
