@@ -653,11 +653,11 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
         if currentPokemon.heldItem ~= nil then
             local heldItem = ItemData.ITEMS[currentPokemon.heldItem]
             itemDescription = heldItem.description
-            ui.controls.mainNoteLabel.setText("Item: " .. heldItem.name)
+            ui.controls.mainNoteLabel.setText("Item: " .. stripChars(heldItem.name))
         else
             ui.controls.mainNoteLabel.setText("Item: None")
         end
-        hoverListeners.heldItemTeamInfo.getOnHoverParams().text = itemDescription
+        hoverListeners.heldItemTeamInfo.getOnHoverParams().text = stripChars(itemDescription)
         hoverListeners.abilityHoverListener.getOnHoverParams().text = ""
         hoverListeners.heldItemHoverListener.getOnHoverParams().text = ""
 
@@ -817,7 +817,7 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
                 evo = "READY"
             end
         end
-        ui.controls.pokemonLevelAndEvo.setText("Niveau  " .. currentPokemon.level .. " (" .. evo .. ")")
+        ui.controls.pokemonLevelAndEvo.setText("N." .. currentPokemon.level .. " (" .. evo .. ")")
         if hoveringOverLevel then
             ui.controls.pokemonLevelAndEvo.setText("")
         end
@@ -871,7 +871,7 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
         local itemHoverParams = hoverListeners.heldItemHoverListener.getOnHoverParams()
         local heldItemDescription = heldItemInfo.description
         if ItemData.NATURE_SPECIFIC_BERRIES[heldItemInfo.name] ~= nil then
-            heldItemDescription = readNatureSpecificBerry(stripChars(heldItemInfo.name), heldItemDescription)
+            heldItemDescription = readNatureSpecificBerry(heldItemInfo.name, heldItemDescription)
         end
         itemHoverParams.text = stripChars(heldItemDescription)
     end

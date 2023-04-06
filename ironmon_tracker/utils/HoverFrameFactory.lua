@@ -354,14 +354,14 @@ local function readItemDataIntoFrame(items, itemType, itemHolderFrame)
             if itemType == "Healing" then
                 extra = itemData.amount
                 if itemData.type == ItemData.HEALING_TYPE.CONSTANT then
-                    extra = extra .. " HP"
+                    extra = extra .. " PV"
                 else
                     extra = extra .. "%"
                 end
             elseif itemType == "Status" then
                 extra = itemData.status
             end
-            local text = quantity .. " " .. name .. " (" .. extra .. ")"
+            local text = quantity .. " " .. stripChars(name) .. " (" .. extra .. ")"
             TextLabel(
                 Component(
                     itemHolderFrame,
