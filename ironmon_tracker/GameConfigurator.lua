@@ -210,7 +210,7 @@ function stripChars(str)
     tableAccents["ý"] = "\253"
     tableAccents["þ"] = "\254"
     tableAccents["ÿ"] = "\255"
-    tableAccents["’"] = "\146"
+    tableAccents["’"] = "'"
     tableAccents["Œ"] = "\140"
     tableAccents["œ"] = "\156"
 
