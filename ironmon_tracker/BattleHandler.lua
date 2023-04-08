@@ -5,7 +5,7 @@ local function BattleHandler(
     initialTracker,
     initialProgram,
     initialSettings)
-    local FrameCounter = dofile(Paths.FOLDERS.DATA_FOLDER .. "/FrameCounter.lua")
+    local FrameCounter = dofile(Paths.FOLDERS.DATA_FOLDER .. "/FrameCounter.lua" )
 
     local self = {}
 
