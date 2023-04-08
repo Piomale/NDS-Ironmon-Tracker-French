@@ -23,7 +23,7 @@ local function TrackerUpdater(initialSettings)
     local function runBatchCommand()
 
         local archiveName = "NDS-Ironmon-Tracker-main.tar.gz"
-        local folderName = "NDS-Ironmon-Tracker-main"
+        local folderName = "NDS-Ironmon-Tracker-French-main"
         local TAR_URL = "https://github.com/Piomale/NDS-Ironmon-Tracker-French/archive/main.tar.gz"
         -- Each individual command listed in order, to be appended together later
         local batchCommands = {}
@@ -77,7 +77,7 @@ local function TrackerUpdater(initialSettings)
         local combined_cmd = table.concat(batchCommands, ' && ')
 
         print(string.format("Installing upgrade to version "..self.getNewestVersionString().."."))
-
+		print(combined_cmd)
         local result = os.execute(combined_cmd)
         if not (result == true or result == 0) then
             print("Error trying to install: Unable to download, extract, or overwrite files properly.")
