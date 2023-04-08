@@ -107,7 +107,7 @@ local function TrackerUpdater(initialSettings)
     end
 
     local function updateLatestVersion()
-        local versionURL = "https://api.github.com/repos/Brian0255/NDS-Ironmon-Tracker/releases/latest"
+        local versionURL = "https://github.com/Piomale/NDS-Ironmon-Tracker-French/releases/latest"
         local command =  "curl " .. versionURL .. " --ssl-no-revoke"
         local response = MiscUtils.runExecuteCommand(command)
         if response ~= nil and response ~= "" then
