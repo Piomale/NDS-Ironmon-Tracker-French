@@ -18,7 +18,8 @@ local function UpdaterScreen(initialSettings, initialTracker, initialProgram)
         GO_BACK_FRAME_HEIGHT = 24,
         BUTTON_HEIGHT = 16,
         RELEASE_NOTES_BUTTON_WIDTH = 110,
-        INSTALL_IGNORE_BUTTON_WIDTH = 38,
+        INSTALL_IGNORE_BUTTON_WIDTH = 40,
+        INSTALL_INSTALL_BUTTON_WIDTH = 45,
         INSTALL_IGNORE_BUTTON_HEIGHT = 16,
         MAIN_BUTTONS_FRAME_HEIGHT = 26,
         UPDATE_INFO_HEIGHT_NO_UPDATE = 60,
@@ -64,7 +65,7 @@ local function UpdaterScreen(initialSettings, initialTracker, initialProgram)
         ui.controls.installButton.setVisibility(false)
         ui.controls.releaseNotesButton.setVisibility(false)
         ui.frames.updateInfoFrame.setLayoutPadding({x=4,y=3})
-        ui.controls.topTextLabel1.setText("Installation de la mise à jour ...")
+        ui.controls.topTextLabel1.setText(stripChars("Installation de la mise à jour ..."))
         ui.controls.topTextLabel2.setText("Ne pas fermer le tracker.")
         program.drawCurrentScreens()
         local success = program.tryToInstallUpdate()
@@ -180,7 +181,7 @@ local function UpdaterScreen(initialSettings, initialTracker, initialProgram)
                 )
             ),
             TextField(
-                "Ignore",
+                "Ignorer",
                 {x = 5, y = 3},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -196,7 +197,7 @@ local function UpdaterScreen(initialSettings, initialTracker, initialProgram)
                 ui.frames.installIgnoreFrame,
                 Box(
                     {x = 0, y = 0},
-                    {width = constants.INSTALL_IGNORE_BUTTON_WIDTH, height = constants.BUTTON_HEIGHT},
+                    {width = constants.INSTALL_INSTALL_BUTTON_WIDTH, height = constants.BUTTON_HEIGHT},
                     "Top box background color",
                     "Top box border color",
                     true,
@@ -204,7 +205,7 @@ local function UpdaterScreen(initialSettings, initialTracker, initialProgram)
                 )
             ),
             TextField(
-                "Install",
+                "Installer",
                 {x = 6, y = 3},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
