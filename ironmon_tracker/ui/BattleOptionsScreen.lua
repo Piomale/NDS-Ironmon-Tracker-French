@@ -12,7 +12,7 @@ local function BattleOptionsScreen(initialSettings, initialTracker, initialProgr
     local tracker = initialTracker
     local program = initialProgram
     local constants = {
-        BATTLE_OPTIONS_HEIGHT = 124,
+        BATTLE_OPTIONS_HEIGHT = 138,
         TOGGLE_FRAME_WIDTH = 200,
         TOGGLE_FRAME_HEIGHT = 12,
         BUTTON_SIZE = 10
@@ -32,7 +32,8 @@ local function BattleOptionsScreen(initialSettings, initialTracker, initialProgr
         program.drawCurrentScreens()
     end
     local function initBattleToggleButtons()
-		local orderedKeys = {
+        local orderedKeys = {
+            "AUTO_SWAP_TO_ENEMY",
             "SHOW_MOVE_EFFECTIVENESS",
             "CALCULATE_VARIABLE_DAMAGE",
             "SHOW_ACTUAL_ENEMY_PP",
@@ -74,6 +75,8 @@ local function BattleOptionsScreen(initialSettings, initialTracker, initialProgr
             local labelName
 			if key == "SHOW_MOVE_EFFECTIVENESS" then
                 labelName = "Montrer l'efficacité des capacités"
+			elseif key == "AUTO_SWAP_TO_ENEMY" then
+                labelName = "Focus automatique sur l'ennemi"
 			elseif key == "CALCULATE_VARIABLE_DAMAGE" then
                 labelName = "Calculer les dommages variables"
 			elseif key == "SHOW_ACTUAL_ENEMY_PP" then
