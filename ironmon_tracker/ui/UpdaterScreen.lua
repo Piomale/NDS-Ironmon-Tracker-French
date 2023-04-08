@@ -17,7 +17,7 @@ local function UpdaterScreen(initialSettings, initialTracker, initialProgram)
         MAIN_TEXT_LABEL_HEIGHT = 14,
         GO_BACK_FRAME_HEIGHT = 24,
         BUTTON_HEIGHT = 16,
-        RELEASE_NOTES_BUTTON_WIDTH = 86,
+        RELEASE_NOTES_BUTTON_WIDTH = 110,
         INSTALL_IGNORE_BUTTON_WIDTH = 38,
         INSTALL_IGNORE_BUTTON_HEIGHT = 16,
         MAIN_BUTTONS_FRAME_HEIGHT = 26,
@@ -64,20 +64,20 @@ local function UpdaterScreen(initialSettings, initialTracker, initialProgram)
         ui.controls.installButton.setVisibility(false)
         ui.controls.releaseNotesButton.setVisibility(false)
         ui.frames.updateInfoFrame.setLayoutPadding({x=4,y=3})
-        ui.controls.topTextLabel1.setText("Installing update, please wait...")
-        ui.controls.topTextLabel2.setText("Do not close the tracker.")
+        ui.controls.topTextLabel1.setText("Installation de la mise à jour ...")
+        ui.controls.topTextLabel2.setText("Ne pas fermer le tracker.")
         program.drawCurrentScreens()
         local success = program.tryToInstallUpdate()
         if success then
             settings.automaticUpdates.UPDATE_WAS_DONE = true
             program.saveSettings()
-            ui.controls.topTextLabel1.setText("Update successful! The Tracker")
-            ui.controls.topTextLabel2.setText("will now restart in 5 seconds.")
+            ui.controls.topTextLabel1.setText(stripChars("Mise à jour réussie! Le Tracker"))
+            ui.controls.topTextLabel2.setText(stripChars("va redémarrer dans 5 secondes."))
             frameCounters["trackerRestart"] = FrameCounter(300, restartTracker, nil, true)
         else
-            ui.frames.mainFrame.resize({width = Graphics.SIZES.MAIN_SCREEN_WIDTH, height = constants.MAIN_HEIGHT_NO_UPDATE})
-            ui.frames.updateInfoFrame.resize({width = Graphics.SIZES.MAIN_SCREEN_WIDTH-2*Graphics.SIZES.BORDER_MARGIN, height = constants.UPDATE_INFO_HEIGHT_NO_UPDATE})
-            ui.controls.topTextLabel1.setText("Error updating, please try again.")
+            ui.frames.mainFrame.resize({width = 198, height = constants.MAIN_HEIGHT_NO_UPDATE})
+            ui.frames.updateInfoFrame.resize({width = 198-2*Graphics.SIZES.BORDER_MARGIN, height = constants.UPDATE_INFO_HEIGHT_NO_UPDATE})
+            ui.controls.topTextLabel1.setText(stripChars("Erreur lors de la mise à jour."))
             ui.controls.topTextLabel2.setText("")
             ui.frames.goBackFrame.setVisibility(true)
             errored = true
@@ -98,7 +98,7 @@ local function UpdaterScreen(initialSettings, initialTracker, initialProgram)
                 Box({x = 0, y = 0}, {width = 40, height = constants.MAIN_TEXT_LABEL_HEIGHT})
             ),
             TextField(
-                "No update available.",
+                stripChars("Aucune mise à jour."),
                 {x = 0, y = 1},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -156,7 +156,7 @@ local function UpdaterScreen(initialSettings, initialTracker, initialProgram)
                 )
             ),
             TextField(
-                "View Release Notes",
+                "Afficher les notes de patch",
                 {x = 3, y = 2},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -223,7 +223,7 @@ local function UpdaterScreen(initialSettings, initialTracker, initialProgram)
             Frame(
             Box(
                 {x = Graphics.SIZES.SCREEN_WIDTH, y = 0},
-                {width = Graphics.SIZES.MAIN_SCREEN_WIDTH, height = constants.MAIN_HEIGHT},
+                {width = 198, height = constants.MAIN_HEIGHT},
                 "Main background color",
                 nil
             ),
@@ -240,14 +240,14 @@ local function UpdaterScreen(initialSettings, initialTracker, initialProgram)
                 ui.frames.mainFrame,
                 Box(
                     {x = 5, y = 5},
-                    {width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN, height = 18},
+                    {width = 198 - 2 * Graphics.SIZES.BORDER_MARGIN, height = 18},
                     "Top box background color",
                     "Top box border color",
                     false
                 )
             ),
             TextField(
-                "Tracker Updates",
+                stripChars("Mise à jour du Tracker"),
                 {x = 25, y = 1},
                 TextStyle(13, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
             )
@@ -257,7 +257,7 @@ local function UpdaterScreen(initialSettings, initialTracker, initialProgram)
             Box(
                 {x = Graphics.SIZES.BORDER_MARGIN, y = Graphics.SIZES.BORDER_MARGIN},
                 {
-                    width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
+                    width = 198 - 2 * Graphics.SIZES.BORDER_MARGIN,
                     height = constants.UPDATE_INFO_HEIGHT_UPDATE
                 },
                 "Top box background color",
@@ -273,7 +273,7 @@ local function UpdaterScreen(initialSettings, initialTracker, initialProgram)
             Box(
                 {x = 0, y = 0},
                 {
-                    width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
+                    width = 198 - 2 * Graphics.SIZES.BORDER_MARGIN,
                     height = constants.GO_BACK_FRAME_HEIGHT
                 },
                 "Top box background color",
@@ -314,14 +314,14 @@ local function UpdaterScreen(initialSettings, initialTracker, initialProgram)
 
     function self.setAsNoUpdate()
         errored = false
-        ui.controls.topTextLabel1.setText("No update available.")
-        ui.controls.topTextLabel2.setText("Current version: " .. MiscConstants.TRACKER_VERSION)
+        ui.controls.topTextLabel1.setText(stripChars("Aucune mise à jour."))
+        ui.controls.topTextLabel2.setText("Version actuelle: " .. MiscConstants.TRACKER_VERSION)
         ui.frames.installIgnoreFrame.setVisibility(false)
         ui.frames.goBackFrame.setVisibility(true)
-        ui.frames.mainFrame.resize({width = Graphics.SIZES.MAIN_SCREEN_WIDTH, height = constants.MAIN_HEIGHT_NO_UPDATE})
+        ui.frames.mainFrame.resize({width = 198, height = constants.MAIN_HEIGHT_NO_UPDATE})
         ui.frames.updateInfoFrame.resize(
             {
-                width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
+                width = 198 - 2 * Graphics.SIZES.BORDER_MARGIN,
                 height = constants.UPDATE_INFO_HEIGHT_NO_UPDATE
             }
         )
@@ -330,16 +330,16 @@ local function UpdaterScreen(initialSettings, initialTracker, initialProgram)
     function self.setAsUpdateAvailable(newVersion)
         newestVersionString = newVersion
         errored = false
-        ui.controls.topTextLabel1.setText("New update available!")
-        ui.controls.topTextLabel2.setText("Latest version: " .. newVersion)
+        ui.controls.topTextLabel1.setText(stripChars("Nouvelle mise à jour disponible!"))
+        ui.controls.topTextLabel2.setText(stripChars("Dernière version: ") .. newVersion)
         ui.frames.installIgnoreFrame.setVisibility(true)
         ui.frames.goBackFrame.setVisibility(false)
         ui.frames.mainFrame.resize(
-            {width = Graphics.SIZES.MAIN_SCREEN_WIDTH, height = constants.MAIN_HEIGHT_UPDATE_AVAILABLE}
+            {width = 198, height = constants.MAIN_HEIGHT_UPDATE_AVAILABLE}
         )
         ui.frames.updateInfoFrame.resize(
             {
-                width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
+                width = 198 - 2 * Graphics.SIZES.BORDER_MARGIN,
                 height = constants.UPDATE_INFO_HEIGHT_UPDATE
             }
         )
