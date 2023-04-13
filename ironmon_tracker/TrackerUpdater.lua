@@ -61,7 +61,6 @@ local function TrackerUpdater(initialSettings)
                 string.format('rm "%s"', archiveName),
 
                 'echo && echo "Applying the update; copying over files."',
-                string.format('rm -r "%s/.vscode"', folderName),
                 string.format('rm "%s/.editorconfig"', folderName),
                 string.format('rm "%s/.gitattributes"', folderName),
                 string.format('rm "%s/.gitignore"', folderName),
