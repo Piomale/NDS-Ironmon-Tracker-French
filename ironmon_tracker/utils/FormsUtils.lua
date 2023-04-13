@@ -216,8 +216,8 @@ end
 
 function FormsUtils.createSaveForm(folderPath, fileType, fileExtension, fileSavingOperation)
     forms.destroyall()
-    local width, height = 288, 70
-    local saveForm = forms.newform(width, height, "Save " .. fileType)
+    local width, height = 310, 70
+    local saveForm = forms.newform(width, height, "Sauvegarder le " .. fileType)
     local center = FormsUtils.getCenter(width, height)
     forms.setlocation(saveForm, center.xPos, center.yPos)
     local canvas = forms.pictureBox(saveForm, 0, 0, 100, 30)
@@ -225,12 +225,12 @@ function FormsUtils.createSaveForm(folderPath, fileType, fileExtension, fileSavi
     local saveButton =
         forms.button(
         saveForm,
-        "Save",
+        "Sauvegarder",
         function()
         end,
         206,
         3,
-        60,
+        82,
         24
     )
     forms.addclick(
@@ -240,16 +240,16 @@ function FormsUtils.createSaveForm(folderPath, fileType, fileExtension, fileSavi
         end
     )
     local beforeName = fileType:sub(1, 1):upper() .. fileType:sub(2):lower()
-    forms.drawText(canvas, 6, 7, beforeName .. " name:", 0xFF000000, 0x00000000, 14, "Arial")
+    forms.drawText(canvas, 6, 7, "Nom du " .. beforeName .. ":", 0xFF000000, 0x00000000, 13, "Arial")
 end
 
 function FormsUtils.createFavoriteChoosingForm(callback, favoritesIndex)
-    local mainWidth, mainHeight = 270, 106
+    local mainWidth, mainHeight = 350, 106
     local form =
         forms.newform(
         mainWidth,
         mainHeight,
-        "Set Favorite",
+        "Modifier un favoris",
         function()
             forms.destroyall()
         end
@@ -265,8 +265,8 @@ function FormsUtils.createFavoriteChoosingForm(callback, favoritesIndex)
         end
     end
 
-    forms.label(form, "Click the list below, then scroll or type to search:", 10, 10, mainWidth, 25)
-    local dropdownWidth, dropdownHeight = 165, 40
+    forms.label(form, stripChars("Cliques sur la liste ci-dessous, puis scroll ou écrit pour rechercher:"), 10, 10, mainWidth, 25)
+    local dropdownWidth, dropdownHeight = 250, 40
     local favoritesDropdown = forms.dropdown(form, {[""] = ""}, 10, 35, dropdownWidth, 40)
     forms.setdropdownitems(favoritesDropdown, pokemonNames, true)
     forms.setproperty(favoritesDropdown, "AutoCompleteSource", "ListItems")
@@ -276,7 +276,7 @@ function FormsUtils.createFavoriteChoosingForm(callback, favoritesIndex)
 
     forms.button(
         form,
-        "Set",
+        "Valider",
         function()
             callback(favoritesIndex, PokemonData.NAMES_MAPPING[forms.gettext(favoritesDropdown)])
             forms.destroy(form)
@@ -298,7 +298,7 @@ function FormsUtils.createAttemptEditingWindow(currentAttempts, onAttemptsSet, U
         forms.newform(
         mainWidth,
         mainHeight,
-        "Set Attempts",
+        "Modifier le nombre de tentative",
         function()
             forms.destroyall()
         end
@@ -306,7 +306,7 @@ function FormsUtils.createAttemptEditingWindow(currentAttempts, onAttemptsSet, U
     local center = FormsUtils.getCenter(mainWidth, mainHeight)
     forms.setlocation(form, center.xPos, center.yPos)
 
-    forms.label(form, "Enter your current number of attempts:", 8, 10, mainWidth, 25)
+    forms.label(form, "Saisis ton nombre actuel de tentatives", 8, 10, mainWidth, 25)
     local textboxWidth, textboxHeight = 165, 40
     local attemptsEdit = forms.textbox(form, currentAttempts, textboxWidth, textboxHeight, "UNSIGNED", 10, 35)
 
@@ -314,7 +314,7 @@ function FormsUtils.createAttemptEditingWindow(currentAttempts, onAttemptsSet, U
 
     forms.button(
         form,
-        "Set",
+        "Valider",
         function()
             onAttemptsSet(tonumber(forms.gettext(attemptsEdit),10), UICallback)
             forms.destroy(form)

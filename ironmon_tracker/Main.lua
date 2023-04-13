@@ -80,7 +80,7 @@ local function Main()
 		if nextRomInfo ~= nil then
 			local name = nextRomInfo.name
 			local path = nextRomInfo.path
-			client.closerom()
+			--client.closerom()
 			print("Loading next ROM: " .. name)
 			client.openrom(path)
 			if gameinfo.getromname() ~= "Null" then

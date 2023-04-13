@@ -23,9 +23,10 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
         TEXT_HEADER_HEIGHT = 18,
         FOLDER_LABEL_WIDTH = 96,
         BUTTON_SIZE = 10,
-        SET_BUTTON_WIDTH = 34,
+        SET_BUTTON_WIDTH = 36,
         SET_BUTTON_HEIGHT = 14,
-        SAVE_LOAD_BUTTON_WIDTH = 62,
+        SAVE_BUTTON_WIDTH = 100,
+        LOAD_BUTTON_WIDTH = 80,
         SAVE_LOAD_BUTTON_HEIGHT = 16,
         CHOOSE_TYPE_FRAME_HEIGHT = 89,
         PATH_SETUP_FRAME_HEIGHT = 36,
@@ -100,7 +101,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
             Box(
                 {x = Graphics.SIZES.SCREEN_WIDTH, y = 0},
                 {
-                    width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
+                    width = 200 - 2 * Graphics.SIZES.BORDER_MARGIN,
                     height = constants.PATH_SETUP_FRAME_HEIGHT
                 },
                 nil,
@@ -130,7 +131,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
                 Box(
                     {x = 0, y = 0},
                     {
-                        width = 70,
+                        width = 90,
                         height = 0
                     },
                     nil,
@@ -166,8 +167,8 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
                 )
             ),
             TextField(
-                "Set",
-                {x = 9, y = 1},
+                "Modifier",
+                {x = 1, y = 1},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
                     Graphics.FONT.DEFAULT_FONT_FAMILY,
@@ -222,7 +223,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
             Box(
                 {x = Graphics.SIZES.SCREEN_WIDTH, y = 0},
                 {
-                    width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
+                    width = 200 - 2 * Graphics.SIZES.BORDER_MARGIN,
                     height = constants.TYPE_OPTION_FRAME_HEIGHT
                 },
                 nil,
@@ -286,7 +287,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
             Box(
                 {x = 0, y = 0},
                 {
-                    width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
+                    width = 200 - 2 * Graphics.SIZES.BORDER_MARGIN,
                     height = 0
                 },
                 nil,
@@ -302,7 +303,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
                 Box(
                     {x = 0, y = 0},
                     {
-                        width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
+                        width = 200 - 2 * Graphics.SIZES.BORDER_MARGIN,
                         height = 12
                     },
                     nil,
@@ -311,7 +312,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
                 )
             ),
             TextField(
-                "QuickLoad combo:",
+                "Commande pour faire un chargement rapide:",
                 {x = 0, y = 0},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -328,7 +329,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
                 Box(
                     {x = 0, y = 0},
                     {
-                        width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
+                        width = 200 - 2 * Graphics.SIZES.BORDER_MARGIN,
                         height = constants.TEXT_HEADER_HEIGHT
                     },
                     nil,
@@ -355,7 +356,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
             Box(
                 {x = Graphics.SIZES.SCREEN_WIDTH, y = 0},
                 {
-                    width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
+                    width = 200 - 2 * Graphics.SIZES.BORDER_MARGIN,
                     height = constants.CHOOSE_TYPE_FRAME_HEIGHT
                 },
                 "Top box background color",
@@ -371,7 +372,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
                 Box(
                     {x = 0, y = 0},
                     {
-                        width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
+                        width = 200 - 2 * Graphics.SIZES.BORDER_MARGIN,
                         height = constants.TEXT_HEADER_HEIGHT
                     },
                     nil,
@@ -380,19 +381,19 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
                 )
             ),
             TextField(
-                "QuickLoad Type",
+                "Type de chargement rapide",
                 {x = 26, y = 0},
                 TextStyle(11, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
             )
         )
         local setting = "LOAD_TYPE"
         local typeSettings = {
-            ["USE_BATCH"] = "Use batch of seeds",
-            ["GENERATE_ROMS"] = "Generate ROMs"
+            ["USE_BATCH"] = "Utiliser un lot de seeds",
+            ["GENERATE_ROMS"] = "Générer des ROMs"
         }
         local order = {"USE_BATCH", "GENERATE_ROMS"}
         for _, settingValue in pairs(order) do
-            createTypeChooseRadioButtonRow(setting, settingValue, typeSettings[settingValue])
+            createTypeChooseRadioButtonRow(setting, settingValue, stripChars(typeSettings[settingValue]))
         end
         createQuickLoadComboFrame()
     end
@@ -403,7 +404,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
             Box(
                 {x = Graphics.SIZES.SCREEN_WIDTH, y = 0},
                 {
-                    width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
+                    width = 200 - 2 * Graphics.SIZES.BORDER_MARGIN,
                     height = constants.BATCH_SETUP_FRAME_HEIGHT
                 },
                 "Top box background color",
@@ -419,7 +420,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
                 Box(
                     {x = 0, y = 0},
                     {
-                        width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
+                        width = 200 - 2 * Graphics.SIZES.BORDER_MARGIN,
                         height = constants.TEXT_HEADER_HEIGHT
                     },
                     "Top box background color",
@@ -428,12 +429,12 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
                 )
             ),
             TextField(
-                "Batch Setup",
+                "Configuration des lots",
                 {x = 36, y = 1},
                 TextStyle(13, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
             )
         )
-        createPathSetupFrame(ui.frames.mainBatchFrame, "ROMs Folder", "ROMS_FOLDER_PATH", ".nds", "", true, true)
+        createPathSetupFrame(ui.frames.mainBatchFrame, "Dossier des ROMs", "ROMS_FOLDER_PATH", ".nds", "", true, true)
     end
 
     local function saveProfile(filePath)
@@ -461,7 +462,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
                 return
             end
         end
-        FormsUtils.createSaveForm(Paths.CURRENT_DIRECTORY.."/ironmon_tracker/quickloadProfiles","profile",".qlp",saveProfile)
+        FormsUtils.createSaveForm(Paths.CURRENT_DIRECTORY.."/ironmon_tracker/quickloadProfiles","profil",".qlp",saveProfile)
     end
 
     local function onLoadProfileClick()
@@ -491,41 +492,67 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
                     height = 0
                 }
             ),
-            Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, 6, {x = 5, y = 0}),
+            Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, 6, {x = 2, y = 0}),
             ui.frames.mainROMGenerateFrame
         )
-        local names = {"Save Profile", "Load Profile"}
+        local names = {"Sauvegarder un Profil", "Charger un Profil"}
         local functions = {onSaveProfileClick, onLoadProfileClick}
-        for i = 1, 2, 1 do
-            local button =
-                TextLabel(
-                Component(
-                    ui.frames.saveLoadFrame,
-                    Box(
-                        {x = 0, y = 0},
-                        {
-                            width = constants.SAVE_LOAD_BUTTON_WIDTH,
-                            height = constants.SAVE_LOAD_BUTTON_HEIGHT
-                        },
-                        "Top box background color",
-                        "Top box border color",
-                        true,
-                        "Top box background color"
-                    )
-                ),
-                TextField(
-                    names[i],
-                    {x = 7, y = 2},
-                    TextStyle(
-                        Graphics.FONT.DEFAULT_FONT_SIZE,
-                        Graphics.FONT.DEFAULT_FONT_FAMILY,
-                        "Top box text color",
-                        "Top box background color"
-                    )
-                )
-            )
-            table.insert(eventListeners, MouseClickEventListener(button, functions[i]))
-        end
+		local button =
+			TextLabel(
+			Component(
+				ui.frames.saveLoadFrame,
+				Box(
+					{x = 0, y = 0},
+					{
+						width = constants.SAVE_BUTTON_WIDTH,
+						height = constants.SAVE_LOAD_BUTTON_HEIGHT
+					},
+					"Top box background color",
+					"Top box border color",
+					true,
+					"Top box background color"
+				)
+			),
+			TextField(
+				names[1],
+				{x = 6, y = 2},
+				TextStyle(
+					Graphics.FONT.DEFAULT_FONT_SIZE,
+					Graphics.FONT.DEFAULT_FONT_FAMILY,
+					"Top box text color",
+					"Top box background color"
+				)
+			)
+		)
+		table.insert(eventListeners, MouseClickEventListener(button, functions[1]))
+		local button =
+			TextLabel(
+			Component(
+				ui.frames.saveLoadFrame,
+				Box(
+					{x = 0, y = 0},
+					{
+						width = constants.LOAD_BUTTON_WIDTH,
+						height = constants.SAVE_LOAD_BUTTON_HEIGHT
+					},
+					"Top box background color",
+					"Top box border color",
+					true,
+					"Top box background color"
+				)
+			),
+			TextField(
+				names[2],
+				{x = 6, y = 2},
+				TextStyle(
+					Graphics.FONT.DEFAULT_FONT_SIZE,
+					Graphics.FONT.DEFAULT_FONT_FAMILY,
+					"Top box text color",
+					"Top box background color"
+				)
+			)
+		)
+		table.insert(eventListeners, MouseClickEventListener(button, functions[2]))
     end
 
     local function createROMCreationFrame()
@@ -534,7 +561,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
             Box(
                 {x = Graphics.SIZES.SCREEN_WIDTH, y = 0},
                 {
-                    width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
+                    width = 200 - 2 * Graphics.SIZES.BORDER_MARGIN,
                     height = constants.GENERATE_ROM_FRAME_HEIGHT
                 },
                 "Top box background color",
@@ -550,7 +577,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
                 Box(
                     {x = 0, y = 0},
                     {
-                        width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
+                        width = 200 - 2 * Graphics.SIZES.BORDER_MARGIN,
                         height = constants.TEXT_HEADER_HEIGHT
                     },
                     "Top box background color",
@@ -559,7 +586,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
                 )
             ),
             TextField(
-                "ROM Creation",
+                "Creation d'une ROM",
                 {x = 30, y = 1},
                 TextStyle(13, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
             )
@@ -567,7 +594,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
         local settingsData = {
             {
                 settingKey = "ROM_PATH",
-                labelName = "ROM to patch",
+                labelName = "ROM à patcher",
                 extension = ".nds",
                 relativePath = ""
             },
@@ -579,7 +606,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
             },
             {
                 settingKey = "SETTINGS_PATH",
-                labelName = "Settings file",
+                labelName = "Fichier de paramètre",
                 extension = ".rnqs",
                 relativePath = Paths.SLASH.."ironmon_tracker"..Paths.SLASH.."settings"
             }
@@ -587,7 +614,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
         for _, settingData in pairs(settingsData) do
             createPathSetupFrame(
                 ui.frames.mainROMGenerateFrame,
-                settingData.labelName,
+                stripChars(settingData.labelName),
                 settingData.settingKey,
                 settingData.extension,
                 settingData.relativePath
@@ -602,7 +629,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
             Frame(
             Box(
                 {x = Graphics.SIZES.SCREEN_WIDTH, y = 0},
-                {width = Graphics.SIZES.MAIN_SCREEN_WIDTH, height = constants.MAIN_FRAME_HEIGHT},
+                {width = 200, height = constants.MAIN_FRAME_HEIGHT},
                 "Main background color",
                 nil
             ),
@@ -616,7 +643,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
                 Box(
                     {x = 5, y = 5},
                     {
-                        width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
+                        width = 200 - 2 * Graphics.SIZES.BORDER_MARGIN,
                         height = constants.TEXT_HEADER_HEIGHT
                     },
                     "Top box background color",
@@ -625,9 +652,9 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
                 )
             ),
             TextField(
-                "QuickLoad Settings",
+                stripChars("Paramètre de chargement rapide"),
                 {x = 16, y = 1},
-                TextStyle(13, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
+                TextStyle(11, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
             )
         )
         createChooseTypeFrame()
@@ -639,7 +666,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
             Box(
                 {x = Graphics.SIZES.SCREEN_WIDTH, y = 0},
                 {
-                    width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
+                    width = 200 - 2 * Graphics.SIZES.BORDER_MARGIN,
                     height = constants.BOTTOM_FRAME_HEIGHT
                 },
                 "Top box background color",
@@ -662,7 +689,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
                 )
             ),
             TextField(
-                "Go back",
+                "Retour",
                 {x = 3, y = 1},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,

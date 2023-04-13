@@ -77,6 +77,73 @@ tableAccents["’"] = "'"
 tableAccents["Œ"] = "\140"
 tableAccents["œ"] = "\156"
 
+local tableAccents2 = {}
+tableAccents2["À"] = "A"
+tableAccents2["Á"] = "A"
+tableAccents2["Â"] = "A"
+tableAccents2["Ã"] = "A"
+tableAccents2["Ä"] = "A"
+tableAccents2["Å"] = "A"
+tableAccents2["Æ"] = "AE"
+tableAccents2["Ç"] = "C"
+tableAccents2["È"] = "E"
+tableAccents2["É"] = "E"
+tableAccents2["Ê"] = "E"
+tableAccents2["Ë"] = "E"
+tableAccents2["Ì"] = "I"
+tableAccents2["Í"] = "I"
+tableAccents2["Î"] = "I"
+tableAccents2["Ï"] = "I"
+tableAccents2["Ð"] = "D"
+tableAccents2["Ñ"] = "N"
+tableAccents2["Ò"] = "O"
+tableAccents2["Ó"] = "O"
+tableAccents2["Ô"] = "O"
+tableAccents2["Õ"] = "O"
+tableAccents2["Ö"] = "O"
+tableAccents2["Ø"] = "O"
+tableAccents2["Ù"] = "U"
+tableAccents2["Ú"] = "U"
+tableAccents2["Û"] = "U"
+tableAccents2["Ü"] = "U"
+tableAccents2["Ý"] = "Y"
+tableAccents2["Þ"] = ""
+tableAccents2["ß"] = "B"
+tableAccents2["à"] = "a"
+tableAccents2["á"] = "a"
+tableAccents2["â"] = "a"
+tableAccents2["ã"] = "a"
+tableAccents2["ä"] = "a"
+tableAccents2["å"] = "a"
+tableAccents2["æ"] = "ae"
+tableAccents2["ç"] = "c"
+tableAccents2["è"] = "e"
+tableAccents2["é"] = "e"
+tableAccents2["ê"] = "e"
+tableAccents2["ë"] = "e"
+tableAccents2["ì"] = "i"
+tableAccents2["í"] = "i"
+tableAccents2["î"] = "i"
+tableAccents2["ï"] = "i"
+tableAccents2["ð"] = "d"
+tableAccents2["ñ"] = "n"
+tableAccents2["ò"] = "o"
+tableAccents2["ó"] = "o"
+tableAccents2["ô"] = "o"
+tableAccents2["õ"] = "o"
+tableAccents2["ö"] = "o"
+tableAccents2["ø"] = "o"
+tableAccents2["ù"] = "u"
+tableAccents2["ú"] = "u"
+tableAccents2["û"] = "u"
+tableAccents2["ü"] = "u"
+tableAccents2["ý"] = "y"
+tableAccents2["þ"] = ""
+tableAccents2["ÿ"] = "y"
+tableAccents2["’"] = "'"
+tableAccents2["Œ"] = "OE"
+tableAccents2["œ"] = "oe"
+
 function GameConfigurator.initPokemon(gameInfo)
 	if gameInfo.GEN == 4 then
 		local pokemon = {}
@@ -215,5 +282,10 @@ end
 
 function stripChars(str)
     local normalisedString = str:gsub("[%z\1-\127\194-\244][\128-\191]*", tableAccents)
+    return normalisedString
+end
+
+function IgnoreChars(str)
+    local normalisedString = str:gsub("[%z\1-\127\194-\244][\128-\191]*", tableAccents2)
     return normalisedString
 end

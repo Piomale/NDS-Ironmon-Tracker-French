@@ -20,8 +20,8 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 	local constants = {
 		FAVORITES_LABEL_FRAME_HEIGHT = 91,
 		FAVORITES_ROW_HEIGHT = 17,
-		FAVORITES_LABEL_WIDTH = 104,
-		SET_BUTTON_WIDTH = 23,
+		FAVORITES_LABEL_WIDTH = 93,
+		SET_BUTTON_WIDTH = 35,
 		SET_BUTTON_HEIGHT = 13,
 		CLOSE_BUTTON_WIDTH = 39,
 		CLOSE_BUTTON_HEIGHT = 16
@@ -40,7 +40,7 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 		local text = ""
 		for i = 1, mapping.amount, 1 do
 			if i == mapping.amount then
-				text = text .. "and "
+				text = text .. "et "
 			end
 			if data[i] then
 				text = text .. data[i][1]
@@ -76,47 +76,47 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 
 	local percentStatisticMappings = {
 		{
-			title = "You get out of the lab %percent% of the time.",
+			title = "Tu sors du laboratoire %percent% du temps.",
 			statKey = 1,
 			dataEntryKey = 1
 		},
 		{
-			title = "You run sub 300 BST Pok"..Chars.accentedE.."mon %percent% of the time.",
+			title = "Tu utilises des Pokémons ayant moins de 300 BST %percent% du temps.",
 			statKey = 2,
 			dataEntryKey = 1
 		},
 		{
-			title = "You run 300 - 400 BST Pok"..Chars.accentedE.."mon %percent% of the time.",
+			title = "Tu utilises des Pokémons ayant 300-400 BST %percent% du temps.",
 			statKey = 2,
 			dataEntryKey = 2
 		},
 		{
-			title = "You run 400 - 500 BST Pok"..Chars.accentedE.."mon %percent% of the time.",
+			title = "Tu utilises des Pokémons ayant 400-500 BST %percent% du temps.",
 			statKey = 2,
 			dataEntryKey = 3
 		},
 		{
-			title = "You run 500+ BST Pok"..Chars.accentedE.."mon %percent% of the time.",
+			title = "Tu utilises des Pokémons ayant plus de 500 BST %percent% du temps.",
 			statKey = 2,
 			dataEntryKey = 4
 		},
 		{
-			title = "You lose to sub 300 BST Pok"..Chars.accentedE.."mon %percent% of the time.",
+			title = "Tu perds contre des Pokémons ayant moins de 300 BST %percent% du temps.",
 			statKey = 3,
 			dataEntryKey = 1
 		},
 		{
-			title = "You lose to 300 - 400 BST Pok"..Chars.accentedE.."mon %percent% of the time.",
+			title = "Tu perds contre des Pokémons ayant 300-400 BST %percent% du temps.",
 			statKey = 3,
 			dataEntryKey = 2
 		},
 		{
-			title = "You lose to 400 - 500 BST Pok"..Chars.accentedE.."mon %percent% of the time.",
+			title = "Tu perds contre des Pokémons ayant 400-500 BST %percent% du temps.",
 			statKey = 3,
 			dataEntryKey = 3
 		},
 		{
-			title = "You lose to 500+ BST Pok"..Chars.accentedE.."mon %percent% of the time.",
+			title = "Tu perds contre des Pokémons ayant plus de 500 BST %percent% du temps.",
 			statKey = 3,
 			dataEntryKey = 4
 		},
@@ -125,45 +125,45 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 	local basicStatisticMappings = {
 		--types
 		{
-			title = "You use %data% types the most.",
+			title = "Les types que tu utilises le plus sont %data%",
 			statKey = 4,
 			amount = 3
 		},
 		{
-			title = "You lose to %data% types the most.",
+			title = "Les types contre qui tu perds le plus sont %data%.",
 			statKey = 5,
 			amount = 3
 		},
 		--pokemon
 		{
-			title = "You run %data% the most.",
+			title = "Tes pokémons les plus joués sont %data%.",
 			statKey = 6,
 			amount = 3
 		},
 		{
-			title = "You lose to %data% the most.",
+			title = "Les pokémons t'ayant le plus souvent tué sont %data%.",
 			statKey = 7,
 			amount = 3
 		},
 		--moves
 		{
-			title = "You moves are %data% the most.",
+			title = "Les capacités que tu utilises le plus sont %data%",
 			statKey = 8,
 			amount = 3
 		},
 		{
-			title = "Your enemies have %data% the most.",
+			title = "Les capacités les plus utilisées par tes adversaires sont %data%.",
 			statKey = 9,
 			amount = 3
 		},
 		--abilities
 		{
-			title = "Your abilities are %data% the most.",
+			title = "Les talents que tu utilises le plus sont %data%.",
 			statKey = 10,
 			amount = 3
 		},
 		{
-			title = "Your enemies have %data% the most.",
+			title = "Les talents les plus utilisés par tes adversaires sont %data%.",
 			statKey = 11,
 			amount = 3
 		}
@@ -172,7 +172,7 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 
 	local function getRandomStatistic()
 		local statistics = seedLogger.getPastRunStatistics()
-		local completeText = "Fun statistics will be shown here once you play enough."
+		local completeText = stripChars("Des statistiques amusantes seront affichées ici une fois que tu auras joué suffisamment.")
 		if hasEnoughData(statistics) then
 			local choices = {}
 			for _, mapping in pairs(basicStatisticMappings) do
@@ -188,7 +188,7 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 				table.insert(choices, description)
 			end
 			local text = MiscUtils.randomTableValue(choices)
-			completeText = "Did you know? " .. text
+			completeText = stripChars(text)
 		end
 		local array = DrawingUtils.textToWrappedArray(completeText, ui.frames.mainInnerFrame.getSize().width - 10)
 		for i = 1, 3, 1 do
@@ -229,7 +229,7 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 		for i = 1, program.getGameInfo().GEN, 1 do
 			local pokemonID = favorites[i]
 			local name = PokemonData.POKEMON[pokemonID + 1].name
-			ui.favoritesRows[i].nameLabel.setText("Favorite " .. i .. ": " .. name)
+			ui.favoritesRows[i].nameLabel.setText("Favori " .. i .. ": " .. name)
 		end
 	end
 
@@ -254,7 +254,7 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 	end
 
 	local function readAttemptsIntoUI()
-		local attemptsText = "Attempts: " .. attempts
+		local attemptsText = "Tentatives: " .. attempts
 		ui.controls.attemptsLabel.setText(attemptsText)
 		program.drawCurrentScreens()
 	end
@@ -311,7 +311,7 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 			TextLabel(
 			Component(rowFrame, Box({x = 0, y = 0}, {width = constants.FAVORITES_LABEL_WIDTH, height = 0})),
 			TextField(
-				"Favorite " .. index .. ":",
+				"Favoris " .. index .. ":",
 				{x = 2, y = 0},
 				TextStyle(
 					Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -334,8 +334,8 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 				)
 			),
 			TextField(
-				"Set",
-				{x = 4, y = 1},
+				"Modifier",
+				{x = 1, y = 1},
 				TextStyle(
 					Graphics.FONT.DEFAULT_FONT_SIZE,
 					Graphics.FONT.DEFAULT_FONT_FAMILY,
@@ -378,8 +378,8 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 				)
 			),
 			TextField(
-				"Close",
-				{x = 8, y = 2},
+				"Retour",
+				{x = 5, y = 2},
 				TextStyle(
 					Graphics.FONT.DEFAULT_FONT_SIZE,
 					Graphics.FONT.DEFAULT_FONT_FAMILY,
@@ -418,8 +418,8 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 				)
 			),
 			TextField(
-				"Edit Favorites",
-				{x = 36, y = 0},
+				"Modifier les favoris",
+				{x = 20, y = 0},
 				TextStyle(11, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Main background color")
 			)
 		)
@@ -466,7 +466,7 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 				Box({x = 0, y = 0}, {width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN, height = 14})
 			),
 			TextField(
-				"Favorites",
+				"Favoris",
 				{x = 3, y = 0},
 				TextStyle(11, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
 			)
@@ -584,7 +584,7 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 			),
 			TextField(
 				versionText,
-				{x = 4, y = 0},
+				{x = 1, y = 0},
 				TextStyle(11, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
 			)
 		)

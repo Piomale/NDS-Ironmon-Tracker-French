@@ -60,7 +60,7 @@ local function SearchKeyboard(
         local currentIndex = 1
         for _, id in pairs(itemSet) do
             if dataGroup[id+1] then
-                local name = dataGroup[id + 1].name:lower()
+                local name = IgnoreChars(dataGroup[id + 1].name):lower()
                 if name:sub(1, #currentSearchText) == currentSearchText:lower() then
                     matches[currentIndex] = id
                     currentIndex = currentIndex + 1

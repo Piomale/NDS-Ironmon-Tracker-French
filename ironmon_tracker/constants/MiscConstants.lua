@@ -1,17 +1,13 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "1.07.2"
+MiscConstants.TRACKER_VERSION = "1.08.0"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
-    '-- Added an "Auto Swap to Enemy" feature under Battle Settings.',
-    '-- Adjusted filled Ice and Steel type icons to be easier to see on all backgrounds.',
-    '-- Added support for the new BizHawk 2.9 release.',
-    '-- Added better Linux support thanks to BurninTheBlues.',
-    '-- Fixed Absorb being the wrong power and Poison Fang having the wrong poison chance.',
-    '-- Fixed Quickload ROM generation not working with version 4.6.0 of the randomizer.',
-    '-- Fixed a move/TM hovering bug with the Log Viewer.',
+    '-- Correction du crash de demarrage rapide avec les cheats codes actifs.',
+    '-- Il est maintenant possible rechercher des capacités ayant des accents.',
+    '-- Ajout de traduction.',
 }
 
 MiscConstants.DEFAULT_SETTINGS = {

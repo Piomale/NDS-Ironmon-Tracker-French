@@ -280,7 +280,7 @@ local function UpdaterScreen(initialSettings, initialTracker, initialProgram)
                 "Top box background color",
                 "Top box border color"
             ),
-            Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, 0, {x = 95, y = 5}),
+            Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, 0, {x = 70, y = 5}),
             ui.frames.mainFrame
         )
         ui.controls.goBackButton =
@@ -289,7 +289,7 @@ local function UpdaterScreen(initialSettings, initialTracker, initialProgram)
                 ui.frames.goBackFrame,
                 Box(
                     {x = 0, y = 0},
-                    {width = 40, height = 14},
+                    {width = 35, height = 14},
                     "Top box background color",
                     "Top box border color",
                     true,
@@ -297,7 +297,7 @@ local function UpdaterScreen(initialSettings, initialTracker, initialProgram)
                 )
             ),
             TextField(
-                "Go back",
+                "Retour",
                 {x = 3, y = 1},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
