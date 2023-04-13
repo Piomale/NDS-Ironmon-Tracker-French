@@ -1,12 +1,12 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "1.08.0"
+MiscConstants.TRACKER_VERSION = "1.08.1"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
     '-- Correction du crash de demarrage rapide avec les cheats codes actifs.',
-    '-- Il est maintenant possible rechercher des capacités ayant des accents.',
+    '-- Il est maintenant possible rechercher des capacites ayant des accents.',
     '-- Ajout de traduction.',
 }
 

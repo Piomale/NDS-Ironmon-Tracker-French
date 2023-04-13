@@ -33,7 +33,7 @@ local function updatenotesscreen(initialSettings, initialTracker, initialProgram
 	end
 
 	local function setUpScroller()
-		local notes = stripChars(MiscConstants.UPDATE_NOTES)
+		local notes = MiscConstants.UPDATE_NOTES
 		local notesWrapped = {}
 		for _, note in pairs(notes) do
 			local wrapped = DrawingUtils.textToWrappedArray(note, constants.MAX_MESSAGE_WIDTH)
