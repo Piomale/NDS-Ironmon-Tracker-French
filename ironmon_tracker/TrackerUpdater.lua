@@ -38,7 +38,6 @@ local function TrackerUpdater(initialSettings)
                 string.format('del "%s"', archiveName),
 
                 'echo; && echo Applying the update; copying over files.',
-                string.format('rmdir "%s\\.vscode" /s /q', folderName),
                 string.format('del "%s\\.editorconfig" /q', folderName),
                 string.format('del "%s\\.gitattributes" /q', folderName),
                 string.format('del "%s\\.gitignore" /q', folderName),
