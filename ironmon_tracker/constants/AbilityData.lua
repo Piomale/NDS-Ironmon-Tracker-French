@@ -320,7 +320,7 @@ AbilityData.ABILITIES_MASTER_LIST = {
     },
     {
         id = 63,
-        name = "Ecaille Spe.",
+        name = "Ecaille Spé.",
         description = "Multiplie par 1.5 la défense de votre Pokémon lorsque qu'il souffre d'une altération de statut."
     },
     {
