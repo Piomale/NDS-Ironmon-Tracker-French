@@ -1,13 +1,13 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "1.08.2"
+MiscConstants.TRACKER_VERSION = "1.09.0"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
-    '-- Correction du crash de demarrage rapide avec les cheats codes actifs.',
-    '-- Il est maintenant possible rechercher des capacites ayant des accents.',
-    '-- Ajout de traduction.',
+    '-- Traduction des pokemons ayant une forme alternatif.',
+    '-- Traduction des messages de mort.',
+    '-- Ajout des icones des formes alternatifs des pokemons.',
 }
 
 MiscConstants.DEFAULT_SETTINGS = {
