@@ -2,10 +2,7 @@
 
 Vous pouvez télécharger le tracker [ici](https://github.com//Piomale/NDS-Ironmon-Tracker-French/releases/latest) (uniquement pour Pokémon HeartGold).
 
-
-![Animation](https://user-images.githubusercontent.com/88030270/232337355-ac008285-2e4e-4528-97d0-684b1445bd0e.gif)
-
-
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/88030270/232344430-6cb7c335-8b97-4461-9b23-6f3920a01a07.gif)
 
 Ce tracker est un script lua qui fonctionne avec [BizHawk] (https://tasvideos.org/BizHawk/ReleaseHistory). Il a été créé principalement pour le défi ironMON (créé par Iateyourpie) et est utilisé pour suivre les données des Pokémon de manière dynamique.
 
