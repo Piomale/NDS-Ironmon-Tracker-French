@@ -1,13 +1,11 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "1.09.2"
+MiscConstants.TRACKER_VERSION = "1.10.0"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
-    '-- Traduction des pokemons ayant une forme alternatif.',
-    '-- Traduction des messages de mort.',
-    '-- Ajout des icones des formes alternatifs des pokemons.',
+    '-- Ajout des message de mort contre munja ou contre la capacite imposteur',
 }
 
 MiscConstants.DEFAULT_SETTINGS = {
