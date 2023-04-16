@@ -57,10 +57,10 @@ local function SeedLogger(initialProgram, initialGameName)
                 return pastRun.getProgress() == 2
             end,
             [PlaythroughConstants.CAUSES.SHEDINJA] = function()
-                return enemyPokemon.name == "Shedinja"
+                return enemyPokemon.name == "Munja"
             end,
             [PlaythroughConstants.CAUSES.IMPOSTER] = function()
-                return abilityName == "Imposter"
+                return abilityName == "Imposteur"
             end,
             [PlaythroughConstants.CAUSES.ENEMY_LOWER_BST] = function()
                 return (tonumber(faintedPokemon.bst) - tonumber(enemyPokemon.bst)) >= 100
@@ -70,7 +70,7 @@ local function SeedLogger(initialProgram, initialGameName)
         for reason, causeSatisfied in pairs(causeMappings) do
             if causeSatisfied() then
                 cause = reason
-                --break out early in case of something like you being low BST and losing to Shedinja - Shedinja should override this\
+                --break out early in case of something like you being low BST and losing to Munja - Munja should override this\
                 break
             end
         end
