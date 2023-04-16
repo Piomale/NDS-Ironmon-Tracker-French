@@ -7,7 +7,7 @@ Vous pouvez télécharger le tracker [ici](https://github.com//Piomale/NDS-Ironm
 
 
 
-e tracker est un script lua qui fonctionne avec [BizHawk] (https://tasvideos.org/BizHawk/ReleaseHistory). Il a été créé principalement pour le défi ironMON (créé par Iateyourpie) et est utilisé pour suivre les données des Pokémon de manière dynamique.
+Ce tracker est un script lua qui fonctionne avec [BizHawk] (https://tasvideos.org/BizHawk/ReleaseHistory). Il a été créé principalement pour le défi ironMON (créé par Iateyourpie) et est utilisé pour suivre les données des Pokémon de manière dynamique.
 
 - Pour plus d'informations sur ce défi, rendez-vous sur [ironmon.gg](http://ironmon.gg)
 - Venez rejoindre l'incroyable Discord ! https://discord.gg/jFPYsZAhjX
