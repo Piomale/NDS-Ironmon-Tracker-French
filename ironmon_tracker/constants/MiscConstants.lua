@@ -1,11 +1,14 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "1.10.0"
+MiscConstants.TRACKER_VERSION = "1.11.0"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
-    '-- Ajout des message de mort contre munja ou contre la capacite imposteur',
+    '-- Ajout du numero de la SEED',
+	'-- Mise a jour du tracker de base:',
+    '-- Thanks to kittenchilly, the Gen 7+ box icons are now available as a set to use!',
+    '-- Fixed a few more bugs related to auto Pok'..Chars.accentedE..'mon themes.'
 }
 
 MiscConstants.DEFAULT_SETTINGS = {

@@ -309,6 +309,8 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
         mainScreenUIInitializer.initUI()
         browsManager = BrowsManager(initialSettings, ui, frameCounters, initialProgram, initialProgram.UI_SCREENS.MAIN_SCREEN)
         browsManager.initialize()
+		ui.controls.seedNumber.setText(stripChars("Seed N°" .. QuickLoader.getAttempts()))
+
     end
 
     local function setUpEXPBar(isEnemy)

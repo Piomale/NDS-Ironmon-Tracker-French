@@ -25,7 +25,7 @@ local function MainScreenUIInitializer(ui, gameInfo)
             Frame(
             Box(
                 {x = Graphics.SIZES.SCREEN_WIDTH, y = 0},
-                {width = Graphics.SIZES.MAIN_SCREEN_WIDTH, height = Graphics.SIZES.MAIN_SCREEN_HEIGHT},
+                {width = Graphics.SIZES.MAIN_SCREEN_WIDTH, height = Graphics.SIZES.MAIN_SCREEN_HEIGHT + 10},
                 "Main background color",
                 nil
             ),
@@ -315,6 +315,21 @@ local function MainScreenUIInitializer(ui, gameInfo)
             ),
             Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, 1, {x = 3, y = 2}),
             ui.frames.mainFrame
+        )
+        ui.frames.seedNumber =
+            Frame(
+            Box(
+                {
+                    x = 0,
+                    y = 0
+                },
+                {
+                    width = 100,
+                    height = 10
+                }
+            ),
+            Layout(Graphics.ALIGNMENT_TYPE.VERTICAL),
+            ui.frames.mainInnerFrame
         )
     end
 
@@ -1191,6 +1206,23 @@ local function MainScreenUIInitializer(ui, gameInfo)
         )
     end
 
+    function self.initSeedNumber()
+        ui.controls.seedNumber =
+            TextLabel(
+            Component(ui.frames.seedNumber, Box({x = 0, y = 0}, {width = 5, height = 7}, nil, nil, nil)),
+            TextField(
+                "Seed 0",
+                {x = -1, y = 3},
+                TextStyle(
+                    Graphics.FONT.DEFAULT_FONT_SIZE,
+                    Graphics.FONT.DEFAULT_FONT_FAMILY,
+                    "Bottom box text color",
+                    "Bottom box background color"
+                )
+            )
+        )
+    end
+	
     function self.initUI()
         self.initMainFrames()
         self.initMoveInfo()
@@ -1199,6 +1231,7 @@ local function MainScreenUIInitializer(ui, gameInfo)
         self.initBadgeControls()
         self.initMiscControls()
         self.initHiddenPowerArrows()
+        self.initSeedNumber()
     end
 
     return self

@@ -3082,12 +3082,12 @@ ItemData.GEN_5_ITEMS = {
         description = "Raises Latias and Latios's Special Attack and Special Defense by 50%."
     },
     [226] = {
-        name = "Deep Sea-tooth",
-        description = "Doubles Clamperl's Special Attack. Traded on a Clamperl: Holder evolves into Huntail."
+        name = "Dent Océan",
+        description = "Double l'Attaque Spéciale de Coquiperl."
     },
     [227] = {
-        name = "Deep Sea-scale",
-        description = "Doubles Clamperl's Special Defense. Traded on a Clamperl: Holder evolves into Gorebyss."
+        name = "Écaille Océan",
+        description = "Double la Défense Spéciale de Coquiperl."
     },
     [228] = {
         name = "Boule Fumée",

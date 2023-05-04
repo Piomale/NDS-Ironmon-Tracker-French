@@ -68,6 +68,7 @@ tableAccents["ÿ"] = "\255"
 tableAccents["’"] = "'"
 tableAccents["Œ"] = "\140"
 tableAccents["œ"] = "\156"
+tableAccents["°"] = "\176"
 
 local tableAccents2 = {}
 tableAccents2["À"] = "A"
