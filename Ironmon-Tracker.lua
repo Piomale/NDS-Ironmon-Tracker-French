@@ -1,21 +1,11 @@
 -- NDS Ironnon Tracker
 -- Created by OnlySpaghettiCode, largely based on the Ironmon Tracker by besteon and other contributors
 IronmonTracker = {}
+
 local tableAccents = {}
 local tableAccents2 = {}
 
-function stripChars(str)
-    local normalisedString = str:gsub("[%z\1-\127\194-\244][\128-\191]*", tableAccents)
-    return normalisedString
-end
-
-function IgnoreChars(str)
-    local normalisedString = str:gsub("[%z\1-\127\194-\244][\128-\191]*", tableAccents2)
-    return normalisedString
-end
-
-function IronmonTracker.startTracker()
-	
+function initAccent()
 	tableAccents["À"] = "\192"
 	tableAccents["Á"] = "\193"
 	tableAccents["Â"] = "\194"
@@ -82,8 +72,6 @@ function IronmonTracker.startTracker()
 	tableAccents["Œ"] = "\140"
 	tableAccents["œ"] = "\156"
 	tableAccents["°"] = "\176"
-
-	
 	tableAccents2["À"] = "A"
 	tableAccents2["Á"] = "A"
 	tableAccents2["Â"] = "A"
@@ -149,6 +137,20 @@ function IronmonTracker.startTracker()
 	tableAccents2["’"] = "'"
 	tableAccents2["Œ"] = "OE"
 	tableAccents2["œ"] = "oe"
+end
+
+function stripChars(str)
+    local normalisedString = str:gsub("[%z\1-\127\194-\244][\128-\191]*", tableAccents)
+    return normalisedString
+end
+
+function IgnoreChars(str)
+    local normalisedString = str:gsub("[%z\1-\127\194-\244][\128-\191]*", tableAccents2)
+    return normalisedString
+end
+
+function IronmonTracker.startTracker()
+	initAccent()
 	local Main = dofile("ironmon_tracker/Main.lua")
 	gui.clearImageCache()
 	collectgarbage()

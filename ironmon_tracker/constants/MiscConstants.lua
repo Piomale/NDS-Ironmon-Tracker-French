@@ -5,10 +5,10 @@ MiscConstants.TRACKER_VERSION = "1.11.0"
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
+    '-- Ajustement de la taille des notes de patch',
+    '-- Correction d\'un bug d\'affichage sur certains caracteres apres une mise a jour',
     '-- Ajout du numero de la SEED',
-	'-- Mise a jour du tracker de base:',
-    '-- Thanks to kittenchilly, the Gen 7+ box icons are now available as a set to use!',
-    '-- Fixed a few more bugs related to auto Pok'..Chars.accentedE..'mon themes.'
+    '-- Ajout des icones de la gen 7+',
 }
 
 MiscConstants.DEFAULT_SETTINGS = {

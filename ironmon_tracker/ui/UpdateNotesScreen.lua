@@ -13,9 +13,9 @@ local function updatenotesscreen(initialSettings, initialTracker, initialProgram
 	local tracker = initialTracker
 	local program = initialProgram
 	local constants = {
-		MAX_MESSAGE_WIDTH = Graphics.SIZES.MAIN_SCREEN_WIDTH - 20,
+		MAX_MESSAGE_WIDTH = 200,
 		NOTES_ROW_HEIGHT = 12,
-		BUTTON_WIDTH = 39,
+		BUTTON_WIDTH = 47,
 		NOTES_MAIN_HEIGHT = Graphics.SIZES.MAIN_SCREEN_HEIGHT + 30
 	}
 	local ui = {}
@@ -122,7 +122,7 @@ local function updatenotesscreen(initialSettings, initialTracker, initialProgram
 				nil,
 				nil
 			),
-			Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, 0, {x = 49, y = 5}),
+			Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, 0, {x = 70, y = 5}),
 			ui.frames.mainInnerFrame
 		)
 		ui.controls.closeButton =
@@ -139,7 +139,7 @@ local function updatenotesscreen(initialSettings, initialTracker, initialProgram
 				)
 			),
 			TextField(
-				"Close",
+				"Fermer",
 				{x = 8, y = 3},
 				TextStyle(
 					Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -159,7 +159,7 @@ local function updatenotesscreen(initialSettings, initialTracker, initialProgram
 			Frame(
 			Box(
 				{x = Graphics.SIZES.SCREEN_WIDTH, y = 0},
-				{width = Graphics.SIZES.MAIN_SCREEN_WIDTH, height = constants.NOTES_MAIN_HEIGHT},
+				{width = 200, height = constants.NOTES_MAIN_HEIGHT},
 				"Main background color",
 				nil
 			),
@@ -171,7 +171,7 @@ local function updatenotesscreen(initialSettings, initialTracker, initialProgram
 			Box(
 				{x = 0, y = 0},
 				{
-					width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
+					width = 200 - 2 * Graphics.SIZES.BORDER_MARGIN,
 					height = constants.NOTES_MAIN_HEIGHT - 2 * Graphics.SIZES.BORDER_MARGIN
 				},
 				"Top box background color",
@@ -186,15 +186,15 @@ local function updatenotesscreen(initialSettings, initialTracker, initialProgram
 				ui.frames.mainInnerFrame,
 				Box(
 					{x = 5, y = 5},
-					{width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN, height = 18},
+					{width = 200 - 2 * Graphics.SIZES.BORDER_MARGIN, height = 18},
 					"Top box background color",
 					"Top box border color",
 					false
 				)
 			),
 			TextField(
-				"Update " .. MiscConstants.TRACKER_VERSION,
-				{x = 36, y = 1},
+				"Mise \224 jour " .. MiscConstants.TRACKER_VERSION,
+				{x = 44, y = 1},
 				TextStyle(11, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
 			)
 		)
