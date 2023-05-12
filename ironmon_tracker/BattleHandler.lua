@@ -494,26 +494,42 @@ local function BattleHandler(
         end
         return highestLevelMonIndex
     end
+	
+	-- Vérifie si au moins un Pokémon est en vie
+	local function checkIfAnyPokemonIsAlive(currentBase)
+		for i = 0, 5 do
+			pokemonDataReader.setCurrentBase(currentBase + i * gameInfo.ENCRYPTED_POKEMON_SIZE)
+			local data = pokemonDataReader.decryptPokemonInfo(false, i, false)
+			if MiscUtils.validPokemonData(data) and data.curHP > 0 then
+				return true
+			end
+		end
+		return false
+	end
 
     function self.checkIfRunHasEnded()
         if not inBattle or not battleDataFetched then
             return
         end
-        if faintMonIndex == -1 then
-            if settings.trackedInfo.FAINT_DETECTION == PlaythroughConstants.FAINT_DETECTIONS.ON_HIGHEST_LEVEL_FAINT then
-                faintMonIndex = calculateHighestPlayerMonIndex()
-            elseif settings.trackedInfo.FAINT_DETECTION ==PlaythroughConstants.FAINT_DETECTIONS.ON_FIRST_SLOT_FAINT then
-                faintMonIndex = 0
-            end
-        end
-        local currentBase = memoryAddresses.playerBattleBase
-        pokemonDataReader.setCurrentBase(currentBase + faintMonIndex * gameInfo.ENCRYPTED_POKEMON_SIZE)
+		local currentBase = memoryAddresses.playerBattleBase
+		
+		if faintMonIndex == -1 then
+			if settings.trackedInfo.FAINT_DETECTION == PlaythroughConstants.FAINT_DETECTIONS.ON_HIGHEST_LEVEL_FAINT then
+				faintMonIndex = calculateHighestPlayerMonIndex()
+			elseif settings.trackedInfo.FAINT_DETECTION == PlaythroughConstants.FAINT_DETECTIONS.ON_FIRST_SLOT_FAINT then
+				faintMonIndex = 0
+			elseif settings.trackedInfo.FAINT_DETECTION == PlaythroughConstants.FAINT_DETECTIONS.ALL_FAINT then
+				if not checkIfAnyPokemonIsAlive(currentBase) then
+					program.onRunEnded()
+				end
+				return
+			end
+		end
+		pokemonDataReader.setCurrentBase(currentBase + faintMonIndex * gameInfo.ENCRYPTED_POKEMON_SIZE)
         local data = pokemonDataReader.decryptPokemonInfo(false, faintMonIndex, false)
-        if MiscUtils.validPokemonData(data) then
-            if data.curHP == 0 then
-                program.onRunEnded()
-            end
-        end
+		if MiscUtils.validPokemonData(data) and data.curHP == 0 then
+			program.onRunEnded()
+		end
     end
 
     local function onBattleFetchFrameCounter()

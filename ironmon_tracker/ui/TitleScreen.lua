@@ -11,6 +11,7 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 	local Layout = dofile(Paths.FOLDERS.UI_BASE_CLASSES .. "/Layout.lua")
 	local Icon = dofile(Paths.FOLDERS.UI_BASE_CLASSES .. "/Icon.lua")
 	local MouseClickEventListener = dofile(Paths.FOLDERS.UI_BASE_CLASSES .. "/MouseClickEventListener.lua")
+	local MainScreen = dofile(Paths.FOLDERS.UI_FOLDER .. "/MainScreen.lua")
 	local settings = initialSettings
 	local seedLogger
 	local attempts = 0
@@ -256,6 +257,7 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 	local function readAttemptsIntoUI()
 		local attemptsText = "Tentatives: " .. attempts
 		ui.controls.attemptsLabel.setText(attemptsText)
+		program.setSeedNumber(attempts)
 		program.drawCurrentScreens()
 	end
 

@@ -300,7 +300,11 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
         justChangedHiddenPower = true
         program.drawCurrentScreens()
     end
-
+	
+	function self.setSeedNumber(attempts)
+		ui.controls.seedNumber.setText(stripChars("Seed N°" .. attempts))
+	end
+	
     local function initUI()
         ui.controls = {}
         ui.frames = {}
@@ -309,10 +313,11 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
         mainScreenUIInitializer.initUI()
         browsManager = BrowsManager(initialSettings, ui, frameCounters, initialProgram, initialProgram.UI_SCREENS.MAIN_SCREEN)
         browsManager.initialize()
-		ui.controls.seedNumber.setText(stripChars("Seed N°" .. QuickLoader.getAttempts()))
-
+		self.setSeedNumber(QuickLoader.getAttempts())
     end
 
+
+	
     local function setUpEXPBar(isEnemy)
         extraThingsToDraw.experienceBar = nil
         if isEnemy or not hoveringOverLevel or currentPokemon.fromTeamInfoView then 

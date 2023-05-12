@@ -70,7 +70,8 @@ local function Program(initialTracker, initialMemoryAddresses, initialGameInfo, 
 		local pokemonThemeManager = PokemonThemeManager(settings, self)
 
 	local currentScreens = {}
-
+	
+	
 	function self.getGameInfo()
 		return gameInfo
 	end
@@ -154,6 +155,7 @@ local function Program(initialTracker, initialMemoryAddresses, initialGameInfo, 
 		end
 	end
 
+
 	function self.turnOffPokemonTheme()
 		pokemonThemeManager.turnOff()
 	end
@@ -172,6 +174,7 @@ local function Program(initialTracker, initialMemoryAddresses, initialGameInfo, 
 		checkIfNeedToInitialize(screen)
 		self.drawCurrentScreens()
 	end
+
 
 	self.UI_SCREENS = {
 		MAIN_SCREEN = 0,
@@ -219,6 +222,10 @@ local function Program(initialTracker, initialMemoryAddresses, initialGameInfo, 
 		[self.UI_SCREENS.RESTORE_POINTS_SCREEN] = RestorePointsScreen(settings,tracker,self)
 	}
 
+	function self.setSeedNumber(attempts)
+		self.UI_SCREEN_OBJECTS[self.UI_SCREENS.MAIN_SCREEN].setSeedNumber(attempts)
+	end
+	
 	local function getScreenTotal()
 		local total = 0
 		for _, screen in pairs(currentScreens) do

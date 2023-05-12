@@ -13,14 +13,14 @@ local function TrackedInfoScreen(initialSettings, initialTracker, initialProgram
 	local tracker = initialTracker
 	local program = initialProgram
 	local constants = {
-		TRACKED_INFO_HEIGHT = 232,
+		TRACKED_INFO_HEIGHT = 252,
 		MAIN_BUTTONS_Y_OFFSET = 5,
 		MAIN_BUTTONS_X_OFFSET = 15,
 		MAIN_BUTTON_SPACING = 5,
 		MAIN_BUTTON_WIDTH = 160,
 		MAIN_BUTTON_HEIGHT = 19,
 		BUTTONS_FRAME_HEIGHT = 125,
-		FAINT_DETECTION_FRAME_HEIGHT = 57,
+		FAINT_DETECTION_FRAME_HEIGHT = 77,
 		FAINT_DETECTION_ROW_HEIGHT = 13,
 		BUTTON_SIZE = 10
 	}
@@ -222,7 +222,8 @@ local function TrackedInfoScreen(initialSettings, initialTracker, initialProgram
 		)
 		local settingNames = {
 			[PlaythroughConstants.FAINT_DETECTIONS.ON_FIRST_SLOT_FAINT] = "Le pokémon leader perd",
-			[PlaythroughConstants.FAINT_DETECTIONS.ON_HIGHEST_LEVEL_FAINT] = "Le pokémon le plus haut niveau perd"
+			[PlaythroughConstants.FAINT_DETECTIONS.ON_HIGHEST_LEVEL_FAINT] = "Le pokémon le plus haut niveau perd",
+			[PlaythroughConstants.FAINT_DETECTIONS.ALL_FAINT] = "Tous les pokémons ont perdu"
 		}
 		for settingValue, name in pairs(settingNames) do
 			createFaintDetectionChoosingRow("FAINT_DETECTION", settingValue, stripChars(name))

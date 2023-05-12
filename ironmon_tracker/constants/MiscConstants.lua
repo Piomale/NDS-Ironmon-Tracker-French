@@ -1,10 +1,12 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "1.11.0"
+MiscConstants.TRACKER_VERSION = "1.12.0"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
+    '-- Ajout de l\'option fin de run quand tous les pokemons sont ko',
+    '-- Le numero de seed se met à jour lors d\'une modification du nombre de tentatiive',
     '-- Ajustement de la taille des notes de patch',
     '-- Correction d\'un bug d\'affichage sur certains caracteres apres une mise a jour',
     '-- Ajout du numero de la SEED',
@@ -81,7 +83,7 @@ MiscConstants.DEFAULT_SETTINGS = {
         UPDATE_WAS_DONE = true
     },
     trackedInfo = {
-        FAINT_DETECTION = PlaythroughConstants.FAINT_DETECTIONS.ON_FIRST_SLOT_FAINT
+        FAINT_DETECTION = PlaythroughConstants.FAINT_DETECTIONS.ALL_FAINT
     },
     extras = {
         BROWS_ENABLED = false,
