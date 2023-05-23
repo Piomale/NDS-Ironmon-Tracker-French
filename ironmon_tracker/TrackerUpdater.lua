@@ -109,7 +109,7 @@ local function TrackerUpdater(initialSettings)
         local command =  "curl " .. versionURL .. " --ssl-no-revoke"
         local response = MiscUtils.runExecuteCommand(command)
         if response ~= nil and response ~= "" then
-            local latestVersionString = string.match(response, '"tag_name":.*(%d+%.%d+%.%d+)"')
+            local latestVersionString = string.match(response, '"tag_name":.*(%d+%.%d+%.%d+)')
             latestVersion = parseVersionNumber(latestVersionString)
         end
     end
