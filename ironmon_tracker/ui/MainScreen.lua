@@ -819,7 +819,7 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
 
             extraThingsToDraw.friendshipBar = {
                 ["progress"] = progress,
-                x = position.x + 19 + (5 * #(tostring(currentPokemon.level))),
+                x = position.x + 15 + (5 * #(tostring(currentPokemon.level))),
                 y = position.y + 3
             }
             if progress >= 1 then
@@ -829,6 +829,7 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
         ui.controls.pokemonLevelAndEvo.setText("N." .. currentPokemon.level .. " (" .. evo .. ")")
         if hoveringOverLevel then
             ui.controls.pokemonLevelAndEvo.setText("")
+			extraThingsToDraw.friendshipBar = nil
         end
     end
 

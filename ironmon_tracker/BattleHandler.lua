@@ -497,7 +497,7 @@ local function BattleHandler(
 	
 	-- Vérifie si au moins un Pokémon est en vie
 	local function checkIfAnyPokemonIsAlive(currentBase)
-		for i = 0, 5 do
+		for i = 0, 5, 1 do
 			pokemonDataReader.setCurrentBase(currentBase + i * gameInfo.ENCRYPTED_POKEMON_SIZE)
 			local data = pokemonDataReader.decryptPokemonInfo(false, i, false)
 			if MiscUtils.validPokemonData(data) and data.curHP > 0 then
