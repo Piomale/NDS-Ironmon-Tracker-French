@@ -7,7 +7,7 @@ MiscConstants.BIZHAWK_VERSION = client.getversion()
 MiscConstants.UPDATE_NOTES = {
     '-- Resolution d\'un bug sur l\'option fin de run quand tous les pokemons sont ko',
     '-- Meilleur gestion du texte Friend pour les evolutions',
-    '-- Modification du nom des statistique pour une meilleur visibilite',
+    '-- Modification du nom des statistiques pour une meilleur visibilite',
 }
 
 MiscConstants.DEFAULT_SETTINGS = {
