@@ -1,16 +1,13 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "1.12.2"
+MiscConstants.TRACKER_VERSION = "1.13.0"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
-    '-- Ajout de l\'option fin de run quand tous les pokemons sont ko',
-    '-- Le numero de seed se met à jour lors d\'une modification du nombre de tentative',
-    '-- Ajustement de la taille des notes de patch',
-    '-- Correction d\'un bug d\'affichage sur certains caracteres apres une mise a jour',
-    '-- Ajout du numero de la SEED',
-    '-- Ajout des icones de la gen 7+',
+    '-- Resolution d\'un bug sur l\'option fin de run quand tous les pokemons sont ko',
+    '-- Meilleur gestion du texte Friend pour les evolutions',
+    '-- Modification du nom des statistique pour une meilleur visibilite',
 }
 
 MiscConstants.DEFAULT_SETTINGS = {

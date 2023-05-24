@@ -326,6 +326,7 @@ local function TeamInfoScreen(initialSettings, initialTracker, initialProgram, i
             formatPokemon(pokemon)
         end
         program.moveMainScreen({x = 94, y = 26})
+        program.SetSeedNumberVisibility(false)
         program.setCurrentScreens({program.UI_SCREENS.LOG_VIEWER_SCREEN, program.UI_SCREENS.MAIN_SCREEN})
         ui.controls.leftPokemonButton.setVisibility(#currentTrainerTeam > 1)
         ui.controls.rightPokemonButton.setVisibility(#currentTrainerTeam > 1)

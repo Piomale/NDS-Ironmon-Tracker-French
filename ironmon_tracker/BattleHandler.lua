@@ -512,17 +512,19 @@ local function BattleHandler(
             return
         end
 		local currentBase = memoryAddresses.playerBattleBase
-		
+		if settings.trackedInfo.FAINT_DETECTION == PlaythroughConstants.FAINT_DETECTIONS.ALL_FAINT then
+			if not checkIfAnyPokemonIsAlive(currentBase) then
+				faintMonIndex = -1
+				program.onRunEnded()
+			end
+			return
+		end
+			
 		if faintMonIndex == -1 then
 			if settings.trackedInfo.FAINT_DETECTION == PlaythroughConstants.FAINT_DETECTIONS.ON_HIGHEST_LEVEL_FAINT then
 				faintMonIndex = calculateHighestPlayerMonIndex()
 			elseif settings.trackedInfo.FAINT_DETECTION == PlaythroughConstants.FAINT_DETECTIONS.ON_FIRST_SLOT_FAINT then
 				faintMonIndex = 0
-			elseif settings.trackedInfo.FAINT_DETECTION == PlaythroughConstants.FAINT_DETECTIONS.ALL_FAINT then
-				if not checkIfAnyPokemonIsAlive(currentBase) then
-					program.onRunEnded()
-				end
-				return
 			end
 		end
 		pokemonDataReader.setCurrentBase(currentBase + faintMonIndex * gameInfo.ENCRYPTED_POKEMON_SIZE)

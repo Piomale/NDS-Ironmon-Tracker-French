@@ -616,8 +616,18 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
                 local color = DrawingUtils.getNatureColor(statName, currentPokemon.nature)
                 local namePosition = ui.controls[statName .. "StatName"].getPosition()
 				local incr = 16
-				if statName == "SPA" or statName == "SPD" then
-					incr = 25
+				if statName == "HP" then
+					incr = 11
+				elseif statName == "ATK" then
+					incr = 15
+				elseif statName == "DEF" then
+					incr = 15
+				elseif statName == "SPA" then
+					incr = 16
+				elseif statName == "SPD" then
+					incr = 17
+				elseif statName == "SPE" then
+					incr = 11
 				end
                 local naturePosition = {
                     x = namePosition.x + incr,
@@ -984,12 +994,17 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
         ui.controls.pokemonType2.setVisibility(not randomBallPickerActive)
     end
 
+    function self.SetSeedNumberVisibility(visible)
+        ui.frames.seedNumber.setVisibility(visible)
+    end
+	
     function self.show()
         self.updateBadgeLayout()
         readPokemonIntoUI()
         setUpBasedOnRandomBallPicker()
         browsManager.show()
         ui.frames.mainFrame.show()
+		ui.frames.seedNumber.show()
         if not program.isInBattle() or inPastRunView or inTrackedView then
             extraThingsToDraw.moveEffectiveness = {}
             extraThingsToDraw.statStages = {}
@@ -1244,6 +1259,7 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
         ui.frames.mainFrame.move({x = Graphics.SIZES.SCREEN_WIDTH, y = 0})
         inTrackedView = false
         inLockedView = false
+		self.SetSeedNumberVisibility(true)
     end
 
     function self.moveMainScreen(newPosition)

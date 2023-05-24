@@ -828,6 +828,10 @@ local function Program(initialTracker, initialMemoryAddresses, initialGameInfo, 
 		self.UI_SCREEN_OBJECTS[self.UI_SCREENS.MAIN_SCREEN].moveMainScreen(newPosition)
 	end
 
+	function self.SetSeedNumberVisibility(visible)
+		self.UI_SCREEN_OBJECTS[self.UI_SCREENS.MAIN_SCREEN].SetSeedNumberVisibility(visible)
+	end
+	
 	function self.undoTrackedPokemonView()
 		inTrackedPokemonView = false
 		selectedPlayer = self.SELECTED_PLAYERS.PLAYER

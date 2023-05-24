@@ -316,21 +316,7 @@ local function MainScreenUIInitializer(ui, gameInfo)
             Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, 1, {x = 3, y = 2}),
             ui.frames.mainFrame
         )
-        ui.frames.seedNumber =
-            Frame(
-            Box(
-                {
-                    x = 0,
-                    y = 0
-                },
-                {
-                    width = 100,
-                    height = 10
-                }
-            ),
-            Layout(Graphics.ALIGNMENT_TYPE.VERTICAL),
-            ui.frames.mainInnerFrame
-        )
+
     end
 
     function self.initMoveInfo()
@@ -839,7 +825,7 @@ local function MainScreenUIInitializer(ui, gameInfo)
 
     function self.initStatControls()
         local stats = {"HP", "ATK", "DEF", "SPA", "SPD", "SPE"}
-		local trad = { HP = "PV", ATK = "ATQ", DEF = "DEF", SPA = "ATQ.S", SPD = "DEF.S", SPE = "VIT"}
+		local trad = { HP = "PV", ATK = "ATQ", DEF = "DEF", SPA = "A.SP", SPD = "D.SP", SPE = "VIT"}
         for _, stat in pairs(stats) do
             local frameName = stat .. "Frame"
             ui.frames[frameName] =
@@ -1207,12 +1193,27 @@ local function MainScreenUIInitializer(ui, gameInfo)
     end
 
     function self.initSeedNumber()
+			ui.frames.seedNumber = 
+            Frame(
+            Box(
+                {x = Graphics.SIZES.SCREEN_WIDTH, y = Graphics.SIZES.MAIN_SCREEN_HEIGHT},
+                {width = Graphics.SIZES.MAIN_SCREEN_WIDTH, height = 10},
+                "Main background color",
+                nil
+            ),
+            Layout(
+                Graphics.ALIGNMENT_TYPE.HORIZONTAL,
+                5,
+                {x = Graphics.SIZES.BORDER_MARGIN, y = Graphics.SIZES.BORDER_MARGIN}
+            ),
+            nil
+        )	
         ui.controls.seedNumber =
             TextLabel(
-            Component(ui.frames.seedNumber, Box({x = 0, y = 0}, {width = 5, height = 7}, nil, nil, nil)),
+            Component(ui.frames.seedNumber, Box({x = 0, y = 0}, {width = Graphics.SIZES.MAIN_SCREEN_WIDTH, height = 7}, nil, nil, nil)),
             TextField(
                 "Seed 0",
-                {x = -1, y = 3},
+                {x = 23, y = -7},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
                     Graphics.FONT.DEFAULT_FONT_FAMILY,
@@ -1221,6 +1222,7 @@ local function MainScreenUIInitializer(ui, gameInfo)
                 )
             )
         )
+		
     end
 	
     function self.initUI()
