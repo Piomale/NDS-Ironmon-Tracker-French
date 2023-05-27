@@ -40,7 +40,7 @@ function MoveUtils.netEffectiveness(move, pkmnData, isEnemy, hiddenPowerType)
     local effectiveness = 1.0
     for _, type in ipairs(pkmnData["type"]) do
         local moveType = move.type
-        if move.name == "Hidden Power" and not isEnemy then
+        if move.name == "Puis. Cachée" and not isEnemy then
             moveType = hiddenPowerType
         end
         if moveType ~= "---" then

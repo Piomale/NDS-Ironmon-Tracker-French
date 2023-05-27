@@ -497,9 +497,18 @@ local function BattleHandler(
 	
 	-- Vérifie si au moins un Pokémon est en vie
 	local function checkIfAnyPokemonIsAlive(currentBase)
+	
+		-- dirty patch to prevent a bug
+		pokemonDataReader.setCurrentBase(currentBase + 0 * gameInfo.ENCRYPTED_POKEMON_SIZE)
+	    local data = pokemonDataReader.decryptPokemonInfo(false, 0, false)
+		if not MiscUtils.validPokemonData(data) then
+			print("bug detected")
+			return true
+		end
 		for i = 0, 5, 1 do
 			pokemonDataReader.setCurrentBase(currentBase + i * gameInfo.ENCRYPTED_POKEMON_SIZE)
 			local data = pokemonDataReader.decryptPokemonInfo(false, i, false)
+			
 			if MiscUtils.validPokemonData(data) and data.curHP > 0 then
 				return true
 			end
@@ -514,18 +523,15 @@ local function BattleHandler(
 		local currentBase = memoryAddresses.playerBattleBase
 		if settings.trackedInfo.FAINT_DETECTION == PlaythroughConstants.FAINT_DETECTIONS.ALL_FAINT then
 			if not checkIfAnyPokemonIsAlive(currentBase) then
-				faintMonIndex = -1
 				program.onRunEnded()
 			end
 			return
 		end
 			
-		if faintMonIndex == -1 then
-			if settings.trackedInfo.FAINT_DETECTION == PlaythroughConstants.FAINT_DETECTIONS.ON_HIGHEST_LEVEL_FAINT then
-				faintMonIndex = calculateHighestPlayerMonIndex()
-			elseif settings.trackedInfo.FAINT_DETECTION == PlaythroughConstants.FAINT_DETECTIONS.ON_FIRST_SLOT_FAINT then
-				faintMonIndex = 0
-			end
+		if settings.trackedInfo.FAINT_DETECTION == PlaythroughConstants.FAINT_DETECTIONS.ON_HIGHEST_LEVEL_FAINT then
+			faintMonIndex = calculateHighestPlayerMonIndex()
+		elseif settings.trackedInfo.FAINT_DETECTION == PlaythroughConstants.FAINT_DETECTIONS.ON_FIRST_SLOT_FAINT then
+			faintMonIndex = 0
 		end
 		pokemonDataReader.setCurrentBase(currentBase + faintMonIndex * gameInfo.ENCRYPTED_POKEMON_SIZE)
         local data = pokemonDataReader.decryptPokemonInfo(false, faintMonIndex, false)

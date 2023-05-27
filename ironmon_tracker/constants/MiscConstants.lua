@@ -1,13 +1,12 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "1.13.0"
+MiscConstants.TRACKER_VERSION = "1.14.0"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
-    '-- Resolution d\'un bug sur l\'option fin de run quand tous les pokemons sont ko',
-    '-- Meilleur gestion du texte Friend pour les evolutions',
-    '-- Modification du nom des statistiques pour une meilleur visibilite',
+    '-- Resolution d\'un bug lie à Puis. Cachee',
+    '-- Ajout d\'un patch pour detecter et bloquer le bug qui empeche la detection des pokémons de l\'equipe',
 }
 
 MiscConstants.DEFAULT_SETTINGS = {
