@@ -1,12 +1,12 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "1.14.0"
+MiscConstants.TRACKER_VERSION = "1.15.0"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
-    '-- Resolution d\'un bug lie à Puis. Cachee',
-    '-- Ajout d\'un patch pour detecter et bloquer le bug qui empeche la detection des pokémons de l\'equipe',
+    '-- Gestion des accents pour Bizhawk 2.9',
+    '-- Ajout d\'un deuxieme patch pour verifier si l\'equipe a perdu',
 }
 
 MiscConstants.DEFAULT_SETTINGS = {

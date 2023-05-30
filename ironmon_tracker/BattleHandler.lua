@@ -508,8 +508,7 @@ local function BattleHandler(
 		for i = 0, 5, 1 do
 			pokemonDataReader.setCurrentBase(currentBase + i * gameInfo.ENCRYPTED_POKEMON_SIZE)
 			local data = pokemonDataReader.decryptPokemonInfo(false, i, false)
-			
-			if MiscUtils.validPokemonData(data) and data.curHP > 0 then
+			if  not MiscUtils.validPokemonData(data) or (MiscUtils.validPokemonData(data) and data.curHP > 0) then
 				return true
 			end
 		end

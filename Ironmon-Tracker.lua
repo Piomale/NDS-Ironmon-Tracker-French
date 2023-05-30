@@ -140,17 +140,26 @@ function initAccent()
 end
 
 function stripChars(str)
-    local normalisedString = str:gsub("[%z\1-\127\194-\244][\128-\191]*", tableAccents)
-    return normalisedString
+	if tableAccents then
+		return str:gsub("[%z\1-\127\194-\244][\128-\191]*", tableAccents)
+	end
+    return str
 end
 
 function IgnoreChars(str)
-    local normalisedString = str:gsub("[%z\1-\127\194-\244][\128-\191]*", tableAccents2)
-    return normalisedString
+	if tableAccents2 then
+		 return str:gsub("[%z\1-\127\194-\244][\128-\191]*", tableAccents2)
+	end
+   
+    return str
 end
 
 function IronmonTracker.startTracker()
-	initAccent()
+	local version = client.getversion()
+	if tonumber(version:sub(1, 1)) == 2 and tonumber(version:sub(3, 3)) < 9 then
+		initAccent()
+	end
+	
 	local Main = dofile("ironmon_tracker/Main.lua")
 	gui.clearImageCache()
 	collectgarbage()
