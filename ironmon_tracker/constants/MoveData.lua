@@ -2431,7 +2431,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Pose un piège sur le terrain adverse, qui inflige 12.5% des PV max aux Pokémon non volant qui entrent sur son terrain. Cumulable 3 fois, auquel cas les dégâts passent à 18.75% puis à 25% des PV max."  
+		description = "Baisse l'Esquive des cibles d'un niveau.."  
 	},
 	{
 		id = "231",
