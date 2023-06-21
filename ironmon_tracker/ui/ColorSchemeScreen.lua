@@ -43,7 +43,7 @@ local function ColorSchemeScreen(initialSettings, initialTracker, initialProgram
     end
 
     local function onGoBackClick()
-        client.SetGameExtraPadding(0, 0, Graphics.SIZES.MAIN_SCREEN_PADDING, 0)
+      --  client.SetGameExtraPadding(0, 0, Graphics.SIZES.MAIN_SCREEN_PADDING, 0)
         program.setCurrentScreens({program.UI_SCREENS.APPEARANCE_OPTIONS_SCREEN})
         program.drawCurrentScreens()
     end

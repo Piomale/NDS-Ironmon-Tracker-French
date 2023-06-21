@@ -323,6 +323,8 @@ local function Program(initialTracker, initialMemoryAddresses, initialGameInfo, 
 		if tracker.hasRunEnded() then
 			return
 		end
+		print(playerPokemon)
+		print(enemyPokemon)
 		if playerPokemon == nil or enemyPokemon == nil then
 			return
 		end
@@ -722,7 +724,7 @@ local function Program(initialTracker, initialMemoryAddresses, initialGameInfo, 
 		Graphics.SIZES.MAIN_SCREEN_PADDING = 199
 		local total = getScreenTotal()
 		if currentScreens[self.UI_SCREENS.MAIN_SCREEN] and total == 1 then
-			client.SetGameExtraPadding(0, 0, Graphics.SIZES.MAIN_SCREEN_PADDING, 0)
+			--client.SetGameExtraPadding(0, 0, Graphics.SIZES.MAIN_SCREEN_PADDING, 0)
 		end
 		for _, screen in pairs(currentScreens) do
 			screen.show()

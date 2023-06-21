@@ -1,12 +1,13 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "1.15.0"
+MiscConstants.TRACKER_VERSION = "1.16.0"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
-    '-- Gestion des accents pour Bizhawk 2.9',
-    '-- Ajout d\'un deuxieme patch pour verifier si l\'equipe a perdu',
+    '-- Nouvelle tentative de patch pour la detection de defaite',
+    '-- Desactivation du resize de bizhawk',
+    '-- Ajout d\'une option pour desactiver la detection de defaite',
 }
 
 MiscConstants.DEFAULT_SETTINGS = {

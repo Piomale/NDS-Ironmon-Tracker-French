@@ -497,18 +497,10 @@ local function BattleHandler(
 	
 	-- Vérifie si au moins un Pokémon est en vie
 	local function checkIfAnyPokemonIsAlive(currentBase)
-	
-		-- dirty patch to prevent a bug
-		pokemonDataReader.setCurrentBase(currentBase + 0 * gameInfo.ENCRYPTED_POKEMON_SIZE)
-	    local data = pokemonDataReader.decryptPokemonInfo(false, 0, false)
-		if not MiscUtils.validPokemonData(data) then
-			print("bug detected")
-			return true
-		end
-		for i = 0, 5, 1 do
-			pokemonDataReader.setCurrentBase(currentBase + i * gameInfo.ENCRYPTED_POKEMON_SIZE)
-			local data = pokemonDataReader.decryptPokemonInfo(false, i, false)
-			if  not MiscUtils.validPokemonData(data) or (MiscUtils.validPokemonData(data) and data.curHP > 0) then
+		for monIndex = 0, 5, 1 do
+			pokemonDataReader.setCurrentBase(currentBase + monIndex * gameInfo.ENCRYPTED_POKEMON_SIZE)
+			local data = pokemonDataReader.decryptPokemonInfo(false, monIndex, false)
+			if  MiscUtils.validPokemonData(data) and data.curHP > 0 then
 				return true
 			end
 		end
@@ -516,7 +508,7 @@ local function BattleHandler(
 	end
 
     function self.checkIfRunHasEnded()
-        if not inBattle or not battleDataFetched then
+        if not inBattle or not battleDataFetched or settings.trackedInfo.FAINT_DETECTION == PlaythroughConstants.NEVER then
             return
         end
 		local currentBase = memoryAddresses.playerBattleBase
