@@ -323,8 +323,6 @@ local function Program(initialTracker, initialMemoryAddresses, initialGameInfo, 
 		if tracker.hasRunEnded() then
 			return
 		end
-		print(playerPokemon)
-		print(enemyPokemon)
 		if playerPokemon == nil or enemyPokemon == nil then
 			return
 		end
