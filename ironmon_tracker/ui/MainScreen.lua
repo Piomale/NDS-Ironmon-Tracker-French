@@ -926,7 +926,7 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
 
     local function openOptionsScreen()
         ui.frames.mainFrame.setVisibility(false)
-     --   client.SetGameExtraPadding(0, 0, Graphics.SIZES.MAIN_SCREEN_PADDING, 0)
+        client.SetGameExtraPadding(0, 0, Graphics.SIZES.MAIN_SCREEN_PADDING, 0)
         program.setCurrentScreens({program.UI_SCREENS.MAIN_OPTIONS_SCREEN})
         program.drawCurrentScreens()
         ui.frames.mainFrame.setVisibility(true)

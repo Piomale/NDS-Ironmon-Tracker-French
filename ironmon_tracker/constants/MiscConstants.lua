@@ -1,12 +1,11 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "1.16.0"
+MiscConstants.TRACKER_VERSION = "1.16.1"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
     '-- Nouvelle tentative de patch pour la detection de defaite',
-    '-- Desactivation du resize de bizhawk',
     '-- Ajout d\'une option pour desactiver la detection de defaite',
 }
 
