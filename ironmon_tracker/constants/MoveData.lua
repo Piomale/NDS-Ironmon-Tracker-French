@@ -272,7 +272,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "35",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Attaque en 2 tours. Le lanceur est invulnérable pendant le chargement."  
+		description = "La puissance est doublée si la cible est dans les airs (Vol, Rebond et Chute Libre)."  
 	},
 	{
 		id = "17",
@@ -312,7 +312,13 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = {"75", "75", "75", "75", "85"},
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Ligote la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir."
+		description = {
+			"Ligote la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir.",
+			"Ligote la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir.",
+			"Ligote la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir.",
+			"Ligote la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir.",
+			"Ligote la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 4 à 5 tours. L'empêche aussi de fuir.",
+		}																																		  
 	},
 	{
 		id = "21",
@@ -372,7 +378,13 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = {"25", "25", "25", "25", "10"},
 		accuracy = "95",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Le lanceur perd 50% des PV max de la cible s'il rate l'attaque." 
+		description = {
+			"Le lanceur perd 50% des PV max de la cible s'il rate l'attaque.",
+			"Le lanceur perd 50% des PV max de la cible s'il rate l'attaque.",
+			"Le lanceur perd 50% des PV max de la cible s'il rate l'attaque.",
+			"Le lanceur perd 50% des PV max de la cible s'il rate l'attaque.",
+			"Le lanceur perd 50% de ses PV max s'il rate l'attaque."
+		}
 	},
 	{
 		id = "27",
@@ -468,7 +480,13 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = {"85", "85", "85", "85", "90"},
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Ligote la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir."
+		description = {
+			"Ligote la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir.",
+			"Ligote la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir.",
+			"Ligote la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir.",
+			"Ligote la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir.",
+			"Ligote la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 4 à 5 tours. L'empêche aussi de fuir."
+		}																																		  
 	},
 	{
 		id = "36",
@@ -624,7 +642,13 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = {"55", "55", "55", "80", "100"},
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Empêche la cible d'utiliser sa dernière capacité utilisée depuis qu'elle est rentrée sur le terrain pendant 4 à 7 tours." 
+		description = {
+			"Empêche la cible d'utiliser sa dernière capacité utilisée depuis qu'elle est rentrée sur le terrain pendant 4 à 7 tours.",
+			"Empêche la cible d'utiliser sa dernière capacité utilisée depuis qu'elle est rentrée sur le terrain pendant 4 à 7 tours.",
+			"Empêche la cible d'utiliser sa dernière capacité utilisée depuis qu'elle est rentrée sur le terrain pendant 4 à 7 tours.",
+			"Empêche la cible d'utiliser sa dernière capacité utilisée depuis qu'elle est rentrée sur le terrain pendant 4 à 7 tours.",
+			"Empêche la cible d'utiliser sa dernière capacité utilisée depuis qu'elle est rentrée sur le terrain pendant 4 tours."
+			}							  
 	},
 	{
 		id = "51",
@@ -864,7 +888,13 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "40",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Augmente l'Attaque Spéciale du lanceur d'un niveau." 
+		description = {
+			"Augmente l'Attaque Spéciale du lanceur d'un niveau.",
+			"Augmente l'Attaque Spéciale du lanceur d'un niveau.",
+			"Augmente l'Attaque Spéciale du lanceur d'un niveau.",
+			"Augmente l'Attaque Spéciale du lanceur d'un niveau.",
+			"Augmente l'Attaque et l'Attaque Spéciale du lanceur d'un niveau, l'effet étant doublé par temps de soleil."
+		}
 	},
 	{
 		id = "75",
@@ -954,7 +984,13 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = {"70", "70", "70", "70", "85"},
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir."
+		description = {
+			"Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir.",
+			"Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir.",
+			"Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir.",
+			"Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir.",
+			"Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 4 à 5 tours. L'empêche aussi de fuir."
+		}
 	},
 	{
 		id = "84",
@@ -1194,7 +1230,13 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Augmente l'Esquive du lanceur d'un niveau." 
+		description = {
+			"Augmente l'Esquive du lanceur d'un niveau.", 
+			"Augmente l'Esquive du lanceur d'un niveau.", 
+			"Augmente l'Esquive du lanceur d'un niveau.", 
+			"Augmente l'Esquive du lanceur d'un niveau.",
+			"Augmente l'Esquive du lanceur de 2 niveaux."
+		}
 	},
 	{
 		id = "108",
@@ -1324,7 +1366,13 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Le lanceur tombe K.O. avant d'attaquer. Lors de cette attaque, la Défense des cibles est divisée par 2." 
+		description = {
+			"Le lanceur tombe K.O. avant d'attaquer. Lors de cette attaque, la Défense des cibles est divisée par 2.",
+			"Le lanceur tombe K.O. avant d'attaquer. Lors de cette attaque, la Défense des cibles est divisée par 2.",
+			"Le lanceur tombe K.O. avant d'attaquer. Lors de cette attaque, la Défense des cibles est divisée par 2.",
+			"Le lanceur tombe K.O. avant d'attaquer. Lors de cette attaque, la Défense des cibles est divisée par 2.",
+			"Le lanceur tombe K.O. avant d'attaquer."
+		}
 	},
 	{
 		id = "121",
@@ -1404,7 +1452,13 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = {"10", "10", "10", "10", "15"},
 		accuracy = {"75", "75", "75", "75", "85"},
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir."
+		description = {
+			"Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir.",
+			"Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir.",
+			"Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir.",
+			"Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir.",
+			"Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 4 à 5 tours. L'empêche aussi de fuir.",
+			}
 	},
 	{
 		id = "129",
@@ -1654,7 +1708,13 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Le lanceur tombe K.O. avant d'attaquer. Lors de cette attaque, la Défense des cibles est divisée par 2." 
+		description = {
+			"Le lanceur tombe K.O. avant d'attaquer. Lors de cette attaque, la Défense des cibles est divisée par 2.", 
+			"Le lanceur tombe K.O. avant d'attaquer. Lors de cette attaque, la Défense des cibles est divisée par 2.", 
+			"Le lanceur tombe K.O. avant d'attaquer. Lors de cette attaque, la Défense des cibles est divisée par 2.", 
+			"Le lanceur tombe K.O. avant d'attaquer. Lors de cette attaque, la Défense des cibles est divisée par 2.", 
+			"Le lanceur tombe K.O. avant d'attaquer."
+		}
 	},
 	{
 		id = "154",
@@ -2401,7 +2461,13 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Sans effet supplémentaire."  
+		description = {
+			"Force la cible à répéter la dernière capacité utilisée pendant 3 à 7 tours.",
+			"Force la cible à répéter la dernière capacité utilisée pendant 3 à 7 tours.",
+			"Force la cible à répéter la dernière capacité utilisée pendant 3 à 7 tours.",
+			"Force la cible à répéter la dernière capacité utilisée pendant 3 à 7 tours.",
+			"Force la cible à répéter la dernière capacité utilisée pendant 3 tours."
+		}
 	},
 	{
 		id = "228",
@@ -2611,7 +2677,13 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = {"15", "15", "15", "15", "10"},
 		accuracy = {"90", "90", "90", "90", "100"},
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Lance une attaque qui frappera la cible 2 tours après l'utilisation de cette capacité. L'attaque inflige des dégâts neutres peu importe le type de la cible." 
+		description = {
+			"Lance une attaque qui frappera la cible 2 tours après l'utilisation de cette capacité. L'attaque inflige des dégâts neutres peu importe le type de la cible.",
+			"Lance une attaque qui frappera la cible 2 tours après l'utilisation de cette capacité. L'attaque inflige des dégâts neutres peu importe le type de la cible.",
+			"Lance une attaque qui frappera la cible 2 tours après l'utilisation de cette capacité. L'attaque inflige des dégâts neutres peu importe le type de la cible.",
+			"Lance une attaque qui frappera la cible 2 tours après l'utilisation de cette capacité. L'attaque inflige des dégâts neutres peu importe le type de la cible.",
+			"Lance une attaque qui frappera la cible 2 tours après l'utilisation de cette capacité."
+		}																																								   
 	},
 	{
 		id = "249",
@@ -2631,7 +2703,13 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = {"70", "70", "70", "70", "85"},
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir."
+		description = {
+			"Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir.",
+			"Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir.",
+			"Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir.",
+			"Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir.",
+			"Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 4 à 5 tours. L'empêche aussi de fuir."
+		}
 	},
 	{
 		id = "251",
@@ -2641,7 +2719,13 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Le lanceur appelle tous les Pokémon en forme de son équipe pour attaquer. Chaque coup porté a une puissance de 10 et n'avait pas de type." 
+		description = {
+			"Le lanceur appelle tous les Pokémon en forme de son équipe pour attaquer. Chaque coup porté a une puissance de 10 et n'avait pas de type." ,
+			"Le lanceur appelle tous les Pokémon en forme de son équipe pour attaquer. Chaque coup porté a une puissance de 10 et n'avait pas de type." ,
+			"Le lanceur appelle tous les Pokémon en forme de son équipe pour attaquer. Chaque coup porté a une puissance de 10 et n'avait pas de type." ,
+			"Le lanceur appelle tous les Pokémon en forme de son équipe pour attaquer. Chaque coup porté a une puissance de 10 et n'avait pas de type." ,
+			"Le lanceur appelle tous les Pokémon en forme de son équipe pour attaquer. La puissance de chaque coup dépend de l'Attaque de base du Pokémon appelé." 
+		}
 	},
 	{
 		-- Begin Gen 3 Moves
@@ -2662,7 +2746,13 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Le lanceur se bloque sur l'attaque pendant 3 tours. Cela réveille les Pokémon endormis et empêche les Pokémon sur le terrain de s'endormir." 
+		description = {
+			"Le lanceur se bloque sur l'attaque pendant 2 à 5 tours. Cela réveille les Pokémon endormis et empêche les Pokémon sur le terrain de s'endormir.",
+			"Le lanceur se bloque sur l'attaque pendant 2 à 5 tours. Cela réveille les Pokémon endormis et empêche les Pokémon sur le terrain de s'endormir.",
+			"Le lanceur se bloque sur l'attaque pendant 2 à 5 tours. Cela réveille les Pokémon endormis et empêche les Pokémon sur le terrain de s'endormir.",
+			"Le lanceur se bloque sur l'attaque pendant 2 à 5 tours. Cela réveille les Pokémon endormis et empêche les Pokémon sur le terrain de s'endormir.",
+			"Le lanceur se bloque sur l'attaque pendant 3 tours. Cela réveille les Pokémon endormis et empêche les Pokémon sur le terrain de s'endormir."
+		}
 	},
 	{
 		id = "254",
@@ -2822,7 +2912,13 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Provoque la cible pendant 3 à 5 tours, ce qui l'empêche d'utiliser des capacités de statut." 
+		description = {
+			"Provoque la cible pendant 3 à 5 tours, ce qui l'empêche d'utiliser des capacités de statut.",
+			"Provoque la cible pendant 3 à 5 tours, ce qui l'empêche d'utiliser des capacités de statut.",
+			"Provoque la cible pendant 3 à 5 tours, ce qui l'empêche d'utiliser des capacités de statut.",
+			"Provoque la cible pendant 3 à 5 tours, ce qui l'empêche d'utiliser des capacités de statut.",
+			"Provoque la cible pendant 3 tours, ce qui l'empêche d'utiliser des capacités de statut."
+		}
 	},
 	{
 		id = "270",
@@ -3032,7 +3128,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Attaque en 2 tours. Le lanceur est invulnérable pendant le chargement."   
+		description = "30% de chance de déclencher un effet secondaire, qui dépend du lieu."   
 	},
 	{
 		id = "291",
@@ -3072,7 +3168,13 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Augmente l'Attaque Spéciale du lanceur de 2 niveaux." 
+		description = {
+			"Augmente l'Attaque Spéciale du lanceur de 2 niveaux.",
+			"Augmente l'Attaque Spéciale du lanceur de 2 niveaux.",
+			"Augmente l'Attaque Spéciale du lanceur de 2 niveaux.",
+			"Augmente l'Attaque Spéciale du lanceur de 2 niveaux.",
+			"Augmente l'Attaque Spéciale du lanceur de 3 niveaux."
+		}
 	},
 	{
 		id = "295",
@@ -3412,7 +3514,13 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = {"70", "70", "70", "70", "85"},
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir."
+		description = {
+			"Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir.",
+			"Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir.",
+			"Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir.",
+			"Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir.",
+			"Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 4 à 5 tours. L'empêche aussi de fuir."
+		}
 	},
 	{
 		id = "329",
@@ -3662,7 +3770,13 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = {"85", "85", "85", "85", "100"},
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Lance une attaque qui frappera la cible 2 tours après l'utilisation de cette capacité. L'attaque inflige des dégâts neutres peu importe le type de la cible." 
+		description = {
+			"Lance une attaque qui frappera la cible 2 tours après l'utilisation de cette capacité. L'attaque inflige des dégâts neutres peu importe le type de la cible.",
+			"Lance une attaque qui frappera la cible 2 tours après l'utilisation de cette capacité. L'attaque inflige des dégâts neutres peu importe le type de la cible.",
+			"Lance une attaque qui frappera la cible 2 tours après l'utilisation de cette capacité. L'attaque inflige des dégâts neutres peu importe le type de la cible.",
+			"Lance une attaque qui frappera la cible 2 tours après l'utilisation de cette capacité. L'attaque inflige des dégâts neutres peu importe le type de la cible.",
+			"Lance une attaque qui frappera la cible 2 tours après l'utilisation de cette capacité."
+		}
 	},
 	{
 		id = "354",
@@ -3772,7 +3886,13 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Priorité +2. Dissipe l'effet de Détection et Abri puis attaque. Ne fonctionne que si la cible se protège."  
+		description = {
+			"Priorité +2. Dissipe l'effet de Détection et Abri puis attaque. Ne fonctionne que si la cible se protège." ,
+			"Priorité +2. Dissipe l'effet de Détection et Abri puis attaque. Ne fonctionne que si la cible se protège." ,
+			"Priorité +2. Dissipe l'effet de Détection et Abri puis attaque. Ne fonctionne que si la cible se protège." ,
+			"Priorité +2. Dissipe l'effet de Détection et Abri puis attaque. Ne fonctionne que si la cible se protège." ,
+			"Priorité +2. Dissipe l'effet des protections comme Abri ou Garde Large puis attaque."
+		}
 	},
 	{
 		id = "365",
@@ -3792,7 +3912,13 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = Graphics.TEXT.ALWAYS_HITS,
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Génère une rafale de vent qui double la Vitesse des Pokémon de l'équipe pendant 3 tours." 
+		description = {
+			"Génère une rafale de vent qui double la Vitesse des Pokémon de l'équipe pendant 3 tours.",
+			"Génère une rafale de vent qui double la Vitesse des Pokémon de l'équipe pendant 3 tours.",
+			"Génère une rafale de vent qui double la Vitesse des Pokémon de l'équipe pendant 3 tours.",
+			"Génère une rafale de vent qui double la Vitesse des Pokémon de l'équipe pendant 3 tours.",
+			"Génère une rafale de vent qui double la Vitesse des Pokémon de l'équipe pendant 4 tours."
+		}
 	},
 	{
 		id = "367",
@@ -3902,7 +4028,13 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "15",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.STATUS,
-		description = "Le lanceur récupère 50% de ses PV max."  
+		description = {
+			"Empêche la cible de restaurer des PV (sauf via un objet ou une capacité spéciale) et d'utiliser les capacités restaurant des PV pendant 5 tours.",
+			"Empêche la cible de restaurer des PV (sauf via un objet ou une capacité spéciale) et d'utiliser les capacités restaurant des PV pendant 5 tours.",
+			"Empêche la cible de restaurer des PV (sauf via un objet ou une capacité spéciale) et d'utiliser les capacités restaurant des PV pendant 5 tours.",
+			"Empêche la cible de restaurer des PV (sauf via un objet ou une capacité spéciale) et d'utiliser les capacités restaurant des PV pendant 5 tours.",
+			"Empêche la cible de restaurer des PV et d'utiliser les capacités restaurant des PV pendant 5 tours.",
+		} 
 	},
 	{
 		id = "378",
@@ -4612,7 +4744,13 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Attaque sonore. 1%, 11% ou 31% de chance de rendre confus la cible selon le volume du son enregistré." 
+		description = {
+			"Attaque sonore. 1%, 11% ou 31% de chance de rendre confus la cible selon le volume du son enregistré.",
+			"Attaque sonore. 1%, 11% ou 31% de chance de rendre confus la cible selon le volume du son enregistré.",
+			"Attaque sonore. 1%, 11% ou 31% de chance de rendre confus la cible selon le volume du son enregistré.",
+			"Attaque sonore. 1%, 11% ou 31% de chance de rendre confus la cible selon le volume du son enregistré.",
+			"Attaque sonore. 0% ou 10% de chance de rendre confus la cible selon le volume du son enregistré."
+		}
 	},
 	{
 		id = "449",
@@ -4762,7 +4900,13 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = {"70", "70", "70", "70", "75"},
 		category = MoveData.MOVE_CATEGORIES.SPECIAL,
-		description = "Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir."
+		description = {
+			"Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir.",
+			"Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir.",
+			"Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir.",
+			"Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 2 à 5 tours. L'empêche aussi de fuir.",
+			"Piège la cible pour lui infliger 1/16 de ses PV max à la fin de chaque tour pendant 4 à 5 tours. L'empêche aussi de fuir."
+		}
 	},
 	{
 		id = "464",

@@ -1356,11 +1356,14 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
 
         local badgeFrames = {primaryBadgeFrame, secondaryBadgeFrame}
 
-        ui.frames.mainFrame.setLayoutAlignment(Graphics.ALIGNMENT_TYPE.VERTICAL)
+        
         if newOrientation == "VERTICAL" then
             ui.frames.mainFrame.setLayoutAlignment(Graphics.ALIGNMENT_TYPE.HORIZONTAL)
+			ui.frames.seedNumber.move({x = Graphics.SIZES.SCREEN_WIDTH, y = Graphics.SIZES.MAIN_SCREEN_HEIGHT})
+		else
+			ui.frames.mainFrame.setLayoutAlignment(Graphics.ALIGNMENT_TYPE.VERTICAL)
+			ui.frames.seedNumber.move({x = Graphics.SIZES.SCREEN_WIDTH, y = Graphics.SIZES.MAIN_SCREEN_HEIGHT + constants.BOTTOM_BOX_HEIGHT })
         end
-
         for _, badgeFrame in pairs(badgeFrames) do
             setBadgeAlignmentAndSize(badgeFrame, newOrientation, showBoth)
         end

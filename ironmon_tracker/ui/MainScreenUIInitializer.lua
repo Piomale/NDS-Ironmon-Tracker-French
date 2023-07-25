@@ -282,6 +282,7 @@ local function MainScreenUIInitializer(ui, gameInfo)
             Layout(Graphics.ALIGNMENT_TYPE.VERTICAL),
             ui.frames.mainInnerFrame
         )
+		
         ui.frames.badgeFrame1 =
             Frame(
             Box(
@@ -1213,7 +1214,7 @@ local function MainScreenUIInitializer(ui, gameInfo)
             Component(ui.frames.seedNumber, Box({x = 0, y = 0}, {width = Graphics.SIZES.MAIN_SCREEN_WIDTH, height = 7}, nil, nil, nil)),
             TextField(
                 "Seed 0",
-                {x = 23, y = -7},
+                {x = 23, y = 0},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
                     Graphics.FONT.DEFAULT_FONT_FAMILY,
@@ -1222,6 +1223,8 @@ local function MainScreenUIInitializer(ui, gameInfo)
                 )
             )
         )
+		
+		
 		
     end
 	

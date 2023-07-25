@@ -8863,7 +8863,8 @@ PokemonData.POKEMON = {
         theme = "FFFFFF 000000 C8DDFF FDCDCD FFF781 FFFFFF 285F43 3C8C63 80B267 C4E7B4 285F43 000000 000000 FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Couaneton",        type = {PokemonData.POKEMON_TYPES.WATER, PokemonData.POKEMON_TYPES.FLYING},
+        name = "Couaneton",
+        type = {PokemonData.POKEMON_TYPES.WATER, PokemonData.POKEMON_TYPES.FLYING},
         evolution = "35",
         bst = "305",
         movelvls = {
@@ -8877,7 +8878,7 @@ PokemonData.POKEMON = {
         theme = "000000 000000 024992 B40002 626262 FFFFFF 9E9E9E EAEFE5 4FA8DB 87C4E9 505F75 000000 000000 FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Swanna",
+        name = "Lakmecygne",
         type = {PokemonData.POKEMON_TYPES.WATER, PokemonData.POKEMON_TYPES.FLYING},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "473",
@@ -8892,7 +8893,7 @@ PokemonData.POKEMON = {
         theme = "000000 000000 024992 B40002 626262 FFFFFF 9E9E9E EAEFE5 4FA8DB 87C4E9 505F75 000000 000000 FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Vanillite",
+        name = "Sorbebe",
         type = {PokemonData.POKEMON_TYPES.ICE, PokemonData.POKEMON_TYPES.EMPTY},
         evolution = "35",
         bst = "305",
@@ -8907,7 +8908,7 @@ PokemonData.POKEMON = {
         theme = "000000 FFFFFF 0343B0 B40002 5E5EAA FFFFFF A7A7D1 E4E4F1 467CB2 63A6EC 79519C FFFFFF FFFFFF 000000 0 1 1 1 0 1"
     },
     {
-        name = "Vanillish",
+        name = "Sorboul",
         type = {PokemonData.POKEMON_TYPES.ICE, PokemonData.POKEMON_TYPES.EMPTY},
         evolution = "47",
         bst = "395",
@@ -8922,7 +8923,7 @@ PokemonData.POKEMON = {
         theme = "000000 FFFFFF 0343B0 B40002 5E5EAA FFFFFF A7A7D1 E4E4F1 467CB2 63A6EC 79519C FFFFFF FFFFFF 000000 0 1 1 1 0 1"
     },
     {
-        name = "Vanilluxe",
+        name = "Sorbouboul",
         type = {PokemonData.POKEMON_TYPES.ICE, PokemonData.POKEMON_TYPES.EMPTY},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "535",
@@ -8937,7 +8938,7 @@ PokemonData.POKEMON = {
         theme = "000000 FFFFFF 0343B0 B40002 5E5EAA FFFFFF A7A7D1 E4E4F1 467CB2 63A6EC 79519C FFFFFF FFFFFF 000000 0 1 1 1 0 1"
     },
     {
-        name = "Deerling",
+        name = "Vivaldaim",
         type = {PokemonData.POKEMON_TYPES.NORMAL, PokemonData.POKEMON_TYPES.GRASS},
         evolution = "34",
         bst = "335",
@@ -8952,7 +8953,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF 000000 C9E3FE FEC9CA FFF184 FFFFFF 593E2E 714F3C CDAD56 F0D7A4 BD5563 000000 000000 FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Sawsbuck",
+        name = "Haydaim",
         type = {PokemonData.POKEMON_TYPES.NORMAL, PokemonData.POKEMON_TYPES.GRASS},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "475",
@@ -8982,7 +8983,7 @@ PokemonData.POKEMON = {
         theme = "000000 000000 024C99 B40002 767676 FFFFFF B9B9B9 F1F1F1 D3B03B F2D65D 414141 000000 000000 FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Karrablast",
+        name = "Carabing",
         type = {PokemonData.POKEMON_TYPES.BUG, PokemonData.POKEMON_TYPES.EMPTY},
         evolution = PokemonData.EVOLUTION_TYPES.KARRABLAST,
         bst = "315",
@@ -8997,7 +8998,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF FFFFFF C8DDFF FDCDCD FEF073 FFFFFF AC2930 D2444B 70707A 94949C 0152A4 FFFFFF FFFFFF FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Escavalier",
+        name = "Lancargot",
         type = {PokemonData.POKEMON_TYPES.BUG, PokemonData.POKEMON_TYPES.STEEL},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "495",
@@ -9012,7 +9013,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF FFFFFF C8DDFF FDCDCD FEF073 FFFFFF AC2930 D2444B 70707A 94949C 0152A4 FFFFFF FFFFFF FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Foongus",
+        name = "Trompignon",
         type = {PokemonData.POKEMON_TYPES.GRASS, PokemonData.POKEMON_TYPES.POISON},
         evolution = "39",
         bst = "294",
@@ -9027,7 +9028,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF FFFFFF BBDCFE FEC6C7 FEF073 FFFFFF B92D59 D34A75 BCB9B2 9D988D 594239 FFFFFF FFFFFF FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Amoonguss",
+        name = "Gaulet",
         type = {PokemonData.POKEMON_TYPES.GRASS, PokemonData.POKEMON_TYPES.POISON},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "464",
@@ -9072,7 +9073,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF FFFFFF BBDCFE FEC6C7 FEF073 FFFFFF 02709D 039BD9 B7C4E0 8A9FCC 02709D FFFFFF FFFFFF FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Alomomola",
+        name = "Mamanbo",
         type = {PokemonData.POKEMON_TYPES.WATER, PokemonData.POKEMON_TYPES.EMPTY},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "470",
@@ -9087,7 +9088,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF 000000 C6E1FD FEE3CB FEE68E FFFFFF CC3F51 EA6274 E78084 FEBAB7 B3485E 000000 000000 FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Joltik",
+        name = "Statitik",
         type = {PokemonData.POKEMON_TYPES.BUG, PokemonData.POKEMON_TYPES.ELECTRIC},
         evolution = "36",
         bst = "319",
@@ -9102,7 +9103,7 @@ PokemonData.POKEMON = {
         theme = "000000 000000 0343B0 B40002 917011 FFFFFF CA9C19 FEDD62 CA9C19 FEDD62 4053AA 000000 000000 000000 0 1 1 1 0 1"
     },
     {
-        name = "Galvantula",
+        name = "Mygavolt",
         type = {PokemonData.POKEMON_TYPES.BUG, PokemonData.POKEMON_TYPES.ELECTRIC},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "472",
@@ -9117,7 +9118,7 @@ PokemonData.POKEMON = {
         theme = "000000 000000 0343B0 B40002 917011 FFFFFF CA9C19 FEDD62 CA9C19 FEDD62 4053AA 000000 000000 000000 0 1 1 1 0 1"
     },
     {
-        name = "Ferroseed",
+        name = "Grindur",
         type = {PokemonData.POKEMON_TYPES.GRASS, PokemonData.POKEMON_TYPES.STEEL},
         evolution = "40",
         bst = "305",
@@ -9132,7 +9133,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF 000000 C0DDFC FEBBBC FDFA9A FFFFFF 2D7C56 399D6D 9AA19B CCCFCC 35383A 000000 000000 FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Ferrothorn",
+        name = "Noacier",
         type = {PokemonData.POKEMON_TYPES.GRASS, PokemonData.POKEMON_TYPES.STEEL},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "489",
@@ -9147,7 +9148,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF 000000 C0DDFC FEBBBC FDFA9A FFFFFF 2D7C56 399D6D 9AA19B CCCFCC 35383A 000000 000000 FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Klink",
+        name = "Tic",
         type = {PokemonData.POKEMON_TYPES.STEEL, PokemonData.POKEMON_TYPES.EMPTY},
         evolution = "38",
         bst = "300",
@@ -9162,7 +9163,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF FFFFFF C0DDFC FEBBBC FDFA9A FFFFFF 006D7D 0097AD B63929 E3584E 747680 FFFFFF FFFFFF FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Klang",
+        name = "Clic",
         type = {PokemonData.POKEMON_TYPES.STEEL, PokemonData.POKEMON_TYPES.EMPTY},
         evolution = "49",
         bst = "440",
@@ -9177,7 +9178,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF FFFFFF C0DDFC FEBBBC FDFA9A FFFFFF 006D7D 0097AD B63929 E3584E 747680 FFFFFF FFFFFF FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Klinklang",
+        name = "Cliticlic",
         type = {PokemonData.POKEMON_TYPES.STEEL, PokemonData.POKEMON_TYPES.EMPTY},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "520",
@@ -9192,7 +9193,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF FFFFFF C0DDFC FEBBBC FDFA9A FFFFFF 006D7D 0097AD B63929 E3584E 747680 FFFFFF FFFFFF FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Tynamo",
+        name = "Anchwatt",
         type = {PokemonData.POKEMON_TYPES.ELECTRIC, PokemonData.POKEMON_TYPES.EMPTY},
         evolution = "39",
         bst = "275",
@@ -9207,7 +9208,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF 000000 C8DEFF FECCCC FEFE88 FFFFFF 0B414D 116273 C2A353 EFDDA6 B14352 000000 000000 FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Eelektrik",
+        name = "Lamperoie",
         type = {PokemonData.POKEMON_TYPES.ELECTRIC, PokemonData.POKEMON_TYPES.EMPTY},
         evolution = PokemonData.EVOLUTION_TYPES.THUNDER,
         bst = "405",
@@ -9222,7 +9223,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF 000000 C8DEFF FECCCC FEFE88 FFFFFF 0B414D 116273 C2A353 EFDDA6 B14352 000000 000000 FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Eelektross",
+        name = "Ohmassacre",
         type = {PokemonData.POKEMON_TYPES.ELECTRIC, PokemonData.POKEMON_TYPES.EMPTY},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "515",
@@ -9237,7 +9238,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF 000000 C8DEFF FECCCC FEFE88 FFFFFF 0B414D 116273 C2A353 EFDDA6 B14352 000000 000000 FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Elgyem",
+        name = "Lewsor",
         type = {PokemonData.POKEMON_TYPES.PSYCHIC, PokemonData.POKEMON_TYPES.EMPTY},
         evolution = "42",
         bst = "335",
@@ -9252,7 +9253,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF FFFFFF C8DDFF FDCDCD FEF89D FFFFFF 775750 A07A72 414041 5A595A 237C61 FFFFFF FFFFFF FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Beheeyem",
+        name = "Neitram",
         type = {PokemonData.POKEMON_TYPES.PSYCHIC, PokemonData.POKEMON_TYPES.EMPTY},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "485",
@@ -9267,7 +9268,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF FFFFFF C8DDFF FDCDCD FEF89D FFFFFF 775750 A07A72 414041 5A595A 237C61 FFFFFF FFFFFF FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Litwick",
+        name = "Funecire",
         type = {PokemonData.POKEMON_TYPES.GHOST, PokemonData.POKEMON_TYPES.FIRE},
         evolution = "41",
         bst = "275",
@@ -9282,7 +9283,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF 000000 BED7FF FDC3C3 FEF89D FFEC70 5F3DC1 755ED8 828CDE C5CBF7 000000 000000 000000 FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Lampent",
+        name = "Melancolux",
         type = {PokemonData.POKEMON_TYPES.GHOST, PokemonData.POKEMON_TYPES.FIRE},
         evolution = PokemonData.EVOLUTION_TYPES.DUSK,
         bst = "370",
@@ -9297,7 +9298,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF 000000 BED7FF FDC3C3 FEF89D FFEC70 5F3DC1 755ED8 828CDE C5CBF7 000000 000000 000000 FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Chandelure",
+        name = "Lugulabre",
         type = {PokemonData.POKEMON_TYPES.GHOST, PokemonData.POKEMON_TYPES.FIRE},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "520",
@@ -9312,7 +9313,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF 000000 BED7FF FDC3C3 FEF89D FFEC70 5F3DC1 755ED8 828CDE C5CBF7 000000 000000 000000 FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Axew",
+        name = "Coupenotte",
         type = {PokemonData.POKEMON_TYPES.DRAGON, PokemonData.POKEMON_TYPES.EMPTY},
         evolution = "38",
         bst = "320",
@@ -9327,7 +9328,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF FFFFFF BED7FF FDC3C3 FEF89D FFFFFF 9D2729 CA3335 454553 5B5B6C 7E752B FFFFFF FFFFFF FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Fraxure",
+        name = "Incisache",
         type = {PokemonData.POKEMON_TYPES.DRAGON, PokemonData.POKEMON_TYPES.EMPTY},
         evolution = "48",
         bst = "410",
@@ -9342,7 +9343,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF FFFFFF BED7FF FDC3C3 FEF89D FFFFFF 9D2729 CA3335 454553 5B5B6C 7E752B FFFFFF FFFFFF FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Haxorus",
+        name = "Tranchodon",
         type = {PokemonData.POKEMON_TYPES.DRAGON, PokemonData.POKEMON_TYPES.EMPTY},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "540",
@@ -9357,7 +9358,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF FFFFFF BED7FF FDC3C3 FEF89D FFFFFF 9D2729 CA3335 454553 5B5B6C 7E752B FFFFFF FFFFFF FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Cubchoo",
+        name = "Polarhume",
         type = {PokemonData.POKEMON_TYPES.ICE, PokemonData.POKEMON_TYPES.EMPTY},
         evolution = "37",
         bst = "305",
@@ -9372,7 +9373,7 @@ PokemonData.POKEMON = {
         theme = "0000000 000000 0343B0 B40002 3679A9 FFFFFF 95BFDD D2F3FF 81ABD8 9FDEF4 414141 000000 000000 000000 0 1 1 1 0 1"
     },
     {
-        name = "Beartic",
+        name = "Polagriffe",
         type = {PokemonData.POKEMON_TYPES.ICE, PokemonData.POKEMON_TYPES.EMPTY},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "485",
@@ -9387,7 +9388,7 @@ PokemonData.POKEMON = {
         theme = "000000 000000 0343B0 B40002 3679A9 FFFFFF 95BFDD D2F3FF 81ABD8 9FDEF4 414141 000000 000000 000000 0 1 1 1 0 1"
     },
     {
-        name = "Cryogonal",
+        name = "Hexagel",
         type = {PokemonData.POKEMON_TYPES.ICE, PokemonData.POKEMON_TYPES.EMPTY},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "485",
@@ -9402,7 +9403,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF FFFFFF CCDFFE FFC8C8 FEFDB1 FFFFFF 23347B 334CB3 89A5DE 5E85D3 325592 FFFFFF FFFFFF FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Shelmet",
+        name = "Escargaume",
         type = {PokemonData.POKEMON_TYPES.BUG, PokemonData.POKEMON_TYPES.EMPTY},
         evolution = PokemonData.EVOLUTION_TYPES.SHELMET,
         bst = "305",
@@ -9417,7 +9418,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF FFFFFF CCDFFE FFBEC0 FEFDB1 FFFFFF AA3C56 D74C6B 98ADD6 6785C3 3A5894 FFFFFF FFFFFF FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Accelgor",
+        name = "Limaspeed",
         type = {PokemonData.POKEMON_TYPES.BUG, PokemonData.POKEMON_TYPES.EMPTY},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "495",
@@ -9432,7 +9433,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF FFFFFF CCDFFE FFBEC0 FEFDB1 FFFFFF AA3C56 D74C6B 98ADD6 6785C3 3A5894 FFFFFF FFFFFF FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Stunfisk",
+        name = "Limonde",
         type = {PokemonData.POKEMON_TYPES.GROUND, PokemonData.POKEMON_TYPES.ELECTRIC},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "471",
@@ -9447,7 +9448,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF 000000 CCDFFE FFC8CA FEFDB1 FFFFFF 945E3E CF7D55 D8C752 FEDF73 634545 000000 000000 FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Mienfoo",
+        name = "Kungfouine",
         type = {PokemonData.POKEMON_TYPES.FIGHTING, PokemonData.POKEMON_TYPES.EMPTY},
         evolution = "50",
         bst = "350",
@@ -9462,7 +9463,7 @@ PokemonData.POKEMON = {
         theme = "000000 FFFFFF 015DAF C0070B A05B5B FFFFFF CEAAAA E7D5D5 C0B0D3 9D84BB A06C49 FFFFFF FFFFFF 000000 0 1 1 1 0 1"
     },
     {
-        name = "Mienshao",
+        name = "Shaofouine",
         type = {PokemonData.POKEMON_TYPES.FIGHTING, PokemonData.POKEMON_TYPES.EMPTY},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "510",
@@ -9477,7 +9478,7 @@ PokemonData.POKEMON = {
         theme = "000000 FFFFFF 015DAF C0070B A05B5B FFFFFF CEAAAA E7D5D5 C0B0D3 9D84BB A06C49 FFFFFF FFFFFF 000000 0 1 1 1 0 1"
     },
     {
-        name = "Druddigon",
+        name = "Drakkarmin",
         type = {PokemonData.POKEMON_TYPES.DRAGON, PokemonData.POKEMON_TYPES.EMPTY},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "485",
@@ -9492,7 +9493,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF 000000 B9DDFD FCC0C1 FFF2B4 FFFFFF B01827 E33647 CDAD4C E3D098 1E4C9E 000000 000000 FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Golett",
+        name = "Gringolem",
         type = {PokemonData.POKEMON_TYPES.GROUND, PokemonData.POKEMON_TYPES.GHOST},
         evolution = "43",
         bst = "303",
@@ -9507,7 +9508,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF 000000 C6E3FD FCC0C1 FFF2B4 FFFFFF 0F5864 157B8B 4E93A1 97D1D7 88642C 000000 000000 FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Golurk",
+        name = "Golemastoc",
         type = {PokemonData.POKEMON_TYPES.GROUND, PokemonData.POKEMON_TYPES.GHOST},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "483",
@@ -9522,7 +9523,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF 000000 C6E3FD FCC0C1 FFF2B4 FFFFFF 0F5864 157B8B 4E93A1 97D1D7 88642C 000000 000000 FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Pawniard",
+        name = "Scalpion",
         type = {PokemonData.POKEMON_TYPES.DARK, PokemonData.POKEMON_TYPES.STEEL},
         evolution = "52",
         bst = "340",
@@ -9537,7 +9538,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF 000000 C3E2FD FEC1C4 FFF2B4 FFFFFF 8A2929 B83838 ABABAB E0E0E0 605F6F 000000 000000 FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Bisharp",
+        name = "Scalproie",
         type = {PokemonData.POKEMON_TYPES.DARK, PokemonData.POKEMON_TYPES.STEEL},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "490",
@@ -9552,7 +9553,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF 000000 C3E2FD FEC1C4 FFF2B4 FFFFFF 8A2929 B83838 ABABAB E0E0E0 605F6F 000000 000000 FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Bouffalant",
+        name = "Frison",
         type = {PokemonData.POKEMON_TYPES.NORMAL, PokemonData.POKEMON_TYPES.EMPTY},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "490",
@@ -9567,7 +9568,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF FFFFFF C8DDFF FDCDCD FFF2B4 FFFFFF 362F24 554A39 6E512E AB7E48 362F24 FFFFFF FFFFFF FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Rufflet",
+        name = "Furaiglon",
         type = {PokemonData.POKEMON_TYPES.NORMAL, PokemonData.POKEMON_TYPES.FLYING},
         evolution = "54",
         bst = "350",
@@ -9582,7 +9583,7 @@ PokemonData.POKEMON = {
         theme = "000000 FFFFFF 0343B0 B40002 807448 FFFFFF B7AC80 F3EED6 494B67 64668C 8F363D FFFFFF FFFFFF 000000 0 1 1 1 0 1"
     },
     {
-        name = "Braviary",
+        name = "Gueriaigle",
         type = {PokemonData.POKEMON_TYPES.NORMAL, PokemonData.POKEMON_TYPES.FLYING},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "510",
@@ -9597,7 +9598,7 @@ PokemonData.POKEMON = {
         theme = "000000 FFFFFF 0343B0 B40002 807448 FFFFFF B7AC80 F3EED6 494B67 64668C 8F363D FFFFFF FFFFFF 000000 0 1 1 1 0 1"
     },
     {
-        name = "Vullaby",
+        name = "Vostourno",
         type = {PokemonData.POKEMON_TYPES.DARK, PokemonData.POKEMON_TYPES.FLYING},
         evolution = "54",
         bst = "370",
@@ -9612,7 +9613,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF FFFFFF C8DDFF FDC9CB FEF8A3 FFFFFF C5516E DA6E85 88705B AC9682 3B3B3B FFFFFF FFFFFF FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Mandibuzz",
+        name = "Vaututrice",
         type = {PokemonData.POKEMON_TYPES.DARK, PokemonData.POKEMON_TYPES.FLYING},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "510",
@@ -9627,7 +9628,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF FFFFFF C8DDFF FDC9CB FEF8A3 FFFFFF C5516E DA6E85 88705B AC9682 3B3B3B FFFFFF FFFFFF FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Heatmor",
+        name = "Aflamanoir",
         type = {PokemonData.POKEMON_TYPES.FIRE, PokemonData.POKEMON_TYPES.EMPTY},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "484",
@@ -9642,7 +9643,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF 000000 C8DDFF FDC9CB FEF8A3 FFFFFF 745D4A 9B7D63 BE8E45 F2CF68 96393B 000000 000000 FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Durant",
+        name = "Fermite",
         type = {PokemonData.POKEMON_TYPES.BUG, PokemonData.POKEMON_TYPES.STEEL},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "484",
@@ -9657,7 +9658,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF FFFFFF C8DDFF FDC9CB FEF8A3 FFFFFF 707070 929292 515259 64656E 984B4D FFFFFF FFFFFF FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Deino",
+        name = "Solochi",
         type = {PokemonData.POKEMON_TYPES.DARK, PokemonData.POKEMON_TYPES.DRAGON},
         evolution = "50",
         bst = "300",
@@ -9672,7 +9673,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF FFFFFF C8DDFF FDC9CB FEF8A3 FFFFFF A23761 C45380 3668B0 5585CA 3D3C3D FFFFFF FFFFFF FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Zweilous",
+        name = "Diamat",
         type = {PokemonData.POKEMON_TYPES.DARK, PokemonData.POKEMON_TYPES.DRAGON},
         evolution = "64",
         bst = "420",
@@ -9687,7 +9688,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF FFFFFF C8DDFF FDC9CB FEF8A3 FFFFFF A23761 C45380 3668B0 5585CA 3D3C3D FFFFFF FFFFFF FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Hydreigon",
+        name = "Trioxhydre",
         type = {PokemonData.POKEMON_TYPES.DARK, PokemonData.POKEMON_TYPES.DRAGON},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "600",
@@ -9702,7 +9703,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF FFFFFF C8DDFF FDC9CB FEF8A3 FFFFFF A23761 C45380 3668B0 5585CA 3D3C3D FFFFFF FFFFFF FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Larvesta",
+        name = "Pyronille",
         type = {PokemonData.POKEMON_TYPES.BUG, PokemonData.POKEMON_TYPES.FIRE},
         evolution = "59",
         bst = "360",
@@ -9717,7 +9718,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF 000000 C8DDFF FDC9CB FEF8A3 FFFFFF 424242 5D5D5D 7EA6B3 B7DFE4 9E482F 000000 000000 FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Volcarona",
+        name = "Pyrax",
         type = {PokemonData.POKEMON_TYPES.BUG, PokemonData.POKEMON_TYPES.FIRE},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "550",
@@ -9732,7 +9733,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF 000000 C8DDFF FDC9CB FEF8A3 FFFFFF 424242 5D5D5D 7EA6B3 B7DFE4 9E482F 000000 000000 FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Cobalion",
+        name = "Cobaltium",
         type = {PokemonData.POKEMON_TYPES.STEEL, PokemonData.POKEMON_TYPES.FIGHTING},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "580",
@@ -9747,7 +9748,7 @@ PokemonData.POKEMON = {
         theme = "000000 000000 0048BE B40002 A87523 FFFFFF BA9358 E9CA99 83BBDE C3DEEF 00777D 000000 000000 FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Terrakion",
+        name = "Terrakium",
         type = {PokemonData.POKEMON_TYPES.ROCK, PokemonData.POKEMON_TYPES.FIGHTING},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "580",
@@ -9762,7 +9763,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF 000000 B7D2FE FEC9CA FFF8BE FFFFFF 413731 62534A CDAF7F E3D2B8 7A6C6D 000000 000000 FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Virizion",
+        name = "Viridium",
         type = {PokemonData.POKEMON_TYPES.GRASS, PokemonData.POKEMON_TYPES.FIGHTING},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "580",
@@ -9777,7 +9778,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF 000000 B7D2FE FEC9CA FFF8BE FFFFFF 517C3B 6EA750 CDCD78 F4F3CF B05767 000000 000000 FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Tornadus",
+        name = "Boreas",
         type = {PokemonData.POKEMON_TYPES.FLYING, PokemonData.POKEMON_TYPES.EMPTY},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "580",
@@ -9792,7 +9793,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF 000000 B7D2FE FEC9CA FFF8BE FFFFFF 3D8E4A 4DB35E BECEE6 EFF3F9 763E94 000000 000000 FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Thundurus",
+        name = "Fulguris",
         type = {PokemonData.POKEMON_TYPES.ELECTRIC, PokemonData.POKEMON_TYPES.FLYING},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "580",
@@ -9837,7 +9838,7 @@ PokemonData.POKEMON = {
         theme = "FFFFFF FFFFFF C8DDFF FDC9CB FEF8A3 FFFFFF 161616 30313A 00C4FC 30313A 161616 FFFFFF FFFFFF FFFFFF 0 1 1 1 0 1"
     },
     {
-        name = "Landorus",
+        name = "Demeteros",
         type = {PokemonData.POKEMON_TYPES.GROUND, PokemonData.POKEMON_TYPES.FLYING},
         evolution = PokemonData.EVOLUTION_TYPES.NONE,
         bst = "600",

@@ -208,6 +208,32 @@ MemoryAddresses[GameInfo.VERSION_NUMBER.BLACK] = {
     }
 }
 
+MemoryAddresses[GameInfo.VERSION_NUMBER.BLACK_FR] = {
+    GLOBAL = {
+        childMapHeader = 0x2592B2 - 0x80,
+        parentMapHeader = 0x2592B4 - 0x80,
+        playerBase = 0x2349B4 - 0x80,
+        playerBattleBase = 0x26A794 - 0x80,
+        enemyTrainerID = 0x2697BE - 0x80,
+        enemyBase = 0x26B254 - 0x80,
+        playerBattleMonPID = 0x2A7E14 - 0x80,
+        enemyBattleMonPID = 0x2A7E70 - 0x80,
+        battleStatus = 0x1D0798 - 0x80,
+        itemStartNoBattle = 0x234784 - 0x80,
+        itemStartBattle = 0x234784 - 0x80,
+        statStagesStart = 0x26D7A0 - 0x80,
+        statStagesEnemy = 0x26D9C4 - 0x80,
+        HPBattlePlayer = 0x26D6B2 - 0x80,
+        curHPBattlePlayer = 0x26D6B4 - 0x80,
+        curBattleLevel = 0x26D6BC - 0x80,
+        curBattleStats = 0x26D792 - 0x80,
+        totalMonsParty = 0x2349B0 - 0x80,
+        berryBagStart = 0x234844 - 0x80,
+        berryBagStartBattle = 0x234844 - 0x80,
+        badges = 0x23CDB0 - 0x80
+    }
+}
+
 MemoryAddresses[GameInfo.VERSION_NUMBER.WHITE] = {
     GLOBAL = {
         childMapHeader = 0x2592B2 + 0x20,
@@ -231,6 +257,32 @@ MemoryAddresses[GameInfo.VERSION_NUMBER.WHITE] = {
         berryBagStart = 0x234844 + 0x20,
         berryBagStartBattle = 0x234844 + 0x20,
         badges = 0x23CDB0 + 0x20
+    }
+}
+
+MemoryAddresses[GameInfo.VERSION_NUMBER.WHITE_FR] = {
+    GLOBAL = {
+        childMapHeader = 0x2592B2 - 0x60,
+        parentMapHeader = 0x2592B4 - 0x60,
+        playerBase = 0x2349B4 - 0x60,
+        playerBattleBase = 0x26A794 - 0x60,
+        enemyTrainerID = 0x2697BE - 0x60,
+        enemyBase = 0x26B254 - 0x60,
+        playerBattleMonPID = 0x2A7E14 - 0x60,
+        enemyBattleMonPID = 0x2A7E70 - 0x60,
+        battleStatus = 0x1D0798 - 0x60,
+        itemStartNoBattle = 0x234784 - 0x60,
+        itemStartBattle = 0x234784 - 0x60,
+        statStagesStart = 0x26D7A0 - 0x60,
+        statStagesEnemy = 0x26D9C4 - 0x60,
+        HPBattlePlayer = 0x26D6B2 - 0x60,
+        curHPBattlePlayer = 0x26D6B4 - 0x60,
+        curBattleLevel = 0x26D6BC - 0x60,
+        curBattleStats = 0x26D792 - 0x60,
+        totalMonsParty = 0x2349B0 - 0x60,
+        berryBagStart = 0x234844 - 0x60,
+        berryBagStartBattle = 0x234844 - 0x60,
+        badges = 0x23CDB0 - 0x60
     }
 }
 

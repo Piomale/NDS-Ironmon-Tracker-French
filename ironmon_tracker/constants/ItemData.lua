@@ -3162,7 +3162,7 @@ ItemData.GEN_5_ITEMS = {
         description = "Poison-Type moves from holder do 20% more damage."
     },
     [246] = {
-        name = "Never Melt-ice",
+        name = "Glacéternel",
         description = "Ice-Type moves from holder do 20% more damage."
     },
     [247] = {
@@ -3186,7 +3186,7 @@ ItemData.GEN_5_ITEMS = {
         description = "Normal-Type moves from holder do 20% more damage."
     },
     [252] = {
-        name = "Up Grade",
+        name = "Améliorator",
         description = "Traded on a Porygon: Holder evolves into Porygon2."
     },
     [253] = {
@@ -4054,7 +4054,7 @@ ItemData.GEN_5_ITEMS = {
         description = "Allows portable berry growing."
     },
     [477] = {
-        name = "Carapuce à ",
+        name = "Carapuce à O",
         description = "Use on Sudowoodo blocking the path on Route 36. Also waters berries."
     },
     [494] = {

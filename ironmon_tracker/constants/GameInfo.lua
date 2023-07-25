@@ -8,7 +8,9 @@ GameInfo.VERSION_NUMBER = {
     HEART_GOLD_FR = 0x464B5049,
     SOUL_SILVER = 0x45475049,
     BLACK = 0x4F425249,
+    BLACK_FR = 0x46425249,
     WHITE = 0x4F415249,
+    WHITE_FR = 0x46415249,
     BLACK2 = 0x4F455249,
     WHITE2 = 0x4F445249
 }
@@ -98,7 +100,31 @@ GameInfo.GAME_INFO = {
         TRAINERS = TrainerData.TRAINERS[GameInfo.VERSION_NUMBER.BLACK],
         LOCATION_DATA = LocationData.LOCATION_DATA[GameInfo.VERSION_NUMBER.BLACK]
     },
+    [GameInfo.VERSION_NUMBER.BLACK_FR] = {
+        GEN = 5,
+        NAME = "Pokemon Black",
+        BADGE_PREFIX = "BW",
+        VERSION_GROUP = 4,
+        ENEMY_PARTY_OFFSET = 0xAC0,
+        ACTIVE_PID_DIFFERENCE = 0x5C,
+        ENCRYPTED_POKEMON_SIZE = 220,
+        GYM_TMS = {83, 67, 76, 72, 78, 62, 79, 82},
+        TRAINERS = TrainerData.TRAINERS[GameInfo.VERSION_NUMBER.BLACK],
+        LOCATION_DATA = LocationData.LOCATION_DATA[GameInfo.VERSION_NUMBER.BLACK]
+    },
     [GameInfo.VERSION_NUMBER.WHITE] = {
+        GEN = 5,
+        NAME = "Pokemon White",
+        BADGE_PREFIX = "BW",
+        VERSION_GROUP = 4,
+        ENEMY_PARTY_OFFSET = 0xAC0,
+        ACTIVE_PID_DIFFERENCE = 0x5C,
+        ENCRYPTED_POKEMON_SIZE = 220,
+        GYM_TMS = {83, 67, 76, 72, 78, 62, 79, 82},
+        TRAINERS = TrainerData.TRAINERS[GameInfo.VERSION_NUMBER.WHITE],
+        LOCATION_DATA = LocationData.LOCATION_DATA[GameInfo.VERSION_NUMBER.BLACK]
+    },
+	[GameInfo.VERSION_NUMBER.WHITE_FR] = {
         GEN = 5,
         NAME = "Pokemon White",
         BADGE_PREFIX = "BW",

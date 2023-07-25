@@ -11,7 +11,10 @@ AbilityData.ABILITIES_MASTER_LIST = {
     {
         id = 1,
         name = "Puanteur",
-        description = "Diminue le pourcentage de rencontre avec des Pokémon sauvages"
+		description = {
+            "Hors combat en tête d'équipe, diminue de 50% la probabilité de rencontrer des Pokémon sauvages.",
+            "Hors combat en tête d'équipe, diminue de 50% la probabilité de rencontrer des Pokémon sauvages. En combat, octroie 10% de chance d'apeurer."
+        }
     },
     {
         id = 2,
@@ -31,7 +34,10 @@ AbilityData.ABILITIES_MASTER_LIST = {
     {
         id = 5,
         name = "Fermeté",
-        description = "Bloque les attaques OHKO telles que Glaciation, Empal’Korne, Guillotine et Abîme"
+		description = {
+            "Bloque les attaques OHKO telles que Glaciation, Empal’Korne, Guillotine et Abîme",
+            "Immunise contre les capacités OHKO (Glaciation, Empal'korne, Guillotine et Abîme). Permet aussi de survivre à 1 PV si une attaque était censée mettre K.O. le Pokémon alors qu'il avait tous ses PV."
+        }
     },
     {
         id = 6,
@@ -111,7 +117,10 @@ AbilityData.ABILITIES_MASTER_LIST = {
     {
         id = 21,
         name = "Ventouse",
-        description = "Votre Pokémon ne peut pas être forcé de 'battre en retraite' par des attaques telles que Hurlement ou Cyclone"
+		description = {
+            "Votre Pokémon ne peut pas être forcé de 'battre en retraite' par des attaques telles que Hurlement ou Cyclone",
+            "Empêche le Pokémon d'être forcé de se retirer (Hurlement, Cyclone, Draco-Queue et Projection). Hors combat en tête d'équipe, augmente les chances de pêcher un Pokémon."
+        }
     },
     {
         id = 22,
@@ -161,7 +170,10 @@ AbilityData.ABILITIES_MASTER_LIST = {
     {
         id = 31,
         name = "Paratonnerre",
-        description = "Attire les attaques électriques"
+		description = {
+            "Attire les attaques électriques",
+            "Attire les capacités Électrik en Duo/Trio. Immunise aussi contre ces dernières et augmente l'Attaque Spéciale d'un niveau s'il en encaisse une."
+        }
     },
     {
         id = 32,
@@ -271,7 +283,10 @@ AbilityData.ABILITIES_MASTER_LIST = {
     {
         id = 53,
         name = "Ramassage",
-        description = "Permet de ramasser des objets"
+		description = {
+            "Octroie 10% de chance de ramasser un objet après chaque combat remporté. Les objets ramassés dépendent du niveau du Pokémon et du jeu.",
+            "Octroie 10% de chance de ramasser un objet après chaque combat remporté. Les objets ramassés dépendent du niveau du Pokémon et du jeu."
+        }
     },
     {
         id = 54,
@@ -291,12 +306,18 @@ AbilityData.ABILITIES_MASTER_LIST = {
     {
         id = 57,
         name = "Plus",
-        description = "Augmente l'attaque spéciale lorsque votre Pokémon est allié à un Pokémon possédant la capacité spéciale Minus (2vs2)"
+		description = {
+            "Augmente l'attaque spéciale lorsque votre Pokémon est allié à un Pokémon possédant le talent Minus (2vs2)",
+            "Augmente l'Attaque Spéciale lorsque votre Pokémon est allié à un Pokémon possédant le talent Plus ou le talent Minus."
+        }
     },
     {
         id = 58,
         name = "Minus",
-        description = "Augmente votre attaque spéciale en 2vs2, si l'autre Pokémon a la capacité spéciale 'Plus'"
+		description = {
+            "Augmente l'attaque spéciale lorsque votre Pokémon est allié à un Pokémon possédant le talent Minus (2vs2)",
+            "Augmente l'Attaque Spéciale lorsque votre Pokémon est allié à un Pokémon possédant le talent Plus ou le talent Minus."
+        }
     },
     {
         id = 59,
@@ -436,7 +457,10 @@ AbilityData.ABILITIES_MASTER_LIST = {
     {
         id = 86,
         name = "Simple",
-        description = "Augmente l'efficacité des attaques ou des objets tenus"
+		description = {
+            "Augmente l'efficacité des attaques ou des objets tenus",
+            "Double tous les changements de statistiques du Pokémon."
+        }
 	},
     {
         id = 87,
@@ -576,7 +600,10 @@ AbilityData.ABILITIES_MASTER_LIST = {
     {
         id = 114,
         name = "Lavabo",
-        description = "Toutes les attaques eau sont attirées sur ce Pokémon"
+		description = {
+            "Toutes les attaques eau sont attirées sur ce Pokémon",
+            "Attire les capacités Eau en Duo/Trio. Immunise aussi contre ces dernières et augmente l'Attaque Spéciale d'un niveau s'il en encaisse une."
+        }
     },
     {
         id = 115,
