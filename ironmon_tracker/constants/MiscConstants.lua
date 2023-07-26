@@ -1,11 +1,12 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "2.00.0"
+MiscConstants.TRACKER_VERSION = "2.01.0"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
-    '-- Prise en charge des versions noire et blanche',
+    '-- Modification du nom des capacites pour la 5G',
+    '-- Le logviewer devrait refonctionner',
 }
 
 MiscConstants.DEFAULT_SETTINGS = {
