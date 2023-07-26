@@ -93,7 +93,7 @@ MoveData.MOVES_MASTER_LIST = {
 	{
 		--- Empty entry for move ID 0
 		id = "---",
-		name = "---",
+		name = {"---","---","---","---","---"},
 		type = "---",
 		power = Graphics.TEXT.NO_POWER,
 		pp = Graphics.TEXT.NO_PP,
@@ -104,7 +104,7 @@ MoveData.MOVES_MASTER_LIST = {
 	{
 		-- Begin Gen 1 Moves
 		id = "1",
-		name = "Ecras’Face",
+		name = {"Ecras’Face","Ecras’Face","Ecras’Face","Ecras’Face","Écras'Face"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "40",
 		pp = "35",
@@ -114,7 +114,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "2",
-		name = "Poing-Karaté",
+		name = {"Poing-Karaté","Poing-Karaté","Poing-Karaté","Poing-Karaté","Poing-Karaté"},
 		type = {
 			PokemonData.POKEMON_TYPES.NORMAL,
 			PokemonData.POKEMON_TYPES.FIGHTING,
@@ -130,7 +130,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "3",
-		name = "Torgnoles",
+		name = {"Torgnoles","Torgnoles","Torgnoles","Torgnoles","Torgnoles"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "15",
 		pp = "10",
@@ -140,7 +140,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "4",
-		name = "Poing Comète",
+		name = {"Poing Comète","Poing Comète","Poing Comète","Poing Comète","Poing Comète"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "18",
 		pp = "15",
@@ -150,7 +150,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "5",
-		name = "Ultimapoing",
+		name = {"Ultimapoing","Ultimapoing","Ultimapoing","Ultimapoing","Ultimapoing"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "80",
 		pp = "20",
@@ -160,7 +160,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "6",
-		name = "Jackpot",
+		name = {"Jackpot","Jackpot","Jackpot","Jackpot","Jackpot"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "40",
 		pp = "20",
@@ -170,7 +170,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "7",
-		name = "Poing de Feu",
+		name = {"Poing de Feu","Poing de Feu","Poing de Feu","Poing de Feu","Poing de Feu"},
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "75",
 		pp = "15",
@@ -180,7 +180,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "8",
-		name = "Poinglace",
+		name = {"Poinglace","Poinglace","Poinglace","Poinglace","Poinglace"},
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = "75",
 		pp = "15",
@@ -190,7 +190,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "9",
-		name = "Poing-Eclair",
+		name = {"Poing-Eclair","Poing-Eclair","Poing-Eclair","Poing-Eclair","Poing-Éclair"},
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = "75",
 		pp = "15",
@@ -200,7 +200,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "10",
-		name = "Griffe",
+		name = {"Griffe","Griffe","Griffe","Griffe","Griffe"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "40",
 		pp = "35",
@@ -210,7 +210,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "11",
-		name = "Force Poigne",
+		name = {"Force Poigne","Force Poigne","Force Poigne","Force Poigne","Force Poigne"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "55",
 		pp = "30",
@@ -220,7 +220,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "12",
-		name = "Guillotine",
+		name = {"Guillotine","Guillotine","Guillotine","Guillotine","Guillotine"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -230,7 +230,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "13",
-		name = "Coupe-Vent",
+		name = {"Coupe-Vent","Coupe-Vent","Coupe-Vent","Coupe-Vent","Coupe-Vent"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "80",
 		pp = "10",
@@ -240,7 +240,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "14",
-		name = "Danse-Lames",
+		name = {"Danse-Lames","Danse-Lames","Danse-Lames","Danse-Lames","Danse-Lames"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
@@ -250,7 +250,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "15",
-		name = "Coupe",
+		name = {"Coupe","Coupe","Coupe","Coupe","Coupe"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "50",
 		pp = "30",
@@ -260,7 +260,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "16",
-		name = "Tornade",
+		name = {"Tornade","Tornade","Tornade","Tornade","Tornade"},
 		type = {
 			PokemonData.POKEMON_TYPES.NORMAL,
 			PokemonData.POKEMON_TYPES.FLYING,
@@ -276,7 +276,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "17",
-		name = "Cru-Aile",
+		name = {"Cru-Aile","Cru-Aile","Cru-Aile","Cru-Aile","Cru-Aile"},
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = {"35", "60", "60", "60", "60"},
 		pp = "35",
@@ -286,7 +286,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "18",
-		name = "Cyclone",
+		name = {"Cyclone","Cyclone","Cyclone","Cyclone","Cyclone"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -296,7 +296,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "19",
-		name = "Vol",
+		name = {"Vol","Vol","Vol","Vol","Vol"},
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = {"70", "70", "70", "90", "90"},
 		pp = "15",
@@ -306,7 +306,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "20",
-		name = "Etreinte",
+		name = {"Etreinte","Etreinte","Etreinte","Etreinte","Étreinte"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "15",
 		pp = "20",
@@ -322,7 +322,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "21",
-		name = "Souplesse",
+		name = {"Souplesse","Souplesse","Souplesse","Souplesse","Souplesse"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "80",
 		pp = "20",
@@ -332,7 +332,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "22",
-		name = "Fouet Lianes",
+		name = {"Fouet Lianes","Fouet Lianes","Fouet Lianes","Fouet Lianes","Fouet Lianes"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = "35",
 		pp = {"10", "10", "10", "15", "15"},
@@ -342,7 +342,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "23",
-		name = "Ecrasement",
+		name = {"Ecrasement","Ecrasement","Ecrasement","Ecrasement","Écrasement"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "65",
 		pp = "20",
@@ -352,7 +352,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "24",
-		name = "Double Pied",
+		name = {"Double Pied","Double Pied","Double Pied","Double Pied","Double Pied"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "30",
 		pp = "30",
@@ -362,7 +362,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "25",
-		name = "Ultimawashi",
+		name = {"Ultimawashi","Ultimawashi","Ultimawashi","Ultimawashi","Ultimawashi"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "120",
 		pp = "5",
@@ -372,7 +372,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "26",
-		name = "Pied Sauté",
+		name = {"Pied Sauté","Pied Sauté","Pied Sauté","Pied Sauté","Pied Sauté"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = {"70", "70", "70", "85", "100"},
 		pp = {"25", "25", "25", "25", "10"},
@@ -388,7 +388,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "27",
-		name = "Mawashi Geri",
+		name = {"Mawashi Geri","Mawashi Geri","Mawashi Geri","Mawashi Geri","Mawashi Geri"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "60",
 		pp = "15",
@@ -398,7 +398,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "28",
-		name = "Jet de Sable",
+		name = {"Jet de Sable","Jet de Sable","Jet de Sable","Jet de Sable","Jet de Sable"},
 		type = {
 			PokemonData.POKEMON_TYPES.NORMAL,
 			PokemonData.POKEMON_TYPES.GROUND,
@@ -414,7 +414,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "29",
-		name = "Coup d’Boule",
+		name = {"Coup d’Boule","Coup d’Boule","Coup d’Boule","Coup d’Boule","Coup d'Boule"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "70",
 		pp = "15",
@@ -424,7 +424,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "30",
-		name = "Koud’Korne",
+		name = {"Koud’Korne","Koud’Korne","Koud’Korne","Koud’Korne","Koud'Korne"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "65",
 		pp = "25",
@@ -434,7 +434,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "31",
-		name = "Furie",
+		name = {"Furie","Furie","Furie","Furie","Furie"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "15",
 		pp = "20",
@@ -444,7 +444,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "32",
-		name = "Empal’Korne",
+		name = {"Empal’Korne","Empal’Korne","Empal’Korne","Empal’Korne","Empal'Korne"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -454,7 +454,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "33",
-		name = "Charge",
+		name = {"Charge","Charge","Charge","Charge","Charge"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = {"35", "35", "35", "35", "50"},
 		pp = "35",
@@ -464,7 +464,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "34",
-		name = "Plaquage",
+		name = {"Plaquage","Plaquage","Plaquage","Plaquage","Plaquage"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "85",
 		pp = "15",
@@ -474,7 +474,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "35",
-		name = "Ligotage",
+		name = {"Ligotage","Ligotage","Ligotage","Ligotage","Ligotage"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "15",
 		pp = "20",
@@ -490,7 +490,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "36",
-		name = "Bélier",
+		name = {"Bélier","Bélier","Bélier","Bélier","Bélier"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "90",
 		pp = "20",
@@ -500,7 +500,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "37",
-		name = "Mania",
+		name = {"Mania","Mania","Mania","Mania","Mania"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = {"90", "90", "90", "90", "120"},
 		pp = {"20", "20", "20", "20", "10"},
@@ -510,7 +510,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "38",
-		name = "Damoclès",
+		name = {"Damoclès","Damoclès","Damoclès","Damoclès","Damoclès"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = {"100", "120", "120", "120", "120"},
 		pp = "15",
@@ -520,7 +520,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "39",
-		name = "Mimi-Queue",
+		name = {"Mimi-Queue","Mimi-Queue","Mimi-Queue","Mimi-Queue","Mimi-Queue"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
@@ -530,7 +530,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "40",
-		name = "Dard-Venin",
+		name = {"Dard-Venin","Dard-Venin","Dard-Venin","Dard-Venin","Dard-Venin"},
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = "15",
 		pp = "35",
@@ -540,7 +540,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "41",
-		name = "Double-Dard",
+		name = {"Double-Dard","Double-Dard","Double-Dard","Double-Dard","Double-Dard"},
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = "25",
 		pp = "20",
@@ -550,7 +550,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "42",
-		name = "Dard-Nuée",
+		name = {"Dard-Nuée","Dard-Nuée","Dard-Nuée","Dard-Nuée","Dard-Nuée"},
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = "14",
 		pp = "20",
@@ -560,7 +560,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "43",
-		name = "Groz’Yeux",
+		name = {"Groz’Yeux","Groz’Yeux","Groz’Yeux","Groz’Yeux","Groz'Yeux"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
@@ -570,7 +570,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "44",
-		name = "Morsure",
+		name = {"Morsure","Morsure","Morsure","Morsure","Morsure"},
 		type = {
 			PokemonData.POKEMON_TYPES.NORMAL,
 			PokemonData.POKEMON_TYPES.DARK,
@@ -586,7 +586,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "45",
-		name = "Rugissement",
+		name = {"Rugissement","Rugissement","Rugissement","Rugissement","Rugissement"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
@@ -596,7 +596,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "46",
-		name = "Hurlement",
+		name = {"Hurlement","Hurlement","Hurlement","Hurlement","Hurlement"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -606,7 +606,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "47",
-		name = "Berceuse",
+		name = {"Berceuse","Berceuse","Berceuse","Berceuse","Berceuse"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -616,7 +616,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "48",
-		name = "Ultrason",
+		name = {"Ultrason","Ultrason","Ultrason","Ultrason","Ultrason"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -626,7 +626,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "49",
-		name = "Sonicboom",
+		name = {"Sonicboom","Sonicboom","Sonicboom","Sonicboom","Sonicboom"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "---",
 		pp = "20",
@@ -636,7 +636,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "50",
-		name = "Entrave",
+		name = {"Entrave","Entrave","Entrave","Entrave","Entrave"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -652,7 +652,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "51",
-		name = "Acide",
+		name = {"Acide","Acide","Acide","Acide","Acide"},
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = "40",
 		pp = "30",
@@ -662,7 +662,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "52",
-		name = "Flammèche",
+		name = {"Flammèche","Flammèche","Flammèche","Flammèche","Flammèche"},
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "40",
 		pp = "25",
@@ -672,7 +672,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "53",
-		name = "Lance-Flamme",
+		name = {"Lance-Flamme","Lance-Flamme","Lance-Flamme","Lance-Flamme","Lance-Flamme"},
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "95",
 		pp = "15",
@@ -682,7 +682,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "54",
-		name = "Brume",
+		name = {"Brume","Brume","Brume","Brume","Brume"},
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
@@ -692,7 +692,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "55",
-		name = "Pistolet à O",
+		name = {"Pistolet à O","Pistolet à O","Pistolet à O","Pistolet à O","Pistolet à O"},
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = "40",
 		pp = "25",
@@ -702,7 +702,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "56",
-		name = "Hydrocanon",
+		name = {"Hydrocanon","Hydrocanon","Hydrocanon","Hydrocanon","Hydrocanon"},
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = "120",
 		pp = "5",
@@ -712,7 +712,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "57",
-		name = "Surf",
+		name = {"Surf","Surf","Surf","Surf","Surf"},
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = "95",
 		pp = "15",
@@ -722,7 +722,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "58",
-		name = "Laser Glace",
+		name = {"Laser Glace","Laser Glace","Laser Glace","Laser Glace","Laser Glace"},
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = "95",
 		pp = "10",
@@ -732,7 +732,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "59",
-		name = "Blizzard",
+		name = {"Blizzard","Blizzard","Blizzard","Blizzard","Blizzard"},
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = "120",
 		pp = "5",
@@ -742,7 +742,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "60",
-		name = "Rafale Psy",
+		name = {"Rafale Psy","Rafale Psy","Rafale Psy","Rafale Psy","Rafale Psy"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = "65",
 		pp = "20",
@@ -752,7 +752,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "61",
-		name = "Bulles d’O",
+		name = {"Bulles d’O","Bulles d’O","Bulles d’O","Bulles d’O","Bulles d'O"},
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = "65",
 		pp = "20",
@@ -762,7 +762,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "62",
-		name = "Onde Boréale",
+		name = {"Onde Boréale","Onde Boréale","Onde Boréale","Onde Boréale","Onde Boréale"},
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = "65",
 		pp = "20",
@@ -772,7 +772,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "63",
-		name = "Ultralaser",
+		name = {"Ultralaser","Ultralaser","Ultralaser","Ultralaser","Ultralaser"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "150",
 		pp = "5",
@@ -782,7 +782,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "64",
-		name = "Picpic",
+		name = {"Picpic","Picpic","Picpic","Picpic","Picpic"},
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = "35",
 		pp = "35",
@@ -792,7 +792,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "65",
-		name = "Bec Vrille",
+		name = {"Bec Vrille","Bec Vrille","Bec Vrille","Bec Vrille","Bec Vrille"},
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = "80",
 		pp = "20",
@@ -802,7 +802,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "66",
-		name = "Sacrifice",
+		name = {"Sacrifice","Sacrifice","Sacrifice","Sacrifice","Sacrifice"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "80",
 		pp = "25",
@@ -812,7 +812,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "67",
-		name = "Balayage",
+		name = {"Balayage","Balayage","Balayage","Balayage","Balayage"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = {"50", "50", "WT", "WT", "WT"},
 		pp = "20",
@@ -822,7 +822,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "68",
-		name = "Riposte",
+		name = {"Riposte","Riposte","Riposte","Riposte","Riposte"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -832,7 +832,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "69",
-		name = "Frappe Atlas",
+		name = {"Frappe Atlas","Frappe Atlas","Frappe Atlas","Frappe Atlas","Frappe Atlas"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -842,7 +842,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "70",
-		name = "Force",
+		name = {"Force","Force","Force","Force","Force"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "80",
 		pp = "15",
@@ -852,7 +852,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "71",
-		name = "Vol-Vie",
+		name = {"Vol-Vie","Vol-Vie","Vol-Vie","Vol-Vie","Vol-Vie"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = 20,
 		pp = {"20", "20", "20", "25", "25"},
@@ -862,7 +862,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "72",
-		name = "Méga-Sangsue",
+		name = {"Méga-Sangsue","Méga-Sangsue","Méga-Sangsue","Méga-Sangsue","Méga-Sangsue"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = "40",
 		pp = {"10", "10", "10", "15", "15"},
@@ -872,7 +872,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "73",
-		name = "Vampigraine",
+		name = {"Vampigraine","Vampigraine","Vampigraine","Vampigraine","Vampigraine"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -882,7 +882,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "74",
-		name = "Croissance",
+		name = {"Croissance","Croissance","Croissance","Croissance","Croissance"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
@@ -898,7 +898,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "75",
-		name = "Tranch’Herbe",
+		name = {"Tranch’Herbe","Tranch’Herbe","Tranch’Herbe","Tranch’Herbe","Tranch'Herbe"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = "55",
 		pp = "25",
@@ -908,7 +908,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "76",
-		name = "Lance-Soleil",
+		name = {"Lance-Soleil","Lance-Soleil","Lance-Soleil","Lance-Soleil","Lance-Soleil"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = "120",
 		pp = "10",
@@ -918,7 +918,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "77",
-		name = "Poudre Toxik",
+		name = {"Poudre Toxik","Poudre Toxik","Poudre Toxik","Poudre Toxik","Poudre Toxik"},
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "35",
@@ -928,7 +928,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "78",
-		name = "Para-Spore",
+		name = {"Para-Spore","Para-Spore","Para-Spore","Para-Spore","Para-Spore"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
@@ -938,7 +938,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "79",
-		name = "Poudre Dodo",
+		name = {"Poudre Dodo","Poudre Dodo","Poudre Dodo","Poudre Dodo","Poudre Dodo"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -948,7 +948,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "80",
-		name = "Danse-Fleur",
+		name = {"Danse-Fleur","Danse-Fleur","Danse-Fleur","Danse-Fleur","Danse-Fleur"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = {"70", "70", "70", "90", "120"},
 		pp = {"20", "20", "20", "20", "10"},
@@ -958,7 +958,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "81",
-		name = "Sécrétion",
+		name = {"Sécrétion","Sécrétion","Sécrétion","Sécrétion","Sécrétion"},
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
@@ -968,7 +968,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "82",
-		name = "Draco-Rage",
+		name = {"Draco-Rage","Draco-Rage","Draco-Rage","Draco-Rage","Draco-Rage"},
 		type = PokemonData.POKEMON_TYPES.DRAGON,
 		power = "---",
 		pp = "10",
@@ -978,7 +978,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "83",
-		name = "Danseflamme",
+		name = {"Danseflamme","Danseflamme","Danseflamme","Danseflamme","Danseflamme"},
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = {"15", "15", "15", "15", "35"},
 		pp = "15",
@@ -994,7 +994,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "84",
-		name = "Eclair",
+		name = {"Eclair","Eclair","Eclair","Eclair","Éclair"},
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = "40",
 		pp = "30",
@@ -1004,7 +1004,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "85",
-		name = "Tonnerre",
+		name = {"Tonnerre","Tonnerre","Tonnerre","Tonnerre","Tonnerre"},
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = "95",
 		pp = "15",
@@ -1014,7 +1014,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "86",
-		name = "Cage-Eclair",
+		name = {"Cage-Eclair","Cage-Eclair","Cage-Eclair","Cage-Eclair","Cage-Éclair"},
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -1024,7 +1024,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "87",
-		name = "Fatal-Foudre",
+		name = {"Fatal-Foudre","Fatal-Foudre","Fatal-Foudre","Fatal-Foudre","Fatal-Foudre"},
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = "120",
 		pp = "10",
@@ -1034,7 +1034,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "88",
-		name = "Jet-Pierres",
+		name = {"Jet-Pierres","Jet-Pierres","Jet-Pierres","Jet-Pierres","Jet-Pierres"},
 		type = PokemonData.POKEMON_TYPES.ROCK,
 		power = "50",
 		pp = "15",
@@ -1044,7 +1044,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "89",
-		name = "Séisme",
+		name = {"Séisme","Séisme","Séisme","Séisme","Séisme"},
 		type = PokemonData.POKEMON_TYPES.GROUND,
 		power = "100",
 		pp = "10",
@@ -1054,7 +1054,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "90",
-		name = "Abîme",
+		name = {"Abîme","Abîme","Abîme","Abîme","Abîme"},
 		type = PokemonData.POKEMON_TYPES.GROUND,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -1064,7 +1064,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "91",
-		name = "Tunnel",
+		name = {"Tunnel","Tunnel","Tunnel","Tunnel","Tunnel"},
 		type = PokemonData.POKEMON_TYPES.GROUND,
 		power = {"100", "60", "60", "80", "80"},
 		pp = "10",
@@ -1074,7 +1074,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "92",
-		name = "Toxik",
+		name = {"Toxik","Toxik","Toxik","Toxik","Toxik"},
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -1084,7 +1084,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "93",
-		name = "Choc Mental",
+		name = {"Choc Mental","Choc Mental","Choc Mental","Choc Mental","Choc Mental"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = "50",
 		pp = "25",
@@ -1094,7 +1094,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "94",
-		name = "Psyko",
+		name = {"Psyko","Psyko","Psyko","Psyko","Psyko"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = "90",
 		pp = "10",
@@ -1104,7 +1104,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "95",
-		name = "Hypnose",
+		name = {"Hypnose","Hypnose","Hypnose","Hypnose","Hypnose"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -1114,7 +1114,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "96",
-		name = "Yoga",
+		name = {"Yoga","Yoga","Yoga","Yoga","Yoga"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
@@ -1124,7 +1124,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "97",
-		name = "Hâte",
+		name = {"Hâte","Hâte","Hâte","Hâte","Hâte"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
@@ -1134,7 +1134,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "98",
-		name = "Vive-Attaque",
+		name = {"Vive-Attaque","Vive-Attaque","Vive-Attaque","Vive-Attaque","Vive-Attaque"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "40",
 		pp = "30",
@@ -1144,7 +1144,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "99",
-		name = "Frénésie",
+		name = {"Frénésie","Frénésie","Frénésie","Frénésie","Frénésie"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "20",
 		pp = "20",
@@ -1154,7 +1154,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "100",
-		name = "Téléport",
+		name = {"Téléport","Téléport","Téléport","Téléport","Téléport"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -1164,7 +1164,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "101",
-		name = "Ténèbres",
+		name = {"Ténèbres","Ténèbres","Ténèbres","Ténèbres","Ténèbres"},
 		type = PokemonData.POKEMON_TYPES.GHOST,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -1174,7 +1174,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "102",
-		name = "Copie",
+		name = {"Copie","Copie","Copie","Copie","Copie"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -1184,7 +1184,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "103",
-		name = "Grincement",
+		name = {"Grincement","Grincement","Grincement","Grincement","Grincement"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
@@ -1194,7 +1194,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "104",
-		name = "Reflet",
+		name = {"Reflet","Reflet","Reflet","Reflet","Reflet"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -1204,7 +1204,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "105",
-		name = "Soin",
+		name = {"Soin","Soin","Soin","Soin","Soin"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = {"20", "20", "20", "10", "10"},
@@ -1214,7 +1214,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "106",
-		name = "Armure",
+		name = {"Armure","Armure","Armure","Armure","Armure"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
@@ -1224,7 +1224,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "107",
-		name = "Lilliput",
+		name = {"Lilliput","Lilliput","Lilliput","Lilliput","Lilliput"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -1240,7 +1240,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "108",
-		name = "Brouillard",
+		name = {"Brouillard","Brouillard","Brouillard","Brouillard","Brouillard"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -1250,7 +1250,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "109",
-		name = "Onde Folie",
+		name = {"Onde Folie","Onde Folie","Onde Folie","Onde Folie","Onde Folie"},
 		type = PokemonData.POKEMON_TYPES.GHOST,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -1260,7 +1260,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "110",
-		name = "Repli",
+		name = {"Repli","Repli","Repli","Repli","Repli"},
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
@@ -1270,7 +1270,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "111",
-		name = "Boul’Armure",
+		name = {"Boul’Armure","Boul’Armure","Boul’Armure","Boul’Armure","Boul'Armure"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
@@ -1280,7 +1280,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "112",
-		name = "Bouclier",
+		name = {"Bouclier","Bouclier","Bouclier","Bouclier","Bouclier"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
@@ -1290,7 +1290,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "113",
-		name = "Mur Lumière",
+		name = {"Mur Lumière","Mur Lumière","Mur Lumière","Mur Lumière","Mur Lumière"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
@@ -1300,7 +1300,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "114",
-		name = "Buée Noire",
+		name = {"Buée Noire","Buée Noire","Buée Noire","Buée Noire","Buée Noire"},
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
@@ -1310,7 +1310,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "115",
-		name = "Protection",
+		name = {"Protection","Protection","Protection","Protection","Protection"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -1320,7 +1320,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "116",
-		name = "Puissance",
+		name = {"Puissance","Puissance","Puissance","Puissance","Puissance"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
@@ -1330,7 +1330,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "117",
-		name = "Patience",
+		name = {"Patience","Patience","Patience","Patience","Patience"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -1340,7 +1340,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "118",
-		name = "Métronome",
+		name = {"Métronome","Métronome","Métronome","Métronome","Métronome"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -1350,7 +1350,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "119",
-		name = "Mimique",
+		name = {"Mimique","Mimique","Mimique","Mimique","Mimique"},
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -1360,7 +1360,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "120",
-		name = "Destruction",
+		name = {"Destruction","Destruction","Destruction","Destruction","Destruction"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = {"130", "200", "200", "200", "200"},
 		pp = "5",
@@ -1376,7 +1376,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "121",
-		name = "Bomb’Oeuf",
+		name = {"Bomb’Oeuf","Bomb’Oeuf","Bomb’Oeuf","Bomb’Oeuf","Bomb'Œuf"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "100",
 		pp = "10",
@@ -1386,7 +1386,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "122",
-		name = "Léchouille",
+		name = {"Léchouille","Léchouille","Léchouille","Léchouille","Léchouille"},
 		type = PokemonData.POKEMON_TYPES.GHOST,
 		power = "20",
 		pp = "30",
@@ -1396,7 +1396,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "123",
-		name = "Purédpois",
+		name = {"Purédpois","Purédpois","Purédpois","Purédpois","Purédpois"},
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = "20",
 		pp = "20",
@@ -1406,7 +1406,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "124",
-		name = "Détritus",
+		name = {"Détritus","Détritus","Détritus","Détritus","Détritus"},
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = "65",
 		pp = "20",
@@ -1416,7 +1416,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "125",
-		name = "Massd’Os",
+		name = {"Massd’Os","Massd’Os","Massd’Os","Massd’Os","Massd'Os"},
 		type = PokemonData.POKEMON_TYPES.GROUND,
 		power = "65",
 		pp = "20",
@@ -1426,7 +1426,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "126",
-		name = "Déflagration",
+		name = {"Déflagration","Déflagration","Déflagration","Déflagration","Déflagration"},
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "120",
 		pp = "5",
@@ -1436,7 +1436,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "127",
-		name = "Cascade",
+		name = {"Cascade","Cascade","Cascade","Cascade","Cascade"},
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = "80",
 		pp = "15",
@@ -1446,7 +1446,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "128",
-		name = "Claquoir",
+		name = {"Claquoir","Claquoir","Claquoir","Claquoir","Claquoir"},
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = "35",
 		pp = {"10", "10", "10", "10", "15"},
@@ -1462,7 +1462,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "129",
-		name = "Météores",
+		name = {"Météores","Météores","Météores","Météores","Météores"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "60",
 		pp = "20",
@@ -1472,7 +1472,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "130",
-		name = "Coud’Krâne",
+		name = {"Coud’Krâne","Coud’Krâne","Coud’Krâne","Coud’Krâne","Coud'Krâne"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "100",
 		pp = "15",
@@ -1482,7 +1482,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "131",
-		name = "Picanon",
+		name = {"Picanon","Picanon","Picanon","Picanon","Picanon"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "20",
 		pp = "15",
@@ -1492,7 +1492,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "132",
-		name = "Constriction",
+		name = {"Constriction","Constriction","Constriction","Constriction","Constriction"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "10",
 		pp = "35",
@@ -1502,7 +1502,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "133",
-		name = "Amnésie",
+		name = {"Amnésie","Amnésie","Amnésie","Amnésie","Amnésie"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -1512,7 +1512,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "134",
-		name = "Télékinésie",
+		name = {"Télékinésie","Télékinésie","Télékinésie","Télékinésie","Télékinésie"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -1522,7 +1522,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "135",
-		name = "E-Coque",
+		name = {"E-Coque","E-Coque","E-Coque","E-Coque","E-Coque"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -1532,7 +1532,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "136",
-		name = "Pied Voltige",
+		name = {"Pied Voltige","Pied Voltige","Pied Voltige","Pied Voltige","Pied Voltige"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = {"85", "85", "85", "100", "130"},
 		pp = {"20", "20", "20", "20", "10"},
@@ -1542,7 +1542,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "137",
-		name = "Intimidation",
+		name = {"Intimidation","Intimidation","Intimidation","Intimidation","Intimidation"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
@@ -1552,7 +1552,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "138",
-		name = "Dévorêve",
+		name = {"Dévorêve","Dévorêve","Dévorêve","Dévorêve","Dévorêve"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = "100",
 		pp = "15",
@@ -1562,7 +1562,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "139",
-		name = "Gaz Toxik",
+		name = {"Gaz Toxik","Gaz Toxik","Gaz Toxik","Gaz Toxik","Gaz Toxik"},
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
@@ -1572,7 +1572,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "140",
-		name = "Pilonnage",
+		name = {"Pilonnage","Pilonnage","Pilonnage","Pilonnage","Pilonnage"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "15",
 		pp = "20",
@@ -1582,7 +1582,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "141",
-		name = "Vampirisme",
+		name = {"Vampirisme","Vampirisme","Vampirisme","Vampirisme","Vampirisme"},
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = "20",
 		pp = "15",
@@ -1592,7 +1592,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "142",
-		name = "Grobisou",
+		name = {"Grobisou","Grobisou","Grobisou","Grobisou","Grobisou"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -1602,7 +1602,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "143",
-		name = "Pique",
+		name = {"Pique","Pique","Pique","Pique","Pique"},
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = "140",
 		pp = "5",
@@ -1612,7 +1612,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "144",
-		name = "Morphing",
+		name = {"Morphing","Morphing","Morphing","Morphing","Morphing"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -1622,7 +1622,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "145",
-		name = "Ecume",
+		name = {"Ecume","Ecume","Ecume","Ecume","Écume"},
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = "20",
 		pp = "30",
@@ -1632,7 +1632,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "146",
-		name = "Uppercut",
+		name = {"Uppercut","Uppercut","Uppercut","Uppercut","Uppercut"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "70",
 		pp = "10",
@@ -1642,7 +1642,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "147",
-		name = "Spore",
+		name = {"Spore","Spore","Spore","Spore","Spore"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -1652,7 +1652,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "148",
-		name = "Flash",
+		name = {"Flash","Flash","Flash","Flash","Flash"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -1662,7 +1662,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "149",
-		name = "Vague Psy",
+		name = {"Vague Psy","Vague Psy","Vague Psy","Vague Psy","Vague Psy"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -1672,7 +1672,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "150",
-		name = "Trempette",
+		name = {"Trempette","Trempette","Trempette","Trempette","Trempette"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
@@ -1682,7 +1682,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "151",
-		name = "Acidarmure",
+		name = {"Acidarmure","Acidarmure","Acidarmure","Acidarmure","Acidarmure"},
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
@@ -1692,7 +1692,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "152",
-		name = "Pince-Masse",
+		name = {"Pince-Masse","Pince-Masse","Pince-Masse","Pince-Masse","Pince-Masse"},
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = "90",
 		pp = "10",
@@ -1702,7 +1702,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "153",
-		name = "Explosion",
+		name = {"Explosion","Explosion","Explosion","Explosion","Explosion"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = {"170", "250", "250", "250", "250"},
 		pp = "5",
@@ -1718,7 +1718,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "154",
-		name = "Combo-Griffe",
+		name = {"Combo-Griffe","Combo-Griffe","Combo-Griffe","Combo-Griffe","Combo-Griffe"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "18",
 		pp = "15",
@@ -1728,7 +1728,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "155",
-		name = "Osmerang",
+		name = {"Osmerang","Osmerang","Osmerang","Osmerang","Osmerang"},
 		type = PokemonData.POKEMON_TYPES.GROUND,
 		power = "50",
 		pp = "10",
@@ -1738,7 +1738,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "156",
-		name = "Repos",
+		name = {"Repos","Repos","Repos","Repos","Repos"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -1748,7 +1748,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "157",
-		name = "Eboulement",
+		name = {"Eboulement","Eboulement","Eboulement","Eboulement","Éboulement"},
 		type = PokemonData.POKEMON_TYPES.ROCK,
 		power = "75",
 		pp = "10",
@@ -1758,7 +1758,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "158",
-		name = "Croc de Mort",
+		name = {"Croc de Mort","Croc de Mort","Croc de Mort","Croc de Mort","Croc de Mort"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "80",
 		pp = "15",
@@ -1768,7 +1768,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "159",
-		name = "Affûtage",
+		name = {"Affûtage","Affûtage","Affûtage","Affûtage","Affûtage"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
@@ -1778,7 +1778,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "160",
-		name = "Adaptation",
+		name = {"Adaptation","Adaptation","Adaptation","Adaptation","Adaptation"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
@@ -1788,7 +1788,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "161",
-		name = "Triplattaque",
+		name = {"Triplattaque","Triplattaque","Triplattaque","Triplattaque","Triplattaque"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "80",
 		pp = "10",
@@ -1798,7 +1798,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "162",
-		name = "Croc Fatal",
+		name = {"Croc Fatal","Croc Fatal","Croc Fatal","Croc Fatal","Croc Fatal"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -1808,7 +1808,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "163",
-		name = "Tranche",
+		name = {"Tranche","Tranche","Tranche","Tranche","Tranche"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "70",
 		pp = "20",
@@ -1818,7 +1818,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "164",
-		name = "Clonage",
+		name = {"Clonage","Clonage","Clonage","Clonage","Clonage"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -1828,7 +1828,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "165",
-		name = "Lutte",
+		name = {"Lutte","Lutte","Lutte","Lutte","Lutte"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "50",
 		pp = {"10", "1", "1", "1", "1"},
@@ -1839,7 +1839,7 @@ MoveData.MOVES_MASTER_LIST = {
 	{
 		-- Begin Gen 2 Moves
 		id = "166",
-		name = "Gribouille",
+		name = {"Gribouille","Gribouille","Gribouille","Gribouille","Gribouille"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "1",
@@ -1849,7 +1849,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "167",
-		name = "Triple Pied",
+		name = {"Triple Pied","Triple Pied","Triple Pied","Triple Pied","Triple Pied"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "10",
 		pp = "10",
@@ -1859,7 +1859,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "168",
-		name = "Larcin",
+		name = {"Larcin","Larcin","Larcin","Larcin","Larcin"},
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = "40",
 		pp = "10",
@@ -1869,7 +1869,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "169",
-		name = "Toile",
+		name = {"Toile","Toile","Toile","Toile","Toile"},
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -1879,7 +1879,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "170",
-		name = "Lire-Esprit",
+		name = {"Lire-Esprit","Lire-Esprit","Lire-Esprit","Lire-Esprit","Lire-Esprit"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -1889,7 +1889,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "171",
-		name = "Cauchemar",
+		name = {"Cauchemar","Cauchemar","Cauchemar","Cauchemar","Cauchemar"},
 		type = PokemonData.POKEMON_TYPES.GHOST,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -1899,7 +1899,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "172",
-		name = "Roue de Feu",
+		name = {"Roue de Feu","Roue de Feu","Roue de Feu","Roue de Feu","Roue de Feu"},
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "60",
 		pp = "25",
@@ -1909,7 +1909,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "173",
-		name = "Ronflement",
+		name = {"Ronflement","Ronflement","Ronflement","Ronflement","Ronflement"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "40",
 		pp = "15",
@@ -1919,7 +1919,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "174",
-		name = "Malédiction",
+		name = {"Malédiction","Malédiction","Malédiction","Malédiction","Malédiction"},
 		type = {
 			PokemonData.POKEMON_TYPES.UNKNOWN,
 			PokemonData.POKEMON_TYPES.UNKNOWN,
@@ -1935,7 +1935,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "175",
-		name = "Fléau",
+		name = {"Fléau","Fléau","Fléau","Fléau","Fléau"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "<HP",
 		pp = "15",
@@ -1945,7 +1945,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "176",
-		name = "Conversion 2",
+		name = {"Conversion 2","Conversion 2","Conversion 2","Conversion 2","Conversion 2"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
@@ -1955,7 +1955,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "177",
-		name = "Aéroblast",
+		name = {"Aéroblast","Aéroblast","Aéroblast","Aéroblast","Aéroblast"},
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = "100",
 		pp = "5",
@@ -1965,7 +1965,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "178",
-		name = "Spore Coton",
+		name = {"Spore Coton","Spore Coton","Spore Coton","Spore Coton","Spore Coton"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
@@ -1975,7 +1975,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "179",
-		name = "Contre",
+		name = {"Contre","Contre","Contre","Contre","Contre"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "<HP",
 		pp = "15",
@@ -1985,7 +1985,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "180",
-		name = "Dépit",
+		name = {"Dépit","Dépit","Dépit","Dépit","Dépit"},
 		type = PokemonData.POKEMON_TYPES.GHOST,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -1995,7 +1995,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "181",
-		name = "Poudreuse",
+		name = {"Poudreuse","Poudreuse","Poudreuse","Poudreuse","Poudreuse"},
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = "40",
 		pp = "25",
@@ -2005,7 +2005,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "182",
-		name = "Abri",
+		name = {"Abri","Abri","Abri","Abri","Abri"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -2015,7 +2015,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "183",
-		name = "Mach Punch",
+		name = {"Mach Punch","Mach Punch","Mach Punch","Mach Punch","Mach Punch"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "40",
 		pp = "30",
@@ -2025,7 +2025,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "184",
-		name = "Grimace",
+		name = {"Grimace","Grimace","Grimace","Grimace","Grimace"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -2035,7 +2035,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "185",
-		name = "Feinte",
+		name = {"Feinte","Feinte","Feinte","Feinte","Feinte"},
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = "60",
 		pp = "20",
@@ -2045,7 +2045,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "186",
-		name = "Doux Baiser",
+		name = {"Doux Baiser","Doux Baiser","Doux Baiser","Doux Baiser","Doux Baiser"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -2055,7 +2055,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "187",
-		name = "Cognobidon",
+		name = {"Cognobidon","Cognobidon","Cognobidon","Cognobidon","Cognobidon"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -2065,7 +2065,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "188",
-		name = "Bomb-Beurk",
+		name = {"Bomb-Beurk","Bomb-Beurk","Bomb-Beurk","Bomb-Beurk","Bomb-Beurk"},
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = "90",
 		pp = "10",
@@ -2075,7 +2075,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "189",
-		name = "Coud’Boue",
+		name = {"Coud’Boue","Coud’Boue","Coud’Boue","Coud’Boue","Coud'Boue"},
 		type = PokemonData.POKEMON_TYPES.GROUND,
 		power = "20",
 		pp = "10",
@@ -2085,7 +2085,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "190",
-		name = "Octazooka",
+		name = {"Octazooka","Octazooka","Octazooka","Octazooka","Octazooka"},
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = "65",
 		pp = "10",
@@ -2095,7 +2095,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "191",
-		name = "Picots",
+		name = {"Picots","Picots","Picots","Picots","Picots"},
 		type = PokemonData.POKEMON_TYPES.GROUND,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -2105,7 +2105,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "192",
-		name = "Elecanon",
+		name = {"Elecanon","Elecanon","Elecanon","Elecanon","Élecanon"},
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = {"100", "100", "100", "120", "120"},
 		pp = "5",
@@ -2115,7 +2115,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "193",
-		name = "Clairvoyance",
+		name = {"Clairvoyance","Clairvoyance","Clairvoyance","Clairvoyance","Clairvoyance"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
@@ -2125,7 +2125,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "194",
-		name = "Prlvt Destin",
+		name = {"Prlvt Destin","Prlvt Destin","Prlvt Destin","Prlvt Destin","Prlvt Destin"},
 		type = PokemonData.POKEMON_TYPES.GHOST,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -2135,7 +2135,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "195",
-		name = "Requiem",
+		name = {"Requiem","Requiem","Requiem","Requiem","Requiem"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -2145,7 +2145,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "196",
-		name = "Vent Glace",
+		name = {"Vent Glace","Vent Glace","Vent Glace","Vent Glace","Vent Glace"},
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = "55",
 		pp = "15",
@@ -2155,7 +2155,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "197",
-		name = "Détection",
+		name = {"Détection","Détection","Détection","Détection","Détection"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -2165,7 +2165,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "198",
-		name = "Charge-Os",
+		name = {"Charge-Os","Charge-Os","Charge-Os","Charge-Os","Charge-Os"},
 		type = PokemonData.POKEMON_TYPES.GROUND,
 		power = "25",
 		pp = "10",
@@ -2175,7 +2175,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "199",
-		name = "Verrouillage",
+		name = {"Verrouillage","Verrouillage","Verrouillage","Verrouillage","Verrouillage"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -2185,7 +2185,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "200",
-		name = "Colère",
+		name = {"Colère","Colère","Colère","Colère","Colère"},
 		type = PokemonData.POKEMON_TYPES.DRAGON,
 		power = {"90", "90", "90", "120", "120"},
 		pp = {"15", "15", "15", "15", "10"},
@@ -2195,7 +2195,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "201",
-		name = "Tempêtesable",
+		name = {"Tempêtesable","Tempêtesable","Tempêtesable","Tempêtesable","Tempêtesable"},
 		type = PokemonData.POKEMON_TYPES.ROCK,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -2205,7 +2205,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "202",
-		name = "Giga-Sangsue",
+		name = {"Giga-Sangsue","Giga-Sangsue","Giga-Sangsue","Giga-Sangsue","Giga-Sangsue"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = {"60", "60", "60", "60", "75"},
 		pp = {"5", "5", "5", "10", "10"},
@@ -2215,7 +2215,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "203",
-		name = "Ténacité",
+		name = {"Ténacité","Ténacité","Ténacité","Ténacité","Ténacité"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -2225,7 +2225,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "204",
-		name = "Charme",
+		name = {"Charme","Charme","Charme","Charme","Charme"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -2235,7 +2235,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "205",
-		name = "Roulade",
+		name = {"Roulade","Roulade","Roulade","Roulade","Roulade"},
 		type = PokemonData.POKEMON_TYPES.ROCK,
 		power = "30",
 		pp = "20",
@@ -2245,7 +2245,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "206",
-		name = "Faux-Chage",
+		name = {"Faux-Chage","Faux-Chage","Faux-Chage","Faux-Chage","Faux-Chage"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "40",
 		pp = "40",
@@ -2255,7 +2255,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "207",
-		name = "Vantardise",
+		name = {"Vantardise","Vantardise","Vantardise","Vantardise","Vantardise"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -2265,7 +2265,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "208",
-		name = "Lait à Boire",
+		name = {"Lait à Boire","Lait à Boire","Lait à Boire","Lait à Boire","Lait à Boire"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -2275,7 +2275,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "209",
-		name = "Etincelle",
+		name = {"Etincelle","Etincelle","Etincelle","Etincelle","Étincelle"},
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = "65",
 		pp = "20",
@@ -2285,7 +2285,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "210",
-		name = "Taillade",
+		name = {"Taillade","Taillade","Taillade","Taillade","Taillade"},
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = {"10", "10", "10", "10", "20"},
 		pp = "20",
@@ -2295,7 +2295,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "211",
-		name = "Aile d’Acier",
+		name = {"Aile d’Acier","Aile d’Acier","Aile d’Acier","Aile d’Acier","Aile d'Acier"},
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = "70",
 		pp = "25",
@@ -2305,7 +2305,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "212",
-		name = "Regard Noir",
+		name = {"Regard Noir","Regard Noir","Regard Noir","Regard Noir","Regard Noir"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -2315,7 +2315,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "213",
-		name = "Attraction",
+		name = {"Attraction","Attraction","Attraction","Attraction","Attraction"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -2325,7 +2325,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "214",
-		name = "Blabla Dodo",
+		name = {"Blabla Dodo","Blabla Dodo","Blabla Dodo","Blabla Dodo","Blabla Dodo"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -2335,7 +2335,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "215",
-		name = "Glas de Soin",
+		name = {"Glas de Soin","Glas de Soin","Glas de Soin","Glas de Soin","Glas de Soin"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -2345,7 +2345,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "216",
-		name = "Retour",
+		name = {"Retour","Retour","Retour","Retour","Retour"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = ">FR",
 		pp = "20",
@@ -2355,7 +2355,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "217",
-		name = "Cadeau",
+		name = {"Cadeau","Cadeau","Cadeau","Cadeau","Cadeau"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "RNG",
 		pp = "15",
@@ -2365,7 +2365,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "218",
-		name = "Frustration",
+		name = {"Frustration","Frustration","Frustration","Frustration","Frustration"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "<FR",
 		pp = "20",
@@ -2375,7 +2375,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "219",
-		name = "Rune Protect",
+		name = {"Rune Protect","Rune Protect","Rune Protect","Rune Protect","Rune Protect"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "25",
@@ -2385,7 +2385,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "220",
-		name = "Balance",
+		name = {"Balance","Balance","Balance","Balance","Balance"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -2395,7 +2395,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "221",
-		name = "Feu Sacré",
+		name = {"Feu Sacré","Feu Sacré","Feu Sacré","Feu Sacré","Feu Sacré"},
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "100",
 		pp = "5",
@@ -2405,7 +2405,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "222",
-		name = "Ampleur",
+		name = {"Ampleur","Ampleur","Ampleur","Ampleur","Ampleur"},
 		type = PokemonData.POKEMON_TYPES.GROUND,
 		power = "RNG",
 		pp = "30",
@@ -2415,7 +2415,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "223",
-		name = "Dynamopoing",
+		name = {"Dynamopoing","Dynamopoing","Dynamopoing","Dynamopoing","Dynamopoing"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "100",
 		pp = "5",
@@ -2425,7 +2425,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "224",
-		name = "Mégacorne",
+		name = {"Mégacorne","Mégacorne","Mégacorne","Mégacorne","Mégacorne"},
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = "120",
 		pp = "10",
@@ -2435,7 +2435,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "225",
-		name = "Dracosouffle",
+		name = {"Dracosouffle","Dracosouffle","Dracosouffle","Dracosouffle","Dracosouffle"},
 		type = PokemonData.POKEMON_TYPES.DRAGON,
 		power = "60",
 		pp = "20",
@@ -2445,7 +2445,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "226",
-		name = "Relais",
+		name = {"Relais","Relais","Relais","Relais","Relais"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
@@ -2455,7 +2455,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "227",
-		name = "Encore",
+		name = {"Encore","Encore","Encore","Encore","Encore"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -2471,7 +2471,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "228",
-		name = "Poursuite",
+		name = {"Poursuite","Poursuite","Poursuite","Poursuite","Poursuite"},
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = "40",
 		pp = "20",
@@ -2481,7 +2481,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "229",
-		name = "Tour Rapide",
+		name = {"Tour Rapide","Tour Rapide","Tour Rapide","Tour Rapide","Tour Rapide"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "20",
 		pp = "40",
@@ -2491,7 +2491,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "230",
-		name = "Doux Parfum",
+		name = {"Doux Parfum","Doux Parfum","Doux Parfum","Doux Parfum","Doux Parfum"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -2501,7 +2501,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "231",
-		name = "Queue de Fer",
+		name = {"Queue de Fer","Queue de Fer","Queue de Fer","Queue de Fer","Queue de Fer"},
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = "100",
 		pp = "15",
@@ -2511,7 +2511,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "232",
-		name = "Griffe Acier",
+		name = {"Griffe Acier","Griffe Acier","Griffe Acier","Griffe Acier","Griffe Acier"},
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = "50",
 		pp = "35",
@@ -2521,7 +2521,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "233",
-		name = "Corps Perdu",
+		name = {"Corps Perdu","Corps Perdu","Corps Perdu","Corps Perdu","Corps Perdu"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "70",
 		pp = "10",
@@ -2531,7 +2531,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "234",
-		name = "Aurore",
+		name = {"Aurore","Aurore","Aurore","Aurore","Aurore"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -2541,7 +2541,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "235",
-		name = "Synthèse",
+		name = {"Synthèse","Synthèse","Synthèse","Synthèse","Synthèse"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -2551,7 +2551,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "236",
-		name = "Rayon Lune",
+		name = {"Rayon Lune","Rayon Lune","Rayon Lune","Rayon Lune","Rayon Lune"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -2561,7 +2561,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "237",
-		name = "Puis. Cachée",
+		name = {"Puis. Cachée","Puis. Cachée","Puis. Cachée","Puis. Cachée","Puis. Cachée"},
 		type = PokemonData.POKEMON_TYPES.UNKNOWN,
 		power = "VAR",
 		pp = "15",
@@ -2571,7 +2571,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "238",
-		name = "Coup-Croix",
+		name = {"Coup-Croix","Coup-Croix","Coup-Croix","Coup-Croix","Coup-Croix"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "100",
 		pp = "5",
@@ -2581,7 +2581,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "239",
-		name = "Ouragan",
+		name = {"Ouragan","Ouragan","Ouragan","Ouragan","Ouragan"},
 		type = PokemonData.POKEMON_TYPES.DRAGON,
 		power = "40",
 		pp = "20",
@@ -2591,7 +2591,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "240",
-		name = "Danse Pluie",
+		name = {"Danse Pluie","Danse Pluie","Danse Pluie","Danse Pluie","Danse Pluie"},
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -2601,7 +2601,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "241",
-		name = "Zénith",
+		name = {"Zénith","Zénith","Zénith","Zénith","Zénith"},
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -2611,7 +2611,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "242",
-		name = "Mâchouille",
+		name = {"Mâchouille","Mâchouille","Mâchouille","Mâchouille","Mâchouille"},
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = "80",
 		pp = "15",
@@ -2621,7 +2621,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "243",
-		name = "Voile Miroir",
+		name = {"Voile Miroir","Voile Miroir","Voile Miroir","Voile Miroir","Voile Miroir"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -2631,7 +2631,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "244",
-		name = "Boost",
+		name = {"Boost","Boost","Boost","Boost","Boost"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -2641,7 +2641,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "245",
-		name = "Vit.Extrême",
+		name = {"Vit.Extrême","Vit.Extrême","Vit.Extrême","Vit.Extrême","Vit.Extrême"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "80",
 		pp = "5",
@@ -2651,7 +2651,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "246",
-		name = "Pouv.Antique",
+		name = {"Pouv.Antique","Pouv.Antique","Pouv.Antique","Pouv.Antique","Pouv.Antique"},
 		type = PokemonData.POKEMON_TYPES.ROCK,
 		power = "60",
 		pp = "5",
@@ -2661,7 +2661,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "247",
-		name = "Ball’Ombre",
+		name = {"Ball’Ombre","Ball’Ombre","Ball’Ombre","Ball’Ombre","Ball'Ombre"},
 		type = PokemonData.POKEMON_TYPES.GHOST,
 		power = "80",
 		pp = "15",
@@ -2671,7 +2671,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "248",
-		name = "Prescience",
+		name = {"Prescience","Prescience","Prescience","Prescience","Prescience"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = {"80", "80", "80", "80", "100"},
 		pp = {"15", "15", "15", "15", "10"},
@@ -2687,7 +2687,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "249",
-		name = "Eclate-Roc",
+		name = {"Eclate-Roc","Eclate-Roc","Eclate-Roc","Eclate-Roc","Éclate-Roc"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = {"20", "20", "20", "40", "40"},
 		pp = "15",
@@ -2697,7 +2697,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "250",
-		name = "Siphon",
+		name = {"Siphon","Siphon","Siphon","Siphon","Siphon"},
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = {"15", "15", "15", "15", "35"},
 		pp = "15",
@@ -2713,7 +2713,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "251",
-		name = "Baston",
+		name = {"Baston","Baston","Baston","Baston","Baston"},
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = {"10", "10", "10", "10", "VAR"},
 		pp = "10",
@@ -2730,7 +2730,7 @@ MoveData.MOVES_MASTER_LIST = {
 	{
 		-- Begin Gen 3 Moves
 		id = "252",
-		name = "Bluff",
+		name = {"Bluff","Bluff","Bluff","Bluff","Bluff"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "40",
 		pp = "10",
@@ -2740,7 +2740,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "253",
-		name = "Brouhaha",
+		name = {"Brouhaha","Brouhaha","Brouhaha","Brouhaha","Brouhaha"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = {"50", "50", "50", "50", "90"},
 		pp = "10",
@@ -2756,7 +2756,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "254",
-		name = "Stockage",
+		name = {"Stockage","Stockage","Stockage","Stockage","Stockage"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = {"10", "10", "10", "20", "20"},
@@ -2766,7 +2766,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "255",
-		name = "Relâche",
+		name = {"Relâche","Relâche","Relâche","Relâche","Relâche"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -2776,7 +2776,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "256",
-		name = "Avale",
+		name = {"Avale","Avale","Avale","Avale","Avale"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -2786,7 +2786,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "257",
-		name = "Canicule",
+		name = {"Canicule","Canicule","Canicule","Canicule","Canicule"},
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "100",
 		pp = "10",
@@ -2796,7 +2796,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "258",
-		name = "Grêle",
+		name = {"Grêle","Grêle","Grêle","Grêle","Grêle"},
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -2806,7 +2806,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "259",
-		name = "Tourmente",
+		name = {"Tourmente","Tourmente","Tourmente","Tourmente","Tourmente"},
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -2816,7 +2816,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "260",
-		name = "Flatterie",
+		name = {"Flatterie","Flatterie","Flatterie","Flatterie","Flatterie"},
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -2826,7 +2826,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "261",
-		name = "Feu Follet",
+		name = {"Feu Follet","Feu Follet","Feu Follet","Feu Follet","Feu Follet"},
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -2836,7 +2836,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "262",
-		name = "Souvenir",
+		name = {"Souvenir","Souvenir","Souvenir","Souvenir","Souvenir"},
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -2846,7 +2846,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "263",
-		name = "Façade",
+		name = {"Façade","Façade","Façade","Façade","Façade"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "70",
 		pp = "20",
@@ -2856,7 +2856,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "264",
-		name = "Mitra-Poing",
+		name = {"Mitra-Poing","Mitra-Poing","Mitra-Poing","Mitra-Poing","Mitra-Poing"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "150",
 		pp = "20",
@@ -2866,7 +2866,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "265",
-		name = "Stimulant",
+		name = {"Stimulant","Stimulant","Stimulant","Stimulant","Stimulant"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "60",
 		pp = "10",
@@ -2876,7 +2876,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "266",
-		name = "Par Ici",
+		name = {"Par Ici","Par Ici","Par Ici","Par Ici","Par Ici"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -2886,7 +2886,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "267",
-		name = "Force-Nature",
+		name = {"Force-Nature","Force-Nature","Force-Nature","Force-Nature","Force-Nature"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -2896,7 +2896,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "268",
-		name = "Chargeur",
+		name = {"Chargeur","Chargeur","Chargeur","Chargeur","Chargeur"},
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -2906,7 +2906,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "269",
-		name = "Provoc",
+		name = {"Provoc","Provoc","Provoc","Provoc","Provoc"},
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -2922,7 +2922,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "270",
-		name = "Coup d’Main",
+		name = {"Coup d’Main","Coup d’Main","Coup d’Main","Coup d’Main","Coup d'Main"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -2932,7 +2932,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "271",
-		name = "Tourmagik",
+		name = {"Tourmagik","Tourmagik","Tourmagik","Tourmagik","Tourmagik"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -2942,7 +2942,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "272",
-		name = "Imitation",
+		name = {"Imitation","Imitation","Imitation","Imitation","Imitation"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -2952,7 +2952,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "273",
-		name = "Voeu",
+		name = {"Voeu","Voeu","Voeu","Voeu","Vœu"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -2962,7 +2962,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "274",
-		name = "Assistance",
+		name = {"Assistance","Assistance","Assistance","Assistance","Assistance"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -2972,7 +2972,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "275",
-		name = "Racines",
+		name = {"Racines","Racines","Racines","Racines","Racines"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -2982,7 +2982,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "276",
-		name = "Surpuissance",
+		name = {"Surpuissance","Surpuissance","Surpuissance","Surpuissance","Surpuissance"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "120",
 		pp = "5",
@@ -2992,7 +2992,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "277",
-		name = "Reflet Magik",
+		name = {"Reflet Magik","Reflet Magik","Reflet Magik","Reflet Magik","Reflet Magik"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -3002,7 +3002,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "278",
-		name = "Recyclage",
+		name = {"Recyclage","Recyclage","Recyclage","Recyclage","Recyclage"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -3012,7 +3012,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "279",
-		name = "Vendetta",
+		name = {"Vendetta","Vendetta","Vendetta","Vendetta","Vendetta"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "60",
 		pp = "10",
@@ -3022,7 +3022,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "280",
-		name = "Casse-Brique",
+		name = {"Casse-Brique","Casse-Brique","Casse-Brique","Casse-Brique","Casse-Brique"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "75",
 		pp = "15",
@@ -3032,7 +3032,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "281",
-		name = "Bâillement",
+		name = {"Bâillement","Bâillement","Bâillement","Bâillement","Bâillement"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -3042,7 +3042,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "282",
-		name = "Sabotage",
+		name = {"Sabotage","Sabotage","Sabotage","Sabotage","Sabotage"},
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = "20",
 		pp = "20",
@@ -3052,7 +3052,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "283",
-		name = "Effort",
+		name = {"Effort","Effort","Effort","Effort","Effort"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -3062,7 +3062,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "284",
-		name = "Eruption",
+		name = {"Eruption","Eruption","Eruption","Eruption","Éruption"},
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = ">HP",
 		pp = "5",
@@ -3072,7 +3072,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "285",
-		name = "Echange",
+		name = {"Echange","Echange","Echange","Echange","Échange"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -3082,7 +3082,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "286",
-		name = "Possessif",
+		name = {"Possessif","Possessif","Possessif","Possessif","Possessif"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -3092,7 +3092,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "287",
-		name = "Régénération",
+		name = {"Régénération","Régénération","Régénération","Régénération","Régénération"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -3102,7 +3102,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "288",
-		name = "Rancune",
+		name = {"Rancune","Rancune","Rancune","Rancune","Rancune"},
 		type = PokemonData.POKEMON_TYPES.GHOST,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -3112,7 +3112,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "289",
-		name = "Saisie",
+		name = {"Saisie","Saisie","Saisie","Saisie","Saisie"},
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -3122,7 +3122,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "290",
-		name = "Force Cachée",
+		name = {"Force Cachée","Force Cachée","Force Cachée","Force Cachée","Force Cachée"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "70",
 		pp = "20",
@@ -3132,7 +3132,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "291",
-		name = "Plongée",
+		name = {"Plongée","Plongée","Plongée","Plongée","Plongée"},
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = {"60", "60", "60", "80", "80"},
 		pp = "10",
@@ -3142,7 +3142,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "292",
-		name = "Cogne",
+		name = {"Cogne","Cogne","Cogne","Cogne","Cogne"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "15",
 		pp = "20",
@@ -3152,7 +3152,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "293",
-		name = "Camouflage",
+		name = {"Camouflage","Camouflage","Camouflage","Camouflage","Camouflage"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -3162,7 +3162,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "294",
-		name = "Lumiqueue",
+		name = {"Lumiqueue","Lumiqueue","Lumiqueue","Lumiqueue","Lumiqueue"},
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -3178,7 +3178,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "295",
-		name = "Lumi-Eclat",
+		name = {"Lumi-Eclat","Lumi-Eclat","Lumi-Eclat","Lumi-Eclat","Lumi-Éclat"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = "70",
 		pp = "5",
@@ -3188,7 +3188,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "296",
-		name = "Ball’Brume",
+		name = {"Ball’Brume","Ball’Brume","Ball’Brume","Ball’Brume","Ball'Brume"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = "70",
 		pp = "5",
@@ -3198,7 +3198,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "297",
-		name = "Danse-Plume",
+		name = {"Danse-Plume","Danse-Plume","Danse-Plume","Danse-Plume","Danse-Plume"},
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -3208,7 +3208,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "298",
-		name = "Danse-Folle",
+		name = {"Danse-Folle","Danse-Folle","Danse-Folle","Danse-Folle","Danse-Folle"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -3218,7 +3218,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "299",
-		name = "Pied Brûleur",
+		name = {"Pied Brûleur","Pied Brûleur","Pied Brûleur","Pied Brûleur","Pied Brûleur"},
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "85",
 		pp = "10",
@@ -3228,7 +3228,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "300",
-		name = "Lance-Boue",
+		name = {"Lance-Boue","Lance-Boue","Lance-Boue","Lance-Boue","Lance-Boue"},
 		type = PokemonData.POKEMON_TYPES.GROUND,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -3238,7 +3238,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "301",
-		name = "Ball’Glace",
+		name = {"Ball’Glace","Ball’Glace","Ball’Glace","Ball’Glace","Ball'Glace"},
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = "30",
 		pp = "20",
@@ -3248,7 +3248,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "302",
-		name = "Poing Dard",
+		name = {"Poing Dard","Poing Dard","Poing Dard","Poing Dard","Poing Dard"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = "60",
 		pp = "15",
@@ -3258,7 +3258,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "303",
-		name = "Paresse",
+		name = {"Paresse","Paresse","Paresse","Paresse","Paresse"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -3268,7 +3268,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "304",
-		name = "Mégaphone",
+		name = {"Mégaphone","Mégaphone","Mégaphone","Mégaphone","Mégaphone"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "90",
 		pp = "10",
@@ -3278,7 +3278,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "305",
-		name = "Crochetvenin",
+		name = {"Crochetvenin","Crochetvenin","Crochetvenin","Crochetvenin","Crochetvenin"},
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = "50",
 		pp = "15",
@@ -3288,7 +3288,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "306",
-		name = "Eclategriffe",
+		name = {"Eclategriffe","Eclategriffe","Eclategriffe","Eclategriffe","Éclategriffe"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "75",
 		pp = "10",
@@ -3298,7 +3298,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "307",
-		name = "Rafale Feu",
+		name = {"Rafale Feu","Rafale Feu","Rafale Feu","Rafale Feu","Rafale Feu"},
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "150",
 		pp = "5",
@@ -3308,7 +3308,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "308",
-		name = "Hydroblast",
+		name = {"Hydroblast","Hydroblast","Hydroblast","Hydroblast","Hydroblast"},
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = "150",
 		pp = "5",
@@ -3318,7 +3318,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "309",
-		name = "Poing Météor",
+		name = {"Poing Météor","Poing Météor","Poing Météor","Poing Météor","Poing Météor"},
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = "100",
 		pp = "10",
@@ -3328,7 +3328,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "310",
-		name = "Etonnement",
+		name = {"Etonnement","Etonnement","Etonnement","Etonnement","Étonnement"},
 		type = PokemonData.POKEMON_TYPES.GHOST,
 		power = "30",
 		pp = "15",
@@ -3338,7 +3338,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "311",
-		name = "Ball’Météo",
+		name = {"Ball’Météo","Ball’Météo","Ball’Météo","Ball’Météo","Ball'Météo"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "50",
 		pp = "10",
@@ -3348,7 +3348,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "312",
-		name = "Aromathérapi",
+		name = {"Aromathérapi","Aromathérapi","Aromathérapi","Aromathérapi","Aromathérapi"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -3358,7 +3358,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "313",
-		name = "Croco Larme",
+		name = {"Croco Larme","Croco Larme","Croco Larme","Croco Larme","Croco Larme"},
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -3368,7 +3368,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "314",
-		name = "Tranch’Air",
+		name = {"Tranch’Air","Tranch’Air","Tranch’Air","Tranch’Air","Tranch'Air"},
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = "55",
 		pp = "25",
@@ -3378,7 +3378,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "315",
-		name = "Surchauffe",
+		name = {"Surchauffe","Surchauffe","Surchauffe","Surchauffe","Surchauffe"},
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "140",
 		pp = "5",
@@ -3388,7 +3388,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "316",
-		name = "Flair",
+		name = {"Flair","Flair","Flair","Flair","Flair"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
@@ -3398,7 +3398,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "317",
-		name = "Tomberoche",
+		name = {"Tomberoche","Tomberoche","Tomberoche","Tomberoche","Tomberoche"},
 		type = PokemonData.POKEMON_TYPES.ROCK,
 		power = "50",
 		pp = "10",
@@ -3408,7 +3408,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "318",
-		name = "Vent Argenté",
+		name = {"Vent Argenté","Vent Argenté","Vent Argenté","Vent Argenté","Vent Argenté"},
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = "60",
 		pp = "5",
@@ -3418,7 +3418,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "319",
-		name = "Strido-Son",
+		name = {"Strido-Son","Strido-Son","Strido-Son","Strido-Son","Strido-Son"},
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
@@ -3428,7 +3428,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "320",
-		name = "Siffl’Herbe",
+		name = {"Siffl’Herbe","Siffl’Herbe","Siffl’Herbe","Siffl’Herbe","Siffl'Herbe"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -3438,7 +3438,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "321",
-		name = "Chatouille",
+		name = {"Chatouille","Chatouille","Chatouille","Chatouille","Chatouille"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -3448,7 +3448,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "322",
-		name = "Force Cosmik",
+		name = {"Force Cosmik","Force Cosmik","Force Cosmik","Force Cosmik","Force Cosmik"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -3458,7 +3458,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "323",
-		name = "Giclédo",
+		name = {"Giclédo","Giclédo","Giclédo","Giclédo","Giclédo"},
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = ">HP",
 		pp = "5",
@@ -3468,7 +3468,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "324",
-		name = "Rayon Signal",
+		name = {"Rayon Signal","Rayon Signal","Rayon Signal","Rayon Signal","Rayon Signal"},
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = "75",
 		pp = "15",
@@ -3478,7 +3478,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "325",
-		name = "Poing Ombre",
+		name = {"Poing Ombre","Poing Ombre","Poing Ombre","Poing Ombre","Poing Ombre"},
 		type = PokemonData.POKEMON_TYPES.GHOST,
 		power = "60",
 		pp = "20",
@@ -3488,7 +3488,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "326",
-		name = "Extrasenseur",
+		name = {"Extrasenseur","Extrasenseur","Extrasenseur","Extrasenseur","Extrasenseur"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = "80",
 		pp = "30",
@@ -3498,7 +3498,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "327",
-		name = "Stratopercut",
+		name = {"Stratopercut","Stratopercut","Stratopercut","Stratopercut","Stratopercut"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "85",
 		pp = "15",
@@ -3508,7 +3508,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "328",
-		name = "Tourbi-Sable",
+		name = {"Tourbi-Sable","Tourbi-Sable","Tourbi-Sable","Tourbi-Sable","Tourbi-Sable"},
 		type = PokemonData.POKEMON_TYPES.GROUND,
 		power = {"15", "15", "15", "15", "35"},
 		pp = "15",
@@ -3524,7 +3524,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "329",
-		name = "Glaciation",
+		name = {"Glaciation","Glaciation","Glaciation","Glaciation","Glaciation"},
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -3534,7 +3534,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "330",
-		name = "Ocroupi",
+		name = {"Ocroupi","Ocroupi","Ocroupi","Ocroupi","Ocroupi"},
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = "95",
 		pp = "10",
@@ -3544,7 +3544,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "331",
-		name = "Balle Graine",
+		name = {"Balle Graine","Balle Graine","Balle Graine","Balle Graine","Balle Graine"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = {"10", "10", "10", "10", "25"},
 		pp = "30",
@@ -3554,7 +3554,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "332",
-		name = "Aéropique",
+		name = {"Aéropique","Aéropique","Aéropique","Aéropique","Aéropique"},
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = "60",
 		pp = "20",
@@ -3564,7 +3564,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "333",
-		name = "Stalagtite",
+		name = {"Stalagtite","Stalagtite","Stalagtite","Stalagtite","Stalagtite"},
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = {"10", "10", "10", "10", "25"},
 		pp = "30",
@@ -3574,7 +3574,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "334",
-		name = "Mur de Fer",
+		name = {"Mur de Fer","Mur de Fer","Mur de Fer","Mur de Fer","Mur de Fer"},
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -3584,7 +3584,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "335",
-		name = "Barrage",
+		name = {"Barrage","Barrage","Barrage","Barrage","Barrage"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -3594,7 +3594,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "336",
-		name = "Grondement",
+		name = {"Grondement","Grondement","Grondement","Grondement","Grondement"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
@@ -3604,7 +3604,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "337",
-		name = "Dracogriffe",
+		name = {"Dracogriffe","Dracogriffe","Dracogriffe","Dracogriffe","Dracogriffe"},
 		type = PokemonData.POKEMON_TYPES.DRAGON,
 		power = "80",
 		pp = "15",
@@ -3614,7 +3614,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "338",
-		name = "Végé-Attak",
+		name = {"Végé-Attak","Végé-Attak","Végé-Attak","Végé-Attak","Végé-Attak"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = "150",
 		pp = "5",
@@ -3624,7 +3624,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "339",
-		name = "Gonflette",
+		name = {"Gonflette","Gonflette","Gonflette","Gonflette","Gonflette"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -3634,7 +3634,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "340",
-		name = "Rebond",
+		name = {"Rebond","Rebond","Rebond","Rebond","Rebond"},
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = "85",
 		pp = "5",
@@ -3644,7 +3644,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "341",
-		name = "Tir de Boue",
+		name = {"Tir de Boue","Tir de Boue","Tir de Boue","Tir de Boue","Tir de Boue"},
 		type = PokemonData.POKEMON_TYPES.GROUND,
 		power = "55",
 		pp = "15",
@@ -3654,7 +3654,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "342",
-		name = "Queue-Poison",
+		name = {"Queue-Poison","Queue-Poison","Queue-Poison","Queue-Poison","Queue-Poison"},
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = "50",
 		pp = "25",
@@ -3664,7 +3664,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "343",
-		name = "Implore",
+		name = {"Implore","Implore","Implore","Implore","Implore"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = {"40", "40", "40", "40", "60"},
 		pp = "40",
@@ -3674,7 +3674,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "344",
-		name = "Electacle",
+		name = {"Electacle","Electacle","Electacle","Electacle","Électacle"},
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = "120",
 		pp = "15",
@@ -3684,7 +3684,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "345",
-		name = "Feuillemagik",
+		name = {"Feuillemagik","Feuillemagik","Feuillemagik","Feuillemagik","Feuillemagik"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = "60",
 		pp = "20",
@@ -3694,7 +3694,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "346",
-		name = "Tourniquet",
+		name = {"Tourniquet","Tourniquet","Tourniquet","Tourniquet","Tourniquet"},
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -3704,7 +3704,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "347",
-		name = "Plénitude",
+		name = {"Plénitude","Plénitude","Plénitude","Plénitude","Plénitude"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -3714,7 +3714,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "348",
-		name = "Lame-Feuille",
+		name = {"Lame-Feuille","Lame-Feuille","Lame-Feuille","Lame-Feuille","Lame-Feuille"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = {"70", "70", "70", "90", "90"},
 		pp = "15",
@@ -3724,7 +3724,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "349",
-		name = "Danse Draco",
+		name = {"Danse Draco","Danse Draco","Danse Draco","Danse Draco","Danse Draco"},
 		type = PokemonData.POKEMON_TYPES.DRAGON,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -3734,7 +3734,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "350",
-		name = "Boule Roc",
+		name = {"Boule Roc","Boule Roc","Boule Roc","Boule Roc","Boule Roc"},
 		type = PokemonData.POKEMON_TYPES.ROCK,
 		power = "25",
 		pp = "10",
@@ -3744,7 +3744,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "351",
-		name = "Onde de Choc",
+		name = {"Onde de Choc","Onde de Choc","Onde de Choc","Onde de Choc","Onde de Choc"},
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = "60",
 		pp = "20",
@@ -3754,7 +3754,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "352",
-		name = "Vibraqua",
+		name = {"Vibraqua","Vibraqua","Vibraqua","Vibraqua","Vibraqua"},
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = "60",
 		pp = "20",
@@ -3764,7 +3764,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "353",
-		name = "Carnareket",
+		name = {"Carnareket","Carnareket","Carnareket","Carnareket","Carnareket"},
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = {"120", "120", "120", "120", "140"},
 		pp = "5",
@@ -3780,7 +3780,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "354",
-		name = "Psycho Boost",
+		name = {"Psycho Boost","Psycho Boost","Psycho Boost","Psycho Boost","Psycho Boost"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = "140",
 		pp = "5",
@@ -3790,7 +3790,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "355",
-		name = "Atterrissage",
+		name = {"Atterrissage","Atterrissage","Atterrissage","Atterrissage","Atterrissage"},
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = Graphics.TEXT.ALWAYS_HITS,
 		pp = "10",
@@ -3800,7 +3800,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "356",
-		name = "Gravité",
+		name = {"Gravité","Gravité","Gravité","Gravité","Gravité"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -3810,7 +3810,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "357",
-		name = "Oeil Miracle",
+		name = {"Oeil Miracle","Oeil Miracle","Oeil Miracle","Oeil Miracle","Œil Miracle"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "40",
@@ -3820,7 +3820,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "358",
-		name = "Réveil Forcé",
+		name = {"Réveil Forcé","Réveil Forcé","Réveil Forcé","Réveil Forcé","Réveil Forcé"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "60",
 		pp = "10",
@@ -3830,7 +3830,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "359",
-		name = "Marto-Poing",
+		name = {"Marto-Poing","Marto-Poing","Marto-Poing","Marto-Poing","Marto-Poing"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "100",
 		pp = "10",
@@ -3840,7 +3840,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "360",
-		name = "Gyroballe",
+		name = {"Gyroballe","Gyroballe","Gyroballe","Gyroballe","Gyroballe"},
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = "<SP",
 		pp = "5",
@@ -3850,7 +3850,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "361",
-		name = "Voeu Soin",
+		name = {"Voeu Soin","Voeu Soin","Voeu Soin","Voeu Soin","Vœu Soin"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -3860,7 +3860,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "362",
-		name = "Saumure",
+		name = {"Saumure","Saumure","Saumure","Saumure","Saumure"},
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = "65",
 		pp = "10",
@@ -3870,7 +3870,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "363",
-		name = "Don Naturel",
+		name = {"Don Naturel","Don Naturel","Don Naturel","Don Naturel","Don Naturel"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "BRY",
 		pp = "15",
@@ -3880,7 +3880,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "364",
-		name = "Ruse",
+		name = {"Ruse","Ruse","Ruse","Ruse","Ruse"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = {"50", "50", "50", "50", "30"},
 		pp = "10",
@@ -3896,7 +3896,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "365",
-		name = "Picore",
+		name = {"Picore","Picore","Picore","Picore","Picore"},
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = "60",
 		pp = "20",
@@ -3906,7 +3906,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "366",
-		name = "Vent Arrière",
+		name = {"Vent Arrière","Vent Arrière","Vent Arrière","Vent Arrière","Vent Arrière"},
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
@@ -3922,7 +3922,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "367",
-		name = "Acupression",
+		name = {"Acupression","Acupression","Acupression","Acupression","Acupression"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
@@ -3932,7 +3932,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "368",
-		name = "Fulmifer",
+		name = {"Fulmifer","Fulmifer","Fulmifer","Fulmifer","Fulmifer"},
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -3942,7 +3942,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "369",
-		name = "Demi-Tour",
+		name = {"Demi-Tour","Demi-Tour","Demi-Tour","Demi-Tour","Demi-Tour"},
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = "70",
 		pp = "20",
@@ -3952,7 +3952,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "370",
-		name = "Close Combat",
+		name = {"Close Combat","Close Combat","Close Combat","Close Combat","Close Combat"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "120",
 		pp = "5",
@@ -3962,7 +3962,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "371",
-		name = "Représailles",
+		name = {"Représailles","Représailles","Représailles","Représailles","Représailles"},
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = "50",
 		pp = "10",
@@ -3972,7 +3972,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "372",
-		name = "Assurance",
+		name = {"Assurance","Assurance","Assurance","Assurance","Assurance"},
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = "50",
 		pp = "10",
@@ -3982,7 +3982,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "373",
-		name = "Embargo",
+		name = {"Embargo","Embargo","Embargo","Embargo","Embargo"},
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -3992,7 +3992,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "374",
-		name = "Dégommage",
+		name = {"Dégommage","Dégommage","Dégommage","Dégommage","Dégommage"},
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = "ITM",
 		pp = "10",
@@ -4002,7 +4002,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "375",
-		name = "Echange Psy",
+		name = {"Echange Psy","Echange Psy","Echange Psy","Echange Psy","Échange Psy"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -4012,7 +4012,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "376",
-		name = "Atout",
+		name = {"Atout","Atout","Atout","Atout","Atout"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "<PP",
 		pp = "5",
@@ -4022,7 +4022,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "377",
-		name = "Anti-Soin",
+		name = {"Anti-Soin","Anti-Soin","Anti-Soin","Anti-Soin","Anti-Soin"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -4038,7 +4038,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "378",
-		name = "Essorage",
+		name = {"Essorage","Essorage","Essorage","Essorage","Essorage"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = ">HP",
 		pp = "5",
@@ -4048,7 +4048,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "379",
-		name = "Astuce Force",
+		name = {"Astuce Force","Astuce Force","Astuce Force","Astuce Force","Astuce Force"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -4058,7 +4058,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "380",
-		name = "Suc Digestif",
+		name = {"Suc Digestif","Suc Digestif","Suc Digestif","Suc Digestif","Suc Digestif"},
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -4068,7 +4068,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "381",
-		name = "Air Veinard",
+		name = {"Air Veinard","Air Veinard","Air Veinard","Air Veinard","Air Veinard"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
@@ -4078,7 +4078,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "382",
-		name = "Moi d’Abord",
+		name = {"Moi d’Abord","Moi d’Abord","Moi d’Abord","Moi d’Abord","Moi d'Abord"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -4088,7 +4088,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "383",
-		name = "Photocopie",
+		name = {"Photocopie","Photocopie","Photocopie","Photocopie","Photocopie"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -4098,7 +4098,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "384",
-		name = "Permuforce",
+		name = {"Permuforce","Permuforce","Permuforce","Permuforce","Permuforce"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -4108,7 +4108,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "385",
-		name = "Permugarde",
+		name = {"Permugarde","Permugarde","Permugarde","Permugarde","Permugarde"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -4118,7 +4118,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "386",
-		name = "Punition",
+		name = {"Punition","Punition","Punition","Punition","Punition"},
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = "STA",
 		pp = "5",
@@ -4128,7 +4128,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "387",
-		name = "Dernierecour",
+		name = {"Dernierecour","Dernierecour","Dernierecour","Dernierecour","Dernierecour"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = {"130", "130", "130", "130", "140"},
 		pp = "5",
@@ -4138,7 +4138,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "388",
-		name = "Soucigraine",
+		name = {"Soucigraine","Soucigraine","Soucigraine","Soucigraine","Soucigraine"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -4148,7 +4148,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "389",
-		name = "Coup Bas",
+		name = {"Coup Bas","Coup Bas","Coup Bas","Coup Bas","Coup Bas"},
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = "80",
 		pp = "5",
@@ -4158,7 +4158,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "390",
-		name = "Pics Toxik",
+		name = {"Pics Toxik","Pics Toxik","Pics Toxik","Pics Toxik","Pics Toxik"},
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -4168,7 +4168,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "391",
-		name = "Permucoeur",
+		name = {"Permucoeur","Permucoeur","Permucoeur","Permucoeur","Permucœur"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -4178,7 +4178,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "392",
-		name = "Anneau Hydro",
+		name = {"Anneau Hydro","Anneau Hydro","Anneau Hydro","Anneau Hydro","Anneau Hydro"},
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -4188,7 +4188,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "393",
-		name = "Vol Magnétik",
+		name = {"Vol Magnétik","Vol Magnétik","Vol Magnétik","Vol Magnétik","Vol Magnétik"},
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -4198,7 +4198,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "394",
-		name = "Boutefeu",
+		name = {"Boutefeu","Boutefeu","Boutefeu","Boutefeu","Boutefeu"},
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "120",
 		pp = "15",
@@ -4208,7 +4208,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "395",
-		name = "Forte-Paume",
+		name = {"Forte-Paume","Forte-Paume","Forte-Paume","Forte-Paume","Forte-Paume"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "60",
 		pp = "10",
@@ -4218,7 +4218,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "396",
-		name = "Aurasphère",
+		name = {"Aurasphère","Aurasphère","Aurasphère","Aurasphère","Aurasphère"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "90",
 		pp = "20",
@@ -4228,7 +4228,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "397",
-		name = "Poliroche",
+		name = {"Poliroche","Poliroche","Poliroche","Poliroche","Poliroche"},
 		type = PokemonData.POKEMON_TYPES.ROCK,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -4238,7 +4238,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "398",
-		name = "Direct Toxik",
+		name = {"Direct Toxik","Direct Toxik","Direct Toxik","Direct Toxik","Direct Toxik"},
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = "80",
 		pp = "20",
@@ -4248,7 +4248,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "399",
-		name = "Vibrobscur",
+		name = {"Vibrobscur","Vibrobscur","Vibrobscur","Vibrobscur","Vibrobscur"},
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = "80",
 		pp = "15",
@@ -4258,7 +4258,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "400",
-		name = "Tranche-Nuit",
+		name = {"Tranche-Nuit","Tranche-Nuit","Tranche-Nuit","Tranche-Nuit","Tranche-Nuit"},
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = "70",
 		pp = "15",
@@ -4268,7 +4268,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "401",
-		name = "Hydroqueue",
+		name = {"Hydroqueue","Hydroqueue","Hydroqueue","Hydroqueue","Hydroqueue"},
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = "90",
 		pp = "10",
@@ -4278,7 +4278,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "402",
-		name = "Canon Graine",
+		name = {"Canon Graine","Canon Graine","Canon Graine","Canon Graine","Canon Graine"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = "80",
 		pp = "15",
@@ -4288,7 +4288,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "403",
-		name = "Lame d’Air",
+		name = {"Lame d’Air","Lame d’Air","Lame d’Air","Lame d’Air","Lame d'Air"},
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = "75",
 		pp = "20",
@@ -4298,7 +4298,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "404",
-		name = "Plaie-Croix",
+		name = {"Plaie-Croix","Plaie-Croix","Plaie-Croix","Plaie-Croix","Plaie-Croix"},
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = "80",
 		pp = "15",
@@ -4308,7 +4308,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "405",
-		name = "Bourdon",
+		name = {"Bourdon","Bourdon","Bourdon","Bourdon","Bourdon"},
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = "90",
 		pp = "10",
@@ -4318,7 +4318,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "406",
-		name = "Dracochoc",
+		name = {"Dracochoc","Dracochoc","Dracochoc","Dracochoc","Dracochoc"},
 		type = PokemonData.POKEMON_TYPES.DRAGON,
 		power = "90",
 		pp = "10",
@@ -4328,7 +4328,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "407",
-		name = "Dracocharge",
+		name = {"Dracocharge","Dracocharge","Dracocharge","Dracocharge","Dracocharge"},
 		type = PokemonData.POKEMON_TYPES.DRAGON,
 		power = "100",
 		pp = "10",
@@ -4338,7 +4338,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "408",
-		name = "Rayon Gemme",
+		name = {"Rayon Gemme","Rayon Gemme","Rayon Gemme","Rayon Gemme","Rayon Gemme"},
 		type = PokemonData.POKEMON_TYPES.ROCK,
 		power = "70",
 		pp = "20",
@@ -4348,7 +4348,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "409",
-		name = "Vampipoing",
+		name = {"Vampipoing","Vampipoing","Vampipoing","Vampipoing","Vampipoing"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = {"60", "60", "60", "60", "75"},
 		pp = {"5", "5", "5", "5", "10"},
@@ -4358,7 +4358,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "410",
-		name = "Onde Vide",
+		name = {"Onde Vide","Onde Vide","Onde Vide","Onde Vide","Onde Vide"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "40",
 		pp = "30",
@@ -4368,7 +4368,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "411",
-		name = "Exploforce",
+		name = {"Exploforce","Exploforce","Exploforce","Exploforce","Exploforce"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "120",
 		pp = "5",
@@ -4378,7 +4378,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "412",
-		name = "Eco-Sphère",
+		name = {"Eco-Sphère","Eco-Sphère","Eco-Sphère","Eco-Sphère","Éco-Sphère"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = "80",
 		pp = "10",
@@ -4388,7 +4388,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "413",
-		name = "Rapace",
+		name = {"Rapace","Rapace","Rapace","Rapace","Rapace"},
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = "120",
 		pp = "15",
@@ -4398,7 +4398,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "414",
-		name = "Telluriforce",
+		name = {"Telluriforce","Telluriforce","Telluriforce","Telluriforce","Telluriforce"},
 		type = PokemonData.POKEMON_TYPES.GROUND,
 		power = "90",
 		pp = "10",
@@ -4408,7 +4408,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "415",
-		name = "Passe-Passe",
+		name = {"Passe-Passe","Passe-Passe","Passe-Passe","Passe-Passe","Passe-Passe"},
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -4418,7 +4418,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "416",
-		name = "Giga Impact",
+		name = {"Giga Impact","Giga Impact","Giga Impact","Giga Impact","Giga Impact"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "150",
 		pp = "5",
@@ -4428,7 +4428,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "417",
-		name = "Machination",
+		name = {"Machination","Machination","Machination","Machination","Machination"},
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -4438,7 +4438,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "418",
-		name = "Pisto-Poing",
+		name = {"Pisto-Poing","Pisto-Poing","Pisto-Poing","Pisto-Poing","Pisto-Poing"},
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = "40",
 		pp = "30",
@@ -4448,7 +4448,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "419",
-		name = "Avalanche",
+		name = {"Avalanche","Avalanche","Avalanche","Avalanche","Avalanche"},
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = "60",
 		pp = "10",
@@ -4458,7 +4458,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "420",
-		name = "Eclats Glace",
+		name = {"Eclats Glace","Eclats Glace","Eclats Glace","Eclats Glace","Éclats Glace"},
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = "40",
 		pp = "30",
@@ -4468,7 +4468,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "421",
-		name = "Griffe Ombre",
+		name = {"Griffe Ombre","Griffe Ombre","Griffe Ombre","Griffe Ombre","Griffe Ombre"},
 		type = PokemonData.POKEMON_TYPES.GHOST,
 		power = "70",
 		pp = "15",
@@ -4478,7 +4478,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "422",
-		name = "Crocs Eclair",
+		name = {"Crocs Eclair","Crocs Eclair","Crocs Eclair","Crocs Eclair","Crocs Éclair"},
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = "65",
 		pp = "15",
@@ -4488,7 +4488,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "423",
-		name = "Crocs Givre",
+		name = {"Crocs Givre","Crocs Givre","Crocs Givre","Crocs Givre","Crocs Givre"},
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = "65",
 		pp = "15",
@@ -4498,7 +4498,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "424",
-		name = "Crocs Feu",
+		name = {"Crocs Feu","Crocs Feu","Crocs Feu","Crocs Feu","Crocs Feu"},
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "65",
 		pp = "15",
@@ -4508,7 +4508,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "425",
-		name = "Ombre Portée",
+		name = {"Ombre Portée","Ombre Portée","Ombre Portée","Ombre Portée","Ombre Portée"},
 		type = PokemonData.POKEMON_TYPES.GHOST,
 		power = "40",
 		pp = "30",
@@ -4518,7 +4518,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "426",
-		name = "Boue-Bombe",
+		name = {"Boue-Bombe","Boue-Bombe","Boue-Bombe","Boue-Bombe","Boue-Bombe"},
 		type = PokemonData.POKEMON_TYPES.GROUND,
 		power = "65",
 		pp = "10",
@@ -4528,7 +4528,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "427",
-		name = "Coupe Psycho",
+		name = {"Coupe Psycho","Coupe Psycho","Coupe Psycho","Coupe Psycho","Coupe Psycho"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = "70",
 		pp = "20",
@@ -4538,7 +4538,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "428",
-		name = "Psykoud’Boul",
+		name = {"Psykoud’Boul","Psykoud’Boul","Psykoud’Boul","Psykoud’Boul","Psykoud'Boul"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = "80",
 		pp = "15",
@@ -4548,7 +4548,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "429",
-		name = "Miroi-Tir",
+		name = {"Miroi-Tir","Miroi-Tir","Miroi-Tir","Miroi-Tir","Miroi-Tir"},
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = "65",
 		pp = "10",
@@ -4558,7 +4558,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "430",
-		name = "Luminocanon",
+		name = {"Luminocanon","Luminocanon","Luminocanon","Luminocanon","Luminocanon"},
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = "80",
 		pp = "10",
@@ -4568,7 +4568,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "431",
-		name = "Escalade",
+		name = {"Escalade","Escalade","Escalade","Escalade","Escalade"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "90",
 		pp = "20",
@@ -4578,7 +4578,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "432",
-		name = "Anti-Brume",
+		name = {"Anti-Brume","Anti-Brume","Anti-Brume","Anti-Brume","Anti-Brume"},
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -4588,7 +4588,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "433",
-		name = "Distorsion",
+		name = {"Distorsion","Distorsion","Distorsion","Distorsion","Distorsion"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "5",
@@ -4598,7 +4598,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "434",
-		name = "Draco Météor",
+		name = {"Draco Météor","Draco Météor","Draco Météor","Draco Météor","Draco Météor"},
 		type = PokemonData.POKEMON_TYPES.DRAGON,
 		power = "140",
 		pp = "5",
@@ -4608,7 +4608,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "435",
-		name = "Coup d’Jus",
+		name = {"Coup d’Jus","Coup d’Jus","Coup d’Jus","Coup d’Jus","Coup d'Jus"},
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = "80",
 		pp = "15",
@@ -4618,7 +4618,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "436",
-		name = "Ebullilave",
+		name = {"Ebullilave","Ebullilave","Ebullilave","Ebullilave","Ébullilave"},
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "80",
 		pp = "15",
@@ -4628,7 +4628,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "437",
-		name = "Tempêteverte",
+		name = {"Tempêteverte","Tempêteverte","Tempêteverte","Tempêteverte","Tempêteverte"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = "140",
 		pp = "5",
@@ -4638,7 +4638,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "438",
-		name = "Mégafouet",
+		name = {"Mégafouet","Mégafouet","Mégafouet","Mégafouet","Mégafouet"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = "120",
 		pp = "10",
@@ -4648,7 +4648,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "439",
-		name = "Roc-Boulet",
+		name = {"Roc-Boulet","Roc-Boulet","Roc-Boulet","Roc-Boulet","Roc-Boulet"},
 		type = PokemonData.POKEMON_TYPES.ROCK,
 		power = "150",
 		pp = "5",
@@ -4658,7 +4658,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "440",
-		name = "Poison-Croix",
+		name = {"Poison-Croix","Poison-Croix","Poison-Croix","Poison-Croix","Poison-Croix"},
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = "70",
 		pp = "20",
@@ -4668,7 +4668,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "441",
-		name = "Détricanon",
+		name = {"Détricanon","Détricanon","Détricanon","Détricanon","Détricanon"},
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = "120",
 		pp = "5",
@@ -4678,7 +4678,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "442",
-		name = "Tête de Fer",
+		name = {"Tête de Fer","Tête de Fer","Tête de Fer","Tête de Fer","Tête de Fer"},
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = "80",
 		pp = "15",
@@ -4688,7 +4688,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "443",
-		name = "Bombaimant",
+		name = {"Bombaimant","Bombaimant","Bombaimant","Bombaimant","Bombaimant"},
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = "60",
 		pp = "20",
@@ -4698,7 +4698,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "444",
-		name = "Lame de Roc",
+		name = {"Lame de Roc","Lame de Roc","Lame de Roc","Lame de Roc","Lame de Roc"},
 		type = PokemonData.POKEMON_TYPES.ROCK,
 		power = "100",
 		pp = "5",
@@ -4708,7 +4708,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "445",
-		name = "Séduction",
+		name = {"Séduction","Séduction","Séduction","Séduction","Séduction"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -4718,7 +4718,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "446",
-		name = "Piège de Roc",
+		name = {"Piège de Roc","Piège de Roc","Piège de Roc","Piège de Roc","Piège de Roc"},
 		type = PokemonData.POKEMON_TYPES.ROCK,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -4728,7 +4728,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "447",
-		name = "Noeud Herbe",
+		name = {"Noeud Herbe","Noeud Herbe","Noeud Herbe","Noeud Herbe","Nœud Herbe"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = "WT",
 		pp = "20",
@@ -4738,7 +4738,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "448",
-		name = "Babil",
+		name = {"Babil","Babil","Babil","Babil","Babil"},
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = "60",
 		pp = "20",
@@ -4754,7 +4754,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "449",
-		name = "Jugement",
+		name = {"Jugement","Jugement","Jugement","Jugement","Jugement"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "100",
 		pp = "10",
@@ -4764,7 +4764,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "450",
-		name = "Piqûre",
+		name = {"Piqûre","Piqûre","Piqûre","Piqûre","Piqûre"},
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = "60",
 		pp = "20",
@@ -4774,7 +4774,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "451",
-		name = "Rayon Chargé",
+		name = {"Rayon Chargé","Rayon Chargé","Rayon Chargé","Rayon Chargé","Rayon Chargé"},
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = "50",
 		pp = "10",
@@ -4784,7 +4784,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "452",
-		name = "Martobois",
+		name = {"Martobois","Martobois","Martobois","Martobois","Martobois"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = "120",
 		pp = "15",
@@ -4794,7 +4794,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "453",
-		name = "Aqua-Jet",
+		name = {"Aqua-Jet","Aqua-Jet","Aqua-Jet","Aqua-Jet","Aqua-Jet"},
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = "40",
 		pp = "20",
@@ -4804,7 +4804,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "454",
-		name = "Appel Attak",
+		name = {"Appel Attak","Appel Attak","Appel Attak","Appel Attak","Appel Attak"},
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = "90",
 		pp = "15",
@@ -4814,7 +4814,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "455",
-		name = "Appel Défens",
+		name = {"Appel Défens","Appel Défens","Appel Défens","Appel Défens","Appel Défens"},
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -4824,7 +4824,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "456",
-		name = "Appel Soins",
+		name = {"Appel Soins","Appel Soins","Appel Soins","Appel Soins","Appel Soins"},
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -4834,7 +4834,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "457",
-		name = "Fracass’Tête",
+		name = {"Fracass’Tête","Fracass’Tête","Fracass’Tête","Fracass’Tête","Fracass'Tête"},
 		type = PokemonData.POKEMON_TYPES.ROCK,
 		power = "150",
 		pp = "5",
@@ -4844,7 +4844,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "458",
-		name = "Coup Double",
+		name = {"Coup Double","Coup Double","Coup Double","Coup Double","Coup Double"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "35",
 		pp = "10",
@@ -4854,7 +4854,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "459",
-		name = "Hurle-Temps",
+		name = {"Hurle-Temps","Hurle-Temps","Hurle-Temps","Hurle-Temps","Hurle-Temps"},
 		type = PokemonData.POKEMON_TYPES.DRAGON,
 		power = "150",
 		pp = "5",
@@ -4864,7 +4864,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "460",
-		name = "Spatio-Rift",
+		name = {"Spatio-Rift","Spatio-Rift","Spatio-Rift","Spatio-Rift","Spatio-Rift"},
 		type = PokemonData.POKEMON_TYPES.DRAGON,
 		power = "100",
 		pp = "5",
@@ -4874,7 +4874,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "461",
-		name = "Danse-Lune",
+		name = {"Danse-Lune","Danse-Lune","Danse-Lune","Danse-Lune","Danse-Lune"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -4884,7 +4884,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "462",
-		name = "Presse",
+		name = {"Presse","Presse","Presse","Presse","Presse"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = ">HP",
 		pp = "5",
@@ -4894,7 +4894,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "463",
-		name = "Vortex Magma",
+		name = {"Vortex Magma","Vortex Magma","Vortex Magma","Vortex Magma","Vortex Magma"},
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "120",
 		pp = "5",
@@ -4910,7 +4910,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "464",
-		name = "Trou Noir",
+		name = {"Trou Noir","Trou Noir","Trou Noir","Trou Noir","Trou Noir"},
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -4920,7 +4920,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "465",
-		name = "Fulmigraine",
+		name = {"Fulmigraine","Fulmigraine","Fulmigraine","Fulmigraine","Fulmigraine"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = "120",
 		pp = "5",
@@ -4930,7 +4930,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "466",
-		name = "Vent Mauvais",
+		name = {"Vent Mauvais","Vent Mauvais","Vent Mauvais","Vent Mauvais","Vent Mauvais"},
 		type = PokemonData.POKEMON_TYPES.GHOST,
 		power = "60",
 		pp = "5",
@@ -4940,7 +4940,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "467",
-		name = "Revenant",
+		name = {"Revenant","Revenant","Revenant","Revenant","Revenant"},
 		type = PokemonData.POKEMON_TYPES.GHOST,
 		power = "120",
 		pp = "5",
@@ -4950,7 +4950,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "468",
-		name = "Aiguisage",
+		name = {"Aiguisage","Aiguisage","Aiguisage","Aiguisage","Aiguisage"},
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -4960,7 +4960,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "469",
-		name = "Garde Large",
+		name = {"Garde Large","Garde Large","Garde Large","Garde Large","Garde Large"},
 		type = PokemonData.POKEMON_TYPES.ROCK,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -4970,7 +4970,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "470",
-		name = "PartageGarde",
+		name = {"PartageGarde","PartageGarde","PartageGarde","PartageGarde","PartageGarde"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -4980,7 +4980,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "471",
-		name = "PartageForce",
+		name = {"PartageForce","PartageForce","PartageForce","PartageForce","PartageForce"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -4990,7 +4990,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "472",
-		name = "Zone Étrange",
+		name = {"Zone Étrange","Zone Étrange","Zone Étrange","Zone Étrange","Zone Étrange"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -5000,7 +5000,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "473",
-		name = "Choc Psy",
+		name = {"Choc Psy","Choc Psy","Choc Psy","Choc Psy","Choc Psy"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = "80",
 		pp = "10",
@@ -5010,7 +5010,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "474",
-		name = "Choc Venin",
+		name = {"Choc Venin","Choc Venin","Choc Venin","Choc Venin","Choc Venin"},
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = "65",
 		pp = "10",
@@ -5020,7 +5020,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "475",
-		name = "Allègement",
+		name = {"Allègement","Allègement","Allègement","Allègement","Allègement"},
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -5030,7 +5030,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "476",
-		name = "PoudreFureur",
+		name = {"PoudreFureur","PoudreFureur","PoudreFureur","PoudreFureur","PoudreFureur"},
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -5040,7 +5040,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "477",
-		name = "Lévikinésie",
+		name = {"Lévikinésie","Lévikinésie","Lévikinésie","Lévikinésie","Lévikinésie"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -5050,7 +5050,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "478",
-		name = "Zone Magique",
+		name = {"Zone Magique","Zone Magique","Zone Magique","Zone Magique","Zone Magique"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -5060,7 +5060,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "479",
-		name = "Anti-Air",
+		name = {"Anti-Air","Anti-Air","Anti-Air","Anti-Air","Anti-Air"},
 		type = PokemonData.POKEMON_TYPES.ROCK,
 		power = "50",
 		pp = "15",
@@ -5070,7 +5070,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "480",
-		name = "Yama Arashi",
+		name = {"Yama Arashi","Yama Arashi","Yama Arashi","Yama Arashi","Yama Arashi"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = {"60", "60", "60", "60", "40"},
 		pp = "10",
@@ -5080,7 +5080,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "481",
-		name = "Rebondifeu",
+		name = {"Rebondifeu","Rebondifeu","Rebondifeu","Rebondifeu","Rebondifeu"},
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "70",
 		pp = "15",
@@ -5090,7 +5090,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "482",
-		name = "Cradovague",
+		name = {"Cradovague","Cradovague","Cradovague","Cradovague","Cradovague"},
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = "95",
 		pp = "10",
@@ -5100,7 +5100,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "483",
-		name = "Papillodanse",
+		name = {"Papillodanse","Papillodanse","Papillodanse","Papillodanse","Papillodanse"},
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -5110,7 +5110,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "484",
-		name = "Tacle Lourd",
+		name = {"Tacle Lourd","Tacle Lourd","Tacle Lourd","Tacle Lourd","Tacle Lourd"},
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = ">WT",
 		pp = "10",
@@ -5120,7 +5120,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "485",
-		name = "Synchropeine",
+		name = {"Synchropeine","Synchropeine","Synchropeine","Synchropeine","Synchropeine"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = {"120", "120", "120", "120", "70"},
 		pp = {"10", "10", "10", "10", "15"},
@@ -5130,7 +5130,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "486",
-		name = "Boule Élek",
+		name = {"Boule Élek","Boule Élek","Boule Élek","Boule Élek","Boule Élek"},
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = ">SP",
 		pp = "10",
@@ -5140,7 +5140,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "487",
-		name = "Détrempage",
+		name = {"Détrempage","Détrempage","Détrempage","Détrempage","Détrempage"},
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -5150,7 +5150,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "488",
-		name = "Nitrocharge",
+		name = {"Nitrocharge","Nitrocharge","Nitrocharge","Nitrocharge","Nitrocharge"},
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "50",
 		pp = "20",
@@ -5160,7 +5160,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "489",
-		name = "Enroulement",
+		name = {"Enroulement","Enroulement","Enroulement","Enroulement","Enroulement"},
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "20",
@@ -5170,7 +5170,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "490",
-		name = "Balayette",
+		name = {"Balayette","Balayette","Balayette","Balayette","Balayette"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = {"65", "65", "65", "65", "60"},
 		pp = "20",
@@ -5180,7 +5180,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "491",
-		name = "Bombe Acide",
+		name = {"Bombe Acide","Bombe Acide","Bombe Acide","Bombe Acide","Bombe Acide"},
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = "40",
 		pp = "20",
@@ -5190,7 +5190,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "492",
-		name = "Tricherie",
+		name = {"Tricherie","Tricherie","Tricherie","Tricherie","Tricherie"},
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = "95",
 		pp = "15",
@@ -5200,7 +5200,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "493",
-		name = "Rayon Simple",
+		name = {"Rayon Simple","Rayon Simple","Rayon Simple","Rayon Simple","Rayon Simple"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -5210,7 +5210,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "494",
-		name = "Ten-danse",
+		name = {"Ten-danse","Ten-danse","Ten-danse","Ten-danse","Ten-danse"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -5220,7 +5220,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "495",
-		name = "Après Vous",
+		name = {"Après Vous","Après Vous","Après Vous","Après Vous","Après Vous"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -5230,7 +5230,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "496",
-		name = "Chant Canon",
+		name = {"Chant Canon","Chant Canon","Chant Canon","Chant Canon","Chant Canon"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "60",
 		pp = "15",
@@ -5240,7 +5240,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "497",
-		name = "Echo",
+		name = {"Echo","Echo","Echo","Echo","Écho"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "40",
 		pp = "15",
@@ -5250,7 +5250,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "498",
-		name = "Attrition",
+		name = {"Attrition","Attrition","Attrition","Attrition","Attrition"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "70",
 		pp = "20",
@@ -5260,7 +5260,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "499",
-		name = "Bain de Smog",
+		name = {"Bain de Smog","Bain de Smog","Bain de Smog","Bain de Smog","Bain de Smog"},
 		type = PokemonData.POKEMON_TYPES.POISON,
 		power = "50",
 		pp = "15",
@@ -5270,7 +5270,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "500",
-		name = "ForceAjoutée",
+		name = {"ForceAjoutée","ForceAjoutée","ForceAjoutée","ForceAjoutée","ForceAjoutée"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = "20",
 		pp = "10",
@@ -5280,7 +5280,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "501",
-		name = "Prévention",
+		name = {"Prévention","Prévention","Prévention","Prévention","Prévention"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -5290,7 +5290,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "502",
-		name = "Interversion",
+		name = {"Interversion","Interversion","Interversion","Interversion","Interversion"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -5300,7 +5300,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "503",
-		name = "Ebullition",
+		name = {"Ebullition","Ebullition","Ebullition","Ebullition","Ébullition"},
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = "80",
 		pp = "15",
@@ -5310,7 +5310,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "504",
-		name = "Exuviation",
+		name = {"Exuviation","Exuviation","Exuviation","Exuviation","Exuviation"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -5320,7 +5320,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "505",
-		name = "Vibra Soin",
+		name = {"Vibra Soin","Vibra Soin","Vibra Soin","Vibra Soin","Vibra Soin"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -5330,7 +5330,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "506",
-		name = "Châtiment",
+		name = {"Châtiment","Châtiment","Châtiment","Châtiment","Châtiment"},
 		type = PokemonData.POKEMON_TYPES.GHOST,
 		power = {"65", "65", "65", "65", "50"},
 		pp = "10",
@@ -5340,7 +5340,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "507",
-		name = "Chute Libre",
+		name = {"Chute Libre","Chute Libre","Chute Libre","Chute Libre","Chute Libre"},
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = "60",
 		pp = "10",
@@ -5350,7 +5350,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "508",
-		name = "Chgt Vitesse",
+		name = {"Chgt Vitesse","Chgt Vitesse","Chgt Vitesse","Chgt Vitesse","Chgt Vitesse"},
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -5360,7 +5360,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "509",
-		name = "Projection",
+		name = {"Projection","Projection","Projection","Projection","Projection"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "60",
 		pp = "10",
@@ -5370,7 +5370,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "510",
-		name = "Calcination",
+		name = {"Calcination","Calcination","Calcination","Calcination","Calcination"},
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = {"60", "60", "60", "60", "30"},
 		pp = "15",
@@ -5380,7 +5380,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "511",
-		name = "À la Queue",
+		name = {"À la Queue","À la Queue","À la Queue","À la Queue","À la Queue"},
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -5390,7 +5390,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "512",
-		name = "Acrobatie",
+		name = {"Acrobatie","Acrobatie","Acrobatie","Acrobatie","Acrobatie"},
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = "55",
 		pp = "15",
@@ -5400,7 +5400,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "513",
-		name = "Copie Type",
+		name = {"Copie Type","Copie Type","Copie Type","Copie Type","Copie Type"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -5410,7 +5410,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "514",
-		name = "Vengeance",
+		name = {"Vengeance","Vengeance","Vengeance","Vengeance","Vengeance"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "70",
 		pp = "5",
@@ -5420,7 +5420,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "515",
-		name = "Tout ou Rien",
+		name = {"Tout ou Rien","Tout ou Rien","Tout ou Rien","Tout ou Rien","Tout ou Rien"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "HP",
 		pp = "5",
@@ -5430,7 +5430,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "516",
-		name = "Passe-Cadeau",
+		name = {"Passe-Cadeau","Passe-Cadeau","Passe-Cadeau","Passe-Cadeau","Passe-Cadeau"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "15",
@@ -5440,7 +5440,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "517",
-		name = "Feu d’Enfer",
+		name = {"Feu d’Enfer","Feu d’Enfer","Feu d’Enfer","Feu d’Enfer","Feu d'Enfer"},
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "100",
 		pp = "5",
@@ -5450,7 +5450,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "518",
-		name = "Aire d’Eau",
+		name = {"Aire d’Eau","Aire d’Eau","Aire d’Eau","Aire d’Eau","Aire d'Eau"},
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = {"80", "80", "80", "80", "50"},
 		pp = "10",
@@ -5460,7 +5460,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "519",
-		name = "Aire de Feu",
+		name = {"Aire de Feu","Aire de Feu","Aire de Feu","Aire de Feu","Aire de Feu"},
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = {"80", "80", "80", "80", "50"},
 		pp = "10",
@@ -5470,7 +5470,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "520",
-		name = "Aire d’Herbe",
+		name = {"Aire d’Herbe","Aire d’Herbe","Aire d’Herbe","Aire d’Herbe","Aire d'Herbe"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = {"80", "80", "80", "80", "50"},
 		pp = "10",
@@ -5480,7 +5480,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "521",
-		name = "Change Éclair",
+		name = {"Change Éclair","Change Éclair","Change Éclair","Change Éclair","ChangeÉclair"},
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = "70",
 		pp = "20",
@@ -5490,7 +5490,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "522",
-		name = "Survinsecte",
+		name = {"Survinsecte","Survinsecte","Survinsecte","Survinsecte","Survinsecte"},
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = {"50", "50", "50", "50", "30"},
 		pp = "20",
@@ -5500,7 +5500,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "523",
-		name = "Piétisol",
+		name = {"Piétisol","Piétisol","Piétisol","Piétisol","Piétisol"},
 		type = PokemonData.POKEMON_TYPES.GROUND,
 		power = "60",
 		pp = "20",
@@ -5510,7 +5510,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "524",
-		name = "SouffleGlacé",
+		name = {"SouffleGlacé","SouffleGlacé","SouffleGlacé","SouffleGlacé","SouffleGlacé"},
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = {"60", "60", "60", "60", "40"},
 		pp = "10",
@@ -5520,7 +5520,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "525",
-		name = "Draco-Queue",
+		name = {"Draco-Queue","Draco-Queue","Draco-Queue","Draco-Queue","Draco-Queue"},
 		type = PokemonData.POKEMON_TYPES.DRAGON,
 		power = "60",
 		pp = "10",
@@ -5530,7 +5530,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "526",
-		name = "Rengorgement",
+		name = {"Rengorgement","Rengorgement","Rengorgement","Rengorgement","Rengorgement"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "30",
@@ -5540,7 +5540,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "527",
-		name = "Toile Élek",
+		name = {"Toile Élek","Toile Élek","Toile Élek","Toile Élek","Toile Élek"},
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = "55",
 		pp = "15",
@@ -5550,7 +5550,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "528",
-		name = "Eclair Fou",
+		name = {"Eclair Fou","Eclair Fou","Eclair Fou","Eclair Fou","Éclair Fou"},
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = "90",
 		pp = "15",
@@ -5560,7 +5560,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "529",
-		name = "Tunnelier",
+		name = {"Tunnelier","Tunnelier","Tunnelier","Tunnelier","Tunnelier"},
 		type = PokemonData.POKEMON_TYPES.GROUND,
 		power = "80",
 		pp = "10",
@@ -5570,7 +5570,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "530",
-		name = "Double Baffe",
+		name = {"Double Baffe","Double Baffe","Double Baffe","Double Baffe","Double Baffe"},
 		type = PokemonData.POKEMON_TYPES.DRAGON,
 		power = "40",
 		pp = "15",
@@ -5580,7 +5580,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "531",
-		name = "Crève-Coeur",
+		name = {"Crève-Coeur","Crève-Coeur","Crève-Coeur","Crève-Coeur","Crèvecœur"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = "60",
 		pp = "25",
@@ -5590,7 +5590,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "532",
-		name = "Encornebois",
+		name = {"Encornebois","Encornebois","Encornebois","Encornebois","Encornebois"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = "75",
 		pp = "10",
@@ -5600,7 +5600,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "533",
-		name = "Lame Sainte",
+		name = {"Lame Sainte","Lame Sainte","Lame Sainte","Lame Sainte","Lame Sainte"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "90",
 		pp = "20",
@@ -5610,7 +5610,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "534",
-		name = "Coqui-Lame",
+		name = {"Coqui-Lame","Coqui-Lame","Coqui-Lame","Coqui-Lame","Coquilame"},
 		type = PokemonData.POKEMON_TYPES.WATER,
 		power = "75",
 		pp = "10",
@@ -5620,7 +5620,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "535",
-		name = "Tacle Feu",
+		name = {"Tacle Feu","Tacle Feu","Tacle Feu","Tacle Feu","Tacle Feu"},
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = ">WT",
 		pp = "10",
@@ -5630,7 +5630,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "536",
-		name = "Phytomixeur",
+		name = {"Phytomixeur","Phytomixeur","Phytomixeur","Phytomixeur","Phytomixeur"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = "65",
 		pp = "10",
@@ -5640,7 +5640,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "537",
-		name = "Bulldoboule",
+		name = {"Bulldoboule","Bulldoboule","Bulldoboule","Bulldoboule","Bulldoboule"},
 		type = PokemonData.POKEMON_TYPES.BUG,
 		power = "65",
 		pp = "20",
@@ -5650,7 +5650,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "538",
-		name = "Cotogarde",
+		name = {"Cotogarde","Cotogarde","Cotogarde","Cotogarde","Cotogarde"},
 		type = PokemonData.POKEMON_TYPES.GRASS,
 		power = Graphics.TEXT.NO_POWER,
 		pp = "10",
@@ -5660,7 +5660,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "539",
-		name = "Explonuit",
+		name = {"Explonuit","Explonuit","Explonuit","Explonuit","Explonuit"},
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = "85",
 		pp = "10",
@@ -5670,7 +5670,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "540",
-		name = "Frappe Psy",
+		name = {"Frappe Psy","Frappe Psy","Frappe Psy","Frappe Psy","Frappe Psy"},
 		type = PokemonData.POKEMON_TYPES.PSYCHIC,
 		power = "100",
 		pp = "10",
@@ -5680,7 +5680,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "541",
-		name = "Plumo-Queue",
+		name = {"Plumo-Queue","Plumo-Queue","Plumo-Queue","Plumo-Queue","Plumo-Queue"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "25",
 		pp = "10",
@@ -5690,7 +5690,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "542",
-		name = "Vent Violent",
+		name = {"Vent Violent","Vent Violent","Vent Violent","Vent Violent","Vent Violent"},
 		type = PokemonData.POKEMON_TYPES.FLYING,
 		power = "120",
 		pp = "10",
@@ -5700,7 +5700,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "543",
-		name = "Peignée",
+		name = {"Peignée","Peignée","Peignée","Peignée","Peignée"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "120",
 		pp = "15",
@@ -5710,7 +5710,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "544",
-		name = "Lancécrou",
+		name = {"Lancécrou","Lancécrou","Lancécrou","Lancécrou","Lancécrou"},
 		type = PokemonData.POKEMON_TYPES.STEEL,
 		power = "50",
 		pp = "15",
@@ -5720,7 +5720,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "545",
-		name = "Incendie",
+		name = {"Incendie","Incendie","Incendie","Incendie","Incendie"},
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "100",
 		pp = "5",
@@ -5730,7 +5730,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "546",
-		name = "TechnoBuster",
+		name = {"TechnoBuster","TechnoBuster","TechnoBuster","TechnoBuster","TechnoBuster"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "85",
 		pp = "5",
@@ -5740,7 +5740,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "547",
-		name = "ChantAntique",
+		name = {"ChantAntique","ChantAntique","ChantAntique","ChantAntique","ChantAntique"},
 		type = PokemonData.POKEMON_TYPES.NORMAL,
 		power = "75",
 		pp = "10",
@@ -5750,7 +5750,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "548",
-		name = "Lame Ointe",
+		name = {"Lame Ointe","Lame Ointe","Lame Ointe","Lame Ointe","Lame Ointe"},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
 		power = "85",
 		pp = "10",
@@ -5760,7 +5760,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "549",
-		name = "Ereglaciaire",
+		name = {"Ereglaciaire","Ereglaciaire","Ereglaciaire","Ereglaciaire","ÈreGlaciaire"},
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = "65",
 		pp = "10",
@@ -5770,7 +5770,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "550",
-		name = "ChargeFoudre",
+		name = {"ChargeFoudre","ChargeFoudre","ChargeFoudre","ChargeFoudre","ChargeFoudre"},
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = "130",
 		pp = "5",
@@ -5780,7 +5780,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "551",
-		name = "Flamme Bleue",
+		name = {"Flamme Bleue","Flamme Bleue","Flamme Bleue","Flamme Bleue","Flamme Bleue"},
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "130",
 		pp = "5",
@@ -5790,7 +5790,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "552",
-		name = "Danse du Feu",
+		name = {"Danse du Feu","Danse du Feu","Danse du Feu","Danse du Feu","Danse du Feu"},
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "80",
 		pp = "10",
@@ -5800,7 +5800,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "553",
-		name = "Eclair Gelé",
+		name = {"Eclair Gelé","Eclair Gelé","Eclair Gelé","Eclair Gelé","Éclair Gelé"},
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = "140",
 		pp = "5",
@@ -5810,7 +5810,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "554",
-		name = "Feu Glacé",
+		name = {"Feu Glacé","Feu Glacé","Feu Glacé","Feu Glacé","Feu Glacé"},
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = "140",
 		pp = "5",
@@ -5820,7 +5820,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "555",
-		name = "Aboiement",
+		name = {"Aboiement","Aboiement","Aboiement","Aboiement","Aboiement"},
 		type = PokemonData.POKEMON_TYPES.DARK,
 		power = "55",
 		pp = "15",
@@ -5830,7 +5830,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "556",
-		name = "Chute Glace",
+		name = {"Chute Glace","Chute Glace","Chute Glace","Chute Glace","Chute Glace"},
 		type = PokemonData.POKEMON_TYPES.ICE,
 		power = "85",
 		pp = "10",
@@ -5840,7 +5840,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "557",
-		name = "CoupVictoire",
+		name = {"CoupVictoire","CoupVictoire","CoupVictoire","CoupVictoire","CoupVictoire"},
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "180",
 		pp = "5",
@@ -5850,7 +5850,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "558",
-		name = "Flamme Croix",
+		name = {"Flamme Croix","Flamme Croix","Flamme Croix","Flamme Croix","Flamme Croix"},
 		type = PokemonData.POKEMON_TYPES.FIRE,
 		power = "100",
 		pp = "5",
@@ -5860,7 +5860,7 @@ MoveData.MOVES_MASTER_LIST = {
 	},
 	{
 		id = "559",
-		name = "Eclair Croix",
+		name = { "Eclair Croix", "Eclair Croix", "Eclair Croix", "Eclair Croix", "Éclair Croix"},
 		type = PokemonData.POKEMON_TYPES.ELECTRIC,
 		power = "100",
 		pp = "5",

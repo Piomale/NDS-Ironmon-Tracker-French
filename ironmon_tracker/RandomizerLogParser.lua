@@ -232,7 +232,11 @@ local function RandomizerLogParser(initialProgram)
                 pokemon.abilities = {}
                 for _, abilityName in pairs(abilityNames) do
                     if abilityIDMappings[abilityName] ~= nil and abilityName ~= "--" then
-                        table.insert(pokemon.abilities, abilityIDMappings[abilityName])
+						local abilityID = abilityIDMappings[abilityName]
+						if abilityID == nil then
+								print("Report this ability : " .. abilityName)
+						end
+                        table.insert(pokemon.abilities, abilityID)
                     end
                 end
             end
