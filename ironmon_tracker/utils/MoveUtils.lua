@@ -43,7 +43,7 @@ function MoveUtils.netEffectiveness(move, pkmnData, isEnemy, hiddenPowerType)
         if move.name == "Puis. Cachée" and not isEnemy then
             moveType = hiddenPowerType
         end
-        if move.name == "Judgment" and not isEnemy and PokemonData.PLATE_TO_TYPE[tonumber(pkmnData.heldItem)] ~= nil then
+        if move.name == "Jugement" and not isEnemy and PokemonData.PLATE_TO_TYPE[tonumber(pkmnData.heldItem)] ~= nil then
             moveType = PokemonData.PLATE_TO_TYPE[tonumber(pkmnData.heldItem)]
         end
         if moveType ~= "---" then
