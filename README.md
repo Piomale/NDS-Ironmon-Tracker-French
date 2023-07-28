@@ -1,6 +1,6 @@
-# NDS-Ironmon-Tracker for Pokémon HeartGold (french version)
+# NDS-Ironmon-Tracker for Pokémon HeartGold & black/white (french version)
 
-Vous pouvez télécharger le tracker [ici](https://github.com//Piomale/NDS-Ironmon-Tracker-French/releases/latest) (uniquement pour Pokémon HeartGold).
+Vous pouvez télécharger le tracker [ici](https://github.com//Piomale/NDS-Ironmon-Tracker-French/releases/latest) (uniquement pour Pokémon HeartGold et black/white ).
 
 
 ![Animation](https://user-images.githubusercontent.com/88030270/232337355-ac008285-2e4e-4528-97d0-684b1445bd0e.gif)
@@ -14,6 +14,8 @@ Ce tracker est un script lua qui fonctionne avec [BizHawk] (https://tasvideos.or
 
 Ce tracker est basé sur les jeux Pokémon de la Nintendo DS (NDS). À ce titre, les jeux suivants sont actuellement pris en charge :
 - Pokémon HeartGold
+- Pokémon noir
+- Pokémon blanc
 
 
 Ce projet a été lancé à l'origine sur https://github.com/besteon/Ironmon-Tracker, et je ne saurais trop les remercier, ainsi que tous les contributeurs du projet, pour tout le travail de fond qu'ils ont effectué. Un grand merci également aux gens de projectpokemon.org pour toute leur documentation technique sur les données Pokémon.
