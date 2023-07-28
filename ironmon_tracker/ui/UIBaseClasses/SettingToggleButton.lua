@@ -11,7 +11,9 @@ local function SettingToggleButton(
     local visible = initialVisibility
     local settings = initialSettings
     local settingsKey = initialSettingsKey
+	print("settingsKey -> " .. settingsKey)
     local state = settings[settingsKey]
+	print("state -> " .. tostring(state))
     local saveFunction = initialSaveFunction
     if initialState ~= nil then
         state = initialState
