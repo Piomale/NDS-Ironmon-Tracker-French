@@ -5,8 +5,8 @@ MiscConstants.TRACKER_VERSION = "2.01.0"
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
-    '-- Modification du nom des capacites pour la 5G',
-    '-- Le logviewer devrait refonctionner',
+    '-- La detection de defaite quand tous les pokemons ont perdus devrait enfin fonctionner',
+    '-- Ajout des 5 dernieres mise a jour du tracker anglais',
 }
 
 MiscConstants.DEFAULT_SETTINGS = {
