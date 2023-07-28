@@ -18,7 +18,7 @@ MiscConstants.DEFAULT_SETTINGS = {
         RANDOM_BALL_PICKER = true,
         SHOW_POKECENTER_HEALS = false,
         ICON_SET_INDEX = 2,
-        BLIND_MODE = false,
+        BLIND_MODE = false
     },
     controls = {
         CHANGE_VIEW = "Start",
@@ -84,6 +84,9 @@ MiscConstants.DEFAULT_SETTINGS = {
     extras = {
         BROWS_ENABLED = false,
         BROWS_FRAMES = 8
+    },
+    tourneyTracker = {
+        ENABLED = false
     }
 }
 
