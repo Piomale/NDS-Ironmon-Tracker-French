@@ -193,7 +193,7 @@ local function updatenotesscreen(initialSettings, initialTracker, initialProgram
 				)
 			),
 			TextField(
-				"Mise \224 jour " .. MiscConstants.TRACKER_VERSION,
+				"Mise a jour " .. MiscConstants.TRACKER_VERSION,
 				{x = 44, y = 1},
 				TextStyle(11, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
 			)
