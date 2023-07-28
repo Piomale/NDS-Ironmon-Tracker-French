@@ -49,7 +49,18 @@ local function TrackedInfoScreen(initialSettings, initialTracker, initialProgram
 		client.SetSoundOn(soundOn)
 	end
 
-	
+
+	local function onLoadTrackerDataClick()
+		local soundOn = client.GetSoundOn()
+		client.SetSoundOn(false)
+		local trackerDataPath =
+			forms.openfile("*.trackerdata", Paths.CURRENT_DIRECTORY .. Paths.SLASH .. "savedData" .. Paths.SLASH)
+		if trackerDataPath ~= nil then
+			tracker.loadExternalTrackerDataFile(trackerDataPath)
+		end
+		client.SetSoundOn(soundOn)
+	end
+
 	local function initEventListeners()
 		eventListeners.goBackClickListener =
 			MouseClickEventListener(ui.controls.goBackButton, program.openScreen, program.UI_SCREENS.MAIN_OPTIONS_SCREEN)
@@ -66,6 +77,7 @@ local function TrackedInfoScreen(initialSettings, initialTracker, initialProgram
 			program.openScreen,
 			program.UI_SCREENS.RESTORE_POINTS_SCREEN
 		)
+		eventListeners.loadTrackerData = MouseClickEventListener(ui.frames.loadTrackerDataButtonFrame, onLoadTrackerDataClick)
 	end
 
 	local function initBottomFrameControls()
@@ -101,21 +113,24 @@ local function TrackedInfoScreen(initialSettings, initialTracker, initialProgram
 			statisticsButton = "Statistiques",
 			openLogButton = "Ouvrir un Log",
 			openRestorePointsButton = "Restaurer une sauvegarde"
+			loadTrackerDataButton = "Charger les données du tracker"
 		}
-		local icons = {"PENCIL", "PAST_RUN_ICON", "STATISTICS_ICON", "OPEN_LOG_ICON", "RESTORE_POINTS_ICON"}
+		local icons = {"PENCIL", "PAST_RUN_ICON", "STATISTICS_ICON", "OPEN_LOG_ICON", "RESTORE_POINTS_ICON", "LOAD_TRACKER_DATA"}
 		local order = {
 			"trackedPokemonButton",
 			"pastRunsButton",
 			"statisticsButton",
 			"openLogButton",
-			"openRestorePointsButton"
+			"openRestorePointsButton",
+			"loadTrackerDataButton"
 		}
 		local iconOffsets = {
 			{x = 2, y = 2},
 			{x = 3, y = 2},
 			{x = 3, y = 2},
 			{x = 3, y = 2},
-			{x = 3, y = 3}
+			{x = 3, y = 3},
+			{x = 3, y = 2}
 		}
 		for i, key in pairs(order) do
 			local text = stripChars(buttonNames[key])

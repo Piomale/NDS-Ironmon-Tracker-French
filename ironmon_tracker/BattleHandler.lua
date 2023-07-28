@@ -5,7 +5,8 @@ local function BattleHandler(
     initialTracker,
     initialProgram,
     initialSettings)
-    local FrameCounter = dofile(Paths.FOLDERS.DATA_FOLDER .. "/FrameCounter.lua" )
+
+    local FrameCounter = dofile(Paths.FOLDERS.DATA_FOLDER .. "/FrameCounter.lua")
 
     local self = {}
 
@@ -16,6 +17,7 @@ local function BattleHandler(
     local program = initialProgram
     local settings = initialSettings
 
+    local defeatedTrainerList = {}
     local GEN5_activePlayerMonPIDAddr = nil
     local GEN5_PIDSwitchData = {}
     local totalBattlesCompleted = 0
@@ -36,8 +38,7 @@ local function BattleHandler(
     self.BATTLE_STATUS_TYPES = {
         [0x2100] = true,
         [0x2101] = true,
-        [0x2800] = false,
-        [0xF7F3] = true
+        [0x2800] = false
     }
 
     function self.setGameInfo(newGameInfo)
@@ -446,9 +447,14 @@ local function BattleHandler(
         end
     end
 
+    function self.getDefeatedTrainers()
+        return defeatedTrainerList
+    end
+
     local function onEndOfBattle()
         if inBattle then
             if not tracker.hasRunEnded() then
+                defeatedTrainerList[enemyTrainerID] = true
                 if gameInfo.TRAINERS.LAB_IDS[enemyTrainerID] then
                     tracker.setProgress(PlaythroughConstants.PROGRESS.PAST_LAB)
                 elseif gameInfo.TRAINERS.FINAL_FIGHT_ID == enemyTrainerID then
@@ -494,28 +500,26 @@ local function BattleHandler(
         end
         return highestLevelMonIndex
     end
-	
+
     function self.checkIfRunHasEnded()
-        if not inBattle or not battleDataFetched or settings.trackedInfo.FAINT_DETECTION == PlaythroughConstants.NEVER then
+        if not inBattle or not battleDataFetched then
             return
         end
-		local currentBase = memoryAddresses.playerBattleBase
-			
-		if settings.trackedInfo.FAINT_DETECTION == PlaythroughConstants.FAINT_DETECTIONS.ON_HIGHEST_LEVEL_FAINT then
-			faintMonIndex = calculateHighestPlayerMonIndex()
-			checkteam = false
-		elseif settings.trackedInfo.FAINT_DETECTION == PlaythroughConstants.FAINT_DETECTIONS.ON_FIRST_SLOT_FAINT then
-			faintMonIndex = 0
-			checkteam = false
-		elseif settings.trackedInfo.FAINT_DETECTION == PlaythroughConstants.FAINT_DETECTIONS.ALL_FAINT then
-			faintMonIndex = 0
-			checkteam = true
-		end
-		pokemonDataReader.setCurrentBase(currentBase + faintMonIndex * gameInfo.ENCRYPTED_POKEMON_SIZE)
-        local data = pokemonDataReader.decryptPokemonInfo(checkteam, faintMonIndex, false)
-		if MiscUtils.validPokemonData(data) and data.curHP == 0 then
-			program.onRunEnded()
-		end
+        if faintMonIndex == -1 then
+            if settings.trackedInfo.FAINT_DETECTION == PlaythroughConstants.FAINT_DETECTIONS.ON_HIGHEST_LEVEL_FAINT then
+                faintMonIndex = calculateHighestPlayerMonIndex()
+            elseif settings.trackedInfo.FAINT_DETECTION ==PlaythroughConstants.FAINT_DETECTIONS.ON_FIRST_SLOT_FAINT then
+                faintMonIndex = 0
+            end
+        end
+        local currentBase = memoryAddresses.playerBattleBase
+        pokemonDataReader.setCurrentBase(currentBase + faintMonIndex * gameInfo.ENCRYPTED_POKEMON_SIZE)
+        local data = pokemonDataReader.decryptPokemonInfo(false, faintMonIndex, false)
+        if MiscUtils.validPokemonData(data) then
+            if data.curHP == 0 then
+                program.onRunEnded()
+            end
+        end
     end
 
     local function onBattleFetchFrameCounter()

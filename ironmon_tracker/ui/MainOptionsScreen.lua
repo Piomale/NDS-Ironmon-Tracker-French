@@ -12,7 +12,7 @@ local function MainOptionsScreen(initialSettings, initialTracker, initialProgram
 	local tracker = initialTracker
 	local program = initialProgram
 	local constants = {
-		MAIN_OPTIONS_HEIGHT = 196,
+		MAIN_OPTIONS_HEIGHT = 222,
 		MAIN_BUTTONS_Y_OFFSET = 23,
 		MAIN_BUTTONS_X_OFFSET = 15,
 		MAIN_BUTTON_SPACING = 5,
@@ -52,6 +52,7 @@ local function MainOptionsScreen(initialSettings, initialTracker, initialProgram
 		eventListeners.quickLoadClickListener =
 			MouseClickEventListener(ui.frames.quickLoadButtonFrame, program.openScreen, program.UI_SCREENS.QUICK_LOAD_SCREEN)
 		eventListeners.updaterClickListener = MouseClickEventListener(ui.frames.updaterButtonFrame, onUpdateCheckerClick)
+		eventListeners.extrasClickListener = MouseClickEventListener(ui.frames.extrasButtonFrame, program.openScreen, program.UI_SCREENS.EXTRAS_SCREEN)
 	end
 
 	local function initBottomFrameControls()
@@ -101,15 +102,17 @@ local function MainOptionsScreen(initialSettings, initialTracker, initialProgram
 			editControlsButton = "Modifier les controles",
 			quickLoadButton = "Paramètres de chargement rapide",
 			updaterButton = "Recherche de mise à jour"
+			extrasButton = "Extras"
 		}
-		local icons = {"SWORD", "SPARKLES", "TRACKED_INFO_ICON", "CONTROLLER", "LIGHTNING_BOLT", "UPDATER_ICON"}
+		local icons = {"SWORD", "SPARKLES", "TRACKED_INFO_ICON", "CONTROLLER", "LIGHTNING_BOLT", "UPDATER_ICON", "EXTRAS_ICON"}
 		local order = {
 			"battleSettingsButton",
 			"trackerAppearanceButton",
 			"trackedInfoButton",
 			"editControlsButton",
 			"quickLoadButton",
-			"updaterButton"
+			"updaterButton",
+			"extrasButton"
 		}
 		local iconOffsets = {
 			{x = 2, y = 2},
@@ -118,6 +121,7 @@ local function MainOptionsScreen(initialSettings, initialTracker, initialProgram
 			{x = 2, y = 2},
 			{x = 2, y = 2},
 			{x = 2, y = 2},
+			{x=3, y = 3}
 		}
 		for i, key in pairs(order) do
 			local text = stripChars(buttonNames[key])
@@ -172,7 +176,7 @@ local function MainOptionsScreen(initialSettings, initialTracker, initialProgram
 		ui.frames.bottomFrame =
 			Frame(
 			Box(
-				{x = 0, y = constants.MAIN_BUTTONS_Y_OFFSET + 142},
+				{x = 0, y = constants.MAIN_BUTTONS_Y_OFFSET + 168},
 				{
 					width = 198 - 2 * Graphics.SIZES.BORDER_MARGIN,
 					height = 21

@@ -144,9 +144,6 @@ local function RandomizerLogParser(initialProgram)
                 local level = moveInfo[1]:match("%d+")
                 local name = moveInfo[2]
                 local id = moveIDMappings[name]
-				if id == nil then
-					print("Report this move : " .. name)
-				end
                 table.insert(
                     pokemonList[pokemonID].moves,
                     {
@@ -170,9 +167,6 @@ local function RandomizerLogParser(initialProgram)
             local currentLine = lines[currentLineIndex]
             local moveName = currentLine:match("[%a%d]+ (.*)")
             local moveID = moveIDMappings[moveName]
-			if moveID == nil then
-					print("Report this TMMove : " .. moveName)
-			end
             table.insert(TMs, moveID)
             currentLineIndex = currentLineIndex + 1
         end
@@ -227,16 +221,11 @@ local function RandomizerLogParser(initialProgram)
                 }
                 pokemon.pokemonID = pokemonID
                 program.addAdditionalDataToPokemon(pokemon)
-                local abilityNames = {pokemonData[10], pokemonData[11]}
-				
+                local abilityNames = {pokemonData[10], pokemonData[11], pokemonData[12]}
                 pokemon.abilities = {}
                 for _, abilityName in pairs(abilityNames) do
                     if abilityIDMappings[abilityName] ~= nil and abilityName ~= "--" then
-						local abilityID = abilityIDMappings[abilityName]
-						if abilityID == nil then
-								print("Report this ability : " .. abilityName)
-						end
-                        table.insert(pokemon.abilities, abilityID)
+                        table.insert(pokemon.abilities, abilityIDMappings[abilityName])
                     end
                 end
             end
@@ -345,8 +334,7 @@ local function RandomizerLogParser(initialProgram)
             for _, sectionName in pairs(self.LogParserConstants.PREFERRED_PARSE_ORDER) do
                 local lineStart = sectionHeaderStarts[sectionName]
                 if lineStart ~= nil then
-                local parseFunction = self.LogParserConstants.SECTION_HEADER_TO_PARSE_FUNCTION[sectionName]
-
+                    local parseFunction = self.LogParserConstants.SECTION_HEADER_TO_PARSE_FUNCTION[sectionName]
                     local success = parseFunction(lines, lineStart)
                     if success == false then
                         forms.destroyall()
@@ -370,6 +358,5 @@ local function RandomizerLogParser(initialProgram)
 
     return self
 end
-
 
 return RandomizerLogParser
