@@ -112,7 +112,7 @@ local function TrackedInfoScreen(initialSettings, initialTracker, initialProgram
 			pastRunsButton = "Anciennes parties",
 			statisticsButton = "Statistiques",
 			openLogButton = "Ouvrir un Log",
-			openRestorePointsButton = "Restaurer une sauvegarde"
+			openRestorePointsButton = "Restaurer une sauvegarde",
 			loadTrackerDataButton = "Charger les données du tracker"
 		}
 		local icons = {"PENCIL", "PAST_RUN_ICON", "STATISTICS_ICON", "OPEN_LOG_ICON", "RESTORE_POINTS_ICON", "LOAD_TRACKER_DATA"}

@@ -101,7 +101,7 @@ local function MainOptionsScreen(initialSettings, initialTracker, initialProgram
 			trackedInfoButton = "Infos & Logs",
 			editControlsButton = "Modifier les controles",
 			quickLoadButton = "Paramètres de chargement rapide",
-			updaterButton = "Recherche de mise à jour"
+			updaterButton = "Recherche de mise à jour",
 			extrasButton = "Extras"
 		}
 		local icons = {"SWORD", "SPARKLES", "TRACKED_INFO_ICON", "CONTROLLER", "LIGHTNING_BOLT", "UPDATER_ICON", "EXTRAS_ICON"}
