@@ -1,10 +1,11 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "2.02.0"
+MiscConstants.TRACKER_VERSION = "2.02.1"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
+    '-- 2.02.1 Correction d\'un bug empechant le focus des ennemis',
     '-- La detection de defaite quand tous les pokemons ont perdus devrait enfin fonctionner',
     '-- Ajout des 5 dernieres mise a jour du tracker anglais',
 }
