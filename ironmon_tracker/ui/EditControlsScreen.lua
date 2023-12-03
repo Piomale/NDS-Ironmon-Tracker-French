@@ -1,4 +1,4 @@
-local function EditControlsScreen(initialSettings, initialTracker, initialProgram)
+local function TrackerSetupScreen(initialSettings, initialTracker, initialProgram)
     local Frame = dofile(Paths.FOLDERS.UI_BASE_CLASSES .. "/Frame.lua")
     local Box = dofile(Paths.FOLDERS.UI_BASE_CLASSES .. "/Box.lua")
     local Component = dofile(Paths.FOLDERS.UI_BASE_CLASSES .. "/Component.lua")
@@ -23,7 +23,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
             "CYCLE_PREDICTION",
             "LOCK_ENEMY"
         },
-        MAIN_FRAME_HEIGHT = 187,
+        MAIN_FRAME_HEIGHT = 211,
         CONTROL_EDIT_FRAME_HEIGHT = 159,
         TEXT_HEADER_HEIGHT = 18,
         BIND_BUTTON_FRAME_HEIGHT = 14,
@@ -40,7 +40,9 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
     local self = {}
 
     local function onJoypadPress(params)
-        if eventListeners["currentButtonWaiter"] == nil then return end
+        if eventListeners["currentButtonWaiter"] == nil then
+            return
+        end
         local button = params.button
         local settingToChange = params.settingToChange
         local additive = params.additive
@@ -52,7 +54,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
                 settings.controls[settingToChange] = button
             else
                 local buttons = MiscUtils.split(combo, " ")
-                if not MiscUtils.tableContains(buttons,button) then
+                if not MiscUtils.tableContains(buttons, button) then
                     settings.controls[settingToChange] = combo .. " " .. button
                 end
             end
@@ -219,45 +221,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
         )
     end
 
-    local function initUI()
-        ui.controls = {}
-        ui.frames = {}
-        ui.frames.mainFrame =
-            Frame(
-            Box(
-                {x = Graphics.SIZES.SCREEN_WIDTH, y = 0},
-                {width = 198, height = constants.MAIN_FRAME_HEIGHT},
-                "Main background color",
-                nil
-            ),
-            Layout(
-                Graphics.ALIGNMENT_TYPE.VERTICAL,
-                0,
-                {x = Graphics.SIZES.BORDER_MARGIN, y = Graphics.SIZES.BORDER_MARGIN}
-            ),
-            nil
-        )
-        ui.controls.mainHeading =
-            TextLabel(
-            Component(
-                ui.frames.mainFrame,
-                Box(
-                    {x = 5, y = 5},
-                    {
-                        width = 198 - 2 * Graphics.SIZES.BORDER_MARGIN,
-                        height = constants.TEXT_HEADER_HEIGHT
-                    },
-                    "Top box background color",
-                    "Top box border color",
-                    false
-                )
-            ),
-            TextField(
-                "Modifier les controles",
-                {x = 34, y = 1},
-                TextStyle(13, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
-            )
-        )
+    local function initControlEditingUI()
         ui.frames.controlEditFrame =
             Frame(
             Box(
@@ -269,11 +233,7 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
                 "Top box background color",
                 "Top box border color"
             ),
-            Layout(
-                Graphics.ALIGNMENT_TYPE.VERTICAL,
-                Graphics.SIZES.BORDER_MARGIN,
-                {x = 0, y = Graphics.SIZES.BORDER_MARGIN}
-            ),
+            Layout(Graphics.ALIGNMENT_TYPE.VERTICAL, Graphics.SIZES.BORDER_MARGIN, {x = 0, y = Graphics.SIZES.BORDER_MARGIN}),
             ui.frames.mainFrame
         )
         table.insert(eventListeners, MouseClickEventListener(ui.frames.controlEditFrame, onGeneralClick))
@@ -410,25 +370,110 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
             )
         )
         table.insert(eventListeners, MouseClickEventListener(clearButton, onClearNextSeedCombo))
+    end
+
+    local function initFavoritesEditingButton()
+        local favoritesFrame =
+            Frame(
+            Box(
+                {x = 0, y = 0},
+                {width =  198 - 2 * Graphics.SIZES.BORDER_MARGIN, height = 24},
+                "Top box background color",
+                "Top box border color"
+            ),
+            Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, 0, {x = 5, y = 5}),
+            ui.frames.mainFrame
+        )
+        local favoritesButton =
+            TextLabel(
+            Component(
+                favoritesFrame,
+                Box(
+                    {x = 0, y = 0},
+                    {
+                        width = 86,
+                        height = constants.BIND_BUTTON_HEIGHT
+                    },
+                    "Top box background color",
+                    "Top box border color",
+                    true,
+                    "Top box background color"
+                )
+            ),
+            TextField(
+                "Modifier les favoris",
+                {x = 5, y = 2},
+                TextStyle(
+                    Graphics.FONT.DEFAULT_FONT_SIZE,
+                    Graphics.FONT.DEFAULT_FONT_FAMILY,
+                    "Top box text color",
+                    "Top box background color"
+                )
+            )
+        )
+        table.insert(
+            eventListeners,
+            MouseClickEventListener(favoritesButton, program.openScreen, program.UI_SCREENS.TITLE_SCREEN)
+        )
+    end
+
+    local function initUI()
+        ui.controls = {}
+        ui.frames = {}
+        ui.frames.mainFrame =
+            Frame(
+            Box(
+                {x = Graphics.SIZES.SCREEN_WIDTH, y = 0},
+                {width = Graphics.SIZES.MAIN_SCREEN_WIDTH, height = constants.MAIN_FRAME_HEIGHT},
+                "Main background color",
+                nil
+            ),
+            Layout(Graphics.ALIGNMENT_TYPE.VERTICAL, 0, {x = Graphics.SIZES.BORDER_MARGIN, y = Graphics.SIZES.BORDER_MARGIN}),
+            nil
+        )
+        ui.controls.mainHeading =
+            TextLabel(
+            Component(
+                ui.frames.mainFrame,
+                Box(
+                    {x = 5, y = 5},
+                    {
+                        width =  198 - 2 * Graphics.SIZES.BORDER_MARGIN,
+                        height = constants.TEXT_HEADER_HEIGHT
+                    },
+                    "Top box background color",
+                    "Top box border color",
+                    false
+                )
+            ),
+            TextField(
+                "Controles & favoris",
+                {x = 30, y = 1},
+                TextStyle(13, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
+            )
+        )
+        initFavoritesEditingButton()
+        initControlEditingUI()
         ui.frames.goBackFrame =
-        Frame(
-        Box(
-            {x = 0, y = 0},
-            {
-                width = 198 - 2 * Graphics.SIZES.BORDER_MARGIN,
-                height = 0
-            },
-            nil, nil
-        ),
-        Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, 0, {x = 142, y = 0}),
-        ui.frames.controlEditFrame
-    )
+            Frame(
+            Box(
+                {x = 0, y = 0},
+                {
+                    width =  198 - 2 * Graphics.SIZES.BORDER_MARGIN,
+                    height = 0
+                },
+                nil,
+                nil
+            ),
+            Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, 4, {x = 137, y = 0}),
+            ui.frames.controlEditFrame
+        )
         ui.controls.goBackButton =
             TextLabel(
             Component(
                 ui.frames.goBackFrame,
                 Box(
-                    {x = 0, y = 0},
+                    {x = 198, y = 0},
                     {width = 40, height = 14},
                     "Top box background color",
                     "Top box border color",
@@ -464,4 +509,4 @@ local function EditControlsScreen(initialSettings, initialTracker, initialProgra
     return self
 end
 
-return EditControlsScreen
+return TrackerSetupScreen

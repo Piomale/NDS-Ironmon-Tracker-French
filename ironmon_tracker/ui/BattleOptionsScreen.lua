@@ -156,7 +156,7 @@ local function BattleOptionsScreen(initialSettings, initialTracker, initialProgr
             Component(
                 ui.frames.mainFrame,
                 Box(
-                    {x = 198 - 49, y = constants.BATTLE_OPTIONS_HEIGHT - 23},
+                    {x = 140, y = constants.BATTLE_OPTIONS_HEIGHT - 23},
                     {width = 40, height = 14},
                     "Top box background color",
                     "Top box border color", true, "Top box background color"

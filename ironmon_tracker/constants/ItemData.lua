@@ -299,8 +299,8 @@ ItemData.GEN_4_ITEMS = {
         description = "Tries to catch a wild Pokemon. Success rate increases by 0.1x (Gen V: 0.3x) every turn, to a max of 4x."
     },
     [11] = {
-        name = "Luxe Ball",
-        description = "Tries to catch a wild Pokemon. Caught Pokmon start with 200 happiness."
+        name = "Luxury Ball",
+        description = "Tries to catch a wild Pokemon. Caught Pok" .. Chars.accentedE .. "mon start with 200 happiness."
     },
     [12] = {
         name = "Honor Ball",
@@ -459,7 +459,7 @@ ItemData.GEN_4_ITEMS = {
         description = "Causes a level-up and raises happiness."
     },
     [51] = {
-        name = "Pp Up",
+        name = "PP Up",
         description = "Raises a move's max PP by 20%."
     },
     [52] = {
@@ -467,7 +467,7 @@ ItemData.GEN_4_ITEMS = {
         description = "Raises Special Defense and happiness."
     },
     [53] = {
-        name = "Pp Max",
+        name = "PP Max",
         description = "Raises a move's max PP by 60%."
     },
     [54] = {
@@ -1027,8 +1027,8 @@ ItemData.GEN_4_ITEMS = {
         description = "Holder gains double effort values from battles, but has halved Speed in battle."
     },
     [216] = {
-        name = "Multi Exp",
-        description = "Half the experience from a battle is split between Pokmon holding this item."
+        name = "Exp Share",
+        description = "Half the experience from a battle is split between Pok" .. Chars.accentedE .. "mon holding this item."
     },
     [217] = {
         name = "Vive Griffe",
@@ -1284,7 +1284,7 @@ ItemData.GEN_4_ITEMS = {
     },
     [280] = {
         name = "Noeud Destin",
-        description = "Infatuates opposing Pokmon when holder is inflicted with infatuation."
+        description = "Infatuates opposing Pok" .. Chars.accentedE .. "mon when holder is inflicted with infatuation."
     },
     [281] = {
         name = "Boue Noire",
@@ -2084,7 +2084,7 @@ ItemData.GEN_4_ITEMS = {
     },
     [499] = {
         name = "Parc Ball",
-        description = "Tries to catch a Pokmon in the Bug-Catching contest in National Park. "
+        description = "Tries to catch a Pok" .. Chars.accentedE .. "mon in the Bug-Catching contest in National Park. "
     },
     [485] = {
         name = "Noigrume Rouge ",
@@ -2363,7 +2363,7 @@ ItemData.GEN_5_ITEMS = {
     },
     [11] = {
         name = "Luxe Ball",
-        description = "Tries to catch a wild Pokemon. Caught Pokmon start with 200 happiness."
+        description = "Tries to catch a wild Pokemon. Caught Pok" .. Chars.accentedE .. "mon start with 200 happiness."
     },
     [12] = {
         name = "Honor Ball",
@@ -2522,7 +2522,7 @@ ItemData.GEN_5_ITEMS = {
         description = "Causes a level-up and raises happiness."
     },
     [51] = {
-        name = "Pp Up",
+        name = "PP Up",
         description = "Raises a move's max PP by 20%."
     },
     [52] = {
@@ -2530,7 +2530,7 @@ ItemData.GEN_5_ITEMS = {
         description = "Raises Special Defense and happiness."
     },
     [53] = {
-        name = "Pp Max",
+        name = "PP Max",
         description = "Raises a move's max PP by 60%."
     },
     [54] = {
@@ -3043,7 +3043,7 @@ ItemData.GEN_5_ITEMS = {
     },
     [216] = {
         name = "Multi Exp",
-        description = "Half the experience from a battle is split between Pokmon holding this item."
+        description = "Half the experience from a battle is split between Pok" .. Chars.accentedE .. "mon holding this item."
     },
     [217] = {
         name = "Vive Griffe",
@@ -3299,7 +3299,7 @@ ItemData.GEN_5_ITEMS = {
     },
     [280] = {
         name = "Noeud Destin",
-        description = "Infatuates opposing Pokmon when holder is inflicted with infatuation."
+        description = "Infatuates opposing Pok" .. Chars.accentedE .. "mon when holder is inflicted with infatuation."
     },
     [281] = {
         name = "Boue Noire",
@@ -4091,7 +4091,7 @@ ItemData.GEN_5_ITEMS = {
     },
     [499] = {
         name = "Parc Ball",
-        description = "Tries to catch a Pokmon in the Bug-Catching contest in National Park."
+        description = "Tries to catch a Pok" .. Chars.accentedE .. "mon in the Bug-Catching contest in National Park."
     },
     [485] = {
         name = "Noigrume Rouge ",

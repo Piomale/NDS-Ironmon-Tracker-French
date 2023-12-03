@@ -4,6 +4,7 @@ IronmonTracker = {}
 
 local tableAccents = {}
 local tableAccents2 = {}
+local checkAccent = false
 
 function initAccent()
 	tableAccents["À"] = "\192"
@@ -140,14 +141,15 @@ function initAccent()
 end
 
 function stripChars(str)
-	if tableAccents then
+	if checkAccent then
+		print("ici")
 		return str:gsub("[%z\1-\127\194-\244][\128-\191]*", tableAccents)
 	end
     return str
 end
 
 function IgnoreChars(str)
-	if tableAccents2 then
+	if checkAccent then
 		 return str:gsub("[%z\1-\127\194-\244][\128-\191]*", tableAccents2)
 	end
    
@@ -158,8 +160,8 @@ function IronmonTracker.startTracker()
 	local version = client.getversion()
 	if tonumber(version:sub(1, 1)) == 2 and tonumber(version:sub(3, 3)) < 9 then
 		initAccent()
+		checkAccent = true
 	end
-	
 	local Main = dofile("ironmon_tracker/Main.lua")
 	gui.clearImageCache()
 	collectgarbage()

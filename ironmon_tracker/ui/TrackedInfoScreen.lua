@@ -13,13 +13,13 @@ local function TrackedInfoScreen(initialSettings, initialTracker, initialProgram
 	local tracker = initialTracker
 	local program = initialProgram
 	local constants = {
-		TRACKED_INFO_HEIGHT = 252,
+		TRACKED_INFO_HEIGHT = 287,
 		MAIN_BUTTONS_Y_OFFSET = 5,
 		MAIN_BUTTONS_X_OFFSET = 15,
 		MAIN_BUTTON_SPACING = 5,
 		MAIN_BUTTON_WIDTH = 160,
 		MAIN_BUTTON_HEIGHT = 19,
-		BUTTONS_FRAME_HEIGHT = 125,
+		BUTTONS_FRAME_HEIGHT = 150,
 		FAINT_DETECTION_FRAME_HEIGHT = 90,
 		FAINT_DETECTION_ROW_HEIGHT = 13,
 		BUTTON_SIZE = 10
@@ -86,7 +86,7 @@ local function TrackedInfoScreen(initialSettings, initialTracker, initialProgram
 			Component(
 				ui.frames.bottomFrame,
 				Box(
-					{x = 0, y = 0},
+					{x = 198, y = 0},
 					{width = 40, height = 14},
 					"Top box background color",
 					"Top box border color",
@@ -96,7 +96,7 @@ local function TrackedInfoScreen(initialSettings, initialTracker, initialProgram
 			),
 			TextField(
 				"Retour",
-				{x = 3, y = 1},
+				{x = 5, y = 1},
 				TextStyle(
 					Graphics.FONT.DEFAULT_FONT_SIZE,
 					Graphics.FONT.DEFAULT_FONT_FAMILY,
@@ -320,7 +320,7 @@ local function TrackedInfoScreen(initialSettings, initialTracker, initialProgram
 				"Top box background color",
 				"Top box border color"
 			),
-			Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, 4, {x = 96, y = 4}),
+			Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, 4, {x = 135, y = 4}),
 			ui.frames.mainInnerFrame
 		)
 		initMainButtons()
