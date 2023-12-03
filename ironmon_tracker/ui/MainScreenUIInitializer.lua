@@ -101,13 +101,7 @@ local function MainScreenUIInitializer(ui, gameInfo)
                 {
                     width = constants.POKEMON_INFO_X_OFFSET,
                     height = constants.POKEMON_INFO_HEIGHT
-                },
-                nil,
-                nil,
-                nil,
-                nil,
-                nil,
-                1
+                }
             ),
             Layout(Graphics.ALIGNMENT_TYPE.VERTICAL),
             ui.frames.mainPokemonInfoFrame
@@ -124,7 +118,7 @@ local function MainScreenUIInitializer(ui, gameInfo)
                     height = constants.POKEMON_INFO_HEIGHT
                 }
             ),
-            Layout(Graphics.ALIGNMENT_TYPE.VERTICAL, 0, {x = 0, y = 1}),
+            Layout(Graphics.ALIGNMENT_TYPE.VERTICAL),
             ui.frames.mainPokemonInfoFrame
         )
         ui.frames.pokemonNameGearFrame =
@@ -136,7 +130,7 @@ local function MainScreenUIInitializer(ui, gameInfo)
                 },
                 {
                     width = constants.POKEMON_INFO_X_OFFSET,
-                    height = 9
+                    height = 10
                 }
             ),
             Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL),
@@ -527,10 +521,7 @@ local function MainScreenUIInitializer(ui, gameInfo)
     function self.initPokemonInfoControls()
         ui.controls.pokemonImageLabel =
             ImageLabel(
-            Component(
-                ui.frames.pokemonImageTypeFrame,
-                Box({x = 0, y = 0}, {width = 30, height = 28}, nil, nil, nil, nil, nil, 1)
-            ),
+            Component(ui.frames.pokemonImageTypeFrame, Box({x = 0, y = 0}, {width = 30, height = 28}, nil, nil)),
             ImageField("ironmon_tracker/images/pokemonIcons/1.png", {x = 0, y = -5}, nil)
         )
         ui.controls.pokemonType1 =
@@ -545,10 +536,10 @@ local function MainScreenUIInitializer(ui, gameInfo)
         )
         ui.controls.pokemonNameLabel =
             TextLabel(
-            Component(ui.frames.pokemonNameGearFrame, Box({x = 0, y = 0}, {width = 56, height = 9})),
+            Component(ui.frames.pokemonNameGearFrame, Box({x = 0, y = 0}, {width = 56, height = 10}, nil, nil)),
             TextField(
                 "Gorebyss",
-                {x = 0, y = -1},
+                Graphics.SIZES.DEFAULT_TEXT_OFFSET,
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
                     Graphics.FONT.DEFAULT_FONT_FAMILY,
@@ -572,8 +563,7 @@ local function MainScreenUIInitializer(ui, gameInfo)
                         x = 0,
                         y = 0
                     },
-                    {width = 50, height = 10},
-                    "Top box background color"
+                    {width = 62, height = 10}
                 )
             ),
             TextField(
@@ -1097,25 +1087,28 @@ local function MainScreenUIInitializer(ui, gameInfo)
             {x = 2, y = 1}
         )
         ui.controls.trophyImage =
-            Icon(
+        Icon(
             Component(ui.frames.tourneyPointsFrame, Box({x = 0, y = 2}, {width = 0, height = 0}, nil, nil)),
             "TROPHY_ICON",
             {x = 0, y = 0}
         )
         ui.controls.tourneyPointsLabel =
-            TextLabel(
-            Component(ui.frames.tourneyPointsFrame, Box({x = 0, y = 0}, {width = 4, height = 0}, nil, nil)),
-            TextField(
-                "89",
-                {x = 6, y = 5},
-                TextStyle(
-                    Graphics.FONT.DEFAULT_FONT_SIZE,
-                    Graphics.FONT.DEFAULT_FONT_FAMILY,
-                    "Top box text color",
-                    "Top box background color"
-                )
+        TextLabel(
+        Component(
+            ui.frames.tourneyPointsFrame,
+            Box({x = 0, y = 0}, {width = 4, height = 0}, nil, nil)
+        ),
+        TextField(
+            "89",
+            {x = 6, y = 5},
+            TextStyle(
+                Graphics.FONT.DEFAULT_FONT_SIZE,
+                Graphics.FONT.DEFAULT_FONT_FAMILY,
+                "Top box text color",
+                "Top box background color"
             )
         )
+    )
         ui.controls.noteIcon =
             Icon(
             Component(ui.frames.enemyNoteFrame, Box({x = 0, y = 0}, {width = 11, height = 16}, nil, nil)),

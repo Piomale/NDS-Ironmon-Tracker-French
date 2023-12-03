@@ -36,9 +36,6 @@ local function TextField(initialText, initialTextOffset, initialTextStyle, isJus
         textStyle.setShadowColorKey(newShadowColorKey)
     end
     function self.show()
-        if text == "" then
-            return
-        end
         local shadowColorKey = textStyle.getShadowColorKey()
         local shadowColor = DrawingUtils.calcShadowColor(shadowColorKey)
         local newPosition = {

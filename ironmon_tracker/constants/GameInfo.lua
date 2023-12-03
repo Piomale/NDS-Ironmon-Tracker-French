@@ -26,11 +26,7 @@ GameInfo.GAME_INFO = {
         ENCRYPTED_POKEMON_SIZE = 236,
         GYM_TMS = {76, 86, 60, 55, 65, 91, 72, 57},
         TRAINERS = TrainerData.TRAINERS[GameInfo.VERSION_NUMBER.DIAMOND],
-        LOCATION_DATA = LocationData.LOCATION_DATA[GameInfo.VERSION_NUMBER.PLATINUM],
-        PIVOT_TYPES = {
-            ["Old Rod"] = true,
-            ["Grass/Cave"] = true
-        }
+        LOCATION_DATA = LocationData.LOCATION_DATA[GameInfo.VERSION_NUMBER.PLATINUM]
     },
     [GameInfo.VERSION_NUMBER.PEARL] = {
         GEN = 4,
@@ -42,11 +38,7 @@ GameInfo.GAME_INFO = {
         ENCRYPTED_POKEMON_SIZE = 236,
         GYM_TMS = {76, 86, 60, 55, 65, 91, 72, 57},
         TRAINERS = TrainerData.TRAINERS[GameInfo.VERSION_NUMBER.DIAMOND],
-        LOCATION_DATA = LocationData.LOCATION_DATA[GameInfo.VERSION_NUMBER.PLATINUM],
-        PIVOT_TYPES = {
-            ["Old Rod"] = true,
-            ["Grass/Cave"] = true
-        }
+        LOCATION_DATA = LocationData.LOCATION_DATA[GameInfo.VERSION_NUMBER.PLATINUM]
     },
     [GameInfo.VERSION_NUMBER.PLATINUM] = {
         GEN = 4,
@@ -58,11 +50,7 @@ GameInfo.GAME_INFO = {
         ENCRYPTED_POKEMON_SIZE = 236,
         GYM_TMS = {76, 86, 60, 55, 65, 91, 72, 57},
         TRAINERS = TrainerData.TRAINERS[GameInfo.VERSION_NUMBER.PLATINUM],
-        LOCATION_DATA = LocationData.LOCATION_DATA[GameInfo.VERSION_NUMBER.PLATINUM],
-        PIVOT_TYPES = {
-            ["Old Rod"] = true,
-            ["Grass/Cave"] = true
-        }
+        LOCATION_DATA = LocationData.LOCATION_DATA[GameInfo.VERSION_NUMBER.PLATINUM]
     },
     [GameInfo.VERSION_NUMBER.HEART_GOLD] = {
         GEN = 4,
@@ -74,11 +62,7 @@ GameInfo.GAME_INFO = {
         ENCRYPTED_POKEMON_SIZE = 236,
         GYM_TMS = {51, 89, 45, 30, 01, 23, 07, 59, -1, 80, 03, 34, 19, 84, 48, 50, 92},
         TRAINERS = TrainerData.TRAINERS[GameInfo.VERSION_NUMBER.HEART_GOLD],
-        LOCATION_DATA = LocationData.LOCATION_DATA[GameInfo.VERSION_NUMBER.HEART_GOLD],
-        PIVOT_TYPES = {
-            ["Grass/Cave"] = true,
-            ["Headbutt"] = true
-        }
+        LOCATION_DATA = LocationData.LOCATION_DATA[GameInfo.VERSION_NUMBER.HEART_GOLD]
     },
 	[GameInfo.VERSION_NUMBER.HEART_GOLD_FR] = {
         GEN = 4,
@@ -102,11 +86,7 @@ GameInfo.GAME_INFO = {
         ENCRYPTED_POKEMON_SIZE = 236,
         GYM_TMS = {51, 89, 45, 30, 01, 23, 07, 59, -1, 80, 03, 34, 19, 84, 48, 50, 92},
         TRAINERS = TrainerData.TRAINERS[GameInfo.VERSION_NUMBER.HEART_GOLD],
-        LOCATION_DATA = LocationData.LOCATION_DATA[GameInfo.VERSION_NUMBER.HEART_GOLD],
-        PIVOT_TYPES = {
-            ["Grass/Cave"] = true,
-            ["Headbutt"] = true
-        }
+        LOCATION_DATA = LocationData.LOCATION_DATA[GameInfo.VERSION_NUMBER.HEART_GOLD]
     },
     [GameInfo.VERSION_NUMBER.BLACK] = {
         GEN = 5,
@@ -118,11 +98,7 @@ GameInfo.GAME_INFO = {
         ENCRYPTED_POKEMON_SIZE = 220,
         GYM_TMS = {83, 67, 76, 72, 78, 62, 79, 82},
         TRAINERS = TrainerData.TRAINERS[GameInfo.VERSION_NUMBER.BLACK],
-        LOCATION_DATA = LocationData.LOCATION_DATA[GameInfo.VERSION_NUMBER.BLACK],
-        PIVOT_TYPES = {
-            ["Grass/Cave"] = true,
-            ["Shaking Spots"] = true
-        }
+        LOCATION_DATA = LocationData.LOCATION_DATA[GameInfo.VERSION_NUMBER.BLACK]
     },
     [GameInfo.VERSION_NUMBER.BLACK_FR] = {
         GEN = 5,
@@ -146,11 +122,7 @@ GameInfo.GAME_INFO = {
         ENCRYPTED_POKEMON_SIZE = 220,
         GYM_TMS = {83, 67, 76, 72, 78, 62, 79, 82},
         TRAINERS = TrainerData.TRAINERS[GameInfo.VERSION_NUMBER.WHITE],
-        LOCATION_DATA = LocationData.LOCATION_DATA[GameInfo.VERSION_NUMBER.BLACK],
-        PIVOT_TYPES = {
-            ["Grass/Cave"] = true,
-            ["Shaking Spots"] = true
-        }
+        LOCATION_DATA = LocationData.LOCATION_DATA[GameInfo.VERSION_NUMBER.BLACK]
     },
 	[GameInfo.VERSION_NUMBER.WHITE_FR] = {
         GEN = 5,
@@ -174,11 +146,7 @@ GameInfo.GAME_INFO = {
         ENCRYPTED_POKEMON_SIZE = 220,
         GYM_TMS = {83, 09, 76, 72, 78, 62, 82, 55},
         TRAINERS = TrainerData.TRAINERS[GameInfo.VERSION_NUMBER.BLACK2],
-        LOCATION_DATA = LocationData.LOCATION_DATA[GameInfo.VERSION_NUMBER.BLACK2],
-        PIVOT_TYPES = {
-            ["Grass/Cave"] = true,
-            ["Shaking Spots"] = true
-        }
+        LOCATION_DATA = LocationData.LOCATION_DATA[GameInfo.VERSION_NUMBER.BLACK2]
     },
     [GameInfo.VERSION_NUMBER.WHITE2] = {
         GEN = 5,
@@ -190,10 +158,6 @@ GameInfo.GAME_INFO = {
         ENCRYPTED_POKEMON_SIZE = 220,
         GYM_TMS = {83, 09, 76, 72, 78, 62, 82, 55},
         TRAINERS = TrainerData.TRAINERS[GameInfo.VERSION_NUMBER.BLACK2],
-        LOCATION_DATA = LocationData.LOCATION_DATA[GameInfo.VERSION_NUMBER.BLACK2],
-        PIVOT_TYPES = {
-            ["Grass/Cave"] = true,
-            ["Shaking Spots"] = true
-        }
+        LOCATION_DATA = LocationData.LOCATION_DATA[GameInfo.VERSION_NUMBER.BLACK2]
     }
 }

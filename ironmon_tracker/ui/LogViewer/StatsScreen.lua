@@ -47,11 +47,13 @@ local function StatsScreen(initialSettings, initialTracker, initialProgram, init
         currentID = currentData[currentIDIndex]
         local data = PokemonData.POKEMON[currentID + 1]
         local currentIconSet = IconSets.SETS[settings.appearance.ICON_SET_INDEX]
-        DrawingUtils.readPokemonIDIntoImageLabel(currentIconSet, currentID, ui.controls.pokemonImage)
+        DrawingUtils.readPokemonIDIntoImageLabel(
+            currentIconSet, currentID, ui.controls.pokemonImage, {x=1,y=0}
+        )
         ui.controls.statBarGraph.setDataSet(logViewerScreen.readStats(logPokemon[currentID]))
         local name = data.name
         ui.controls.statBarGraph.setHeadingText("Base Stats (" .. data.bst .. " total)")
-        ui.controls.currentPokemonLabel.setText("#" .. currentIDIndex .. ". " .. name)
+        ui.controls.currentPokemonLabel.setText("#"..currentIDIndex..". "..name)
         program.drawCurrentScreens()
     end
 
@@ -59,7 +61,7 @@ local function StatsScreen(initialSettings, initialTracker, initialProgram, init
         local name = currentStatistic[1]
         local nameLength = DrawingUtils.calculateWordPixelLength(name)
         --very jank calculation because the bigger font adds more space between letters
-        local offsetX = (constants.TOP_LABEL_WIDTH - nameLength - #name - 2) / 2
+        local offsetX = (constants.TOP_LABEL_WIDTH - nameLength - #name - 2)/2
         ui.controls.topLabel.setTextOffset({x = offsetX, y = 0})
         ui.controls.topLabel.setText(name)
         local nameToDescription = {
@@ -74,13 +76,8 @@ local function StatsScreen(initialSettings, initialTracker, initialProgram, init
         local totalWidth = ui.frames.mainFrame.getSize().width - 10
         local base = -30
         local centerX = base + ((totalWidth - DrawingUtils.calculateWordPixelLength(description)) / 2)
-<<<<<<< HEAD
         ui.controls.description.setText(stripChars(description))
         ui.controls.description.setTextOffset({x=centerX, y = 0})
-=======
-        ui.controls.description.setText(description)
-        ui.controls.description.setTextOffset({x = centerX, y = 0})
->>>>>>> upstream/main
     end
 
     local function setUpCurrentStatisticIndex()
@@ -125,7 +122,7 @@ local function StatsScreen(initialSettings, initialTracker, initialProgram, init
     end
 
     local function openStatsTab()
-        logViewerScreen.changeActiveTabIndex(7)
+        logViewerScreen.changeActiveTabIndex(4)
         program.drawCurrentScreens()
     end
 
@@ -177,8 +174,7 @@ local function StatsScreen(initialSettings, initialTracker, initialProgram, init
                 )
             )
         )
-        ui.frames.currentPokemonFrame =
-            Frame(
+        ui.frames.currentPokemonFrame =  Frame(
             Box(
                 {
                     x = 0,
@@ -194,8 +190,7 @@ local function StatsScreen(initialSettings, initialTracker, initialProgram, init
             Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, 0, {x = constants.CURRENT_POKEMON_X_OFFSET, y = 0}),
             ui.frames.statAreaFrame
         )
-        ui.controls.pokemonImage =
-            ImageLabel(
+        ui.controls.pokemonImage = ImageLabel(
             Component(ui.frames.currentPokemonFrame, Box({x = 0, y = 0}, {width = 30, height = 28}, nil, nil)),
             ImageField("", {x = 0, y = 0}, nil)
         )
@@ -298,7 +293,8 @@ local function StatsScreen(initialSettings, initialTracker, initialProgram, init
         local arrowFrameInfo =
             FrameFactory.createArrowFrame("LEFT_ARROW_LARGE", ui.frames.topFrame, arrowFrameWidth, verticalOffset)
         ui.frames.statisticLeftArrowFrame, ui.controls.statisticLeftButton = arrowFrameInfo.frame, arrowFrameInfo.button
-        eventListeners.statisticLeft = MouseClickEventListener(ui.controls.statisticLeftButton, onBackwardStatisticClick)
+        eventListeners.statisticLeft =
+            MouseClickEventListener(ui.controls.statisticLeftButton, onBackwardStatisticClick)
 
         ui.controls.topLabel =
             TextLabel(
@@ -323,9 +319,12 @@ local function StatsScreen(initialSettings, initialTracker, initialProgram, init
 
         arrowFrameInfo =
             FrameFactory.createArrowFrame("RIGHT_ARROW_LARGE", ui.frames.topFrame, arrowFrameWidth, verticalOffset)
-        ui.frames.statisticRightArrowFrame, ui.controls.statisticRightButton = arrowFrameInfo.frame, arrowFrameInfo.button
+        ui.frames.statisticRightArrowFrame, ui.controls.statisticRightButton =
+            arrowFrameInfo.frame,
+            arrowFrameInfo.button
 
-        eventListeners.statisticRight = MouseClickEventListener(ui.controls.statisticRightButton, onForwardStatisticClick)
+        eventListeners.statisticRight =
+            MouseClickEventListener(ui.controls.statisticRightButton, onForwardStatisticClick)
     end
 
     local function initUI()
@@ -340,7 +339,8 @@ local function StatsScreen(initialSettings, initialTracker, initialProgram, init
                 },
                 {
                     width = Graphics.SIZES.SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
-                    height = Graphics.SIZES.SCREEN_HEIGHT - 2 * Graphics.SIZES.BORDER_MARGIN - Graphics.LOG_VIEWER.TAB_HEIGHT -
+                    height = Graphics.SIZES.SCREEN_HEIGHT - 2 * Graphics.SIZES.BORDER_MARGIN -
+                        Graphics.LOG_VIEWER.TAB_HEIGHT -
                         5
                 },
                 "Top box background color",

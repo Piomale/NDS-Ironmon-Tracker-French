@@ -639,17 +639,17 @@ LocationData.LOCATION_DATA = {
             ["Lake Verity"] = {
                 totalPokemon = 2,
                 vanillaData = {
-                    {
-                        {level = 3, percent = 20},
-                        {level = 5, percent = 20},
-                        {level = 6, percent = 10}
-                    },
-                    {
-                        {level = 3, percent = 20},
-                        {level = 5, percent = 20},
-                        {level = 6, percent = 10}
-                    }
-                }
+                {
+                    {level = 3, percent = 20},
+                    {level = 5, percent = 20},
+                    {level = 6, percent = 10}
+                },
+                {
+                    {level = 3, percent = 20},
+                    {level = 5, percent = 20},
+                    {level = 6, percent = 10}
+                },
+            }
             },
             ["Route 203"] = {
                 totalPokemon = 5,
@@ -704,19 +704,9 @@ LocationData.LOCATION_DATA = {
                         {level = 6, percent = 20},
                         {level = 8, percent = 4},
                         {level = 9, percent = 1}
-                    }
+                    },
                 }
             }
-        },
-        encounterAreaOrder = {
-            "Lake Verity",
-            "Route 201",
-            "Route 202",
-            "Route 203",
-            "Route 204",
-            "Twinleaf Town",
-            "Route 218",
-            "Route 219"
         }
     },
     --heartgold/soulsilver
@@ -877,8 +867,8 @@ LocationData.LOCATION_DATA = {
             [152] = {name = "Route 48"},
             [153] = {name = "Union Cave"},
             [154] = {name = "Union Cave"},
-            [155] = {name = "Sprout Tower 1F"},
-            [156] = {name = "Sprout Tower 2F"},
+            [155] = {name = "Sprout Tower"},
+            [156] = {name = "Sprout Tower"},
             [157] = {name = "Violet City"},
             [158] = {name = "Violet City"},
             [159] = {name = "Violet City"},
@@ -1376,9 +1366,15 @@ LocationData.LOCATION_DATA = {
                     }
                 }
             },
-            ["Sprout Tower 1F"] = {
-                totalPokemon = 1,
+            ["Sprout Tower"] = {
+                totalPokemon = 2,
                 vanillaData = {
+                    {
+                        {level = 5, percent = 40},
+                        {level = 6, percent = 30},
+                        {level = 8, percent = 25},
+                        {level = 9, percent = 5}
+                    },
                     {
                         {level = 5, percent = 40},
                         {level = 6, percent = 30},
@@ -1386,31 +1382,7 @@ LocationData.LOCATION_DATA = {
                         {level = 9, percent = 5}
                     }
                 }
-            },
-            ["Sprout Tower 2F"] = {
-                totalPokemon = 1,
-                vanillaData = {
-                    {
-                        {level = 5, percent = 40},
-                        {level = 6, percent = 30},
-                        {level = 8, percent = 25},
-                        {level = 9, percent = 5}
-                    }
-                }
-            },
-            ["Cherrygrove City"] = nil
-        },
-        encounterAreaOrder = {
-            "Route 29",
-            "Route 46",
-            "Cherrygrove City",
-            "Route 30",
-            "Route 31",
-            "Route 32",
-            "Ruins of Alph",
-            "Sprout Tower 1F",
-            "Sprout Tower 2F"
-            --"Dark Cave"
+            }
         }
     },
     --black/white
@@ -1685,8 +1657,7 @@ LocationData.LOCATION_DATA = {
                     }
                 }
             }
-        },
-        encounterAreaOrder = {"Route 1", "Route 2", "Dreamyard", "Route 3"}
+        }
     },
     --black2/white2
     [0x4F455249] = {
@@ -1792,8 +1763,8 @@ LocationData.LOCATION_DATA = {
             [427] = {name = "Aspertia City"},
             [165] = {name = "Aspertia City's gym"},
             [437] = {name = "Route 19"},
-            [439] = {name = "Floccesy Town"},
-            [444] = {name = "Floccesy Ranch"},
+            [439] = {name = "Flocessy Town"},
+            [444] = {name = "Flocessy Ranch"},
             [446] = {name = "Route 20"},
             [448] = {name = "Virbank City"},
             [176] = {name = "Virbank City's gym"},
@@ -1820,7 +1791,6 @@ LocationData.LOCATION_DATA = {
             [584] = {name = "Nature Preserve"},
             [573] = {name = "Victory Road"}
         },
-        encounterAreaOrder = {"Route 19", "Route 20", "Floccesy Ranch", "Virbank Complex"},
         encounters = {
             ["Route 19"] = {
                 totalPokemon = 2,
@@ -1861,7 +1831,7 @@ LocationData.LOCATION_DATA = {
                     }
                 }
             },
-            ["Floccesy Ranch"] = {
+            ["Flocessy Ranch"] = {
                 totalPokemon = 7,
                 vanillaData = {
                     {
@@ -1888,33 +1858,6 @@ LocationData.LOCATION_DATA = {
                     },
                     {
                         {level = 11, percent = 5}
-                    }
-                }
-            },
-            ["Virbank Complex"] = {
-                totalPokemon = 4,
-                vanillaData = {
-                    {
-                        {level = 15, percent = 20},
-                        {level = 18, percent = 5}
-                    },
-                    {
-                        {level = 15, percent = 20},
-                        {level = 18, percent = 5}
-                    },
-                    {
-                        {level = 15, percent = 10},
-                        {level = 18, percent = 4},
-                        {level = 20, percent = 1}
-                    },
-                    {
-                        {level = 15, percent = 10},
-                        {level = 18, percent = 4},
-                        {level = 20, percent = 1}
-                    },
-                    {
-                        {level = 17, percent = 10},
-                        {level = 20, percent = 10}
                     }
                 }
             }

@@ -14,7 +14,7 @@ local function Frame(initialBox, initialLayout, initialFrame, initialVisibility)
             layout.setItems(controls)
             layout.changeItemPositions()
         else
-            for _, control in pairs(controls) do
+            for _,control in pairs(controls) do
                 control.calculateActualPosition(self.getPosition())
             end
         end
@@ -75,9 +75,6 @@ local function Frame(initialBox, initialLayout, initialFrame, initialVisibility)
         visible = newVisibility
     end
     function self.isVisible()
-        if type(visible) == "function" then
-            return visible()
-        end
         return visible
     end
     function self.move(newPosition)
@@ -95,32 +92,11 @@ local function Frame(initialBox, initialLayout, initialFrame, initialVisibility)
     function self.setLayoutPadding(newPadding)
         layout.setPadding(newPadding)
     end
-    function self.getZIndex()
-        return box.getZIndex()
-    end
     function self.show()
-        if self.isVisible() then
+        if visible then
             box.show()
             self.recalculateChildPositions()
-            local toDraw = {}
             for _, control in pairs(controls) do
-                table.insert(toDraw, control)
-            end
-            table.sort(
-                toDraw,
-                function(a, b)
-                    local zA = 0
-                    local zB = 0
-                    if a.getZIndex then
-                        zA = a.getZIndex()
-                    end
-                    if b.getZIndex then
-                        zB = b.getZIndex()
-                    end
-                    return zA < zB
-                end
-            )
-            for _, control in pairs(toDraw) do
                 control.show()
             end
         end

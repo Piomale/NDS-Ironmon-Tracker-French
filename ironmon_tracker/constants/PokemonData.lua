@@ -19,28 +19,7 @@ PokemonData.TYPE_LIST = {
     "WATER"
 }
 
-PokemonData.FULL_TYPE_LIST = {
-    "BUG",
-    "DARK",
-    "DRAGON",
-    "ELECTRIC",
-    "FIGHTING",
-    "FIRE",
-    "FLYING",
-    "GHOST",
-    "GRASS",
-    "GROUND",
-    "ICE",
-    "NORMAL",
-    "POISON",
-    "PSYCHIC",
-    "ROCK",
-    "STEEL",
-    "WATER"
-}
-
 PokemonData.LAST_INDEX_GEN_4 = 494
-PokemonData.LAST_INDEX_GEN_5 = 650
 
 -- Enumerated constants that defines the various types a Pokemon and its Moves are
 PokemonData.POKEMON_TYPES =
@@ -178,9 +157,7 @@ PokemonData.EVO_LONGER_NAMES = {
     [PokemonData.EVOLUTION_TYPES.COMBEE] = {"Level 21, F only"}
 }
 
-PokemonData.POKEMON = {}
-
-PokemonData.POKEMON_MASTER_LIST = {
+PokemonData.POKEMON = {
     {
         -- Empty entry for ID 0
         name = "---",
@@ -1342,7 +1319,7 @@ PokemonData.POKEMON_MASTER_LIST = {
             {4, 8, 11, 15, 18, 22, 27, 31, 36, 42, 47, 53, 58, 64, 69}
         },
         weight = 300.0,
-        theme = "FFFFFF FFFFFF 83FE74 FDB77E F9FF76 F78C86 A67A62 C0A190 BABBB7 969891 575953 FFFFFF FFFFFF FFFFFF 0 1 1 1 0 1"
+         theme = "FFFFFF FFFFFF 83FE74 FDB77E F9FF76 F78C86 A67A62 C0A190 BABBB7 969891 575953 FFFFFF FFFFFF FFFFFF 0 1 1 1 0 1"
     },
     {
         name = "Ponyta",
@@ -9962,7 +9939,6 @@ PokemonData.ALTERNATE_FORMS = {
     ["Deoxys"] = {
         cosmetic = false,
         index = 0,
-        baseIndex = 386,
         forms = {
             {
                 name = "Deoxys A",
@@ -10011,12 +9987,7 @@ PokemonData.ALTERNATE_FORMS = {
             }
         }
     },
-<<<<<<< HEAD
     ["Cheniselle P"] = {
-=======
-    ["Cheniselle P"] = {
-        baseIndex = 413,
->>>>>>> upstream/main
         cosmetic = false,
         index = 0,
         forms = {
@@ -10053,7 +10024,6 @@ PokemonData.ALTERNATE_FORMS = {
         }
     },
     ["Shaymin L"] = {
-        baseIndex = 492,
         cosmetic = false,
         index = 0,
         forms = {
@@ -10075,7 +10045,6 @@ PokemonData.ALTERNATE_FORMS = {
         }
     },
     ["Giratina A"] = {
-        baseIndex = 487,
         cosmetic = false,
         index = 0,
         forms = {
@@ -10096,12 +10065,7 @@ PokemonData.ALTERNATE_FORMS = {
             }
         }
     },
-<<<<<<< HEAD
     ["Motisma"] = {
-=======
-    ["Motisma"] = {
-        baseIndex = 479,
->>>>>>> upstream/main
         cosmetic = false,
         index = 0,
         forms = {
@@ -10182,12 +10146,7 @@ PokemonData.ALTERNATE_FORMS = {
             }
         }
     },
-<<<<<<< HEAD
     ["Morpheo"] = {
-=======
-    ["Morpheo"] = {
-        baseIndex = 351,
->>>>>>> upstream/main
         cosmetic = false,
         index = 0,
         forms = {
@@ -10238,14 +10197,8 @@ PokemonData.ALTERNATE_FORMS = {
             }
         }
     },
-<<<<<<< HEAD
     ["Bargantua R"] = {
         shortenedName = "Bargantua",
-=======
-    ["Bargantua R"] = {
-        baseIndex = 550,
-        shortenedName = "Bargantua",
->>>>>>> upstream/main
         cosmetic = true,
         startIndex = 0,
         forms = {
@@ -10266,12 +10219,7 @@ PokemonData.ALTERNATE_FORMS = {
             }
         }
     },
-<<<<<<< HEAD
     ["Darumacho"] = {
-=======
-    ["Darumacho"] = {
-        baseIndex = 555,
->>>>>>> upstream/main
         cosmetic = false,
         index = 0,
         forms = {
@@ -10293,7 +10241,6 @@ PokemonData.ALTERNATE_FORMS = {
         }
     },
     ["Meloetta A"] = {
-        baseIndex = 648,
         cosmetic = false,
         index = 0,
         forms = {
@@ -10315,7 +10262,6 @@ PokemonData.ALTERNATE_FORMS = {
         }
     },
     ["Kyurem"] = {
-        baseIndex = 646,
         cosmetic = false,
         index = 0,
         forms = {
@@ -10351,12 +10297,7 @@ PokemonData.ALTERNATE_FORMS = {
             }
         }
     },
-<<<<<<< HEAD
     ["Demeteros"] = {
-=======
-    ["Demeteros"] = {
-        baseIndex = 645,
->>>>>>> upstream/main
         cosmetic = false,
         index = 0,
         forms = {
@@ -10377,14 +10318,8 @@ PokemonData.ALTERNATE_FORMS = {
             }
         }
     },
-<<<<<<< HEAD
     ["Cheniti P"] = {
         shortenedName = "Cheniti",
-=======
-    ["Cheniti P"] = {
-        baseIndex = 412,
-        shortenedName = "Cheniti",
->>>>>>> upstream/main
         cosmetic = true,
         index = 0,
         forms = {
@@ -10420,14 +10355,8 @@ PokemonData.ALTERNATE_FORMS = {
             }
         }
     },
-<<<<<<< HEAD
     ["Ceriflor O"] = {
         shortenedName = "Ceriflor",
-=======
-    ["Ceriflor O"] = {
-        baseIndex = 421,
-        shortenedName = "Ceriflor",
->>>>>>> upstream/main
         cosmetic = true,
         index = 0,
         forms = {
@@ -10448,12 +10377,7 @@ PokemonData.ALTERNATE_FORMS = {
             }
         }
     },
-<<<<<<< HEAD
     ["Vivaldaim"] = {
-=======
-    ["Vivaldaim"] = {
-        baseIndex = 585,
->>>>>>> upstream/main
         cosmetic = true,
         shortenedName = "Vivaldaim",
         forms = {
@@ -10504,14 +10428,8 @@ PokemonData.ALTERNATE_FORMS = {
             }
         }
     },
-<<<<<<< HEAD
     ["Viskuse M"] = {
         shortenedName = "Viskuse",
-=======
-    ["Viskuse M"] = {
-        baseIndex = 592,
-        shortenedName = "Viskuse",
->>>>>>> upstream/main
         cosmetic = true,
         index = 0,
         forms = {
@@ -10532,14 +10450,8 @@ PokemonData.ALTERNATE_FORMS = {
             }
         }
     },
-<<<<<<< HEAD
     ["Tritosor W"] = {
         shortenedName = "Tritosor",
-=======
-    ["Tritosor W"] = {
-        baseIndex = 423,
-        shortenedName = "Tritosor",
->>>>>>> upstream/main
         cosmetic = true,
         index = 0,
         forms = {
@@ -10560,14 +10472,8 @@ PokemonData.ALTERNATE_FORMS = {
             }
         }
     },
-<<<<<<< HEAD
     ["Moyade M"] = {
         shortenedName = "Moyade",
-=======
-    ["Moyade M"] = {
-        baseIndex = 593,
-        shortenedName = "Moyade",
->>>>>>> upstream/main
         cosmetic = true,
         index = 0,
         forms = {
@@ -10589,7 +10495,6 @@ PokemonData.ALTERNATE_FORMS = {
         }
     },
     ["Keldeo"] = {
-        baseIndex = 647,
         shortenedName = "Keldeo",
         cosmetic = true,
         index = 0,
@@ -10611,12 +10516,7 @@ PokemonData.ALTERNATE_FORMS = {
             }
         }
     },
-<<<<<<< HEAD
     ["Haydaim"] = {
-=======
-    ["Haydaim"] = {
-        baseIndex = 586,
->>>>>>> upstream/main
         cosmetic = true,
         shortenedName = "Haydaim",
         index = 0,
@@ -10668,14 +10568,8 @@ PokemonData.ALTERNATE_FORMS = {
             }
         }
     },
-<<<<<<< HEAD
     ["Sancoki W"] = {
         shortenedName = "Sancoki",
-=======
-    ["Sancoki W"] = {
-        shortenedName = "Sancoki",
-        baseIndex = 422,
->>>>>>> upstream/main
         cosmetic = true,
         index = 0,
         forms = {
@@ -10699,7 +10593,6 @@ PokemonData.ALTERNATE_FORMS = {
     ["Thundurus"] = {
         cosmetic = false,
         index = 0,
-        baseIndex = 642,
         forms = {
             {
                 name = "Thundurus T",
@@ -10720,7 +10613,6 @@ PokemonData.ALTERNATE_FORMS = {
     },
     ["Tornadus"] = {
         cosmetic = false,
-        baseIndex = 641,
         index = 0,
         forms = {
             {
@@ -10743,7 +10635,6 @@ PokemonData.ALTERNATE_FORMS = {
     ["Deflaisan M"] = {
         shortenedName = "Deflaisan",
         cosmetic = true,
-        baseIndex = 521,
         index = 0,
         forms = {
             {

@@ -5,9 +5,7 @@ local function Box(
     initialBGFillColorKey,
     shouldShadow,
     initialShadowColorKey,
-    initialTransparentOverride,
-    initialZIndex,
-    initialOpacity)
+    initialTransparentOverride)
     local self = {}
     local relativePosition = initialPosition
     local position = relativePosition
@@ -17,21 +15,15 @@ local function Box(
     if initialSize ~= nil then
         size = initialSize
     end
-    local opacity = initialOpacity or 0xFF
     local backgroundColorKey = initialBGColorKey
     local backgroundFillColorKey = initialBGFillColorKey
     local transparentOverride = initialTransparentOverride
-    local ZIndex = initialZIndex or 0
 
     function self.move(newPosition)
         position.x = newPosition.x
         position.y = newPosition.y
         relativePosition.x = newPosition.x
         relativePosition.y = newPosition.y
-    end
-
-    function self.getZIndex()
-        return ZIndex
     end
 
     function self.calculateActualPosition(parentPosition)
@@ -65,14 +57,6 @@ local function Box(
         backgroundColorKey = newColorKey
     end
 
-    function self.setOpacity(newOpacity)
-        opacity = newOpacity
-    end
-
-    function self.getOpacity()
-        return opacity
-    end
-
     function self.getBackgroundColor()
         if size ~= nil and backgroundColorKey ~= nil then
             return DrawingUtils.convertColorKeyToColor(backgroundColorKey, transparentOverride)
@@ -89,18 +73,11 @@ local function Box(
         end
     end
 
-    function self.getBackgroundFillColorKey()
-        return backgroundFillColorKey
-    end
-
     function self.setBackgroundFillColorKey(newBackgroundFillColorKey)
         backgroundFillColorKey = newBackgroundFillColorKey
     end
 
     function self.show()
-        if size.width == 0 and size.height == 0 then
-            return
-        end
         if size ~= nil then
             local shadowColor = nil
             if shadowColorKey ~= nil then
@@ -114,8 +91,7 @@ local function Box(
                 self.getBackgroundFillColor(),
                 self.getBackgroundColor(),
                 shadowed,
-                shadowColor,
-                opacity
+                shadowColor
             )
         end
     end

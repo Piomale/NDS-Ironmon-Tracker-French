@@ -1,7 +1,6 @@
 GameConfigurator = {}
 
 GameConfigurator.ALTERNATE_FORM_ORDER_GEN4 = {
-<<<<<<< HEAD
 	"Deoxys","Cheniselle P","Giratina A","Shaymin L","Motisma","Morpheo","Bargantua R","Darumacho","Meloetta A","Kyurem","Demeteros","Thundurus","Tornadus","Cheniti P",
 	"Ceriflor O","Vivaldaim","Viskuse M","Tritosor W","Moyade M","Keldeo","Haydaim","Sancoki W","Deflaisan M"
 }
@@ -9,69 +8,16 @@ GameConfigurator.ALTERNATE_FORM_ORDER_GEN4 = {
 GameConfigurator.ALTERNATE_FORM_ORDER_GEN5 = {
 	"Deoxys","Cheniselle P","Shaymin L","Giratina A","Motisma","Morpheo","Bargantua R","Darumacho","Meloetta A","Kyurem","Demeteros","Thundurus","Tornadus","Cheniti P",
 	"Ceriflor O","Vivaldaim","Viskuse M","Tritosor W","Moyade M","Keldeo","Haydaim","Sancoki W","Deflaisan M"
-=======
-	"Deoxys",
-	"Cheniselle P",
-	"Giratina A",
-	"Shaymin L",
-	"Motisma",
-	"Morpheo",
-	"Bargantua R",
-	"Darumacho",
-	"Meloetta A",
-	"Kyurem",
-	"Demeteros",
-	"Thundurus",
-	"Tornadus",
-	"Cheniti P",
-	"Ceriflor O",
-	"Vivaldaim",
-	"Viskuse M",
-	"Tritosor W",
-	"Moyade M",
-	"Keldeo",
-	"Haydaim",
-	"Sancoki W",
-	"Deflaisan M"
-}
-
-GameConfigurator.ALTERNATE_FORM_ORDER_GEN5 = {
-	"Deoxys",
-	"Cheniselle P",
-	"Shaymin L",
-	"Giratina A",
-	"Motisma",
-	"Morpheo",
-	"Bargantua R",
-	"Darumacho",
-	"Meloetta A",
-	"Kyurem",
-	"Demeteros",
-	"Thundurus",
-	"Tornadus",
-	"Cheniti P",
-	"Ceriflor O",
-	"Vivaldaim",
-	"Viskuse M",
-	"Tritosor W",
-	"Moyade M",
-	"Keldeo",
-	"Haydaim",
-	"Sancoki W",
-	"Deflaisan M"
->>>>>>> upstream/main
 }
 
 function GameConfigurator.initPokemon(gameInfo)
-	local endIndex = PokemonData.LAST_INDEX_GEN_4
-	if gameInfo.GEN == 5 then
-		endIndex = PokemonData.LAST_INDEX_GEN_5
+	if gameInfo.GEN == 4 then
+		local pokemon = {}
+		for i = 1, PokemonData.LAST_INDEX_GEN_4, 1 do
+			table.insert(pokemon, PokemonData.POKEMON[i])
+		end
+		PokemonData.POKEMON = pokemon
 	end
-	local pokemon = {}
-	for i = 1, endIndex, 1 do
-		table.insert(pokemon, PokemonData.POKEMON_MASTER_LIST[i])
-	end
-	PokemonData.POKEMON = pokemon
 	PokemonData.NAMES_MAPPING = {}
 end
 
@@ -121,7 +67,7 @@ end
 
 function GameConfigurator.initAlternateForms(gameInfo)
 	local formOrder = GameConfigurator.ALTERNATE_FORM_ORDER_GEN4
-	if gameInfo.GEN == 5 then
+	if gameInfo.GEN ==5 then
 		formOrder = GameConfigurator.ALTERNATE_FORM_ORDER_GEN5
 	end
 	local currentIndex = #PokemonData.POKEMON + 1
@@ -135,8 +81,7 @@ function GameConfigurator.initAlternateForms(gameInfo)
 			PokemonData.POKEMON[currentIndex] = form
 			PokemonData.POKEMON[currentIndex].baseFormData = {
 				baseFormName = baseForm,
-				alternateFormIndex = i,
-				baseFormIndex = formTable.baseIndex
+				alternateFormIndex = i
 			}
 			currentIndex = currentIndex + 1
 		end
@@ -148,13 +93,7 @@ function GameConfigurator.initialize()
 	memory.usememorydomain(memdomain)
 	local gameCode = Memory.read_u32_le(MemoryAddresses.NDS_CONSTANTS.CARTRIDGE_HEADER + 0x0C)
 	if not GameInfo.GAME_INFO[gameCode] then
-		FormsUtils.popupDialog(
-			"Your ROM is not currently supported by the tracker. Only English NDS ROMs are supported.",
-			250,
-			100,
-			FormsUtils.POPUP_DIALOG_TYPES.WARNING,
-			false
-		)
+		FormsUtils.popupDialog("Your ROM is not currently supported by the tracker. Only English NDS ROMs are supported.", 250,100, FormsUtils.POPUP_DIALOG_TYPES.WARNING, false)
 		return
 	end
 	local gameInfo = GameInfo.GAME_INFO[gameCode]

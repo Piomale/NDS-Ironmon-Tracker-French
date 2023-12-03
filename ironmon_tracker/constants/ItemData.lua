@@ -299,13 +299,8 @@ ItemData.GEN_4_ITEMS = {
         description = "Tries to catch a wild Pokemon. Success rate increases by 0.1x (Gen V: 0.3x) every turn, to a max of 4x."
     },
     [11] = {
-<<<<<<< HEAD
         name = "Luxe Ball",
         description = "Tries to catch a wild Pokemon. Caught Pokmon start with 200 happiness."
-=======
-        name = "Luxury Ball",
-        description = "Tries to catch a wild Pokemon. Caught Pok" .. Chars.accentedE .. "mon start with 200 happiness."
->>>>>>> upstream/main
     },
     [12] = {
         name = "Honor Ball",
@@ -464,7 +459,7 @@ ItemData.GEN_4_ITEMS = {
         description = "Causes a level-up and raises happiness."
     },
     [51] = {
-        name = "PP Up",
+        name = "Pp Up",
         description = "Raises a move's max PP by 20%."
     },
     [52] = {
@@ -472,7 +467,7 @@ ItemData.GEN_4_ITEMS = {
         description = "Raises Special Defense and happiness."
     },
     [53] = {
-        name = "PP Max",
+        name = "Pp Max",
         description = "Raises a move's max PP by 60%."
     },
     [54] = {
@@ -1032,13 +1027,8 @@ ItemData.GEN_4_ITEMS = {
         description = "Holder gains double effort values from battles, but has halved Speed in battle."
     },
     [216] = {
-<<<<<<< HEAD
         name = "Multi Exp",
         description = "Half the experience from a battle is split between Pokmon holding this item."
-=======
-        name = "Exp Share",
-        description = "Half the experience from a battle is split between Pok" .. Chars.accentedE .. "mon holding this item."
->>>>>>> upstream/main
     },
     [217] = {
         name = "Vive Griffe",
@@ -1293,13 +1283,8 @@ ItemData.GEN_4_ITEMS = {
         description = "Holder moves last in its priority bracket."
     },
     [280] = {
-<<<<<<< HEAD
         name = "Noeud Destin",
         description = "Infatuates opposing Pokmon when holder is inflicted with infatuation."
-=======
-        name = "Destiny Knot",
-        description = "Infatuates opposing Pok" .. Chars.accentedE .. "mon when holder is inflicted with infatuation."
->>>>>>> upstream/main
     },
     [281] = {
         name = "Boue Noire",
@@ -2098,13 +2083,8 @@ ItemData.GEN_4_ITEMS = {
         description = "Catches Pokémon in the Pal Park every time."
     },
     [499] = {
-<<<<<<< HEAD
         name = "Parc Ball",
         description = "Tries to catch a Pokmon in the Bug-Catching contest in National Park. "
-=======
-        name = "Sport Ball",
-        description = "Tries to catch a Pok" .. Chars.accentedE .. "mon in the Bug-Catching contest in National Park. "
->>>>>>> upstream/main
     },
     [485] = {
         name = "Noigrume Rouge ",
@@ -2382,13 +2362,8 @@ ItemData.GEN_5_ITEMS = {
         description = "Tries to catch a wild Pokemon. Success rate increases by 0.1x (Gen V: 0.3x) every turn, to a max of 4x."
     },
     [11] = {
-<<<<<<< HEAD
         name = "Luxe Ball",
         description = "Tries to catch a wild Pokemon. Caught Pokmon start with 200 happiness."
-=======
-        name = "Luxury Ball",
-        description = "Tries to catch a wild Pokemon. Caught Pok" .. Chars.accentedE .. "mon start with 200 happiness."
->>>>>>> upstream/main
     },
     [12] = {
         name = "Honor Ball",
@@ -2547,7 +2522,7 @@ ItemData.GEN_5_ITEMS = {
         description = "Causes a level-up and raises happiness."
     },
     [51] = {
-        name = "PP Up",
+        name = "Pp Up",
         description = "Raises a move's max PP by 20%."
     },
     [52] = {
@@ -2555,7 +2530,7 @@ ItemData.GEN_5_ITEMS = {
         description = "Raises Special Defense and happiness."
     },
     [53] = {
-        name = "PP Max",
+        name = "Pp Max",
         description = "Raises a move's max PP by 60%."
     },
     [54] = {
@@ -3067,13 +3042,8 @@ ItemData.GEN_5_ITEMS = {
         description = "Holder gains double effort values from battles, but has halved Speed in battle."
     },
     [216] = {
-<<<<<<< HEAD
         name = "Multi Exp",
         description = "Half the experience from a battle is split between Pokmon holding this item."
-=======
-        name = "Exp Share",
-        description = "Half the experience from a battle is split between Pok" .. Chars.accentedE .. "mon holding this item."
->>>>>>> upstream/main
     },
     [217] = {
         name = "Vive Griffe",
@@ -3328,13 +3298,8 @@ ItemData.GEN_5_ITEMS = {
         description = "Holder moves last in its priority bracket."
     },
     [280] = {
-<<<<<<< HEAD
         name = "Noeud Destin",
         description = "Infatuates opposing Pokmon when holder is inflicted with infatuation."
-=======
-        name = "Destiny Knot",
-        description = "Infatuates opposing Pok" .. Chars.accentedE .. "mon when holder is inflicted with infatuation."
->>>>>>> upstream/main
     },
     [281] = {
         name = "Boue Noire",
@@ -4125,13 +4090,8 @@ ItemData.GEN_5_ITEMS = {
         description = "Catches Pokémon in the Pal Park every time."
     },
     [499] = {
-<<<<<<< HEAD
         name = "Parc Ball",
         description = "Tries to catch a Pokmon in the Bug-Catching contest in National Park."
-=======
-        name = "Sport Ball",
-        description = "Tries to catch a Pok" .. Chars.accentedE .. "mon in the Bug-Catching contest in National Park."
->>>>>>> upstream/main
     },
     [485] = {
         name = "Noigrume Rouge ",

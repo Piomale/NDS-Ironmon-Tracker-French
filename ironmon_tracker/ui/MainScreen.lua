@@ -97,9 +97,6 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
     end
 
     local function increaseCycleStatIndex()
-        if currentPokemon == nil or currentPokemon.owner == program.SELECTED_PLAYERS.PLAYER then
-            return
-        end
         if statCycleIndex == -1 then
             statCycleIndex = 1
         else
@@ -113,16 +110,15 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
     end
 
     local function increaseStatPrediction()
-        if currentPokemon == nil or currentPokemon.owner == program.SELECTED_PLAYERS.PLAYER then
-            return
-        end
-        if statCycleIndex ~= -1 then
-            local stat = stats[statCycleIndex]
-            local params = {
-                pokemonID = currentPokemon.pokemonID,
-                ["stat"] = stat
-            }
-            onStatPredictionClick(params)
+        if currentPokemon ~= nil and currentPokemon.owner ~= program.SELECTED_PLAYERS.PLAYER then
+            if statCycleIndex ~= -1 then
+                local stat = stats[statCycleIndex]
+                local params = {
+                    pokemonID = currentPokemon.pokemonID,
+                    ["stat"] = stat
+                }
+                onStatPredictionClick(params)
+            end
         end
     end
 
@@ -133,13 +129,11 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
 
     local function onPokemonLevelHover()
         local isEnemy = currentPokemon.owner == program.SELECTED_PLAYERS.ENEMY
-        if randomBallPickerActive or isEnemy or inTrackedView or inPastRunView or currentPokemon.fromTeamInfoView then
+        if randomBallPickerActive or  isEnemy or inTrackedView or inPastRunView or currentPokemon.fromTeamInfoView then
             onPokemonLevelHoverEnd()
             return
         end
-        if not settings.appearance["EXPERIENCE_BAR"] then
-            return
-        end
+        if not settings.appearance["EXPERIENCE_BAR"] then return end
         hoveringOverLevel = true
         program.drawCurrentScreens()
     end
@@ -317,8 +311,7 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
         ui.mainFrame = nil
         mainScreenUIInitializer = MainScreenUIInitializer(ui, program.getGameInfo())
         mainScreenUIInitializer.initUI()
-        browsManager =
-            BrowsManager(initialSettings, ui, frameCounters, initialProgram, initialProgram.UI_SCREENS.MAIN_SCREEN)
+        browsManager = BrowsManager(initialSettings, ui, frameCounters, initialProgram, initialProgram.UI_SCREENS.MAIN_SCREEN)
         browsManager.initialize()
 		self.setSeedNumber(QuickLoader.getAttempts())
     end
@@ -329,11 +322,11 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
         extraThingsToDraw.experienceBar = nil
         if isEnemy or not hoveringOverLevel or currentPokemon.fromTeamInfoView then
             return
-        end
+         end
         local type1Position = ui.controls.pokemonLevelAndEvo.getPosition()
         extraThingsToDraw.experienceBar = {
-            x = type1Position.x + 2,
-            y = type1Position.y + 4,
+                x = type1Position.x + 2,
+                y = type1Position.y + 4,
             percent = MiscUtils.calculateExperiencePercent(currentPokemon.level, currentPokemon.experience)
         }
     end
@@ -390,7 +383,6 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
         if program.getGameInfo().GEN == 4 then
             local statusTable = {
                 [0] = "",
-				[8] = "PSN",
                 [16] = "BRN",
                 [32] = "FRZ",
                 [64] = "PAR",
@@ -457,15 +449,6 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
                 if moveData.name == "Puis. Cachée" and not isEnemy and not currentPokemon.fromTeamInfoView then
                     moveFrame.moveNameLabel.setTextColorKey(tracker.getCurrentHiddenPowerType())
                 end
-<<<<<<< HEAD
-=======
-                if
-                    moveData.name == "Jugement" and not isEnemy and not currentPokemon.fromTeamInfoView and
-                        PokemonData.PLATE_TO_TYPE[tonumber(currentPokemon.heldItem)] ~= nil
-                 then
-                    moveFrame.moveNameLabel.setTextColorKey(PokemonData.PLATE_TO_TYPE[tonumber(currentPokemon.heldItem)])
-                end
->>>>>>> upstream/main
             else
                 moveFrame.moveNameLabel.setTextColorKey("Bottom box text color")
             end
@@ -474,15 +457,6 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
             if moveData.name == "Puis. Cachée" and not isEnemy then
                 moveType = tracker.getCurrentHiddenPowerType()
             end
-<<<<<<< HEAD
-=======
-            if
-                moveData.name == "Jugement" and not isEnemy and
-                    PokemonData.PLATE_TO_TYPE[tonumber(currentPokemon.heldItem)] ~= nil
-             then
-                moveType = PokemonData.PLATE_TO_TYPE[tonumber(currentPokemon.heldItem)]
-            end
->>>>>>> upstream/main
 
             moveFrame.moveTypeIcon.setIconName(moveType)
             moveFrame.moveTypeIcon.setVisibility(settings.colorSettings["Draw move type icons"])
@@ -605,7 +579,7 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
         end
         if #lines > 2 then
             local text = ui.controls.noteLabels[2].getText()
-            ui.controls.noteLabels[2].setText(MiscUtils.trimWhitespace(text) .. "...")
+            ui.controls.noteLabels[2].setText(MiscUtils.trimWhitespace(text).."...")
             hoverListeners.enemyNoteHoverListener.getOnHoverParams().text = note
         end
         ui.controls.heldItem.setText("Total seen: " .. tracker.getAmountSeen(currentPokemon.pokemonID))
@@ -794,9 +768,9 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
     end
 
     function self.updateTourneyPoints(newPoints)
-        local textOffset = {x = 5, y = 1}
+        local textOffset = {x=5,y=1}
         if newPoints >= 10 then
-            textOffset = {x = 3, y = 1}
+            textOffset = {x=3, y = 1}
         end
         ui.controls.tourneyPointsLabel.setText(newPoints)
         ui.controls.tourneyPointsLabel.setTextOffset(textOffset)
@@ -808,18 +782,18 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
             pokecenters = " " .. pokecenters
         end
         ui.controls.survivalHealAmountLabel.setText(pokecenters)
-        local survivalLabelOffset = {x = -2, y = -3}
-        if tonumber(pokecenters) > 9 then
-            survivalLabelOffset.x = -3
-        end
-        ui.controls.survivalHealAmountLabel.setTextOffset(survivalLabelOffset)
+       local survivalLabelOffset = {x=-2,y=-3}
+       if tonumber(pokecenters) > 9 then
+        survivalLabelOffset.x = -3
+       end
+       ui.controls.survivalHealAmountLabel.setTextOffset(survivalLabelOffset)
         local showAccEva =
             settings.appearance.SHOW_ACCURACY_AND_EVASION and program.isInBattle() and not isEnemy and not inLockedView and
             not inPastRunView
         local showPokecenterHeals =
-            not isEnemy and settings.appearance.SHOW_POKECENTER_HEALS and not showAccEva and not inPastRunView and
-            not settings.tourneyTracker.ENABLED
-        local showTourneyPoints = not isEnemy and settings.tourneyTracker.ENABLED and not showAccEva and not inPastRunView
+            not isEnemy and settings.appearance.SHOW_POKECENTER_HEALS and not showAccEva and not inPastRunView and not settings.tourneyTracker.ENABLED
+        local showTourneyPoints = 
+            not isEnemy and settings.tourneyTracker.ENABLED and not showAccEva and not inPastRunView
         ui.frames.accEvaFrame.setVisibility(showAccEva)
         ui.frames.survivalHealFrame.setVisibility(showPokecenterHeals)
         ui.frames.tourneyPointsFrame.setVisibility(showTourneyPoints)
@@ -891,14 +865,7 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
             }
         end
         local name = currentPokemon.name
-<<<<<<< HEAD
         ui.controls.pokemonNameLabel.setText(stripChars(name))
-=======
-        if settings.appearance.SHOW_NICKNAME and not isEnemy then
-            name = currentPokemon.nickname or name
-        end
-        ui.controls.pokemonNameLabel.setText(name)
->>>>>>> upstream/main
         ui.controls.pokemonHP.setVisibility(not isEnemy)
         local currentIconSet = IconSets.SETS[settings.appearance.ICON_SET_INDEX]
         local imageID = currentPokemon.pokemonID
@@ -906,7 +873,12 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
             imageID = currentPokemon.alternateFormID
         end
         eventListeners.noteIconListener.setOnClickParams({pokemon = currentPokemon.pokemonID, ["isEnemy"] = isEnemy})
-        DrawingUtils.readPokemonIDIntoImageLabel(currentIconSet, imageID, ui.controls.pokemonImageLabel, isEnemy)
+        DrawingUtils.readPokemonIDIntoImageLabel(
+            currentIconSet,
+            imageID,
+            ui.controls.pokemonImageLabel,
+            currentIconSet.IMAGE_OFFSET
+        )
         setUpEvo(isEnemy)
         local pokemonHoverParams = hoverListeners.pokemonHoverListener.getOnHoverParams()
         pokemonHoverParams.pokemon = currentPokemon
@@ -1043,6 +1015,7 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
         self.updateBadgeLayout()
         readPokemonIntoUI()
         setUpBasedOnRandomBallPicker()
+        browsManager.show()
         ui.frames.mainFrame.show()
 		ui.frames.seedNumber.show()
         if not program.isInBattle() or inPastRunView or inTrackedView then
@@ -1055,7 +1028,6 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
         if activeHoverFrame ~= nil then
             activeHoverFrame.show()
         end
-        browsManager.show()
     end
 
     local function initMoveListeners()
@@ -1221,17 +1193,8 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
         )
         table.insert(eventListeners, MouseClickEventListener(ui.controls.bookmarkIcon, onBookmarkClick))
         eventListeners.levelHoverListener =
-            HoverEventListener(
-            ui.controls.pokemonLevelAndEvo,
-            onPokemonLevelHover,
-            nil,
-            onPokemonLevelHoverEnd,
-            nil,
-            false,
-            true
-        )
+        HoverEventListener(ui.controls.pokemonLevelAndEvo, onPokemonLevelHover, nil, onPokemonLevelHoverEnd, nil, false, true)
         table.insert(eventListeners, MouseClickEventListener(ui.frames.tourneyPointsFrame, onTourneyPointsClick))
-        table.insert(eventListeners, MouseClickEventListener(ui.controls.pokemonLevelAndEvo, program.onEvoLabelClick))
     end
 
     function self.getMainFrameSize()

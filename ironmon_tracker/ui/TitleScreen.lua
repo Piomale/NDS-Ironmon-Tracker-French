@@ -18,7 +18,6 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 	local tracker = initialTracker
 	local program = initialProgram
 	local editingFavorites = false
-	local bottomOnly = false
 	local constants = {
 		FAVORITES_LABEL_FRAME_HEIGHT = 91,
 		FAVORITES_ROW_HEIGHT = 17,
@@ -33,13 +32,8 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 	local ui = {}
 	local favoriteEditEventListeners = {}
 	local titleScreenEventListeners = {}
-	local favoritePictureListeners = {}
 	local self = {}
 	local frameCounters = {}
-
-	function self.isEditingFavorites()
-		return editingFavorites
-	end
 
 	local function formatStatisticMapping(mapping, pastRunStatistics)
 		local statistic = pastRunStatistics[mapping.statKey]
@@ -56,7 +50,7 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 				text = text .. ", "
 			end
 		end
-		return mapping.title:gsub("%%data%%", text)
+		return mapping.title:gsub("%%data%%",text)
 	end
 
 	local function hasEnoughData(statistics)
@@ -78,7 +72,7 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 		local dataEntry = statisticData[dataEntryKey]
 		local total = tonumber(dataEntry[2])
 		local percent = string.format("%.1f", total / runAmount * 100) .. "%"
-		return mapping.title:gsub("%%percent%%", percent .. "%")
+		return mapping.title:gsub("%%percent%%",percent.."%")
 	end
 
 	local percentStatisticMappings = {
@@ -126,7 +120,7 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 			title = "Tu perds contre des Pokémons ayant plus de 500 BST %percent% du temps.",
 			statKey = 3,
 			dataEntryKey = 4
-		}
+		},
 	}
 
 	local basicStatisticMappings = {
@@ -176,6 +170,7 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 		}
 	}
 
+
 	local function getRandomStatistic()
 		local statistics = seedLogger.getPastRunStatistics()
 		local completeText = stripChars("Des statistiques amusantes seront affichées ici une fois que tu auras joué suffisamment.")
@@ -212,39 +207,15 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 		MiscUtils.writeStringToFile(fileName, favoritesList)
 	end
 
-	local function toggleFavoriteEditing(override)
-		bottomOnly = false
+	local function toggleFavoriteEditing()
 		editingFavorites = not editingFavorites
-		if override then
-			editingFavorites = override
-		end
 		ui.frames.topFrame.setVisibility(not editingFavorites)
 		ui.frames.bottomFrame.setVisibility(not editingFavorites)
 		for _, favoriteImage in pairs(ui.favoriteImages) do
 			favoriteImage.setVisibility(not editingFavorites)
 		end
 		ui.frames.favoriteEditFrame.setVisibility(editingFavorites)
-		if not editingFavorites and override == nil then
-			program.openScreen(program.UI_SCREENS.MAIN_SCREEN)
-		end
-	end
-
-	local function onCloseFromSetup()
-		toggleFavoriteEditing(false)
-		program.openScreen(program.UI_SCREENS.TRACKER_SETUP_SCREEN)
-		favoriteEditEventListeners.close.setOnClickFunction(toggleFavoriteEditing)
-		favoriteEditEventListeners.close.setOnClickParams()
-	end
-
-	function self.openedFromSetup()
-		editingFavorites = false
-		toggleFavoriteEditing()
-		favoriteEditEventListeners.close.setOnClickFunction(onCloseFromSetup)
-		favoriteEditEventListeners.close.setOnClickParams()
-	end
-
-	function self.setTopVisibility(newVisibility)
-		bottomOnly = not newVisibility
+		program.drawCurrentScreens()
 	end
 
 	local function readFavoritesIntoUI()
@@ -307,8 +278,6 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 		ui.controls.gameLabel.setText(name)
 		getRandomStatistic()
 		readAttemptsIntoUI()
-		favoriteEditEventListeners.close.setOnClickFunction(toggleFavoriteEditing)
-		favoriteEditEventListeners.close.setOnClickParams()
 	end
 
 	function self.moveMainFrame(newPosition)
@@ -421,7 +390,7 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 				)
 			)
 		)
-		favoriteEditEventListeners.close = MouseClickEventListener(closeButton, toggleFavoriteEditing, false)
+		table.insert(favoriteEditEventListeners, MouseClickEventListener(closeButton, toggleFavoriteEditing, false))
 	end
 
 	local function initFavoriteEditsFrame()
@@ -451,15 +420,9 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 				)
 			),
 			TextField(
-<<<<<<< HEAD
 				"Modifier les favoris",
 				{x = 20, y = 0},
 				TextStyle(11, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Main background color")
-=======
-				"Modifier les favoris",
-				{x = 36, y = 0},
-				TextStyle(11, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
->>>>>>> upstream/main
 			)
 		)
 		ui.frames.favoriteLabelsFrame =
@@ -487,7 +450,7 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 		ui.frames.bottomFrame =
 			Frame(
 			Box(
-				{x = 0, y = 86},
+				{x = 0, y = 0},
 				{
 					width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
 					height = 45
@@ -502,16 +465,7 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 			TextLabel(
 			Component(
 				ui.frames.bottomFrame,
-				Box(
-					{x = 0, y = 0},
-					{width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN, height = 14},
-					nil,
-					nil,
-					nil,
-					nil,
-					nil,
-					1
-				)
+				Box({x = 0, y = 0}, {width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN, height = 14})
 			),
 			TextField(
 				"Favoris",
@@ -538,7 +492,7 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 				Component(ui.frames.favoritesFrame, Box({x = 0, y = 0}, {width = 30, height = 28})),
 				ImageField("ironmon_tracker/images/pokemonIconSets/stadiumset/" .. i .. ".png", {x = 0, y = 0}, nil)
 			)
-			table.insert(favoritePictureListeners, MouseClickEventListener(ui.favoriteImages[i], toggleFavoriteEditing, true))
+			table.insert(titleScreenEventListeners, MouseClickEventListener(ui.favoriteImages[i], toggleFavoriteEditing, true))
 		end
 	end
 
@@ -675,7 +629,7 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 					height = Graphics.SIZES.MAIN_SCREEN_HEIGHT - 2 * Graphics.SIZES.BORDER_MARGIN
 				}
 			),
-			nil,
+			Layout(Graphics.ALIGNMENT_TYPE.VERTICAL, 5),
 			ui.frames.mainFrame
 		)
 		initTopUI()
@@ -694,35 +648,31 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 	end
 
 	function self.runEventListeners()
-		self.runBottomEvents()
-		if not bottomOnly then
-			local eventListeners = titleScreenEventListeners
-			if editingFavorites then
-				eventListeners = favoriteEditEventListeners
-			end
-			for _, eventListener in pairs(eventListeners) do
-				eventListener.listen()
-			end
+		local eventListeners = titleScreenEventListeners
+		if editingFavorites then
+			eventListeners = favoriteEditEventListeners
+		end
+		for _, eventListener in pairs(eventListeners) do
+			eventListener.listen()
 		end
 		runFrameCounters()
 	end
 
-	function self.runBottomEvents()
-		for _, eventListener in pairs(favoritePictureListeners) do
-			eventListener.listen()
-		end
-	end
-
-	function self.showBottomFrame()
-		ui.frames.bottomFrame.show()
+	local function drawBlackRectangleFirst()
+		local mainFramePosition, mainFrameSize = ui.frames.mainFrame.getPosition(), ui.frames.mainFrame.getSize()
+		gui.drawRectangle(
+			mainFramePosition.x,
+			mainFramePosition.y,
+			mainFrameSize.width,
+			mainFrameSize.height,
+			0x00000000,
+			0xFF000000
+		)
 	end
 
 	function self.show()
-		if not bottomOnly then
-			ui.frames.mainFrame.show()
-		else
-			ui.frames.bottomFrame.show()
-		end
+		drawBlackRectangleFirst()
+		ui.frames.mainFrame.show()
 	end
 
 	initUI()

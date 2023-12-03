@@ -19,8 +19,8 @@ local function ExtrasScreen(initialSettings, initialTracker, initialProgram)
 	local self = {}
 
 	local constants = {
-		MAIN_FRAME_HEIGHT = 230,
-		EXTRAS_HEIGHT = 176,
+		MAIN_FRAME_HEIGHT = 180,
+		EXTRAS_HEIGHT = 126,
 		EXTRA_ENTRY_TITLE_ROW_HEIGHT = 21,
 		EXTRA_ENTRY_TEXT_ROW_HEIGHT = 10,
 		EXTRA_WIDTH = 124,
@@ -29,6 +29,18 @@ local function ExtrasScreen(initialSettings, initialTracker, initialProgram)
 	}
 	local ui = {}
 	local eventListeners = {}
+
+	local extras = {
+		{
+			name = "Tourney Tracker",
+			iconImage = "trophy.png",
+			descriptionRows = {
+				"Auto tracks your scores",
+				"for Crozwords' tourneys."
+			},
+			settingsKey = "tourneyTracker"
+		}
+	}
 
 	local function onToggleClick(button)
 		button.onClick()
@@ -85,40 +97,67 @@ local function ExtrasScreen(initialSettings, initialTracker, initialProgram)
 		FormsUtils.createConfirmDialog(tourneyTracker.clearData)
 	end
 
-	local function onCoverageCalc()
-		program.openScreen(program.UI_SCREENS.COVERAGE_CALC_SCREEN)
-	end
+	local function initExtra(extra)
+		local extraFrame =
+			Frame(
+			Box(
+				{x = 0, y = 0},
+				{
+					width = constants.EXTRA_WIDTH,
+					height = constants.EXTRA_HEIGHT
+				},
+				"Top box background color",
+				"Top box border color"
+			),
+			Layout(Graphics.ALIGNMENT_TYPE.VERTICAL, 2, {x = 4, y = 1}),
+			ui.frames.extrasFrame
+		)
+		local iconNameFrame =
+			Frame(
+			Box(
+				{x = 0, y = 0},
+				{
+					width = 0,
+					height = constants.EXTRA_ENTRY_TITLE_ROW_HEIGHT
+				}
+			),
+			Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, 0, {x = -2, y = 4}),
+			extraFrame
+		)
+		local iconPath =
+			Paths.CURRENT_DIRECTORY ..
+			Paths.SLASH .. "ironmon_tracker" .. Paths.SLASH .. "images" .. Paths.SLASH .. "icons" .. Paths.SLASH .. extra.iconImage
+		local icon =
+			ImageLabel(
+			Component(iconNameFrame, Box({x = 0, y = 0}, {width = 14, height = 0}, nil, nil)),
+			ImageField(iconPath, {x = 0, y = 0}, nil)
+		)
+		local title =
+			TextLabel(
+			Component(iconNameFrame, Box({x = 0, y = 0}, {width = 0, height = 0})),
+			TextField(
+				extra.name,
+				{x = 0, y = 0},
+				TextStyle(11, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
+			)
+		)
+		for i = 1, 2, 1 do
+			local row =
+				TextLabel(
+				Component(extraFrame, Box({x = 0, y = 0}, {width = 0, height = constants.EXTRA_ENTRY_TEXT_ROW_HEIGHT})),
+				TextField(
+					extra.descriptionRows[i] or "",
+					{x = 0, y = 0},
+					TextStyle(
+						Graphics.FONT.DEFAULT_FONT_SIZE,
+						Graphics.FONT.DEFAULT_FONT_FAMILY,
+						"Top box text color",
+						"Top box background color"
+					)
+				)
+			)
+		end
 
-	local extras = {
-		{
-			name = "Coverage Calc",
-			iconImage = "coverageCalc.png",
-			imageOffset = {x = 2, y = 2},
-			descriptionRows = {
-				"Shows how many Pok" .. Chars.accentedE .. "mon",
-				"your moves can hit."
-			},
-			settingsKey = "coverageCalc",
-			useEnabledButton = false,
-			buttonText = "Open",
-			buttonFunction = onCoverageCalc
-		},
-		{
-			name = "Tourney Tracker",
-			iconImage = "trophy.png",
-			imageOffset = {x = 0, y = 0},
-			descriptionRows = {
-				"Auto tracks your scores",
-				"for Crozwords' tourneys."
-			},
-			settingsKey = "tourneyTracker",
-			useEnabledButton = true,
-			buttonText = "Clear Tourney Scores",
-			buttonFunction = onClearClick
-		}
-	}
-
-	local function createEnabledButtons(extra, extraFrame)
 		local enabledFrame =
 			Frame(
 			Box({x = 0, y = 0}, {width = 0, height = 18}, nil, nil),
@@ -160,86 +199,7 @@ local function ExtrasScreen(initialSettings, initialTracker, initialProgram)
 				)
 			)
 		)
-	end
-
-	local function initExtra(extra)
-		local extraFrame =
-			Frame(
-			Box(
-				{x = 0, y = 0},
-				{
-					width = constants.EXTRA_WIDTH,
-					height = constants.EXTRA_HEIGHT
-				},
-				"Top box background color",
-				"Top box border color",
-				true,
-				"Top box background color"
-			),
-			Layout(Graphics.ALIGNMENT_TYPE.VERTICAL, 2, {x = 4, y = 1}),
-			ui.frames.extrasFrame
-		)
-		local iconNameFrame =
-			Frame(
-			Box(
-				{x = 0, y = 0},
-				{
-					width = 0,
-					height = constants.EXTRA_ENTRY_TITLE_ROW_HEIGHT
-				}
-			),
-			Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, 0, {x = -1, y = 4}),
-			extraFrame
-		)
-		local iconPath =
-			Paths.CURRENT_DIRECTORY ..
-			Paths.SLASH .. "ironmon_tracker" .. Paths.SLASH .. "images" .. Paths.SLASH .. "icons" .. Paths.SLASH .. extra.iconImage
-		local icon =
-			ImageLabel(
-			Component(iconNameFrame, Box({x = 0, y = 0}, {width = 15, height = 14})),
-			ImageField(iconPath, extra.imageOffset, nil)
-		)
-		local title =
-			TextLabel(
-			Component(iconNameFrame, Box({x = 0, y = 0}, {width = 0, height = 0})),
-			TextField(
-				extra.name,
-				{x = 1, y = 0},
-				TextStyle(11, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
-			)
-		)
-		local rows = {}
-		for i = 1, 2, 1 do
-			rows[i] =
-				TextLabel(
-				Component(extraFrame, Box({x = 0, y = 0}, {width = 0, height = constants.EXTRA_ENTRY_TEXT_ROW_HEIGHT})),
-				TextField(
-					extra.descriptionRows[i] or "",
-					{x = 0, y = 0},
-					TextStyle(
-						Graphics.FONT.DEFAULT_FONT_SIZE,
-						Graphics.FONT.DEFAULT_FONT_FAMILY,
-						"Top box text color",
-						"Top box background color"
-					)
-				)
-			)
-		end
-
-		if extra.useEnabledButton then
-			createEnabledButtons(extra, extraFrame)
-		else
-			rows[2].resize({width = 0, height = constants.EXTRA_ENTRY_TEXT_ROW_HEIGHT + 3})
-			extraFrame.resize(
-				{
-					width = constants.EXTRA_WIDTH,
-					height = constants.EXTRA_HEIGHT - 17
-				}
-			)
-		end
-
-		local textOffset = (116 - DrawingUtils.calculateWordPixelLength(extra.buttonText)) / 2
-		local button =
+		ui.controls.clearButton =
 			TextLabel(
 			Component(
 				extraFrame,
@@ -253,8 +213,8 @@ local function ExtrasScreen(initialSettings, initialTracker, initialProgram)
 				)
 			),
 			TextField(
-				extra.buttonText,
-				{x = textOffset, y = 3},
+				"Clear Tourney Scores",
+				{x = 17, y = 3},
 				TextStyle(
 					Graphics.FONT.DEFAULT_FONT_SIZE,
 					Graphics.FONT.DEFAULT_FONT_FAMILY,
@@ -264,7 +224,7 @@ local function ExtrasScreen(initialSettings, initialTracker, initialProgram)
 			)
 		)
 
-		table.insert(eventListeners, MouseClickEventListener(button, extra.buttonFunction))
+		table.insert(eventListeners, MouseClickEventListener(ui.controls.clearButton, onClearClick))
 	end
 
 	local function initExtrasUI()

@@ -3,7 +3,6 @@ local function Tracker()
 
 	local currentAreaName = ""
 	local trackedData = {
-		currentTimerSeconds = 0,
 		encounterData = {},
 		runOver = false,
 		progress = PlaythroughConstants.PROGRESS.NOWHERE,
@@ -18,17 +17,6 @@ local function Tracker()
 	local sessionStartTime = os.time()
 	local startSeconds = 0
 	local totalSeconds = 0
-
-	function self.setTimerSeconds(newSeconds)
-		trackedData.currentTimerSeconds = newSeconds
-	end
-
-	function self.getTimerSeconds()
-		if not trackedData.currentTimerSeconds or trackedData.currentTimerSeconds == nil then
-			return 0
-		end
-		return trackedData.currentTimerSeconds
-	end
 
 	function self.setRunOver()
 		trackedData.runOver = true
@@ -80,10 +68,10 @@ local function Tracker()
 
 	function self.loadTotalPlaytime(gameName)
 		local playtimeFile = "savedData/" .. gameName .. ".pt"
-		local seconds = tonumber(MiscUtils.readStringFromFile(playtimeFile) or "", 10)
-		if type(seconds) == "number" then
+		local seconds = MiscUtils.readStringFromFile(playtimeFile)
+		if seconds ~= nil then
 			totalSeconds = seconds
-			startSeconds = seconds
+			startSeconds = tonumber(seconds, 10)
 		end
 	end
 
@@ -94,8 +82,7 @@ local function Tracker()
 
 	function self.updatePlaytime(gameName)
 		local playtimeFile = "savedData/" .. gameName .. ".pt"
-		local additionalTime = math.max(os.time() - sessionStartTime, 0)
-		totalSeconds = startSeconds + additionalTime
+		totalSeconds = startSeconds + (os.time() - sessionStartTime)
 		MiscUtils.writeStringToFile(playtimeFile, tostring(totalSeconds))
 	end
 

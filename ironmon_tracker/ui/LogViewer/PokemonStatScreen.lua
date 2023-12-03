@@ -178,11 +178,7 @@ local function PokemonStatScreen(initialSettings, initialTracker, initialProgram
     end
 
     local function readAbilitiesIntoUI(pokemon)
-        local max = 3
-        if program.getGameInfo().GEN ~= 5 then
-            max = 2
-        end
-        for i = 1, max, 1 do
+        for i = 1, 3, 1 do
             local abilityID = pokemon.abilities[i]
             local hoverListener = abilityHoverListeners[i]
             local params = hoverListener.getOnHoverParams()
@@ -193,15 +189,7 @@ local function PokemonStatScreen(initialSettings, initialTracker, initialProgram
                 local abilityInfo = AbilityData.ABILITIES[abilityID + 1]
                 params.text = stripChars(abilityInfo.description)
                 hoverListener.setOnHoverParams(params)
-<<<<<<< HEAD
                 ui.controls.abilityLabels[i].setText(i .. ". " .. stripChars(abilityInfo.name))
-=======
-                local rightText = ""
-                if i == 3 then
-                    rightText = " (HA)"
-                end
-                ui.controls.abilityLabels[i].setText(i .. ". " .. abilityInfo.name .. rightText)
->>>>>>> upstream/main
             end
         end
     end
@@ -222,7 +210,7 @@ local function PokemonStatScreen(initialSettings, initialTracker, initialProgram
             local evolution = currentEvoList[currentEvoIndex]
             if evolution ~= nil then
                 local currentIconSet = IconSets.SETS[settings.appearance.ICON_SET_INDEX]
-                DrawingUtils.readPokemonIDIntoImageLabel(currentIconSet, evolution, ui.controls.evoImage)
+                DrawingUtils.readPokemonIDIntoImageLabel(currentIconSet, evolution, ui.controls.evoImage, {x = 1, y = 0})
                 local evoInfo = PokemonData.POKEMON[currentID + 1].evolution
                 if PokemonData.EVO_LONGER_NAMES[evoInfo] then
                     evoInfo = PokemonData.EVO_LONGER_NAMES[evoInfo][currentEvoIndex]
@@ -253,7 +241,7 @@ local function PokemonStatScreen(initialSettings, initialTracker, initialProgram
         )
         ui.controls.pokemonNameLabel.setText(name)
         local currentIconSet = IconSets.SETS[settings.appearance.ICON_SET_INDEX]
-        DrawingUtils.readPokemonIDIntoImageLabel(currentIconSet, currentID, ui.controls.pokemonImage)
+        DrawingUtils.readPokemonIDIntoImageLabel(currentIconSet, currentID, ui.controls.pokemonImage, {x = 1, y = 0})
         local pokemon = logPokemon[currentID]
         movesScrollBar.setItems(pokemon.moves)
         local dataSet = logViewerScreen.readStats(pokemon)
