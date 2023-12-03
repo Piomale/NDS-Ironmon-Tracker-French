@@ -46,7 +46,13 @@ local function PokemonDataReader(initialProgram)
                 {4, {"trainerID"}},
                 {8, {"experience1"}},
                 {10, {"experience2"}},
-                {12, {"friendship", "ability"}}
+                {12, {"friendship", "ability"}},
+                {16, {"HP_EV"}},
+                {18, {"ATK_EV"}},
+                {20, {"DEF_EV"}},
+                {22, {"SPE_EV"}},
+                {24, {"SPA_EV"}},
+                {26, {"SPD_EV"}}
             },
             B = {
                 {0, {"move1"}},
@@ -55,10 +61,12 @@ local function PokemonDataReader(initialProgram)
                 {6, {"move4"}},
                 {8, {"move1PP", "move2PP"}},
                 {10, {"move3PP", "move4PP"}},
-				{18, {"isEgg"}},
+                {18, {"isEgg"}},
                 {24, {"alternateForm", "nature"}}
             },
-            C = {},
+            C = {
+                {0, "Nickname"}
+            },
             D = {
                 {28, {"unused", "encounterType"}}
             }
@@ -73,8 +81,11 @@ local function PokemonDataReader(initialProgram)
             {14, {"SPE"}},
             {16, {"SPA"}},
             {18, {"SPD"}}
-        },
+        }
     }
+
+    local function readEV(decryptedData, EVKey)
+    end
 
     local function advanceRNG()
         seed = BitUtils.mult32(seed, 0x41C64E6D) + 0x00006073
@@ -86,11 +97,14 @@ local function PokemonDataReader(initialProgram)
         end
     end
 
-    local function decryptWord(offsetData, address)
-        local offsetAmount = offsetData[1]
-        local dataName = offsetData[2]
-        local combineBytes = (#dataName == 1)
-        local encryptedWord = Memory.read_u16_le(address + offsetAmount)
+    local function combineBytes(byte1, byte2)
+        local combinedBytes = bit.band(byte2, 0x00FF)
+        combinedBytes = bit.lshift(combinedBytes, 8)
+        combinedBytes = bit.bor(combinedBytes, byte1)
+        return combinedBytes
+    end
+
+    local function bytesFromWord(encryptedWord)
         local encryptedByte1 = bit.band(encryptedWord, 0xFF)
         local encryptedByte2 = bit.band(bit.rshift(encryptedWord, 8), 0xFF)
 
@@ -102,14 +116,23 @@ local function PokemonDataReader(initialProgram)
 
         local byte2Data = bit.bxor(encryptedByte2, bit.band(shift24, 0xFF))
         byte2Data = bit.band(byte2Data, 0xFF)
+        return {
+            byte1 = byte1Data,
+            byte2 = byte2Data
+        }
+    end
 
+    local function decryptWord(offsetData, address)
+        local offsetAmount = offsetData[1]
+        local dataName = offsetData[2]
+        local shouldCombineBytes = (#dataName == 1)
+        local encryptedWord = Memory.read_u16_le(address + offsetAmount)
+        local byteData = bytesFromWord(encryptedWord)
+        local byte1Data, byte2Data = byteData.byte1, byteData.byte2
         if dataName[1] == "isEgg" then
-			decryptedData[dataName[1]] = BitUtils.getBits(byte2Data,6,1)
-		elseif combineBytes then
-            local combinedBytes = bit.band(byte2Data, 0x00FF)
-            combinedBytes = bit.lshift(combinedBytes, 8)
-            combinedBytes = bit.bor(combinedBytes, byte1Data)
-            decryptedData[dataName[1]] = combinedBytes
+            decryptedData[dataName[1]] = BitUtils.getBits(byte2Data, 6, 1)
+        elseif shouldCombineBytes then
+            decryptedData[dataName[1]] = combineBytes(byte1Data, byte2Data)
         else
             decryptedData[dataName[1]] = byte1Data
             if dataName[2] == "nature" then
@@ -120,11 +143,49 @@ local function PokemonDataReader(initialProgram)
                 decryptedData[dataName[2]] = byte2Data
             end
             if dataName[1] == "alternateForm" then
-                decryptedData["isFemale"] = BitUtils.getBits(byte1Data,1,1)
+                decryptedData["isFemale"] = BitUtils.getBits(byte1Data, 1, 1)
             else
                 decryptedData[dataName[2]] = byte2Data
             end
         end
+    end
+
+    local function GEN5_bytesToChar(bytes)
+        if type(bytes) == "number" and bytes >= 0 and bytes <= 255 then
+            if CharMap.GEN5_NONSTANDARD[bytes] then
+                return CharMap.GEN5_NONSTANDARD[bytes]
+            end
+            return string.char(bytes)
+        end
+        return ""
+    end
+
+    local function decryptNickname(nicknameStart)
+        local done = false
+        local completeName = ""
+        for i = 0, 24, 2 do
+            if not done then
+                local encryptedWord = Memory.read_u16_le(nicknameStart + i)
+                local byteData = bytesFromWord(encryptedWord)
+                local combined = combineBytes(byteData.byte1, byteData.byte2)
+                if combined == 0xFFFF then
+                    done = true
+                else
+                    local char = ""
+                    if gameInfo.GEN == 5 then
+                        char = GEN5_bytesToChar(combined)
+                    else
+                        if CharMap.CHARS[combined] then
+                            char = CharMap.CHARS[combined]
+                        end
+                    end
+                    completeName = completeName .. char
+                end
+            end
+            advanceRNG()
+        end
+        decryptedData["nickname"] = completeName
+        return 26
     end
 
     local function decryptBlocks(blockReadingStart, blockOrder)
@@ -142,7 +203,11 @@ local function PokemonDataReader(initialProgram)
                     local difference = offsetAmount - previousOffset
                     advanceRNGByDifference(difference)
                     totalBytesAdvanced = totalBytesAdvanced + difference
-                    decryptWord(offsetData, currentBlockStart)
+                    if offsetData[2] == "Nickname" then
+                        totalBytesAdvanced = totalBytesAdvanced + decryptNickname(currentBlockStart)
+                    else
+                        decryptWord(offsetData, currentBlockStart)
+                    end
                     previousOffset = offsetAmount
                 end
             end
@@ -155,6 +220,9 @@ local function PokemonDataReader(initialProgram)
 
     local function decryptBattleStats(battleStatStart, monIndex, checkingEnemy, extraOffset)
         local offsets = constants.BATTLE_STAT_OFFSETS
+        if extraOffset == nil then
+            extraOffset = 0
+        end
         local previousOffset = 0
         seed = pid
         advanceRNG()
@@ -168,17 +236,21 @@ local function PokemonDataReader(initialProgram)
             end
         end
         --Gen 5 does not update the current HP or moves/PP in the player's battle party memory. It's stored elsewhere as unencrypted data.
-        if program.isInBattle() and gameInfo.GEN == 5 and not checkingEnemy then
-            decryptedData.curHP = Memory.read_u16_le(addresses.curHPBattlePlayer + monIndex * 548)
-            decryptedData.HP = Memory.read_u16_le(addresses.HPBattlePlayer + monIndex * 548)
+        if program.isInBattle() and gameInfo.GEN == 5 then
+            local offset = monIndex * 548
+            if checkingEnemy then
+                offset = offset + (Memory.read_u8(addresses.totalMonsParty) * 548)
+            end
+            decryptedData.curHP = Memory.read_u16_le(addresses.curHPBattlePlayer + offset)
+            decryptedData.HP = Memory.read_u16_le(addresses.HPBattlePlayer + offset)
             if not checkingEnemy then
-                decryptedData.level = Memory.read_u16_le(addresses.curBattleLevel+ monIndex * 0x224) % 256
+                decryptedData.level = Memory.read_u16_le(addresses.curBattleLevel + monIndex * 0x224) % 256
                 --print(decryptedData.level)
                 local statStart = addresses.curBattleStats + monIndex * 0x224
-                local stats = {"ATK","DEF","SPA","SPD","SPE"}
-                for i = 0,4,1 do
-                    local stat = stats[i+1]
-                    decryptedData[stat] = Memory.read_u16_le(statStart + i*2)
+                local stats = {"ATK", "DEF", "SPA", "SPD", "SPE"}
+                for i = 0, 4, 1 do
+                    local stat = stats[i + 1]
+                    decryptedData[stat] = Memory.read_u16_le(statStart + i * 2)
                 end
             end
             local movesStart = addresses.statStagesStart + 8
@@ -186,9 +258,7 @@ local function PokemonDataReader(initialProgram)
             statusStart = statusStart + monIndex * 0x224
             if checkingEnemy then
                 local totalPlayerMons = Memory.read_u8(addresses.totalMonsParty)
-                if extraOffset == nil then extraOffset = 0x00 end
-                movesStart = movesStart + totalPlayerMons * 0x224 + extraOffset-- + 0x224
-
+                movesStart = movesStart + totalPlayerMons * 0x224
                 statusStart = statusStart + (totalPlayerMons * 0x224)
             end
             for i = 1, #MiscData.STATUS_TO_IMG_NAME + 1, 1 do
@@ -232,6 +302,14 @@ local function PokemonDataReader(initialProgram)
             SPD = decryptedData.SPD,
             SPE = decryptedData.SPE
         }
+        decryptedData.EVs = {
+            HP = decryptedData.HP_EV,
+            ATK = decryptedData.ATK_EV,
+            DEF = decryptedData.DEF_EV,
+            SPA = decryptedData.SPA_EV,
+            SPD = decryptedData.SPD_EV,
+            SPE = decryptedData.SPE_EV
+        }
         local fourBytes = bit.band(decryptedData.experience2, 0x0000FFFF)
         fourBytes = bit.lshift(fourBytes, 16)
         decryptedData.experience = fourBytes + decryptedData.experience1
@@ -247,39 +325,33 @@ local function PokemonDataReader(initialProgram)
         for _ = 1, 6, 1 do
             pid = Memory.read_u32_le(currentBase)
             local checksum = Memory.read_u16_le(currentBase + 0x06)
-            if checksum ~= 0 then
-                decryptedData["pid"] = pid
-                decryptedData.nature = (pid % 25)
-                local blockShift = bit.rshift(bit.band(pid, 0x3E000), 0xD) % 24
-                local blockOrder = constants.BLOCK_SHUFFLE_ORDER[blockShift + 1]
-                local blockReadingStart = currentBase + 0x08
-                seed = checksum
-                decryptBlocks(blockReadingStart, blockOrder)
-                local battleStatStart = currentBase + 0x88
-                decryptBattleStats(battleStatStart, monIndex, checkingEnemy, extraOffset)
-                formatData()
-                local sum = 0
-                for _, moveID in pairs(decryptedData.moveIDs) do
-                    sum = sum + moveID
-                end
-                if sum == 0 then
-                    return {}
-                end
-
-				if not MiscUtils.validPokemonData(decryptedData) then
-					return {}
-				end
-                if checkingParty then
-                    if decryptedData.curHP ~= 0 and decryptedData.isEgg ~= 1 then
-                        return decryptedData
-					end
-                else
-                    break
-                end
-                currentBase = currentBase + constants.POKEMON_DATA_SIZE
-            else
+            if checksum == 0 then
                 break
             end
+            decryptedData["pid"] = pid
+            decryptedData.nature = (pid % 25)
+            local blockShift = bit.rshift(bit.band(pid, 0x3E000), 0xD) % 24
+            local blockOrder = constants.BLOCK_SHUFFLE_ORDER[blockShift + 1]
+            local blockReadingStart = currentBase + 0x08
+            seed = checksum
+            decryptBlocks(blockReadingStart, blockOrder)
+            local battleStatStart = currentBase + 0x88
+            decryptBattleStats(battleStatStart, monIndex, checkingEnemy, extraOffset)
+            formatData()
+            local sum = 0
+            for _, moveID in pairs(decryptedData.moveIDs) do
+                sum = sum + moveID
+            end
+            if sum == 0 or not MiscUtils.validPokemonData(decryptedData) then
+                return {}
+            end
+            if not checkingParty then
+                break
+            end
+            if decryptedData.curHP ~= 0 and decryptedData.isEgg ~= 1 then
+                return decryptedData
+            end
+            currentBase = currentBase + constants.POKEMON_DATA_SIZE
         end
 
         return decryptedData
