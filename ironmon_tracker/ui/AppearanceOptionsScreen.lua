@@ -89,9 +89,29 @@ local function AppearanceOptionsScreen(initialSettings, initialTracker, initialP
         labelName = key:gsub("_", " "):lower()
         labelName = labelName:sub(1, 1):upper() .. labelName:sub(2)
         labelName = labelName:gsub("poke", "Pok" .. Chars.accentedE)
-        if key == "BLIND_MODE" then
-            labelName = "Blind mode (hides stats/ability)"
-        end
+        if key == "AUTO_POKEMON_THEMES" then
+                labelName = "Thème Pokémon automatique"
+			elseif key == "RIGHT_JUSTIFIED_NUMBERS" then
+                labelName = "Chiffres justifiés à droite"
+			elseif key == "SHOW_ACCURACY_AND_EVASION" then
+                labelName = "Affiche la précision et l'évasion"
+			elseif key == "EXPERIENCE_BAR" then
+                labelName = "Barre d'expérience"
+			elseif key == "RANDOM_BALL_PICKER" then
+                labelName = "Balles aléatoires"
+			elseif key == "REPEL_ICON" then
+                labelName = "Icone repousse"
+			elseif key == "SHOW_POKECENTER_HEALS" then
+                labelName = "Afficher les soins du pokecenter"
+			elseif key == "SHOW_NICKNAME" then
+                labelName = "Afficher le surnom"
+			elseif key == "ENABLED" then
+                labelName = "Activer"
+			elseif key == "TRANSPARENT" then
+                labelName = "Transparent"
+			elseif key == "BLIND_MODE" then
+                labelName = "Mode aveugle (masque les stats/capacités)"
+		end
         TextLabel(
             Component(frame, Box({x = 0, y = 0}, {width = 0, height = 0}, nil, nil, false)),
             TextField(
@@ -125,7 +145,7 @@ local function AppearanceOptionsScreen(initialSettings, initialTracker, initialP
             Box(
                 {x = 0, y = Graphics.SIZES.BORDER_MARGIN},
                 {
-                    width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
+                    width = 198 - 2 * Graphics.SIZES.BORDER_MARGIN,
                     height = constants.BUTTONS_FRAME_HEIGHT
                 },
                 "Top box background color",
@@ -135,7 +155,7 @@ local function AppearanceOptionsScreen(initialSettings, initialTracker, initialP
             ui.frames.mainInnerFrame
         )
         for _, key in pairs(orderedKeys) do
-            createToggleRow(key, settings.appearance, ui.frames.buttonsFrame)
+           createToggleRow(key, settings.appearance, ui.frames.buttonsFrame)
         end
     end
 
@@ -208,7 +228,7 @@ local function AppearanceOptionsScreen(initialSettings, initialTracker, initialP
             Box(
                 {x = 0, y = Graphics.SIZES.BORDER_MARGIN},
                 {
-                    width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
+                    width = 198 - 2 * Graphics.SIZES.BORDER_MARGIN,
                     height = 54
                 },
                 "Top box background color",
@@ -239,7 +259,7 @@ local function AppearanceOptionsScreen(initialSettings, initialTracker, initialP
             TextLabel(
             Component(iconHeadingFrame, Box({x = 0, y = 0}, {width = 0, height = 0})),
             TextField(
-                "Timer",
+                "Chrono",
                 {x = 1, y = 0},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE + 2,
@@ -264,7 +284,7 @@ local function AppearanceOptionsScreen(initialSettings, initialTracker, initialP
             Box(
                 {x = 0, y = 0},
                 {
-                    width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 10,
+                    width = 198 - 2 * Graphics.SIZES.BORDER_MARGIN,
                     height = 24
                 },
                 "Top box background color",
@@ -276,9 +296,9 @@ local function AppearanceOptionsScreen(initialSettings, initialTracker, initialP
         ui.controls.goBackButton =
             TextLabel(
             Component(
-                ui.frames.bottomFrame,
+                ui.frames.mainFrame,
                 Box(
-                    {x = 0, y = 0},
+                    {x = 142, y = constants.MAIN_HEIGHT - 24},
                     {width = 40, height = 14},
                     "Top box background color",
                     "Top box border color",
@@ -287,8 +307,8 @@ local function AppearanceOptionsScreen(initialSettings, initialTracker, initialP
                 )
             ),
             TextField(
-                "Go back",
-                {x = 3, y = 1},
+                "Retour",
+                {x = 5, y = 1},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
                     Graphics.FONT.DEFAULT_FONT_FAMILY,

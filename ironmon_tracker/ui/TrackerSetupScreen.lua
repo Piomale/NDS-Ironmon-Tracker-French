@@ -377,7 +377,7 @@ local function TrackerSetupScreen(initialSettings, initialTracker, initialProgra
             Frame(
             Box(
                 {x = 0, y = 0},
-                {width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 10, height = 24},
+                {width =  198 - 2 * Graphics.SIZES.BORDER_MARGIN, height = 24},
                 "Top box background color",
                 "Top box border color"
             ),
@@ -391,7 +391,7 @@ local function TrackerSetupScreen(initialSettings, initialTracker, initialProgra
                 Box(
                     {x = 0, y = 0},
                     {
-                        width = 64,
+                        width = 86,
                         height = constants.BIND_BUTTON_HEIGHT
                     },
                     "Top box background color",
@@ -401,7 +401,7 @@ local function TrackerSetupScreen(initialSettings, initialTracker, initialProgra
                 )
             ),
             TextField(
-                "Edit Favorites",
+                "Modifier les favoris",
                 {x = 5, y = 2},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -438,7 +438,7 @@ local function TrackerSetupScreen(initialSettings, initialTracker, initialProgra
                 Box(
                     {x = 5, y = 5},
                     {
-                        width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
+                        width =  198 - 2 * Graphics.SIZES.BORDER_MARGIN,
                         height = constants.TEXT_HEADER_HEIGHT
                     },
                     "Top box background color",
@@ -447,7 +447,7 @@ local function TrackerSetupScreen(initialSettings, initialTracker, initialProgra
                 )
             ),
             TextField(
-                "Tracker Setup",
+                "Controles & favoris",
                 {x = 30, y = 1},
                 TextStyle(13, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
             )
@@ -459,13 +459,13 @@ local function TrackerSetupScreen(initialSettings, initialTracker, initialProgra
             Box(
                 {x = 0, y = 0},
                 {
-                    width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
+                    width =  198 - 2 * Graphics.SIZES.BORDER_MARGIN,
                     height = 0
                 },
                 nil,
                 nil
             ),
-            Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, 0, {x = 95, y = 0}),
+            Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, 4, {x = 137, y = 0}),
             ui.frames.controlEditFrame
         )
         ui.controls.goBackButton =
@@ -473,7 +473,7 @@ local function TrackerSetupScreen(initialSettings, initialTracker, initialProgra
             Component(
                 ui.frames.goBackFrame,
                 Box(
-                    {x = 0, y = 0},
+                    {x = 198, y = 0},
                     {width = 40, height = 14},
                     "Top box background color",
                     "Top box border color",

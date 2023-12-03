@@ -664,7 +664,7 @@ local function TrackerSetupScreen(initialSettings, initialTracker, initialProgra
             ),
             TextField(
                 stripChars("Paramètre de chargement rapide"),
-                {x = 22, y = 1},
+                {x = 2, y = 1},
                 TextStyle(13, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
             )
         )
@@ -675,15 +675,15 @@ local function TrackerSetupScreen(initialSettings, initialTracker, initialProgra
         ui.frames.goBackFrame =
             Frame(
             Box(
-                {x = Graphics.SIZES.SCREEN_WIDTH, y = 0},
+                {x = 0, y = 0},
                 {
-                    width = 200 - 2 * Graphics.SIZES.BORDER_MARGIN,
+                    width =  200 - 2 * Graphics.SIZES.BORDER_MARGIN,
                     height = constants.BOTTOM_FRAME_HEIGHT
                 },
                 "Top box background color",
                 "Top box border color"
             ),
-            Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, 0, {x = 94, y = Graphics.SIZES.BORDER_MARGIN}),
+            Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, 0, {x = 139, y = Graphics.SIZES.BORDER_MARGIN}),
             ui.frames.mainFrame
         )
         ui.controls.goBackButton =
@@ -691,7 +691,7 @@ local function TrackerSetupScreen(initialSettings, initialTracker, initialProgra
             Component(
                 ui.frames.goBackFrame,
                 Box(
-                    {x = 0, y = 0},
+                    {x = 198, y = 0},
                     {width = 40, height = 14},
                     "Top box background color",
                     "Top box border color",
@@ -701,7 +701,7 @@ local function TrackerSetupScreen(initialSettings, initialTracker, initialProgra
             ),
             TextField(
                 "Retour",
-                {x = 3, y = 1},
+                {x = 5, y = 1},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
                     Graphics.FONT.DEFAULT_FONT_FAMILY,

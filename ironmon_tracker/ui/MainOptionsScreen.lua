@@ -100,7 +100,7 @@ local function MainOptionsScreen(initialSettings, initialTracker, initialProgram
 			battleSettingsButton = "Paramètres des combats",
 			trackerAppearanceButton = "Apparence du Tracker",
 			trackedInfoButton = "Infos & Logs",
-			editControlsButton = "Modifier les controles",
+			trackerSetupButton = "Controles & Favoris",
 			quickLoadButton = "Paramètres de chargement rapide",
 			updaterButton = "Recherche de mise à jour",
 			extrasButton = "Extras"
