@@ -293,7 +293,7 @@ local function CoverageCalcScreen(initialSettings, initialTracker, initialProgra
         TextLabel(
             Component(frame, Box({x = 0, y = 0}, {width = 0, height = 0}, nil, nil, false)),
             TextField(
-                "Fully evolved only",
+                "Dernière evolution seulement",
                 {x = 2, y = 0},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -423,7 +423,7 @@ local function CoverageCalcScreen(initialSettings, initialTracker, initialProgra
                 )
             ),
             TextField(
-                "Go back",
+                "Retour",
                 {x = 3, y = 1},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
