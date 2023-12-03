@@ -344,12 +344,12 @@ local function RandomizerLogParser(initialProgram)
                     pivotType = pivotType:gsub("/Cave", "")
                     local number, areaName = routeInfo:match("Set #(%d+) %- (.+) " .. pivotType)
                     --very dumb but idk what else to do
-                    if areaName == "Sprout Tower" then
+                    if areaName == "Tour CHETIFLOR" then
                         timesSeenSprout = timesSeenSprout + 1
                         areaName = areaName .. " " .. timesSeenSprout .. "F"
                     end
                     local valid = true
-                    if areaName == "Ruins of Alph" and number ~= "68" then
+                    if areaName == "Ruines d’Alpha" and number ~= "68" then
                         valid = false
                     end
                     if MiscUtils.tableContains(validRoutes, areaName) and valid then

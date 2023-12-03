@@ -730,7 +730,7 @@ LocationData.LOCATION_DATA = {
             [5] = {name = "Mystery Zone"},
             [6] = {name = "Bellchime Trail"},
             [7] = {name = "Burned Tower"},
-            [8] = {name = "Ruins of Alph"},
+            [8] = {name = "Ruines d’Alpha"},
             [9] = {name = "Route 1"},
             [10] = {name = "Route 2"},
             [11] = {name = "Route 3"},
@@ -789,12 +789,12 @@ LocationData.LOCATION_DATA = {
             [64] = {name = "New Bark Town"},
             [65] = {name = "New Bark Town"},
             [66] = {name = "New Bark Town"},
-            [67] = {name = "Cherrygrove City"},
-            [68] = {name = "Cherrygrove City"},
-            [69] = {name = "Cherrygrove City"},
-            [70] = {name = "Cherrygrove City"},
-            [71] = {name = "Cherrygrove City"},
-            [72] = {name = "Cherrygrove City"},
+            [67] = {name = "Ville Griotte"},
+            [68] = {name = "Ville Griotte"},
+            [69] = {name = "Ville Griotte"},
+            [70] = {name = "Ville Griotte"},
+            [71] = {name = "Ville Griotte"},
+            [72] = {name = "Ville Griotte"},
             [73] = {name = "Violet City"},
             [74] = {name = "Azalea Town"},
             [75] = {name = "Cianwood City"},
@@ -832,10 +832,10 @@ LocationData.LOCATION_DATA = {
             [107] = {name = "Mt. Moon"},
             [108] = {name = "Rock Tunnel"},
             [109] = {name = "Pal Park"},
-            [110] = {name = "Sprout Tower"},
+            [110] = {name = "Tour CHETIFLOR"},
             [111] = {name = "Bell Tower"},
             [112] = {name = "Radio Tower"},
-            [113] = {name = "Ruins of Alph"},
+            [113] = {name = "Ruines d’Alpha"},
             [114] = {name = "Slowpoke Well"},
             [115] = {name = "Lighthouse"},
             [116] = {name = "Mahogany Town"},
@@ -866,7 +866,7 @@ LocationData.LOCATION_DATA = {
             [141] = {name = "Blackthorn City's gym"},
             [142] = {name = "Route 43"},
             [143] = {name = "Route 30"},
-            [144] = {name = "Cherrygrove City"},
+            [144] = {name = "Ville Griotte"},
             [145] = {name = "Cerulean Cave"},
             [146] = {name = "Seafoam Islands"},
             [147] = {name = "Viridian Forest"},
@@ -877,8 +877,8 @@ LocationData.LOCATION_DATA = {
             [152] = {name = "Route 48"},
             [153] = {name = "Union Cave"},
             [154] = {name = "Union Cave"},
-            [155] = {name = "Sprout Tower 1F"},
-            [156] = {name = "Sprout Tower 2F"},
+            [155] = {name = "Tour CHETIFLOR 1F"},
+            [156] = {name = "Tour CHETIFLOR 2F"},
             [157] = {name = "Violet City"},
             [158] = {name = "Violet City"},
             [159] = {name = "Violet City"},
@@ -940,7 +940,7 @@ LocationData.LOCATION_DATA = {
             [215] = {name = "Route 39"},
             [216] = {name = "Ecruteak City"},
             [217] = {name = "Burned Tower"},
-            [218] = {name = "Ruins of Alph"},
+            [218] = {name = "Ruines d’Alpha"},
             [219] = {name = "Goldenrod City"},
             [220] = {name = "Lighthouse"},
             [221] = {name = "Lighthouse"},
@@ -1034,22 +1034,22 @@ LocationData.LOCATION_DATA = {
             [309] = {name = "S.S. Aqua"},
             [310] = {name = "S.S. Aqua"},
             [311] = {name = "S.S. Aqua"},
-            [312] = {name = "Ruins of Alph"},
-            [313] = {name = "Ruins of Alph"},
-            [314] = {name = "Ruins of Alph"},
-            [315] = {name = "Ruins of Alph"},
-            [316] = {name = "Ruins of Alph"},
-            [317] = {name = "Ruins of Alph"},
-            [318] = {name = "Ruins of Alph"},
-            [319] = {name = "Ruins of Alph"},
-            [320] = {name = "Ruins of Alph"},
-            [321] = {name = "Ruins of Alph"},
+            [312] = {name = "Ruines d’Alpha"},
+            [313] = {name = "Ruines d’Alpha"},
+            [314] = {name = "Ruines d’Alpha"},
+            [315] = {name = "Ruines d’Alpha"},
+            [316] = {name = "Ruines d’Alpha"},
+            [317] = {name = "Ruines d’Alpha"},
+            [318] = {name = "Ruines d’Alpha"},
+            [319] = {name = "Ruines d’Alpha"},
+            [320] = {name = "Ruines d’Alpha"},
+            [321] = {name = "Ruines d’Alpha"},
             [322] = {name = "Route 27"},
-            [323] = {name = "Ruins of Alph"},
-            [324] = {name = "Ruins of Alph"},
-            [325] = {name = "Ruins of Alph"},
-            [326] = {name = "Ruins of Alph"},
-            [327] = {name = "Ruins of Alph"},
+            [323] = {name = "Ruines d’Alpha"},
+            [324] = {name = "Ruines d’Alpha"},
+            [325] = {name = "Ruines d’Alpha"},
+            [326] = {name = "Ruines d’Alpha"},
+            [327] = {name = "Ruines d’Alpha"},
             [328] = {name = "S.S. Aqua"},
             [329] = {name = "S.S. Aqua"},
             [330] = {name = "Olivine City"},
@@ -1212,9 +1212,9 @@ LocationData.LOCATION_DATA = {
             [487] = {name = "National Park"},
             [488] = {name = "National Park"},
             [489] = {name = "Power Plant"},
-            [490] = {name = "Ruins of Alph"},
-            [491] = {name = "Ruins of Alph"},
-            [492] = {name = "Ruins of Alph"},
+            [490] = {name = "Ruines d’Alpha"},
+            [491] = {name = "Ruines d’Alpha"},
+            [492] = {name = "Ruines d’Alpha"},
             [493] = {name = "Route 7"},
             [494] = {name = "Lavender Town"},
             [495] = {name = "Cerulean City"},
@@ -1368,7 +1368,7 @@ LocationData.LOCATION_DATA = {
                     }
                 }
             },
-            ["Ruins of Alph"] = {
+            ["Ruines d’Alpha"] = {
                 totalPokemon = 1,
                 vanillaData = {
                     {
@@ -1376,7 +1376,7 @@ LocationData.LOCATION_DATA = {
                     }
                 }
             },
-            ["Sprout Tower 1F"] = {
+            ["Tour CHETIFLOR 1F"] = {
                 totalPokemon = 1,
                 vanillaData = {
                     {
@@ -1387,7 +1387,7 @@ LocationData.LOCATION_DATA = {
                     }
                 }
             },
-            ["Sprout Tower 2F"] = {
+            ["Tour CHETIFLOR 2F"] = {
                 totalPokemon = 1,
                 vanillaData = {
                     {
@@ -1398,18 +1398,18 @@ LocationData.LOCATION_DATA = {
                     }
                 }
             },
-            ["Cherrygrove City"] = nil
+            ["Ville Griotte"] = nil
         },
         encounterAreaOrder = {
             "Route 29",
             "Route 46",
-            "Cherrygrove City",
+            "Ville Griotte",
             "Route 30",
             "Route 31",
             "Route 32",
-            "Ruins of Alph",
-            "Sprout Tower 1F",
-            "Sprout Tower 2F"
+            "Ruines d’Alpha",
+            "Tour CHETIFLOR 1F",
+            "Tour CHETIFLOR 2F"
             --"Dark Cave"
         }
     },
@@ -1436,7 +1436,7 @@ LocationData.LOCATION_DATA = {
             [121] = {name = "Opelucid City's gym"},
             [136] = {name = "Pok" .. Chars.accentedE .. "mon League"},
             [147] = {name = "Unity Tower"},
-            [152] = {name = "Dreamyard"},
+            [152] = {name = "Vestiges du Rêve"},
             [154] = {name = "Pinwheel Exterior"},
             [155] = {name = "Pinwheel Forest"},
             [157] = {name = "Desert Resort"},
@@ -1603,7 +1603,7 @@ LocationData.LOCATION_DATA = {
                     }
                 }
             },
-            ["Dreamyard"] = {
+            ["Vestiges du Rêve"] = {
                 totalPokemon = 12,
                 vanillaData = {
                     {
@@ -1686,7 +1686,7 @@ LocationData.LOCATION_DATA = {
                 }
             }
         },
-        encounterAreaOrder = {"Route 1", "Route 2", "Dreamyard", "Route 3"}
+        encounterAreaOrder = {"Route 1", "Route 2", "Vestiges du Rêve", "Route 3"}
     },
     --black2/white2
     [0x4F455249] = {
@@ -1707,7 +1707,7 @@ LocationData.LOCATION_DATA = {
             [134] = {name = "Opelucid City's gym"},
             [136] = {name = "Pok" .. Chars.accentedE .. "mon League"},
             [147] = {name = "Unity Tower"},
-            [152] = {name = "Dreamyard"},
+            [152] = {name = "Vestiges du Rêve"},
             [154] = {name = "Pinwheel Exterior"},
             [155] = {name = "Pinwheel Forest"},
             [157] = {name = "Desert Resort"},
