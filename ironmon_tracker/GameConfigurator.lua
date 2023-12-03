@@ -1,15 +1,6 @@
 GameConfigurator = {}
 
 GameConfigurator.ALTERNATE_FORM_ORDER_GEN4 = {
-<<<<<<< HEAD
-	"Deoxys","Cheniselle P","Giratina A","Shaymin L","Motisma","Morpheo","Bargantua R","Darumacho","Meloetta A","Kyurem","Demeteros","Thundurus","Tornadus","Cheniti P",
-	"Ceriflor O","Vivaldaim","Viskuse M","Tritosor W","Moyade M","Keldeo","Haydaim","Sancoki W","Deflaisan M"
-}
-
-GameConfigurator.ALTERNATE_FORM_ORDER_GEN5 = {
-	"Deoxys","Cheniselle P","Shaymin L","Giratina A","Motisma","Morpheo","Bargantua R","Darumacho","Meloetta A","Kyurem","Demeteros","Thundurus","Tornadus","Cheniti P",
-	"Ceriflor O","Vivaldaim","Viskuse M","Tritosor W","Moyade M","Keldeo","Haydaim","Sancoki W","Deflaisan M"
-=======
 	"Deoxys",
 	"Cheniselle P",
 	"Giratina A",
@@ -59,7 +50,6 @@ GameConfigurator.ALTERNATE_FORM_ORDER_GEN5 = {
 	"Haydaim",
 	"Sancoki W",
 	"Deflaisan M"
->>>>>>> upstream/main
 }
 
 function GameConfigurator.initPokemon(gameInfo)

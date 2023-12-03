@@ -74,13 +74,8 @@ local function StatsScreen(initialSettings, initialTracker, initialProgram, init
         local totalWidth = ui.frames.mainFrame.getSize().width - 10
         local base = -30
         local centerX = base + ((totalWidth - DrawingUtils.calculateWordPixelLength(description)) / 2)
-<<<<<<< HEAD
         ui.controls.description.setText(stripChars(description))
         ui.controls.description.setTextOffset({x=centerX, y = 0})
-=======
-        ui.controls.description.setText(description)
-        ui.controls.description.setTextOffset({x = centerX, y = 0})
->>>>>>> upstream/main
     end
 
     local function setUpCurrentStatisticIndex()

@@ -195,8 +195,6 @@ local function Program(initialTracker, initialMemoryAddresses, initialGameInfo, 
 		end
 	end
 
-<<<<<<< HEAD
-=======
 	local function checkScreen(screen)
 		checkForTransparenBackgroundException(screen)
 		checkForTitleScreen(screen)
@@ -207,7 +205,6 @@ local function Program(initialTracker, initialMemoryAddresses, initialGameInfo, 
 	function self.addScreen(screen)
 		currentScreens[screen] = self.UI_SCREEN_OBJECTS[screen]
 	end
->>>>>>> upstream/main
 
 	function self.turnOffPokemonTheme()
 		pokemonThemeManager.turnOff()

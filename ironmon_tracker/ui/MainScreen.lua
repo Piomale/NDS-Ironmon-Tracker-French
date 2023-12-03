@@ -457,15 +457,12 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
                 if moveData.name == "Puis. Cachée" and not isEnemy and not currentPokemon.fromTeamInfoView then
                     moveFrame.moveNameLabel.setTextColorKey(tracker.getCurrentHiddenPowerType())
                 end
-<<<<<<< HEAD
-=======
                 if
                     moveData.name == "Jugement" and not isEnemy and not currentPokemon.fromTeamInfoView and
                         PokemonData.PLATE_TO_TYPE[tonumber(currentPokemon.heldItem)] ~= nil
                  then
                     moveFrame.moveNameLabel.setTextColorKey(PokemonData.PLATE_TO_TYPE[tonumber(currentPokemon.heldItem)])
                 end
->>>>>>> upstream/main
             else
                 moveFrame.moveNameLabel.setTextColorKey("Bottom box text color")
             end
@@ -474,15 +471,12 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
             if moveData.name == "Puis. Cachée" and not isEnemy then
                 moveType = tracker.getCurrentHiddenPowerType()
             end
-<<<<<<< HEAD
-=======
             if
                 moveData.name == "Jugement" and not isEnemy and
                     PokemonData.PLATE_TO_TYPE[tonumber(currentPokemon.heldItem)] ~= nil
              then
                 moveType = PokemonData.PLATE_TO_TYPE[tonumber(currentPokemon.heldItem)]
             end
->>>>>>> upstream/main
 
             moveFrame.moveTypeIcon.setIconName(moveType)
             moveFrame.moveTypeIcon.setVisibility(settings.colorSettings["Draw move type icons"])
@@ -891,14 +885,10 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
             }
         end
         local name = currentPokemon.name
-<<<<<<< HEAD
-        ui.controls.pokemonNameLabel.setText(stripChars(name))
-=======
         if settings.appearance.SHOW_NICKNAME and not isEnemy then
             name = currentPokemon.nickname or name
         end
-        ui.controls.pokemonNameLabel.setText(name)
->>>>>>> upstream/main
+        ui.controls.pokemonNameLabel.setText(stripChars(name))
         ui.controls.pokemonHP.setVisibility(not isEnemy)
         local currentIconSet = IconSets.SETS[settings.appearance.ICON_SET_INDEX]
         local imageID = currentPokemon.pokemonID

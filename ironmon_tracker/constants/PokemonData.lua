@@ -10011,12 +10011,8 @@ PokemonData.ALTERNATE_FORMS = {
             }
         }
     },
-<<<<<<< HEAD
-    ["Cheniselle P"] = {
-=======
     ["Cheniselle P"] = {
         baseIndex = 413,
->>>>>>> upstream/main
         cosmetic = false,
         index = 0,
         forms = {
@@ -10096,12 +10092,8 @@ PokemonData.ALTERNATE_FORMS = {
             }
         }
     },
-<<<<<<< HEAD
-    ["Motisma"] = {
-=======
     ["Motisma"] = {
         baseIndex = 479,
->>>>>>> upstream/main
         cosmetic = false,
         index = 0,
         forms = {
@@ -10182,12 +10174,8 @@ PokemonData.ALTERNATE_FORMS = {
             }
         }
     },
-<<<<<<< HEAD
-    ["Morpheo"] = {
-=======
     ["Morpheo"] = {
         baseIndex = 351,
->>>>>>> upstream/main
         cosmetic = false,
         index = 0,
         forms = {
@@ -10238,14 +10226,9 @@ PokemonData.ALTERNATE_FORMS = {
             }
         }
     },
-<<<<<<< HEAD
-    ["Bargantua R"] = {
-        shortenedName = "Bargantua",
-=======
     ["Bargantua R"] = {
         baseIndex = 550,
         shortenedName = "Bargantua",
->>>>>>> upstream/main
         cosmetic = true,
         startIndex = 0,
         forms = {
@@ -10266,12 +10249,8 @@ PokemonData.ALTERNATE_FORMS = {
             }
         }
     },
-<<<<<<< HEAD
-    ["Darumacho"] = {
-=======
     ["Darumacho"] = {
         baseIndex = 555,
->>>>>>> upstream/main
         cosmetic = false,
         index = 0,
         forms = {
@@ -10351,12 +10330,8 @@ PokemonData.ALTERNATE_FORMS = {
             }
         }
     },
-<<<<<<< HEAD
-    ["Demeteros"] = {
-=======
     ["Demeteros"] = {
         baseIndex = 645,
->>>>>>> upstream/main
         cosmetic = false,
         index = 0,
         forms = {
@@ -10377,14 +10352,9 @@ PokemonData.ALTERNATE_FORMS = {
             }
         }
     },
-<<<<<<< HEAD
-    ["Cheniti P"] = {
-        shortenedName = "Cheniti",
-=======
     ["Cheniti P"] = {
         baseIndex = 412,
         shortenedName = "Cheniti",
->>>>>>> upstream/main
         cosmetic = true,
         index = 0,
         forms = {
@@ -10420,14 +10390,9 @@ PokemonData.ALTERNATE_FORMS = {
             }
         }
     },
-<<<<<<< HEAD
-    ["Ceriflor O"] = {
-        shortenedName = "Ceriflor",
-=======
     ["Ceriflor O"] = {
         baseIndex = 421,
         shortenedName = "Ceriflor",
->>>>>>> upstream/main
         cosmetic = true,
         index = 0,
         forms = {
@@ -10448,12 +10413,8 @@ PokemonData.ALTERNATE_FORMS = {
             }
         }
     },
-<<<<<<< HEAD
-    ["Vivaldaim"] = {
-=======
     ["Vivaldaim"] = {
         baseIndex = 585,
->>>>>>> upstream/main
         cosmetic = true,
         shortenedName = "Vivaldaim",
         forms = {
@@ -10504,14 +10465,9 @@ PokemonData.ALTERNATE_FORMS = {
             }
         }
     },
-<<<<<<< HEAD
-    ["Viskuse M"] = {
-        shortenedName = "Viskuse",
-=======
     ["Viskuse M"] = {
         baseIndex = 592,
         shortenedName = "Viskuse",
->>>>>>> upstream/main
         cosmetic = true,
         index = 0,
         forms = {
@@ -10532,14 +10488,9 @@ PokemonData.ALTERNATE_FORMS = {
             }
         }
     },
-<<<<<<< HEAD
-    ["Tritosor W"] = {
-        shortenedName = "Tritosor",
-=======
     ["Tritosor W"] = {
         baseIndex = 423,
         shortenedName = "Tritosor",
->>>>>>> upstream/main
         cosmetic = true,
         index = 0,
         forms = {
@@ -10560,14 +10511,9 @@ PokemonData.ALTERNATE_FORMS = {
             }
         }
     },
-<<<<<<< HEAD
-    ["Moyade M"] = {
-        shortenedName = "Moyade",
-=======
     ["Moyade M"] = {
         baseIndex = 593,
         shortenedName = "Moyade",
->>>>>>> upstream/main
         cosmetic = true,
         index = 0,
         forms = {
@@ -10611,12 +10557,8 @@ PokemonData.ALTERNATE_FORMS = {
             }
         }
     },
-<<<<<<< HEAD
-    ["Haydaim"] = {
-=======
     ["Haydaim"] = {
         baseIndex = 586,
->>>>>>> upstream/main
         cosmetic = true,
         shortenedName = "Haydaim",
         index = 0,
@@ -10668,14 +10610,9 @@ PokemonData.ALTERNATE_FORMS = {
             }
         }
     },
-<<<<<<< HEAD
-    ["Sancoki W"] = {
-        shortenedName = "Sancoki",
-=======
     ["Sancoki W"] = {
         shortenedName = "Sancoki",
         baseIndex = 422,
->>>>>>> upstream/main
         cosmetic = true,
         index = 0,
         forms = {

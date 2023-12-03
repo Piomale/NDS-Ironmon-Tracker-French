@@ -193,15 +193,11 @@ local function PokemonStatScreen(initialSettings, initialTracker, initialProgram
                 local abilityInfo = AbilityData.ABILITIES[abilityID + 1]
                 params.text = stripChars(abilityInfo.description)
                 hoverListener.setOnHoverParams(params)
-<<<<<<< HEAD
-                ui.controls.abilityLabels[i].setText(i .. ". " .. stripChars(abilityInfo.name))
-=======
                 local rightText = ""
                 if i == 3 then
                     rightText = " (HA)"
                 end
-                ui.controls.abilityLabels[i].setText(i .. ". " .. abilityInfo.name .. rightText)
->>>>>>> upstream/main
+                ui.controls.abilityLabels[i].setText(i .. ". " .. stripChars(abilityInfo.name) .. rightText)
             end
         end
     end

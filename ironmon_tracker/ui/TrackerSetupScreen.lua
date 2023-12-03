@@ -221,49 +221,7 @@ local function TrackerSetupScreen(initialSettings, initialTracker, initialProgra
         )
     end
 
-<<<<<<< HEAD:ironmon_tracker/ui/EditControlsScreen.lua
-    local function initUI()
-        ui.controls = {}
-        ui.frames = {}
-        ui.frames.mainFrame =
-            Frame(
-            Box(
-                {x = Graphics.SIZES.SCREEN_WIDTH, y = 0},
-                {width = 198, height = constants.MAIN_FRAME_HEIGHT},
-                "Main background color",
-                nil
-            ),
-            Layout(
-                Graphics.ALIGNMENT_TYPE.VERTICAL,
-                0,
-                {x = Graphics.SIZES.BORDER_MARGIN, y = Graphics.SIZES.BORDER_MARGIN}
-            ),
-            nil
-        )
-        ui.controls.mainHeading =
-            TextLabel(
-            Component(
-                ui.frames.mainFrame,
-                Box(
-                    {x = 5, y = 5},
-                    {
-                        width = 198 - 2 * Graphics.SIZES.BORDER_MARGIN,
-                        height = constants.TEXT_HEADER_HEIGHT
-                    },
-                    "Top box background color",
-                    "Top box border color",
-                    false
-                )
-            ),
-            TextField(
-                "Modifier les controles",
-                {x = 34, y = 1},
-                TextStyle(13, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
-            )
-        )
-=======
     local function initControlEditingUI()
->>>>>>> upstream/main:ironmon_tracker/ui/TrackerSetupScreen.lua
         ui.frames.controlEditFrame =
             Frame(
             Box(
@@ -314,11 +272,7 @@ local function TrackerSetupScreen(initialSettings, initialTracker, initialProgra
                 )
             ),
             TextField(
-<<<<<<< HEAD:ironmon_tracker/ui/EditControlsScreen.lua
                 "Recommencer rapidement:",
-=======
-                "Start New Run:",
->>>>>>> upstream/main:ironmon_tracker/ui/TrackerSetupScreen.lua
                 {x = 0, y = 1},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -501,20 +455,6 @@ local function TrackerSetupScreen(initialSettings, initialTracker, initialProgra
         initFavoritesEditingButton()
         initControlEditingUI()
         ui.frames.goBackFrame =
-<<<<<<< HEAD:ironmon_tracker/ui/EditControlsScreen.lua
-        Frame(
-        Box(
-            {x = 0, y = 0},
-            {
-                width = 198 - 2 * Graphics.SIZES.BORDER_MARGIN,
-                height = 0
-            },
-            nil, nil
-        ),
-        Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, 0, {x = 142, y = 0}),
-        ui.frames.controlEditFrame
-    )
-=======
             Frame(
             Box(
                 {x = 0, y = 0},
@@ -528,7 +468,6 @@ local function TrackerSetupScreen(initialSettings, initialTracker, initialProgra
             Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, 0, {x = 95, y = 0}),
             ui.frames.controlEditFrame
         )
->>>>>>> upstream/main:ironmon_tracker/ui/TrackerSetupScreen.lua
         ui.controls.goBackButton =
             TextLabel(
             Component(

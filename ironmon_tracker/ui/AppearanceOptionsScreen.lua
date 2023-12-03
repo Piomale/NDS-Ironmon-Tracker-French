@@ -125,12 +125,8 @@ local function AppearanceOptionsScreen(initialSettings, initialTracker, initialP
             Box(
                 {x = 0, y = Graphics.SIZES.BORDER_MARGIN},
                 {
-<<<<<<< HEAD
-                    width = 198-2*Graphics.SIZES.BORDER_MARGIN, height = constants.BUTTONS_FRAME_HEIGHT
-=======
                     width = Graphics.SIZES.MAIN_SCREEN_WIDTH - 2 * Graphics.SIZES.BORDER_MARGIN,
                     height = constants.BUTTONS_FRAME_HEIGHT
->>>>>>> upstream/main
                 },
                 "Top box background color",
                 "Top box border color"
@@ -139,74 +135,7 @@ local function AppearanceOptionsScreen(initialSettings, initialTracker, initialP
             ui.frames.mainInnerFrame
         )
         for _, key in pairs(orderedKeys) do
-<<<<<<< HEAD
-            local frame =
-                Frame(
-                Box(
-                    {x = 0, y = 0},
-                    {width = constants.TOGGLE_FRAME_WIDTH, height = constants.TOGGLE_FRAME_HEIGHT},
-                    nil,
-                    nil
-                ),
-                Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, 2, {x = 4, y = 0}),
-                ui.frames.buttonsFrame
-            )
-            local toggle =
-                SettingToggleButton(
-                Component(
-                    frame,
-                    Box(
-                        {x = 0, y = 0},
-                        {width = constants.BUTTON_SIZE, height = constants.BUTTON_SIZE},
-                        "Top box background color",
-                        "Top box border color",
-                        true,
-                        "Top box background color"
-                    )
-                ),
-                settings.appearance,
-                key,
-                nil,
-                false,
-                true,
-                program.saveSettings
-            )
-            local labelName
-            labelName = key:gsub("_", " "):lower()
-            labelName = labelName:sub(1, 1):upper() .. labelName:sub(2)
-            labelName = labelName:gsub("poke", "Pok"..Chars.accentedE)
-            if key == "AUTO_POKEMON_THEMES" then
-                labelName = "Thème Pokémon automatique"
-			elseif key == "RIGHT_JUSTIFIED_NUMBERS" then
-                labelName = "Chiffres justifiés à droite"
-			elseif key == "SHOW_ACCURACY_AND_EVASION" then
-                labelName = "Affiche la précision et l'évasion"
-			elseif key == "EXPERIENCE_BAR" then
-                labelName = "Barre d'expérience"
-			elseif key == "RANDOM_BALL_PICKER" then
-                labelName = "Balles aléatoires"
-			elseif key == "SHOW_POKECENTER_HEALS" then
-                labelName = "Afficher les soins du pokecenter"
-			elseif key == "BLIND_MODE" then
-                labelName = "Mode aveugle (masque les stats/capacités)"
-            end
-            TextLabel(
-                Component(frame, Box({x = 0, y = 0}, {width = 0, height = 0}, nil, nil, false)),
-                TextField(
-                    stripChars(labelName),
-                    {x = 0, y = 0},
-                    TextStyle(
-                        Graphics.FONT.DEFAULT_FONT_SIZE,
-                        Graphics.FONT.DEFAULT_FONT_FAMILY,
-                        "Top box text color",
-                        "Top box background color"
-                    )
-                )
-            )
-            table.insert(eventListeners, MouseClickEventListener(toggle, onToggleClick, toggle))
-=======
             createToggleRow(key, settings.appearance, ui.frames.buttonsFrame)
->>>>>>> upstream/main
         end
     end
 
@@ -226,15 +155,9 @@ local function AppearanceOptionsScreen(initialSettings, initialTracker, initialP
             ui.frames.mainInnerFrame
         )
         local buttons = {
-<<<<<<< HEAD
             badgesAppearanceButton = {name = "Apparence des badges", iconName = program.getGameInfo().BADGE_PREFIX},
             colorThemeButton = {name = stripChars("Modifier le thème de couleur"), iconName = "PAINTBRUSH"},
             pokemonIconsButton = {name = stripChars("Ensembles d'icônes Pokémon"), iconName = "POKEBALL"}
-=======
-            badgesAppearanceButton = {name = "Badges Appearance", iconName = program.getGameInfo().BADGE_PREFIX},
-            colorThemeButton = {name = "Edit Color Theme", iconName = "PAINTBRUSH"},
-            pokemonIconsButton = {name = "Pok" .. Chars.accentedE .. "mon Icon Sets", iconName = "POKEBALL"}
->>>>>>> upstream/main
         }
         local order = {"pokemonIconsButton", "badgesAppearanceButton", "colorThemeButton"}
         for i, key in pairs(order) do
@@ -426,33 +349,6 @@ local function AppearanceOptionsScreen(initialSettings, initialTracker, initialP
                 TextStyle(13, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
             )
         )
-<<<<<<< HEAD
-        ui.controls.goBackButton =
-            TextLabel(
-            Component(
-                ui.frames.mainFrame,
-                Box(
-                    {x = 198 - 50, y = constants.MAIN_HEIGHT - 24},
-                    {width = 40, height = 14},
-                    "Top box background color",
-                    "Top box border color",
-                    true,
-                    "Top box background color"
-                )
-            ),
-            TextField(
-                "Retour",
-                {x = 5, y = 1},
-                TextStyle(
-                    Graphics.FONT.DEFAULT_FONT_SIZE,
-                    Graphics.FONT.DEFAULT_FONT_FAMILY,
-                    "Top box text color",
-                    "Top box background color"
-                )
-            )
-        )
-=======
->>>>>>> upstream/main
         initBadgeColorButtons()
         initAppearanceToggleButtons()
         initTimerUI()

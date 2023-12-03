@@ -1,19 +1,10 @@
 MiscConstants = {}
 
-<<<<<<< HEAD
-MiscConstants.TRACKER_VERSION = "2.02.1"
-=======
 MiscConstants.TRACKER_VERSION = "3.0.0"
->>>>>>> upstream/main
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
-<<<<<<< HEAD
-    '-- 2.02.1 Correction d\'un bug empechant le focus des ennemis',
-    '-- La detection de defaite quand tous les pokemons ont perdus devrait enfin fonctionner',
-    '-- Ajout des 5 dernieres mise a jour du tracker anglais',
-=======
     "-- 6.0.2: Fixed a critical error with Gen 5 and Bizhawk 2.8.",
     "-- Double battles are now much more functional in Gen 4. Pok" ..
         Chars.accentedE .. "mon will update correctly and you can now view your second mon in battle.",
@@ -31,7 +22,6 @@ MiscConstants.UPDATE_NOTES = {
     "-- Favorites will stay on screen until you pick your mon in the lab.",
     "-- Mons with multiple evos such as Eevee will now let you cycle through them correctly when viewing potential evos.",
     "-- Any hoverable thing on screen can be clicked to instantly show it."
->>>>>>> upstream/main
 }
 
 MiscConstants.DEFAULT_SETTINGS = {
@@ -113,12 +103,8 @@ MiscConstants.DEFAULT_SETTINGS = {
         UPDATE_WAS_DONE = true
     },
     trackedInfo = {
-<<<<<<< HEAD
-        FAINT_DETECTION = PlaythroughConstants.FAINT_DETECTIONS.ALL_FAINT
-=======
         FAINT_DETECTION = PlaythroughConstants.FAINT_DETECTIONS.ON_FIRST_SLOT_FAINT,
         FIRST_TIME_BW2 = true
->>>>>>> upstream/main
     },
     extras = {
         BROWS_ENABLED = false,

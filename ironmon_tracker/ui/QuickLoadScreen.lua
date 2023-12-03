@@ -462,16 +462,12 @@ local function TrackerSetupScreen(initialSettings, initialTracker, initialProgra
                 return
             end
         end
-<<<<<<< HEAD
-        FormsUtils.createSaveForm(Paths.CURRENT_DIRECTORY.."/ironmon_tracker/quickloadProfiles","profil",".qlp",saveProfile)
-=======
         FormsUtils.createSaveForm(
             Paths.CURRENT_DIRECTORY .. "/ironmon_tracker/quickloadProfiles",
             "profile",
             ".qlp",
             saveProfile
         )
->>>>>>> upstream/main
     end
 
     local function onLoadProfileClick()

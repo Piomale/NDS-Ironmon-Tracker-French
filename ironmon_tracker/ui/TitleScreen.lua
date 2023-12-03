@@ -451,15 +451,9 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 				)
 			),
 			TextField(
-<<<<<<< HEAD
-				"Modifier les favoris",
-				{x = 20, y = 0},
-				TextStyle(11, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Main background color")
-=======
 				"Modifier les favoris",
 				{x = 36, y = 0},
 				TextStyle(11, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
->>>>>>> upstream/main
 			)
 		)
 		ui.frames.favoriteLabelsFrame =

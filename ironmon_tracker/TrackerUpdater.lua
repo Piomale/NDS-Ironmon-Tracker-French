@@ -33,13 +33,8 @@ local function TrackerUpdater(initialSettings)
                 "echo; && echo Extracting downloaded files.",
                 string.format('tar -xzf "%s"', archiveName),
                 string.format('del "%s"', archiveName),
-<<<<<<< HEAD
-
-                'echo; && echo Applying the update; copying over files.',
-=======
                 "echo; && echo Applying the update; copying over files.",
                 string.format('rmdir "%s\\.vscode" /s /q', folderName),
->>>>>>> upstream/main
                 string.format('del "%s\\.editorconfig" /q', folderName),
                 string.format('del "%s\\.gitattributes" /q', folderName),
                 string.format('del "%s\\.gitignore" /q', folderName),
@@ -70,13 +65,8 @@ local function TrackerUpdater(initialSettings)
 
         local combined_cmd = table.concat(batchCommands, " && ")
 
-<<<<<<< HEAD
-        print(string.format("Installing upgrade to version "..self.getNewestVersionString().."."))
-		print(combined_cmd)
-=======
         print(string.format("Installing upgrade to version " .. self.getNewestVersionString() .. "."))
 
->>>>>>> upstream/main
         local result = os.execute(combined_cmd)
         if not (result == true or result == 0) then
             print("Error trying to install: Unable to download, extract, or overwrite files properly.")
@@ -106,13 +96,8 @@ local function TrackerUpdater(initialSettings)
     end
 
     local function updateLatestVersion()
-<<<<<<< HEAD
         local versionURL = "https://api.github.com/repos/Piomale/NDS-Ironmon-Tracker-French/releases/latest"
         local command =  "curl " .. versionURL .. " --ssl-no-revoke"
-=======
-        local versionURL = "https://api.github.com/repos/Brian0255/NDS-Ironmon-Tracker/releases/latest"
-        local command = "curl " .. versionURL .. " --ssl-no-revoke"
->>>>>>> upstream/main
         local response = MiscUtils.runExecuteCommand(command)
         if response ~= nil and response ~= "" then
             local latestVersionString = string.match(response, '"tag_name":.*(%d+%.%d+%.%d+)')
