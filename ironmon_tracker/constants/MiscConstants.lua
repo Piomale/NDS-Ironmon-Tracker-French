@@ -1,27 +1,13 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "3.01.1"
+MiscConstants.TRACKER_VERSION = "4.00.0"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
-    "-- 6.0.2: Fixed a critical error with Gen 5 and Bizhawk 2.8.",
-    "-- Double battles are now much more functional in Gen 4. Pok" ..
-        Chars.accentedE .. "mon will update correctly and you can now view your second mon in battle.",
-    "-- Under Battle Settings there is now a Doubles Mode option so that you can show your second Pok" ..
-        Chars.accentedE .. "mon outside of battle by pressing START.",
-    "-- In a double battle, pressing L/R while viewing your mon will show move effectiveness for the left and right enemy mons, respectively.",
-    "-- There is a new Pivots tab in the Log Viewer to see what you could have pivoted to in a run. The Stats tab is now just in the Pok" ..
-        Chars.accentedE .. "mon tab.",
-    "-- Added a simple animated icon set based on the HeartGold walking sprites.",
-    "-- Added a coverage calculator in the Extras section of the tracker settings.",
-    "-- Added an on-screen Repel indicator under Tracker Appearance that works similar to Gen 3.",
-    "-- Added a timer option under Tracker Appearance. Middle clicking will drag the timer wherever you want it, and clicking it will pause/unpause it.",
-    "-- Added a toggle under Tracker Appearance to show nicknames.",
-    "-- Favorites can now be changed at any time from the Tracker Setup screen.",
-    "-- Favorites will stay on screen until you pick your mon in the lab.",
-    "-- Mons with multiple evos such as Eevee will now let you cycle through them correctly when viewing potential evos.",
-    "-- Any hoverable thing on screen can be clicked to instantly show it."
+    "-- Ajout de l'antre noir et du concours de capture d'insecte dans le log viewer et dans la liste des rencontres.",
+    "-- Ajout du tracking automatique des compétences.",
+    "-- Amelioration de la gestion des combats. Les combats Double et triple devrait fonctionner.",
 }
 
 MiscConstants.DEFAULT_SETTINGS = {
@@ -32,10 +18,10 @@ MiscConstants.DEFAULT_SETTINGS = {
         SHOW_ACCURACY_AND_EVASION = true,
         RANDOM_BALL_PICKER = true,
         SHOW_POKECENTER_HEALS = false,
-        SHOW_NICKNAME = false,
+        SHOW_NICKNAME = true,
         ICON_SET_INDEX = 2,
         BLIND_MODE = false,
-        REPEL_ICON = false
+        REPEL_ICON = true
     },
     animatedSprites = {
         FASTER_ANIMATIONS = false,
@@ -51,7 +37,7 @@ MiscConstants.DEFAULT_SETTINGS = {
         RIGHT_EFFECTIVENESS = "R"
     },
     battle = {
-        AUTO_SWAP_TO_ENEMY = false,
+        AUTO_SWAP_TO_ENEMY = true,
         CALCULATE_VARIABLE_DAMAGE = true,
         SHOW_MOVE_EFFECTIVENESS = true,
         SHOW_ACTUAL_ENEMY_PP = true,

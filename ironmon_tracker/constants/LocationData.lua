@@ -845,7 +845,7 @@ LocationData.LOCATION_DATA = {
             [120] = {name = "Ice Path"},
             [121] = {name = "Whirl Islands"},
             [122] = {name = "Mt. Silver Cave"},
-            [123] = {name = "Dark Cave"},
+            [123] = {name = "Antre Noir"},
             [124] = {name = "Victory Road"},
             [125] = {name = "Dragon's Den"},
             [126] = {name = "Tohjo Falls"},
@@ -898,7 +898,7 @@ LocationData.LOCATION_DATA = {
             [173] = {name = "Safari Zone Gate"},
             [174] = {name = "Safari Zone Gate"},
             [175] = {name = "Jubilife City"},
-            [176] = {name = "Dark Cave"},
+            [176] = {name = "Antre Noir"},
             [177] = {name = "Slowpoke Well"},
             [178] = {name = "Victory Road"},
             [179] = {name = "Victory Road"},
@@ -1209,7 +1209,7 @@ LocationData.LOCATION_DATA = {
             [484] = {name = "Route 10"},
             [485] = {name = "Fuchsia City"},
             [486] = {name = "Whirl Islands"},
-            [487] = {name = "National Park"},
+            [487] = {name = "Capture d'insectes"},
             [488] = {name = "National Park"},
             [489] = {name = "Power Plant"},
             [490] = {name = "Ruines d’Alpha"},
@@ -1350,7 +1350,7 @@ LocationData.LOCATION_DATA = {
                     }
                 }
             },
-            ["Dark Cave"] = {
+            ["Antre Noir"] = {
                 totalPokemon = 3,
                 vanillaData = {
                     {
@@ -1365,6 +1365,111 @@ LocationData.LOCATION_DATA = {
                     },
                     {
                         {level = 6, percent = 1}
+                    }
+                }
+            },
+            ["Tues Bug Catching"] = {
+                totalPokemon = 10,
+                vanillaData = {
+                    {
+                        {levelRange = {36, 54}, percent = 20}
+                    },
+                    {
+                        {levelRange = {36, 54}, percent = 20}
+                    },
+                    {
+                        {levelRange = {39, 54}, percent = 10}
+                    },
+                    {
+                        {levelRange = {39, 54}, percent = 10}
+                    },
+                    {
+                        {levelRange = {41, 45}, percent = 10}
+                    },
+                    {
+                        {levelRange = {41, 45}, percent = 10}
+                    },
+                    {
+                        {levelRange = {38, 48}, percent = 5}
+                    },
+                    {
+                        {levelRange = {41, 51}, percent = 5}
+                    },
+                    {
+                        {levelRange = {41, 42}, percent = 5}
+                    },
+                    {
+                        {levelRange = {41, 42}, percent = 5}
+                    }
+                }
+            },
+            ["Thurs Bug Catching"] = {
+                totalPokemon = 10,
+                vanillaData = {
+                    {
+                        {levelRange = {36, 54}, percent = 20}
+                    },
+                    {
+                        {levelRange = {36, 54}, percent = 20}
+                    },
+                    {
+                        {levelRange = {39, 54}, percent = 10}
+                    },
+                    {
+                        {levelRange = {39, 54}, percent = 10}
+                    },
+                    {
+                        {levelRange = {41, 45}, percent = 10}
+                    },
+                    {
+                        {levelRange = {41, 45}, percent = 10}
+                    },
+                    {
+                        {levelRange = {38, 48}, percent = 5}
+                    },
+                    {
+                        {levelRange = {41, 51}, percent = 5}
+                    },
+                    {
+                        {levelRange = {41, 42}, percent = 5}
+                    },
+                    {
+                        {levelRange = {41, 42}, percent = 5}
+                    }
+                }
+            },
+            ["Sat Bug Catching"] = {
+                totalPokemon = 10,
+                vanillaData = {
+                    {
+                        {levelRange = {36, 54}, percent = 20}
+                    },
+                    {
+                        {levelRange = {36, 54}, percent = 20}
+                    },
+                    {
+                        {levelRange = {39, 54}, percent = 10}
+                    },
+                    {
+                        {levelRange = {39, 54}, percent = 10}
+                    },
+                    {
+                        {levelRange = {41, 45}, percent = 10}
+                    },
+                    {
+                        {levelRange = {41, 45}, percent = 10}
+                    },
+                    {
+                        {levelRange = {38, 48}, percent = 5}
+                    },
+                    {
+                        {levelRange = {41, 51}, percent = 5}
+                    },
+                    {
+                        {levelRange = {41, 42}, percent = 5}
+                    },
+                    {
+                        {levelRange = {41, 42}, percent = 5}
                     }
                 }
             },
@@ -1409,8 +1514,9 @@ LocationData.LOCATION_DATA = {
             "Route 32",
             "Ruines d’Alpha",
             "Tour CHETIFLOR 1F",
-            "Tour CHETIFLOR 2F"
-            --"Dark Cave"
+            "Tour CHETIFLOR 2F",
+            "Antre Noir",
+            "Capture d'insectes"
         }
     },
     --black/white

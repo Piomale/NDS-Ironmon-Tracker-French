@@ -224,7 +224,7 @@ local function TrackedInfoScreen(initialSettings, initialTracker, initialProgram
 		)
 		ui.controls.faintDetectionLabel =
 			TextLabel(
-			Component(ui.frames.faintDetectionFrame, Box({x = 0, y = 0}, {width = 0, height = 11})),
+			Component(ui.frames.faintDetectionFrame, Box({x = 0, y = 0}, {width = 0, height = 13})),
 			TextField(
 				stripChars("La partie est considérée perdu quand:"),
 				{x = -1, y = 0},
@@ -239,7 +239,7 @@ local function TrackedInfoScreen(initialSettings, initialTracker, initialProgram
 		local settingNames = {
 			[PlaythroughConstants.FAINT_DETECTIONS.ON_FIRST_SLOT_FAINT] = "Le pokémon leader perd",
 			[PlaythroughConstants.FAINT_DETECTIONS.ON_HIGHEST_LEVEL_FAINT] = "Le pokémon le plus haut niveau perd",
-			[PlaythroughConstants.FAINT_DETECTIONS.ALL_FAINT] = "Tous les pokémons ont perdu",
+			[PlaythroughConstants.FAINT_DETECTIONS.ON_ENTIRE_PARTY_FAINT] = "Tous les pokémons ont perdu",
 			[PlaythroughConstants.FAINT_DETECTIONS.NEVER] = "Jamais"
 		}
 		for settingValue, name in pairs(settingNames) do
