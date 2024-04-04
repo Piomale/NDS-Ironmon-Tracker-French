@@ -369,7 +369,6 @@ end
 
 function BattleHandlerBase:updateBattleStatus()
     local battleStatus = Memory.read_u16_le(self.memoryAddresses.battleStatus)
-	print(battleStatus)
     if self.BATTLE_STATUS_TYPES[battleStatus] == true then
         if not self._inBattle then
             self:_setUpBattleVariables()

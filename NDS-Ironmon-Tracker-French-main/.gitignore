@@ -1,0 +1,13 @@
+Settings.ini
+*.trackerdata
+*.nds
+*.log
+*.txt
+*.pastlog
+*.statistics
+*.colortheme
+*.qlp
+!death_quotes.txt
+*.pt
+*.faves
+*.tdata
