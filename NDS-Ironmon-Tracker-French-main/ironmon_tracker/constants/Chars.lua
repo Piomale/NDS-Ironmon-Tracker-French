@@ -1,3 +1,0 @@
-Chars = {}
-
-Chars.accentedE = "é"
