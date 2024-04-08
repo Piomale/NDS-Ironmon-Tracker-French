@@ -2421,7 +2421,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "5",
 		accuracy = "50",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Attaque en 2 tours. Le lanceur est invulnérable pendant le chargement."  
+		description = "Dynamopoing inflige des dégâts et plonge toujours la cible dans la confusion si la capacité la touche."  
 	},
 	{
 		id = "224",

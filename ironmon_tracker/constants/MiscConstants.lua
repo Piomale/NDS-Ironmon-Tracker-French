@@ -1,12 +1,13 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "4.02.3"
+MiscConstants.TRACKER_VERSION = "4.02.4"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
+	"-- Correction de la description de Dynamopoing",
     "-- Ajout de l'antre noir et du concours de capture d'insecte dans le log viewer et dans la liste des rencontres.",
-    "-- Ajout du tracking automatique des compétences.",
+    "-- Ajout du tracking automatique des talents.",
     "-- Amelioration de la gestion des combats. Les combats Double et triple devrait fonctionner.",
 }
 
