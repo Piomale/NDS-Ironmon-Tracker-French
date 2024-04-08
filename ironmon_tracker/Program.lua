@@ -513,8 +513,8 @@ local function Program(initialTracker, initialMemoryAddresses, initialGameInfo, 
 	local function getPokemonToDraw()
 		local pokemonToDraw = playerPokemon
 		local cantUpdate =
-			not settings.battle.SHOW_1ST_FIGHT_STATS_PLATINUM and not battleHandler:firstBattleComplete() and
-			gameInfo.NAME == "Pokemon Platinum"
+			not settings.battle.SHOW_1ST_FIGHT_STATS_PLATINUM and gameInfo.NAME == "Pokemon Platinum" and
+			not battleHandler:isFirstBattleComplete()
 		if cantUpdate then
 			pokemonToDraw = MiscUtils.shallowCopy(MiscConstants.DEFAULT_POKEMON)
 		end
@@ -573,8 +573,8 @@ local function Program(initialTracker, initialMemoryAddresses, initialGameInfo, 
 		elseif locationData[parentMap] ~= nil then
 			areaName = locationData[parentMap].name
 		end
-		--HGSS bug catching patch only writes correct day of week when you're in the building with the NPC that starts the contest
-		if childMap == 102 and gameInfo.VERSION_GROUP == 3 then
+		--HGSS bug catching patch only writes correct day of week when you're in either building with the NPC that starts the contest
+		if (childMap == 102 or childMap == 104) and gameInfo.VERSION_GROUP == 3 then
 			dayOfWeek = Memory.read_u16_le(memoryAddresses.dayOfWeek)
 		end
 		if areaName == "Bug Catching" then

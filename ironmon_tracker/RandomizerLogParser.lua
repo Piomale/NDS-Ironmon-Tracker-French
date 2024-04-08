@@ -376,22 +376,28 @@ local function RandomizerLogParser(initialProgram)
         local timesSeenSprout = 0
         local pivotTypes = program.getGameInfo().PIVOT_TYPES
         local currentLineIndex = lineStart
-        while (lines[currentLineIndex] ~= nil and currentLineIndex <= totalLines) do
+        while (lines[currentLineIndex] ~= nil and lines[currentLineIndex]:sub(1, 2) ~= "--" and
+            currentLineIndex <= totalLines) do
             local routeInfo = lines[currentLineIndex]
             for pivotType, _ in pairs(pivotTypes) do
                 if routeInfo:find(pivotType) then
                     if pivotType == "Bug Catching" then
                         readBugCatchingEntry(lines, currentLineIndex, pivotData)
                     else
-						pivotType = pivotType:gsub("/Cave", "")
 						local number, areaName = routeInfo:match("Set #(%d+) %- (.+) " .. pivotType)
+						if not areaName:find("Cave") then
+                            pivotType = pivotType:gsub("/Cave", "")
+                        else
+                            pivotType = pivotType:gsub("Grass/", "")
+                        end
 						--very dumb but idk what else to do
 						if areaName == "Tour CHETIFLOR" then
 							timesSeenSprout = timesSeenSprout + 1
 							areaName = areaName .. " " .. timesSeenSprout .. "F"
                         end
                         local valid = true
-                        if areaName == "Ruines d'Alpha" and number ~= "68" then
+						local wrongDarkCave = (areaName == "Antre Noir" and number == "375")
+                        if (areaName == "Ruines d'Alpha" and number ~= "68") or wrongDarkCave then
                             valid = false
                         end
                         if MiscUtils.tableContains(validRoutes, areaName) and valid then
@@ -468,6 +474,8 @@ local function RandomizerLogParser(initialProgram)
     end
 
     function self.parse(inputFile)
+        local test = "t"
+        print(test:sub(1, 2))
         if FormsUtils.fileExists(inputFile) then
             resetPokemon()
             trainers = {}
