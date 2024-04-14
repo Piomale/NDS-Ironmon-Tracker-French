@@ -43,10 +43,11 @@ local function EvoDataScreen(initialSettings, initialTracker, initialProgram)
 	local evoScroller = nil
 
 	local function sortEvos()
+		local currentID = currentTargetIDs[currentIndex]
 		table.sort(
-			evoData,
+			evoData[currentID],
 			function(a, b)
-				if sorting.sortType == SORT_TYPES.BST then
+				if sorting.sortType == SORT_TYPES.BST and PokemonData.POKEMON[a.id + 1].bst ~= PokemonData.POKEMON[b.id + 1].bst then
 					return PokemonData.POKEMON[a.id + 1].bst > PokemonData.POKEMON[b.id + 1].bst
 				elseif sorting.sortType == SORT_TYPES.NAME then
 					return PokemonData.POKEMON[a.id + 1].name < PokemonData.POKEMON[b.id + 1].name
@@ -116,7 +117,6 @@ local function EvoDataScreen(initialSettings, initialTracker, initialProgram)
 		end
 		evoData = {}
 		evoData = EvoData.EVOLUTIONS[playerPokemon.pokemonID]
-		sortEvos()
 		currentTargetIDs = {}
 		currentIndex = 1
 		for targetID, data in pairs(evoData) do
@@ -132,6 +132,7 @@ local function EvoDataScreen(initialSettings, initialTracker, initialProgram)
 		ui.frames.mainFrame.resize({width = Graphics.SIZES.MAIN_SCREEN_WIDTH, height = mainFrameHeight})
 		local size = ui.controls.spacer.getSize()
 		ui.controls.spacer.resize({width = size.width, height = spacerHeight})
+		sortEvos()
 		readCurrentIndex()
 		readScroller()
 	end
@@ -162,9 +163,9 @@ local function EvoDataScreen(initialSettings, initialTracker, initialProgram)
 		)
 		ui.controls.sortLabel =
 			TextLabel(
-			Component(ui.frames.topFrame, Box({x = 0, y = 0}, {width = 35, height = 0})),
+			Component(ui.frames.topFrame, Box({x = 0, y = 0}, {width = 40, height = 0})),
 			TextField(
-				"Sort by:",
+				"Trier par:",
 				{x = 0, y = 1},
 				TextStyle(
 					Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -177,9 +178,9 @@ local function EvoDataScreen(initialSettings, initialTracker, initialProgram)
 		local sortButtonsFrame =
 			Frame(Box({x = 0, y = 0}, {width = 0, height = 0}), Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, 2), ui.frames.topFrame)
 		local buttonInfo = {
-			{name = "Name", width = 32, sortType = SORT_TYPES.NAME},
+			{name = "Nom", width = 28, sortType = SORT_TYPES.NAME},
 			{name = "BST", width = 22, sortType = SORT_TYPES.BST},
-			{name = "Percent", width = 38, sortType = SORT_TYPES.PERCENT}
+			{name = "Taux", width = 28, sortType = SORT_TYPES.PERCENT}
 		}
 		for _, info in pairs(buttonInfo) do
 			local button =
@@ -356,7 +357,7 @@ local function EvoDataScreen(initialSettings, initialTracker, initialProgram)
 				)
 			),
 			TextField(
-				"Data from brdy and Harkenn",
+				"Données de brdy et Harkenn",
 				{x = 3, y = 1},
 				TextStyle(
 					Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -383,7 +384,7 @@ local function EvoDataScreen(initialSettings, initialTracker, initialProgram)
 				ui.frames.bottomFrame,
 				Box(
 					{x = 0, y = 0},
-					{width = 56, height = 16},
+					{width = 70, height = 16},
 					"Top box background color",
 					"Top box border color",
 					true,
@@ -391,7 +392,7 @@ local function EvoDataScreen(initialSettings, initialTracker, initialProgram)
 				)
 			),
 			TextField(
-				"View Site",
+				"Visiter le site",
 				{x = 9, y = 2},
 				TextStyle(
 					Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -407,7 +408,7 @@ local function EvoDataScreen(initialSettings, initialTracker, initialProgram)
 				ui.frames.bottomFrame,
 				Box(
 					{x = 0, y = 0},
-					{width = 56, height = 16},
+					{width = 44, height = 16},
 					"Top box background color",
 					"Top box border color",
 					true,
@@ -415,8 +416,8 @@ local function EvoDataScreen(initialSettings, initialTracker, initialProgram)
 				)
 			),
 			TextField(
-				"Close",
-				{x = 17, y = 2},
+				"Retour",
+				{x = 8, y = 2},
 				TextStyle(
 					Graphics.FONT.DEFAULT_FONT_SIZE,
 					Graphics.FONT.DEFAULT_FONT_FAMILY,

@@ -2411,7 +2411,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "30",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Attaque en 2 tours. Le lanceur est invulnérable pendant le chargement."  
+		description = "La puissance d'Ampleur est d'intensité variable et aléatoire, l'ampleur de la capacité varie de 4 et 10. La puissance est doublée si la capacité est utilisée contre un adversaire dans le premier tour de Tunnel."  
 	},
 	{
 		id = "223",
