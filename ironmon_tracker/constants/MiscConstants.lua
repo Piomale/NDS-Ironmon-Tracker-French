@@ -1,13 +1,11 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "4.05.1"
+MiscConstants.TRACKER_VERSION = "4.06.1"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
-	"-- Correction de la description de Ampleur",
-	"-- Traduction de la page des évolutions",
-	"-- Tri par BST et par nom sur la page des évolutions"
+	"-- Nouvelle traduction des attaques et talents"
 }
 
 MiscConstants.DEFAULT_SETTINGS = {

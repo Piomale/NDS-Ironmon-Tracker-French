@@ -4,7 +4,7 @@ AbilityData.ABILITIES = {}
 AbilityData.BATTLE_MSGS = {}
 
 AbilityData.ABILITIES_MASTER_LIST = {
-    {
+        {
         id = 0,
         name = "---",
         description = ""
@@ -12,7 +12,7 @@ AbilityData.ABILITIES_MASTER_LIST = {
     {
         id = 1,
         name = "Puanteur",
-		description = {
+        description = {
             "Hors combat en tête d'équipe, diminue de 50% la probabilité de rencontrer des Pokémon sauvages.",
             "Hors combat en tête d'équipe, diminue de 50% la probabilité de rencontrer des Pokémon sauvages. En combat, octroie 10% de chance d'apeurer."
         }
@@ -20,843 +20,838 @@ AbilityData.ABILITIES_MASTER_LIST = {
     {
         id = 2,
         name = "Crachin",
-        description = "Invoque la pluie en combat"
+        description = "Le Pokémon invoque la pluie à son entrée au combat."
     },
     {
         id = 3,
         name = "Turbo",
-        description = "La vitesse de votre Pokémon augmente à chaque tour"
+        description = "La Vitesse du Pokémon augmente d'un niveau à la fin de chaque tour."
     },
     {
         id = 4,
         name = "Armurbaston",
-        description = "Empêche les coups critiques de l'adversaire"
+        description = "Empêche l'adversaire d'asséner des coups critiques au Pokémon."
     },
     {
         id = 5,
         name = "Fermeté",
-		description = {
-            "Bloque les attaques OHKO telles que Glaciation, Empal’Korne, Guillotine et Abîme",
+        description = {
+            "Immunise contre les capacités OHKO (Glaciation, Empal'korne, Guillotine et Abîme).",
             "Immunise contre les capacités OHKO (Glaciation, Empal'korne, Guillotine et Abîme). Permet aussi de survivre à 1 PV si une attaque était censée mettre K.O. le Pokémon alors qu'il avait tous ses PV."
         }
     },
     {
         id = 6,
         name = "Moiteur",
-        description = "Aucun Pokémon ne peut utiliser l'attaque 'Explosion' ou 'Destruction'."
+        description = "Empêche tous les Pokémon sur le terrain d'utiliser les capacités explosives (Explosion et Destruction)"
     },
     {
         id = 7,
         name = "Echauffement",
-        description = "Impossible de paralyser ce Pokémon"
+        description = "Immunise contre la paralysie."
     },
     {
         id = 8,
         name = "Voile Sable",
-        description = "Augmente l'évasion s'il y a une tempête de sable."
+        description = "Diminue la Précision des attaques qui le ciblent de 20 % par temps de tempête de sable. Protège aussi des dégâts de la tempête de sable si ce n'était pas le cas. Hors combat en tête d'équipe, diminue de 50% la probabilité de rencontrer des Pokémon sauvages par temps de tempête de sable."
     },
     {
         id = 9,
         name = "Statik",
-        description = "Si l'ennemi vous attaque, il peut être paralysé (~30% de chances)"
+        description = "Octroie 30% de chance de paralyser l'adversaire lorsqu'il attaque le Pokémon avec une capacité de contact. Hors combat en tête d'équipe, 50% de chance de forcer l'apparition d'un Pokémon sauvage de type Électrik."
     },
     {
         id = 10,
         name = "Absorb Volt",
-        description = "Les attaques électriques reçues par votre Pokémon lui régénèrent 1/4 de ses PV."
+        description = "Immunise le Pokémon contre les capacités Électrik. Il est soigné de 25% de ses PV max s'il en encaisse une."
     },
     {
         id = 11,
         name = "Absorb Eau",
-        description = "Les attaques eau reçues par votre Pokémon lui régénèrent 1/4 de ses PV."
+        description = "Immunise le Pokémon contre les capacités Eau. Il est soigné de 25% de ses PV max s'il en encaisse une."
     },
     {
         id = 12,
         name = "Benêt",
-        description = "Bloque l'attaque 'Attraction'"
+        description = "Protège contre le talent Joli Sourire, et les capacités Attraction et Séduction."
     },
     {
         id = 13,
         name = "Ciel Gris",
-        description = "Ignore les effets du climat"
+        description = "Tant que le Pokémon est sur le terrain, le climat n'a aucun effet pour tous les Pokémon."
     },
     {
         id = 14,
         name = "Oeil Composé",
-        description = "Augmente la précision"
+        description = "Augmente la Précision de 30%. Hors combat en tête d'équipe, augmente les chances que les Pokémon sauvages recontrés tiennent un objet, s'ils le peuvent."
     },
     {
         id = 15,
         name = "Insomnia",
-        description = "Empêche de s'endormir"
+        description = "Immunise contre le sommeil."
     },
     {
         id = 16,
         name = "Déguisement",
-        description = "Change son type en celui de la dernière attaque employée à l'encontre de ce Pokémon"
+        description = "Le Pokémon change son type en celui de la dernière capacité offensive encaissée."
     },
     {
         id = 17,
         name = "Vaccin",
-        description = "Votre Pokémon ne peut pas être empoisonné"
+        description = "Immunise contre l'empoisonnement et l'empoisonnement grave."
     },
     {
         id = 18,
         name = "Torche",
-        description = "Les attaques feu reçues par ce Pokémon sont absorbées et augmentent la puissance de ses propres attaques feu  "
+        description = "Immunise le Pokémon contre les capacités Feu. Augmente la puissance de ses propres capacités Feu de 50% s'il en encaisse une."
     },
     {
         id = 19,
         name = "Ecran Poudre",
-        description = "Empêche le cumul d'effets"
+        description = "Annule les effets secondaires des capacités offensives adverses qui ciblent le Pokémon."
     },
     {
         id = 20,
         name = "Tempo Perso",
-        description = "Empêche la confusion"
+        description = "Immunise contre la confusion."
     },
     {
         id = 21,
         name = "Ventouse",
-		description = {
-            "Votre Pokémon ne peut pas être forcé de 'battre en retraite' par des attaques telles que Hurlement ou Cyclone",
+        description = {
+            "Empêche le Pokémon d'être forcé de se retirer (Hurlement et Cyclone). Hors combat en tête d'équipe, augmente les chances de pêcher un Pokémon.",
             "Empêche le Pokémon d'être forcé de se retirer (Hurlement, Cyclone, Draco-Queue et Projection). Hors combat en tête d'équipe, augmente les chances de pêcher un Pokémon."
         }
     },
     {
         id = 22,
         name = "Intimidation",
-        description = "Quand votre Pokémon démarre le combat, l'attaque du Pokémon adverse baisse d'un cran"
+        description = "Diminue l'Attaque des Pokémon adverses d'un niveau lorsque le Pokémon entre au combat. Hors combat en tête d'équipe, 50% de chance d'empêcher la rencontre d'un Pokémon sauvage qui possède au moins 5 niveaux de moins que le Pokémon."
     },
     {
         id = 23,
         name = "Marque Ombre",
-        description = "L'adversaire ne peut pas s'enfuir ou switcher de Pokémon"
+        description = "Empêche la fuite ou la retraite des Pokémon adverses."
     },
     {
         id = 24,
         name = "Peau Dure",
-        description = "L'adversaire perd 1/16ème de ses PV max à chaque fois qu'il touche ce Pokémon."
+        description = "Inflige 1/8 des PV max à l'adversaire à chaque fois qu'il utilise une capacité de contact contre le Pokémon."
     },
     {
         id = 25,
         name = "Garde Mystik",
-        description = "Seules les attaques 'super efficaces', le climat et les altérations de statut peuvent toucher votre Pokémon"
+        description = "Immunise contre les capacités offensives qui ne sont pas \"super efficaces\"."
     },
     {
         id = 26,
         name = "Lévitation",
-        description = "Immunisé face aux attaques de type sol"
+        description = "Immunise contre les capacités offensives de type Sol. Le Pokémon ne touche plus le sol."
     },
     {
         id = 27,
         name = "Pose Spore",
-        description = "Probabilité de 10% d'empoisonner, endormir ou paralyser l'adversaire après qu'il ait lancé une attaque."
+        description = "Octroie 30% de chance d'empoisonner, d'endormir ou de paralyser l'adversaire lorsqu'il utilise une capacité de contact contre le Pokémon."
     },
     {
         id = 28,
         name = "Synchro",
-        description = "Transfère le statut sauf si l'adversaire y est immunisé ."
+        description = "Lorsque le Pokémon subit un problème de statut d'un Pokémon, il inflige automatiquement le même problème de statut à ce dernier. Hors combat en tête d'équipe, 50% de chance de forcer l'apparition d'un Pokémon sauvage de la même nature que lui."
     },
     {
         id = 29,
         name = "Corps Sain",
-        description = "Vos stats ne peuvent pas être baissées"
+        description = "Empêche les autres Pokémon de baisser les statistiques du Pokémon."
     },
     {
         id = 30,
         name = "Médic Nature",
-        description = "Le Pokémon est soigné de ses altérations de statut lorsqu'il est changé au cours d'un combat"
+        description = "Soigne le Pokémon de ses problèmes de statut lorsqu'il est retiré du combat."
     },
     {
         id = 31,
         name = "Paratonnerre",
-		description = {
-            "Attire les attaques électriques",
+        description = {
+            "Attire les capacités Électrik en Duo/Trio.",
             "Attire les capacités Électrik en Duo/Trio. Immunise aussi contre ces dernières et augmente l'Attaque Spéciale d'un niveau s'il en encaisse une."
         }
     },
     {
         id = 32,
         name = "Sérénité",
-        description = "Double la réussite aux effets des attaques lancées"
+        description = "Double les chances d'activation des effets secondaires des capacités offensives."
     },
     {
         id = 33,
         name = "Glissade",
-        description = "Monte la vitesse quand il pleut"
+        description = "Double la Vitesse par temps de pluie."
     },
     {
         id = 34,
         name = "Chlorophyle",
-        description = "Si le climat est ensoleillé, le Pokémon doté de Chlorophylle voit sa statistique de Vitesse multipliée par deux."
+        description = "Double la Vitesse par temps de soleil."
     },
     {
         id = 35,
-        name = "Lumiatirance",
-        description = "Un Pokémon avec Lumiattirance en tête d'équipe permet de rencontrer deux fois plus de Pokémon sauvages."
+        name = "Lumiatirance ",
+        description = "Hors combat en tête d'équipe, double les chances de rencontrer des Pokémon sauvages."
     },
     {
         id = 36,
         name = "Calque",
-        description = "Calque la capacité spéciale du Pokémon adverse"
+        description = "Copie le talent du Pokémon adverse."
     },
     {
         id = 37,
         name = "Coloforce",
-        description = "Double l'attaque du Pokémon"
+        description = "Double l'Attaque du Pokémon."
     },
     {
         id = 38,
         name = "Point Poison",
-        description = "Si le Pokémon adverse fait une attaque directe contre votre Pokémon, il aura 30% de chances d'être empoisonné"
+        description = "Octroie 30% de chance d'empoisonner l'adversaire s'il utilise une capacité de contact contre le Pokémon."
     },
     {
         id = 39,
         name = "Attention",
-        description = "Empêche la peur"
+        description = "Immunise contre la peur."
     },
     {
         id = 40,
         name = "Armumagma",
-        description = "Votre Pokémon ne peut pas être gelé"
+        description = "Immunise contre le gel. Hors combat, les Œufs éclosent plus rapidement."
     },
     {
         id = 41,
         name = "Ignifu-Voile",
-        description = "Votre Pokémon ne peut pas être brûlé"
+        description = "Immunise contre la brûlure."
     },
     {
         id = 42,
         name = "Magnépiège",
-        description = "Si le Pokémon adverse est de type acier, il ne peut pas fuir"
+        description = "Empêche la fuite ou la retraite des Pokémon adverses de type Acier. Hors combat en tête d'équipe, 50% de chance de forcer l'apparition d'un Pokémon sauvage de type Acier."
     },
     {
         id = 43,
         name = "Anti-Bruit",
-        description = "Évite les attaques sonores"
+        description = "Immunise contre les capacités sonores comme Mégaphone ou Hurlement."
     },
     {
         id = 44,
         name = "Cuvette",
-        description = "Heals for 1/16 max HP after each turn during rain."
+        description = "Restaure 12.5% des PV max à la fin de chaque tour par temps de pluie."
     },
     {
         id = 45,
         name = "Sable Volant",
-        description = "Le Pokémon invoque une tempête de sable dès son arrivée en jeu"
+        description = "Le Pokémon invoque une tempête de sable à son entrée au combat."
     },
     {
         id = 46,
         name = "Pression",
-        description = "Le Pokémon adverse dépense deux PP au lieu d'un pour une attaque"
+        description = "Les capacités ciblant le Pokémon consomment 2 PP au lieu d'un. Hors combat en tête d'équipe, 50% de chance de forcer l'apparition d'un Pokémon à son plus haut niveau."
     },
     {
         id = 47,
         name = "Isograisse",
-        description = "Les dégâts provoqués par les attaques des types Feu ou Glace sont divisés par 2"
+        description = "Divise par 2 les dégâts encaissés de type Feu ou Glace."
     },
     {
         id = 48,
         name = "Matinal",
-        description = "Quand votre Pokémon est endormi, il se réveillera plus vite"
+        description = "Divise par 2 le nombre de tours de sommeil (arrondi à l'inférieur)."
     },
     {
         id = 49,
         name = "Corps Ardent",
-        description = "Si votre adversaire vous attaque directement, il a 30% de chances d'être brûlé"
+        description = "Octroie 30% de chance de brûler l'adversaire s'il utilise une capacité de contact contre le Pokémon. Hors combat, les Œufs éclosent plus rapidement."
     },
     {
         id = 50,
         name = "Fuite",
-        description = "Augmente les chances de fuite"
+        description = "Permet de fuir à coup sûr contre un Pokémon sauvage. N'a aucun effet sur le switch."
     },
     {
         id = 51,
         name = "Regard Vif",
-        description = "Empêche une perte de précision"
+        description = {
+            "Empêche la baisse de Précision. Hors combat en tête d'équipe, 50% de chance d'empêcher la rencontre d'un Pokémon sauvage qui possède au moins 5 niveaux de moins que le Pokémon.",
+            "Empêche la baisse de Précision. Hors combat en tête d'équipe, 50% de chance d'empêcher la rencontre d'un Pokémon sauvage qui possède au moins 5 niveaux de moins que le Pokémon. Ignore les changements d'Esquive de l'adversaire."
+        }
     },
     {
         id = 52,
         name = "Hyper Cutter",
-        description = "L'attaque de votre Pokémon ne peut pas être baissée"
+        description = "Empêche la baisse d'Attaque."
     },
     {
         id = 53,
         name = "Ramassage",
-		description = {
-            "Octroie 10% de chance de ramasser un objet après chaque combat remporté. Les objets ramassés dépendent du niveau du Pokémon et du jeu.",
-            "Octroie 10% de chance de ramasser un objet après chaque combat remporté. Les objets ramassés dépendent du niveau du Pokémon et du jeu."
-        }
+        description = "Octroie 10% de chance de ramasser un objet après chaque combat remporté. Les objets ramassés dépendent du niveau du Pokémon et du jeu."
     },
     {
         id = 54,
         name = "Absentéisme",
-        description = "Votre Pokémon n'attaque qu'un tour sur deux"
+        description = "Le Pokémon n'agit pas un tour sur deux."
     },
     {
         id = 55,
         name = "Agitation",
-        description = "Augmente votre attaque de 50% mais baisse votre précision de 20%"
+        description = "Augmente l'Attaque de 50% mais baisse la Précision des capacités physiques de 20%. Hors combat en tête d'équipe, 50% de chance de forcer l'apparition d'un Pokémon à son plus haut niveau."
     },
     {
         id = 56,
         name = "Joli Sourire",
-        description = "1/3 de chances de provoquer Attraction en cas d'attaque directe d’un Pokémon du sexe opposé."
+        description = "Octroie 30% de chance de rendre amoureux l'adversaire s'il est de sexe opposé et qu'il utilise une capacité de contact contre le Pokémon. Hors combat en tête d'équipe, 66.7% de chance de forcer l'apparition d'un Pokémon sauvage du sexe opposé."
     },
     {
         id = 57,
         name = "Plus",
-		description = {
-            "Augmente l'attaque spéciale lorsque votre Pokémon est allié à un Pokémon possédant le talent Minus (2vs2)",
-            "Augmente l'Attaque Spéciale lorsque votre Pokémon est allié à un Pokémon possédant le talent Plus ou le talent Minus."
+        description = {
+            "Augmente l'Attaque Spéciale de 50% en Duo/Trio lorsqu'un allié possède le talent Minus.",
+            "Augmente l'Attaque Spéciale de 50% en Duo/Trio lorsqu'un allié possède le talent Plus ou le talent Minus."
         }
     },
     {
         id = 58,
         name = "Minus",
-		description = {
-            "Augmente l'attaque spéciale lorsque votre Pokémon est allié à un Pokémon possédant le talent Minus (2vs2)",
-            "Augmente l'Attaque Spéciale lorsque votre Pokémon est allié à un Pokémon possédant le talent Plus ou le talent Minus."
+        description = {
+            "Augmente l'Attaque Spéciale de 50% en Duo/Trio lorsqu'un allié possède le talent Plus.",
+            "Augmente l'Attaque Spéciale de 50% en Duo/Trio lorsqu'un allié possède le talent Plus ou le talent Minus."
         }
     },
     {
         id = 59,
         name = "Météo",
-        description = "Change le type selon le climat"
+        description = "Change le type du Pokémon selon le climat."
     },
     {
         id = 60,
         name = "Glue",
-        description = "Empêche le vol d'objets"
+        description = "Empêche le Pokémon de perdre son objet (via Larcin, Tourmagik ou Sabotage par exemple). Hors combat en tête d'équipe, augmente les chances de pêcher un Pokémon."
     },
     {
         id = 61,
         name = "Mue",
-        description = "A chaque tour, vous avez 1/3 de chances de revenir à votre statut normal."
+        description = "Octroie 33% de chance de soigner son problème de statut à la fin de chaque tour."
     },
     {
         id = 62,
         name = "Cran",
-        description = "Multiplie par 1.5 l'attaque de votre Pokémon lorsque qu'il souffre d'une altération de statut"
+        description = "Augmente l'Attaque de 50% si le Pokémon souffre d'un problème de statut."
     },
     {
         id = 63,
         name = "Ecaille Spé.",
-        description = "Multiplie par 1.5 la défense de votre Pokémon lorsque qu'il souffre d'une altération de statut."
+        description = "Augmente la Défense de 50% si le Pokémon souffre d'un problème de statut."
     },
     {
         id = 64,
         name = "Suintement",
-        description = "Si le Pokémon adverse essaie d'absorber vos PV, c'est lui qui en perdra"
+        description = "Les capacités adverses absorbant des PV comme Giga-Sangsue ou Vampigraine (utilisées contre le Pokémon) font perdre des PV à l'adversaire au lieu de les régénérer."
     },
     {
         id = 65,
         name = "Engrais",
-        description = "Donne un bonus multiplicateur de x1.5 aux attaques plante lorsque les PV de ce Pokémon sont inférieurs à 1/3."
+        description = "Augmente la puissance des attaques Plante de 50% lorsque les PV du Pokémon sont inférieurs à 1/3 des PV max."
     },
     {
         id = 66,
         name = "Brasier",
-        description = "Donne un bonus multiplicateur de x1.5 aux attaques feu lorsque les PV de ce Pokémon sont inférieurs à 1/3."
+        description = "Augmente la puissance des attaques Feu de 50% lorsque les PV du Pokémon sont inférieurs à 1/3 des PV max."
     },
     {
         id = 67,
         name = "Torrent",
-        description = "Donne un bonus multiplicateur de x1.5 aux attaques eau lorsque les PV de ce Pokémon sont inférieurs à 1/3."
+        description = "Augmente la puissance des attaques Eau de 50% lorsque les PV du Pokémon sont inférieurs à 1/3 des PV max."
     },
     {
         id = 68,
         name = "Essaim",
-        description = "Donne un bonus multiplicateur de x1.5 aux attaques insecte lorsque les PV de ce Pokémon sont inférieurs à 1/3."
+        description = "Augmente la puissance des attaques Insecte de 50% lorsque les PV du Pokémon sont inférieurs à 1/3 des PV max."
     },
     {
         id = 69,
         name = "Tête de Roc",
-        description = "Votre Pokémon ne se blesse pas en éxecutant des attaques telles que Damoclès"
+        description = "Protège le Pokémon des dégâts de recul de ses capacités à contrecoups comme Damoclès ou Martobois."
     },
     {
         id = 70,
         name = "Sécheresse",
-        description = "Quand votre Pokémon débute le le combat, il fait soleil"
+        description = "Le Pokémon invoque le soleil à son entrée au combat."
     },
     {
         id = 71,
         name = "Piège Sable",
-        description = "Empêche les Pokémon adverses d’être échangés, à moins qu’ils ne soient de type Vol, qu'ils tiennent la Carapace Mue ou qu'ils utilisent Demi-Tour, Cyclone, Hurlement, ou Téléport. Les Pokémon peuvent quitter le terrain s'ils possèdent les talents: Lévitation ou Fuite."
+        description = "Empêche la fuite ou la retraite des Pokémon adverses s'ils ne sont pas de type Sol ou s'ils ne possèdent pas Lévitation. Hors combat en tête d'équipe, double les chances de rencontrer des Pokémon sauvages."
     },
     {
         id = 72,
         name = "Esprit Vital",
-        description = "Votre Pokémon ne peut pas être endormi"
+        description = "Immunise contre le sommeil. Hors combat en tête d'équipe, 50% de chance de forcer l'apparition d'un Pokémon à son plus haut niveau."
     },
     {
         id = 73,
         name = "Ecran Fumée",
-        description = "Empêche les statistiques de baisser"
+        description = "Empêche les autres Pokémon de baisser les statistiques du Pokémon. Hors combat en tête d'équipe, diminue de 50% la probabilité de rencontrer des Pokémon sauvages"
     },
     {
         id = 74,
         name = "Force Pure",
-        description = "Double l'attaque du Pokémon"
+        description = "Double l'Attaque du Pokémon."
     },
     {
         id = 75,
         name = "Coque Armure",
-        description = "Bloque les coups critiques"
+        description = "Empêche l'adversaire d'asséner des coups critiques au Pokémon."
     },
     {
         id = 76,
         name = "Air Lock",
-        description = "Ignore les effets du climat"
+        description = "Tant que le Pokémon est sur le terrain, le climat n'a aucun effet pour tous les Pokémon."
     },
     {
         id = 77,
         name = "Pieds Confus",
-        description = "Améliore l'esquive lorsque le Pokémon devient confus"
+        description = "Augmente l'Esquive de 50% lorsque le Pokémon est confus."
     },
     {
         id = 78,
         name = "Motorisé",
-        description = "Si votre Pokémon reçoit une attaque électrique, sa vitesse augmente"
+        description = "Immunise le Pokémon contre les capacités Électrik. Augmente sa Vitesse d'un niveau s'il en encaisse une."
     },
     {
         id = 79,
         name = "Rivalité",
-        description = "Augmente l'Attaque du Pokémon si l'adversaire est du même sexe  " 
+        description = "Augmente la puissance des attaques de 25% si l'adversaire est du même sexe, baisse la puissance des attaques de 25% s'il est du sexe opposé. Aucun effet si le Pokémon ou l'adversaire est asexué."
     },
     {
         id = 80,
         name = "Impassible",
-        description = "Augmente la vitesse du Pokémon lorsqu'il perd des PV en attaquant"
+        description = "Augmente la Vitesse d'un niveau lorsque le Pokémon est apeuré."
     },
     {
         id = 81,
         name = "Rideau Neige",
-        description = "L'esquive du Pokémon augmente lors d'une pluie de grêle"
+        description = "Diminue la Précision des attaques qui le ciblent de 20 % par temps de grêle. Hors combat en tête d'équipe, diminue de 50% la probabilité de rencontrer des Pokémon sauvages par temps de grêle."
     },
     {
         id = 82,
         name = "Gloutonnerie",
-        description = "Le Pokémon utilise la baie tenue plus tôt dans le match  "
+        description = "Permet de consommer certaines Baies plus rapidement : le taux d'activation des Baies à 25% des PV max passe à 50% des PV max."
     },
     {
         id = 83,
         name = "Colérique",
-        description = "Ignore les effets du climat"
+        description = "Augmente l'Attaque au maximum lorsque le Pokémon subit un coup critique."
     },
     {
         id = 84,
         name = "Délestage",
-        description = "Si le Pokémon ne tient pas d'objet, sa vitesse augmente"
+        description = "Double la Vitesse si le Pokémon tenait un objet et qu'il l'a utilisé. L'effet disparaît après un switch."
     },
     {
         id = 85,
         name = "Ignifuge",
-        description = "Divise par 2 la puissance des attaques feu lancées contre ce Pokémon"
+        description = "Divise par 2 les dégâts encaissés de type Feu ainsi que les dégâts occasionnés par la brûlure."
     },
     {
         id = 86,
         name = "Simple",
-		description = {
-            "Augmente l'efficacité des attaques ou des objets tenus",
-            "Double tous les changements de statistiques du Pokémon."
-        }
-	},
+        description = "Double tous les changements de statistiques du Pokémon."
+    },
     {
         id = 87,
         name = "Peau Sèche",
-        description = "Si Zénith a été lancé, les PV du Pokémon diminuent et si Danse Pluie a été lancé, les PV du Pokémon augmentent"
+        description = "Restaure 25% des PV max si le Pokémon encaisse une capacité Eau mais augmente les dégâts subis par les capacités Feu de 25%. Restaure aussi 12.5% des PV max à la fin de chaque tour par temps de pluie mais perd 12.5% des PV max par temps de soleil."
     },
     {
         id = 88,
         name = "Télécharge",
-        description = "En fonction de la statistique la plus élevée de l'ennemi, le Pokémon augmente sa propre statistique"
+        description = "Augmente l'Attaque ou l'Attaque Spéciale d'un niveau selon la Défense et la Défense Spéciale de l'adversaire."
     },
     {
         id = 89,
         name = "Poing de Fer",
-        description = "Les attaques 'Poing' du Pokémon voient leurs dégâts augmenter de 20%"
+        description = "Augmente la puissance des attaques \"Poing\" de 20%."
     },
     {
         id = 90,
         name = "Soin Poison",
-        description = "Gagne des PV lorsque le statut est modifié"
+        description = "Restaure 12.5% des PV max à la fin de chaque tour lorsque le Pokémon est empoisonné."
     },
     {
         id = 91,
         name = "Adaptabilité",
-        description = "Si ce Pokémon utilise une attaque de son type, la puissance de l'attaque est multipliée par 2 au lieu de 1.5"
+        description = "Le bonus de dégâts pour les capacités du même type que le Pokémon (\"STAB\") passe de x1.5 à x2."
     },
     {
         id = 92,
         name = "Multi-Coups",
-        description = "Augmente le nombre de coups portés par les attaques en plusieurs coups"
+        description = "Les attaques \"Multi-coups\" portent toujours le nombre maximal de coups."
     },
     {
         id = 93,
         name = "Hydratation",
-        description = "Annule les changements de statut lorsqu'il pleut"
+        description = "Guérit des problèmes de statut à la fin de chaque tour par temps de pluie."
     },
     {
         id = 94,
         name = "Force Soleil",
-        description = "Si le soleil brille, les PV du Pokémon diminuent à chaque tour, mais son Attaque spéciale est multipliée par 1.5"
+        description = "Par temps de soleil, augmente l'Attaque Spéciale de 50%, mais perd 12.5% des PV max à la fin de chaque tour."
     },
     {
         id = 95,
         name = "Pied Véloce",
-        description = "Si un Pokémon doté de ce talent voit son statut altéré, sa Vitesse est augmentée d'un niveau, soit un gain de 50 %."
+        description = "Augmente la Vitesse de 50% si le Pokémon souffre d'un problème de statut. Hors combat en tête d'équipe, diminue de 50% la probabilité de rencontrer des Pokémon sauvages."
     },
     {
         id = 96,
         name = "Normalise",
-        description = "Toutes les attaques de ce Pokémon sont considérées comme de type normal"
+        description = "Toutes les capacités du Pokémon deviennent de type Normal."
     },
     {
         id = 97,
         name = "Sniper",
-        description = "La puissance des coups critiques est quadruplée"
+        description = "Augmente la puissance des coups critiques de 50%."
     },
     {
         id = 98,
         name = "Garde Magik",
-        description = "Seules les attaques qui infligent des dégâts fonctionnent contre ce Pokémon"
+        description = "Protège contre les dégâts résiduels (problèmes de statut, climats, Vampigraine, pièges, etc). Seules les capacités offensives peuvent infliger des dégâts au Pokémon."
     },
     {
         id = 99,
         name = "Annule Garde",
-        description = "Toutes les attaques ont une précision de 100% tant que ce Pokémon est en combat"
+        description = "Toutes les capacités utilisées par le Pokémon ou ciblant le Pokémon touchent à coup sûr. Hors combat en tête d'équipe, double les chances de rencontrer des Pokémon sauvages."
     },
     {
         id = 100,
         name = "Frein",
-        description = "Le Pokémon est toujours plus lent que son adversaire"
+        description = "Permet au Pokémon de toujours attaquer en dernier (pour une même priorité d'attaque que l'adversaire)."
     },
     {
         id = 101,
         name = "Technicien",
-        description = "La puissance des attaques d'une puissance inférieure à 60 est incrémentée de 50%"
+        description = "Augmente de 50% la puissance des capacités \"faibles\" (= dont la puissance de base est inférieure ou égale à 60)."
     },
     {
         id = 102,
         name = "Feuil. Garde",
-        description = "Soigne les altérations de statut lorsque le soleil brille."
+        description = "Immunise contre les problèmes de statut par temps de soleil."
     },
     {
         id = 103,
         name = "Maladresse",
-        description = "Ce Pokémon ne peut pas utiliser d'objet en combat"
+        description = "Empêche le Pokémon de bénéficier des effets des objets tenus en combat (sauf les effets affectant l'expérience / l'argent / les EV gagnés)"
     },
     {
         id = 104,
         name = "Brise Moule",
-        description = "Annule certaines capacités spéciales du Pokémon défenseur"
+        description = "Ignore certains talents du Pokémon adverse lorsque le Pokémon attaque."
     },
     {
         id = 105,
         name = "Chanceux",
-        description = "Le taux de coup critique du Pokémon est augmenté d'un niveau"
+        description = "Augmente le taux de coups critique d'un niveau."
     },
     {
         id = 106,
         name = "Boom Final",
-        description = "Enlève 1/4 des PV de l'ennemi lorsque le Pokémon est mis KO par une attaque physique."
+        description = "Si le Pokémon tombe K.O. par une capacité de contact adverse, alors l'adversaire perd 25% de ses PV max."
     },
     {
         id = 107,
         name = "Anticipation",
-        description = "Alerte lorsque le Pokémon adverse possède une attaque 'super efficace' ou OHKO"
+        description = "Affiche un message préventif lorsque l'adversaire possède une capacité \"OHKO\" ou \"super efficace\" contre le Pokémon, à son entrée au combat."
     },
     {
         id = 108,
         name = "Prédiction",
-        description = "Vous permet de voir l'attaque la plus puissante du Pokémon adverse"
+        description = "Affiche un message informant de la plus puissante capacité du Pokémon adverse, à l'entrée du Pokémon en combat."
     },
     {
         id = 109,
         name = "Inconscient",
-        description = "Les altérations de statistiques de l'adversaire sont ignorées  "
+        description = "Permet d'ignorer les changements de statistiques adverses lorsque le Pokémon attaque ou subit une attaque."
     },
     {
         id = 110,
         name = "Lentiteintée",
-        description = "Si la capacité utilisée n'est pas très efficace contre le Pokémon défenseur, ses dégâts sont doublés"
+        description = "Double la puissance des attaques \"pas très efficaces\"."
     },
     {
         id = 111,
         name = "Filtre",
-        description = "Divise par deux les dégâts provenant d'attaques 'super efficaces' à l'encontre de ce Pokémon"
+        description = "Réduit de 25% les dégâts \"super efficaces\" contre le Pokémon."
     },
     {
         id = 112,
         name = "Début Calme",
-        description = "L'attaque et la vitesse du Pokémon sont réduites de moitié durant les 5 premiers tours de combat"
+        description = "Divise par 2 l'Attaque et la Vitesse du Pokémon pendant les 5 premiers tours après qu'il soit entré en combat."
     },
     {
         id = 113,
         name = "Querelleur",
-        description = "Permet au Pokémon de toucher les Pokémon du type spectre avec des attaques du type normal ou combat  "
+        description = "Permet au Pokémon de toucher les Pokémon Spectre avec des capacités Normal et Combat."
     },
     {
         id = 114,
         name = "Lavabo",
-		description = {
-            "Toutes les attaques eau sont attirées sur ce Pokémon",
+        description = {
+            "Attire les capacités Eau en Duo/Trio.",
             "Attire les capacités Eau en Duo/Trio. Immunise aussi contre ces dernières et augmente l'Attaque Spéciale d'un niveau s'il en encaisse une."
         }
     },
     {
         id = 115,
         name = "Corps Gel",
-        description = "Les PV du Pokémon augmentent lorsqu'il grêle"
+        description = "Restaure 12.5% des PV max par temps de grêle."
     },
     {
         id = 116,
         name = "Solide Roc",
-        description = "Toutes les attaques 'super efficaces' sur ce Pokémon ont leurs dégâts diminués"
+        description = "Réduit de 25% les dégâts \"super efficaces\" contre le Pokémon."
     },
     {
         id = 117,
         name = "Alerte Neige",
-        description = "Quand ce Pokémon arrive dans le combat, la tempête de neige se déclenche"
+        description = "Le Pokémon invoque la grêle à son entrée au combat."
     },
     {
         id = 118,
         name = "Cherche Miel",
-        description = "Trouve du Miel après un combat"
+        description = "Octroie une chance de ramasser du Miel après chaque combat remporté. La chance augmente en fonction du niveau du Pokémon."
     },
     {
         id = 119,
         name = "Fouille",
-        description = "Permet de voir l'objet tenu par le Pokémon ennemi"
+        description = "Permet de voir l'objet tenu par l'adversaire, à l'entrée du Pokémon au combat."
     },
     {
         id = 120,
         name = "Téméraire",
-        description = "Tous les coups de riposte augmentent la puissance"
+        description = "Augmente la puissance des capacités à contrecoups de 20% (cela inclut les capacités comme Pied Voltige ou comme Damoclès)."
     },
     {
         id = 121,
         name = "Multitype",
-        description = "Le type et la couleur du Pokémon changent en fonction de la plaque qu'il porte."
+        description = "Le type du Pokémon change en fonction de la Plaque qu'il porte."
     },
     {
         id = 122,
         name = "Don Floral",
-        description = "Change la forme et augmente l'attaque et l'attaque spéciale du Pokémon (et de son allié en combat double) en présence du soleil  "
+        description = "Change la forme et augmente l'Attaque et la Défense Spéciale du Pokémon de 50% (et de ses alliés en Duo/Trio) par temps de soleil."
     },
     {
         id = 123,
         name = "Mauvais Rêve",
-        description = "Si le Pokémon défenseur dort, il perd des PV à chaque tour"
+        description = "Inflige 12.5% des PV max de l'adversaire à la fin de chaque tour s'il est endormi."
     },
     {
         id = 124,
         name = "Pickpocket",
-        description = "Lorsqu'un Pokémon doté du talent Pickpocket se fait toucher par une capacité directe, il vole l'objet tenu de son adversaire."
+        description = "Vole l'objet de l'adversaire après avoir utilisé une capacité de contact (nécessite de ne pas tenir d'objet)."
     },
     {
         id = 125,
         name = "Sans Limite",
-        description = "Si un Pokémon doté de ce talent utilise une capacité ayant des effets secondaires, cette capacité verra sa puissance de base augmenter de 30 %, mais les effets secondaires seront annulés en contrepartie. ."
+        description = "Augmente la puissance des capacités avec un effet secondaire de 30% mais les effets secondaires ne peuvent plus s'activer. Les effets secondaires ne concernent que les chances d'infliger un problème de statut ou la confusion ; de baisser des statistiques adverses ; d'augmenter des statistiques du lanceur ; d'apeurer la cible."
     },
     {
         id = 126,
         name = "Contestation",
-        description = "Inverts stat changes."
+        description = "Transforme les augmentations de stats du Pokémon en baisses de stats et inversement."
     },
     {
         id = 127,
         name = "Tension",
-        description = "Prevents opposing Pok" .. Chars.accentedE .. "mon from eating held Berries."
+        description = "Empêche les Pokémon adverses de manger leur Baie tant que le Pokémon est en combat."
     },
     {
         id = 128,
         name = "Acharné",
-        description = "Raises Attack two stages upon having any stat lowered."
+        description = "Augmente l'Attaque de 2 niveaux lorsqu'un adversaire baisse une statistique du Pokémon."
     },
     {
         id = 129,
         name = "Défaitiste",
-        description = "Halves Attack and Special Attack at 50% max HP or less."
+        description = "Divise par 2 l'Attaque et l'Attaque Spéciale lorsque les PV du Pokémon sont à 50% ou moins."
     },
     {
         id = 130,
         name = "Corps Maudit",
-        description = "Has a 30% chance of Disabling any move that hits the Pok" .. Chars.accentedE .. "mon."
+        description = "Octroie 30% de chance d'entraver une capacité offensive utilisée contre le Pokémon pour les 3 prochains tours."
     },
     {
         id = 131,
         name = "Coeur Soin",
-        description = "Has a 30% chance of curing each adjacent ally of any major status ailment after each turn."
+        description = "Octroie 30% de chance de soigner les problèmes de statut des alliés à la fin de chaque tour (en combat Duo/Trio)."
     },
     {
         id = 132,
         name = "Garde Amie",
-        description = "Decreases all direct damage taken by friendly Pok" .. Chars.accentedE .. "mon to 0.75x."
+        description = "Diminue de 25% les dégâts subis par les alliés (en combat Duo/Trio)."
     },
     {
         id = 133,
         name = "Armurouillée",
-        description = "Raises Speed and lowers Defense by one stage each upon being hit by a physical move."
+        description = "Augmente la Vitesse de 2 niveaux et baisse la Défense d'un niveau lorsque le Pokémon subit une capacité physique. 6G- : L'augmentation de Vitesse était de 1 niveau."
     },
     {
         id = 134,
         name = "Heavy Metal",
-        description = "Doubles the Pok" .. Chars.accentedE .. "mon's weight."
+        description = "Double le poids du Pokémon."
     },
     {
         id = 135,
         name = "Light Metal",
-        description = "Halves the Pok" .. Chars.accentedE .. "mon's weight."
+        description = "Divise par 2 le poids du Pokémon."
     },
     {
         id = 136,
         name = "Multiécaille",
-        description = "Halves damage taken from full HP."
+        description = "Divise par 2 les dégâts subis si le Pokémon possède tous ses PV."
     },
     {
         id = 137,
         name = "Rage Poison",
-        description = "Increases Attack to 1.5x when poisoned."
+        description = "Augmente l'Attaque de 50% si le Pokémon est empoisonné ou gravement empoisonné."
     },
     {
         id = 138,
         name = "Rage Brûlure",
-        description = "Increases Special Attack to 1.5x when burned."
+        description = "Augmente l'Attaque Spéciale de 50% si le Pokémon est brûlé."
     },
     {
         id = 139,
         name = "Récolte",
-        description = "Has a 50% chance of restoring a used Berry after each turn if the Pok" ..
-            Chars.accentedE .. "mon has held no items in the meantime."
+        description = "Octroie 50% de chance de récupérer une Baie précédemment consommée à la fin de chaque tour. Les chances sont de 100% par temps de soleil."
     },
     {
         id = 140,
         name = "Télépathe",
-        description = "Protects against friendly Pok" .. Chars.accentedE .. "mon's damaging moves."
+        description = "Permet d'esquiver les capacités offensives de ses alliés en combat Duo/Trio (capacités offensives à cible unique ET capacités offensives de zone)."
     },
     {
         id = 141,
         name = "Lunatique",
-        description = "Raises a random stat two stages and lowers another one stage after each turn."
+        description = "Augmente une statistique au hasard de 2 niveaux tout en diminuant une autre au hasard de 1 niveau. Les statistiques concernées sont : l'Attaque, la Défense, l'Attaque Spéciale, la Défense Spéciale et la Vitesse. (7G-) La Précision et l'Esquive étaient aussi concernées."
     },
     {
         id = 142,
         name = "Envelocape",
-        description = "Protects against damage from weather."
+        description = "Protège des dégâts causés par la tempête de sable et la grêle."
     },
     {
         id = 143,
         name = "Toxitouche",
-        description = "Has a 30% chance of poisoning target Pok" .. Chars.accentedE .. "mon upon contact."
+        description = "Octroie 30% de chance d'empoisonner la cible si le Pokémon utilise une capacité de contact."
     },
     {
         id = 144,
         name = "Régé-Force",
-        description = "Heals for 1/3 max HP upon switching out."
+        description = "Restaure 1/3 des PV max si le Pokémon se retire du combat."
     },
     {
         id = 145,
         name = "Coeur de Coq",
-        description = "Prevents Defense from being lowered."
+        description = "Empêche les autres Pokémon de baisser la Défense du Pokémon."
     },
     {
         id = 146,
         name = "Baigne Sable",
-        description = "Doubles Speed during a sandstorm. Protects against sandstorm damage."
+        description = "Double la Vitesse par temps de tempêtes de sable."
     },
     {
         id = 147,
         name = "Peau Miracle",
-        description = "Lowers incoming non-damaging moves' base accuracy to exactly 50%."
+        description = "Divise par 2 la Précision des capacités de statut ciblant le Pokémon."
     },
     {
         id = 148,
         name = "Analyste",
-        description = "Strengthens moves to 1.3x their power when moving last."
+        description = "Augmente la puissance de la capacité utilisée de 30% si le Pokémon attaque en dernier."
     },
     {
         id = 149,
         name = "Illusion",
-        description = "Takes the appearance of the last conscious party Pok" ..
-            Chars.accentedE .. "mon upon being sent out until hit by a damaging move."
+        description = "Prend l'apparence du dernier Pokémon de l'équipe."
     },
     {
         id = 150,
         name = "Imposteur",
-        description = "Transforms upon entering battle."
+        description = "Se transforme en le Pokémon adverse à l'entrée au combat, copiant toutes ses statistiques (sauf les PV), toutes ses capacités (avec 5 PP) et son talent."
     },
     {
         id = 151,
         name = "Infiltration",
-        description = "Bypasses Light Screen, Reflect, and Safeguard."
+        description = "Ignore les effets adverses de Protection, Mur Lumière, Voile Aurore, Brume et Rune Protect lorsque le Pokémon attaque."
     },
     {
         id = 152,
         name = "Momie",
-        description = "Changes attacking Pok" .. Chars.accentedE .. "mon's abilities to Mummy on contact."
+        description = "Lorsque l'adversaire utilise une capacité de contact contre le Pokémon, le talent de ce dernier se transforme en Momie."
     },
     {
         id = 153,
         name = "Impudence",
-        description = "Raises Attack one stage upon KOing a Pok" .. Chars.accentedE .. "mon."
+        description = "Augmente l'Attaque d'un niveau lorsque le Pokémon met un Pokémon K.O. (allié comme ennemi)."
     },
     {
         id = 154,
         name = "Coeur Noble",
-        description = "Raises Attack one stage upon taking damage from a dark move."
+        description = "Augmente l'Attaque d'un niveau lorsque le Pokémon encaisse une capacité Ténèbres."
     },
     {
         id = 155,
         name = "Phobique",
-        description = "Raises Speed one stage upon being hit by a dark, ghost, or bug move."
+        description = "Augmente la Vitesse d'un niveau lorsque le Pokémon encaisse une capacité Spectre, Ténèbres ou Insecte."
     },
     {
         id = 156,
         name = "Miroir Magik",
-        description = "Reflects most non-damaging moves back at their user."
+        description = "Renvoie à l'adversaire ses capacités de statut utilisées contre le Pokémon."
     },
     {
         id = 157,
         name = "Herbivore",
-        description = "Absorbs grass moves, raising Attack one stage."
+        description = "Immunise le Pokémon contre les capacités Plante. Augmente l'Attaque d'un niveau s'il en encaisse une."
     },
     {
         id = 158,
         name = "Farceur",
-        description = "Raises non-damaging moves' priority by one stage."
+        description = "Octroie une priorité +1 supplémentaire pour toutes les capacités de statut du Pokémon."
     },
     {
         id = 159,
         name = "Force Sable",
-        description = "Strengthens rock, ground, and steel moves to 1.3x their power during a sandstorm. Protects against sandstorm damage."
+        description = "Augmente la puissance des capacités de type Sol, Roche et Acier de 30% par temps de tempête de sable. Protège aussi des dégâts de la tempête de sable si ce n'était pas le cas."
     },
     {
         id = 160,
         name = "Epine de Fer",
-        description = "Damages attacking Pok" .. Chars.accentedE .. "mon for 1/8 their max HP on contact."
+        description = "Inflige 1/8 des PV max à l'adversaire à chaque fois qu'il utilise une capacité de contact contre le Pokémon."
     },
     {
         id = 161,
         name = "Mode Transe",
-        description = "Changes Darmanitan's form after each turn depending on its HP: Zen Mode below 50% max HP, and Standard Mode otherwise."
+        description = "Change le Pokémon de forme si ses PV tombent à 50% ou moins. Cela change son type et ses statistiques."
     },
     {
         id = 162,
         name = "Victorieux",
-        description = "Increases moves' accuracy to 1.1x for friendly Pok" .. Chars.accentedE .. "mon."
+        description = "Augmente la Précision du Pokémon (et de ses alliés en combat Duo/Trio) de 10%."
     },
     {
         id = 163,
         name = "Turbo Brasier",
-        description = "Bypasses targets' abilities if they could hinder or prevent moves."
+        description = "Ignore certains talents du Pokémon adverse lorsque le Pokémon attaque."
     },
     {
         id = 164,
-        name = "Teravolt",
-        description = "Bypasses targets' abilities if they could hinder or prevent moves."
+        name = "Téra-Voltage",
+        description = "Ignore certains talents du Pokémon adverse lorsque le Pokémon attaque."
     }
 }
 
