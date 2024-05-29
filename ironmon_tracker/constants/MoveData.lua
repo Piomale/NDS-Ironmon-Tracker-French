@@ -1024,7 +1024,7 @@ MoveData.MOVES_MASTER_LIST = {
 			"Balayage"
 		},
 		type = PokemonData.POKEMON_TYPES.FIGHTING,
-		power = "1",
+		power = "WT",
 		pp = "20",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
@@ -3528,7 +3528,10 @@ MoveData.MOVES_MASTER_LIST = {
 			"Baston"
 		},
 		type = PokemonData.POKEMON_TYPES.DARK,
-		power = "10",
+		power = {
+			"10",
+			"VAR"
+		},
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
