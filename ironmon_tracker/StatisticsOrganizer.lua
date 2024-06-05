@@ -225,6 +225,7 @@ end
 local function createRunProgressStatistic(newPastRun, statisticSet)
     local data = statisticSet[2]
     local progressStats = {}
+	local title = "Progression globale"
     table.insert(
         progressStats,
         StatisticsOrganizer.createCountedStatistic(
@@ -264,11 +265,15 @@ local function createRunProgressStatistic(newPastRun, statisticSet)
             data[10][2]
         )
     )
-    return {statisticSet[1], progressStats}
+    return {title, progressStats}
 end
 
 local function createBSTRangeStatistic(newPastRun, forEnemy, statisticSet)
     local BSTRangeStats = {}
+	local title = "Rencontre selon le BST"
+	if forEnemy then
+		title = "Défaite selon le BST"
+	end
     local ranges = {
         {"< 300", 0, 299},
         {"300 - 399", 300, 399},
@@ -294,7 +299,7 @@ local function createBSTRangeStatistic(newPastRun, forEnemy, statisticSet)
             )
         )
     end
-    return {statisticSet[1], BSTRangeStats}
+    return {title, BSTRangeStats}
 end
 
 POKEMON_TYPES_TRANSLATE = 
@@ -361,7 +366,7 @@ local function capAt10(statistic)
 end
 
 local function createPokemonNameStatistic(newPastRun, forEnemy, statisticSet)
-    local title = "Pokémons recontrés"
+    local title = "Pokémons joués"
     if forEnemy then
         title = "Défaite contre les pokémons"
     end

@@ -353,19 +353,18 @@ local function SeedLogger(initialProgram, initialGameName)
         if pastHashLogged ~= ROMHash then
             if pastRun.getProgress() > PlaythroughConstants.PROGRESS.NOWHERE then
                 totalRunsPastLab = totalRunsPastLab + 1
-			end
-			if not pastRuns[ROMHash] then
-				pastRuns[ROMHash] = pastRun
-				table.insert(pastRunKeyList, ROMHash)
-				pastHashLogged = ROMHash
-				pastRunStatistics =
-					StatisticsOrganizer.updateStatisticsWithNewRun(
-					pastRun,
-					pastRunStatistics,
-					program.getGameInfo().NAME
-				)
-			end
-            
+				if not pastRuns[ROMHash] then
+					pastRuns[ROMHash] = pastRun
+					table.insert(pastRunKeyList, ROMHash)
+					pastHashLogged = ROMHash
+					pastRunStatistics =
+						StatisticsOrganizer.updateStatisticsWithNewRun(
+						pastRun,
+						pastRunStatistics,
+						program.getGameInfo().NAME
+					)
+				end
+            end
         end
         saveRunsToFile()
     end
