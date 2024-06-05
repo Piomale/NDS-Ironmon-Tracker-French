@@ -128,7 +128,6 @@ local function SeedLogger(initialProgram, initialGameName)
         local CSV = ""
         for _, key in pairs(encodingConstants.POKEMON_KEY_LIST) do
             if not pokemon[key] then
-                print(key)
                 return nil
             end
             CSV = CSV .. pokemon[key] .. ","
@@ -354,18 +353,19 @@ local function SeedLogger(initialProgram, initialGameName)
         if pastHashLogged ~= ROMHash then
             if pastRun.getProgress() > PlaythroughConstants.PROGRESS.NOWHERE then
                 totalRunsPastLab = totalRunsPastLab + 1
-                if not pastRuns[ROMHash] then
-                    pastRuns[ROMHash] = pastRun
-                    table.insert(pastRunKeyList, ROMHash)
-                    pastHashLogged = ROMHash
-                    pastRunStatistics =
-                        StatisticsOrganizer.updateStatisticsWithNewRun(
-                        pastRun,
-                        pastRunStatistics,
-                        program.getGameInfo().NAME
-                    )
-                end
-            end
+			end
+			if not pastRuns[ROMHash] then
+				pastRuns[ROMHash] = pastRun
+				table.insert(pastRunKeyList, ROMHash)
+				pastHashLogged = ROMHash
+				pastRunStatistics =
+					StatisticsOrganizer.updateStatisticsWithNewRun(
+					pastRun,
+					pastRunStatistics,
+					program.getGameInfo().NAME
+				)
+			end
+            
         end
         saveRunsToFile()
     end

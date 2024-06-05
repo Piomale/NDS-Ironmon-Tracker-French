@@ -95,8 +95,8 @@ local function ExtrasScreen(initialSettings, initialTracker, initialProgram)
 			iconImage = "coverageCalc.png",
 			imageOffset = {x = 2, y = 2},
 			descriptionRows = {
-				"Shows how many Pokémon your moves",
-				"can hit."
+				"Liste les pokémons ayant une faiblesse",
+				" ou une résistance à vos attaques."
 			},
 			settingsKey = "coverageCalc",
 			useEnabledButton = false,

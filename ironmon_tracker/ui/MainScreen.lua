@@ -604,8 +604,8 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
             ui.controls.noteLabels[2].setText(MiscUtils.trimWhitespace(text) .. "...")
             hoverListeners.enemyNoteHoverListener.getOnHoverParams().text = note
         end
-        ui.controls.heldItem.setText("Total seen: " .. tracker.getAmountSeen(currentPokemon.pokemonID))
-        ui.controls.abilityDetails.setText("Last level: " .. tracker.getLastLevelSeen(currentPokemon.pokemonID))
+        ui.controls.heldItem.setText("Total vu: " .. tracker.getAmountSeen(currentPokemon.pokemonID))
+        ui.controls.abilityDetails.setText("Dernier niv: " .. tracker.getLastLevelSeen(currentPokemon.pokemonID))
         ui.controls.healsLabel.setText("")
         ui.controls.statusItemsLabel.setText("")
         local bookmarked = tracker.isMarked(currentPokemon.pokemonID)
@@ -1081,7 +1081,7 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
             ui.controls.noteLabels[1].setText(pastRun.getDate())
             ui.controls.noteLabels[2].setText(pastRun.getLocation())
         else
-            ui.controls.mainNoteLabel.setText("No data was found.")
+            ui.controls.mainNoteLabel.setText("Aucune donnée.")
         end
         if pastRun.getProgress() == PlaythroughConstants.PROGRESS.WON then
             ui.controls.pastRunLocationIcon.setVisibility(false)

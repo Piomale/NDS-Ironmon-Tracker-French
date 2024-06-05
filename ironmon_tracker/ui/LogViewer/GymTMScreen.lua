@@ -184,7 +184,7 @@ local function GymTMScreen(initialSettings, initialTracker, initialProgram, init
             rowInfo.badgeImage,
             rowInfo.leaderLabel
         if TMNumber ~= -1 then
-            local TMText = string.format("TM%02d", TMNumber)
+            local TMText = string.format("CT%02d", TMNumber)
             TMLabel.setText(TMText)
             moveLabel.setText(stripChars(moveName))
             badgeImage.setPath(badgePath)

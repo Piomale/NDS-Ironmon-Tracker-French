@@ -126,7 +126,7 @@ local function TrackedPokemonScreen(initialSettings, initialTracker, initialProg
                 )
             ),
             TextField(
-                "Search",
+                "Chercher",
                 {x = 50, y = 1},
                 TextStyle(13, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
             )
@@ -201,7 +201,7 @@ local function TrackedPokemonScreen(initialSettings, initialTracker, initialProg
                 "Main background color",
                 nil
             ),
-            Layout(Graphics.ALIGNMENT_TYPE.VERTICAL, 0, {x = Graphics.SIZES.BORDER_MARGIN, y = 1}),
+            Layout(Graphics.ALIGNMENT_TYPE.VERTICAL, 0, {x = Graphics.SIZES.BORDER_MARGIN, y = 30}),
             nil
         )
         initNavigationFrame()
@@ -244,7 +244,7 @@ local function TrackedPokemonScreen(initialSettings, initialTracker, initialProg
                 ui.frames.goBackFrame,
                 Box(
                     {x = 0, y = 0},
-                    {width = 40, height = 14},
+                    {width = 35, height = 14},
                     "Top box background color",
                     "Top box border color",
                     true,
@@ -252,7 +252,7 @@ local function TrackedPokemonScreen(initialSettings, initialTracker, initialProg
                 )
             ),
             TextField(
-                "Go back",
+                "Retour",
                 {x = 3, y = 1},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,

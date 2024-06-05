@@ -113,56 +113,60 @@ TrainerData.TRAINERS = {
         IMPORTANT_GROUPS = {
             {
                 groupName = "Silver",
+                groupNameFrench = "Silver",
                 trainerType = TrainerData.TRAINER_TYPES.RIVAL,
-                battles = {
-                    {location = "Lab", ids = {496, 497, 495}, iv = 0},
-                    {location = "Azalea Town", ids = {266, 269, 1}, iv = 3},
-                    {location = "Burned Tower", ids = {267, 270, 263}, iv = 6},
-                    {location = "Goldenrod", ids = {289, 271, 288}, iv = 14},
-                    {location = "Victory Road", ids = {268, 272, 264}, iv = 19},
-                    {location = "Mt. Moon", ids = {286, 287, 285}, iv = 24}
-                }
+				battles = {
+					{location = "Laboratoire", ids = {496, 497, 495}, iv = 0},
+					{location = "Bourg Geon", ids = {266, 269, 1}, iv = 3},
+					{location = "Tour Cendrée", ids = {267, 270, 263}, iv = 6},
+					{location = "Doublonville", ids = {289, 271, 288}, iv = 14},
+					{location = "Route Victoire", ids = {268, 272, 264}, iv = 19},
+					{location = "Mont Sélénite", ids = {286, 287, 285}, iv = 24}
+				}
             },
             {
                 groupName = "Johto Gyms",
+                groupNameFrench = "Arènes de Johto",
                 trainerType = TrainerData.TRAINER_TYPES.GYM_LEADERS,
                 battles = {
-                    {name = "Falkner", ids = {20}, badgeNumber = 1, iv = 6},
-                    {name = "Bugsy", ids = {21}, badgeNumber = 2, iv = 9},
-                    {name = "Whitney", ids = {30}, badgeNumber = 3, iv = 12},
-                    {name = "Morty", ids = {31}, badgeNumber = 4, iv = 12},
-                    {name = "Chuck", ids = {34}, badgeNumber = 5, iv = 18},
-                    {name = "Jasmine", ids = {33}, badgeNumber = 6, iv = 18},
-                    {name = "Pryce", ids = {32}, badgeNumber = 7, iv = 18},
-                    {name = "Clair", ids = {35}, badgeNumber = 8, iv = 24}
+                    {name = "Falkner", nameFrench = "Albert", ids = {20}, badgeNumber = 1, iv = 6},
+                    {name = "Bugsy", nameFrench = "Hector", ids = {21}, badgeNumber = 2, iv = 9},
+                    {name = "Whitney", nameFrench = "Blanche", ids = {30}, badgeNumber = 3, iv = 12},
+                    {name = "Morty", nameFrench = "Mortimer", ids = {31}, badgeNumber = 4, iv = 12},
+                    {name = "Chuck", nameFrench = "Chuck", ids = {34}, badgeNumber = 5, iv = 18},
+                    {name = "Jasmine", nameFrench = "Jasmine", ids = {33}, badgeNumber = 6, iv = 18},
+                    {name = "Pryce", nameFrench = "Frédo", ids = {32}, badgeNumber = 7, iv = 18},
+                    {name = "Clair", nameFrench = "Sandra", ids = {35}, badgeNumber = 8, iv = 24}
                 }
             },
             {
                 groupName = "Kanto Gyms",
+				groupNameFrench = "Arènes de Kanto",
                 trainerType = TrainerData.TRAINER_TYPES.GYM_LEADERS,
                 battles = {
-                    {name = "Brock", ids = {253}, badgeNumber = 1, iv = 24},
-                    {name = "Misty", ids = {254}, badgeNumber = 2, iv = 24},
-                    {name = "Lt. Surge", ids = {255}, badgeNumber = 3, iv = 24},
-                    {name = "Erika", ids = {256}, badgeNumber = 4, iv = 24},
-                    {name = "Janine", ids = {257}, badgeNumber = 5, iv = 24},
-                    {name = "Sabrina", ids = {258}, badgeNumber = 6, iv = 24},
-                    {name = "Blaine", ids = {259}, badgeNumber = 7, iv = 24},
-                    {name = "Blue", ids = {261}, badgeNumber = 8, iv = 30}
+                    {name = "Brock", nameFrench = "Pierre", ids = {253}, badgeNumber = 1, iv = 24},
+                    {name = "Misty", nameFrench = "Ondine", ids = {254}, badgeNumber = 2, iv = 24},
+                    {name = "Lt. Surge", nameFrench = "Major Bob", ids = {255}, badgeNumber = 3, iv = 24},
+                    {name = "Erika", nameFrench = "Erika", ids = {256}, badgeNumber = 4, iv = 24},
+                    {name = "Janine", nameFrench = "Jeannine", ids = {257}, badgeNumber = 5, iv = 24},
+                    {name = "Sabrina", nameFrench = "Morgane", ids = {258}, badgeNumber = 6, iv = 24},
+                    {name = "Blaine", nameFrench = "Auguste", ids = {259}, badgeNumber = 7, iv = 24},
+                    {name = "Blue", nameFrench = "Blue", ids = {261}, badgeNumber = 8, iv = 30}
                 }
             },
             {
                 groupName = "Elite 4 / Bosses",
+				groupNameFrench = "Elite 4 / Boss",
                 trainerType = TrainerData.TRAINER_TYPES.STANDARD,
                 battles = {
-                    {name = "Will", ids = {245}, iv = 30},
-                    {name = "Koga", ids = {247}, iv = 30},
-                    {name = "Bruno", ids = {418}, iv = 30},
-                    {name = "Karen", ids = {246}, iv = 30},
-                    {name = "Lance", ids = {244}, iv = 30},
-                    {name = "Red", ids = {260}, iv = 30},
-                    {name = "Petrel", ids = {487}, iv = 12},
-                    {name = "Archer", ids = {485}, iv = 24}
+                    {name = "Will", nameFrench = "Clément", ids = {245}, iv = 30},
+                    {name = "Koga", nameFrench = "Koga", ids = {247}, iv = 30},
+                    {name = "Bruno", nameFrench = "Aldo", ids = {418}, iv = 30},
+                    {name = "Karen", nameFrench = "Marion", ids = {246}, iv = 30},
+                    {name = "Lance", nameFrench = "Lance", ids = {244}, iv = 30},
+                    {name = "Red", nameFrench = "Red", ids = {260}, iv = 30},
+                    {name = "Petrel", nameFrench = "Lambda", ids = {487}, iv = 12},
+                    {name = "Archer", nameFrench = "Amos", ids = {485}, iv = 24}
                 }
             }
         }

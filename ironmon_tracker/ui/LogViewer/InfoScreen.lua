@@ -20,7 +20,7 @@ local function InfoScreen(initialSettings, initialTracker, initialProgram, initi
     local program = initialProgram
     local settingsLabels = {}
     local constants = {
-        LEFT_LABEL_WIDTH = 86,
+        LEFT_LABEL_WIDTH = 100,
         RIGHT_LABEL_WIDTH = 100,
         BUTTON_WIDTH = 30,
         BUTTON_HEIGHT = 16,
@@ -125,9 +125,9 @@ local function InfoScreen(initialSettings, initialTracker, initialProgram, initi
     local function readInfoIntoRows()
         --rows are left label, right label
         local infoRows = {
-            {"Game Name:", program.getGameInfo().NAME:gsub("Pokemon","Pok"..Chars.accentedE.."mon")},
-            {"Randomizer Version:", miscInfo.version},
-            {"Random Seed:", miscInfo.seed}
+            {"Nom du jeu:", program.getGameInfo().NAME:gsub("Pokemon","Pok"..Chars.accentedE.."mon")},
+            {"Version du randomizer:", miscInfo.version},
+            {"Seed aléatoire:", miscInfo.seed}
         }
         for index, row in pairs(infoRows) do
             readRow(index, row)
@@ -157,7 +157,7 @@ local function InfoScreen(initialSettings, initialTracker, initialProgram, initi
                 )
             ),
             TextField(
-                "Settings String:",
+                "Chaîne de paramètres:",
                 {x = 1, y = 0},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -221,21 +221,21 @@ local function InfoScreen(initialSettings, initialTracker, initialProgram, initi
             forms.newform(
             formWidth,
             formHeight,
-            "Seed Info"
+            "Info de la Seed"
         )
         local centerPosition = FormsUtils.getCenter(formWidth, formHeight)
         forms.setlocation(copyForm, centerPosition.xPos, centerPosition.yPos)
         local textBoxLines = {
-            "Game Name: "..program.getGameInfo().NAME:gsub("Pokemon","Pok"..Chars.accentedE.."mon").." ",
-            "Randomizer Version: "..miscInfo.version.." ",
-            "Random Seed: " ..miscInfo.seed.. " ",
-            "Settings String: "..miscInfo.settingsString.. " "
+            "Nom du jeu: "..program.getGameInfo().NAME:gsub("Pokemon","Pok"..Chars.accentedE.."mon").." ",
+            "Version du randomizer: "..miscInfo.version.." ",
+            "Seed aléatoire: " ..miscInfo.seed.. " ",
+            "Chaîne de paramètres: "..miscInfo.settingsString.. " "
         }
         local completeLines = table.concat(textBoxLines,"\r\n")
         forms.textbox(copyForm, completeLines, formWidth-36, formHeight-100, nil, 10, 10, true, false)
         forms.button(
             copyForm,
-            "Close",
+            "Fermer",
             function()
                 forms.destroyall()
             end,
@@ -269,7 +269,7 @@ local function InfoScreen(initialSettings, initialTracker, initialProgram, initi
                 Box(
                     {x = 0, y = 0},
                     {
-                        width = 48,
+                        width = 70,
                         height = 16
                     },
                     "Top box background color",
@@ -277,7 +277,7 @@ local function InfoScreen(initialSettings, initialTracker, initialProgram, initi
                 )
             ),
             TextField(
-                "Copy info",
+                "Copier les infos",
                 {x = 4, y = 2},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,

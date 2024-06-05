@@ -813,7 +813,7 @@ local function MainScreenUIInitializer(ui, gameInfo)
                 )
             ),
             TextField(
-                "Pow",
+                "Puiss",
                 Graphics.SIZES.DEFAULT_TEXT_OFFSET,
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -836,7 +836,7 @@ local function MainScreenUIInitializer(ui, gameInfo)
                 )
             ),
             TextField(
-                "Acc",
+                "Pre",
                 Graphics.SIZES.DEFAULT_TEXT_OFFSET,
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -998,7 +998,7 @@ local function MainScreenUIInitializer(ui, gameInfo)
             TextLabel(
             Component(ui.frames.accEvaFrame, Box({x = 0, y = 0}, {width = 0, height = 9}, nil, nil)),
             TextField(
-                "ACC",
+                "PRE",
                 {x = 0, y = -2},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -1012,7 +1012,7 @@ local function MainScreenUIInitializer(ui, gameInfo)
             TextLabel(
             Component(ui.frames.accEvaFrame, Box({x = 0, y = 0}, {width = 0, height = 9}, nil, nil)),
             TextField(
-                "EVA",
+                "ESQ",
                 {x = 0, y = -2},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,

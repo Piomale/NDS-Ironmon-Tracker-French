@@ -306,7 +306,7 @@ local function ColorSchemeScreen(initialSettings, initialTracker, initialProgram
                 ui.frames.bottomFrame,
                 Box(
                     {x = 0, y = 0},
-                    {width = 40, height = 14},
+                    {width = 35, height = 14},
                     "Top box background color",
                     "Top box border color",
                     true,
@@ -314,7 +314,7 @@ local function ColorSchemeScreen(initialSettings, initialTracker, initialProgram
                 )
             ),
             TextField(
-                "Go back",
+                "Retour",
                 {x = 3, y = 1},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,

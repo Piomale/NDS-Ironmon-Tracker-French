@@ -406,7 +406,7 @@ local function PokemonIconsScreen(initialSettings, initialTracker, initialProgra
                 )
             ),
             TextField(
-                "Pok" .. Chars.accentedE .. "mon Icon Sets",
+                "Icones Pok" .. Chars.accentedE .. "mon",
                 {x = 16, y = 1},
                 TextStyle(13, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
             )
@@ -464,7 +464,7 @@ local function PokemonIconsScreen(initialSettings, initialTracker, initialProgra
                 ui.frames.goBackFrame,
                 Box(
                     {x = 0, y = 0},
-                    {width = 40, height = 14},
+                    {width = 35, height = 14},
                     "Top box background color",
                     "Top box border color",
                     true,
@@ -472,7 +472,7 @@ local function PokemonIconsScreen(initialSettings, initialTracker, initialProgra
                 )
             ),
             TextField(
-                "Go back",
+                "Retour",
                 {x = 3, y = 1},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,

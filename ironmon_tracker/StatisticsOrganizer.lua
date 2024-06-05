@@ -229,7 +229,7 @@ local function createRunProgressStatistic(newPastRun, statisticSet)
         progressStats,
         StatisticsOrganizer.createCountedStatistic(
             {newPastRun},
-            "Past Lab",
+            "Lab réussi",
             function(pastRun)
                 return pastRun.getProgress() > 0
             end,
@@ -257,7 +257,7 @@ local function createRunProgressStatistic(newPastRun, statisticSet)
         progressStats,
         StatisticsOrganizer.createCountedStatistic(
             {newPastRun},
-            "Won",
+            "Victoire",
             function(pastRun)
                 return pastRun.getProgress() == 2
             end,
@@ -297,10 +297,36 @@ local function createBSTRangeStatistic(newPastRun, forEnemy, statisticSet)
     return {statisticSet[1], BSTRangeStats}
 end
 
+POKEMON_TYPES_TRANSLATE = 
+    MiscUtils.readOnly(
+    {
+        NORMAL = "Normal",
+        FIGHTING = "Combat",
+        FLYING = "Vol",
+        POISON = "Poison",
+        GROUND = "Sol",
+        ROCK = "Roche",
+        BUG = "Insecte",
+        GHOST = "Spectre",
+        STEEL = "Acier",
+        FIRE = "Feu",
+        WATER = "Eau",
+        GRASS = "Plante",
+        ELECTRIC = "Electrique",
+        PSYCHIC = "Psy",
+        ICE = "Glace",
+        DRAGON = "Dragon",
+        DARK = "Ténèbres",
+        FAIRY = "Fée", -- Expect this to be unused in Gen 1-5
+        UNKNOWN = "Inconnue", -- For the move "Curse" in Gen 2-4
+        EMPTY = "" -- No second type for this Pokemon or an empty field
+    }
+)
+
 local function createPokemonTypeStatistic(newPastRun, forEnemy, statisticSet)
-    local title = "Types You Ran"
+    local title = "Rencontre selon le type"
     if forEnemy then
-        title = "Types You Lost to"
+        title = "Défaite selon le type"
     end
     return StatisticsOrganizer.createAttributeStatistic(
         {newPastRun},
@@ -313,6 +339,7 @@ local function createPokemonTypeStatistic(newPastRun, forEnemy, statisticSet)
             local newTypes = {}
             for i, pokemonType in pairs(types) do
                 if pokemonType ~= "" then
+					pokemonType = POKEMON_TYPES_TRANSLATE[pokemonType]
                     table.insert(newTypes, MiscUtils.toTitleCase(pokemonType))
                 end
             end
@@ -334,9 +361,9 @@ local function capAt10(statistic)
 end
 
 local function createPokemonNameStatistic(newPastRun, forEnemy, statisticSet)
-    local title = "Pok" .. Chars.accentedE .. "mon You Ran"
+    local title = "Pokémons recontrés"
     if forEnemy then
-        title = "Pok" .. Chars.accentedE .. "mon You Lost to"
+        title = "Défaite contre les pokémons"
     end
     return StatisticsOrganizer.createAttributeStatistic(
         {newPastRun},
@@ -353,9 +380,9 @@ local function createPokemonNameStatistic(newPastRun, forEnemy, statisticSet)
 end
 
 local function createPokemonMovesStatistic(newPastRun, forEnemy, statisticSet)
-    local title = "Moves You Had"
+    local title = "Capacités possédées"
     if forEnemy then
-        title = "Moves Your Enemies Had"
+        title = "Capacités ennemies"
     end
     return StatisticsOrganizer.createAttributeStatistic(
         {newPastRun},
@@ -376,9 +403,9 @@ local function createPokemonMovesStatistic(newPastRun, forEnemy, statisticSet)
 end
 
 local function createAbilitiesStatistic(newPastRun, forEnemy, statisticSet)
-    local title = "Abilities You Had"
+    local title = "Talents possédés"
     if forEnemy then
-        title = "Abilities Your Enemies Had"
+        title = "Talents ennemis"
     end
     return StatisticsOrganizer.createAttributeStatistic(
         {newPastRun},

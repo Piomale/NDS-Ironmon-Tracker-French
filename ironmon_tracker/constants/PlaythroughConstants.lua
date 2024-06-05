@@ -8,9 +8,9 @@ PlaythroughConstants.PROGRESS = {
 
 PlaythroughConstants.EMPTY_PAST_RUN_STATISTICS = {
     {
-        "Overall Progress",
+        "Progression globale",
         {
-            {"Past Lab", 0},
+            {"Lab réussi", 0},
             {"1 Badge", 0},
             {"2 Badges", 0},
             {"3 Badges", 0},
@@ -19,11 +19,11 @@ PlaythroughConstants.EMPTY_PAST_RUN_STATISTICS = {
             {"6 Badges", 0},
             {"7 Badges", 0},
             {"8 Badges", 0},
-            {"Won", 0}
+            {"Victoire", 0}
         }
     },
     {
-        "BST Ranges You Ran",
+        "Rencontre selon le BST",
         {
             {"< 300", 0},
             {"300 - 399", 0},
@@ -32,7 +32,7 @@ PlaythroughConstants.EMPTY_PAST_RUN_STATISTICS = {
         }
     },
     {
-        "BST Ranges You Lost to",
+        "Défaite selon le BST",
         {
             {"< 300", 0},
             {"300 - 399", 0},
@@ -41,35 +41,35 @@ PlaythroughConstants.EMPTY_PAST_RUN_STATISTICS = {
         }
     },
     {
-        "Types You Ran",
+        "Rencontre selon le type",
         {}
     },
     {
-        "Types You Lost to",
+        "Défaite selon le type",
         {}
     },
     {
-        "Pok" .. Chars.accentedE .. "mon You Ran",
+        "Pokémons recontrés",
         {}
     },
     {
-        "Pok" .. Chars.accentedE .. "mon You Lost to",
+        "Défaite contre les pokémons",
         {}
     },
     {
-        "Moves You Had",
+        "Capacités possédées",
         {}
     },
     {
-        "Moves Your Enemies Had",
+        "Capacités ennemies",
         {}
     },
     {
-        "Abilities You Had",
+        "Talents possédés",
         {}
     },
     {
-        "Abilities You Lost to",
+        "Talents ennemis",
         {}
     }
 }

@@ -27,7 +27,7 @@ local function PastRunsScreen(initialSettings, initialTracker, initialProgram)
         BADGE_FRAME_HEIGHT = 74,
         BADGE_BUTTON_FRAME_HEIGHT = 32,
         SORT_BUTTONS_FRAME_HEIGHT = 26,
-        SWAP_BUTTON_WIDTH = 30,
+        SWAP_BUTTON_WIDTH = 38,
         SWAP_BUTTON_HEIGHT = 14
     }
     local ui = {}
@@ -218,7 +218,7 @@ local function PastRunsScreen(initialSettings, initialTracker, initialProgram)
                 )
             ),
             TextField(
-                "Swap",
+                "Change",
                 {x = 3, y = 1},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -269,7 +269,7 @@ local function PastRunsScreen(initialSettings, initialTracker, initialProgram)
                 goBackFrame,
                 Box(
                     {x = 0, y = 0},
-                    {width = 88, height = 14},
+                    {width = 92, height = 14},
                     "Top box background color",
                     "Top box border color",
                     true,
@@ -277,7 +277,7 @@ local function PastRunsScreen(initialSettings, initialTracker, initialProgram)
                 )
             ),
             TextField(
-                "Delete 0 Badge Runs",
+                "Suppr partie 0 Badge",
                 {x = 2, y = 1},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -293,7 +293,7 @@ local function PastRunsScreen(initialSettings, initialTracker, initialProgram)
                 goBackFrame,
                 Box(
                     {x = 0, y = 0},
-                    {width = 40, height = 14},
+                    {width = 35, height = 14},
                     "Top box background color",
                     "Top box border color",
                     true,
@@ -301,7 +301,7 @@ local function PastRunsScreen(initialSettings, initialTracker, initialProgram)
                 )
             ),
             TextField(
-                "Go back",
+                "Retour",
                 {x = 3, y = 1},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -342,7 +342,7 @@ local function PastRunsScreen(initialSettings, initialTracker, initialProgram)
                 )
             ),
             TextField(
-                "Minimum Badges",
+                "Badges minimum",
                 {x = 28, y = 2},
                 TextStyle(11, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
             )
@@ -390,7 +390,7 @@ local function PastRunsScreen(initialSettings, initialTracker, initialProgram)
                 )
             ),
             TextField(
-                "Sort By",
+                "Trier par",
                 {x = 54, y = 2},
                 TextStyle(11, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
             )
@@ -402,13 +402,13 @@ local function PastRunsScreen(initialSettings, initialTracker, initialProgram)
             sortFrame
         )
         local buttonNames = {
-            "Newest",
-            "Oldest",
+            "Récent",
+            "Ancient",
             "A - Z"
         }
         local widths = {
             37,
-            33,
+            37,
             24
         }
         ui.sortButtons = {}

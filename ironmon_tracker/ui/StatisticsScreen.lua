@@ -48,7 +48,7 @@ local function StatisticsScreen(initialSettings, initialTracker, initialProgram)
         local name = currentStatistic[1]
         local dataSet = currentStatistic[2]
         ui.controls.mainBarGraph.setMaxValue(totalRunsPastLab)
-        if name == "Overall Progress" then
+        if name == "Progression globale" then
             if program.getGameInfo().VERSION_GROUP == 4 then
                 dataSet[1][1] = "Past N"
             end
@@ -249,7 +249,7 @@ local function StatisticsScreen(initialSettings, initialTracker, initialProgram)
                 ui.frames.bottomFrame,
                 Box(
                     {x = 0, y = 0},
-                    {width = 40, height = 14},
+                    {width = 35, height = 14},
                     "Top box background color",
                     "Top box border color",
                     true,
@@ -257,7 +257,7 @@ local function StatisticsScreen(initialSettings, initialTracker, initialProgram)
                 )
             ),
             TextField(
-                "Go back",
+                "Retour",
                 {x = 3, y = 1},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -316,8 +316,8 @@ local function StatisticsScreen(initialSettings, initialTracker, initialProgram)
         statisticSet = seedLogger.getPastRunStatistics()
         totalRuns = seedLogger.getTotalRuns()
         totalRunsPastLab = seedLogger.getTotalRunsPastLab()
-        ui.controls.totalRunsLabel.setText("Total runs: " .. totalRuns)
-        ui.controls.totalPlaytimeLabel.setText("Playtime: " .. tracker.getTotalHoursPlayed())
+        ui.controls.totalRunsLabel.setText("Nb parties: " .. totalRuns)
+        ui.controls.totalPlaytimeLabel.setText("Temps de jeu: " .. tracker.getTotalHoursPlayed())
         reset()
     end
 

@@ -41,11 +41,11 @@ local function LogViewerScreen(initialSettings, initialTracker, initialProgram)
     local currentIndex = 1
     local tabs = {
         "Pok" .. Chars.accentedE .. "mon",
-        "Trainers",
+        "Dresseurs",
         "Pivots",
-        "Gym TMs",
+        "CTs Arenes",
         "Info",
-        "Search"
+        "Recherche"
     }
     local tabControls = {}
     local ui = {}
@@ -292,10 +292,10 @@ local function LogViewerScreen(initialSettings, initialTracker, initialProgram)
     end
 
     function self.readStats(pokemon)
-        local orderedStats = {"HP", "ATK", "DEF", "SPA", "SPD", "SPE"}
+		local orderedStats = {{"HP", "PV"},{"ATK", "ATQ"},{"DEF", "DEF"},{"SPA", "A.S"},{"SPD", "D.S"},{"SPE", "VIT"}}
         local dataSet = {}
         for _, stat in pairs(orderedStats) do
-            table.insert(dataSet, {stat, pokemon.stats[stat]})
+            table.insert(dataSet, {stat[2], pokemon.stats[stat[1]]})
         end
         return dataSet
     end

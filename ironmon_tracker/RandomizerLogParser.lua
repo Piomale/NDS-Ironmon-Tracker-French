@@ -346,13 +346,7 @@ local function RandomizerLogParser(initialProgram)
             "Thursday",
             "Saturday"
         }
-		
-		local daysFR = {
-			Tuesday = "Mardi",
-			Thursday = "Jeudi",
-			Saturday = "Samedi"
-		}
-		
+				
         if not pivotData["Capture d'insectes"] then
             pivotData["Capture d'insectes"] = {}
         end
@@ -365,8 +359,7 @@ local function RandomizerLogParser(initialProgram)
                     readNonstandardEncounter(lines, line, startIndex, data, "Bug Catching")
                     line = line + 1
                 end
-				dayfr = daysFR[day]
-                pivotData["Capture d'insectes"][dayfr] = data
+                pivotData["Capture d'insectes"][day] = data
             end
         end
     end
@@ -474,8 +467,6 @@ local function RandomizerLogParser(initialProgram)
     end
 
     function self.parse(inputFile)
-        local test = "t"
-        print(test:sub(1, 2))
         if FormsUtils.fileExists(inputFile) then
             resetPokemon()
             trainers = {}

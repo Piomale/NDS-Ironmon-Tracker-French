@@ -34,18 +34,18 @@ local function PivotsScreen(initialSettings, initialTracker, initialProgram, ini
     local currentIDs = {}
     local currentPokemonList = {}
     local pivotData = {}
-    local encounterTypes = {
-        "Grass",
-        "Cave",
-        "Shaking Spots",
-        "Old Rod",
-        "Headbutt(C)",
-        "Headbutt(R)",
-        "Dark Grass",
-        "Mardi",
-        "Jeudi",
-        "Samedi"
-    }
+	local encounterTypes  = {
+		{"Grass", "Herbe"},
+		{"Cave", "Caverne"},
+		{"Shaking Spots", "Tremblement"},
+		{"Old Rod", "Vieux Canne"},
+		{"Headbutt(C)", "Arbre(C)"},
+		{"Headbutt(R)", "Arbre(R)"},
+		{"Dark Grass", "Hautes herbes"},
+		{"Tuesday", "Mardi"},
+		{"Thursday", "Jeudi"},
+		{"Saturday", "Samedi"}
+	}
 
     local function underlineActiveTab()
     end
@@ -135,8 +135,8 @@ local function PivotsScreen(initialSettings, initialTracker, initialProgram, ini
         end
         currentEncounterArea = pivotData[areaName]
         for _, encounterType in pairs(encounterTypes) do
-            if currentEncounterArea[encounterType] then
-                currentEncounterType = encounterType
+            if currentEncounterArea[encounterType[1]] then
+                currentEncounterType = encounterType[1]
                 break
             end
         end
@@ -232,7 +232,7 @@ local function PivotsScreen(initialSettings, initialTracker, initialProgram, ini
                 )
             ),
             TextField(
-                "Areas",
+                "Zones",
                 {x = 24, y = 0},
                 TextStyle(11, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
             )
@@ -263,13 +263,13 @@ local function PivotsScreen(initialSettings, initialTracker, initialProgram, ini
                     Box(
                         {x = 0, y = 0},
                         {
-                            ["width"] = DrawingUtils.calculateWordPixelLength(encounterType) + 5,
+                            ["width"] = DrawingUtils.calculateWordPixelLength(encounterType[1]) + 5,
                             height = 12
                         }
                     )
                 ),
                 TextField(
-                    encounterType,
+                    encounterType[2],
                     {x = 2, y = -1},
                     TextStyle(
                         Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -279,8 +279,8 @@ local function PivotsScreen(initialSettings, initialTracker, initialProgram, ini
                     )
                 )
             )
-            encounterTabs[encounterType] = tab
-            table.insert(eventListeners, MouseClickEventListener(tab, onEncounterTypeClick, encounterType))
+            encounterTabs[encounterType[1]] = tab
+            table.insert(eventListeners, MouseClickEventListener(tab, onEncounterTypeClick, encounterType[1]))
         end
     end
 

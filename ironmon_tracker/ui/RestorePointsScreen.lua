@@ -125,10 +125,10 @@ local function RestorePointsScreen(initialSettings, initialTracker, initialProgr
             ui.frames.mainInnerFrame
         )
         local lines = {
-            "Savestates are created as you",
-            "play in case of softlocks or other",
-            "major issues. You can load these",
-            "to return to an earlier state."
+            "Les points de restauration",
+            "sont créés quand vous jouer.",
+            "Vous pouvez les utiliser",
+            "en cas de problème."
         }
         for _, line in pairs(lines) do
             TextLabel(
@@ -172,8 +172,8 @@ local function RestorePointsScreen(initialSettings, initialTracker, initialProgr
                 )
             ),
             TextField(
-                "Back to present",
-                {x = 9, y = 2},
+                "Retour au present",
+                {x = 4, y = 2},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
                     Graphics.FONT.DEFAULT_FONT_FAMILY,
@@ -325,7 +325,7 @@ local function RestorePointsScreen(initialSettings, initialTracker, initialProgr
             TextLabel(
             Component(ui.frames.mainButtonsFrame, Box({x = 0, y = 0}, {width = 0, height = 12})),
             TextField(
-                "No restore points available.",
+                "Aucun points de restauration.",
                 {x = -2, y = -2},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -360,7 +360,7 @@ local function RestorePointsScreen(initialSettings, initialTracker, initialProgr
                 ui.frames.bottomFrame,
                 Box(
                     {x = 0, y = 0},
-                    {width = 40, height = 14},
+                    {width = 35, height = 14},
                     "Top box background color",
                     "Top box border color",
                     true,
@@ -368,7 +368,7 @@ local function RestorePointsScreen(initialSettings, initialTracker, initialProgr
                 )
             ),
             TextField(
-                "Go back",
+                "Retour",
                 {x = 3, y = 1},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -425,8 +425,8 @@ local function RestorePointsScreen(initialSettings, initialTracker, initialProgr
                 )
             ),
             TextField(
-                "Restore Points",
-                {x = 29, y = 1},
+                "Points de restauration",
+                {x = 9, y = 1},
                 TextStyle(13, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
             )
         )

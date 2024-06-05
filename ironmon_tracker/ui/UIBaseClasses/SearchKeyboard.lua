@@ -55,19 +55,38 @@ local function SearchKeyboard(
         drawFunction = newDrawFunction
     end
 
-    local function getPossibleMatches()
-        matches = {}
-        local currentIndex = 1
-        for _, id in pairs(itemSet) do
-            if dataGroup[id+1] then
-                local name = IgnoreChars(dataGroup[id + 1].name):lower()
-                if name:sub(1, #currentSearchText) == currentSearchText:lower() then
-                    matches[currentIndex] = id
-                    currentIndex = currentIndex + 1
-                end
-            end
-        end
-    end
+	local function removeAccents(str)
+		local accents = {
+			['á']='a', ['à']='a', ['â']='a', ['ä']='a', ['ã']='a', ['å']='a',
+			['é']='e', ['è']='e', ['ê']='e', ['ë']='e',
+			['í']='i', ['ì']='i', ['î']='i', ['ï']='i',
+			['ó']='o', ['ò']='o', ['ô']='o', ['ö']='o', ['õ']='o',
+			['ú']='u', ['ù']='u', ['û']='u', ['ü']='u',
+			['ç']='c', ['ñ']='n',
+			['Á']='A', ['À']='A', ['Â']='A', ['Ä']='A', ['Ã']='A', ['Å']='A',
+			['É']='E', ['È']='E', ['Ê']='E', ['Ë']='E',
+			['Í']='I', ['Ì']='I', ['Î']='I', ['Ï']='I',
+			['Ó']='O', ['Ò']='O', ['Ô']='O', ['Ö']='O', ['Õ']='O',
+			['Ú']='U', ['Ù']='U', ['Û']='U', ['Ü']='U',
+			['Ç']='C', ['Ñ']='N'
+		}
+		return (str:gsub("[%z\1-\127\194-\244][\128-\191]*", accents))
+	end
+
+	local function getPossibleMatches()
+		matches = {}
+		local currentIndex = 1
+		for _, id in pairs(itemSet) do
+			if dataGroup[id+1] then
+				local name = removeAccents(dataGroup[id + 1].name):lower()
+				if name:sub(1, #currentSearchText) == removeAccents(currentSearchText):lower() then
+					matches[currentIndex] = id
+					currentIndex = currentIndex + 1
+				end
+			end
+		end
+	end
+
 
     function self.updateSearch()
         resultClearingFunction()
@@ -273,8 +292,8 @@ local function SearchKeyboard(
                 )
             ),
             TextField(
-                "Clear",
-                {x = 4, y = 1},
+                "Effacer",
+                {x = 0, y = 1},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
                     Graphics.FONT.DEFAULT_FONT_FAMILY,

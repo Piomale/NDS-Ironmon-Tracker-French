@@ -283,7 +283,7 @@ local function BadgesAppearanceScreen(initialSettings, initialTracker, initialPr
                 ui.frames.goBackFrame,
                 Box(
                     {x = Graphics.SIZES.MAIN_SCREEN_WIDTH - 56, y = 6},
-                    {width = 40, height = 14},
+                    {width = 35, height = 14},
                     "Top box background color",
                     "Top box border color",
                     true,
@@ -291,7 +291,7 @@ local function BadgesAppearanceScreen(initialSettings, initialTracker, initialPr
                 )
             ),
             TextField(
-                "Go back",
+                "Retour",
                 {x = 3, y = 1},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,

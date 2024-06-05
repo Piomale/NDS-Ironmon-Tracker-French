@@ -241,7 +241,7 @@ local function PokemonOverviewScreen(initialSettings, initialTracker, initialPro
                 )
             ),
             TextField(
-                "Click the keys below to search any pokemon:",
+                "Chercher un pokémon:",
                 {x = 0, y = 10},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,

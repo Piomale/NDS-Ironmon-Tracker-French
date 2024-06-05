@@ -140,8 +140,8 @@ local function PokemonStatScreen(initialSettings, initialTracker, initialProgram
             ui.controls.moveLabels[i].setTextColorKey("Top box text color")
             ui.controls.moveLabels[i].setText(stripChars(moveString))
         end
-        ui.controls.movesLabel.setText("Moves")
-        ui.controls.movesLabel.setTextOffset({x = 16, y = -1})
+        ui.controls.movesLabel.setText("Capacités")
+        ui.controls.movesLabel.setTextOffset({x = 9, y = -1})
         program.drawCurrentScreens()
     end
 
@@ -157,7 +157,7 @@ local function PokemonStatScreen(initialSettings, initialTracker, initialProgram
                 if TM ~= -1 then
                     moveID = logInfo.getTMs()[TM]
                     local moveName = MoveData.MOVES[moveID + 1].name
-                    moveString = string.format("TM %02d " .. moveName, TM)
+                    moveString = string.format("CT %02d " .. moveName, TM)
                     local textColorKey = "Top box text color"
                     if canLearn then
                         textColorKey = "Positive text color"
@@ -172,7 +172,7 @@ local function PokemonStatScreen(initialSettings, initialTracker, initialProgram
             end
             label.setText(stripChars(moveString))
         end
-        ui.controls.movesLabel.setText("Gym TMs")
+        ui.controls.movesLabel.setText("CTs Arenes")
         ui.controls.movesLabel.setTextOffset({x = 9, y = -1})
         program.drawCurrentScreens()
     end
@@ -236,7 +236,7 @@ local function PokemonStatScreen(initialSettings, initialTracker, initialProgram
         ui.controls.evoLeftButton.setVisibility(totalEvos > 1)
         ui.controls.evoImage.setVisibility(totalEvos ~= 0)
         if totalEvos == 0 then
-            ui.controls.evoInfoLabel.setText("None")
+            ui.controls.evoInfoLabel.setText("Aucune")
         end
     end
 
@@ -259,7 +259,7 @@ local function PokemonStatScreen(initialSettings, initialTracker, initialProgram
         local pokemonImageParams = pokemonImageListener.getOnHoverParams()
         pokemonImageParams.pokemon = pokemon
         pokemonImageListener.setOnHoverParams(pokemonImageParams)
-        local heading = "Base Stats (" .. pokemon.bst .. " total)"
+        local heading = "Stats de base (total " .. pokemon.bst .. ")"
         ui.controls.statBarGraph.setDataSet(dataSet)
         ui.controls.statBarGraph.setHeadingText(heading)
         currentEvoList = pokemon.evolutions
@@ -369,7 +369,7 @@ local function PokemonStatScreen(initialSettings, initialTracker, initialProgram
                 )
             ),
             TextField(
-                "Abilities",
+                "Talents",
                 {x = 25, y = -1},
                 TextStyle(11, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
             )
@@ -634,7 +634,7 @@ local function PokemonStatScreen(initialSettings, initialTracker, initialProgram
             nil,
             "Top box border color",
             "Top box text color",
-            10,
+            8,
             255
         )
     end

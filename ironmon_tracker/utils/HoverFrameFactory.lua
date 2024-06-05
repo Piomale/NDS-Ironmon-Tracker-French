@@ -814,9 +814,9 @@ local function fillTrackedEncounterRow(rowFrame, pokemonID, seenData, useRange)
     local levelsText = "?"
     if seenData ~= nil then
         if useRange then
-            levelsText = "Level " .. seenData[1] .. " - " .. seenData[#seenData]
+            levelsText = "Niv. " .. seenData[1] .. " - " .. seenData[#seenData]
         else
-            levelsText = "Lv "
+            levelsText = "N."
             for _, level in pairs(seenData) do
                 levelsText = levelsText .. level .. ", "
             end
