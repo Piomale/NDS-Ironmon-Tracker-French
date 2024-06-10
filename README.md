@@ -22,7 +22,7 @@ Ce projet a été lancé à l'origine sur https://github.com/besteon/Ironmon-Tra
 
 ## Installation
 
-1. Si vous n'avez pas BizHawk, [téléchargez l'émulateur](https://tasvideos.org/BizHawk/ReleaseHistory) (v2.8 ou plus).
+1. Si vous n'avez pas BizHawk, [téléchargez l'émulateur](https://tasvideos.org/BizHawk/ReleaseHistory) (v2.9 ou plus).
    - **IMPORTANT** : **Cela crée un fichier de configuration dans le dossier de BizHawk qui garantit que le tracker fonctionnera correctement. Si vous ne le faites pas, des erreurs peuvent se produire.
 2. Téléchargez ce tracker depuis la section [releases](https://github.com//Piomale/NDS-Ironmon-Tracker-French/releases/).
 3. Décompressez les fichiers du tracker à l'endroit de votre choix. Un bon emplacement est le dossier `Lua` où vous avez installé BizHawk. Assurez-vous que le dossier "ironmon_tracker" est dans le même répertoire que "Ironmon_Tracker.lua".
