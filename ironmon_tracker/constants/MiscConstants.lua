@@ -1,14 +1,11 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "4.07.2"
+MiscConstants.TRACKER_VERSION = "4.08.1"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
-	"-- Ajout de traduction dans les menus",
-	"-- Ajout de traduction dans les logs",
-	"-- le nom des dresseurs est traduit",
-	"-- La fonction recherche ignore les accents"
+	"-- Modification de la traduction de Vendetta"
 }
 
 MiscConstants.DEFAULT_SETTINGS = {
