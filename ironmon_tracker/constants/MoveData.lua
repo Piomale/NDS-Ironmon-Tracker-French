@@ -3915,7 +3915,7 @@ MoveData.MOVES_MASTER_LIST = {
 		pp = "10",
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
-		description = "Priorité -4. La puissance est doublée si la cible a été blessée par une attaque dans le tour."
+		description = "Priorité -4. La puissance est doublée si le lanceur a été blessée par une attaque dans le tour."
 	},
 	{
 		id = "280",

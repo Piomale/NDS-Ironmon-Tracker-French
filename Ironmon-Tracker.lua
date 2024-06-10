@@ -142,7 +142,7 @@ end
 
 function stripChars(str)
 	if checkAccent then
-		print("ici")
+		print("Il faut mettre à jour Bizhawk en version 2.9 !!!")
 		return str:gsub("[%z\1-\127\194-\244][\128-\191]*", tableAccents)
 	end
     return str
