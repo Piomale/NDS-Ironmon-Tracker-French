@@ -826,7 +826,7 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
         end
         hoverListeners.statusItemsHoverListener.setOnHoverParams({items = program.getStatusItems(), itemType = "Status"})
         hoverListeners.healingItemsHoverListener.setOnHoverParams({items = program.getHealingItems(), itemType = "Healing"})
-        ui.controls.healsLabel.setText("Soins: " .. healingTotals.healing .. "% (" .. healingTotals.numHeals .. ")")
+        ui.controls.healsLabel.setText("Soins: " .. healingTotals.healing .. " (" .. healingTotals.numHeals .. ")")
         ui.controls.statusItemsLabel.setText("Objet statut: " .. statusTotals)
         ui.frames.enemyNoteFrame.setVisibility(isEnemy or inPastRunView)
         ui.controls.noteIcon.setVisibility(not inPastRunView)

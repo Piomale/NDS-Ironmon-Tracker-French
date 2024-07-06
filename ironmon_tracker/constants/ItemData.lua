@@ -1067,11 +1067,13 @@ ItemData.GEN_4_ITEMS = {
         description = "Raises Latias and Latios's Special Attack and Special Defense by 50%."
     },
     [226] = {
-        name = "Deep Sea-tooth",
+        name = "DeepSeaTooth",
+        displayName = "Deep Sea Tooth",
         description = "Doubles Clamperl's Special Attack. Traded on a Clamperl: Holder evolves into Huntail."
     },
     [227] = {
-        name = "Deep Sea-scale",
+        name = "DeepSeaScale",
+        displayName = "Deep Sea Scale",
         description = "Doubles Clamperl's Special Defense. Traded on a Clamperl: Holder evolves into Gorebyss."
     },
     [228] = {

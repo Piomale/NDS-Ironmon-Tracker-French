@@ -6,6 +6,7 @@ GameConfigurator.ALTERNATE_FORM_ORDER_GEN4 = {
 	"Giratina A",
 	"Shaymin L",
 	"Motisma",
+	--[[
 	"Morpheo",
 	"Bargantua R",
 	"Darumacho",
@@ -24,6 +25,7 @@ GameConfigurator.ALTERNATE_FORM_ORDER_GEN4 = {
 	"Haydaim",
 	"Sancoki W",
 	"Deflaisan M"
+	--]]
 }
 
 GameConfigurator.ALTERNATE_FORM_ORDER_GEN5 = {

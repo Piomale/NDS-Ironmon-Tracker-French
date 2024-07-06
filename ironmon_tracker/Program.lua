@@ -369,6 +369,7 @@ local function Program(initialTracker, initialMemoryAddresses, initialGameInfo, 
 	end
 
 	local function calculateHealPercent(totals, maxHP)
+		local showHP = settings.appearance.BAG_HEALS_SHOW_HP_INSTEAD
 		for id, quantity in pairs(healingItems) do
 			local item = ItemData.HEALING_ITEMS[id]
 			if item ~= nil then
@@ -379,8 +380,14 @@ local function Program(initialTracker, initialMemoryAddresses, initialGameInfo, 
 						percentage = 100
 					end
 					healing = percentage * quantity
+					if showHP then
+						healing = item.amount * quantity
+					end
 				elseif item.type == ItemData.HEALING_TYPE.PERCENTAGE then
 					healing = item.amount * quantity
+					if showHP then
+						healing = (item.amount / 100) * quantity * maxHP
+					end
 				end
 				-- Healing is in a percentage compared to the mon's max HP
 				totals.healing = totals.healing + healing
@@ -388,6 +395,11 @@ local function Program(initialTracker, initialMemoryAddresses, initialGameInfo, 
 			end
 		end
 		totals.healing = math.floor(totals.healing + 0.5)
+		if not showHP then
+			totals.healing = totals.healing .. "%"
+		else
+			totals.healing = totals.healing .. " PV"
+		end
 		return totals
 	end
 
@@ -674,9 +686,16 @@ local function Program(initialTracker, initialMemoryAddresses, initialGameInfo, 
 		frameCounters["disableMoveEffectiveness"] = FrameCounter(delay, onBattleDelayFinished)
 	end
 
-	function self.tryToInstallUpdate()
+	function self.prepareForUpdate()
+		trackerUpdater.prepareForUpdate()
+	end
+
+	function self.tryToInstallUpdate(callbackFunc)
 		tracker.save(gameInfo.NAME)
-		return trackerUpdater.downloadUpdate()
+		local success = trackerUpdater.downloadUpdate()
+		if type(callbackFunc) == "function" then
+			callbackFunc(success)
+		end
 	end
 
 	function self.putTrackedPokemonIntoView(id)

@@ -1,11 +1,17 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "4.08.1"
+MiscConstants.TRACKER_VERSION = "6.2.6.1"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
-	"-- Modification de la traduction de Vendetta"
+	"-- Ajout d'une option pour voir les soins restants en PV à la place d'un pourcentage.",
+	"-- Les mouvements STAB dans le Log Viewer seront désormais mis en surbrillance.",
+	"-- Les CT d'arenes non apprenables seront maintenant barrées dans le log viewer",
+	"-- Correction de plusieurs bug",
+	"-- Modification du message d'erreur, ROM invalide",
+	"-- Modification des numéros de version pour correspondre à ceux de Brian0255",
+	
 }
 
 MiscConstants.DEFAULT_SETTINGS = {
@@ -19,7 +25,8 @@ MiscConstants.DEFAULT_SETTINGS = {
         SHOW_NICKNAME = true,
         ICON_SET_INDEX = 2,
         BLIND_MODE = false,
-        REPEL_ICON = true
+        REPEL_ICON = false,
+        BAG_HEALS_SHOW_HP_INSTEAD = false
     },
     animatedSprites = {
         FASTER_ANIMATIONS = false,

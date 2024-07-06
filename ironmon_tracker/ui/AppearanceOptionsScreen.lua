@@ -111,6 +111,8 @@ local function AppearanceOptionsScreen(initialSettings, initialTracker, initialP
                 labelName = "Transparent"
 			elseif key == "BLIND_MODE" then
                 labelName = "Mode aveugle (masque les stats/capacités)"
+			elseif key == "BAG_HEALS_SHOW_HP_INSTEAD" then
+                labelName = "Afficher les soins du sac en PV"
 		end
         TextLabel(
             Component(frame, Box({x = 0, y = 0}, {width = 0, height = 0}, nil, nil, false)),
@@ -131,14 +133,14 @@ local function AppearanceOptionsScreen(initialSettings, initialTracker, initialP
     local function initAppearanceToggleButtons()
         local orderedKeys = {
             "AUTO_POKEMON_THEMES",
-            "BLIND_MODE",
             "EXPERIENCE_BAR",
             "RANDOM_BALL_PICKER",
             "REPEL_ICON",
             "RIGHT_JUSTIFIED_NUMBERS",
+            "SHOW_POKECENTER_HEALS",
             "SHOW_ACCURACY_AND_EVASION",
             "SHOW_NICKNAME",
-            "SHOW_POKECENTER_HEALS"
+            "BAG_HEALS_SHOW_HP_INSTEAD"
         }
         ui.frames.buttonsFrame =
             Frame(

@@ -6,17 +6,19 @@ local function TrackerUpdater(initialSettings)
     local currentVersion = {
         major = 0,
         minor = 0,
-        patch = 0
+        patch = 0,
+        translation = 0
     }
 
     local latestVersion = {
         major = 0,
         minor = 0,
-        patch = 0
+        patch = 0,
+        translation = 0
     }
 
     function self.getNewestVersionString()
-        return latestVersion.major .. "." .. latestVersion.minor .. "." .. latestVersion.patch
+        return latestVersion.major .. "." .. latestVersion.minor .. "." .. latestVersion.patch .. "." .. latestVersion.translation
     end
 
     local function runBatchCommand()
@@ -76,20 +78,28 @@ local function TrackerUpdater(initialSettings)
         return true
     end
 
-    local function isOnLatestVersion()
-        return (currentVersion.major * 10000 + currentVersion.minor * 100 + currentVersion.patch) >=
-            (latestVersion.major * 10000 + latestVersion.minor * 100 + latestVersion.patch)
-    end
+	local function isOnLatestVersion()
+		if currentVersion.major ~= latestVersion.major then
+			return currentVersion.major > latestVersion.major
+		elseif currentVersion.minor ~= latestVersion.minor then
+			return currentVersion.minor > latestVersion.minor
+		elseif currentVersion.patch ~= latestVersion.patch then
+			return currentVersion.patch > latestVersion.patch
+		else
+			return currentVersion.translation >= latestVersion.translation
+		end
+	end
 
     local function parseVersionNumber(versionString)
         if versionString == nil then
             return MiscUtils.deepCopy(currentVersion)
         end
-        local major, minor, patch = string.match(versionString, "(%d+)%.(%d+)%.(%d+)")
+        local major, minor, patch, translation = string.match(versionString, "(%d+)%.(%d+)%.(%d+)%.(%d+)")
         local versionTable = {
             ["major"] = tonumber(major),
             ["minor"] = tonumber(minor),
-            ["patch"] = tonumber(patch)
+            ["patch"] = tonumber(patch),
+            ["translation"] = tonumber(patch)
         }
         return versionTable
     end
@@ -99,7 +109,7 @@ local function TrackerUpdater(initialSettings)
         local command =  "curl " .. versionURL .. " --ssl-no-revoke"
         local response = MiscUtils.runExecuteCommand(command)
         if response ~= nil and response ~= "" then
-            local latestVersionString = string.match(response, '"tag_name":.*(%d+%.%d+%.%d+)')
+            local latestVersionString = string.match(response, '"tag_name":.*(%d+%.%d+%.%d+.%d+)')
             latestVersion = parseVersionNumber(latestVersionString)
         end
     end
@@ -116,12 +126,22 @@ local function TrackerUpdater(initialSettings)
         return currentDay == lastDay
     end
 
-    function self.downloadUpdate()
-        local wasSoundOn = client.GetSoundOn()
-        client.SetSoundOn(false)
+    function self.prepareForUpdate()
+        DrawingUtils.canDrawImages = false
         emu.frameadvance()
         gui.clearImageCache()
         emu.frameadvance()
+    end
+
+    function self.downloadUpdate()
+        local wasSoundOn = client.GetSoundOn()
+        client.SetSoundOn(false)
+
+        -- Additional safety check to help reduce chance of cached image locks
+        self.prepareForUpdate()
+
+        -- Finally, allow images again and perform the update (this order is intentional)
+        DrawingUtils.canDrawImages = true
         local success = runBatchCommand()
 
         if client.GetSoundOn() ~= wasSoundOn then
