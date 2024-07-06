@@ -70,7 +70,7 @@ local function UpdaterScreen(initialSettings, initialTracker, initialProgram)
             settings.automaticUpdates.UPDATE_WAS_DONE = true
             program.saveSettings()
             ui.controls.topTextLabel1.setText("Mise à jour réussie! Le Tracker")
-            ui.controls.topTextLabel2.setText("a redémarrer dans 3 secondes.")
+            ui.controls.topTextLabel2.setText("va redémarrer dans 3 secondes.")
             frameCounters["trackerRestart"] = FrameCounter(200, restartTracker, nil, true)
         else
             ui.frames.mainFrame.resize({width = 198, height = constants.MAIN_HEIGHT_NO_UPDATE})
