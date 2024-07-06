@@ -99,7 +99,7 @@ local function TrackerUpdater(initialSettings)
             ["major"] = tonumber(major),
             ["minor"] = tonumber(minor),
             ["patch"] = tonumber(patch),
-            ["translation"] = tonumber(patch)
+            ["translation"] = tonumber(translation)
         }
         return versionTable
     end
@@ -110,7 +110,9 @@ local function TrackerUpdater(initialSettings)
         local response = MiscUtils.runExecuteCommand(command)
         if response ~= nil and response ~= "" then
             local latestVersionString = string.match(response, '"tag_name":.*(%d+%.%d+%.%d+.%d+)')
+			
             latestVersion = parseVersionNumber(latestVersionString)
+			console.log(latestVersion)
         end
     end
 
