@@ -154,7 +154,7 @@ function GameConfigurator.initialize()
 	local gameCode = Memory.read_u32_le(MemoryAddresses.NDS_CONSTANTS.CARTRIDGE_HEADER + 0x0C)
 	if not GameInfo.GAME_INFO[gameCode] then
 		FormsUtils.popupDialog(
-			"Your ROM is not currently supported by the tracker. Only English NDS ROMs are supported.",
+			"Ta ROM n'est pas supportée par le tracker. Seules les ROM HeartGold et Black/White en version française sont supportées..",
 			250,
 			100,
 			FormsUtils.POPUP_DIALOG_TYPES.WARNING,
