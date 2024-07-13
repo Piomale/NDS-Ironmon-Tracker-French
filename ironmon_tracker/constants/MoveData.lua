@@ -5662,7 +5662,7 @@ MoveData.MOVES_MASTER_LIST = {
 			"60",
 			"75"
 		},
-		pp = "10",
+		pp = {"5", "10"},
 		accuracy = "100",
 		category = MoveData.MOVE_CATEGORIES.PHYSICAL,
 		description = "Attaque 'Poing'. Convertit 50% des dégâts infligés à la cible en PV pour le lanceur."

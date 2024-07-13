@@ -1,17 +1,12 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "6.2.6.0"
+MiscConstants.TRACKER_VERSION = "6.2.6.2"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
-	"-- Ajout d'une option pour voir les soins restants en PV à la place d'un pourcentage.",
-	"-- Les mouvements STAB dans le Log Viewer seront désormais mis en surbrillance.",
-	"-- Les CT d'arenes non apprenables seront maintenant barrées dans le log viewer",
-	"-- Correction de plusieurs bug",
-	"-- Modification du message d'erreur, ROM invalide",
-	"-- Modification des numéros de version pour correspondre à ceux de Brian0255",
-	
+	"-- Correction du nombre de PP pour Vampipoing.",
+	"-- Vampipoing ne devrait plus apparaitre avant que le pokémon ennemi ne l'utilise",
 }
 
 MiscConstants.DEFAULT_SETTINGS = {
