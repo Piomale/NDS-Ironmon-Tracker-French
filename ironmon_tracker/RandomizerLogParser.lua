@@ -64,7 +64,8 @@ local function RandomizerLogParser(initialProgram)
                 ["Grass/Cave"] = "345"
             },
             ["Route 204"] = {
-                ["Grass/Cave"] = "383"
+                ["Grass/Cave"] = "383",
+                ["Old Rod"] = "386"
             },
             ["Ruines d'Alpha"] = {
                 ["Grass/Cave"] = "68"

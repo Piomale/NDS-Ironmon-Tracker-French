@@ -1,12 +1,11 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "6.2.6.2"
+MiscConstants.TRACKER_VERSION = "6.2.7.1"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
-	"-- Correction du nombre de PP pour Vampipoing.",
-	"-- Vampipoing ne devrait plus apparaitre avant que le pokémon ennemi ne l'utilise",
+	"-- Les capacités suivantes de la Génération 4 révélaient souvent des informations alors qu'elles ne le devraient pas, elles ne seront plus automatiquement suivies pour le moment : Échauffement, Benêt, Insomnia, Tempo Perso, Armumagma, Ignifu-Voile, et Esprit Vital."
 }
 
 MiscConstants.DEFAULT_SETTINGS = {
