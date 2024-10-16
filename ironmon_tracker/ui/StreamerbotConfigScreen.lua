@@ -69,10 +69,10 @@ local function StreamerbotConfigScreen(initialSettings, initialTracker, initialP
 
     local function updateConnectButton()
         if Network.isConnected() then
-            ui.controls.connectDisconnect.setText("Disconnect")
+            ui.controls.connectDisconnect.setText("Déconnexion")
             ui.controls.connectDisconnect.setTextOffset({x=6,y=1})
         else
-            ui.controls.connectDisconnect.setText("Connect")
+            ui.controls.connectDisconnect.setText("Connexion")
             ui.controls.connectDisconnect.setTextOffset({x=11,y=1})
         end
         refreshStatus()
@@ -104,7 +104,7 @@ local function StreamerbotConfigScreen(initialSettings, initialTracker, initialP
                 height = 0
             }
         ),
-        Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, 0, {x = 36, y = 0}),
+        Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, 0, {x = 30, y = 0}),
         ui.frames.statusFolderFrame
     )
         ui.controls.connectDisconnect =
@@ -114,7 +114,7 @@ local function StreamerbotConfigScreen(initialSettings, initialTracker, initialP
                 Box(
                     {x = 0, y = 0},
                     {
-                        width = 56,
+                        width = 70,
                         height = constants.SMALL_BUTTON_HEIGHT
                     },
                     "Top box background color",
@@ -124,8 +124,8 @@ local function StreamerbotConfigScreen(initialSettings, initialTracker, initialP
                 )
             ),
             TextField(
-                "Connect",
-                {x = 6, y = 1},
+                "Connexion",
+                {x = 1, y = 1},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
                     Graphics.FONT.DEFAULT_FONT_FAMILY,
@@ -209,8 +209,8 @@ local function StreamerbotConfigScreen(initialSettings, initialTracker, initialP
                 )
             ),
             TextField(
-                "Set",
-                {x = 9, y = 1},
+                "Définir",
+                {x = 3, y = 1},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
                     Graphics.FONT.DEFAULT_FONT_FAMILY,
@@ -266,13 +266,13 @@ local function StreamerbotConfigScreen(initialSettings, initialTracker, initialP
             {
                 iconName = "UPDATER_ICON",
                 offset = {x = 2, y = 2},
-                text = "Streamerbot Code",
+                text = "Code Streamerbot",
                 onClick = Network.openGetCodeWindow
             },
             {
                 iconName = "TRACKED_INFO_ICON",
                 offset = {x = 4, y = 3},
-                text = "Role Permissions",
+                text = "Droits des rôles",
                 onClick = Network.openCommandRolePermissionsPrompt
             }
         }
@@ -318,7 +318,7 @@ local function StreamerbotConfigScreen(initialSettings, initialTracker, initialP
                 )
             ),
             TextField(
-                "Connection Status:",
+                "État de la connexion:",
                 {x = -1, y = -1},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -344,7 +344,7 @@ local function StreamerbotConfigScreen(initialSettings, initialTracker, initialP
                 )
             ),
             TextField(
-                "Online: Connection Established.",
+                "En ligne : connexion établie.",
                 {x = 3, y = 0},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -355,7 +355,7 @@ local function StreamerbotConfigScreen(initialSettings, initialTracker, initialP
             )
         )
 
-        createPathSetupFrame(ui.frames.statusFolderFrame, "Connection Folder")
+        createPathSetupFrame(ui.frames.statusFolderFrame, "Dossier de connexion")
         createConnectButton()
     end
 
@@ -424,7 +424,7 @@ local function StreamerbotConfigScreen(initialSettings, initialTracker, initialP
             )
         ),
         TextField(
-            "Help",
+            "Aide",
             {x = 5, y = 1},
             TextStyle(
                 Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -449,7 +449,7 @@ local function StreamerbotConfigScreen(initialSettings, initialTracker, initialP
                 )
             ),
             TextField(
-                "Go back",
+                "Retour",
                 {x = 3, y = 1},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,

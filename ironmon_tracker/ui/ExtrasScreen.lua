@@ -14,13 +14,12 @@ local function ExtrasScreen(initialSettings, initialTracker, initialProgram)
 	local settings = initialSettings
 	local tracker = initialTracker
 	local program = initialProgram
-	local tourneyTracker
 
 	local self = {}
 
 	local constants = {
-		MAIN_FRAME_HEIGHT = 310,
-		EXTRAS_HEIGHT = 256,
+		MAIN_FRAME_HEIGHT = 222,
+		EXTRAS_HEIGHT = 166,
 		EXTRA_ENTRY_TITLE_ROW_HEIGHT = 21,
 		EXTRA_ENTRY_TEXT_ROW_HEIGHT = 10,
 		EXTRA_WIDTH = 178 - 2 * Graphics.SIZES.BORDER_MARGIN,
@@ -32,9 +31,6 @@ local function ExtrasScreen(initialSettings, initialTracker, initialProgram)
 
 	local function onToggleClick(button)
 		button.onClick()
-		if settings.tourneyTracker.ENABLED then
-			tourneyTracker.loadData()
-		end
 		program.drawCurrentScreens()
 	end
 
@@ -56,7 +52,7 @@ local function ExtrasScreen(initialSettings, initialTracker, initialProgram)
             Component(
                 ui.frames.goBackFrame,
                 Box(
-                    {x = 136, y = 7},
+                    {x = 135, y = 10},
                     {width = 40, height = 14},
                     "Top box background color",
                     "Top box border color",
@@ -81,10 +77,6 @@ local function ExtrasScreen(initialSettings, initialTracker, initialProgram)
 		)
 	end
 
-	local function onClearClick()
-		FormsUtils.createConfirmDialog(tourneyTracker.clearData)
-	end
-
 	local function onCoverageCalc()
 		program.openScreen(program.UI_SCREENS.COVERAGE_CALC_SCREEN)
 	end
@@ -107,29 +99,16 @@ local function ExtrasScreen(initialSettings, initialTracker, initialProgram)
 			buttonText = "Ouvrir",
 			buttonFunction = onCoverageCalc
 		},
-		{
-			name = "Tourney Tracker",
-			iconImage = "trophy.png",
-			imageOffset = {x = 0, y = 0},
-			descriptionRows = {
-				"Auto tracks your scores",
-				"for Crozwords' tourneys."
-			},
-			settingsKey = "tourneyTracker",
-			useEnabledButton = true,
-			buttonText = "Clear Tourney Scores",
-			buttonFunction = onClearClick
-        },
         {
 			name = "Stream Connect",
 			iconImage = "streamerbot.png",
 			imageOffset = {x = 1, y = 1},
 			descriptionRows = {
-				"Connects to streaming",
-				"services for chat interaction."
+				"Se connecte aux services de streaming",
+				"pour l'interaction avec le chat."
 			},
 			settingsKey = "streamerbot",
-			buttonText = "Open Config",
+			buttonText = "Ouvrir",
 			buttonFunction = OpenStreamerBotConfig
 		}
 	}
