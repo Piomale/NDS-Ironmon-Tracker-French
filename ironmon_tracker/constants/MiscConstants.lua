@@ -1,11 +1,13 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "6.2.7.1"
+MiscConstants.TRACKER_VERSION = "6.3.1.1"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
-	"-- Les capacités suivantes de la Génération 4 révélaient souvent des informations alors qu'elles ne le devraient pas, elles ne seront plus automatiquement suivies pour le moment : Échauffement, Benêt, Insomnia, Tempo Perso, Armumagma, Ignifu-Voile, et Esprit Vital."
+    "-- Correction d'un crash important lié au Log Viewer..",
+    "-- Une version allégée du Stream Connect du tracker GBA est disponible ! Vous pouvez le configurer dans le menu Extras.",
+    "-- Le trackeur devrait provoquer moins de freeze quand il doit gérer beaucoup de données.",
 }
 
 MiscConstants.DEFAULT_SETTINGS = {

@@ -222,8 +222,12 @@ function BattleHandlerBase:_playerSlotHasFainted(slotIndex)
     end
 end
 
+function BattleHandlerBase:_onPlayerSlotFainted()
+    self._program.onRunEnded()
+end
+
 function BattleHandlerBase:checkIfRunHasEnded()
-    if not self:inBattleAndFetched() then
+    if not self:inBattleAndFetched() or self._program.hasRunEnded() then
         return
     end
     if
@@ -241,7 +245,7 @@ function BattleHandlerBase:checkIfRunHasEnded()
         end
     end
     if self:_playerSlotHasFainted(self._faintMonIndex) then
-        self._program.onRunEnded()
+        self:_onPlayerSlotFainted()
     end
 end
 
@@ -430,7 +434,8 @@ function BattleHandlerBase:getActivePokemonInBattle(selected)
 end
 
 function BattleHandlerBase:runEvents()
-    for _, frameCounter in pairs(self._frameCounters) do
+    --shallow copy in the rare instance a frame counter is added when one is removed
+    for _, frameCounter in pairs(MiscUtils.shallowCopy(self._frameCounters)) do
         frameCounter.decrement()
     end
     for _, listener in pairs(self._joypadEvents) do

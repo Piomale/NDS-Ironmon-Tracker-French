@@ -129,7 +129,8 @@ GameInfo.GAME_INFO = {
         PIVOT_TYPES = {
             ["Grass/Cave"] = true,
             ["Doubles Grass"] = true
-        }
+        },
+        UI_HP_OFFSET = 0x73D
     },
     [GameInfo.VERSION_NUMBER.BLACK_FR] = {
         GEN = 5,
@@ -161,7 +162,8 @@ GameInfo.GAME_INFO = {
         PIVOT_TYPES = {
             ["Grass/Cave"] = true,
             ["Doubles Grass"] = true
-        }
+        },
+        UI_HP_OFFSET = 0x73D
     },
 	[GameInfo.VERSION_NUMBER.WHITE_FR] = {
         GEN = 5,
@@ -195,7 +197,8 @@ GameInfo.GAME_INFO = {
             ["Int. Grass"] = true,
             ["Grass/Cave"] = true,
             ["Doubles Grass"] = true
-        }
+        },
+        UI_HP_OFFSET = 0x91
     },
     [GameInfo.VERSION_NUMBER.WHITE2] = {
         GEN = 5,
@@ -211,6 +214,7 @@ GameInfo.GAME_INFO = {
         PIVOT_TYPES = {
             ["Grass/Cave"] = true,
             ["Doubles Grass"] = true
-        }
+        },
+        UI_HP_OFFSET = 0x91
     }
 }

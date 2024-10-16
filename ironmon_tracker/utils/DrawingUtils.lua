@@ -283,8 +283,7 @@ function DrawingUtils.drawText(x, y, text, textStyle, shadowColor, justifiable, 
         gui.drawLine(x + 1, y + 6, x + moveWidth + 2, y + 6, opacity)
         color = settings.colorScheme["Negative text color"]
     end
-    local bolded = textStyle.isBolded()
-    gui.drawText(x + spacing, y, text, color, nil, textStyle.getFontSize(), textStyle.getFontFamily(), bolded)
+    gui.drawText(x + spacing, y, text, color, nil, textStyle.getFontSize(), textStyle.getFontFamily())
 end
 
 local function getPokemonPath(pokemonID, currentIconSet)
