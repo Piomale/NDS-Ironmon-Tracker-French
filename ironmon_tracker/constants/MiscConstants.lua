@@ -1,11 +1,11 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "6.3.1.2"
+MiscConstants.TRACKER_VERSION = "6.3.1.3"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
-    "--Traduction des commandes du streambot.",
+    "-- !evo devient !evolution.",
 }
 
 MiscConstants.DEFAULT_SETTINGS = {

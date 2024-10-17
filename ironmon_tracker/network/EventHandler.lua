@@ -531,7 +531,7 @@ EventHandler.DefaultEvents = {
 	},
 	CMD_Revo = {
 		Type = EventHandler.EventTypes.Command,
-		Command = "!evo",
+		Command = "!evolution",
 		Name = "Evolutions Pokémon",
 		Help = "[pokemon] > Affiche les possibilités d'évolution pour un Pokémon.",
 		Fulfill = function(self, request) return EventData.getRevo(request.SanitizedInput) end,
