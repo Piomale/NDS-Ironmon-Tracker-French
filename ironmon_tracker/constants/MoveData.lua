@@ -11,6 +11,16 @@ MoveData.MOVE_CATEGORIES =
 	}
 )
 
+MoveData.TRANSLATE_CATEGORIES =
+	MiscUtils.readOnly(
+	{
+		NONE = "Aucun",
+		PHYSICAL = "Physique",
+		SPECIAL = "Spécial",
+		STATUS = "Status"
+	}
+)
+
 MoveData.MOVES = {}
 
 --Mapping of move types to move categories for gens 1-3
@@ -34,6 +44,29 @@ MoveData.TYPE_CATEGORIES =
 		[PokemonData.POKEMON_TYPES.ICE] = MoveData.MOVE_CATEGORIES.SPECIAL,
 		[PokemonData.POKEMON_TYPES.DRAGON] = MoveData.MOVE_CATEGORIES.SPECIAL,
 		[PokemonData.POKEMON_TYPES.DARK] = MoveData.MOVE_CATEGORIES.SPECIAL
+	}
+)
+
+MoveData.TRANSLATE_TYPE =
+	MiscUtils.readOnly(
+	{
+		[PokemonData.POKEMON_TYPES.NORMAL] = "Normal",
+		[PokemonData.POKEMON_TYPES.FIGHTING] = "Combat",
+		[PokemonData.POKEMON_TYPES.FLYING] = "Vol",
+		[PokemonData.POKEMON_TYPES.POISON] = "Poison",
+		[PokemonData.POKEMON_TYPES.GROUND] = "Sol",
+		[PokemonData.POKEMON_TYPES.ROCK] = "Roche",
+		[PokemonData.POKEMON_TYPES.BUG] = "Insecte",
+		[PokemonData.POKEMON_TYPES.GHOST] = "Spectre",
+		[PokemonData.POKEMON_TYPES.STEEL] = "Acier",
+		[PokemonData.POKEMON_TYPES.FIRE] = "Feu",
+		[PokemonData.POKEMON_TYPES.WATER] = "Eau",
+		[PokemonData.POKEMON_TYPES.GRASS] = "Plante",
+		[PokemonData.POKEMON_TYPES.ELECTRIC] = "Électrik",
+		[PokemonData.POKEMON_TYPES.PSYCHIC] = "Psy",
+		[PokemonData.POKEMON_TYPES.ICE] = "Glace",
+		[PokemonData.POKEMON_TYPES.DRAGON] = "Dragon",
+		[PokemonData.POKEMON_TYPES.DARK] = "Ténèbres"
 	}
 )
 

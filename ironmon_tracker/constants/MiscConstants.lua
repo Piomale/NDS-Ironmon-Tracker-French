@@ -1,13 +1,11 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "6.3.1.1"
+MiscConstants.TRACKER_VERSION = "6.3.1.2"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
-    "-- Correction d'un crash important lié au Log Viewer..",
-    "-- Une version allégée du Stream Connect du tracker GBA est disponible ! Vous pouvez le configurer dans le menu Extras.",
-    "-- Le trackeur devrait provoquer moins de freeze quand il doit gérer beaucoup de données.",
+    "--Traduction des commandes du streambot.",
 }
 
 MiscConstants.DEFAULT_SETTINGS = {

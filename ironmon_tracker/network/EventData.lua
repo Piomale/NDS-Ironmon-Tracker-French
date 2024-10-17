@@ -106,7 +106,7 @@ local function findPokemonType(name, threshold)
 		return nil, -1
 	end
 	threshold = threshold or 3
-	local _, type, distance = NetworkUtils.getClosestWord(name:upper(), PokemonData.TYPE_LIST, threshold)
+	local _, type, distance = NetworkUtils.getClosestWord(name:upper(), PokemonData.TYPE_LIST_TRANSLATED, threshold)
 	return type, distance
 end
 
@@ -191,11 +191,11 @@ function EventData.getPokemon(params)
 	local typesText
 	if pokemon.type[2] ~= PokemonData.POKEMON_TYPES.EMPTY and pokemon.type[2] ~= pokemon.type[1] then
 		typesText = string.format("%s/%s",
-			NetworkUtils.firstToUpperEachWord(pokemon.type[1]:lower()),
-			NetworkUtils.firstToUpperEachWord(pokemon.type[2]:lower())
+			MoveData.TRANSLATE_TYPE[pokemon.type[1]],
+			MoveData.TRANSLATE_TYPE[pokemon.type[2]]
 		)
 	else
-		typesText = NetworkUtils.firstToUpperEachWord(pokemon.type[1]:lower())
+		typesText = MoveData.TRANSLATE_TYPE[pokemon.type[1]]
 	end
 	local coreInfo = string.format("%s #%03d (%s) BST: %s",
 		pokemon.name,
@@ -216,12 +216,12 @@ function EventData.getPokemon(params)
 	if #moveLevels > 0 then
 		moves = table.concat(moveLevels, ", ")
 	else
-		moves = "None."
+		moves = "Aucune."
 	end
-	table.insert(info, string.format("Lv. Moves: %s", moves))
+	table.insert(info, string.format("Lvl capacite: %s", moves))
 	local amountSeen = Network.Data.tracker.getAmountSeen(id) or 0
 	if amountSeen > 0 then
-		table.insert(info, string.format("Amount seen: %s", amountSeen))
+		table.insert(info, string.format("Nombre vus: %s", amountSeen))
 	end
 	return buildResponse(OUTPUT_CHAR, info)
 end
@@ -249,7 +249,7 @@ function EventData.getWeak(params)
 	end
 
 	local info = {}
-	local pokemonDefenses = MoveUtils.getTypeDefensesTable(pokemon)
+	local pokemonDefenses = MoveUtils.getTypeDefensesTable(pokemon, true)
 	local weak4x = NetworkUtils.firstToUpperEachWord(table.concat(pokemonDefenses["4x"] or {}, ", "):lower())
 	if (weak4x or "") ~= "" then
 		table.insert(info, string.format("[4x] %s", weak4x))
@@ -272,19 +272,18 @@ function EventData.getWeak(params)
 	end
 	local typesText
 	if pokemon.type[2] ~= PokemonData.POKEMON_TYPES.EMPTY and pokemon.type[2] ~= pokemon.type[1] then
-		typesText = string.format("%s/%s",
-			NetworkUtils.firstToUpperEachWord(pokemon.type[1]:lower()),
-			NetworkUtils.firstToUpperEachWord(pokemon.type[2]:lower())
-		)
+		typesText = string.format("%s/%s",			
+MoveData.TRANSLATE_TYPE[pokemon.type[1]],			
+MoveData.TRANSLATE_TYPE[pokemon.type[2]])
 	else
-		typesText = NetworkUtils.firstToUpperEachWord(pokemon.type[1]:lower())
+		typesText = MoveData.TRANSLATE_TYPE[pokemon.type[1]]
 	end
 
 	if #info == 0 then
-		table.insert(info, "Has no weaknesses")
+		table.insert(info, "N'a pas de faiblesse")
 	end
 
-	local prefix = string.format("%s (%s) Weaknesses %s", pokemon.name, typesText, OUTPUT_CHAR)
+	local prefix = string.format("Faiblesses de %s (%s) %s", pokemon.name, typesText, OUTPUT_CHAR)
 	return buildResponse(prefix, info)
 end
 
@@ -297,16 +296,14 @@ function EventData.getMove(params)
 	end
 
 	local info = {}
-	local makesContact = NetworkUtils.containsText(move.description, "makes contact")
-	table.insert(info, string.format("Contact: %s", makesContact and "Yes" or "No"))
 	table.insert(info, string.format("PP: %s", move.pp or "---"))
-	table.insert(info, string.format("Power: %s", move.power or "---"))
-	table.insert(info, string.format("Acc: %s", move.accuracy or "---"))
-	table.insert(info, string.format("Move Summary: %s", move.description or "N/A"))
+	table.insert(info, string.format("Puissance: %s", move.power or "---"))
+	table.insert(info, string.format("Précision: %s", move.accuracy or "---"))
+	table.insert(info, string.format("Description: %s", move.description or "N/A"))
 	local prefix = string.format("%s (%s, %s) %s",
 		move.name,
-		NetworkUtils.firstToUpperEachWord(move.type:lower()),
-		NetworkUtils.firstToUpperEachWord(move.category:lower()),
+		NetworkUtils.firstToUpperEachWord(MoveData.TRANSLATE_TYPE[move.type]),
+		NetworkUtils.firstToUpperEachWord(MoveData.TRANSLATE_CATEGORIES[move.category]),
 		OUTPUT_CHAR)
 	return buildResponse(prefix, info)
 end
@@ -383,7 +380,7 @@ function EventData.getRoute(params)
 			end
 		end
 		local wildsText = string.format(
-			"Wild Pok" .. Chars.accentedE .. "mon seen: %s/%s",
+			"Pokémons sauvages vus: %s/%s",
 			#wildMonsAndLevels,
 			encounterArea.totalPokemon
 		)
@@ -523,8 +520,8 @@ function EventData.getRevo(params)
 	local revo = evoData[targetEvoId]
 	if not revo then
 		if pokemon.evolution == PokemonData.EVOLUTION_TYPES.NONE then
-			local prefix = string.format("%s Evos %s", pokemon.name or "N/A", OUTPUT_CHAR)
-			return buildResponse(prefix, "Does not evolve.")
+			local prefix = string.format("%s Evolutions %s", pokemon.name or "N/A", OUTPUT_CHAR)
+			return buildResponse(prefix, "N'évolue pas.")
 		else
 			return buildDefaultResponse(pokemon.name or params)
 		end
@@ -564,17 +561,27 @@ function EventData.getCoverage(params)
 	local calcFromLead = true
 	local onlyFullyEvolved = false
 	local moveTypes = {}
+	local function isValueInTable(value, table)
+		for _, v in pairs(table) do
+			if v == value then
+				return true
+			end
+		end
+		return false
+	end
+	
 	if params ~= nil and params ~= "" then
 		-- Remove any list commas
 		params = (params:gsub(",%s*", " "))
 		for _, word in ipairs(MiscUtils.split(params, " ", true) or {}) do
-			if NetworkUtils.containsText(word, "evolve") or NetworkUtils.containsText(word, "fully") then
+			if NetworkUtils.containsText(word, "evolue") then
 				onlyFullyEvolved = true
 			else
 				local moveType = findPokemonType(word)
-				if moveType and moveType ~= "EMPTY" then
+				if moveType and moveType ~= "VIDE" and isValueInTable(moveType, PokemonData.TYPE_LIST_TRANSLATED) then
 					calcFromLead = false
-					table.insert(moveTypes, PokemonData.POKEMON_TYPES[moveType] or moveType)
+					EnglishMoveType = PokemonData.TYPE_LIST_TRANSLATION[moveType]
+					table.insert(moveTypes, PokemonData.POKEMON_TYPES[EnglishMoveType] or EnglishMoveType)
 				end
 			end
 		end
@@ -585,7 +592,7 @@ function EventData.getCoverage(params)
 			if moveID > 0 then
 				local moveData = MoveData.MOVES[moveID + 1]
 				local moveType = moveData.type
-				if moveData.name == "Hidden Power" then
+				if moveData.name == "Puis. Cachée" then
 					moveType = Network.Data.tracker.getCurrentHiddenPowerType()
 				end
 				if moveData.category ~= MoveData.MOVE_CATEGORIES.STATUS and moveData.power ~= "---" then
@@ -616,7 +623,7 @@ function EventData.getCoverage(params)
 				effectiveness = effectiveness * MoveData.EFFECTIVE_DATA[moveType][defenseType]
 			end
 		end
-		if pokemonData.name == "Shedinja" and effectiveness < 2.0 then
+		if pokemonData.name == "Munja" and effectiveness < 2.0 then
 			return 0.0
 		end
 		return effectiveness
@@ -672,11 +679,16 @@ function EventData.getCoverage(params)
 		end
 	end
 
-	local typesText = NetworkUtils.firstToUpperEachWord(table.concat(moveTypes, ", "):lower())
-	local fullyEvoText = onlyFullyEvolved and " Fully Evolved" or ""
-	local prefix = string.format("Coverage (%s)%s %s", typesText, fullyEvoText, OUTPUT_CHAR)
+	local concatenatedResult = {}
+	for _, moveType in ipairs(moveTypes) do
+		table.insert(concatenatedResult, MoveData.TRANSLATE_TYPE[moveType])
+	end
+	local typesText = table.concat(concatenatedResult, ", ")
+
+	local fullyEvoText = onlyFullyEvolved and " complètement evolué" or ""
+	local prefix = string.format("(%s)%s %s", typesText, fullyEvoText, OUTPUT_CHAR)
 	if calcFromLead and PokemonData.POKEMON[leadPokemon.pokemonID + 1] then
-		prefix = string.format("%s's %s", PokemonData.POKEMON[leadPokemon.pokemonID + 1].name, prefix)
+		prefix = string.format("Coverage de %s %s", PokemonData.POKEMON[leadPokemon.pokemonID + 1].name, prefix)
 	end
 	return buildResponse(prefix, info, ", ")
 end
@@ -686,10 +698,10 @@ end
 function EventData.getHeals(params)
 	local displayHP, displayStatus, displayPP, displayBerries
 	if (params or "") ~= "" then
-		displayHP = NetworkUtils.containsText(params, "hp")
+		displayHP = NetworkUtils.containsText(params, "pv")
 		displayPP = NetworkUtils.containsText(params, "pp")
-		displayStatus = NetworkUtils.containsText(params, "status")
-		displayBerries = NetworkUtils.containsText(params, "berries")
+		displayStatus = NetworkUtils.containsText(params, "statut")
+		displayBerries = NetworkUtils.containsText(params, "baie")
 	end
 	-- Default to showing all (except redundant berries)
 	if not (displayHP or displayPP or displayStatus or displayBerries) then
@@ -729,7 +741,7 @@ function EventData.getHeals(params)
 		if itemInfo then
 			table.insert(healingItems, itemInfo)
 			local itemData = ItemData.HEALING_ITEMS[id]
-			if displayBerries and itemData and NetworkUtils.containsText(itemData.name, "Berry") then
+			if displayBerries and itemData and NetworkUtils.containsText(itemData.name, "Baie") then
 				table.insert(berryItems, itemInfo)
 			end
 		end
@@ -739,7 +751,7 @@ function EventData.getHeals(params)
 		if itemInfo then
 			table.insert(ppItems, itemInfo)
 			local itemData = ItemData.PP_ITEMS[id]
-			if displayBerries and itemData and NetworkUtils.containsText(itemData.name, "Berry") then
+			if displayBerries and itemData and NetworkUtils.containsText(itemData.name, "Baie") then
 				table.insert(berryItems, itemInfo)
 			end
 		end
@@ -749,24 +761,24 @@ function EventData.getHeals(params)
 		if itemInfo then
 			table.insert(statusItems, itemInfo)
 			local itemData = ItemData.STATUS_ITEMS[id]
-			if displayBerries and itemData and NetworkUtils.containsText(itemData.name, "Berry") then
+			if displayBerries and itemData and NetworkUtils.containsText(itemData.name, "Baie") then
 				table.insert(berryItems, itemInfo)
 			end
 		end
 	end
 	if displayHP and #healingItems > 0 then
-		sortAndCombine("HP", healingItems)
+		sortAndCombine("PV", healingItems)
 	end
 	if displayPP and #ppItems > 0 then
 		sortAndCombine("PP", ppItems)
 	end
 	if displayStatus and #statusItems > 0 then
-		sortAndCombine("Status", statusItems)
+		sortAndCombine("Statut", statusItems)
 	end
 	if displayBerries and #berryItems > 0 then
-		sortAndCombine("Berries", berryItems)
+		sortAndCombine("Baie", berryItems)
 	end
-	local prefix = string.format("Heals %s", OUTPUT_CHAR)
+	local prefix = string.format("Soins %s", OUTPUT_CHAR)
 	return buildResponse(prefix, info)
 end
 
@@ -799,7 +811,7 @@ end
 ---@param params string?
 ---@return string response
 function EventData.getSearch(params)
-	local helpResponse = "Search tracked info for a Pok" .. Chars.accentedE .. "mon, move, or ability."
+	local helpResponse = "Cherche des informations suivies sur un Pokémon, une capacité ou un talent."
 	if (params or "") == "" then
 		return buildResponse(params, helpResponse)
 	end
@@ -902,14 +914,14 @@ function EventData.getSearch(params)
 		-- Tracked Encounters
 		local amountSeen = Network.Data.tracker.getAmountSeen(searchId) or 0
 		if amountSeen > 0 then
-			table.insert(info, string.format("Amount seen: %s", amountSeen))
+			table.insert(info, string.format("Nombre vus: %s", amountSeen))
 		end
 		-- Tracked Notes
 		local trackedNote = Network.Data.tracker.getNote(searchId)
 		if trackedNote and trackedNote ~= "" then
 			table.insert(info, string.format("Note: %s", trackedNote))
 		end
-		local prefix = string.format("Tracked %s %s", pokemon.name, OUTPUT_CHAR)
+		local prefix = string.format("Suivis %s %s", pokemon.name, OUTPUT_CHAR)
 		return buildResponse(prefix, info)
 	elseif searchMode == "move" or searchMode == "moves" then
 		local move = MoveData.MOVES[searchId + 1]
@@ -1059,7 +1071,7 @@ function EventData.getTheme(params)
 	local info = {}
 	local themeCode = ThemeFactory.getThemeString()
 	table.insert(info, themeCode)
-	local prefix = string.format("%s %s", "Current Theme", OUTPUT_CHAR)
+	local prefix = string.format("%s %s", "Theme actuel", OUTPUT_CHAR)
 	return buildResponse(prefix, info)
 end
 
@@ -1099,7 +1111,7 @@ function EventData.getProgress(params)
 			maxBadges = maxBadges + 1
 		end
 	end
-	table.insert(info, string.format("Gym badges: %s/%s", badgesObtained, maxBadges))
+	table.insert(info, string.format("Badges: %s/%s", badgesObtained, maxBadges))
 
 	-- Trainers Defeated
 	-- local totalDefeated, totalTrainers = 0, 0
@@ -1127,12 +1139,12 @@ function EventData.getProgress(params)
 			end
 		end
 	end
-	table.insert(info, string.format("Pok" .. Chars.accentedE .. "mon seen fully evolved: %s/%s (%0.1f%%)",
+	table.insert(info, string.format("Pokémons complétement evolués vus: %s/%s (%0.1f%%)",
 		fullyEvolvedSeen,
 		fullyEvolvedTotal,
 		fullyEvolvedSeen / fullyEvolvedTotal * 100))
 
-	local prefix = string.format("Progress %s", OUTPUT_CHAR)
+	local prefix = string.format("Progression %s", OUTPUT_CHAR)
 	return buildResponse(prefix, info)
 end
 
@@ -1143,7 +1155,7 @@ function EventData.getLog(params)
 	local prefix = string.format("%s %s", "Log", OUTPUT_CHAR)
 	local pokemonList = Network.Data.logInfo and Network.Data.logInfo.getPokemon() or {}
 	if #pokemonList == 0 then
-		return buildResponse(prefix, "This game's log file hasn't been opened yet.")
+		return buildResponse(prefix, "Le log n'a pas encore été ouvert cette partie.")
 	end
 
 	local miscInfo = Network.Data.logInfo.getMiscInfo() or {}
@@ -1185,9 +1197,10 @@ end
 function EventData.getAbout(params)
 	local info = {}
 	table.insert(info, string.format("Version: %s", MiscConstants.TRACKER_VERSION))
-	table.insert(info, string.format("Game: %s", Network.Data.gameInfo.NAME or "N/A"))
-	table.insert(info, string.format("Attempts: %s", Network.Data.seedLogger.getTotalRuns() or 1))
-	table.insert(info, string.format("Streamerbot Code: v%s", Network.currentStreamerbotVersion or "N/A"))
+	table.insert(info, string.format("Jeu: %s", Network.Data.gameInfo.NAME or "N/A"))
+	table.insert(info, string.format("Tentatives: %s", Network.Data.seedLogger.getTotalRuns() or 1))
+	table.insert(info, string.format("Streamerbot version: v%s", Network.currentStreamerbotVersion or "N/A"))
+	table.insert(info, string.format("Téléchargement: https://github.com/Piomale/NDS-Ironmon-Tracker-French"))
 	local prefix = string.format("NDS Ironmon Tracker %s", OUTPUT_CHAR)
 	return buildResponse(prefix, info)
 end
@@ -1218,6 +1231,6 @@ function EventData.getHelp(params)
 		end
 		table.sort(info, function(a,b) return a < b end)
 	end
-	local prefix = string.format("Tracker Commands %s", OUTPUT_CHAR)
+	local prefix = string.format("Commandes %s", OUTPUT_CHAR)
 	return buildResponse(prefix, info, ", ")
 end

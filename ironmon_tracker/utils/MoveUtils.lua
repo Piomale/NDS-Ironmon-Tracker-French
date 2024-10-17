@@ -226,7 +226,7 @@ function MoveUtils.calculateEnemyMovesAtLevel(learnSet, level)
     return movesCurrently
 end
 
-function MoveUtils.getTypeDefensesTable(pokemonData)
+function MoveUtils.getTypeDefensesTable(pokemonData, translate)
     local EFFECTIVENESS_TO_SYMBOL = {
         [4.0] = "4x",
         [2.0] = "2x",
@@ -253,7 +253,12 @@ function MoveUtils.getTypeDefensesTable(pokemonData)
         end
         if EFFECTIVENESS_TO_SYMBOL[effectiveness] then
             local symbol = EFFECTIVENESS_TO_SYMBOL[effectiveness]
-            table.insert(typeDefenses[symbol], moveType)
+			if translate then
+				table.insert(typeDefenses[symbol], MoveData.TRANSLATE_TYPE[moveType])
+			else
+				table.insert(typeDefenses[symbol], moveType)
+			end
+				
         end
     end
     return typeDefenses

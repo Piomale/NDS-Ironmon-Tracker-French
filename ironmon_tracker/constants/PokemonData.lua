@@ -19,6 +19,49 @@ PokemonData.TYPE_LIST = {
     "WATER"
 }
 
+PokemonData.TYPE_LIST_TRANSLATED = {
+	"NORMAL",
+	"COMBAT",
+	"VOL",
+	"POISON",
+	"SOL",
+	"ROCHE",
+	"INSECTE",
+	"SPECTRE",
+	"ACIER",
+	"FEU",
+	"EAU",
+	"PLANTE",
+	"ELECTRIK",
+	"PSY",
+	"GLACE",
+	"DRAGON",
+	"TENEBRES",
+	"VIDE"
+}
+
+PokemonData.TYPE_LIST_TRANSLATION = {
+	["NORMAL"] = "NORMAL",
+	["COMBAT"] = "FIGHTING",
+	["VOL"] = "FLYING",
+	["POISON"] = "POISON",
+	["SOL"] = "GROUND",
+	["ROCHE"] = "ROCK",
+	["INSECTE"] = "BUG",
+	["SPECTRE"] = "GHOST",
+	["ACIER"] = "STEEL",
+	["FEU"] = "FIRE",
+	["EAU"] = "WATER",
+	["PLANTE"] = "GRASS",
+	["ÉLECTRIK"] = "ELECTRIC",
+	["PSY"] = "PSYCHIC",
+	["GLACE"] = "ICE",
+	["DRAGON"] = "DRAGON",
+	["TÉNÈBRES"] = "DARK",
+	["VIDE"] = "EMPTY"
+}
+
+
 PokemonData.FULL_TYPE_LIST = {
     "BUG",
     "DARK",

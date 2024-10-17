@@ -129,7 +129,7 @@ function HoverFrameFactory.createTypeDefensesFrame(params)
             )
         )
         local totalSize = 18
-        local typeDefensesTable = MoveUtils.getTypeDefensesTable(pokemon)
+        local typeDefensesTable = MoveUtils.getTypeDefensesTable(pokemon, false)
         for _, heading in pairs(order) do
             local defenseTable = typeDefensesTable[heading]
             if next(defenseTable) ~= nil then
