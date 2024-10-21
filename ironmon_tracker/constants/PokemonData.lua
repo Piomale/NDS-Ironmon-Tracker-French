@@ -53,11 +53,11 @@ PokemonData.TYPE_LIST_TRANSLATION = {
 	["FEU"] = "FIRE",
 	["EAU"] = "WATER",
 	["PLANTE"] = "GRASS",
-	["ÉLECTRIK"] = "ELECTRIC",
+	["ELECTRIK"] = "ELECTRIC",
 	["PSY"] = "PSYCHIC",
 	["GLACE"] = "ICE",
 	["DRAGON"] = "DRAGON",
-	["TÉNÈBRES"] = "DARK",
+	["TENEBRES"] = "DARK",
 	["VIDE"] = "EMPTY"
 }
 

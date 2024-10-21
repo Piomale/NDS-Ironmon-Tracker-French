@@ -1,11 +1,11 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "6.3.1.3"
+MiscConstants.TRACKER_VERSION = "6.3.1.4"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
-    "-- !evo devient !evolution.",
+    "-- Retrait de certains accents dans les commandes du bot",
 }
 
 MiscConstants.DEFAULT_SETTINGS = {

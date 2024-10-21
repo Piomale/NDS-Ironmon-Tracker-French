@@ -4,7 +4,7 @@ AbilityData.ABILITIES = {}
 AbilityData.BATTLE_MSGS = {}
 
 AbilityData.ABILITIES_MASTER_LIST = {
-        {
+	{
         id = 0,
         name = "---",
         description = ""
