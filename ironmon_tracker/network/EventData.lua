@@ -221,7 +221,11 @@ function EventData.getPokemon(params)
 	table.insert(info, string.format("Lvl capacite: %s", moves))
 	local amountSeen = Network.Data.tracker.getAmountSeen(id) or 0
 	if amountSeen > 0 then
-		table.insert(info, string.format("Nombre vus: %s", amountSeen))
+		table.insert(info, string.format("Nombre vu: %s", amountSeen))
+		local lastLevelSeen = Network.Data.tracker.getLastLevelSeen(id) or "---"
+		if lastLevelSeen ~= "---" then
+			table.insert(info, string.format("Dernier niveau vu: %s", lastLevelSeen))
+		end
 	end
 	return buildResponse(OUTPUT_CHAR, info)
 end

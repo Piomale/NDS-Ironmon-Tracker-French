@@ -13,7 +13,6 @@ local function EvoDataScreen(initialSettings, initialTracker, initialProgram)
 	local program = initialProgram
 	local currentTargetIDs = {}
 	local currentIndex = 1
-	local tourneyTracker
 
 	local self = {}
 

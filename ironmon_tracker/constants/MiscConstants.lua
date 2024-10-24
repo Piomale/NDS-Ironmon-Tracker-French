@@ -1,11 +1,12 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "6.3.1.4"
+MiscConstants.TRACKER_VERSION = "6.3.1.5"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
-    "-- Retrait de certains accents dans les commandes du bot",
+    "-- Ajout du dernier niveau vu pour la commande !pokemon du streamerbot",
+    "-- Le nombre d'objet possédé ne sera vérifié qu'une fois toutes les 3 secondes pour éviter des ralentissements",
 }
 
 MiscConstants.DEFAULT_SETTINGS = {
@@ -94,9 +95,6 @@ MiscConstants.DEFAULT_SETTINGS = {
     extras = {
         BROWS_ENABLED = false,
         BROWS_FRAMES = 8
-    },
-    tourneyTracker = {
-        ENABLED = false
     },
     coverageCalc = {
         FULLY_EVOLVED_ONLY = false

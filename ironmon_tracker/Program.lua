@@ -21,7 +21,6 @@ local function Program(initialTracker, initialMemoryAddresses, initialGameInfo, 
 	local RandomBallScreen = dofile(Paths.FOLDERS.UI_FOLDER .. "/RandomBallScreen.lua")
 	local TitleScreen = dofile(Paths.FOLDERS.UI_FOLDER .. "/TitleScreen.lua")
 	local RestorePointsScreen = dofile(Paths.FOLDERS.UI_FOLDER .. "/RestorePointsScreen.lua")
-	local TourneyTrackerScreen = dofile(Paths.FOLDERS.UI_FOLDER .. "/TourneyTrackerScreen.lua")
 	local ExtrasScreen = dofile(Paths.FOLDERS.UI_FOLDER .. "/ExtrasScreen.lua")
 	local EvoDataScreen = dofile(Paths.FOLDERS.UI_FOLDER .. "/EvoDataScreen.lua")
 	local CoverageCalcScreen = dofile(Paths.FOLDERS.UI_FOLDER .. "/CoverageCalcScreen.lua")
@@ -38,7 +37,6 @@ local function Program(initialTracker, initialMemoryAddresses, initialGameInfo, 
 	dofile(Paths.FOLDERS.DATA_FOLDER .. "/BattleHandlerGen4.lua")
 	dofile(Paths.FOLDERS.DATA_FOLDER .. "/BattleHandlerGen5.lua")
 	local PokemonThemeManager = dofile(Paths.FOLDERS.DATA_FOLDER .. "/PokemonThemeManager.lua")
-	local TourneyTracker = dofile(Paths.FOLDERS.DATA_FOLDER .. "/TourneyTracker.lua")
 	dofile(Paths.FOLDERS.NETWORK_FOLDER .. "/Network.lua")
 
 	self.SELECTED_PLAYERS = {
@@ -80,7 +78,6 @@ local function Program(initialTracker, initialMemoryAddresses, initialGameInfo, 
 	local frameCounters
 	local trackerUpdater = TrackerUpdater(settings)
 	local seedLogger
-	local tourneyTracker
 	local pokemonThemeManager = PokemonThemeManager(settings, self)
 	local dayOfWeek = 2
 
@@ -92,12 +89,6 @@ local function Program(initialTracker, initialMemoryAddresses, initialGameInfo, 
 
 	function self.getAddresses()
 		return memoryAddresses
-	end
-
-	function self.openTourneyScoreBreakdown(previousScreen)
-		currentScreens = {}
-		self.UI_SCREEN_OBJECTS[self.UI_SCREENS.TOURNEY_TRACKER_SCREEN].setUpScoreBreakdown(tourneyTracker, previousScreen)
-		self.drawCurrentScreens()
 	end
 
 	function self.saveSettings(useDefaultTheme)
@@ -258,12 +249,11 @@ local function Program(initialTracker, initialMemoryAddresses, initialGameInfo, 
 		RANDOM_BALL_SCREEN = 17,
 		TITLE_SCREEN = 18,
 		RESTORE_POINTS_SCREEN = 19,
-		TOURNEY_TRACKER_SCREEN = 20,
-		EXTRAS_SCREEN = 21,
-		EVO_DATA_SCREEN = 22,
-		COVERAGE_CALC_SCREEN = 23,
-        TIMER_SCREEN = 24,
-		STREAMERBOT_CONFIG_SCREEN = 25
+		EXTRAS_SCREEN = 20,
+		EVO_DATA_SCREEN = 21,
+		COVERAGE_CALC_SCREEN = 22,
+        TIMER_SCREEN = 23,
+		STREAMERBOT_CONFIG_SCREEN = 24
 	}
 
 	self.UI_SCREEN_OBJECTS = {
@@ -287,7 +277,6 @@ local function Program(initialTracker, initialMemoryAddresses, initialGameInfo, 
 		[self.UI_SCREENS.RANDOM_BALL_SCREEN] = RandomBallScreen(settings, tracker, self),
 		[self.UI_SCREENS.TITLE_SCREEN] = TitleScreen(settings, tracker, self),
 		[self.UI_SCREENS.RESTORE_POINTS_SCREEN] = RestorePointsScreen(settings, tracker, self),
-		[self.UI_SCREENS.TOURNEY_TRACKER_SCREEN] = TourneyTrackerScreen(settings, tracker, self),
 		[self.UI_SCREENS.EXTRAS_SCREEN] = ExtrasScreen(settings, tracker, self),
 		[self.UI_SCREENS.EVO_DATA_SCREEN] = EvoDataScreen(settings, tracker, self),
 		[self.UI_SCREENS.COVERAGE_CALC_SCREEN] = CoverageCalcScreen(settings, tracker, self),
@@ -295,16 +284,6 @@ local function Program(initialTracker, initialMemoryAddresses, initialGameInfo, 
 		[self.UI_SCREENS.STREAMERBOT_CONFIG_SCREEN] = StreamerbotConfigScreen(settings,tracker,self)
 	}
 
-	tourneyTracker =
-		TourneyTracker(
-		tracker,
-		settings,
-		self.UI_SCREEN_OBJECTS[self.UI_SCREENS.TOURNEY_TRACKER_SCREEN],
-		self.UI_SCREEN_OBJECTS[self.UI_SCREENS.MAIN_SCREEN]
-	)
-
-	self.UI_SCREEN_OBJECTS[self.UI_SCREENS.EXTRAS_SCREEN].injectExtraRelatedClasses(tourneyTracker)
-	
 	function self.setSeedNumber(attempts)
 		self.UI_SCREEN_OBJECTS[self.UI_SCREENS.MAIN_SCREEN].setSeedNumber(attempts)
 	end
@@ -642,6 +621,11 @@ local function Program(initialTracker, initialMemoryAddresses, initialGameInfo, 
 		return battleHandler:isWildBattle()
 	end
 
+	local function readMemorySlow()
+		scanForHealingItems()
+		self.readBadgeMemory()
+	end
+	
 	local function readMemory()
 		refreshPointers()
 		updateLocation()
@@ -655,8 +639,7 @@ local function Program(initialTracker, initialMemoryAddresses, initialGameInfo, 
 		battleHandler:updateStatStages(playerPokemon, enemyPokemon)
 		battleHandler:checkIfRunHasEnded()
 		HGSS_checkLeagueDefeated()
-		scanForHealingItems()
-		self.readBadgeMemory()
+		
 		if not (inTrackedPokemonView or inLockedView) then
 			self.setPokemonForMainScreen()
 		end
@@ -676,7 +659,6 @@ local function Program(initialTracker, initialMemoryAddresses, initialGameInfo, 
 		if not usingAnimated then
 			self.drawCurrentScreens()
 		end
-		tourneyTracker.updateMilestones(battleHandler:getDefeatedTrainers(), currentMapID)
 	end
 
 	function self.openUpdaterScreen()
@@ -878,7 +860,6 @@ local function Program(initialTracker, initialMemoryAddresses, initialGameInfo, 
 		if currentScreens[self.UI_SCREENS.MAIN_SCREEN] and total == 1 then
 			client.SetGameExtraPadding(0, 0, Graphics.SIZES.MAIN_SCREEN_PADDING, 0)
 		end
-		self.UI_SCREEN_OBJECTS[self.UI_SCREENS.TOURNEY_TRACKER_SCREEN].show()
 		local last = {
 			[self.UI_SCREENS.RANDOM_BALL_SCREEN] = true,
 			[self.UI_SCREENS.TITLE_SCREEN] = true
@@ -997,8 +978,9 @@ local function Program(initialTracker, initialMemoryAddresses, initialGameInfo, 
 	end
 
 	frameCounters = {
-		restorePointUpdate = FrameCounter(30, updateRestorePoints),
+		restorePointUpdate = FrameCounter(90, updateRestorePoints),
 		memoryReading = FrameCounter(30, readMemory, nil, true),
+		memoryReadingSlow = FrameCounter(180, readMemorySlow, nil, true),
 		trackerSaving = FrameCounter(
 			18000,
 			function()
@@ -1068,7 +1050,6 @@ local function Program(initialTracker, initialMemoryAddresses, initialGameInfo, 
 			not self.UI_SCREEN_OBJECTS[self.UI_SCREENS.TITLE_SCREEN].isEditingFavorites()
 		self.UI_SCREEN_OBJECTS[self.UI_SCREENS.MAIN_SCREEN].setRunEventListeners(runMainScreenEvents)
 		if runEvents then
-			self.UI_SCREEN_OBJECTS[self.UI_SCREENS.TOURNEY_TRACKER_SCREEN].runEventListeners()
 			for _, eventListener in pairs(eventListeners) do
 				eventListener.listen()
 			end

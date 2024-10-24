@@ -280,10 +280,6 @@ local function ExtrasScreen(initialSettings, initialTracker, initialProgram)
 		end
 	end
 
-	function self.injectExtraRelatedClasses(newTourneyTracker)
-		tourneyTracker = newTourneyTracker
-	end
-
 	local function initUI()
 		ui.controls = {}
 		ui.frames = {}
