@@ -1,12 +1,17 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "6.3.1.5"
+MiscConstants.TRACKER_VERSION = "6.3.5.1"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
-    "-- Ajout du dernier niveau vu pour la commande !pokemon du streamerbot",
-    "-- Le nombre d'objet possédé ne sera vérifié qu'une fois toutes les 3 secondes pour éviter des ralentissements",
+	"-- Correction d'un bug où, occasionnellement, les jeux de la Génération 4 affichaient le mauvais Pokémon ennemi.",
+	"-- Ajout d'une fonctionnalité de Récupération après crash, similaire au tracker GBA, grâce à UTDZac.",
+	"-- Ajout de la Veine Souterraine et des extérieurs/intérieurs de la Forêt d'Empoigne à la liste des pivots pour Noir/Blanc 1, ainsi que des Herbes Agitées.",
+	"-- Correction d'une erreur avec Bizhawk 2.8.",
+	"-- Correction d'un bug de la Génération 4 où le Pokémon du joueur ne se mettait pas à jour en combat.",
+	"-- Correction d'une erreur avec le Visualiseur de Journaux.",
+	"-- Correction d'une erreur avec la nouvelle version de Bizhawk 2.10."
 }
 
 MiscConstants.DEFAULT_SETTINGS = {
@@ -90,11 +95,12 @@ MiscConstants.DEFAULT_SETTINGS = {
     },
     trackedInfo = {
         FAINT_DETECTION = PlaythroughConstants.FAINT_DETECTIONS.ON_FIRST_SLOT_FAINT,
-        FIRST_TIME_BW2 = true
+        FIRST_TIME_BW2 = true,
     },
     extras = {
         BROWS_ENABLED = false,
-        BROWS_FRAMES = 8
+        BROWS_FRAMES = 8,
+        RECOVERY_ENABLED = true
     },
     coverageCalc = {
         FULLY_EVOLVED_ONLY = false

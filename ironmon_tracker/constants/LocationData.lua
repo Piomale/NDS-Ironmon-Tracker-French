@@ -1543,8 +1543,8 @@ LocationData.LOCATION_DATA = {
             [136] = {name = "Pok" .. Chars.accentedE .. "mon League"},
             [147] = {name = "Unity Tower"},
             [152] = {name = "Vestiges du Rêve"},
-            [154] = {name = "Pinwheel Exterior"},
-            [155] = {name = "Pinwheel Forest"},
+            [154] = {name = "Empoigne exterieur"},
+            [155] = {name = "Empoigne interieur"},
             [157] = {name = "Desert Resort"},
             [160] = {name = "Relic Castle"},
             [191] = {name = "Cold Storage"},
@@ -1595,7 +1595,7 @@ LocationData.LOCATION_DATA = {
             [317] = {name = "Route 1"},
             [319] = {name = "Route 2"},
             [321] = {name = "Route 3"},
-            [324] = {name = "Wellspring Cave"},
+            [324] = {name = "Veine Souterraine"},
             [326] = {name = "Route 4"},
             [329] = {name = "Route 5"},
             [331] = {name = "Route 6"},
@@ -1790,9 +1790,132 @@ LocationData.LOCATION_DATA = {
                         {level = 17, percent = 1}
                     }
                 }
-            }
+            },
+            ["Veine Souterraine"] = {
+                totalPokemon = 12,
+                vanillaData = {
+                    {
+                        {level = 15, percent = 20}
+                    },
+                    {
+                        {level = 15, percent = 20}
+                    },
+                    {
+                        {level = 17, percent = 10}
+                    },
+                    {
+                        {level = 17, percent = 10}
+                    },
+                    {
+                        {level = 17, percent = 10}
+                    },
+                    {
+                        {level = 17, percent = 10}
+                    },
+                    {
+                        {level = 18, percent = 5}
+                    },
+                    {
+                        {level = 18, percent = 5}
+                    },
+                    {
+                        {level = 20, percent = 4}
+                    },
+                    {
+                        {level = 20, percent = 4}
+                    },
+                    {
+                        {level = 20, percent = 1}
+                    },
+                    {
+                        {level = 20, percent = 1}
+                    }
+                }
+            },
+            ["Empoigne exterieur"] = {
+                totalPokemon = 12,
+                vanillaData = {
+                    {
+                        {level = 18, percent = 20}
+                    },
+                    {
+                        {level = 18, percent = 20}
+                    },
+                    {
+                        {level = 20, percent = 10}
+                    },
+                    {
+                        {level = 20, percent = 10}
+                    },
+                    {
+                        {level = 20, percent = 10}
+                    },
+                    {
+                        {level = 21, percent = 10}
+                    },
+                    {
+                        {level = 18, percent = 5}
+                    },
+                    {
+                        {level = 21, percent = 5}
+                    },
+                    {
+                        {level = 23, percent = 4}
+                    },
+                    {
+                        {level = 23, percent = 4}
+                    },
+                    {
+                        {level = 23, percent = 1}
+                    },
+                    {
+                        {level = 23, percent = 1}
+                    }
+                }
+            },
+            ["Empoigne interieur"] = {
+                totalPokemon = 12,
+                vanillaData = {
+                    {
+                        {level = 21, percent = 20}
+                    },
+                    {
+                        {level = 21, percent = 20}
+                    },
+                    {
+                        {level = 23, percent = 10}
+                    },
+                    {
+                        {level = 23, percent = 10}
+                    },
+                    {
+                        {level = 23, percent = 10}
+                    },
+                    {
+                        {level = 23, percent = 10}
+                    },
+                    {
+                        {level = 24, percent = 5}
+                    },
+                    {
+                        {level = 24, percent = 5}
+                    },
+                    {
+                        {level = 24, percent = 4}
+                    },
+                    {
+                        {level = 24, percent = 4}
+                    },
+                    {
+                        {level = 26, percent = 1}
+                    },
+                    {
+                        {level = 26, percent = 1}
+                    }
+                }
+            },
         },
-        encounterAreaOrder = {"Route 1", "Route 2", "Vestiges du Rêve", "Route 3"}
+        encounterAreaOrder = {"Route 1", "Route 2", "Vestiges du Rêve", "Route 3", "Veine Souterraine","Empoigne exterieur","Empoigne interieur"}
     },
     --black2/white2
     [0x4F455249] = {

@@ -128,7 +128,8 @@ GameInfo.GAME_INFO = {
         LOCATION_DATA = LocationData.LOCATION_DATA[GameInfo.VERSION_NUMBER.BLACK],
         PIVOT_TYPES = {
             ["Grass/Cave"] = true,
-            ["Doubles Grass"] = true
+            ["Doubles Grass"] = true,
+            ["Shaking Spots"] = true
         },
         UI_HP_OFFSET = 0x73D
     },
@@ -161,7 +162,8 @@ GameInfo.GAME_INFO = {
         LOCATION_DATA = LocationData.LOCATION_DATA[GameInfo.VERSION_NUMBER.BLACK],
         PIVOT_TYPES = {
             ["Grass/Cave"] = true,
-            ["Doubles Grass"] = true
+            ["Doubles Grass"] = true,
+            ["Shaking Spots"] = true
         },
         UI_HP_OFFSET = 0x73D
     },
