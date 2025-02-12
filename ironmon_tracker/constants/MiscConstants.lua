@@ -1,17 +1,11 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "6.3.7.1"
+MiscConstants.TRACKER_VERSION = "6.3.7.2"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
-	"-- Correction d'un bug où, occasionnellement, les jeux de la Génération 4 affichaient le mauvais Pokémon ennemi.",
-	"-- Ajout d'une fonctionnalité de Récupération après crash, similaire au tracker GBA, grâce à UTDZac.",
-	"-- Ajout de la Veine Souterraine et des extérieurs/intérieurs de la Forêt d'Empoigne à la liste des pivots pour Noir/Blanc 1, ainsi que des Herbes Agitées.",
-	"-- Correction d'une erreur avec Bizhawk 2.8.",
-	"-- Correction d'un bug de la Génération 4 où le Pokémon du joueur ne se mettait pas à jour en combat.",
-	"-- Correction d'une erreur avec le Visualiseur de Journaux.",
-	"-- Correction d'une erreur avec la nouvelle version de Bizhawk 2.10."
+	"-- Retrait de la commande !log"
 }
 
 MiscConstants.DEFAULT_SETTINGS = {

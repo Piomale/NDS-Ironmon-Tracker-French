@@ -174,6 +174,7 @@ end
 ---@param command string Example: !testcommand
 ---@return table events List of events with matching commands
 function EventHandler.getEventsForCommand(command)
+
 	local events = {}
 	if (command or "") == "" then
 		return events
@@ -599,13 +600,13 @@ EventHandler.DefaultEvents = {
 		Help = "> Affiche les pourcentages de progression pour la partie en cours.",
 		Fulfill = function(self, request) return EventData.getProgress(request.SanitizedInput) end,
 	},
-	CMD_Log = {
-		Type = EventHandler.EventTypes.Command,
-		Command = "!log",
-		Name = "Log Randomizer Settings",
-		Help = "> Si le log a été ouvert, affiche les paramètres de randomisation partageables de la partie en cours.",
-		Fulfill = function(self, request) return EventData.getLog(request.SanitizedInput) end,
-	},
+	-- CMD_Log = {
+	-- 	Type = EventHandler.EventTypes.Command,
+	--	Command = "!log",
+	--	Name = "Log Randomizer Settings",
+	--	Help = "> Si le log a été ouvert, affiche les paramètres de randomisation partageables de la partie en cours.",
+	--	Fulfill = function(self, request) return EventData.getLog(request.SanitizedInput) end,
+	-- },
 	-- NOTE: Enable this command only if rewards get enabled and pick ball reward(s) gets implemented
 	-- CMD_BallQueue = {
 	-- 	Type = EventHandler.EventTypes.Command,
