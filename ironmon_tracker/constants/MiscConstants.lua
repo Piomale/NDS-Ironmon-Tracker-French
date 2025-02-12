@@ -6,7 +6,7 @@ MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
 	"-- Les commandes acceptent les accents",
-	"-- Meilleur gestions des caractères sépciaux dans les talents et capacités",
+	"-- Meilleur gestions des caractères spéciaux dans les talents et capacités",
 	"-- Retrait de la commande !log"
 }
 
