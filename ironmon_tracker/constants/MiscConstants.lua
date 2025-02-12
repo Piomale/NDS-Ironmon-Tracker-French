@@ -6,7 +6,7 @@ MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
 	"-- Ajout de la compatibilité avec Bizhawk 2.10",
-	"-- Retrait de la comptatibilité avec BizHawk 2.8",
+	"-- Retrait de la compatibilité  avec BizHawk 2.8",
 	"-- Les commandes acceptent les accents",
 	"-- Meilleur gestions des caractères spéciaux dans les talents et capacités",
 	"-- Retrait de la commande !log"
