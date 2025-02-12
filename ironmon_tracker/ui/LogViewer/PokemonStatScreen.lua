@@ -184,7 +184,7 @@ local function PokemonStatScreen(initialSettings, initialTracker, initialProgram
             else
                 moveHoverListeners[i].getOnClickParams().move = -1
             end
-            label.setText(stripChars(moveString))
+            label.setText(moveString)
         end
         ui.controls.movesLabel.setText("CTs Arenes")
         ui.controls.movesLabel.setTextOffset({x = 9, y = -1})
@@ -205,13 +205,13 @@ local function PokemonStatScreen(initialSettings, initialTracker, initialProgram
                 params.text = ""
             else
                 local abilityInfo = AbilityData.ABILITIES[abilityID + 1]
-                params.text = stripChars(abilityInfo.description)
+                params.text = abilityInfo.description
                 hoverListener.setOnHoverParams(params)
                 local rightText = ""
                 if i == 3 then
                     rightText = " (HA)"
                 end
-                ui.controls.abilityLabels[i].setText(i .. ". " .. stripChars(abilityInfo.name) .. rightText)
+                ui.controls.abilityLabels[i].setText(i .. ". " .. abilityInfo.name .. rightText)
             end
         end
     end

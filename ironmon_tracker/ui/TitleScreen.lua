@@ -178,7 +178,7 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 
 	local function getRandomStatistic()
 		local statistics = seedLogger.getPastRunStatistics()
-		local completeText = stripChars("Des statistiques amusantes seront affichées ici une fois que tu auras joué suffisamment.")
+		local completeText = "Des statistiques amusantes seront affichées ici une fois que tu auras joué suffisamment."
 		if hasEnoughData(statistics) then
 			local choices = {}
 			for _, mapping in pairs(basicStatisticMappings) do
@@ -194,7 +194,7 @@ local function TitleScreen(initialSettings, initialTracker, initialProgram)
 				table.insert(choices, description)
 			end
 			local text = MiscUtils.randomTableValue(choices)
-			completeText = stripChars(text)
+			completeText = text
 		end
 		local array = DrawingUtils.textToWrappedArray(completeText, ui.frames.mainInnerFrame.getSize().width - 10)
 		for i = 1, 3, 1 do

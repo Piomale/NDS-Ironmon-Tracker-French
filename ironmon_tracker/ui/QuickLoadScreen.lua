@@ -392,7 +392,7 @@ local function TrackerSetupScreen(initialSettings, initialTracker, initialProgra
         }
         local order = {"USE_BATCH", "GENERATE_ROMS"}
         for _, settingValue in pairs(order) do
-            createTypeChooseRadioButtonRow(setting, settingValue, stripChars(typeSettings[settingValue]))
+            createTypeChooseRadioButtonRow(setting, settingValue, typeSettings[settingValue])
         end
         createQuickLoadComboFrame()
     end
@@ -624,7 +624,7 @@ local function TrackerSetupScreen(initialSettings, initialTracker, initialProgra
         for _, settingData in pairs(settingsData) do
             createPathSetupFrame(
                 ui.frames.mainROMGenerateFrame,
-                stripChars(settingData.labelName),
+                settingData.labelName,
                 settingData.settingKey,
                 settingData.extension,
                 settingData.relativePath
@@ -662,7 +662,7 @@ local function TrackerSetupScreen(initialSettings, initialTracker, initialProgra
                 )
             ),
             TextField(
-                stripChars("Paramètre de chargement rapide"),
+                "Paramètre de chargement rapide",
                 {x = 2, y = 1},
                 TextStyle(13, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
             )

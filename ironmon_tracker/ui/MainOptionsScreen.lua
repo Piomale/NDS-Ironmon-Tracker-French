@@ -125,7 +125,7 @@ local function MainOptionsScreen(initialSettings, initialTracker, initialProgram
 			{x = 3, y = 3}
 		}
 		for i, key in pairs(order) do
-			local text = stripChars(buttonNames[key])
+			local text = buttonNames[key]
 			local iconName = icons[i]
 			local frameName = key .. "Frame"
 			local frameInfo =

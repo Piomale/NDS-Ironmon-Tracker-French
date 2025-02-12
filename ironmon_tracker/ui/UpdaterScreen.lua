@@ -75,7 +75,7 @@ local function UpdaterScreen(initialSettings, initialTracker, initialProgram)
         else
             ui.frames.mainFrame.resize({width = 198, height = constants.MAIN_HEIGHT_NO_UPDATE})
             ui.frames.updateInfoFrame.resize({width = 198-2*Graphics.SIZES.BORDER_MARGIN, height = constants.UPDATE_INFO_HEIGHT_NO_UPDATE})
-            ui.controls.topTextLabel1.setText(stripChars("Erreur lors de la mise à jour."))
+            ui.controls.topTextLabel1.setText("Erreur lors de la mise à jour.")
             ui.controls.topTextLabel2.setText("")
             ui.frames.goBackFrame.setVisibility(true)
             errored = true
@@ -110,7 +110,7 @@ local function UpdaterScreen(initialSettings, initialTracker, initialProgram)
                 Box({x = 0, y = 0}, {width = 40, height = constants.MAIN_TEXT_LABEL_HEIGHT})
             ),
             TextField(
-                stripChars("Aucune mise à jour."),
+                "Aucune mise à jour.",
                 {x = 0, y = 1},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -259,7 +259,7 @@ local function UpdaterScreen(initialSettings, initialTracker, initialProgram)
                 )
             ),
             TextField(
-                stripChars("Mise à jour du Tracker"),
+                "Mise à jour du Tracker",
                 {x = 25, y = 1},
                 TextStyle(13, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
             )
@@ -326,7 +326,7 @@ local function UpdaterScreen(initialSettings, initialTracker, initialProgram)
 
     function self.setAsNoUpdate()
         errored = false
-        ui.controls.topTextLabel1.setText(stripChars("Aucune mise à jour."))
+        ui.controls.topTextLabel1.setText("Aucune mise à jour.")
         ui.controls.topTextLabel2.setText("Version actuelle: " .. MiscConstants.TRACKER_VERSION)
         ui.frames.installIgnoreFrame.setVisibility(false)
         ui.frames.goBackFrame.setVisibility(true)
@@ -342,8 +342,8 @@ local function UpdaterScreen(initialSettings, initialTracker, initialProgram)
     function self.setAsUpdateAvailable(newVersion)
         newestVersionString = newVersion
         errored = false
-        ui.controls.topTextLabel1.setText(stripChars("Nouvelle mise à jour disponible!"))
-        ui.controls.topTextLabel2.setText(stripChars("Dernière version: ") .. newVersion)
+        ui.controls.topTextLabel1.setText("Nouvelle mise à jour disponible!")
+        ui.controls.topTextLabel2.setText("Dernière version: " .. newVersion)
         ui.frames.installIgnoreFrame.setVisibility(true)
         ui.frames.goBackFrame.setVisibility(false)
         ui.frames.mainFrame.resize(

@@ -265,7 +265,7 @@ function FormsUtils.createFavoriteChoosingForm(callback, favoritesIndex)
         end
     end
 
-    forms.label(form, stripChars("Cliques sur la liste ci-dessous, puis scroll ou écrit pour rechercher:"), 10, 10, mainWidth, 25)
+    forms.label(form, "Cliques sur la liste ci-dessous, puis scroll ou écrit pour rechercher:", 10, 10, mainWidth, 25)
     local dropdownWidth, dropdownHeight = 250, 40
     local favoritesDropdown = forms.dropdown(form, {[""] = ""}, 10, 35, dropdownWidth, 40)
     forms.setdropdownitems(favoritesDropdown, pokemonNames, true)

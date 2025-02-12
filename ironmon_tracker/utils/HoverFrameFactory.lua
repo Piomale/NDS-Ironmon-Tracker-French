@@ -361,7 +361,7 @@ local function readItemDataIntoFrame(items, itemType, itemHolderFrame)
             elseif itemType == "Status" then
                 extra = itemData.status
             end
-            local text = quantity .. " " .. stripChars(name) .. " (" .. extra .. ")"
+            local text = quantity .. " " .. name .. " (" .. extra .. ")"
             TextLabel(
                 Component(
                     itemHolderFrame,
@@ -636,7 +636,7 @@ function HoverFrameFactory.createMoveHoverTextFrame(BGColorKey, BGColorFillKey, 
         HoverFrameFactory.createHoverTextFrame(
         BGColorKey,
         BGColorFillKey,
-        stripChars(MoveData.MOVES[move + 1].description),
+        MoveData.MOVES[move + 1].description,
         "Top box text color",
         164,
         mainFrame

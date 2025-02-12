@@ -88,7 +88,7 @@ local function BattleOptionsScreen(initialSettings, initialTracker, initialProgr
             TextLabel(
                 Component(frame, Box({x = 0, y = 0}, {width = 0, height = 0}, nil, nil, false)),
                 TextField(
-                    stripChars(labelName),
+                    labelName,
                     {x = 0, y = 0},
                     TextStyle(
                         Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -142,7 +142,7 @@ local function BattleOptionsScreen(initialSettings, initialTracker, initialProgr
                 )
             ),
             TextField(
-                stripChars("Paramètres des combats"),
+                "Paramètres des combats",
                 {x = 28, y = 1},
                 TextStyle(13, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
             )

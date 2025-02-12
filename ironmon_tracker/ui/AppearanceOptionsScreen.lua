@@ -178,8 +178,8 @@ local function AppearanceOptionsScreen(initialSettings, initialTracker, initialP
         )
         local buttons = {
             badgesAppearanceButton = {name = "Apparence des badges", iconName = program.getGameInfo().BADGE_PREFIX},
-            colorThemeButton = {name = stripChars("Modifier le thème de couleur"), iconName = "PAINTBRUSH"},
-            pokemonIconsButton = {name = stripChars("Ensembles d'icônes Pokémon"), iconName = "POKEBALL"}
+            colorThemeButton = {name = "Modifier le thème de couleur", iconName = "PAINTBRUSH"},
+            pokemonIconsButton = {name = "Ensembles d'icônes Pokémon", iconName = "POKEBALL"}
         }
         local order = {"pokemonIconsButton", "badgesAppearanceButton", "colorThemeButton"}
         for i, key in pairs(order) do

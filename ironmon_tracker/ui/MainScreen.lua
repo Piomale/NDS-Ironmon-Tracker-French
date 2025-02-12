@@ -310,7 +310,7 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
     end
 	
 	function self.setSeedNumber(attempts)
-		ui.controls.seedNumber.setText(stripChars("Seed N°" .. attempts))
+		ui.controls.seedNumber.setText("Seed N°" .. attempts)
 	end
 	
     local function initUI()
@@ -496,7 +496,7 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
                 moveNameText = moveNameText .. stars[i]
             end
 
-            moveFrame.moveNameLabel.setText(stripChars(moveNameText))
+            moveFrame.moveNameLabel.setText(moveNameText)
             moveFrame.moveNameLabel.resize({width = 70, height = 8})
 
             if moveData.name == "Puis. Cachée" and not isEnemy then
@@ -524,7 +524,7 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
 
             local listener = moveEventListeners[i]
             local params = listener.getOnHoverParams()
-            params.text = stripChars(moveData.description)
+            params.text = moveData.description
         end
     end
 
@@ -694,11 +694,11 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
         if currentPokemon.heldItem ~= nil then
             local heldItem = ItemData.ITEMS[currentPokemon.heldItem]
             itemDescription = heldItem.description
-            ui.controls.mainNoteLabel.setText("Item: " .. stripChars(heldItem.name))
+            ui.controls.mainNoteLabel.setText("Item: " .. heldItem.name)
         else
             ui.controls.mainNoteLabel.setText("Item: None")
         end
-        hoverListeners.heldItemTeamInfo.getOnHoverParams().text = stripChars(itemDescription)
+        hoverListeners.heldItemTeamInfo.getOnHoverParams().text = itemDescription
         hoverListeners.abilityHoverListener.getOnHoverParams().text = ""
         hoverListeners.heldItemHoverListener.getOnHoverParams().text = ""
 
@@ -715,8 +715,8 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
                 abilityName = abilityData.name
                 abilityDescription = abilityData.description
             end
-            newAbilityLabels[index].setText(stripChars(abilityName))
-            hoverListener.getOnHoverParams().text = stripChars(abilityDescription)
+            newAbilityLabels[index].setText(abilityName)
+            hoverListener.getOnHoverParams().text = abilityDescription
         end
     end
 
@@ -877,7 +877,7 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
         if settings.appearance.SHOW_NICKNAME and not isEnemy then
             name = currentPokemon.nickname or name
         end
-        ui.controls.pokemonNameLabel.setText(stripChars(name))
+        ui.controls.pokemonNameLabel.setText(name)
         ui.controls.pokemonHP.setVisibility(not isEnemy)
         local currentIconSet = IconSets.SETS[settings.appearance.ICON_SET_INDEX]
         local imageID = currentPokemon.pokemonID
@@ -894,8 +894,8 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
         if settings.appearance.BLIND_MODE then
             abilityName = "?"
         end
-        ui.controls.abilityDetails.setText(stripChars(abilityName))
-        ui.controls.heldItem.setText(stripChars(heldItemInfo.name))
+        ui.controls.abilityDetails.setText(abilityName)
+        ui.controls.heldItem.setText(heldItemInfo.name)
         for i, type in pairs(currentPokemon.type) do
             ui.controls["pokemonType" .. i].setPath(Paths.FOLDERS.TYPE_IMAGES_FOLDER .. "/" .. type .. ".png")
         end
@@ -907,13 +907,13 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
         if type(description) == "table" then
             description = description[program.getGameInfo().GEN - 3]
         end
-        abilityHoverParams.text = stripChars(description)
+        abilityHoverParams.text = description
         local itemHoverParams = hoverListeners.heldItemHoverListener.getOnHoverParams()
         local heldItemDescription = heldItemInfo.description
         if ItemData.NATURE_SPECIFIC_BERRIES[heldItemInfo.name] ~= nil then
             heldItemDescription = readNatureSpecificBerry(heldItemInfo.name, heldItemDescription)
         end
-        itemHoverParams.text = stripChars(heldItemDescription)
+        itemHoverParams.text = heldItemDescription
     end
 
     local function readPokemonIntoUI()

@@ -133,7 +133,7 @@ local function TrackedInfoScreen(initialSettings, initialTracker, initialProgram
 			{x = 3, y = 2}
 		}
 		for i, key in pairs(order) do
-			local text = stripChars(buttonNames[key])
+			local text = buttonNames[key]
 			local iconName = icons[i]
 			local frameName = key .. "Frame"
 			local frameInfo =
@@ -226,7 +226,7 @@ local function TrackedInfoScreen(initialSettings, initialTracker, initialProgram
 			TextLabel(
 			Component(ui.frames.faintDetectionFrame, Box({x = 0, y = 0}, {width = 0, height = 13})),
 			TextField(
-				stripChars("La partie est considérée perdu quand:"),
+				"La partie est considérée perdu quand:",
 				{x = -1, y = 0},
 				TextStyle(
 					Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -243,7 +243,7 @@ local function TrackedInfoScreen(initialSettings, initialTracker, initialProgram
 			[PlaythroughConstants.FAINT_DETECTIONS.NEVER] = "Jamais"
 		}
 		for settingValue, name in pairs(settingNames) do
-			createFaintDetectionChoosingRow("FAINT_DETECTION", settingValue, stripChars(name))
+			createFaintDetectionChoosingRow("FAINT_DETECTION", settingValue, name)
 		end
 	end
 

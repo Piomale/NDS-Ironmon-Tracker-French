@@ -476,7 +476,7 @@ local function SearchScreen(initialSettings, initialTracker, initialProgram, ini
         end
         for _, match in pairs(matches) do
             local name = currentDataGroup[match + 1].name
-            local label = UIUtils.createKeyboardMatchLabel(ui.frames.matchFrame, stripChars(name), 13)
+            local label = UIUtils.createKeyboardMatchLabel(ui.frames.matchFrame, name, 13)
             table.insert(matchTextLabels, label)
         end
         for index, label in pairs(matchTextLabels) do

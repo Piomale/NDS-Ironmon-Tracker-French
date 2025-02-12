@@ -91,28 +91,28 @@ PlaythroughConstants.FAINT_DETECTIONS = {
 
 --in case the death quotes file is nil or something dumb like that
 PlaythroughConstants.DEFAULT_STANDARD_MESSAGES = {
-    stripChars("Il y a toujours une prochaine fois..."),
-    stripChars("Oh, eh bien."),
-    stripChars("Ça aurait pu être pire, je suppose. Ou pas."),
-    stripChars("Contre toute attente... vous n'avez pas triomphé."),
-    stripChars("C'est malheureux."),
-    stripChars("C'est comme ça que ça se passe parfois."),
-    stripChars("Tu devrais vraiment choisir la pokéball de gauche à la prochaine tentative."),
-    stripChars("Tu t'amuses bien ?"),
-    stripChars("La maison gagne toujours."),
-    stripChars("Tout ce qui peut aller mal, ira mal."),
-    stripChars("On dirait que votre chance a finalement tourné.")
+    "Il y a toujours une prochaine fois...",
+    "Oh, eh bien.",
+    "Ça aurait pu être pire, je suppose. Ou pas.",
+    "Contre toute attente... vous n'avez pas triomphé.",
+    "C'est malheureux.",
+    "C'est comme ça que ça se passe parfois.",
+    "Tu devrais vraiment choisir la pokéball de gauche à la prochaine tentative.",
+    "Tu t'amuses bien ?",
+    "La maison gagne toujours.",
+    "Tout ce qui peut aller mal, ira mal.",
+    "On dirait que votre chance a finalement tourné."
 }
 
 PlaythroughConstants.RUN_OVER_MESSAGES = {
     [PlaythroughConstants.CAUSES.WON] = {
         exclusive = true,
         messages = {
-            stripChars("Félicitations !"),
-            stripChars("Mon Dieu... tu as vraiment réussi..."),
-            stripChars("Je suis sans voix."),
-            stripChars("La fin d'un long et difficile voyage..."),
-            stripChars("Ce jour-là, les planètes se sont alignées...")
+            "Félicitations !",
+            "Mon Dieu... tu as vraiment réussi...",
+            "Je suis sans voix.",
+            "La fin d'un long et difficile voyage...",
+            "Ce jour-là, les planètes se sont alignées..."
         }
     },
     [PlaythroughConstants.CAUSES.STANDARD] = {
@@ -121,30 +121,30 @@ PlaythroughConstants.RUN_OVER_MESSAGES = {
     [PlaythroughConstants.CAUSES.IMPOSTER] = {
         exclusive = true,
         messages = {
-            stripChars("Parfois, on ne peut pas se regarder en face"),
-            stripChars("Se regarder dans le miroir est vraiment douloureux."),
-            stripChars("Dark Link était bien plus facile que ça..."),
-            stripChars("Est-ce que ça veut dire qu'on peut l'interdire maintenant ?")
+            "Parfois, on ne peut pas se regarder en face",
+            "Se regarder dans le miroir est vraiment douloureux.",
+            "Dark Link était bien plus facile que ça...",
+            "Est-ce que ça veut dire qu'on peut l'interdire maintenant ?"
         }
     },
     [PlaythroughConstants.CAUSES.ENEMY_LOWER_BST] = {
         exclusive = true,
         messages = {
-            stripChars("Parfois, les plus faibles triomphent"),
-            stripChars("Un résultat surprenant"),
-            stripChars("Les miracles peuvent vraiment se produire."),
-            stripChars("Je ne pense pas que quelqu'un l'ait vu venir."),
-            stripChars("Hein ?"),
-            stripChars("Ce Pokémon avait sûrement un pouvoir énorme."),
+            "Parfois, les plus faibles triomphent",
+            "Un résultat surprenant",
+            "Les miracles peuvent vraiment se produire.",
+            "Je ne pense pas que quelqu'un l'ait vu venir.",
+            "Hein ?",
+            "Ce Pokémon avait sûrement un pouvoir énorme.",
         }
     },
     [PlaythroughConstants.CAUSES.SHEDINJA] = {
         exclusive = true,
         messages = {
-            stripChars("Ça ne fait jamais plaisir de perdre contre ça."),
-            stripChars("Il y a plus de 20 attaques feu dans le jeu, et tu n'en as pas eu une seul."),
-            stripChars("Ça devait arriver à un moment ou à un autre."),
-            stripChars("Le seul Pokémon que tu ne voulais pas voir...")
+            "Ça ne fait jamais plaisir de perdre contre ça.",
+            "Il y a plus de 20 attaques feu dans le jeu, et tu n'en as pas eu une seul.",
+            "Ça devait arriver à un moment ou à un autre.",
+            "Le seul Pokémon que tu ne voulais pas voir..."
         }
     }
 }
@@ -161,6 +161,6 @@ function PlaythroughConstants.initializeStandardMessages()
     end
 	print(newMessages)
     if newMessages[1] ~= nil then
-        PlaythroughConstants.RUN_OVER_MESSAGES[PlaythroughConstants.CAUSES.STANDARD].messages = stripChars(newMessages)
+        PlaythroughConstants.RUN_OVER_MESSAGES[PlaythroughConstants.CAUSES.STANDARD].messages = newMessages
     end
 end

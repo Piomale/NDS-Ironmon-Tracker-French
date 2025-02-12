@@ -90,7 +90,7 @@ local function BadgesAppearanceScreen(initialSettings, initialTracker, initialPr
                 TextLabel(
                     Component(frames[i], Box({x = 0, y = 0}, {width = 50, height = constants.MAIN_BUTTON_HEIGHT}, nil, nil)),
                     TextField(
-                        stripChars(text),
+                        text,
                         {x = 0, y = 0},
                         TextStyle(
                             Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -420,7 +420,7 @@ local function BadgesAppearanceScreen(initialSettings, initialTracker, initialPr
             TextLabel(
             Component(spacerFrame, Box({x = 0, y = 0}, {width = 0, height = 0}, nil, nil, false)),
             TextField(
-                stripChars("Séparateur"),
+                "Séparateur",
                 {x = 0, y = 0},
                 TextStyle(
                     Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -505,7 +505,7 @@ local function BadgesAppearanceScreen(initialSettings, initialTracker, initialPr
             TextLabel(
                 Component(frames[i], Box({x = 0, y = 0}, {width = 32, height = constants.MAIN_BUTTON_HEIGHT}, nil, nil)),
                 TextField(
-                    stripChars(text),
+                    text,
                     {x = 0, y = 0},
                     TextStyle(
                         Graphics.FONT.DEFAULT_FONT_SIZE,
@@ -580,7 +580,7 @@ local function BadgesAppearanceScreen(initialSettings, initialTracker, initialPr
                 )
             ),
             TextField(
-                stripChars("Paramètres HGSS"),
+                "Paramètres HGSS",
                 {x = 28, y = 3},
                 TextStyle(11, Graphics.FONT.DEFAULT_FONT_FAMILY, "Top box text color", "Top box background color")
             )
