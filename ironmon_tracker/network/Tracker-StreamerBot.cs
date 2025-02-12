@@ -7,6 +7,8 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Runtime.Serialization.Json;
 using Newtonsoft.Json;
+using System.Globalization;
+using System.Text;
 
 public class CPHInline
 {
@@ -48,7 +50,7 @@ public class CPHInline
 		try
 		{
 			_isConnected = false;
-			_commandRegex = "^" + COMMAND_PREFIX + @"([A-Za-z0-9\-\.]+)\s*(.*)";
+			_commandRegex = "^" + COMMAND_PREFIX + @"([A-Za-z0-9éè\-\.]+)\s*(.*)";
 			_allowedEvents = new Dictionary<string,bool>();
 			_commandRoles = new Dictionary<string,bool>()
 			{
@@ -116,12 +118,12 @@ public class CPHInline
 	// https://wiki.streamer.bot/en/Commands
 	public void ProcessCommandEvent()
 	{
-		Match matchesCommand = Regex.Match(VARS.RawInput, _commandRegex, RegexOptions.IgnoreCase);
+		Match matchesCommand = Regex.Match(RemoveAccents(VARS.RawInput), _commandRegex, RegexOptions.IgnoreCase);
 		if (!matchesCommand.Success)
 			return;
 
 		// Only process allowed commands (allowed list received on server startup)
-		var command = matchesCommand.Groups[1].Value.ToLower();
+		var command = RemoveAccents(matchesCommand.Groups[1].Value.ToLower());
 		if (!_allowedEvents.ContainsKey(command))
 			return;
 
@@ -136,7 +138,7 @@ public class CPHInline
 				return;
 		}
 
-		var input = matchesCommand.Groups[2].Value ?? string.Empty;
+		var input = RemoveAccents(matchesCommand.Groups[2].Value) ?? string.Empty;
 		// Fix to stop 7TV spam prevention character
 		input = Regex.Replace(input, INVISIBLE_CHAR, string.Empty);
 
@@ -153,6 +155,26 @@ public class CPHInline
 		request.Args.Add("Input", input);
 		request.Args.Add("Counter", VARS.Counter);
 		AddNewRequestAndSend(request);
+	}
+
+	private string RemoveAccents(string text)
+	{
+		if (string.IsNullOrWhiteSpace(text))
+			return text;
+
+		var normalizedText = text.Normalize(NormalizationForm.FormD);
+		var stringBuilder = new StringBuilder();
+
+		foreach (var c in normalizedText)
+		{
+			var unicodeCategory = CharUnicodeInfo.GetUnicodeCategory(c);
+			if (unicodeCategory != UnicodeCategory.NonSpacingMark)
+			{
+				stringBuilder.Append(c);
+			}
+		}
+
+		return stringBuilder.ToString().Normalize(NormalizationForm.FormC);
 	}
 
 	// https://wiki.streamer.bot/en/Platforms/Twitch/Channel-Point-Rewards

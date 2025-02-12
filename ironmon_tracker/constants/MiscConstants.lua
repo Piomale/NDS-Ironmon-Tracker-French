@@ -1,10 +1,12 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "6.3.7.2"
+MiscConstants.TRACKER_VERSION = "6.3.7.3"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
+	"-- Les commandes acceptent les accents",
+	"-- Meilleur gestions des caractères sépciaux dans les talents et capacités",
 	"-- Retrait de la commande !log"
 }
 

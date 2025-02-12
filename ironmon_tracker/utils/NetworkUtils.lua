@@ -54,54 +54,98 @@ end
 ---@return any result
 ---@return number distance
 function NetworkUtils.getClosestWord(word, wordlist, threshold)
-	if word == nil or word == "" then
-		return word, nil, -1
-	end
-	threshold = threshold or 3
-	local function min(a, b, c) return math.min(math.min(a, b), c) end
-	local function matrix(row, col)
-		local m = {}
-		for i = 1, row do
-			m[i] = {}
-			for j = 1, col do
-				m[i][j] = 0
-			end
+    if word == nil or word == "" then
+        return word, nil, -1
+    end
+
+    threshold = threshold or 3
+
+	local function sanitize(str)
+		-- Mapping des remplacements pour chaque caractère spécifique
+		local accentsMap = {
+			["á"] = "a", ["à"] = "a", ["â"] = "a", ["ä"] = "a", ["ã"] = "a", ["å"] = "a", ["ā"] = "a",
+			["ç"] = "c",
+			["é"] = "e", ["è"] = "e", ["ê"] = "e", ["ë"] = "e", ["ē"] = "e", ["ė"] = "e", ["ę"] = "e",
+			["í"] = "i", ["ì"] = "i", ["î"] = "i", ["ï"] = "i", ["ī"] = "i", ["į"] = "i",
+			["ñ"] = "n",
+			["ó"] = "o", ["ò"] = "o", ["ô"] = "o", ["ö"] = "o", ["õ"] = "o", ["ø"] = "o", ["ō"] = "o",
+			["ú"] = "u", ["ù"] = "u", ["û"] = "u", ["ü"] = "u", ["ū"] = "u",
+			["ý"] = "y", ["ÿ"] = "y",
+			["æ"] = "ae",
+			["œ"] = "oe"
+		}
+
+		-- Remplacer chaque caractère individuellement
+		for accent, replacement in pairs(accentsMap) do
+			str = str:gsub(accent, replacement)
 		end
-		return m
+
+		-- Retirer les caractères spéciaux et espaces
+		str = str:gsub("[%p%c%s]", "") -- Supprime ponctuation, caractères de contrôle, espaces
+
+		-- Passer en minuscule
+		str = str:lower()
+		return str
 	end
-	local function lev(strA, strB)
-		local M = matrix(#strA + 1, #strB + 1)
-		local cost
-		local row, col = #M, #M[1]
-		for i = 1, row do M[i][1] = i - 1 end
-		for j = 1, col do M[1][j] = j - 1 end
-		for i = 2, row do
-			for j = 2, col do
-				if (strA:sub(i-1, i-1) == strB:sub(j-1, j-1)) then cost = 0
-				else cost = 1
-				end
-				M[i][j] = min(M[i-1][j] + 1, M[i][j-1] + 1, M[i-1][j-1] + cost)
-			end
-		end
-		return M[row][col]
-	end
-	local closestDistance = 9999999
-	local closestWordKey
-	for key, val in pairs(wordlist) do
-		local levRes = lev(word, val)
-		if levRes < closestDistance then
-			closestDistance = levRes
-			closestWordKey = key
-			if closestDistance == 0 then -- exact match
-				break
-			end
-		end
-	end
-	if closestDistance <= threshold then
-		return closestWordKey, wordlist[closestWordKey], closestDistance
-	end
-	return nil, word, closestDistance
+
+    -- Sanitize the input word
+    local sanitizedWord = sanitize(word)
+
+    local function min(a, b, c)
+        return math.min(math.min(a, b), c)
+    end
+
+    local function matrix(row, col)
+        local m = {}
+        for i = 1, row do
+            m[i] = {}
+            for j = 1, col do
+                m[i][j] = 0
+            end
+        end
+        return m
+    end
+
+    local function lev(strA, strB)
+        local M = matrix(#strA + 1, #strB + 1)
+        local cost
+        local row, col = #M, #M[1]
+        for i = 1, row do M[i][1] = i - 1 end
+        for j = 1, col do M[1][j] = j - 1 end
+        for i = 2, row do
+            for j = 2, col do
+                if (strA:sub(i-1, i-1) == strB:sub(j-1, j-1)) then cost = 0
+                else cost = 1
+                end
+                M[i][j] = min(M[i-1][j] + 1, M[i][j-1] + 1, M[i-1][j-1] + cost)
+            end
+        end
+        return M[row][col]
+    end
+
+    local closestDistance = 9999999
+    local closestWordKey
+
+    for key, val in pairs(wordlist) do
+        -- Sanitize the word from the wordlist
+        local sanitizedVal = sanitize(val)
+        -- Compare sanitized words
+        local levRes = lev(sanitizedWord, sanitizedVal)
+        if levRes < closestDistance then
+            closestDistance = levRes
+            closestWordKey = key
+            if closestDistance == 0 then -- exact match
+                break
+            end
+        end
+    end
+
+    if closestDistance <= threshold then
+        return closestWordKey, wordlist[closestWordKey], closestDistance
+    end
+    return nil, word, closestDistance
 end
+
 
 --- Alters the string by changing the first character of each word to uppercase
 ---@param str string?

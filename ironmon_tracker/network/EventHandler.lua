@@ -174,7 +174,6 @@ end
 ---@param command string Example: !testcommand
 ---@return table events List of events with matching commands
 function EventHandler.getEventsForCommand(command)
-
 	local events = {}
 	if (command or "") == "" then
 		return events
