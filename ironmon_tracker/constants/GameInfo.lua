@@ -147,7 +147,8 @@ GameInfo.GAME_INFO = {
 		PIVOT_TYPES = {
             ["Grass/Cave"] = true,
             ["Shaking Spots"] = true
-        }
+        },
+        UI_HP_OFFSET = 0x73D
     },
     [GameInfo.VERSION_NUMBER.WHITE] = {
         GEN = 5,
@@ -181,7 +182,8 @@ GameInfo.GAME_INFO = {
 		PIVOT_TYPES = {
             ["Grass/Cave"] = true,
             ["Shaking Spots"] = true
-        }
+        },
+        UI_HP_OFFSET = 0x73D
     },
     [GameInfo.VERSION_NUMBER.BLACK2] = {
         GEN = 5,

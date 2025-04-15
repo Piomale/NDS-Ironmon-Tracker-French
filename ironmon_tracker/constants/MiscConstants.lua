@@ -1,15 +1,11 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "6.3.7.4"
+MiscConstants.TRACKER_VERSION = "6.3.7.5"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
-	"-- Ajout de la compatibilité avec Bizhawk 2.10",
-	"-- Retrait de la compatibilité  avec BizHawk 2.8",
-	"-- Les commandes acceptent les accents",
-	"-- Meilleur gestions des caractères spéciaux dans les talents et capacités",
-	"-- Retrait de la commande !log"
+	"-- Correction d'un plantage lors des fins de partie"
 }
 
 MiscConstants.DEFAULT_SETTINGS = {

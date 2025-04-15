@@ -267,7 +267,8 @@ MemoryAddresses[GameInfo.VERSION_NUMBER.BLACK_FR] = {
         mapNPCIDStart = 0x2521EC - 0x80,
         abilityTriggerStart = 0x2A6354 - 0x80,
         mainBattleDataPtr = 0x269838 - 0x80,
-        doubleTripleFlag = 0x2A62F8 - 0x80
+        doubleTripleFlag = 0x2A62F8 - 0x80,
+        someBattleUIPtr = 0x294854 - 0x80
     }
 }
 
@@ -333,6 +334,7 @@ MemoryAddresses[GameInfo.VERSION_NUMBER.WHITE_FR] = {
         abilityTriggerStart = 0x2A6354 - 0x60,
         mainBattleDataPtr = 0x269838 - 0x60,
         doubleTripleFlag = 0x2A62F8 - 0x60,
+		someBattleUIPtr = 0x294854 - 0x60
     }
 }
 
