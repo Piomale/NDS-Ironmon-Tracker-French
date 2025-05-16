@@ -2,6 +2,7 @@
 
 Vous pouvez télécharger le tracker [ici](https://github.com//Piomale/NDS-Ironmon-Tracker-French/releases/latest) (uniquement pour Pokémon HeartGold et black/white ).
 
+Pour plus d'information sur comment mettre en place une partie de IronMon vous pouvez suivre ce tutoriel : [Installation et mise en place](https://github.com/Piomale/NDS-Ironmon-Tracker-French/blob/main/ironmon.md)
 
 ![Animation](https://user-images.githubusercontent.com/88030270/232337355-ac008285-2e4e-4528-97d0-684b1445bd0e.gif)
 
