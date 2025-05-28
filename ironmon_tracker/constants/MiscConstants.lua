@@ -5,7 +5,7 @@ MiscConstants.TRACKER_VERSION = "6.3.8.1"
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
-	"-- Correction d'un plantage lors des fins de partie"
+	"-- Modification de l'ecran de choix du starter."
 }
 
 MiscConstants.DEFAULT_SETTINGS = {

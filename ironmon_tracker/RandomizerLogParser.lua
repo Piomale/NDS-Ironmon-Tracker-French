@@ -59,24 +59,52 @@ local function RandomizerLogParser(initialProgram)
             ["Headbutt"] = {50, 15, 15, 10, 5, 5},
             ["Bug Catching"] = {20, 20, 10, 10, 10, 10, 5, 5, 5, 5}
         },
+        --indexed by version group, see GameInfo.lua
         ROUTE_NAME_TO_CORRECT_SET = {
-            ["Lake Verity"] = {
-                ["Grass/Cave"] = "345"
+             [1] = {
+                ["Lake Verity"] = {
+                    ["Grass/Cave"] = "341"
+                },
+                ["Route 204"] = {
+                    ["Grass/Cave"] = "379",
+                    ["Old Rod"] = "382"
+                }
             },
-            ["Route 204"] = {
-                ["Grass/Cave"] = "383",
-                ["Old Rod"] = "386"
+            [2] = {
+                ["Lake Verity"] = {
+                    ["Grass/Cave"] = "345"
+                },
+                ["Route 204"] = {
+                    ["Grass/Cave"] = "383",
+                    ["Old Rod"] = "386"
+                }
             },
-            ["Ruines d'Alpha"] = {
-                ["Grass/Cave"] = "68"
+            [3] = {
+                ["Ruines d'Alpha"] = {
+                    ["Grass/Cave"] = "68"
+                },
+                ["Antre Noir"] = {
+                    ["Grass/Cave"] = "365"
+                }
             },
-            ["Antre Noir"] = {
-                ["Grass/Cave"] = "365"
-            },
-            ["Wellspring Cave"] = {
-                ["Grass/Cave"] = "181",
-                ["Shaking Spots"] = "182"
+            [4] = {
+                ["Wellspring Cave"] = {
+                    ["Grass/Cave"] = "181",
+                    ["Shaking Spots"] = "182"
+                }
             }
+        },
+        EXCLUDED_ROUTE_PIVOTS = {
+            [1] = {
+                ["Route 218"] = {
+                    ["Grass/Cave"] = true
+                }
+            },
+            [2] = {
+                ["Route 218"] = {
+                    ["Grass/Cave"] = true
+                }
+            },
         },
         DUPLICATE_ROUTE_TO_NEW_PIVOT_TYPE = {
             ["142"] = "Ext. Grass",
@@ -404,10 +432,15 @@ local function RandomizerLogParser(initialProgram)
 
     --returns true if the route is valid, i.e. not an unwanted duplicate
     local function checkRouteDuplicate(areaName, setNumber, pivotType)
-        if not self.ROUTE_NAME_TO_CORRECT_SET[areaName] then
+        local versionGroup = program.getGameInfo().VERSION_GROUP
+        if not self.ROUTE_NAME_TO_CORRECT_SET[versionGroup] then
             return true
         end
-        local encounterToCorrectSet = self.ROUTE_NAME_TO_CORRECT_SET[areaName]
+        local routes = self.ROUTE_NAME_TO_CORRECT_SET[versionGroup]
+        if not routes[areaName] then
+            return true
+        end
+        local encounterToCorrectSet = routes[areaName]
         if not encounterToCorrectSet[pivotType] then
             return true
         end
@@ -433,6 +466,17 @@ local function RandomizerLogParser(initialProgram)
          return self.ROUTE_NUMBER_TO_CORRECT_NAME[program.getGameInfo().VERSION_GROUP][areaNumber] or areaName
     end
 
+    local function isPivotTypeExcluded(areaName, pivotType)
+        local versionGroup = program.getGameInfo().VERSION_GROUP
+        if not self.EXCLUDED_ROUTE_PIVOTS[versionGroup] then
+            return false
+        end
+        if not self.EXCLUDED_ROUTE_PIVOTS[versionGroup][areaName] then
+            return false
+        end
+        return self.EXCLUDED_ROUTE_PIVOTS[versionGroup][areaName][pivotType] or false
+    end
+
     local function parseRouteData(lines, lineStart)
         local validRoutes = program.getGameInfo().LOCATION_DATA.encounterAreaOrder
         local timesSeenSprout = 0
@@ -452,10 +496,11 @@ local function RandomizerLogParser(initialProgram)
                             timesSeenSprout = timesSeenSprout + 1
                             areaName = areaName .. " " .. timesSeenSprout .. "F"
                         end
-                        local valid = checkRouteDuplicate(areaName, number, pivotType)
+                        local validRoute = checkRouteDuplicate(areaName, number, pivotType)
+                        local validPivot = not isPivotTypeExcluded(areaName, pivotType)
                         pivotType = formatPivotType(areaName, number, pivotType)
                         areaName = doAdditionalNameChecks(areaName, number)
-                        if MiscUtils.tableContains(validRoutes, areaName) and valid then
+                        if MiscUtils.tableContains(validRoutes, areaName) and validRoute and validPivot then
                             if not pivotData[areaName] then
                                 pivotData[areaName] = {}
                             end
