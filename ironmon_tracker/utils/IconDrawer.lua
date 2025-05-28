@@ -29,6 +29,27 @@ IconDrawer.ICONS =
             colorKey = "Gear icon color",
             backgroundColorKey = "Top box background color"
         },
+		DICE = { -- 13x14
+			iconType = IconDrawer.ICON_TYPES.STANDARD,
+			imageArray = {
+				{0,0,0,0,0,1,1,1,0,0,0,0,0},
+				{0,0,0,1,1,0,0,0,1,1,0,0,0},
+				{0,1,1,0,0,0,0,0,0,0,1,1,0},
+				{1,0,0,0,0,0,1,0,0,0,0,0,1},
+				{1,1,1,0,0,0,0,0,0,0,1,1,1},
+				{1,0,0,1,1,0,0,0,1,1,0,0,1},
+				{1,0,0,0,0,1,1,1,0,0,1,0,1},
+				{1,0,1,0,0,0,1,0,0,0,0,0,1},
+				{1,0,0,0,0,0,1,0,0,1,0,0,1},
+				{1,0,0,0,0,0,1,0,0,0,0,0,1},
+				{1,0,0,0,1,0,1,0,1,0,0,0,1},
+				{0,1,1,0,0,0,1,0,0,0,1,1,0},
+				{0,0,0,1,1,0,1,0,1,1,0,0,0},
+				{0,0,0,0,0,1,1,1,0,0,0,0,0}
+			},
+            colorKey = "Gear icon color",
+            backgroundColorKey = "Top box background color"
+        },
         PHYSICAL = {
             iconType = IconDrawer.ICON_TYPES.STANDARD,
             imageArray = {

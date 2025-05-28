@@ -17,31 +17,76 @@ local function RandomBallScreen(initialSettings, initialTracker, initialProgram)
 		MAIN_FRAME_WIDTH = 84,
 		MAIN_FRAME_HEIGHT = 49,
 		POKEBALL_SIZE = 16,
-		DICE_SIZE = 12
 	}
 	local ui = {}
 	local eventListeners = {}
 	local self = {}
+	local lastRandomBall = nil
 
 	local function selectAndReadRandomBall()
-		local randomBall = math.random(1, 3)
-		local labels = {"Left", "Middle", "Right"}
+		local randomBall
+		repeat
+			randomBall = math.random(1, 3)
+		until randomBall ~= lastRandomBall
+		lastRandomBall = randomBall
+		local labels = {"Gauche", "Milieu", "Droite"}
 		local HGSSImageIcons = {"pokeball_blue.png", "pokeball_green.png", "pokeball_red.png"}
 		local icon = "pokeball_red.png"
+		for i = 1, 3 do
+			ui.controls.pokeballs[i].setPath("ironmon_tracker/images/trainers/pokeball_large_off.png")
+		end
 		if program.getGameInfo().VERSION_GROUP == 3 then
 			icon = HGSSImageIcons[randomBall]
 		end
 		ui.controls.pokeballs[randomBall].setPath("ironmon_tracker/images/icons/" .. icon)
-		local text = "Random ball: " .. labels[randomBall]
-		local centerX = (94 - DrawingUtils.calculateWordPixelLength(text)) / 2
-		ui.controls.ballLabel.setText(text)
-		ui.controls.ballLabel.setTextOffset({x = centerX, y = 4})
+		local text1 = "Poké Ball: "
+		local text2 = labels[randomBall]
+		
+		-- Calcul des largeurs
+		local totalWidth = DrawingUtils.calculateWordPixelLength(text1 .. text2)
+		local width1 = DrawingUtils.calculateWordPixelLength(text1)
+		local width2 = DrawingUtils.calculateWordPixelLength(text2)
+		local boxWidth = 94
+
+		-- Centrage de l'ensemble
+		local startX = (boxWidth - totalWidth) / 2
+
+		-- Place le premier label à startX
+		ui.controls.ballLabel1.setText(text1)
+		ui.controls.ballLabel1.setTextOffset({x = startX, y = 4})
+
+		-- Place le second label juste après le premier
+		ui.controls.ballLabel2.setText(text2)
+		ui.controls.ballLabel2.setTextOffset({x = startX + width1, y = 4})
+
+		local colors = {
+			[1] = "WATER",
+			[2] = "BUG",
+			[3] = "FIGHTING"
+		}
+		ui.controls.ballLabel2.setTextColorKey(colors[randomBall])
 	end
+
+
 
 	local function initDiceBallLabel()
 		ui.frames.bottomFrame =
 			Frame(Box({x = 0, y = 0}, {width = 0, height = 0}), Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, 0), ui.frames.mainFrame)
-		ui.controls.ballLabel =
+		ui.controls.ballLabel1 =
+			TextLabel(
+			Component(ui.frames.bottomFrame, Box({x = 0, y = 0}, {width = 0, height = 0})),
+			TextField(
+				"",
+				{x = 0, y = 4},
+				TextStyle(
+					Graphics.FONT.DEFAULT_FONT_SIZE,
+					Graphics.FONT.DEFAULT_FONT_FAMILY,
+					"Top box text color",
+					"Top box background color"
+				)
+			)
+		)
+		ui.controls.ballLabel2 =
 			TextLabel(
 			Component(ui.frames.bottomFrame, Box({x = 0, y = 0}, {width = 0, height = 0})),
 			TextField(
@@ -56,6 +101,31 @@ local function RandomBallScreen(initialSettings, initialTracker, initialProgram)
 			)
 		)
 	end
+
+	local function initRefreshButtons()
+		ui.frames.diceButtonFrame =
+			Frame(
+				Box({x = 0, y = 0}, {width = 0, height = 0}),
+				Layout(Graphics.ALIGNMENT_TYPE.HORIZONTAL, 0, {x = 94-13, y = 18}),
+				ui.frames.mainFrame
+			)
+
+		ui.controls.diceIcon =
+			Icon(
+				Component(
+					ui.frames.diceButtonFrame,
+					Box({x = 0, y = 0}, {width = 13, height = 14}, nil, nil)
+				),
+				"DICE",
+				{x = 0, y = 0}
+			)
+
+		table.insert(
+			eventListeners,
+			MouseClickEventListener(ui.controls.diceIcon, selectAndReadRandomBall)
+		)
+	end
+
 
 	function self.initialize(position)
 		ui.frames.mainFrame.move({x = position.x + 1, y = position.y + 1})
@@ -105,8 +175,11 @@ local function RandomBallScreen(initialSettings, initialTracker, initialProgram)
 			Layout(Graphics.ALIGNMENT_TYPE.VERTICAL, 0, {x = 0, y = 3}),
 			nil
 		)
+		initRefreshButtons()
 		initPokeballs()
 		initDiceBallLabel()
+		
+		
 	end
 
 	function self.runEventListeners()
