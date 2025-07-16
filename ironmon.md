@@ -35,7 +35,7 @@
 # 4) Télécharger le Randomizer
 
 ### a) Téléchargement et extraction
-* Télécharger [PokeRandoZX-vx_x_x.zip](https://github.com/Ajarmar/universal-pokemon-randomizer-zx/releases/latest)  
+* Télécharger [PokeRandoZX-vx_x_x.zip](https://github.com/Somnides/universal-pokemon-randomizer-zx/releases/latest)  
 * Extraire le fichier **PokeRandoZX-vx_x_x.zip** (clic droit > Extraire tout sous Windows 11, ou avec un outil comme WinZip, 7-Zip, WinRAR sous Windows 10)
 
 ### b) Vérification
@@ -49,7 +49,7 @@
 # 5) Introduction rapide (Étape optionnelle pour Pokémon HGSS)
 
 ### Suivre le tutoriel du GitHub HGSS-All-In-One-Ironmon-FR
-* il est possible de trouver le tuto sur ce [GitHub](https://github.com/remyml57/HGSS-All-In-One-Ironmon-FR/)
+* il est possible de trouver le tuto sur ce [GitHub](https://github.com/Somnides/HGSS-Intro-Ironmon-FR)
 
 # FAQ
 * **Q : Que veut dire HGSS
