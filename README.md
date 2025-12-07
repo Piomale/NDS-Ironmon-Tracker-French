@@ -47,10 +47,10 @@ Ce projet a été lancé à l'origine sur https://github.com/besteon/Ironmon-Tra
 
 - Objets de soin** : Le traqueur a également la capacité de suivre le nombre de soins que vous avez et d'afficher le total des soins en pourcentage de vos HP. Par exemple, si mon Pokémon a 40 PV et 3 potions, il affichera "Soins dans le sac : 150%". Très utile !
 
-- Chargement rapide des graines** : Le tracker dispose d'une fonction très intéressante qui permet de charger automatiquement la prochaine graine :
-	1. Créez un tas de graines avec un fichier .bat (vérifiez le discord d'Ironmon dans le canal de démarrage).
+- Chargement rapide des seeds** : Le tracker dispose d'une fonction très intéressante qui permet de charger automatiquement la prochaine seed :
+	1. Créez plusieurs seeds avec un fichier .bat (vérifiez le discord d'Ironmon dans le canal de démarrage).
   2. Assurez-vous que les seeds sont dans un format comme `seed1.nds`, `seed2.nds`, `seed3.nds`, etc. `seed0003`, `S33D3`, et `34555_1` ne fonctionneront pas.
-	3. Une fois que vous avez été renvoyé au laboratoire et que vous devez charger la graine suivante, utilisez la combinaison de boutons NEXT_SEED dans le fichier Settings.
+	3. Une fois que vous avez été renvoyé au laboratoire et que vous devez charger la seed, utilisez la combinaison de boutons NEXT_SEED dans le fichier Settings.
 		- Par défaut, la combinaison de boutons est A,B,Start,Select.
 		
 - **Notes** : Vous pouvez laisser une note rapide sur un Pokémon ennemi en cliquant sur le bouton de note au milieu du tracker.
