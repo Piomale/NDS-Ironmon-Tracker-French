@@ -148,7 +148,17 @@ function MoveUtils.getMoveHeader(pokemon)
     return header
 end
 
-function MoveUtils.calculateVariableDamage(moveName, movePPs, index, currentPokemon, opposingPokemon, isEnemy, inBattle)
+function MoveUtils.calculateVariableDamage(moveId, movePPs, index, currentPokemon, opposingPokemon, isEnemy, inBattle)
+    local flailId = 175
+    local reversalId = 179
+    local waterSpoutId = 323
+    local eruptionId = 284
+    local trumpCardId = 376
+    local heatCrashId = 535
+    local heavySlamId = 484
+    local punishmentId = 386
+    local grassKnotId = 447
+    local lowKickId = 67
     local lowHPCalcEntry = {
         requirement = not isEnemy,
         calcFunction = function()
@@ -174,30 +184,30 @@ function MoveUtils.calculateVariableDamage(moveName, movePPs, index, currentPoke
         end
     }
     local moveNamesToCalcFunctions = {
-        ["Flail"] = lowHPCalcEntry,
-        ["Reversal"] = lowHPCalcEntry,
-        ["Water Spout"] = highHPCalcEntry,
-        ["Eruption"] = highHPCalcEntry,
-        ["Trump Card"] = {
+        [flailId] = lowHPCalcEntry,
+        [reversalId] = lowHPCalcEntry,
+        [waterSpoutId] = highHPCalcEntry,
+        [eruptionId] = highHPCalcEntry,
+        [trumpCardId] = {
             requirement = true,
             calcFunction = function(movePP)
                 return MoveUtils.calculateTrumpCardPower(movePP)
             end
         },
-        ["Heat Crash"] = weightDifferenceEntry,
-        ["Heavy Slam"] = weightDifferenceEntry,
-        ["Punishment"] = {
+        [heatCrashId] = weightDifferenceEntry,
+        [heavySlamId] = weightDifferenceEntry,
+        [punishmentId] = {
             requirement = inBattle and opposingPokemon ~= nil,
             calcFunction = function()
                 return MoveUtils.calculatePunishmentPower(opposingPokemon)
             end
         },
-        ["Grass Knot"] = weightBasedEntry,
-        ["Low Kick"] = weightBasedEntry
+        [grassKnotId] = weightBasedEntry,
+        [lowKickId] = weightBasedEntry
     }
-    local entry = moveNamesToCalcFunctions[moveName]
+    local entry = moveNamesToCalcFunctions[moveId]
     if entry then
-        if moveName ~= "Trump Card" then
+        if moveId ~= trumpCardId then
             if entry.requirement then
                 return entry.calcFunction()
             end

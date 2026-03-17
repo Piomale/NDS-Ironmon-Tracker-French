@@ -433,7 +433,7 @@ local function MainScreen(initialSettings, initialTracker, initialProgram)
             local moveFrame = ui.moveInfoFrames[index]
             local damage =
                 MoveUtils.calculateVariableDamage(
-                name,
+                moveID,
                 movePPs,
                 index,
                 currentPokemon,
