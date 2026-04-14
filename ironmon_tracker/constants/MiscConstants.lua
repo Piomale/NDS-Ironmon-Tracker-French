@@ -1,11 +1,11 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "6.3.8"
+MiscConstants.TRACKER_VERSION = "6.3.9"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
-    "-- Fixed several incorrect routes and crashes for the Log Viewer when playing Diamond/Pearl."
+    "-- Fixed a memory leak when playing multiple seeds over a long session. Thank you to DrSeil, UTDZac and others for finding and fixing this issue."
 }
 
 MiscConstants.DEFAULT_SETTINGS = {
