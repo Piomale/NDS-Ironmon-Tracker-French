@@ -94,12 +94,12 @@ local function Main()
 			if gameinfo.getromname() ~= "Null" then
 				client.SetSoundOn(soundOn)
 				loadNextSeed = false
-				self.run()
+				return self.run()
 			end
 		else
 			client.SetSoundOn(soundOn)
 			loadNextSeed = false
-			self.run()
+			return self.run()
 		end
 	end
 
@@ -204,7 +204,7 @@ local function Main()
 			loadNextSeed = checkForNextSeedCombo()
 			emu.frameadvance()
 		end
-		loadNext()
+		return loadNext()
 	end
 
 	function self.loadNextSeed()
