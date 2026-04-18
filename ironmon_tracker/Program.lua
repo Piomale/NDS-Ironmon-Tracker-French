@@ -1006,7 +1006,6 @@ local function Program(initialTracker, initialMemoryAddresses, initialGameInfo, 
 				tracker.save(gameInfo.NAME)
                 client.saveram()
                 crashRecovery.createBackupSaveState()
-				collectgarbage("collect")
 			end,
 			nil,
 			true
