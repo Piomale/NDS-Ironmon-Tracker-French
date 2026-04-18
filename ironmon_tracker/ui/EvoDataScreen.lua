@@ -144,8 +144,8 @@ local function EvoDataScreen(initialSettings, initialTracker, initialProgram)
 	end
 
 	local function onViewSiteClick()
-		local brdyURL = "https://brdyweb.com/kaizo/evo/"
-		os.execute(string.format('start "" "%s"', brdyURL))
+		local URL = "https://www.stealmylyrics.com/kaizo/evo/"
+		os.execute(string.format('start "" "%s"', URL))
 	end
 
 	local function initTopSortFrame()

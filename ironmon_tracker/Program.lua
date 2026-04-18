@@ -1005,7 +1005,7 @@ local function Program(initialTracker, initialMemoryAddresses, initialGameInfo, 
             function()
 				tracker.save(gameInfo.NAME)
                 client.saveram()
-				crashRecovery.createBackupSaveState()
+                crashRecovery.createBackupSaveState()
 			end,
 			nil,
 			true
