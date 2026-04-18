@@ -1,11 +1,11 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "6.3.9"
+MiscConstants.TRACKER_VERSION = "6.3.10"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
-    "-- Fixed a memory leak when playing multiple seeds over a long session. Thank you to DrSeil, UTDZac and others for finding and fixing this issue."
+    "-- Fixed an important issue where the Evo Data website link was linking to a nonexistent website."
 }
 
 MiscConstants.DEFAULT_SETTINGS = {
