@@ -51,8 +51,8 @@ local function UpdaterScreen(initialSettings, initialTracker, initialProgram)
     end
 
     local function restartTracker()
-        IronmonTracker.startTracker()
         frameCounters["trackerRestart"] = nil
+        return IronmonTracker.startTracker()
     end
 
     local function onOpenReleaseNotesClick()

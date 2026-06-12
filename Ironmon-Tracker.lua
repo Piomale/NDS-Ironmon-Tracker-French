@@ -19,7 +19,7 @@ function IronmonTracker.startTracker()
 	gui.clearImageCache()
 	collectgarbage()
 	local main = Main()
-	main.run()
+	return main.run()
 end
 
 IronmonTracker.startTracker()

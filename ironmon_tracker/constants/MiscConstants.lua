@@ -1,11 +1,12 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "6.3.8.1"
+MiscConstants.TRACKER_VERSION = "6.3.10.1"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
-	"-- Modification de l'ecran de choix du starter."
+	"-- Correction d’une fuite de mémoire qui se produisait lors de l’enchaînement de plusieurs seeds au cours d’une longue session."
+	"-- Correction d’un problème où un lien pointait vers une page web inexistante."
 }
 
 MiscConstants.DEFAULT_SETTINGS = {
