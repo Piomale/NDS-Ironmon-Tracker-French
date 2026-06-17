@@ -1,11 +1,11 @@
 MiscConstants = {}
 
-MiscConstants.TRACKER_VERSION = "6.3.10.1"
+MiscConstants.TRACKER_VERSION = "6.3.10.2"
 
 MiscConstants.BIZHAWK_VERSION = client.getversion()
 
 MiscConstants.UPDATE_NOTES = {
-	"-- Correction d’une fuite de mémoire qui se produisait lors de l’enchaînement de plusieurs seeds au cours d’une longue session."
+	"-- Correction d’une fuite de mémoire qui se produisait lors de l’enchaînement de plusieurs seeds au cours d’une longue session.",
 	"-- Correction d’un problème où un lien pointait vers une page web inexistante."
 }
 
